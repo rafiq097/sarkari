@@ -1,0 +1,350 @@
+{
+  "id": "ssc-gd-constable",
+  "name": "Constable (GD) in CAPFs, SSF, NIA and Rifleman (GD) in Assam Rifles",
+  "abbreviation": "SSC GD",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "capf-police",
+  "organization": {
+    "id": "ssc",
+    "name": "Staff Selection Commission",
+    "abbreviation": "SSC",
+    "website": "https://ssc.gov.in"
+  },
+  "department": "BSF, CISF, CRPF, ITBP, SSB, Secretariat Security Force, NIA, Assam Rifles",
+  "technical": false,
+  "summary": "The largest SSC recruitment: tens of thousands of Constable (General Duty) posts in the central armed police forces and Assam Rifles, for Class 10 pass candidates. Computer-based exam, then physical tests, medical and documents.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Annual (SSC calendar)",
+  "officialLinks": [
+    {
+      "label": "SSC website",
+      "url": "https://ssc.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. The 2026 cycle had 25,487 vacancies; its exam, first scheduled for 23 February 2026, was postponed. The SSC calendar lists the 2027 cycle notice for September 2026 with exams in January to March 2027.",
+    "cycles": [
+      {
+        "cycle": "GD 2026",
+        "events": [
+          {
+            "event": "Original exam date (postponed)",
+            "date": "2026-02-23",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Constable (GD) in BSF, CISF, CRPF, ITBP, SSB, SSF",
+      "group": "Group C",
+      "payLevel": "Level 3",
+      "startingBasic": 21700,
+      "responsibilities": "Armed guard, border and internal security duties."
+    },
+    {
+      "name": "Rifleman (GD), Assam Rifles",
+      "group": "Group C",
+      "payLevel": "Level 3",
+      "startingBasic": 21700,
+      "responsibilities": "Counter-insurgency and border duty in the North East."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Usually 18 to 23 years on 1 January of the exam year (check the current notice).",
+      "referenceDate": "1 January of the exam year (usual)"
+    },
+    "nationality": "Citizen of India; domicile certificate decides the state/area vacancies you compete for.",
+    "education": {
+      "summary": "Class 10 (Matriculation) pass.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "physical": "Physical Standards Test (height, chest, weight) and a Physical Efficiency Test (timed run) as listed in the notice, with relaxed standards for some regions and communities. NCC certificate holders get bonus marks.",
+    "examVsPost": "Vacancies are allotted by state and area of domicile, and separately for men and women.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Usual band 18 to 23. PET/PST apply. State domicile decides vacancies.",
+    "ageMin": 18,
+    "ageMax": 23,
+    "minEducation": "class-10",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Computer-based exam",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General Intelligence and Reasoning",
+            "questions": 20,
+            "marks": 40
+          },
+          {
+            "name": "General Knowledge and General Awareness",
+            "questions": 20,
+            "marks": 40
+          },
+          {
+            "name": "Elementary Mathematics",
+            "questions": 20,
+            "marks": 40
+          },
+          {
+            "name": "English / Hindi",
+            "questions": 20,
+            "marks": 40
+          }
+        ],
+        "notes": "80 questions, 160 marks."
+      },
+      {
+        "name": "PET and PST",
+        "type": "physical",
+        "countsInMerit": false,
+        "notes": "Qualifying."
+      },
+      {
+        "name": "Medical and document verification",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the computer-based exam plus NCC bonus marks, among candidates passing PET/PST and medical.",
+    "languages": "English, Hindi and regional languages.",
+    "documentVerification": "With the medical.",
+    "probation": "Basic training at force training centres."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "CBE",
+        "subject": "Four parts",
+        "topics": [
+          "Reasoning",
+          "General knowledge and awareness",
+          "Elementary mathematics",
+          "English or Hindi"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "general-awareness",
+    "quantitative-aptitude",
+    "english-language",
+    "hindi-language",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 25487,
+      "note": "As reported for the 2026 cycle.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 3",
+    "payScale": "21,700 to 69,100",
+    "startingBasic": 21700,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP.",
+    "specialAllowances": [
+      {
+        "name": "Risk and hardship, ration money",
+        "detail": "As per force and area."
+      }
+    ],
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Constable",
+        "level": "Level 3",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Head Constable",
+        "level": "Level 4",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "ASI / SI (by promotion or LDCE)",
+        "level": "Level 5 to 6",
+        "timeline": "Mid career",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions are slow and vacancy-driven; departmental exams speed them up.",
+    "macp": "MACP at 10, 20 and 30 years."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Borders, insurgency areas, industrial sites; anywhere in India.",
+    "transfers": "Frequent.",
+    "nature": "Field duty.",
+    "workload": "Very high.",
+    "publicInteraction": "Low to moderate.",
+    "hazards": "High.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "medium",
+    "rationale": "Easy syllabus but millions of applicants; the physical tests eliminate many."
+  },
+  "ratings": {
+    "careerGrowth": "low",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual mass recruitment; hard field postings."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Postponements",
+        "level": "medium",
+        "note": "The 2026 exam was postponed."
+      },
+      {
+        "factor": "Physical rejection",
+        "level": "high",
+        "note": "PET/PST eliminate many candidates."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SSC GD Constable 2026 exam postponed; 25,487 vacancies",
+      "url": "https://news.careers360.com/ssc-gd-constable-2026-exam-postponed-25487-vacancies-new-date-soon-capfs-ssf-assam-rifles-pattern-hall-ticket-city-slip-updates",
+      "publisher": "Careers360 (reports the SSC notice)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "sscCalendar",
+      "title": "SSC tentative calendar of examinations 2026-27 (released 8 Jan 2026)",
+      "url": "https://news.careers360.com/ssc-exam-calendar-2026-cgle-junior-engineer-selection-post-phase-14-chsl-stenographer-mts-havaldar-notification-schedule/amp",
+      "publisher": "Careers360 (reports the SSC calendar)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Official GD notice could not be fetched; age, physical standards and NCC bonus details are not quoted from it.",
+      "Rescheduled 2026 exam date not recorded."
+    ],
+    "notes": "Indicative profile; verify on ssc.gov.in."
+  },
+  "lastVerified": "2026-10-18"
+}
