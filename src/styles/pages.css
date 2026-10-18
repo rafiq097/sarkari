@@ -2128,3 +2128,26 @@ strong.figure {
 .callout + .empty-state {
   margin-top: 28px;
 }
+
+/* Calendar: countdown beside near official dates. */
+.event-meta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.event-countdown {
+  padding: 1px 9px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.event-countdown.is-urgent {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}

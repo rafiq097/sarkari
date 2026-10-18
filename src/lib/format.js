@@ -75,3 +75,13 @@ export function payHeadline(exam) {
   if (exam.salary?.officialGross) return { label: 'Monthly pay', value: formatRupees(exam.salary.officialGross), note: null }
   return { label: 'Starting basic', value: null, note: 'Varies' }
 }
+
+// Official dates closer than this many days get a highlighted countdown.
+export const urgentWithinDays = 45
+
+/** Countdown text such as "today", "tomorrow" or "in 9 days". */
+export function countdownText(days) {
+  if (days === 0) return 'today'
+  if (days === 1) return 'tomorrow'
+  return `in ${days} days`
+}

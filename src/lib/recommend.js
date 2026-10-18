@@ -8,6 +8,7 @@
 import { examIndex, vocabulary } from './data.js'
 import { evaluateExam, ageOn, relaxedUpperAge } from './eligibility.js'
 import { todayIso } from './format.js'
+import { overlap } from './syllabus.js'
 
 const levelOrder = vocabulary.educationLevelOrder
 const stateJurisdictions = new Set(['andhra-pradesh', 'telangana', 'karnataka'])
@@ -112,14 +113,6 @@ function scoreExam(exam, candidate, today) {
   return { exam, result, score, reasons, soon, yearsLeft: yearsLeft(exam, candidate, today) }
 }
 
-/** Jaccard similarity of two tag lists. */
-function similarity(tagsA, tagsB) {
-  const setA = new Set(tagsA)
-  const shared = tagsB.filter((tag) => setA.has(tag)).length
-  const union = new Set([...tagsA, ...tagsB]).size
-  return union ? shared / union : 0
-}
-
 /**
  * Builds the plan for a candidate.
  * Returns { picks, lastChance, comingUp, prepareTogether, focusSubjects, eligibleCount }.
@@ -135,7 +128,7 @@ export function buildPlan(candidate) {
   const prepareTogether = anchor
     ? scored
         .filter((entry) => entry.exam.id !== anchor.exam.id)
-        .map((entry) => ({ ...entry, overlap: similarity(anchor.exam.syllabusTags, entry.exam.syllabusTags) }))
+        .map((entry) => ({ ...entry, overlap: overlap(anchor.exam.syllabusTags, entry.exam.syllabusTags).similarity }))
         .filter((entry) => entry.overlap >= 0.3)
         .sort((a, b) => b.overlap - a.overlap)
         .slice(0, 5)

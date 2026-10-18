@@ -7,13 +7,13 @@ import { ArrowRight, CalendarClock, BookOpenText, ShieldCheck, UserRound } from 
 import { useSaved } from '../lib/saved.jsx'
 import { isProfileUsable, summariseMatches } from '../lib/candidate.js'
 import { SearchBox } from '../components/SearchBox.jsx'
-import { Counter, SectionHeading } from '../components/Common.jsx'
+import { SectionHeading } from '../components/Common.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
 import { RegionCards } from '../components/RegionCards.jsx'
 import { StatusBadge } from '../components/Badges.jsx'
 import { toolLinks } from '../lib/navigation.js'
 import { examIndex, sourceIndex, vocabulary } from '../lib/data.js'
-import { formatDate, todayIso } from '../lib/format.js'
+import { formatCount, formatDate, todayIso } from '../lib/format.js'
 import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 
 const quickSearches = ['UPSC', 'SSC CGL', 'Bank PO', 'Group 2', 'Police constable', 'Teacher', 'GATE PSU', 'Junior Engineer']
@@ -87,19 +87,19 @@ export default function HomePage() {
           <div>
             <dt>Profiles</dt>
             <dd>
-              <Counter value={examIndex.length} />
+              <span className="numeric">{formatCount(examIndex.length)}</span>
             </dd>
           </div>
           <div>
             <dt>Sources cited</dt>
             <dd>
-              <Counter value={sourceIndex.length} />
+              <span className="numeric">{formatCount(sourceIndex.length)}</span>
             </dd>
           </div>
           <div>
             <dt>Official sources</dt>
             <dd>
-              <Counter value={primarySources} />
+              <span className="numeric">{formatCount(primarySources)}</span>
             </dd>
           </div>
         </dl>

@@ -3,22 +3,15 @@
  * subject areas (Jaccard similarity over syllabusTags), and which subjects carry over.
  * Subject areas are our tagging of the official syllabus, not official categories.
  */
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router'
 import { Layers, Info } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SegmentedFilter } from '../components/Common.jsx'
 import { examIndex, labelFor, governmentFilterOptions } from '../lib/data.js'
 import { Select } from '../components/Select.jsx'
+import { companionsFor } from '../lib/syllabus.js'
 
 const shownCompanions = 15
-
-/** Shared tags and similarity between two tag lists. */
-function overlap(baseTags, otherTags) {
-  const base = new Set(baseTags)
-  const shared = otherTags.filter((tag) => base.has(tag))
-  const union = new Set([...baseTags, ...otherTags]).size
-  return { shared, similarity: union ? shared.length / union : 0, coverage: base.size ? shared.length / base.size : 0 }
-}
 
 /** Syllabus overlap page. */
 export default function SyllabusPage() {
@@ -27,15 +20,7 @@ export default function SyllabusPage() {
   const [regionFilter, setRegionFilter] = useState('')
   const base = taggedExams.find((exam) => exam.id === baseId)
 
-  const companions = useMemo(() => {
-    if (!base) return []
-    return taggedExams
-      .filter((exam) => exam.id !== base.id && exam.status !== 'historical' && (!regionFilter || exam.jurisdiction === regionFilter))
-      .map((exam) => ({ exam, ...overlap(base.syllabusTags, exam.syllabusTags) }))
-      .filter((entry) => entry.shared.length > 0)
-      .sort((a, b) => b.similarity - a.similarity)
-      .slice(0, shownCompanions)
-  }, [base, regionFilter, taggedExams])
+  const companions = base ? companionsFor(base, { region: regionFilter, limit: shownCompanions }) : []
 
   if (!taggedExams.length) return <EmptyState title="No syllabus data yet">Profiles with tagged syllabuses will appear here.</EmptyState>
 

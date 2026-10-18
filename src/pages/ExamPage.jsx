@@ -6,7 +6,7 @@ import { Link, useParams, useSearchParams } from 'react-router'
 import { Zap, BookOpenText, LayoutList, UserCheck, ListChecks, BookOpen, ChartLine, IndianRupee, Scale, Library, AlertTriangle } from 'lucide-react'
 import { Breadcrumbs, EmptyState, Tabs } from '../components/Common.jsx'
 import { StatusBadge, ConfidenceBadge } from '../components/Badges.jsx'
-import { BookmarkButton, CompareButton } from '../components/ExamCard.jsx'
+import { BookmarkButton, CompareButton, ShareButton } from '../components/ExamCard.jsx'
 import { QuickLookTab } from '../components/profile/ProfileQuickLook.jsx'
 import { OverviewTab, EligibilityTab } from '../components/profile/ProfileBasics.jsx'
 import { GuideTab, SelectionTab, SyllabusTab } from '../components/profile/ProfileExam.jsx'
@@ -80,6 +80,7 @@ export default function ExamPage() {
         <div className="profile-actions">
           <BookmarkButton examId={exam.id} />
           <CompareButton examId={exam.id} />
+          <ShareButton title={exam.abbreviation || exam.name} />
         </div>
         {!isHistorical && <ForYouPanel exam={getIndexRecord(exam.id)} />}
         {isHistorical && (

@@ -1,15 +1,15 @@
 /**
- * Exam card for directories and lists, plus the bookmark / compare action buttons
+ * Exam card for directories and lists, plus the bookmark, compare and share buttons
  * reused on profiles. Reads the compact index record only. The card shows a hook and three
  * headline numbers; everything else lives on the exam page.
  */
 import { Link } from 'react-router'
-import { Bookmark, BookmarkCheck, GitCompareArrows, Check, MapPin, CalendarClock } from 'lucide-react'
+import { Bookmark, BookmarkCheck, GitCompareArrows, Check, MapPin, CalendarClock, Share2 } from 'lucide-react'
 import { StatusBadge, LevelMeter } from './Badges.jsx'
 import { VerdictBadge } from './MyVerdict.jsx'
 import { useSaved } from '../lib/saved.jsx'
 import { labelFor } from '../lib/data.js'
-import { formatDate, formatCount, daysFromToday, firstSentence, payHeadline } from '../lib/format.js'
+import { formatDate, formatCount, daysFromToday, firstSentence, payHeadline, countdownText, urgentWithinDays } from '../lib/format.js'
 
 /** Bookmark toggle button. */
 export function BookmarkButton({ examId, compact = false }) {
@@ -41,8 +41,26 @@ export function CompareButton({ examId, compact = false }) {
   )
 }
 
-// Upcoming official dates closer than this many days get a highlighted countdown chip.
-const urgentWithinDays = 45
+/**
+ * Share button: opens the device share sheet where supported (most phones), otherwise
+ * WhatsApp with the exam name and link, since that is how most aspirants pass exam news.
+ */
+export function ShareButton({ title }) {
+  const share = () => {
+    const url = window.location.href.split('?')[0]
+    if (navigator.share) {
+      navigator.share({ title, url }).catch(() => {})
+      return
+    }
+    window.open(`https://wa.me/?text=${encodeURIComponent(`${title}: ${url}`)}`, '_blank', 'noopener')
+  }
+  return (
+    <button type="button" className="icon-button" onClick={share} title="Share this exam">
+      <Share2 size={16} aria-hidden="true" />
+      <span>Share</span>
+    </button>
+  )
+}
 
 /** Short line describing the key official date. */
 export function KeyEventLine({ keyEvent }) {
@@ -54,13 +72,6 @@ export function KeyEventLine({ keyEvent }) {
       {keyEvent.dateType === 'official-tentative' && ' (tentative)'}
     </span>
   )
-}
-
-/** Countdown text such as "today", "tomorrow" or "in 9 days". */
-function countdownText(days) {
-  if (days === 0) return 'today'
-  if (days === 1) return 'tomorrow'
-  return `in ${days} days`
 }
 
 /** Next-step chip: a bright countdown when an official date is close, a quiet line otherwise. */

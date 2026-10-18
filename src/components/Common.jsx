@@ -1,6 +1,6 @@
 /**
  * General building blocks: breadcrumbs, section headings, empty states, scroll reveal,
- * real-data counters, tabs, chip filters, single-choice pill filters and the "Show all"
+ * tabs, chip filters, single-choice pill filters and the "Show all"
  * toggle. Used by most pages.
  */
 import { useEffect, useRef, useState } from 'react'
@@ -94,28 +94,6 @@ export function Reveal({ children, as: Tag = 'div', className = '', delay = 0 })
       {children}
     </Tag>
   )
-}
-
-/** Counts up to a real number once; shows the final value immediately when motion is reduced. */
-export function Counter({ value }) {
-  const prefersReducedMotion = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-  const [displayed, setDisplayed] = useState(prefersReducedMotion ? value : 0)
-
-  useEffect(() => {
-    if (prefersReducedMotion) return undefined
-    let frameId
-    const startTime = performance.now()
-    // 900 ms ease-out count, short enough not to delay reading.
-    const step = (now) => {
-      const progress = Math.min(1, Math.max(0, (now - startTime) / 900))
-      setDisplayed(Math.round(value * (1 - (1 - progress) ** 3)))
-      if (progress < 1) frameId = requestAnimationFrame(step)
-    }
-    frameId = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(frameId)
-  }, [value, prefersReducedMotion])
-
-  return <span className="numeric">{displayed.toLocaleString('en-IN')}</span>
 }
 
 /** Accessible tab list; the parent owns the selected tab. */

@@ -1,18 +1,23 @@
 /**
  * Quick look tab: the default first view of an exam page. Answers the four questions
  * most readers come with (can I apply, what do I earn, how tough, when) in big type,
- * then shows the selection steps and top posts. Each block links to the detailed tab.
+ * then shows the selection steps, exams to prepare for together and top posts. Each block links to the detailed tab.
  * Rendered by pages/ExamPage.jsx.
  */
+import { Link } from 'react-router'
 import { ArrowRightCircle } from 'lucide-react'
 import { LevelMeter } from '../Badges.jsx'
 import { NextStepChip, KeyEventLine } from '../ExamCard.jsx'
 import { labelFor, getIndexRecord } from '../../lib/data.js'
 import { estimateSalary } from '../../lib/salary.js'
+import { companionsFor } from '../../lib/syllabus.js'
 import { formatCount, formatRupees, firstSentence, payHeadline } from '../../lib/format.js'
 
 // Only this many post names are shown before "and N more".
 const visiblePostCount = 5
+// Exams sharing at least this share of syllabus subjects count as "prepare together".
+const minimumSimilarity = 0.35
+const companionCount = 4
 
 /** Button that opens a detailed tab. */
 function MoreLink({ tabId, onOpenTab, children }) {
@@ -76,12 +81,14 @@ function payAnswer(exam) {
 export function QuickLookTab({ exam, onOpenTab }) {
   const rules = exam.eligibilityRules ?? {}
   // The date-aware key event is computed on the index record, not the full profile.
-  const keyEvent = getIndexRecord(exam.id)?.keyEvent
+  const indexRecord = getIndexRecord(exam.id)
+  const keyEvent = indexRecord?.keyEvent
   const competitionRow = latestCompetitionRow(exam.statistics)
   const perPost = competitionRow ? Math.round((competitionRow.appeared ?? competitionRow.applicants) / competitionRow.vacancies) : null
   const stages = exam.selection?.stages ?? []
   const posts = exam.posts ?? []
   const hiddenPostCount = posts.length - visiblePostCount
+  const companions = indexRecord?.syllabusTags?.length ? companionsFor(indexRecord, { limit: companionCount }).filter((entry) => entry.similarity >= minimumSimilarity) : []
 
   return (
     <div className="tab-body quick-look">
@@ -125,6 +132,22 @@ export function QuickLookTab({ exam, onOpenTab }) {
           <MoreLink tabId="selection" onOpenTab={onOpenTab}>
             Exam pattern and syllabus
           </MoreLink>
+        </section>
+      )}
+
+      {companions.length > 0 && (
+        <section className="quick-section">
+          <h3 className="quick-question">Prepare for these together</h3>
+          <ul className="quick-posts">
+            {companions.map((entry) => (
+              <li key={entry.exam.id}>
+                <Link to={`/exams/${entry.exam.id}`}>{entry.exam.abbreviation || entry.exam.name}</Link> <span className="faint">{Math.round(entry.coverage * 100)}% shared</span>
+              </li>
+            ))}
+          </ul>
+          <Link to="/syllabus" className="quick-more">
+            Syllabus overlap tool <ArrowRightCircle size={14} aria-hidden="true" />
+          </Link>
         </section>
       )}
 

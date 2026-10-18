@@ -8,7 +8,7 @@ import { Link } from 'react-router'
 import { Info } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SectionHeading, SegmentedFilter } from '../components/Common.jsx'
 import { useProfiles, examIndex, labelFor, getIndexRecord, governmentFilterOptions } from '../lib/data.js'
-import { formatDate, todayIso } from '../lib/format.js'
+import { formatDate, todayIso, daysFromToday, countdownText, urgentWithinDays } from '../lib/format.js'
 import { useSaved } from '../lib/saved.jsx'
 import { verdictFor, isProfileUsable } from '../lib/candidate.js'
 
@@ -24,8 +24,15 @@ function groupByMonth(events) {
   return [...groups.entries()]
 }
 
-/** Event list for one period. */
-function EventGroups({ events }) {
+/** Countdown chip for an upcoming day-precise date within the urgent window, else nothing. */
+function Countdown({ date }) {
+  const days = daysFromToday(date)
+  if (days == null || days < 0 || days > urgentWithinDays) return null
+  return <span className={`event-countdown ${days <= 7 ? 'is-urgent' : ''}`}>{countdownText(days)}</span>
+}
+
+/** Event list for one period; upcoming lists show countdowns for near dates. */
+function EventGroups({ events, showCountdown = false }) {
   if (!events.length) return <EmptyState title="No dated events">Nothing in this period for the chosen government.</EmptyState>
   return groupByMonth(events).map(([month, monthEvents]) => (
     <section key={month} className="calendar-month">
@@ -42,7 +49,10 @@ function EventGroups({ events }) {
               </span>
               {event.dateType === 'official-tentative' && <span className="faint"> (tentative, official calendar)</span>}
             </span>
-            <span className="faint small">{labelFor('jurisdictions', event.jurisdiction)}</span>
+            <span className="event-meta">
+              {showCountdown && <Countdown date={event.date} />}
+              <span className="faint small">{labelFor('jurisdictions', event.jurisdiction)}</span>
+            </span>
           </li>
         ))}
       </ol>
@@ -97,7 +107,7 @@ export default function CalendarPage() {
       ) : (
         <>
           <SectionHeading number="01" title="Upcoming" description={`${upcoming.length} dated events from ${formatDate(today)}`} />
-          <EventGroups events={upcoming} />
+          <EventGroups events={upcoming} showCountdown />
           <SectionHeading number="02" title="Recent and past" description="Most recent first." />
           <EventGroups events={past.slice(0, 120)} />
         </>

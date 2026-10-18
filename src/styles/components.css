@@ -1008,6 +1008,10 @@
   cursor: not-allowed;
 }
 
+.select-value {
+  font-weight: 500;
+}
+
 .select-value,
 .select-placeholder {
   overflow: hidden;
@@ -1138,4 +1142,15 @@
 
 .directory-sort {
   flex: 0 0 230px;
+}
+
+@media (max-width: 560px) {
+  .select-menu {
+    width: 100%;
+    max-width: calc(100vw - 32px);
+  }
+
+  .select-option {
+    padding: 11px 10px;
+  }
 }
