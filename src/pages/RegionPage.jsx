@@ -60,7 +60,7 @@ export default function RegionPage({ jurisdiction }) {
         </div>
       )}
 
-      {sectors.length === 0 && <EmptyState title="No profiles yet">Exam profiles for {regionName} are not added yet. Its pay rules are already in the salary explorer.</EmptyState>}
+      {sectors.length === 0 && <EmptyState title="Pay rules only" action={<Link to="/salary" className="button">Open the salary explorer</Link>}>This guide covers {regionName} pay scales, DA and allowances. Compare them with Central, Andhra Pradesh and Telangana pay in the salary explorer.</EmptyState>}
 
       {sectors.map(([sector, sectorExams], position) => (
         <section key={sector}>

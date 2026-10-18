@@ -1,0 +1,281 @@
+{
+  "id": "army-ssc-tech",
+  "name": "Indian Army Short Service Commission (Technical)",
+  "abbreviation": "Army SSC Tech",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "indian-army",
+    "name": "Indian Army",
+    "abbreviation": "Army",
+    "website": "https://joinindianarmy.nic.in"
+  },
+  "department": "Indian Army",
+  "technical": true,
+  "summary": "Short Service Commission for engineering graduates, men and women, with no written exam: shortlisting on marks, then SSB and medicals. 49 weeks of training at OTA Chennai. The 68th course has 381 seats.",
+  "employmentType": "short-service",
+  "recruitmentMethods": [
+    "academic-merit",
+    "ssb-interview",
+    "medical-exam"
+  ],
+  "frequency": "Twice a year (April and October courses)",
+  "officialLinks": [
+    {
+      "label": "Join Indian Army",
+      "url": "https://joinindianarmy.nic.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "SSC (Tech)-68 (April 2027 course, 350 men and 31 women) closed in August 2026. The next notice (SSC Tech-69) usually comes around January.",
+    "cycles": [
+      {
+        "cycle": "SSC (Tech)-68",
+        "events": [
+          {
+            "event": "Last date to apply (men)",
+            "date": "2026-08-07",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Lieutenant (Short Service Commission), technical arms",
+      "group": "Commissioned officer",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "ageMin": 20,
+      "ageMax": 27,
+      "responsibilities": "Technical officer duties.",
+      "notes": "Commission for 10 years, extendable; Permanent Commission possible."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "20 to 27 years on the course start date.",
+      "referenceDate": "Course start date"
+    },
+    "nationality": "Unmarried Indian citizens (men and women); some widow entries.",
+    "education": {
+      "summary": "BE / BTech in the notified stream; final-year students may apply.",
+      "finalYearAllowed": true,
+      "minMarks": "Shortlisting cut-off on marks"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "physical": "Army medical standards.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-any"
+    ],
+    "notes": "Engineering graduates.",
+    "ageMin": 20,
+    "ageMax": 27,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Shortlisting on engineering marks",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "SSB interview",
+        "type": "ssb",
+        "countsInMerit": true
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit on SSB marks, stream-wise.",
+    "languages": "English.",
+    "documentVerification": "At SSB.",
+    "probation": "49 weeks of training at OTA Chennai."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://joinindianarmy.nic.in",
+    "sections": [
+      {
+        "stage": "SSB",
+        "subject": "Officer selection",
+        "topics": [
+          "Screening tests",
+          "Psychology tests, group tasks and interview"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "interview-personality",
+    "military-aptitude",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2027,
+      "vacancies": 381,
+      "note": "SSC (Tech)-68: 350 men, 31 women.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "defence-7cpc",
+    "payLevel": "Level 10 (Lieutenant / Sub Lieutenant)",
+    "payScale": "56,100 to 1,77,500",
+    "startingBasic": 56100,
+    "fixedAdditions": [
+      {
+        "name": "Military Service Pay",
+        "amount": 15500,
+        "daApplies": true
+      }
+    ],
+    "specialAllowances": [
+      {
+        "name": "Training stipend",
+        "detail": "Rs 56,100 a month during training."
+      }
+    ],
+    "pension": "Defence pension only with Permanent Commission and qualifying service.",
+    "notes": "Same officer pay table as CDS and AFCAT.",
+    "sources": [
+      "defencePay"
+    ]
+  },
+  "career": {
+    "sources": [
+      "defencePay"
+    ],
+    "progression": [
+      {
+        "post": "Lieutenant",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Captain",
+        "level": "Level 10B",
+        "timeline": "Time scale",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Short Service officers can be considered for Permanent Commission."
+  },
+  "benefits": [
+    {
+      "item": "Armed forces benefits",
+      "detail": "Free medical care, canteen, quarters, leave travel and group insurance.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Units, ships or stations anywhere in India, including field areas.",
+    "transfers": "Every 2 to 3 years.",
+    "nature": "Military officer duties in a technical arm or branch.",
+    "workload": "High.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate to high.",
+    "stability": "High during the commission."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "low",
+    "technicalComplexity": "low",
+    "physicalRequirements": "medium",
+    "selectionUncertainty": "high",
+    "rationale": "No exam, but high cut-offs on marks and a tough SSB."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Large intake twice a year; tenure is short service."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Short service",
+        "level": "medium",
+        "note": "Permanent Commission is not guaranteed."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Indian Army SSC Tech 68th recruitment notification 2026",
+      "url": "https://testbook.com/news/indian-army-ssc-tech-68th-recruitment-notifcation-2026-out/",
+      "publisher": "Testbook (reports the official notice)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "defencePay",
+      "title": "CDS (II) 2026 notification: armed forces officer pay table and MSP",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Stream-wise seats and age reckoning date not confirmed."
+    ],
+    "notes": "From secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

@@ -15,7 +15,7 @@ const regionBlurbs = {
   central: 'UPSC, SSC, Railways, banks, defence, CAPF, science bodies and PSUs.',
   'andhra-pradesh': 'APPSC, police, DSC teachers, power utilities and more.',
   telangana: 'TGPSC, police, teacher recruitment, gurukul and health boards and more.',
-  karnataka: 'KPSC, KEA, police, teacher recruitment, power utilities and more.',
+  karnataka: 'Karnataka 7th State Pay Commission scales, DA and allowances.',
 }
 
 /** Exams of one government with the most recent vacancies first. */
@@ -41,7 +41,6 @@ function RegionCard({ jurisdiction, label }) {
             <span className="numeric">{activeCount}</span> active now
           </span>
         )}
-        {isEmpty && <span className="region-soon">Coming soon</span>}
       </div>
       <h3>
         <Link to={jurisdictionRoutes[jurisdiction]} className="region-card-link">
@@ -59,7 +58,7 @@ function RegionCard({ jurisdiction, label }) {
         </ul>
       )}
       <span className="region-count">
-        {isEmpty ? 'Pay rules ready' : <><span className="numeric">{exams.length}</span> profiles</>} <ArrowRight size={14} aria-hidden="true" />
+        {isEmpty ? 'Pay rules and salary guide' : <><span className="numeric">{exams.length}</span> profiles</>} <ArrowRight size={14} aria-hidden="true" />
       </span>
     </article>
   )

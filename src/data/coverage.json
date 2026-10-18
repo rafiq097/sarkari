@@ -201,7 +201,10 @@
         "army-agniveer",
         "navy-agniveer",
         "iaf-agniveervayu",
-        "coast-guard-enrolled"
+        "coast-guard-enrolled",
+        "army-tgc",
+        "army-ssc-tech",
+        "navy-ssc-officer"
       ],
       "notes": "Agnipath package from the official PIB release; Coast Guard from the official CGEPT notice; other details secondary."
     },
@@ -257,7 +260,8 @@
         "isro-scientist",
         "drdo-scientist-b",
         "barc-oces",
-        "gate-psu"
+        "gate-psu",
+        "aai-junior-executive"
       ],
       "notes": "DRDO GATE route from the official notice; other figures secondary."
     },

@@ -1,0 +1,294 @@
+{
+  "id": "army-tgc",
+  "name": "Indian Army Technical Graduate Course (TGC)",
+  "abbreviation": "Army TGC",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "indian-army",
+    "name": "Indian Army",
+    "abbreviation": "Army",
+    "website": "https://joinindianarmy.nic.in"
+  },
+  "department": "Indian Army (Corps of Engineers, Signals, EME and others)",
+  "technical": true,
+  "summary": "Permanent Commission for unmarried male engineering graduates, with no written exam: shortlisting on marks, then the SSB interview and medicals. Training at IMA Dehradun. About 30 seats per course, twice a year.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "academic-merit",
+    "ssb-interview",
+    "medical-exam"
+  ],
+  "frequency": "Twice a year (January and July courses)",
+  "officialLinks": [
+    {
+      "label": "Join Indian Army",
+      "url": "https://joinindianarmy.nic.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "TGC-145 (course from July 2027): applications 30 September to 29 October 2026, about 30 seats. TGC-144 closed in June 2026.",
+    "cycles": [
+      {
+        "cycle": "TGC-145",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-09-30",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-10-29",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Lieutenant (Permanent Commission), technical arms",
+      "group": "Commissioned officer",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "ageMin": 20,
+      "ageMax": 27,
+      "responsibilities": "Engineering and technical leadership in the Army.",
+      "notes": "Seats split by engineering stream."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "20 to 27 years on the course start date (1 July 2027 for TGC-145).",
+      "referenceDate": "Course start date"
+    },
+    "nationality": "Unmarried male Indian citizens.",
+    "education": {
+      "summary": "BE / BTech in the notified stream. Final-year students may apply if they submit the degree by the date in the notice.",
+      "finalYearAllowed": true,
+      "minMarks": "Shortlisting cut-off on marks"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "physical": "Army medical standards.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "male",
+    "domicile": null,
+    "educationFields": [
+      "engineering-any"
+    ],
+    "notes": "Men only; engineering graduates.",
+    "ageMin": 20,
+    "ageMax": 27,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Shortlisting on engineering marks",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "SSB interview (5 days)",
+        "type": "ssb",
+        "countsInMerit": true
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit on SSB marks among medically fit candidates, stream-wise.",
+    "languages": "English.",
+    "documentVerification": "At SSB.",
+    "probation": "One year of training at IMA Dehradun."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://joinindianarmy.nic.in",
+    "sections": [
+      {
+        "stage": "SSB",
+        "subject": "Officer selection",
+        "topics": [
+          "Officer intelligence rating and picture perception",
+          "Psychology tests",
+          "Group tasks and personal interview"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "interview-personality",
+    "military-aptitude",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2027,
+      "vacancies": 30,
+      "note": "TGC-145, tentative.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "defence-7cpc",
+    "payLevel": "Level 10 (Lieutenant / Sub Lieutenant)",
+    "payScale": "56,100 to 1,77,500",
+    "startingBasic": 56100,
+    "fixedAdditions": [
+      {
+        "name": "Military Service Pay",
+        "amount": 15500,
+        "daApplies": true
+      }
+    ],
+    "specialAllowances": [
+      {
+        "name": "Training stipend",
+        "detail": "Rs 56,100 a month during training."
+      }
+    ],
+    "pension": "Defence pension only with Permanent Commission and qualifying service.",
+    "notes": "Same officer pay table as CDS and AFCAT.",
+    "sources": [
+      "defencePay"
+    ]
+  },
+  "career": {
+    "sources": [
+      "defencePay"
+    ],
+    "progression": [
+      {
+        "post": "Lieutenant",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Captain",
+        "level": "Level 10B",
+        "timeline": "Time scale",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Major",
+        "level": "Level 11",
+        "timeline": "Time scale",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Permanent Commission from the start."
+  },
+  "benefits": [
+    {
+      "item": "Armed forces benefits",
+      "detail": "Free medical care, canteen, quarters, leave travel and group insurance.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Units, ships or stations anywhere in India, including field areas.",
+    "transfers": "Every 2 to 3 years.",
+    "nature": "Military officer duties in a technical arm or branch.",
+    "workload": "High.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate to high.",
+    "stability": "High during the commission."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "low",
+    "technicalComplexity": "low",
+    "physicalRequirements": "medium",
+    "selectionUncertainty": "high",
+    "rationale": "No exam, but only about 30 seats and a tough SSB."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Permanent Commission twice a year without a written test."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Few seats",
+        "level": "medium",
+        "note": "About 30 per course."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Indian Army TGC-145 recruitment 2026: 30 vacancies, apply till 29 October",
+      "url": "https://www.sarkarijobs.com/indian-army-tgc-145-recruitment-2026-online-form-for-30-engineering-graduate-vacancies-available-till-october-29/",
+      "publisher": "SarkariJobs (reports the official notice)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "defencePay",
+      "title": "CDS (II) 2026 notification: armed forces officer pay table and MSP",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Stream-wise seat split not confirmed."
+    ],
+    "notes": "From secondary reports of the official notice."
+  },
+  "lastVerified": "2026-10-18"
+}

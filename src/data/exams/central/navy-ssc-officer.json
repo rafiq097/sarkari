@@ -1,0 +1,271 @@
+{
+  "id": "navy-ssc-officer",
+  "name": "Indian Navy Short Service Commission Officers (BTech entry)",
+  "abbreviation": "Navy SSC Officer",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "indian-navy",
+    "name": "Indian Navy",
+    "abbreviation": "Navy",
+    "website": "https://www.joinindiannavy.gov.in"
+  },
+  "department": "Indian Navy",
+  "technical": true,
+  "summary": "Officer entry for BE/BTech graduates (60%) into Executive, Pilot, Observer, Engineering, Electrical, Naval Constructor, Logistics and Education branches. No written exam: shortlisting on marks, then SSB. About 275 posts per course.",
+  "employmentType": "short-service",
+  "recruitmentMethods": [
+    "academic-merit",
+    "ssb-interview",
+    "medical-exam"
+  ],
+  "frequency": "Twice a year (January and June courses)",
+  "officialLinks": [
+    {
+      "label": "Join Indian Navy",
+      "url": "https://www.joinindiannavy.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "June 2027 course (about 275 posts) closed in July / August 2026. The next notice is usually around January to February.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Sub Lieutenant (Short Service Commission)",
+      "group": "Commissioned officer",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "ageMin": 19,
+      "ageMax": 24,
+      "responsibilities": "Officer duties in the chosen branch.",
+      "notes": "Training at INA Ezhimala."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "Birth-date window per branch (roughly 19 to 24; pilot and observer narrower).",
+      "referenceDate": "Course start date"
+    },
+    "nationality": "Unmarried Indian citizens (men and women; submarine roles men only).",
+    "education": {
+      "summary": "BE / BTech with at least 60% for most branches; Logistics also takes MBA, MCA or MSc (IT); Education takes MSc / MA or BE / BTech.",
+      "finalYearAllowed": true,
+      "minMarks": "60%"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "physical": "Navy medical standards.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-any",
+      "management",
+      "computer-applications"
+    ],
+    "notes": "Age window differs by branch.",
+    "ageMin": 19,
+    "ageMax": 24,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Shortlisting on normalised marks",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "SSB interview",
+        "type": "ssb",
+        "countsInMerit": true
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit on SSB marks among medically fit candidates.",
+    "languages": "English.",
+    "documentVerification": "At SSB.",
+    "probation": "Training at Indian Naval Academy, Ezhimala."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.joinindiannavy.gov.in",
+    "sections": [
+      {
+        "stage": "SSB",
+        "subject": "Officer selection",
+        "topics": [
+          "Screening and psychology tests",
+          "Group tasks and interview"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "interview-personality",
+    "military-aptitude",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2027,
+      "vacancies": 275,
+      "note": "June 2027 course, tentative.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "defence-7cpc",
+    "payLevel": "Level 10 (Lieutenant / Sub Lieutenant)",
+    "payScale": "56,100 to 1,77,500",
+    "startingBasic": 56100,
+    "fixedAdditions": [
+      {
+        "name": "Military Service Pay",
+        "amount": 15500,
+        "daApplies": true
+      }
+    ],
+    "specialAllowances": [
+      {
+        "name": "Training stipend",
+        "detail": "Rs 56,100 a month during training."
+      }
+    ],
+    "pension": "Defence pension only with Permanent Commission and qualifying service.",
+    "notes": "Same officer pay table as CDS and AFCAT.",
+    "sources": [
+      "defencePay"
+    ]
+  },
+  "career": {
+    "sources": [
+      "defencePay"
+    ],
+    "progression": [
+      {
+        "post": "Sub Lieutenant",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Lieutenant",
+        "level": "Level 10B",
+        "timeline": "Time scale",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Short Service officers can be considered for Permanent Commission."
+  },
+  "benefits": [
+    {
+      "item": "Armed forces benefits",
+      "detail": "Free medical care, canteen, quarters, leave travel and group insurance.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Ships, air stations and shore establishments.",
+    "transfers": "Every 2 to 3 years.",
+    "nature": "Military officer duties in a technical arm or branch.",
+    "workload": "High.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate to high.",
+    "stability": "High during the commission."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "low",
+    "technicalComplexity": "low",
+    "physicalRequirements": "medium",
+    "selectionUncertainty": "high",
+    "rationale": "High marks cut-offs and the SSB filter most applicants."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Two courses a year for BTech graduates."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Short service",
+        "level": "medium",
+        "note": "Permanent Commission is not guaranteed."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Indian Navy SSC officer recruitment for the June 2027 course",
+      "url": "https://www.pw.live/defence/exams/indian-navy-ssc-officer-recruitment-2026-for-june-2027-course",
+      "publisher": "Physics Wallah",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "defencePay",
+      "title": "CDS (II) 2026 notification: armed forces officer pay table and MSP",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Branch-wise posts and exact age windows not reproduced."
+    ],
+    "notes": "From secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

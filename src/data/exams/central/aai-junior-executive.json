@@ -1,0 +1,294 @@
+{
+  "id": "aai-junior-executive",
+  "name": "AAI Junior Executive (Engineering, through GATE)",
+  "abbreviation": "AAI JE",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "engineering-psu",
+  "organization": {
+    "id": "aai",
+    "name": "Airports Authority of India",
+    "abbreviation": "AAI",
+    "website": "https://www.aai.aero"
+  },
+  "department": "Airports Authority of India",
+  "technical": true,
+  "summary": "Junior Executive posts in airports for civil, electrical, electronics, IT and architecture graduates, selected on GATE scores. The 2025 drive had 976 posts, the largest share in Electronics (527).",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "gate-based",
+    "document-verification"
+  ],
+  "frequency": "Every one to two years",
+  "officialLinks": [
+    {
+      "label": "AAI careers",
+      "url": "https://www.aai.aero/en/careers/recruitment"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The last GATE-based drive (Advt 09/2025/CHQ, 976 posts) closed on 27 September 2025. A 2026 AAI drive (389 posts) covered non-engineering Junior Executive and Manager posts.",
+    "cycles": [
+      {
+        "cycle": "Advt 09/2025/CHQ",
+        "events": [
+          {
+            "event": "Last date to apply",
+            "date": "2025-09-27",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Junior Executive (Electronics)",
+      "group": "E-1",
+      "payLevel": "IDA scale",
+      "startingBasic": null,
+      "ageMax": 27,
+      "responsibilities": "Airport communication, navigation and surveillance systems.",
+      "notes": "2025: 527 posts."
+    },
+    {
+      "name": "Junior Executive (Civil, Electrical)",
+      "group": "E-1",
+      "payLevel": "IDA scale",
+      "startingBasic": null,
+      "ageMax": 27,
+      "responsibilities": "Runway, building and power works.",
+      "notes": "2025: 199 civil, 208 electrical."
+    },
+    {
+      "name": "Junior Executive (IT, Architecture)",
+      "group": "E-1",
+      "payLevel": "IDA scale",
+      "startingBasic": null,
+      "ageMax": 27,
+      "responsibilities": "IT systems and airport design.",
+      "notes": "2025: 31 IT, 11 architecture."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        }
+      ],
+      "summary": "Up to 27 on the closing date; SC/ST 5, OBC 3, PwBD 10 years relaxation.",
+      "referenceDate": "Closing date"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "BE / BTech in the matching discipline (or architecture / IT degrees as listed) and a valid GATE score in the matching paper.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-civil",
+      "engineering-electrical",
+      "engineering-electronics",
+      "engineering-computer"
+    ],
+    "notes": "Needs a valid GATE score.",
+    "ageMin": 18,
+    "ageMax": 27,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Shortlisting on GATE score",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Document verification and medical",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit on GATE score in the matching paper.",
+    "languages": "English.",
+    "documentVerification": "After shortlisting.",
+    "probation": "As per AAI rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.aai.aero/en/careers/recruitment",
+    "sections": [
+      {
+        "stage": "GATE",
+        "subject": "Matching paper",
+        "topics": [
+          "GATE syllabus of EC, EE, CE, CS or AR"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "engineering-electronics",
+    "engineering-electrical",
+    "engineering-civil",
+    "engineering-computer",
+    "engineering-mathematics"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 976,
+      "note": "Advt 09/2025/CHQ.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "E-1 (IDA)",
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "IDA pay with perks; the exact scale is in the notice (not confirmed here).",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Junior Executive",
+        "level": "E-1",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Assistant Manager, Manager",
+        "level": "E-2, E-3",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "AAI promotion policy."
+  },
+  "benefits": [
+    {
+      "item": "PSU benefits",
+      "detail": "Medical, leave travel, housing and performance pay as per AAI rules.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Airports across India.",
+    "transfers": "Periodic.",
+    "nature": "Airport engineering and systems.",
+    "workload": "Moderate to high, with shifts.",
+    "publicInteraction": "Low.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Pure GATE-score merit; a good rank is enough."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "medium",
+    "rationale": "Large GATE intake when notified; no interview."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Irregular drives",
+        "level": "medium",
+        "note": "Engineering drives come every one to two years."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AAI JE application begins for 976 posts",
+      "url": "https://scroll.in/announcements/1086001/aai-je-application-begins-for-976-posts-heres-direct-link",
+      "publisher": "Scroll.in",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "AAI recruitment 2026 notification for 389 vacancies",
+      "url": "https://news.careers360.com/aai-recruitment-2026-notification-manager-junior-executive-389-vacancies-aero-salary",
+      "publisher": "Careers360",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Pay scale and exact GATE papers not confirmed."
+    ],
+    "notes": "Posts and dates from secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

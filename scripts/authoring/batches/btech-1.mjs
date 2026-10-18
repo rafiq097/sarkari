@@ -1,0 +1,113 @@
+/**
+ * Batch: extra routes for BE/BTech graduates (October 2026): Army TGC, Army SSC (Tech),
+ * Navy SSC officers, and AAI Junior Executive through GATE. All from secondary reports of
+ * the official notices; defence pay follows the CDS / defence pay table already in the data.
+ */
+const army = { id: 'indian-army', name: 'Indian Army', abbreviation: 'Army', website: 'https://joinindianarmy.nic.in' }
+const navy = { id: 'indian-navy', name: 'Indian Navy', abbreviation: 'Navy', website: 'https://www.joinindiannavy.gov.in' }
+const aai = { id: 'aai', name: 'Airports Authority of India', abbreviation: 'AAI', website: 'https://www.aai.aero' }
+const noRelaxation = { OBC: 0, SC: 0, ST: 0, EWS: 0, PwBD: 0 }
+
+/** Officer pay shared by the three defence entries (Lieutenant / Sub Lieutenant, Level 10 plus MSP). */
+const officerSalary = { payRuleSet: 'defence-7cpc', payLevel: 'Level 10 (Lieutenant / Sub Lieutenant)', payScale: '56,100 to 1,77,500', startingBasic: 56100, fixedAdditions: [{ name: 'Military Service Pay', amount: 15500, daApplies: true }], specialAllowances: [{ name: 'Training stipend', detail: 'Rs 56,100 a month during training.' }], pension: 'Defence pension only with Permanent Commission and qualifying service.', notes: 'Same officer pay table as CDS and AFCAT.', sources: ['defencePay'] }
+const officerWork = { postings: 'Units, ships or stations anywhere in India, including field areas.', transfers: 'Every 2 to 3 years.', nature: 'Military officer duties in a technical arm or branch.', workload: 'High.', publicInteraction: 'Low.', hazards: 'Moderate to high.', stability: 'High during the commission.' }
+const officerBenefits = [{ item: 'Armed forces benefits', detail: 'Free medical care, canteen, quarters, leave travel and group insurance.', conditional: false, sources: ['s1'] }]
+
+export default [
+  {
+    id: 'army-tgc', name: 'Indian Army Technical Graduate Course (TGC)', abbreviation: 'Army TGC', jurisdiction: 'central', sector: 'defence', organization: army, technical: true, centralRelaxation: false, sharedSources: ['defencePay'],
+    department: 'Indian Army (Corps of Engineers, Signals, EME and others)', summary: 'Permanent Commission for unmarried male engineering graduates, with no written exam: shortlisting on marks, then the SSB interview and medicals. Training at IMA Dehradun. About 30 seats per course, twice a year.',
+    recruitmentMethods: ['academic-merit', 'ssb-interview', 'medical-exam'], frequency: 'Twice a year (January and July courses)',
+    officialLinks: [{ label: 'Join Indian Army', url: 'https://joinindianarmy.nic.in' }],
+    status: { type: 'active', note: 'TGC-145 (course from July 2027): applications 30 September to 29 October 2026, about 30 seats. TGC-144 closed in June 2026.', cycles: [{ cycle: 'TGC-145', events: [{ event: 'Applications open', date: '2026-09-30', dateType: 'official', source: 's1' }, { event: 'Last date to apply', date: '2026-10-29', dateType: 'official', source: 's1' }] }] },
+    posts: [{ name: 'Lieutenant (Permanent Commission), technical arms', group: 'Commissioned officer', payLevel: 'Level 10', startingBasic: 56100, ageMin: 20, ageMax: 27, responsibilities: 'Engineering and technical leadership in the Army.', notes: 'Seats split by engineering stream.' }],
+    eligibility: { age: { summary: '20 to 27 years on the course start date (1 July 2027 for TGC-145).', referenceDate: 'Course start date', relaxations: [] }, nationality: 'Unmarried male Indian citizens.', education: { summary: 'BE / BTech in the notified stream. Final-year students may apply if they submit the degree by the date in the notice.', finalYearAllowed: true, minMarks: 'Shortlisting cut-off on marks' }, attempts: [{ category: 'All', limit: 'Within the age limits' }], physical: 'Army medical standards.' },
+    eligibilityRules: { ageMin: 20, ageMax: 27, minEducation: 'graduate', educationFields: ['engineering-any'], finalYearAllowed: true, gender: 'male', relaxationYears: noRelaxation, notes: 'Men only; engineering graduates.' },
+    selection: { stages: [{ name: 'Shortlisting on engineering marks', type: 'objective', countsInMerit: false }, { name: 'SSB interview (5 days)', type: 'ssb', countsInMerit: true }, { name: 'Medical examination', type: 'medical', countsInMerit: false }],
+      meritCalculation: 'Merit on SSB marks among medically fit candidates, stream-wise.', languages: 'English.', documentVerification: 'At SSB.', probation: 'One year of training at IMA Dehradun.' },
+    syllabus: { officialLink: 'https://joinindianarmy.nic.in', sections: [{ stage: 'SSB', subject: 'Officer selection', topics: ['Officer intelligence rating and picture perception', 'Psychology tests', 'Group tasks and personal interview'] }] },
+    syllabusTags: ['interview-personality', 'military-aptitude', 'physical-fitness'],
+    statistics: [{ year: 2027, vacancies: 30, note: 'TGC-145, tentative.', source: 's1' }],
+    salary: officerSalary,
+    career: { progression: [{ post: 'Lieutenant', level: 'Level 10', timeline: 'Entry', timelineType: 'official' }, { post: 'Captain', level: 'Level 10B', timeline: 'Time scale', timelineType: 'typical' }, { post: 'Major', level: 'Level 11', timeline: 'Time scale', timelineType: 'typical' }], promotionNotes: 'Permanent Commission from the start.', sources: ['defencePay'] },
+    benefits: officerBenefits, workLife: officerWork,
+    difficulty: { syllabusDepth: 'low', competition: 'high', timePressure: 'low', technicalComplexity: 'low', physicalRequirements: 'medium', selectionUncertainty: 'high', rationale: 'No exam, but only about 30 seats and a tough SSB.' },
+    ratings: { careerGrowth: 'high', locationFlexibility: 'low', recruitmentRegularity: 'high', rationale: 'Permanent Commission twice a year without a written test.' },
+    risk: { overall: 'low', factors: [{ factor: 'Few seats', level: 'medium', note: 'About 30 per course.' }] },
+    sources: [['s1', 'Indian Army TGC-145 recruitment 2026: 30 vacancies, apply till 29 October', 'https://www.sarkarijobs.com/indian-army-tgc-145-recruitment-2026-online-form-for-30-engineering-graduate-vacancies-available-till-october-29/', 'SarkariJobs (reports the official notice)', 2026, 'secondary']],
+    dataQuality: { confidence: 'medium', gaps: ['Stream-wise seat split not confirmed.'], notes: 'From secondary reports of the official notice.' },
+  },
+  {
+    id: 'army-ssc-tech', name: 'Indian Army Short Service Commission (Technical)', abbreviation: 'Army SSC Tech', jurisdiction: 'central', sector: 'defence', organization: army, technical: true, centralRelaxation: false, employmentType: 'short-service', sharedSources: ['defencePay'],
+    department: 'Indian Army', summary: 'Short Service Commission for engineering graduates, men and women, with no written exam: shortlisting on marks, then SSB and medicals. 49 weeks of training at OTA Chennai. The 68th course has 381 seats.',
+    recruitmentMethods: ['academic-merit', 'ssb-interview', 'medical-exam'], frequency: 'Twice a year (April and October courses)',
+    officialLinks: [{ label: 'Join Indian Army', url: 'https://joinindianarmy.nic.in' }],
+    status: { type: 'recurring', note: 'SSC (Tech)-68 (April 2027 course, 350 men and 31 women) closed in August 2026. The next notice (SSC Tech-69) usually comes around January.', cycles: [{ cycle: 'SSC (Tech)-68', events: [{ event: 'Last date to apply (men)', date: '2026-08-07', dateType: 'official', source: 's1' }] }] },
+    posts: [{ name: 'Lieutenant (Short Service Commission), technical arms', group: 'Commissioned officer', payLevel: 'Level 10', startingBasic: 56100, ageMin: 20, ageMax: 27, responsibilities: 'Technical officer duties.', notes: 'Commission for 10 years, extendable; Permanent Commission possible.' }],
+    eligibility: { age: { summary: '20 to 27 years on the course start date.', referenceDate: 'Course start date', relaxations: [] }, nationality: 'Unmarried Indian citizens (men and women); some widow entries.', education: { summary: 'BE / BTech in the notified stream; final-year students may apply.', finalYearAllowed: true, minMarks: 'Shortlisting cut-off on marks' }, attempts: [{ category: 'All', limit: 'Within the age limits' }], physical: 'Army medical standards.' },
+    eligibilityRules: { ageMin: 20, ageMax: 27, minEducation: 'graduate', educationFields: ['engineering-any'], finalYearAllowed: true, relaxationYears: noRelaxation, notes: 'Engineering graduates.' },
+    selection: { stages: [{ name: 'Shortlisting on engineering marks', type: 'objective', countsInMerit: false }, { name: 'SSB interview', type: 'ssb', countsInMerit: true }, { name: 'Medical examination', type: 'medical', countsInMerit: false }],
+      meritCalculation: 'Merit on SSB marks, stream-wise.', languages: 'English.', documentVerification: 'At SSB.', probation: '49 weeks of training at OTA Chennai.' },
+    syllabus: { officialLink: 'https://joinindianarmy.nic.in', sections: [{ stage: 'SSB', subject: 'Officer selection', topics: ['Screening tests', 'Psychology tests, group tasks and interview'] }] },
+    syllabusTags: ['interview-personality', 'military-aptitude', 'physical-fitness'],
+    statistics: [{ year: 2027, vacancies: 381, note: 'SSC (Tech)-68: 350 men, 31 women.', source: 's1' }],
+    salary: officerSalary,
+    career: { progression: [{ post: 'Lieutenant', level: 'Level 10', timeline: 'Entry', timelineType: 'official' }, { post: 'Captain', level: 'Level 10B', timeline: 'Time scale', timelineType: 'typical' }], promotionNotes: 'Short Service officers can be considered for Permanent Commission.', sources: ['defencePay'] },
+    benefits: officerBenefits, workLife: officerWork,
+    difficulty: { syllabusDepth: 'low', competition: 'high', timePressure: 'low', technicalComplexity: 'low', physicalRequirements: 'medium', selectionUncertainty: 'high', rationale: 'No exam, but high cut-offs on marks and a tough SSB.' },
+    ratings: { careerGrowth: 'medium', locationFlexibility: 'low', recruitmentRegularity: 'high', rationale: 'Large intake twice a year; tenure is short service.' },
+    risk: { overall: 'medium', factors: [{ factor: 'Short service', level: 'medium', note: 'Permanent Commission is not guaranteed.' }] },
+    sources: [['s1', 'Indian Army SSC Tech 68th recruitment notification 2026', 'https://testbook.com/news/indian-army-ssc-tech-68th-recruitment-notifcation-2026-out/', 'Testbook (reports the official notice)', 2026, 'secondary']],
+    dataQuality: { confidence: 'medium', gaps: ['Stream-wise seats and age reckoning date not confirmed.'], notes: 'From secondary reports.' },
+  },
+  {
+    id: 'navy-ssc-officer', name: 'Indian Navy Short Service Commission Officers (BTech entry)', abbreviation: 'Navy SSC Officer', jurisdiction: 'central', sector: 'defence', organization: navy, technical: true, centralRelaxation: false, employmentType: 'short-service', sharedSources: ['defencePay'],
+    department: 'Indian Navy', summary: 'Officer entry for BE/BTech graduates (60%) into Executive, Pilot, Observer, Engineering, Electrical, Naval Constructor, Logistics and Education branches. No written exam: shortlisting on marks, then SSB. About 275 posts per course.',
+    recruitmentMethods: ['academic-merit', 'ssb-interview', 'medical-exam'], frequency: 'Twice a year (January and June courses)',
+    officialLinks: [{ label: 'Join Indian Navy', url: 'https://www.joinindiannavy.gov.in' }],
+    status: { type: 'recurring', note: 'June 2027 course (about 275 posts) closed in July / August 2026. The next notice is usually around January to February.', cycles: [] },
+    posts: [{ name: 'Sub Lieutenant (Short Service Commission)', group: 'Commissioned officer', payLevel: 'Level 10', startingBasic: 56100, ageMin: 19, ageMax: 24, responsibilities: 'Officer duties in the chosen branch.', notes: 'Training at INA Ezhimala.' }],
+    eligibility: { age: { summary: 'Birth-date window per branch (roughly 19 to 24; pilot and observer narrower).', referenceDate: 'Course start date', relaxations: [] }, nationality: 'Unmarried Indian citizens (men and women; submarine roles men only).', education: { summary: 'BE / BTech with at least 60% for most branches; Logistics also takes MBA, MCA or MSc (IT); Education takes MSc / MA or BE / BTech.', finalYearAllowed: true, minMarks: '60%' }, attempts: [{ category: 'All', limit: 'Within the age limits' }], physical: 'Navy medical standards.' },
+    eligibilityRules: { ageMin: 19, ageMax: 24, minEducation: 'graduate', educationFields: ['engineering-any', 'management', 'computer-applications'], finalYearAllowed: true, relaxationYears: noRelaxation, notes: 'Age window differs by branch.' },
+    selection: { stages: [{ name: 'Shortlisting on normalised marks', type: 'objective', countsInMerit: false }, { name: 'SSB interview', type: 'ssb', countsInMerit: true }, { name: 'Medical examination', type: 'medical', countsInMerit: false }],
+      meritCalculation: 'Merit on SSB marks among medically fit candidates.', languages: 'English.', documentVerification: 'At SSB.', probation: 'Training at Indian Naval Academy, Ezhimala.' },
+    syllabus: { officialLink: 'https://www.joinindiannavy.gov.in', sections: [{ stage: 'SSB', subject: 'Officer selection', topics: ['Screening and psychology tests', 'Group tasks and interview'] }] },
+    syllabusTags: ['interview-personality', 'military-aptitude', 'physical-fitness'],
+    statistics: [{ year: 2027, vacancies: 275, note: 'June 2027 course, tentative.', source: 's1' }],
+    salary: officerSalary,
+    career: { progression: [{ post: 'Sub Lieutenant', level: 'Level 10', timeline: 'Entry', timelineType: 'official' }, { post: 'Lieutenant', level: 'Level 10B', timeline: 'Time scale', timelineType: 'typical' }], promotionNotes: 'Short Service officers can be considered for Permanent Commission.', sources: ['defencePay'] },
+    benefits: officerBenefits, workLife: { ...officerWork, postings: 'Ships, air stations and shore establishments.' },
+    difficulty: { syllabusDepth: 'low', competition: 'high', timePressure: 'low', technicalComplexity: 'low', physicalRequirements: 'medium', selectionUncertainty: 'high', rationale: 'High marks cut-offs and the SSB filter most applicants.' },
+    ratings: { careerGrowth: 'medium', locationFlexibility: 'low', recruitmentRegularity: 'high', rationale: 'Two courses a year for BTech graduates.' },
+    risk: { overall: 'medium', factors: [{ factor: 'Short service', level: 'medium', note: 'Permanent Commission is not guaranteed.' }] },
+    sources: [['s1', 'Indian Navy SSC officer recruitment for the June 2027 course', 'https://www.pw.live/defence/exams/indian-navy-ssc-officer-recruitment-2026-for-june-2027-course', 'Physics Wallah', 2026, 'secondary']],
+    dataQuality: { confidence: 'medium', gaps: ['Branch-wise posts and exact age windows not reproduced.'], notes: 'From secondary reports.' },
+  },
+  {
+    id: 'aai-junior-executive', name: 'AAI Junior Executive (Engineering, through GATE)', abbreviation: 'AAI JE', jurisdiction: 'central', sector: 'engineering-psu', organization: aai, technical: true,
+    department: 'Airports Authority of India', summary: 'Junior Executive posts in airports for civil, electrical, electronics, IT and architecture graduates, selected on GATE scores. The 2025 drive had 976 posts, the largest share in Electronics (527).',
+    recruitmentMethods: ['gate-based', 'document-verification'], frequency: 'Every one to two years',
+    officialLinks: [{ label: 'AAI careers', url: 'https://www.aai.aero/en/careers/recruitment' }],
+    status: { type: 'recurring', note: 'The last GATE-based drive (Advt 09/2025/CHQ, 976 posts) closed on 27 September 2025. A 2026 AAI drive (389 posts) covered non-engineering Junior Executive and Manager posts.', cycles: [{ cycle: 'Advt 09/2025/CHQ', events: [{ event: 'Last date to apply', date: '2025-09-27', dateType: 'official', source: 's1' }] }] },
+    posts: [
+      { name: 'Junior Executive (Electronics)', group: 'E-1', payLevel: 'IDA scale', startingBasic: null, ageMax: 27, responsibilities: 'Airport communication, navigation and surveillance systems.', notes: '2025: 527 posts.' },
+      { name: 'Junior Executive (Civil, Electrical)', group: 'E-1', payLevel: 'IDA scale', startingBasic: null, ageMax: 27, responsibilities: 'Runway, building and power works.', notes: '2025: 199 civil, 208 electrical.' },
+      { name: 'Junior Executive (IT, Architecture)', group: 'E-1', payLevel: 'IDA scale', startingBasic: null, ageMax: 27, responsibilities: 'IT systems and airport design.', notes: '2025: 31 IT, 11 architecture.' }],
+    eligibility: { age: { summary: 'Up to 27 on the closing date; SC/ST 5, OBC 3, PwBD 10 years relaxation.', referenceDate: 'Closing date', relaxations: [{ category: 'SC / ST', years: 5 }, { category: 'OBC', years: 3 }, { category: 'PwBD', years: 10 }] }, nationality: 'Citizen of India.', education: { summary: 'BE / BTech in the matching discipline (or architecture / IT degrees as listed) and a valid GATE score in the matching paper.', finalYearAllowed: false, minMarks: null }, attempts: [{ category: 'All', limit: 'Within the age limits' }] },
+    eligibilityRules: { ageMin: 18, ageMax: 27, minEducation: 'graduate', educationFields: ['engineering-civil', 'engineering-electrical', 'engineering-electronics', 'engineering-computer'], relaxationYears: { OBC: 3, SC: 5, ST: 5, EWS: 0, PwBD: 10 }, notes: 'Needs a valid GATE score.' },
+    selection: { stages: [{ name: 'Shortlisting on GATE score', type: 'objective', countsInMerit: true }, { name: 'Document verification and medical', type: 'document', countsInMerit: false }],
+      meritCalculation: 'Merit on GATE score in the matching paper.', languages: 'English.', documentVerification: 'After shortlisting.', probation: 'As per AAI rules.' },
+    syllabus: { officialLink: 'https://www.aai.aero/en/careers/recruitment', sections: [{ stage: 'GATE', subject: 'Matching paper', topics: ['GATE syllabus of EC, EE, CE, CS or AR'] }] },
+    syllabusTags: ['engineering-electronics', 'engineering-electrical', 'engineering-civil', 'engineering-computer', 'engineering-mathematics'],
+    statistics: [{ year: 2025, vacancies: 976, note: 'Advt 09/2025/CHQ.', source: 's1' }],
+    salary: { payRuleSet: 'other', payLevel: 'E-1 (IDA)', payScale: null, startingBasic: null, notes: 'IDA pay with perks; the exact scale is in the notice (not confirmed here).' },
+    career: { progression: [{ post: 'Junior Executive', level: 'E-1', timeline: 'Entry', timelineType: 'official' }, { post: 'Assistant Manager, Manager', level: 'E-2, E-3', timeline: 'By promotion', timelineType: 'typical' }], promotionNotes: 'AAI promotion policy.', sources: ['s1'] },
+    benefits: [{ item: 'PSU benefits', detail: 'Medical, leave travel, housing and performance pay as per AAI rules.', conditional: true, sources: ['s1'] }],
+    workLife: { postings: 'Airports across India.', transfers: 'Periodic.', nature: 'Airport engineering and systems.', workload: 'Moderate to high, with shifts.', publicInteraction: 'Low.', hazards: 'Low.', stability: 'Very high.' },
+    difficulty: { syllabusDepth: 'high', competition: 'high', timePressure: 'high', technicalComplexity: 'high', physicalRequirements: 'low', selectionUncertainty: 'medium', rationale: 'Pure GATE-score merit; a good rank is enough.' },
+    ratings: { careerGrowth: 'medium', locationFlexibility: 'low', recruitmentRegularity: 'medium', rationale: 'Large GATE intake when notified; no interview.' },
+    risk: { overall: 'low', factors: [{ factor: 'Irregular drives', level: 'medium', note: 'Engineering drives come every one to two years.' }] },
+    sources: [['s1', 'AAI JE application begins for 976 posts', 'https://scroll.in/announcements/1086001/aai-je-application-begins-for-976-posts-heres-direct-link', 'Scroll.in', 2025, 'secondary'], ['s2', 'AAI recruitment 2026 notification for 389 vacancies', 'https://news.careers360.com/aai-recruitment-2026-notification-manager-junior-executive-389-vacancies-aero-salary', 'Careers360', 2026, 'secondary']],
+    dataQuality: { confidence: 'medium', gaps: ['Pay scale and exact GATE papers not confirmed.'], notes: 'Posts and dates from secondary reports.' },
+  },
+]

@@ -49,6 +49,11 @@ function optionsWithCounts(definition) {
 
 const regionOptions = governmentFilterOptions()
 
+/** True when a BE/BTech graduate fits the route: a technical route, or one listing engineering degrees. */
+function suitsEngineers(exam) {
+  return exam.technical || (exam.eligibilityRules?.educationFields ?? []).some((field) => field.startsWith('engineering'))
+}
+
 /** Directory page. */
 export default function DirectoryPage() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -58,6 +63,7 @@ export default function DirectoryPage() {
   const sortKey = sortOptions[searchParams.get('sort')] ? searchParams.get('sort') : query ? 'relevance' : 'name'
   const minimumBasic = Number(searchParams.get('minPay') ?? 0)
   const onlyEligible = searchParams.get('eligible') === '1' && Boolean(candidate)
+  const onlyEngineers = searchParams.get('btech') === '1'
 
   const setParam = (key, value) => {
     const next = new URLSearchParams(searchParams)
@@ -67,7 +73,7 @@ export default function DirectoryPage() {
   }
 
   const activeFilters = filterDefinitions.map((definition) => ({ definition, values: readList(searchParams, definition.key) })).filter((entry) => entry.values.length)
-  const activeCount = activeFilters.length + (minimumBasic ? 1 : 0) + (onlyEligible ? 1 : 0)
+  const activeCount = activeFilters.length + (minimumBasic ? 1 : 0) + (onlyEligible ? 1 : 0) + (onlyEngineers ? 1 : 0)
   const selectedRegions = readList(searchParams, 'region')
   // The pill row shows a single government; a multi-government choice from the panel highlights none.
   const quickRegion = selectedRegions.length <= 1 ? (selectedRegions[0] ?? '') : null
@@ -78,12 +84,13 @@ export default function DirectoryPage() {
     let records = searchExams(query)
     for (const { definition, values } of activeFilters) records = records.filter((exam) => definition.matches(exam, values))
     if (minimumBasic) records = records.filter((exam) => (exam.salary.startingBasic ?? 0) >= minimumBasic)
+    if (onlyEngineers) records = records.filter(suitsEngineers)
     if (onlyEligible) records = records.filter((exam) => evaluateExam(exam, candidate, todayIso()).verdict !== 'not-eligible')
     const compare = sortOptions[sortKey].compare
     return compare ? [...records].sort(compare) : records
     // activeFilters is derived from searchParams, which is already a dependency.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, searchParams, minimumBasic, onlyEligible, candidate, sortKey])
+  }, [query, searchParams, minimumBasic, onlyEligible, onlyEngineers, candidate, sortKey])
 
   return (
     <>
@@ -115,6 +122,10 @@ export default function DirectoryPage() {
         <label className={`chip ${isActiveOnly ? 'is-on' : ''}`}>
           <input type="checkbox" checked={isActiveOnly} onChange={(event) => setParam('status', event.target.checked ? ['active'] : [])} />
           Active now
+        </label>
+        <label className={`chip ${onlyEngineers ? 'is-on' : ''}`}>
+          <input type="checkbox" checked={onlyEngineers} onChange={(event) => setParam('btech', event.target.checked ? '1' : '')} />
+          For BTech grads
         </label>
         {candidate && (
           <label className={`chip ${onlyEligible ? 'is-on' : ''}`}>
@@ -177,6 +188,11 @@ export default function DirectoryPage() {
           {minimumBasic > 0 && (
             <button type="button" className="chip is-on" onClick={() => setParam('minPay', '')}>
               Basic from Rs {minimumBasic.toLocaleString('en-IN')} <X size={13} aria-hidden="true" />
+            </button>
+          )}
+          {onlyEngineers && (
+            <button type="button" className="chip is-on" onClick={() => setParam('btech', '')}>
+              For BTech grads <X size={13} aria-hidden="true" />
             </button>
           )}
           {onlyEligible && (
