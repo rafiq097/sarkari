@@ -1,5 +1,5 @@
 /**
- * Batch: SSC CHSL, JE, Stenographer (2026 notices).
+ * Batch: SSC CHSL, JE, Stenographer, Combined Hindi Translators (2026 notices).
  * Facts taken from the official SSC notices listed in each spec's sources.
  */
 const ssc = { id: 'ssc', name: 'Staff Selection Commission', abbreviation: 'SSC', website: 'https://ssc.gov.in' }
@@ -167,5 +167,46 @@ export default [
     risk: commonRisk('Held every year.'),
     sources: [['s1', 'Notice: Stenographer Grade C and D Examination, 2026', `${noticeBase}/Notice_of_adv_steno_2026.pdf`, 'Staff Selection Commission', 2026]],
     dataQuality: { confidence: 'high', gaps: ['Exam date after the notice not confirmed.', 'All transcription time limits not reproduced.'], notes: 'From the 2026 notice.' },
+  },
+  {
+    id: 'ssc-cht', name: 'Combined Hindi Translators Examination', abbreviation: 'SSC CHT', jurisdiction: 'central', sector: 'ssc', organization: ssc,
+    department: 'Central ministries (Official Language departments), AFHQ, Railways and others',
+    summary: 'Recruits Junior Hindi Translators, Junior Translators and Senior Hindi Translators. An objective Paper I in Hindi and English, then a descriptive translation and essay Paper II. Requires a master\'s degree in Hindi or English with the other language at degree level.',
+    recruitmentMethods: ['competitive-exam', 'document-verification'], frequency: 'Annual (SSC calendar)',
+    officialLinks: [{ label: 'CHT 2026 notice', url: `${noticeBase}/Notice_of_adv_cht_2026.pdf` }],
+    status: { type: 'active', note: 'Held every year; usually notified in spring.', cycles: [{ cycle: 'CHT 2026', events: [
+      { event: 'Applications open', date: '2026-04-23', dateType: 'official', source: 's1' },
+      { event: 'Last date to apply', date: '2026-05-14', dateType: 'official', source: 's1' }] }] },
+    posts: [
+      { name: 'Junior Hindi Translator / Junior Translator', group: 'Group B', payLevel: 'Level 6', startingBasic: 35400, responsibilities: 'Translating official documents between Hindi and English.' },
+      { name: 'Senior Hindi Translator', group: 'Group B', payLevel: 'Level 7', startingBasic: 44900, responsibilities: 'Senior translation work.' }],
+    eligibility: {
+      age: { summary: '18 to 30 years on 1 August of the exam year (born 2 Aug 1996 to 1 Aug 2008 for 2026).', referenceDate: '1 August of the exam year' },
+      nationality: 'As per notice.',
+      education: { summary: 'Master\'s degree in Hindi or English (with the other language as a compulsory or elective subject at degree level), or an equivalent combination, plus a recognised diploma or certificate in Hindi-English translation or 2 years of translation experience, as set out post-wise in the notice.', finalYearAllowed: false, minMarks: null },
+      attempts: [{ category: 'All', limit: 'No attempt limit' }],
+    },
+    eligibilityRules: { ageMin: 18, ageMax: 30, ageReferenceDate: '2026-08-01', minEducation: 'postgraduate', educationFields: ['languages'], notes: 'Hindi and English combination plus translation diploma or experience.' },
+    selection: {
+      stages: [
+        { name: 'Paper I (computer-based)', type: 'objective', countsInMerit: true, papers: [{ name: 'General Hindi and General English', marks: 200, notes: 'Minus 0.25 per wrong answer.' }] },
+        { name: 'Paper II (descriptive)', type: 'descriptive', countsInMerit: true, papers: [{ name: 'Translation (two passages) and essay', marks: 200 }] }],
+      meritCalculation: 'Final merit = 50% of Paper I score + 100% of Paper II marks. Separate category cutoffs may apply in each paper.', languages: 'Hindi and English.', documentVerification: 'After Paper II.', probation: 'As per user department.',
+    },
+    syllabus: { officialLink: `${noticeBase}/Notice_of_adv_cht_2026.pdf`, sections: [{ stage: 'Paper I and II', subject: 'Hindi and English', topics: ['Grammar, vocabulary, comprehension in Hindi and English', 'Translation of passages Hindi to English and English to Hindi', 'Essay writing'] }] },
+    syllabusTags: ['hindi-language', 'english-language', 'essay-writing'],
+    statistics: [{ year: 2026, vacancies: 84, note: 'Tentative vacancies in the notice.', source: 's1' }],
+    salary: { payRuleSet: 'central-7cpc', payLevel: 'Level 6 (JHT/JT) / Level 7 (SHT)', payScale: '35,400 / 44,900 first cell', startingBasic: 35400, pension: 'NPS with the UPS option.', increments: '3% a year; MACP.' },
+    career: { progression: [
+      { post: 'Junior Hindi Translator', level: 'Level 6', timeline: 'Entry', timelineType: 'official' },
+      { post: 'Senior Hindi Translator', level: 'Level 7', timeline: 'By promotion', timelineType: 'typical' },
+      { post: 'Assistant Director (Official Language)', level: 'Level 10', timeline: 'Senior', timelineType: 'typical' }],
+      promotionNotes: 'Official Language cadre promotions depend on vacancies.', macp: 'MACP at 10, 20 and 30 years.' },
+    workLife: { postings: 'Ministries and offices across India.', transfers: 'Limited.', nature: 'Desk.', workload: 'Moderate.', publicInteraction: 'Low.', hazards: 'Low.', stability: 'Very high.' },
+    difficulty: { syllabusDepth: 'medium', competition: 'medium', timePressure: 'medium', technicalComplexity: 'low', physicalRequirements: 'low', selectionUncertainty: 'medium', rationale: 'Niche qualification limits the field; the descriptive translation paper decides most of the result.' },
+    ratings: { careerGrowth: 'medium', locationFlexibility: 'low', recruitmentRegularity: 'high', rationale: 'Annual, with a small number of posts.' },
+    risk: commonRisk('Held every year, but with under 100 to a few hundred posts.'),
+    sources: [['s1', 'Notice: Combined Hindi Translators Examination, 2026', `${noticeBase}/Notice_of_adv_cht_2026.pdf`, 'Staff Selection Commission', 2026]],
+    dataQuality: { confidence: 'medium', gaps: ['Exact post-wise qualification wording summarised.', 'Pay level of each translator post not quoted from the notice.'], notes: 'From the 2026 notice.' },
   },
 ]
