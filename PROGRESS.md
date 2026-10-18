@@ -7,6 +7,9 @@ Resume from this file if work spans sessions. Research notes live in docs/resear
 - Pay rules: src/data/pay-rules/pay-rules.json (Central DA 60% from 1 Jan 2026; AP 41.86%; TS 40.04%; KA 15.75%)
 - Profiles: central/upsc-cse (full explainer)
 
+## Scope rule (from Rafiq)
+- Skip less popular routes whose main post starts below Rs 20,000 basic (e.g. MTS, RRB Group D, ALP, Level 1 state posts). List them as excluded in coverage.json.
+
 ## Writing rules
 - Official sources first; secondary marked. Never guess; use null + dataQuality.gaps.
 - Durable wording: describe yearly patterns, not "currently open".
