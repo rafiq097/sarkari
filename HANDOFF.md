@@ -52,9 +52,9 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 ## 6. Done (44 profiles, all committed; scope = Central, AP, Telangana, Karnataka)
 Central (24): upsc-cse (full guide), upsc-ifos, upsc-ese, upsc-cds, upsc-nda-na, upsc-capf-ac, ssc-cgl, ssc-chsl, ssc-je, ssc-stenographer, ssc-cht, ssc-cpo, ssc-gd-constable, rrb-ntpc-graduate, rrb-ntpc-undergraduate, rrb-je, rpf-si, rpf-constable, ibps-po, ibps-clerk, ibps-rrb, sbi-po, sbi-junior-associate, rbi-grade-b.
 Andhra Pradesh (12): appsc-group-1 (07/2026), appsc-group-2 (37/2026), appsc-aee (27/2026), appsc-hwo (25/2026), appsc-amvi (36/2026), appsc-aso-statistics (20/2026), appsc-horticulture-officer (19/2026), ap-police-si, ap-police-constable (SLPRB Sep 2026), ap-dsc (2026 prelim notice, 2,721 posts), ap-tet (2026), ap-power-aee (630 AEE posts 2026).
-Telangana (8): tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4, tgpsc-aee (01/G/RB/2026), tg-tet, tg-dsc (recurring, 2024 cycle), ts-police (TGPRB 2026: 7,437 posts, official press note).
+Telangana (10): tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4, tgpsc-aee (01/G/RB/2026), tg-tet, tg-dsc (recurring, 2024 cycle), ts-police (TGPRB 2026: 7,437 posts, official press note). tg-gurukul-treirb (2023, 9,210 posts), tg-staff-nurse (MHSRB 2024, 2,322 posts).
 Karnataka: back in scope (route, nav, pay rules ka-7spc, vocabulary, coverage). No profiles yet; do not research further unless asked.
-Removed by scope rule: ssc-mts-havaldar.
+Removed by scope rule: ssc-mts-havaldar only. Never delete finished profiles; skip niche ones only for new research.
 
 ## 7. Research leads (not profiled)
 - APPSC 2026 notices still unprofiled: ASWO/ATWO 26/2026, Asst. Environmental Engineer 08/2026, Inspector of Factories 14/2026, Asst. Director 09/2026, Draughtsman 15/2026, FSO 17/2026, FBO 18/2026 (23 posts), FRO 16/2026 (5 posts, skipped as minor). List page: https://portal-psc.ap.gov.in/HomePages/RecruitmentNotifications.aspx
@@ -64,6 +64,8 @@ Removed by scope rule: ssc-mts-havaldar.
 - NABARD Grade A 2026 not notified as of Aug 2026.
 
 ## 8. Next steps (when Rafiq asks)
+- Done Oct 2026: CTET, KVS/NVS, IB ACIO, AFCAT, LIC AAO, EPFO, NORCET, UGC NET, NABARD, Agniveer, TG gurukul, TG staff nurse, APPSC lecturers.
+- Still pending (see coverage.json pending): UPSC CMS/IES/CGS, Navy/IAF Agniveer, SEBI, RBI Assistant, IBPS SO, ISRO/DRDO/BARC, GATE PSUs, EMRS, ESIC, FCI, TG power AE (no 2026 notice), Karnataka profiles (do not research unless asked).
 1. More AP and Telangana profiles from section 7 (priority: TREIRB gurukul, MHSRB staff nurse, APPSC lecturers, TG power AE).
 2. Central extras (only if asked): UPSC CMS, IES/ISS, CGS, EPFO EO/APFC; AFCAT; Agniveer; NABARD, SEBI, LIC AAO; ISRO, DRDO, BARC, GATE PSUs; KVS/NVS, CTET, UGC NET; AIIMS NORCET; IB ACIO; EPFO SSA; FCI; ESIC.
 3. Keep src/data/coverage.json updated as profiles are added.
@@ -75,6 +77,10 @@ Removed by scope rule: ssc-mts-havaldar.
 - Bank and RBI gross pay are not modelled (quarterly DA); `officialGross` shows where the recruiter states it (SBI JA about Rs 46,000 at metro).
 
 ## 10. Latest additions
+- Header shows only All exams, Central, Tools; states via RegionCards (components/RegionCards.jsx) on home and at the foot of region pages, footer and mobile menu.
+- My profile: stepped CandidateForm (3 steps, popular chips first) beside a sticky MatchPanel. Filters: SegmentedFilter pills (Common.jsx) via governmentFilterOptions (lib/data.js) on directory, calendar, syllabus, sources; directory has a quick filter row and a 2-column panel with "Show N results".
+- Site name: Sarkari Shiksha.
+- payHeadline (lib/format.js) handles basic, fixed packages (officialGross) and eligibility tests.
 - Card redesign (`ExamCard.jsx`: HeadlineNumber, NextStepChip with countdown under 45 days), Quick look tab (`profile/ProfileQuickLook.jsx`), index field `vacancies` (latest year) from build-data, posts list collapsed to 6.
 - My Profile (`/profile`): details saved in browser, editable any time, used on exam pages (Your eligibility panel), cards (verdict badge), home strip, calendar filter, directory filter, eligibility checker.
 - Your plan (`/plan`, `src/lib/recommend.js`, `src/pages/PlanPage.jsx`): ranked picks with transparent points and reasons, focus subjects, prepare-together (syllabus overlap with top pick), last-chance-by-age alerts, coming-up dates. Linked from home, profile and tools.
