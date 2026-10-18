@@ -47,23 +47,23 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 - AP SLPRB: `https://slprb.ap.gov.in/` (2026 press note is a scanned image).
 - RBI opportunities page did not parse; RBI facts used a secondary report.
 
-## 6. Done (33 profiles, all committed)
+## 6. Done (35 profiles, all committed)
 Central (24): upsc-cse (full guide), upsc-ifos, upsc-ese, upsc-cds, upsc-nda-na, upsc-capf-ac, ssc-cgl, ssc-chsl, ssc-je, ssc-stenographer, ssc-cht, ssc-cpo, ssc-gd-constable, rrb-ntpc-graduate, rrb-ntpc-undergraduate, rrb-je, rpf-si, rpf-constable, ibps-po, ibps-clerk, ibps-rrb, sbi-po, sbi-junior-associate, rbi-grade-b.
 Andhra Pradesh (5): appsc-group-1 (07/2026, 166 posts, screening 24 Jan 2027), appsc-group-2 (37/2026, 686 posts), appsc-aee (27/2026), ap-police-si, ap-police-constable (SLPRB 2026).
-Telangana (4): tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4.
+Telangana (6): tgpsc-aee, tg-tet, tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4.
 Karnataka: none yet.
 Removed by scope: ssc-mts-havaldar.
 
 ## 7. Researched but NOT yet written (facts ready)
-- TGPSC AEE (Civil) R&B, Notification 01/G/RB/2026 dated 02/06/2026: 222 posts (multi-zone), age 18-44 on 01/07/2026 (G.O.Ms.No.86 GA dt 18/05/2026 raised upper age by 10 years, 34 to 44), pay 54,220-1,33,630, apply 06/06/2026 to 13/07/2026 5 PM, exam tentatively October 2026, objective: Paper I GS & General Abilities 150 Q/150 M/150 min, Paper II Civil Engg (degree) 150 Q/300 M/150 min, total 450; min marks OC/EWS/sports 40%, BC 35%, SC/ST/PH 30%. Source: TGPSC directRecruitment page (preview link). Also 02/G/RB/2026 AEE (Electrical) exists.
-- TG TET June 2026: notification 13 Apr 2026, apply 15-30 Apr, CBT 15-30 Jun 2026, no negative marking, fee Rs 750/1000 (Gen/OBC), Rs 700/950 (SC/ST/PwBD); TET score has 20% weightage in TRT; held twice a year. Source: Careers360 article (secondary).
+- (WRITTEN as tgpsc-aee) TGPSC AEE (Civil) R&B, Notification 01/G/RB/2026 dated 02/06/2026: 222 posts (multi-zone), age 18-44 on 01/07/2026 (G.O.Ms.No.86 GA dt 18/05/2026 raised upper age by 10 years, 34 to 44), pay 54,220-1,33,630, apply 06/06/2026 to 13/07/2026 5 PM, exam tentatively October 2026, objective: Paper I GS & General Abilities 150 Q/150 M/150 min, Paper II Civil Engg (degree) 150 Q/300 M/150 min, total 450; min marks OC/EWS/sports 40%, BC 35%, SC/ST/PH 30%. Source: TGPSC directRecruitment page (preview link). Also 02/G/RB/2026 AEE (Electrical) exists.
+- (WRITTEN as tg-tet) TG TET June 2026: notification 13 Apr 2026, apply 15-30 Apr, CBT 15-30 Jun 2026, no negative marking, fee Rs 750/1000 (Gen/OBC), Rs 700/950 (SC/ST/PwBD); TET score has 20% weightage in TRT; held twice a year. Source: Careers360 article (secondary).
 - TG DSC 2026: not officially notified by mid-Oct 2026 (last DSC 2024 had 11,062 posts).
 - Other APPSC 2026 notices on the list page (not profiled): ASO 20/2026, HWO 25/2026, ASWO/ATWO 26/2026, AMVI 36/2026, Horticulture 19/2026, Asst. Environmental Engineer 08/2026, Inspector of Factories 14/2026, Asst. Director 09/2026, Draughtsman 15/2026, FSO 17/2026, FBO 18/2026 (23 posts, 25,220), FRO 16/2026 (5 posts, skipped).
 - TGPSC 2026 notices: DEO/Gazetted HM 03/G/SE/2026, DIET lecturers 04/G/SE/2026, Town Planning 05 and 06/G/TP/2026, TGPCB AEE and Analyst.
 - NABARD Grade A 2026: not notified as of Aug 2026. RBI Grade B 2026: 60 posts (done).
 
 ## 8. Next steps (in order)
-1. Write TS AEE and TG TET profiles from section 7 (batch `ts-2.mjs`). TS police (TGLPRB): last cycle 2022, research needed.
+1. TS police (TGLPRB): last cycle 2022, research needed.
 2. Karnataka: KPSC KAS (Gazetted Probationers), KPSC FDA/SDA (Group C), KEA recruitments, KSP PSI and Civil Police Constable, GPSTR/HSTR teachers, KARTET, KPTCL AE/JE. Use `ka-7spc` pay rules (Karnataka HRA unverified: calculator asks user for HRA %).
 3. AP extras: AP DSC / AP TET (school education portal), APPSC ASO 20/2026, HWO.
 4. Central extras worth adding: UPSC CMS, IES/ISS, CGS, EPFO EO/APFC; AFCAT; Agniveer (fixed tenure); NABARD Grade A, SEBI Grade A, LIC AAO; ISRO ICRB scientist, DRDO, BARC, GATE (as eligibility route) + major PSUs via GATE; KVS/NVS teachers, CTET, UGC NET; AIIMS NORCET; IB ACIO; EPFO SSA; FCI; ESIC.

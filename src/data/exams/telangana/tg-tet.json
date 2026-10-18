@@ -1,0 +1,250 @@
+{
+  "id": "tg-tet",
+  "name": "Telangana Teacher Eligibility Test",
+  "abbreviation": "TG TET",
+  "profileType": "eligibility-test",
+  "jurisdiction": "telangana",
+  "sector": "teaching",
+  "organization": {
+    "id": "ts-school-education",
+    "name": "Department of School Education, Telangana",
+    "abbreviation": "TG School Education",
+    "website": "https://schooledu.telangana.gov.in"
+  },
+  "department": "Department of School Education, Telangana",
+  "technical": false,
+  "summary": "Qualifying test needed to become a government school teacher in Telangana. Paper I is for primary classes and Paper II for upper primary. It is not a job itself, but the TET score carries 20% weightage in the Teacher Recruitment Test (DSC).",
+  "employmentType": "eligibility-only",
+  "recruitmentMethods": [
+    "eligibility-test"
+  ],
+  "frequency": "Twice a year (recent pattern)",
+  "officialLinks": [
+    {
+      "label": "TG TET portal",
+      "url": "https://tgtet.aptonline.in"
+    },
+    {
+      "label": "School Education",
+      "url": "https://schooledu.telangana.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Held twice a year recently. June 2026 session: notification 13 April 2026, applications 15 to 30 April, CBT 15 to 30 June 2026.",
+    "cycles": [
+      {
+        "cycle": "TG TET June 2026",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-04-13",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Applications open",
+            "date": "2026-04-15",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-04-30",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Computer-based test begins",
+            "date": "2026-06-15",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "TET qualification (Paper I and/or Paper II)",
+      "group": "Eligibility certificate",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Makes you eligible for teacher recruitment in Telangana."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "Minimum 18 years; no upper limit for the TET itself.",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "As per notification.",
+    "education": {
+      "summary": "Paper I: Intermediate with a D.El.Ed (or equivalent teacher training). Paper II: a degree with B.Ed (or equivalent). Exact combinations follow NCTE norms listed in the notification.",
+      "finalYearAllowed": true,
+      "minMarks": "As per NCTE norms in the notification"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No limit; you may retake to improve your score"
+      }
+    ],
+    "examVsPost": "Passing TET does not give a job. You must then take the DSC / Teacher Recruitment Test, where the TET score is 20% of the merit.",
+    "reservation": null,
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "education"
+    ],
+    "notes": "Needs D.El.Ed (Paper I) or B.Ed with a degree (Paper II).",
+    "ageMin": 18,
+    "ageMax": null,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Computer-based test",
+        "type": "objective",
+        "countsInMerit": false,
+        "notes": "No negative marking. Paper I and Paper II are separate; you can take one or both."
+      }
+    ],
+    "meritCalculation": "Qualifying test; the score carries 20% weightage in the Teacher Recruitment Test.",
+    "languages": "English, Telugu and other languages as per notification.",
+    "documentVerification": "At DSC stage.",
+    "probation": "Not applicable."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://tgtet.aptonline.in",
+    "sections": [
+      {
+        "stage": "Paper I and II",
+        "subject": "Typical areas",
+        "topics": [
+          "Child development and pedagogy",
+          "Languages (Telugu or other first language, English)",
+          "Mathematics and environmental studies (Paper I)",
+          "Maths and science or social studies (Paper II)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "telugu-language",
+    "english-language",
+    "mathematics",
+    "general-science"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": null,
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "No salary: this is an eligibility test.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Teacher (after DSC selection)",
+        "level": "TS RPS 2020",
+        "timeline": "After TRT/DSC",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "See teacher recruitment (DSC)."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Not applicable.",
+    "transfers": "Not applicable.",
+    "nature": "Not applicable.",
+    "workload": "Not applicable.",
+    "publicInteraction": "Not applicable.",
+    "hazards": "Not applicable.",
+    "stability": "Not applicable."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "low",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "low",
+    "rationale": "Qualifying test; your score matters for DSC merit."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "high",
+    "rationale": "Held often; the job depends on DSC notifications."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "No job guarantee",
+        "level": "medium",
+        "note": "Teacher posts depend on irregular DSC notifications."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TG TET June 2026 notification released",
+      "url": "https://competition.careers360.com/articles/tg-tet-june-session-2026-notification-released",
+      "publisher": "Careers360 (reports the official notification)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Paper-wise question and marks breakdown not confirmed from the official notification.",
+      "Pass marks by category not confirmed."
+    ],
+    "notes": "Dates and fee from a secondary report."
+  },
+  "lastVerified": "2026-10-18"
+}
