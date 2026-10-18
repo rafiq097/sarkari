@@ -26,11 +26,10 @@
         "ssc-chsl",
         "ssc-je",
         "ssc-stenographer",
-        "ssc-cht",
         "ssc-cpo",
         "ssc-gd-constable"
       ],
-      "notes": "CGL, CHSL, JE, Stenographer and CHT from official 2026 notices; CPO and GD from secondary reports. MTS excluded (Level 1 pay). Selection Posts pending."
+      "notes": "CGL, CHSL, JE and Stenographer from official 2026 notices; CPO and GD from secondary reports. MTS excluded (Level 1 pay). Selection Posts pending."
     },
     {
       "jurisdiction": "central",
@@ -87,13 +86,9 @@
       "profiles": [
         "appsc-group-1",
         "appsc-group-2",
-        "appsc-aee",
-        "appsc-hwo",
-        "appsc-amvi",
-        "appsc-aso-statistics",
-        "appsc-horticulture-officer"
+        "appsc-aee"
       ],
-      "notes": "Official 2026 notifications. ASO, HWO, AMVI, Horticulture and others notified in 2026 but not yet profiled. FRO (5 posts) skipped as a minor cycle."
+      "notes": "Official 2026 notifications. Niche 2026 posts (HWO, AMVI, ASO Statistics, Horticulture, FRO and similar) skipped as less preferred."
     },
     {
       "jurisdiction": "andhra-pradesh",
@@ -175,7 +170,7 @@
   ],
   "excluded": [
     "Routes whose main post starts below Rs 20,000 basic pay, such as SSC MTS and Havaldar, RRB Group D and Assistant Loco Pilot, and Level 1 state posts.",
-    "Very small or niche cycles, such as APPSC Forest Range Officer 2026 (5 posts).",
+    "Very small or niche cycles with low candidate demand, such as SSC Combined Hindi Translators and APPSC Hostel Welfare Officer, AMVI, Assistant Statistical Officer, Horticulture Officer and Forest Range Officer.",
     "District-level and contract recruitments (anganwadi, outsourcing, home guards).",
     "Karnataka recruitment: removed from scope at the owner's request."
   ],
