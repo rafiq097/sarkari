@@ -151,6 +151,16 @@
         "ts-police"
       ],
       "notes": "Recurring profile from the 2022 cycle (secondary reports)."
+    },
+    {
+      "jurisdiction": "andhra-pradesh",
+      "name": "AP power utilities (APTRANSCO, APGENCO, DISCOMs)",
+      "website": "https://www.aptransco.co.in",
+      "status": "partial",
+      "profiles": [
+        "ap-power-aee"
+      ],
+      "notes": "2026 AEE recruitment from a secondary report."
     }
   ],
   "pending": [
