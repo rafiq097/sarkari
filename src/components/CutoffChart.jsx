@@ -7,7 +7,7 @@ import { useState } from 'react'
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 
 // Categorical series colours, chosen to stay distinct on the warm dark surface.
-const seriesColours = ['#e4a53f', '#93b99d', '#dc7b5d', '#c49ac0', '#d8cfc0', '#8fa8b8', '#b8a46a', '#7fb3a8']
+const seriesColours = ['#ffb627', '#7fd4a3', '#ff7d5c', '#d6a2f2', '#d8cfc0', '#8fa8b8', '#b8a46a', '#7fb3a8']
 
 /** Cutoff trend chart with a stage picker. */
 export function CutoffChart({ cutoffs }) {

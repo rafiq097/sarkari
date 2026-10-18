@@ -109,7 +109,7 @@
 }
 
 .region-card:hover {
-  border-color: #e4a53f77;
+  border-color: #ffb62777;
   transform: translateY(-2px);
 }
 
@@ -563,7 +563,7 @@
 
 .guide-section.kind-preparation {
   padding: 20px;
-  border: 1px dashed #c49ac066;
+  border: 1px dashed #d6a2f266;
   border-radius: var(--radius-large);
 }
 

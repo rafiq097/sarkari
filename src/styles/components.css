@@ -255,8 +255,8 @@
 }
 
 .button-primary:hover {
-  background: #edb456;
-  border-color: #edb456;
+  background: #ffc95a;
+  border-color: #ffc95a;
 }
 
 .button-ghost {
@@ -296,7 +296,7 @@
 
 .icon-button.is-on {
   color: var(--accent);
-  border-color: #e4a53f66;
+  border-color: #ffb62766;
   background: var(--accent-soft);
 }
 
