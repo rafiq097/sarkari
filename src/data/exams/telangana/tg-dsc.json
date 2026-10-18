@@ -28,8 +28,38 @@
   ],
   "status": {
     "type": "recurring",
-    "note": "The last DSC (2024) recruited about 11,062 teachers. A 2026 DSC had not been officially notified by mid-October 2026.",
-    "cycles": []
+    "note": "DSC is notified every few years. DSC-2024 (11,062 posts) took applications from 4 March to 2 April 2024, held the exam from 18 July to 5 August 2024 and published results on 30 September 2024.",
+    "cycles": [
+      {
+        "cycle": "DSC-2024",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2024-03-04",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2024-04-02",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Exam begins",
+            "date": "2024-07-18",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Results",
+            "date": "2024-09-30",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
   },
   "posts": [
     {
@@ -67,8 +97,8 @@
           "note": "As per notification."
         }
       ],
-      "summary": "Set in each notification.",
-      "referenceDate": "As per notification"
+      "summary": "18 to 46 years, reckoned on 1 July of the year before the notice (1 July 2023 for DSC-2024).",
+      "referenceDate": "1 July (as per notice)"
     },
     "nationality": "Citizen of India.",
     "domicile": "District cadre with local reservation.",
@@ -99,7 +129,7 @@
     ],
     "notes": "Needs D.El.Ed or B.Ed and TG TET.",
     "ageMin": 18,
-    "ageMax": null,
+    "ageMax": 46,
     "minEducation": "class-12",
     "relaxationYears": {
       "OBC": 5,
@@ -160,8 +190,8 @@
     {
       "year": 2024,
       "vacancies": 11062,
-      "note": "As reported for DSC 2024.",
-      "source": "s1"
+      "note": "DSC-2024: School Assistants, SGTs, Language Pandits, PETs and special education teachers.",
+      "source": "s2"
     }
   ],
   "rankAndAllocation": null,
@@ -243,15 +273,23 @@
       "year": 2024,
       "type": "secondary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Telangana DSC-2024 notification (copy of the official notice)",
+      "url": "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS_BLOGS/46a08b05-ff7a-415c-951e-199bc5dc7c29.pdf",
+      "publisher": "Department of School Education, Telangana",
+      "year": 2024,
+      "type": "primary",
+      "accessed": "2026-10-18"
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "Official DSC 2024 notification not read; vacancy count as reported.",
-      "Age, pay and exam pattern not verified."
+      "Pay scales by post and exam pattern not reproduced."
     ],
-    "notes": "Indicative profile for a recurring route."
+    "notes": "Posts, age and application dates from the official DSC-2024 notice."
   },
   "lastVerified": "2026-10-18"
 }
