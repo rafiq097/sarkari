@@ -1,0 +1,332 @@
+{
+  "id": "rpf-si",
+  "name": "Railway Protection Force Sub-Inspector (Executive)",
+  "abbreviation": "RPF SI",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "capf-police",
+  "organization": {
+    "id": "rrb",
+    "name": "Railway Recruitment Boards",
+    "abbreviation": "RRB",
+    "website": "https://www.rrbcdg.gov.in"
+  },
+  "department": "Railway Protection Force, Ministry of Railways",
+  "technical": false,
+  "summary": "Graduate entry as Sub-Inspector in the Railway Protection Force, which guards railway property and passengers. Recruitment is through the RRBs: a computer-based test, physical tests and document verification.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular (last cycle CEN RPF 01/2024)",
+  "officialLinks": [
+    {
+      "label": "Application count notice (RRBs)",
+      "url": "https://rrbsecunderabad.gov.in/wp-content/uploads/2025/07/Notice-on-details-of-Application-count_RPF-CENs.pdf"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Notified irregularly; the last cycle was CEN RPF 01/2024 (452 posts), with the CBT in December 2024.",
+    "cycles": [
+      {
+        "cycle": "CEN RPF 01/2024",
+        "events": [
+          {
+            "event": "CBT",
+            "date": "2024-12-02",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Sub-Inspector (Executive), RPF",
+      "group": "Group C",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Railway security, crime prevention on trains and stations."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "20 to 28 years on the date set in the CEN (CEN 01/2024).",
+      "referenceDate": "As per CEN"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A bachelor's degree.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "physical": "Physical Efficiency Test (running, long jump, high jump) and Physical Measurement Test (height, chest) as per CEN, with separate standards for men and women.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Physical tests apply.",
+    "ageMin": 20,
+    "ageMax": 28,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "CBT",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General Awareness, Arithmetic, General Intelligence and Reasoning",
+            "questions": 120,
+            "duration": "90 minutes"
+          }
+        ]
+      },
+      {
+        "name": "PET and PMT",
+        "type": "physical",
+        "countsInMerit": false
+      },
+      {
+        "name": "Document verification and medical",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the CBT among those passing PET/PMT.",
+    "languages": "English, Hindi and regional languages.",
+    "documentVerification": "After PET.",
+    "probation": "Training at RPF academies."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "CBT",
+        "subject": "Three parts",
+        "topics": [
+          "General awareness",
+          "Arithmetic",
+          "General intelligence and reasoning"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "general-awareness",
+    "quantitative-aptitude",
+    "reasoning",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2024,
+      "vacancies": 452,
+      "applicants": 1535635,
+      "note": "Valid applications, CEN RPF 01/2024 (official RRB notice).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 6",
+    "payScale": "35,400 to 1,12,400",
+    "startingBasic": 35400,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Sub-Inspector",
+        "level": "Level 6",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Inspector",
+        "level": "Level 7",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Assistant Security Commissioner",
+        "level": "Level 10",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "macp": "MACP at 10, 20 and 30 years."
+  },
+  "benefits": [
+    {
+      "item": "Railway passes",
+      "detail": "Privilege passes and privilege ticket orders for the employee and family, as per Railway pass rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Railway quarters and hospitals",
+      "detail": "Railway housing where available; free treatment in Railway hospitals and health units.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Productivity Linked Bonus",
+      "detail": "Non-gazetted railway staff have received a Productivity Linked Bonus each year (decided annually by the Cabinet).",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Stations and trains across the zone.",
+    "transfers": "Periodic.",
+    "nature": "Field policing.",
+    "workload": "High, shift-based.",
+    "publicInteraction": "High.",
+    "hazards": "Moderate.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "high",
+    "rationale": "Over 15 lakh valid applications for 452 posts in the last cycle (about 3,400 per post)."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Recruitment is irregular, years apart."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Long gaps between cycles."
+      },
+      {
+        "factor": "Extreme competition",
+        "level": "high",
+        "note": "About 3,400 applicants per post in 2024."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Notice on application count, CEN RPF 01/2024 and 02/2024",
+      "url": "https://rrbsecunderabad.gov.in/wp-content/uploads/2025/07/Notice-on-details-of-Application-count_RPF-CENs.pdf",
+      "publisher": "Railway Recruitment Boards",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "RPF SI CEN 01/2024: CBT dates and pattern",
+      "url": "https://career.aglasem.com/railway/rpf-si",
+      "publisher": "AglaSem (reports the CEN)",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Physical standards not quoted from the CEN.",
+      "Age limit from a secondary source."
+    ],
+    "notes": "Applicant count is official."
+  },
+  "lastVerified": "2026-10-18"
+}

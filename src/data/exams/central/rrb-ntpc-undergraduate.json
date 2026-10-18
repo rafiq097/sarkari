@@ -1,0 +1,370 @@
+{
+  "id": "rrb-ntpc-undergraduate",
+  "name": "RRB Non-Technical Popular Categories (Undergraduate Level)",
+  "abbreviation": "RRB NTPC UG",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "railways",
+  "organization": {
+    "id": "rrb",
+    "name": "Railway Recruitment Boards",
+    "abbreviation": "RRB",
+    "website": "https://www.rrbcdg.gov.in"
+  },
+  "department": "Ministry of Railways",
+  "technical": false,
+  "summary": "Class 12 level railway posts: Commercial cum Ticket Clerk (Level 3) and clerk-typist posts (Level 2). Two computer-based tests and a typing test for typist posts.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification",
+    "medical-exam"
+  ],
+  "frequency": "Annual since 2024 (RRB calendar)",
+  "officialLinks": [
+    {
+      "label": "RRB Chandigarh",
+      "url": "https://www.rrbcdg.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Notified every year since 2024. CEN 07/2025 opened on 28 October 2025.",
+    "cycles": [
+      {
+        "cycle": "CEN 07/2025",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2025-10-28",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2025-11-27",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Commercial cum Ticket Clerk",
+      "group": "Group C",
+      "payLevel": "Level 3",
+      "startingBasic": 21700,
+      "responsibilities": "Ticket booking and reservation counters.",
+      "notes": "CEN 07/2025: 2,424 posts."
+    },
+    {
+      "name": "Accounts Clerk cum Typist",
+      "group": "Group C",
+      "payLevel": "Level 2",
+      "startingBasic": 19900,
+      "responsibilities": "Accounts clerical work.",
+      "notes": "394 posts. Typing test."
+    },
+    {
+      "name": "Junior Clerk cum Typist",
+      "group": "Group C",
+      "payLevel": "Level 2",
+      "startingBasic": 19900,
+      "responsibilities": "Clerical work.",
+      "notes": "163 posts. Typing test."
+    },
+    {
+      "name": "Trains Clerk",
+      "group": "Group C",
+      "payLevel": "Level 2",
+      "startingBasic": 19900,
+      "responsibilities": "Train records at stations and yards.",
+      "notes": "77 posts."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 30 years on 1 January of the recruitment year (CEN 07/2025: on 1 Jan 2026).",
+      "referenceDate": "1 January (as per CEN)"
+    },
+    "nationality": "As per CEN.",
+    "education": {
+      "summary": "Class 12 pass or equivalent.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-01-01",
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "",
+    "ageMin": 18,
+    "ageMax": 30,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "CBT 1",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "General Awareness (40 Q), Mathematics (30 Q), Reasoning (30 Q)",
+            "marks": 100,
+            "questions": 100,
+            "duration": "90 minutes",
+            "negative": "One third of a mark"
+          }
+        ],
+        "notes": "Minus one third of a mark per wrong answer. Multi-shift scores are normalized."
+      },
+      {
+        "name": "CBT 2",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Same subjects at a higher level",
+            "questions": 120,
+            "negative": "One third of a mark"
+          }
+        ]
+      },
+      {
+        "name": "Typing Skill Test (typist posts)",
+        "type": "skill",
+        "countsInMerit": false
+      },
+      {
+        "name": "Document verification and medical",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from CBT 2; typing test qualifying.",
+    "normalization": "Yes.",
+    "languages": "English, Hindi and regional languages.",
+    "documentVerification": "1:1 with vacancies.",
+    "probation": "Training as per Railway rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "CBT 1 and 2",
+        "subject": "Three subjects",
+        "topics": [
+          "Mathematics",
+          "General intelligence and reasoning",
+          "General awareness"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "quantitative-aptitude",
+    "reasoning",
+    "general-awareness",
+    "current-affairs",
+    "typing-skill"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 3058,
+      "note": "CEN 07/2025.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 2 to Level 3",
+    "payScale": "19,900 to 21,700 first cell",
+    "startingBasic": 21700,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP.",
+    "notes": "Starting basic shown is Commercial cum Ticket Clerk (Level 3).",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Commercial cum Ticket Clerk",
+        "level": "Level 3",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Senior Commercial Clerk / Ticket Supervisor",
+        "level": "Level 5 to 6",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions by seniority and departmental selection; many staff also sit NTPC Graduate later.",
+    "macp": "MACP at 10, 20 and 30 years."
+  },
+  "benefits": [
+    {
+      "item": "Railway passes",
+      "detail": "Privilege passes and privilege ticket orders for the employee and family, as per Railway pass rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Railway quarters and hospitals",
+      "detail": "Railway housing where available; free treatment in Railway hospitals and health units.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Productivity Linked Bonus",
+      "detail": "Non-gazetted railway staff have received a Productivity Linked Bonus each year (decided annually by the Cabinet).",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Within the zone.",
+    "transfers": "Within division.",
+    "nature": "Counter and office work, shifts.",
+    "workload": "Moderate to high at busy stations.",
+    "publicInteraction": "Very high for ticket clerks.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Simple syllabus; very large applicant pool for about 3,000 posts."
+  },
+  "ratings": {
+    "careerGrowth": "low",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "medium",
+    "rationale": "Entry-level posts with slow growth."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "RRB cycles have had multi-year gaps in the past; an annual calendar has been followed since 2024."
+      },
+      {
+        "factor": "Long cycles",
+        "level": "high",
+        "note": "Notice to joining has often taken 1.5 to 2 years."
+      },
+      {
+        "factor": "Low pay posts",
+        "level": "medium",
+        "note": "Typist posts start at Level 2."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RRB NTPC Undergraduate CEN 07/2025: posts, pay, age, pattern and dates",
+      "url": "https://www.careerpower.in/blog/rrb-ntpc-undergraduate-notification-2025",
+      "publisher": "Career Power (reports the CEN)",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Official CEN not downloaded; secondary report used.",
+      "CBT 2 duration not confirmed."
+    ],
+    "notes": "Pattern consistent with NTPC Graduate."
+  },
+  "lastVerified": "2026-10-18"
+}

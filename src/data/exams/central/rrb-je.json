@@ -1,0 +1,347 @@
+{
+  "id": "rrb-je",
+  "name": "RRB Junior Engineer, Depot Material Superintendent and Chemical & Metallurgical Assistant",
+  "abbreviation": "RRB JE",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "railways",
+  "organization": {
+    "id": "rrb",
+    "name": "Railway Recruitment Boards",
+    "abbreviation": "RRB",
+    "website": "https://www.rrbcdg.gov.in"
+  },
+  "department": "Ministry of Railways",
+  "technical": true,
+  "summary": "Recruits Junior Engineers in civil, electrical, mechanical, S&T and IT branches, plus Depot Material Superintendents and Chemical and Metallurgical Assistants, at Level 6. Two computer-based tests.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification",
+    "medical-exam"
+  ],
+  "frequency": "Annual since 2024 (RRB calendar)",
+  "officialLinks": [
+    {
+      "label": "RRB Ranchi (CEN 05/2025 PDF)",
+      "url": "https://rrbranchi.gov.in/upload/files/pdf/04_14_24pm142384bf87cab8ba2918a287b376265c.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "CEN 05/2025 was notified in October 2025; CBT 2 was reported for July 2026.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Junior Engineer (Civil, Electrical, Mechanical, S&T and others)",
+      "group": "Group C",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Track, works, rolling stock, signalling and electrical maintenance."
+    },
+    {
+      "name": "Depot Material Superintendent",
+      "group": "Group C",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Railway stores."
+    },
+    {
+      "name": "Chemical and Metallurgical Assistant",
+      "group": "Group C",
+      "payLevel": "Level 6 (some reports say Level 5)",
+      "startingBasic": null,
+      "responsibilities": "Materials testing labs."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 33 years on 1 January 2026 (CEN 05/2025).",
+      "referenceDate": "1 January (as per CEN)"
+    },
+    "nationality": "As per CEN.",
+    "education": {
+      "summary": "Diploma or degree in the relevant engineering branch; CMA posts need a B.Sc. with Physics and Chemistry, as per CEN.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-01-01",
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-any",
+      "chemistry",
+      "physics"
+    ],
+    "notes": "",
+    "ageMin": 18,
+    "ageMax": 33,
+    "minEducation": "diploma",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "CBT 1",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "Mathematics, reasoning, general awareness, general science",
+            "marks": 100,
+            "questions": 100,
+            "duration": "90 minutes",
+            "negative": "One third of a mark"
+          }
+        ]
+      },
+      {
+        "name": "CBT 2",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General awareness, physics and chemistry, computers, environment, and technical abilities of the branch",
+            "negative": "One third of a mark"
+          }
+        ]
+      },
+      {
+        "name": "Document verification and medical",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from CBT 2.",
+    "normalization": "Yes.",
+    "languages": "English, Hindi and regional languages.",
+    "documentVerification": "As per CEN.",
+    "probation": "As per Railway rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "CBT 2",
+        "subject": "Technical abilities",
+        "topics": [
+          "Branch-specific engineering topics as listed in the CEN",
+          "Basics of computers and applications",
+          "Basics of environment and pollution control",
+          "Physics and chemistry"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "quantitative-aptitude",
+    "reasoning",
+    "general-awareness",
+    "general-science",
+    "engineering-civil",
+    "engineering-electrical",
+    "engineering-mechanical",
+    "engineering-electronics",
+    "computer-awareness",
+    "environment"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 2569,
+      "note": "CEN 05/2025 grand total as listed (reports range 2,569 to 2,585 after revisions).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 6",
+    "payScale": "35,400 to 1,12,400",
+    "startingBasic": 35400,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Junior Engineer",
+        "level": "Level 6",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Senior Section Engineer",
+        "level": "Level 7",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Assistant Divisional Engineer (Group B)",
+        "level": "Level 8",
+        "timeline": "Via departmental selection",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Seniority and departmental selection.",
+    "macp": "MACP at 10, 20 and 30 years."
+  },
+  "benefits": [
+    {
+      "item": "Railway passes",
+      "detail": "Privilege passes and privilege ticket orders for the employee and family, as per Railway pass rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Railway quarters and hospitals",
+      "detail": "Railway housing where available; free treatment in Railway hospitals and health units.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Productivity Linked Bonus",
+      "detail": "Non-gazetted railway staff have received a Productivity Linked Bonus each year (decided annually by the Cabinet).",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Within the zone, often at depots and sections along the line.",
+    "transfers": "Within division.",
+    "nature": "Field maintenance.",
+    "workload": "High; on-call for failures.",
+    "publicInteraction": "Low.",
+    "hazards": "Track and electrical safety risks.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Diploma-level technical paper plus general sections; large applicant pool."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "medium",
+    "rationale": "Now annual; field-heavy railway engineering career."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "RRB cycles have had multi-year gaps in the past; an annual calendar has been followed since 2024."
+      },
+      {
+        "factor": "Long cycles",
+        "level": "high",
+        "note": "Notice to joining has often taken 1.5 to 2 years."
+      },
+      {
+        "factor": "Vacancy revisions",
+        "level": "low",
+        "note": "Vacancies are revised by corrigenda."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RRB CEN 05/2025 (JE, DMS, CMA)",
+      "url": "https://rrbranchi.gov.in/upload/files/pdf/04_14_24pm142384bf87cab8ba2918a287b376265c.pdf",
+      "publisher": "Railway Recruitment Board Ranchi",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "CBT 2 question count and duration not quoted.",
+      "CMA pay level conflicts between reports.",
+      "Exact dates not recorded."
+    ],
+    "notes": "Vacancy total, pay and age from the CEN as reported."
+  },
+  "lastVerified": "2026-10-18"
+}

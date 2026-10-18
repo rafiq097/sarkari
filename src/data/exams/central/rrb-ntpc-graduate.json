@@ -1,0 +1,426 @@
+{
+  "id": "rrb-ntpc-graduate",
+  "name": "RRB Non-Technical Popular Categories (Graduate Level)",
+  "abbreviation": "RRB NTPC Graduate",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "railways",
+  "organization": {
+    "id": "rrb",
+    "name": "Railway Recruitment Boards",
+    "abbreviation": "RRB",
+    "website": "https://www.rrbcdg.gov.in"
+  },
+  "department": "Ministry of Railways (all zonal railways)",
+  "technical": false,
+  "summary": "Graduate-level railway posts such as Station Master, Goods Train Manager, Chief Commercial cum Ticket Supervisor and clerk-typist posts, through two computer-based tests, then an aptitude test or typing test depending on the post.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification",
+    "medical-exam"
+  ],
+  "frequency": "Annual since 2024 (RRB calendar)",
+  "officialLinks": [
+    {
+      "label": "RRB Chandigarh (official CEN 06/2025 page)",
+      "url": "https://www.rrbcdg.gov.in/uploads/2025/06-NTPCG/062025NTPCG-CEN.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Railways now notify NTPC every year. CEN 06/2025 opened applications on 21 October 2025; CBTs followed in 2026.",
+    "cycles": [
+      {
+        "cycle": "CEN 06/2025",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2025-10-21",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2025-11-20",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Station Master",
+      "group": "Group C",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Running a station: train movements, safety, signals and staff.",
+      "notes": "CEN 06/2025: 615 posts. Needs CBAT and Medical A-2 standard."
+    },
+    {
+      "name": "Chief Commercial cum Ticket Supervisor",
+      "group": "Group C",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Ticketing and commercial supervision.",
+      "notes": "161 posts."
+    },
+    {
+      "name": "Goods Train Manager",
+      "group": "Group C",
+      "payLevel": "Level 5",
+      "startingBasic": 29200,
+      "responsibilities": "In charge of goods trains (formerly Goods Guard).",
+      "notes": "3,416 posts."
+    },
+    {
+      "name": "Junior Accounts Assistant cum Typist",
+      "group": "Group C",
+      "payLevel": "Level 5",
+      "startingBasic": 29200,
+      "responsibilities": "Accounts work.",
+      "notes": "921 posts. Typing skill test."
+    },
+    {
+      "name": "Senior Clerk cum Typist",
+      "group": "Group C",
+      "payLevel": "Level 5",
+      "startingBasic": 29200,
+      "responsibilities": "Clerical work.",
+      "notes": "638 posts. Typing skill test."
+    },
+    {
+      "name": "Traffic Assistant (Metro Railway Kolkata)",
+      "group": "Group C",
+      "payLevel": "Level 4",
+      "startingBasic": 25500,
+      "responsibilities": "Metro traffic operations.",
+      "notes": "59 posts. CBAT."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 33 years on 1 January of the recruitment year (CEN 06/2025: on 1 Jan 2026; General/EWS born on or after 2 Jan 1993).",
+      "referenceDate": "1 January (as per CEN)"
+    },
+    "nationality": "As per CEN.",
+    "education": {
+      "summary": "A bachelor's degree (post-wise details in Annexure A of the CEN), held by the closing date. Candidates awaiting results are not eligible.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "medical": "Post-wise Railway medical standards: Station Master and Goods Train Manager need high visual standards (A-2 / A-3 category).",
+    "examVsPost": "You choose posts in order of preference; posts with strict vision standards (Station Master, Goods Train Manager) are not open to candidates with weaker eyesight.",
+    "disqualifications": [
+      "Candidates who have not completed the degree by the closing date are not eligible."
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-01-01",
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Medical vision standards differ by post.",
+    "ageMin": 18,
+    "ageMax": 33,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "CBT 1",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "General Awareness (40 Q), Mathematics (30 Q), General Intelligence and Reasoning (30 Q)",
+            "marks": 100,
+            "questions": 100,
+            "duration": "90 minutes",
+            "negative": "One third of a mark"
+          }
+        ],
+        "notes": "Screening. Minus one third of a mark per wrong answer. Multi-shift scores are normalized."
+      },
+      {
+        "name": "CBT 2",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Same subjects at a higher level",
+            "questions": 120,
+            "negative": "One third of a mark"
+          }
+        ],
+        "notes": "Main merit stage."
+      },
+      {
+        "name": "CBAT (Station Master, Traffic Assistant) or Typing Skill Test (clerk-typist posts)",
+        "type": "skill",
+        "countsInMerit": false,
+        "notes": "CBAT is a computer-based aptitude test; typing is qualifying."
+      },
+      {
+        "name": "Document verification and medical",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from CBT 2; for posts with CBAT, CBT 2 and CBAT are combined as per the CEN. Document verification at a 1:1 ratio.",
+    "normalization": "Yes, for multi-shift CBTs.",
+    "languages": "English, Hindi and regional languages including Telugu and Kannada.",
+    "documentVerification": "1:1 with vacancies.",
+    "probation": "Training at zonal training institutes."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "CBT 1 and 2",
+        "subject": "Three subjects",
+        "topics": [
+          "Mathematics: number system, percentages, ratio, time and work, interest, mensuration, algebra, geometry, statistics",
+          "General intelligence and reasoning: analogies, series, coding, puzzles, syllogism, data sufficiency",
+          "General awareness: current events, games, art and culture, history, geography, polity, economy, general science, computers"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "quantitative-aptitude",
+    "reasoning",
+    "general-awareness",
+    "current-affairs",
+    "general-science",
+    "computer-awareness",
+    "typing-skill"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 5810,
+      "note": "CEN 06/2025.",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": {
+    "sources": [
+      "s1"
+    ],
+    "text": "Posts are allotted by merit, post preference and medical category, within the RRB you applied to."
+  },
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 4 to Level 6",
+    "payScale": "25,500 to 35,400 first cell",
+    "startingBasic": 35400,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP.",
+    "notes": "Starting basic shown is Station Master (Level 6).",
+    "specialAllowances": [
+      {
+        "name": "Running allowance",
+        "detail": "Goods Train Managers get running allowance based on kilometres worked."
+      },
+      {
+        "name": "Night duty and overtime",
+        "detail": "As per Railway rules."
+      }
+    ],
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Station Master",
+        "level": "Level 6",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Station Superintendent / Traffic Inspector",
+        "level": "Level 7 to 8",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Group B (Assistant Operations Manager) via departmental selection",
+        "level": "Level 8 to 10",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Railway promotions follow seniority and departmental selections; 70% and 30% LDCE quotas apply to some Group B posts.",
+    "macp": "MACP at 10, 20 and 30 years."
+  },
+  "benefits": [
+    {
+      "item": "Railway passes",
+      "detail": "Privilege passes and privilege ticket orders for the employee and family, as per Railway pass rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Railway quarters and hospitals",
+      "detail": "Railway housing where available; free treatment in Railway hospitals and health units.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Productivity Linked Bonus",
+      "detail": "Non-gazetted railway staff have received a Productivity Linked Bonus each year (decided annually by the Cabinet).",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Within the zonal railway of the RRB; stations can be remote.",
+    "transfers": "Within the division or zone.",
+    "nature": "Operational shift work for SM and GTM; desk for clerks.",
+    "workload": "Station Master: high, 24x7 shifts.",
+    "publicInteraction": "High for commercial posts.",
+    "hazards": "Operational safety responsibility.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "School-level subjects; lakhs of applicants; normalization across many shifts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "medium",
+    "rationale": "Now annual, but history of long gaps. Posting stays within your zone."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "RRB cycles have had multi-year gaps in the past; an annual calendar has been followed since 2024."
+      },
+      {
+        "factor": "Long cycles",
+        "level": "high",
+        "note": "Notice to joining has often taken 1.5 to 2 years."
+      },
+      {
+        "factor": "Medical category",
+        "level": "medium",
+        "note": "Weak eyesight rules out SM and GTM."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RRB NTPC (Graduate) CEN 06/2025 page",
+      "url": "https://www.rrbcdg.gov.in/uploads/2025/06-NTPCG/062025NTPCG-CEN.pdf",
+      "publisher": "Railway Recruitment Board Chandigarh",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "RRB NTPC Graduate CEN 06/2025: posts, pay, age and dates",
+      "url": "https://www.pw.live/railway/exams/rrb-ntpc-graduate-level",
+      "publisher": "Physics Wallah (reports the CEN)",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Official CEN PDF could not be downloaded automatically; figures from a secondary report of the CEN.",
+      "CBT 2 duration and CBAT weightage not quoted from the CEN.",
+      "CBT dates for 2026 not recorded."
+    ],
+    "notes": "Pattern consistent with recent RRB CENs."
+  },
+  "lastVerified": "2026-10-18"
+}

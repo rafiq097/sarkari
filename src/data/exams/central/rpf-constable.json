@@ -1,0 +1,331 @@
+{
+  "id": "rpf-constable",
+  "name": "Railway Protection Force Constable (Executive)",
+  "abbreviation": "RPF Constable",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "capf-police",
+  "organization": {
+    "id": "rrb",
+    "name": "Railway Recruitment Boards",
+    "abbreviation": "RRB",
+    "website": "https://www.rrbcdg.gov.in"
+  },
+  "department": "Railway Protection Force, Ministry of Railways",
+  "technical": false,
+  "summary": "Class 10 entry as Constable in the Railway Protection Force through the RRBs: computer-based test, physical tests and documents.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular (last cycle CEN RPF 02/2024)",
+  "officialLinks": [
+    {
+      "label": "Application count notice (RRBs)",
+      "url": "https://rrbsecunderabad.gov.in/wp-content/uploads/2025/07/Notice-on-details-of-Application-count_RPF-CENs.pdf"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Notified irregularly; last cycle CEN RPF 02/2024 (4,208 posts), final result on 16 February 2026.",
+    "cycles": [
+      {
+        "cycle": "CEN RPF 02/2024",
+        "events": [
+          {
+            "event": "Final result",
+            "date": "2026-02-16",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Constable (Executive), RPF",
+      "group": "Group C",
+      "payLevel": "Level 3",
+      "startingBasic": 21700,
+      "responsibilities": "Security of trains, stations and railway property."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 28 years on the date set in the CEN (CEN 02/2024).",
+      "referenceDate": "As per CEN"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "Class 10 pass.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "physical": "PET and PMT as per CEN.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Physical tests apply.",
+    "ageMin": 18,
+    "ageMax": 28,
+    "minEducation": "class-10",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "CBT",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General Awareness, Arithmetic, General Intelligence and Reasoning",
+            "questions": 120,
+            "duration": "90 minutes"
+          }
+        ]
+      },
+      {
+        "name": "PET and PMT",
+        "type": "physical",
+        "countsInMerit": false
+      },
+      {
+        "name": "Document verification and medical",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the CBT among those passing PET/PMT.",
+    "languages": "English, Hindi and regional languages.",
+    "probation": "Training at RPF centres."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "CBT",
+        "subject": "Three parts",
+        "topics": [
+          "General awareness",
+          "Arithmetic",
+          "Reasoning"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "general-awareness",
+    "quantitative-aptitude",
+    "reasoning",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2024,
+      "vacancies": 4208,
+      "applicants": 4530288,
+      "note": "Valid applications, CEN RPF 02/2024 (official RRB notice).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 3",
+    "payScale": "21,700 to 69,100",
+    "startingBasic": 21700,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Constable",
+        "level": "Level 3",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Head Constable",
+        "level": "Level 4",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "ASI / SI",
+        "level": "Level 5 to 6",
+        "timeline": "Mid career",
+        "timelineType": "typical"
+      }
+    ],
+    "macp": "MACP at 10, 20 and 30 years."
+  },
+  "benefits": [
+    {
+      "item": "Railway passes",
+      "detail": "Privilege passes and privilege ticket orders for the employee and family, as per Railway pass rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Railway quarters and hospitals",
+      "detail": "Railway housing where available; free treatment in Railway hospitals and health units.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Productivity Linked Bonus",
+      "detail": "Non-gazetted railway staff have received a Productivity Linked Bonus each year (decided annually by the Cabinet).",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Stations and trains across the zone.",
+    "transfers": "Periodic.",
+    "nature": "Field security.",
+    "workload": "High, shifts.",
+    "publicInteraction": "High.",
+    "hazards": "Moderate.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "high",
+    "rationale": "Over 45 lakh valid applications for 4,208 posts (about 1,080 per post)."
+  },
+  "ratings": {
+    "careerGrowth": "low",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Irregular recruitment; slow promotions."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Years between cycles."
+      },
+      {
+        "factor": "Extreme competition",
+        "level": "high",
+        "note": "About 1,080 applicants per post."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Notice on application count, CEN RPF 01/2024 and 02/2024",
+      "url": "https://rrbsecunderabad.gov.in/wp-content/uploads/2025/07/Notice-on-details-of-Application-count_RPF-CENs.pdf",
+      "publisher": "Railway Recruitment Boards",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "RPF Constable final result 2026",
+      "url": "https://www.pw.live/railway/exams/rpf-constable-final-result-2026",
+      "publisher": "Physics Wallah (news)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Physical standards not quoted from the CEN.",
+      "Age limit from a secondary source."
+    ],
+    "notes": "Applicant count is official."
+  },
+  "lastVerified": "2026-10-18"
+}
