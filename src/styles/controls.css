@@ -1,0 +1,554 @@
+/*
+ * Interactive controls: tabs, chip filters, form fields, tables, panels and callouts,
+ * show-all toggle, pill filters and the custom dropdown. Loaded after components.css.
+ */
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+  scrollbar-width: none;
+}
+
+.tabs button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 14px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tabs button:hover {
+  color: var(--text);
+}
+
+.tabs button.is-selected {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+/* Chip filters */
+.chip-filter {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chip-filter legend {
+  font: 500 0.7rem var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.chip:hover {
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+
+.chip.is-on {
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.chip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chip:has(input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.chip-count {
+  font: 0.72rem var(--font-mono);
+  opacity: 0.7;
+}
+
+/* Form controls */
+.field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.field > span,
+.field-label {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.field input,
+.field select,
+.select-control {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+}
+
+/* Inside a form field the control fills its grid cell and never overflows into the next one. */
+.field input,
+.field select {
+  width: 100%;
+  min-width: 0;
+}
+
+.field input:focus,
+.field select:focus,
+.select-control:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.check-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+/* Tables */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.data-table {
+  font-size: 0.9rem;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.data-table thead th {
+  font: 500 0.7rem var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  background: var(--bg-raised);
+  white-space: nowrap;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover td {
+  background: #1b1a18;
+}
+
+.data-table td.numeric,
+.data-table th.numeric {
+  text-align: right;
+}
+
+/* Panels and callouts */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  padding: 22px;
+}
+
+.panel h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.callout {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--accent);
+  background: var(--bg-raised);
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.callout svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--accent);
+}
+
+.callout-plum {
+  border-left-color: var(--plum);
+}
+
+.callout-plum svg {
+  color: var(--plum);
+}
+
+.callout-brick {
+  border-left-color: var(--brick);
+}
+
+.callout-brick svg {
+  color: var(--brick);
+}
+
+.callout-sage {
+  border-left-color: var(--sage);
+}
+
+.callout-sage svg {
+  color: var(--sage);
+}
+
+.key-value {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) 1fr;
+  gap: 0;
+  margin: 0;
+}
+
+.key-value dt,
+.key-value dd {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+}
+
+.key-value dt {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  padding-right: 16px;
+}
+
+.key-value dd {
+  color: var(--text-soft);
+}
+
+@media (max-width: 600px) {
+  .key-value {
+    grid-template-columns: 1fr;
+  }
+
+  .key-value dt {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.plain-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-soft);
+}
+
+.plain-list li {
+  margin: 4px 0;
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pill-list li {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-soft);
+  font-size: 0.82rem;
+}
+
+/* Expands a collapsed list inside a tab. */
+.show-all {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 8px 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.show-all:hover,
+.show-all:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Single-choice pill row used as a quick filter on several pages. */
+.segmented {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.segmented button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-soft);
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.segmented button:hover {
+  color: var(--text);
+  border-color: var(--text-faint);
+}
+
+.segmented button.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* Custom dropdown (components/Select.jsx), used instead of native selects everywhere. */
+.select-field {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.select-label {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.select-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.select-button:hover:not(:disabled) {
+  border-color: var(--text-faint);
+}
+
+.select-button.is-open,
+.select-button:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.select-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.select-value {
+  font-weight: 500;
+}
+
+.select-value,
+.select-placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.select-placeholder {
+  color: var(--text-muted);
+}
+
+.select-chevron {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: transform 0.2s var(--ease);
+}
+
+.select-button.is-open .select-chevron {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+.select-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 50;
+  width: max(100%, 260px);
+  max-width: min(520px, calc(100vw - 32px));
+  padding: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-large);
+  box-shadow: 0 16px 40px #000a;
+  animation: menu-in 0.15s var(--ease);
+}
+
+.select-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  padding: 0 10px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.select-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: none;
+  outline: none;
+  color: var(--text);
+}
+
+.select-list {
+  max-height: 300px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  outline: none;
+}
+
+.select-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: var(--radius-small);
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.select-option.is-active {
+  background: var(--surface-3);
+  color: var(--text);
+}
+
+.select-option.is-selected {
+  color: var(--accent);
+}
+
+.select-option-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.select-option-hint {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.76rem;
+  color: var(--text-faint);
+}
+
+.select-group {
+  padding: 10px 10px 4px;
+  font: 500 0.68rem var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.select-empty {
+  padding: 10px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.select-wide {
+  max-width: 520px;
+  width: 100%;
+}
+
+.select-inline {
+  grid-template-columns: auto minmax(180px, 240px);
+  align-items: center;
+  gap: 10px;
+}
+
+.directory-sort {
+  flex: 0 0 230px;
+}
+
+@media (max-width: 560px) {
+  .select-menu {
+    width: 100%;
+    max-width: calc(100vw - 32px);
+  }
+
+  .select-option {
+    padding: 11px 10px;
+  }
+}

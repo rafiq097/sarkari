@@ -29,7 +29,7 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 - Profile tabs: `src/components/profile/*.jsx`. Rich text figures: `components/Rich.jsx`. Personal verdicts: `components/MyVerdict.jsx`, form `components/CandidateForm.jsx`, logic `lib/candidate.js`.
 - Logic: `lib/data.js` (index + lazy profiles + date-aware status), `lib/eligibility.js`, `lib/salary.js` (DA/HRA/TA, fixedAdditions e.g. MSP), `lib/saved.jsx` (localStorage: bookmarks, compare, candidate profile), `lib/search.js`, `lib/stats.js`, `lib/status.js`.
 - Data: `src/data/exams/<jurisdiction>/<id>.json`, `src/data/pay-rules/pay-rules.json`, `src/data/vocabulary.json`, `src/data/coverage.json` (still a stub: fill it).
-- Styles: `src/index.css` (tokens), `src/styles/layout.css`, `components.css`, `pages.css`.
+- Styles (load order in main.jsx): `src/index.css` (tokens), `styles/layout.css`, `components.css`, `controls.css`, `pages.css`, `profile.css`, `tools.css`, `profile-layout.css`. Keep each under 1000 lines.
 
 ## 4. How to add profiles fast (use this)
 1. Read the official notice: `python -I scripts/authoring/fetch_text.py <url> [marker] [chars]` (caches text in `.research-cache/<hash>.txt`; then `grep -n` / `sed -n` the .txt for key lines only).

@@ -1,0 +1,448 @@
+/*
+ * Tool page styles: candidate form, My profile, syllabus overlap, salary explorer,
+ * analytics, calendar and methodology. Loaded after profile.css by main.jsx.
+ */
+
+/* Eligibility */
+/* Candidate form: numbered steps, used on My profile and the eligibility checker. */
+.candidate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 20px 0 28px;
+  min-width: 0;
+}
+
+.form-step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+}
+
+.form-step.is-done {
+  border-color: #7fd4a355;
+}
+
+.form-step-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.form-step-head h2 {
+  font-size: 1.15rem;
+}
+
+.form-step-head p {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.form-step-number {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-3);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.form-step.is-done .form-step-number {
+  background: var(--sage);
+  color: var(--accent-ink);
+}
+
+.form-step-optional {
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--stone-soft);
+  color: var(--text-muted);
+  font: 500 0.7rem var(--font-body);
+  vertical-align: middle;
+}
+
+/* Fields share the row evenly and never overflow into each other. */
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+  gap: 14px;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.toggle-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.chip-chosen {
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.chip-row .show-all {
+  margin-top: 0;
+  padding: 5px 12px;
+  font-size: 0.82rem;
+}
+
+/* My profile: form beside a sticky live summary. */
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 22px;
+  align-items: start;
+}
+
+.match-panel {
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-large);
+}
+
+.match-panel h2 {
+  font-size: 1.15rem;
+}
+
+.match-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+  font-size: 0.9rem;
+}
+
+.match-row .numeric {
+  margin-left: auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.match-row.tone-sage {
+  color: var(--sage);
+}
+
+.match-row.tone-accent {
+  color: var(--accent);
+}
+
+.match-row.tone-brick {
+  color: var(--brick);
+}
+
+.match-row:hover {
+  background: var(--surface-2);
+}
+
+.match-plan {
+  justify-content: center;
+}
+
+.match-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.match-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.match-checklist .is-done {
+  color: var(--sage);
+}
+
+.match-save {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .match-panel {
+    position: static;
+    order: -1;
+  }
+}
+
+.verdict-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.verdict-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: none;
+  color: var(--text-muted);
+}
+
+.verdict-tab.is-selected {
+  color: var(--text);
+  border-color: currentColor;
+}
+
+.tone-sage.is-selected,
+.result-item.tone-sage > svg { color: var(--sage); }
+.tone-accent.is-selected,
+.result-item.tone-accent > svg { color: var(--accent); }
+.tone-brick.is-selected,
+.result-item.tone-brick > svg { color: var(--brick); }
+
+.result-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.result-item > svg {
+  margin-top: 3px;
+}
+
+.result-name {
+  font-weight: 500;
+}
+
+.result-name:hover {
+  color: var(--accent);
+}
+
+.result-name strong {
+  color: var(--accent);
+}
+
+.finding-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.finding-fail {
+  color: var(--brick);
+}
+
+.finding-check,
+.finding-unknown {
+  color: var(--accent);
+}
+
+/* Syllabus overlap */
+.overlap-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.overlap-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.overlap-score {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+}
+
+.overlap-score .numeric {
+  font-size: 1.8rem;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.overlap-bar {
+  height: 4px;
+  margin: 8px 0 10px;
+  background: var(--surface-3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.overlap-bar span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.pill-list.compact li {
+  font-size: 0.76rem;
+  padding: 2px 8px;
+}
+
+/* Salary page */
+.rule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 14px;
+}
+
+.rule-card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.key-value.compact dt,
+.key-value.compact dd {
+  padding: 6px 0;
+  font-size: 0.88rem;
+}
+
+.key-value.compact {
+  grid-template-columns: 80px 1fr;
+}
+
+.calculator {
+  display: grid;
+  gap: 20px;
+}
+
+.calculator-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 14px;
+}
+
+.matrix-cells {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 6px;
+}
+
+.matrix-cells li {
+  display: grid;
+  padding: 8px 10px;
+  border-radius: var(--radius-small);
+  background: var(--surface-2);
+  font-size: 0.86rem;
+}
+
+/* Analytics */
+.analytics-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+}
+
+.analytics-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+
+.analytics-list button {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.analytics-list button.is-selected {
+  border-color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .analytics-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Calendar */
+.calendar-month {
+  margin-bottom: 26px;
+}
+
+.calendar-month h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* Methodology prose */
+.prose {
+  max-width: 820px;
+}
+
+.prose p {
+  color: var(--text-soft);
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
+.prose th[scope='row'] {
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
+}

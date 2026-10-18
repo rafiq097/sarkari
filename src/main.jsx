@@ -12,7 +12,11 @@ import '@fontsource/ibm-plex-mono/500.css'
 import './index.css'
 import './styles/layout.css'
 import './styles/components.css'
+import './styles/controls.css'
 import './styles/pages.css'
+import './styles/profile.css'
+import './styles/tools.css'
+import './styles/profile-layout.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
