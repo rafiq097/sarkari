@@ -8,6 +8,7 @@ import { Link } from 'react-router'
 import { Info, Calculator } from 'lucide-react'
 import { SourceChips, Unknown, EstimateTag } from '../Badges.jsx'
 import { BlockTitle } from './ProfileBasics.jsx'
+import { Rich } from '../Rich.jsx'
 import { CutoffChart } from '../CutoffChart.jsx'
 import { estimateSalary, getRuleSet } from '../../lib/salary.js'
 import { selectionRates } from '../../lib/stats.js'
@@ -236,7 +237,11 @@ export function SalaryTab({ exam }) {
         <dt>Increments</dt>
         <dd>{salary.increments ?? <Unknown />}</dd>
       </dl>
-      {salary.notes && <p className="muted spaced">{salary.notes}</p>}
+      {salary.notes && (
+        <p className="muted spaced">
+          <Rich text={salary.notes} />
+        </p>
+      )}
 
       <SalaryEstimate salary={salary} />
 
@@ -270,7 +275,7 @@ export function SalaryTab({ exam }) {
       )}
       <dl className="key-value spaced">
         <dt>What promotions depend on</dt>
-        <dd>{career.promotionNotes ?? <Unknown />}</dd>
+        <dd>{career.promotionNotes ? <Rich text={career.promotionNotes} /> : <Unknown />}</dd>
         <dt>Departmental exams</dt>
         <dd>{career.departmentalExams ?? <Unknown>None recorded</Unknown>}</dd>
         <dt>Assured progression</dt>
@@ -289,7 +294,9 @@ export function SalaryTab({ exam }) {
                       <strong>{benefit.item}</strong>
                       {benefit.conditional && <span className="badge badge-plum badge-quiet small-badge">Conditional</span>}
                     </td>
-                    <td className="small">{benefit.detail}</td>
+                    <td className="small">
+                      <Rich text={benefit.detail} />
+                    </td>
                     <td>
                       <SourceChips sourceIds={benefit.sources} sources={exam.sources} />
                     </td>

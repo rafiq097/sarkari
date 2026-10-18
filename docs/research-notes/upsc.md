@@ -37,3 +37,19 @@ Note in calendar: dates liable to alteration.
 - Prelims 24.05.2026; Mains from 21.08.2026 (5 days)
 - Age 21-32 on 01.08.2026. Attempts: GEN/EWS 6, OBC 9, SC/ST unlimited within age, PwBD 9 (GEN/EWS/OBC).
 - New 2026 rules on serving officers: serving IAS/IFS not eligible; IPS can't opt IPS again; CSE-2026 allottees of IPS/Central Group A can sit CSE 2027 only after one-time training exemption; else must resign for 2028+; CSE-2025-or-earlier allottees get one last chance (2026 or 2027) without resigning.
+
+## UPSC Programme 2026 (official: https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf, dated 15.05.2025)
+| Exam | Notif | Last date | Exam |
+|---|---|---|---|
+| CGS (P) 2026 | 03.09.2025 | 23.09.2025 | 08.02.2026 |
+| ESE (P) 2026 | 17.09.2025 | 07.10.2025 | 08.02.2026 |
+| NDA&NA (I) + CDS (I) 2026 | 10.12.2025 | 30.12.2025 | 12.04.2026 |
+| CSE (P) + IFoS (P) 2026 | 14.01.2026 (actual 04.02.2026) | 03.02.2026 (actual 24.02.2026) | 24.05.2026 |
+| IES/ISS 2026 | 11.02.2026 | 03.03.2026 | 19.06.2026 (3 days) |
+| CGS (M) 2026 | - | - | 20.06.2026 |
+| ESE (M) 2026 | - | - | 21.06.2026 |
+| CAPF (AC) 2026 | 18.02.2026 | 10.03.2026 | 19.07.2026 |
+| CMS 2026 | 11.03.2026 | 31.03.2026 | 02.08.2026 |
+| CSE (M) 2026 | - | - | 21.08.2026 (5 days) |
+| NDA&NA (II) + CDS (II) 2026 | 20.05.2026 | 09.06.2026 | 13.09.2026 |
+| IFoS (M) 2026 | - | - | 22.11.2026 (7 days) |

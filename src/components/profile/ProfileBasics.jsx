@@ -7,7 +7,8 @@ import { Link } from 'react-router'
 import { ExternalLink, AlertTriangle, Info, UserCheck } from 'lucide-react'
 import { SourceChips, ValueOrUnknown, Unknown, StatusBadge } from '../Badges.jsx'
 import { labelFor } from '../../lib/data.js'
-import { formatDate, formatRupees } from '../../lib/format.js'
+import { formatCount, formatDate, formatRupees } from '../../lib/format.js'
+import { Rich } from '../Rich.jsx'
 
 /** Heading for a block inside a tab, with its source chips. */
 export function BlockTitle({ children, sourceIds, sources }) {
@@ -44,11 +45,67 @@ function Timeline({ cycles, sources }) {
   )
 }
 
+/** Headline tiles built from the profile's own statistics and rules. */
+function AtAGlance({ exam }) {
+  const latest = [...(exam.statistics ?? [])].reverse().find((row) => row.vacancies && (row.appeared || row.applicants)) ?? null
+  const latestSelected = [...(exam.statistics ?? [])].reverse().find((row) => row.selected) ?? null
+  const generalAttempts = exam.eligibility?.attempts?.[0]
+  const perVacancy = latest ? Math.round((latest.appeared ?? latest.applicants) / latest.vacancies) : null
+  const tiles = [
+    latest && { label: `Vacancies (${latest.year})`, value: formatCount(latest.vacancies) },
+    perVacancy && { label: `${latest.appeared ? 'Appeared' : 'Applied'} per vacancy (${latest.year})`, value: formatCount(perVacancy) },
+    latestSelected && { label: `Selected (${latestSelected.year})`, value: formatCount(latestSelected.selected) },
+    exam.selection?.stages?.length && { label: 'Selection stages', value: exam.selection.stages.length },
+    generalAttempts && { label: `Attempts (${generalAttempts.category})`, value: generalAttempts.limit },
+    exam.posts?.length > 1 && { label: 'Posts / services', value: exam.posts.length },
+  ].filter(Boolean)
+  if (!tiles.length) return null
+  return (
+    <dl className="glance-grid">
+      {tiles.map((tile) => (
+        <div key={tile.label} className="glance-tile">
+          <dd className="numeric">{tile.value}</dd>
+          <dt>{tile.label}</dt>
+        </div>
+      ))}
+    </dl>
+  )
+}
+
+/** Posts grouped by service group, shown as cards. */
+function PostCards({ posts }) {
+  const groups = new Map()
+  for (const post of posts) groups.set(post.group ?? 'Other', [...(groups.get(post.group ?? 'Other') ?? []), post])
+  return [...groups.entries()].map(([group, groupPosts]) => (
+    <div key={group} className="post-group">
+      <p className="post-group-name">
+        {group} <span className="faint numeric">{groupPosts.length}</span>
+      </p>
+      <div className="post-grid">
+        {groupPosts.map((post) => (
+          <article key={post.name} className="post-card">
+            <h4>{post.name}</h4>
+            <p className="post-pay">
+              {post.payLevel ?? 'Pay level not confirmed'}
+              {post.startingBasic && <span className="numeric"> / {formatRupees(post.startingBasic)}</span>}
+            </p>
+            {post.responsibilities && <p className="small muted">{post.responsibilities}</p>}
+            {post.notes && <p className="small post-note">{post.notes}</p>}
+          </article>
+        ))}
+      </div>
+    </div>
+  ))
+}
+
 /** Overview tab. */
 export function OverviewTab({ exam }) {
   return (
     <div className="tab-body">
-      <p className="profile-summary">{exam.summary}</p>
+      <p className="profile-summary">
+        <Rich text={exam.summary} />
+      </p>
+      <AtAGlance exam={exam} />
       <dl className="key-value">
         <dt>Recruiting body</dt>
         <dd>
@@ -89,40 +146,17 @@ export function OverviewTab({ exam }) {
 
       <BlockTitle>Status</BlockTitle>
       <p className="status-line">
-        <StatusBadge status={exam.status.type} /> {exam.status.note}
+        <StatusBadge status={exam.status.type} />
+        <span>
+          <Rich text={exam.status.note} />
+        </span>
       </p>
       <BlockTitle>Official timeline</BlockTitle>
       <Timeline cycles={exam.status.cycles} sources={exam.sources} />
 
       <BlockTitle>Posts filled through this route</BlockTitle>
       {exam.posts?.length ? (
-        <div className="table-wrap">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Post / service</th>
-                <th>Group</th>
-                <th>Pay level</th>
-                <th className="numeric">Starting basic</th>
-                <th>Role</th>
-              </tr>
-            </thead>
-            <tbody>
-              {exam.posts.map((post) => (
-                <tr key={post.name}>
-                  <td>
-                    <strong>{post.name}</strong>
-                    {post.notes && <div className="faint small">{post.notes}</div>}
-                  </td>
-                  <td>{post.group ?? <Unknown>-</Unknown>}</td>
-                  <td>{post.payLevel ?? <Unknown>-</Unknown>}</td>
-                  <td className="numeric">{formatRupees(post.startingBasic) ?? <Unknown>-</Unknown>}</td>
-                  <td className="small">{post.responsibilities ?? <Unknown>-</Unknown>}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <PostCards posts={exam.posts} />
       ) : (
         <Unknown>Post list not recorded.</Unknown>
       )}
@@ -150,7 +184,7 @@ export function EligibilityTab({ exam }) {
       <BlockTitle sourceIds={eligibility.sources} sources={sources}>
         Age
       </BlockTitle>
-      <p>{eligibility.age?.summary ?? <Unknown />}</p>
+      <p className="lead-text">{eligibility.age?.summary ? <Rich text={eligibility.age.summary} /> : <Unknown />}</p>
       {eligibility.age?.referenceDate && <p className="muted">Age is calculated on: {eligibility.age.referenceDate}</p>}
       {eligibility.age?.relaxations?.length > 0 && (
         <div className="table-wrap spaced">
@@ -177,7 +211,7 @@ export function EligibilityTab({ exam }) {
 
       <dl className="key-value spaced">
         <dt>Education</dt>
-        <dd>{eligibility.education?.summary ?? <Unknown />}</dd>
+        <dd>{eligibility.education?.summary ? <Rich text={eligibility.education.summary} /> : <Unknown />}</dd>
         <dt>Final-year students</dt>
         <dd>{eligibility.education?.finalYearAllowed == null ? <Unknown /> : eligibility.education.finalYearAllowed ? 'May apply (proof needed by the stated date)' : 'Not allowed'}</dd>
         <dt>Minimum marks</dt>
@@ -233,7 +267,9 @@ export function EligibilityTab({ exam }) {
       {eligibility.reservation && (
         <>
           <BlockTitle>Reservation</BlockTitle>
-          <p>{eligibility.reservation}</p>
+          <p>
+            <Rich text={eligibility.reservation} />
+          </p>
         </>
       )}
 
@@ -242,7 +278,7 @@ export function EligibilityTab({ exam }) {
           <Info size={18} aria-hidden="true" />
           <div>
             <strong>Exam eligibility versus post eligibility. </strong>
-            {eligibility.examVsPost}
+            <Rich text={eligibility.examVsPost} />
           </div>
         </div>
       )}
@@ -252,7 +288,9 @@ export function EligibilityTab({ exam }) {
           <BlockTitle>Other conditions</BlockTitle>
           <ul className="plain-list">
             {eligibility.other.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                  <Rich text={item} />
+                </li>
             ))}
           </ul>
         </>
@@ -265,7 +303,9 @@ export function EligibilityTab({ exam }) {
             <strong>Disqualifying conditions and key exceptions</strong>
             <ul className="plain-list">
               {eligibility.disqualifications.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item}>
+                  <Rich text={item} />
+                </li>
               ))}
             </ul>
           </div>

@@ -3,7 +3,8 @@
  * exams), Selection (stages, papers, merit rules) and Syllabus (official topics plus
  * clearly labelled preparation notes). Rendered by pages/ExamPage.jsx.
  */
-import { ExternalLink, Lightbulb, BookOpen } from 'lucide-react'
+import { ExternalLink, Lightbulb, BookOpen, CheckCircle2 } from 'lucide-react'
+import { Rich } from '../Rich.jsx'
 import { SourceChips, Unknown, EstimateTag } from '../Badges.jsx'
 import { BlockTitle } from './ProfileBasics.jsx'
 import { labelFor } from '../../lib/data.js'
@@ -46,7 +47,22 @@ function GuideTable({ table }) {
   )
 }
 
-/** Guide tab: ordered explainer sections with a table of contents. */
+/** Quick-fact chips shown at the top of a guide section. */
+function QuickFacts({ facts }) {
+  if (!facts?.length) return null
+  return (
+    <dl className="quick-facts">
+      {facts.map((fact) => (
+        <div key={fact.label}>
+          <dt>{fact.label}</dt>
+          <dd>{fact.value}</dd>
+        </div>
+      ))}
+    </dl>
+  )
+}
+
+/** Guide tab: explainer sections as cards with a sticky table of contents. */
 export function GuideTab({ exam }) {
   const sections = exam.guide?.sections ?? []
   return (
@@ -63,24 +79,42 @@ export function GuideTab({ exam }) {
         <SourceChips sourceIds={exam.guide?.sources} sources={exam.sources} />
       </nav>
       <div className="guide-sections">
-        {sections.map((section, position) => (
-          <section key={section.title} id={`guide-${position}`} className={`guide-section kind-${section.kind ?? 'official'}`}>
-            <h3>
-              <span className="section-number">{String(position + 1).padStart(2, '0')}</span> {section.title} {section.kind === 'preparation' && <EstimateTag>Preparation advice, not official</EstimateTag>}
-            </h3>
-            {section.paragraphs?.map((paragraph) => (
-              <p key={paragraph.slice(0, 60)}>{paragraph}</p>
-            ))}
-            {section.bullets?.length > 0 && (
-              <ul className="plain-list">
-                {section.bullets.map((bullet) => (
-                  <li key={bullet.slice(0, 80)}>{bullet}</li>
-                ))}
-              </ul>
-            )}
-            {section.table && <GuideTable table={section.table} />}
-          </section>
-        ))}
+        {sections.map((section, position) => {
+          const [leadParagraph, ...otherParagraphs] = section.paragraphs ?? []
+          return (
+            <section key={section.title} id={`guide-${position}`} className={`guide-section kind-${section.kind ?? 'official'}`}>
+              <header className="guide-section-head">
+                <span className="guide-step numeric">{String(position + 1).padStart(2, '0')}</span>
+                <h3>{section.title}</h3>
+                {section.kind === 'preparation' && <EstimateTag>Preparation advice, not official</EstimateTag>}
+              </header>
+              <QuickFacts facts={section.quickFacts} />
+              {leadParagraph && (
+                <p className="guide-lead">
+                  <Rich text={leadParagraph} />
+                </p>
+              )}
+              {otherParagraphs.map((paragraph) => (
+                <p key={paragraph.slice(0, 60)}>
+                  <Rich text={paragraph} />
+                </p>
+              ))}
+              {section.bullets?.length > 0 && (
+                <ul className="check-list">
+                  {section.bullets.map((bullet) => (
+                    <li key={bullet.slice(0, 80)}>
+                      <CheckCircle2 size={16} aria-hidden="true" />
+                      <span>
+                        <Rich text={bullet} />
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {section.table && <GuideTable table={section.table} />}
+            </section>
+          )
+        })}
       </div>
     </div>
   )
@@ -90,6 +124,7 @@ export function GuideTab({ exam }) {
 function StageCard({ stage, position }) {
   return (
     <article className="stage-card">
+      <span className="stage-dot numeric" aria-hidden="true">{position + 1}</span>
       <header>
         <span className="stage-step numeric">Stage {position + 1}</span>
         <h4>{stage.name}</h4>
@@ -117,7 +152,11 @@ function StageCard({ stage, position }) {
                   <td>
                     <strong>{paper.name}</strong>
                     {paper.qualifying && <span className="badge badge-accent badge-quiet small-badge">Qualifying</span>}
-                    {paper.notes && <div className="faint small">{paper.notes}</div>}
+                    {paper.notes && (
+                      <div className="faint small">
+                        <Rich text={paper.notes} />
+                      </div>
+                    )}
                   </td>
                   <td className="numeric">{paper.marks ?? '-'}</td>
                   <td className="numeric">{paper.questions ?? '-'}</td>
@@ -129,7 +168,11 @@ function StageCard({ stage, position }) {
           </table>
         </div>
       )}
-      {stage.notes && <p className="stage-notes">{stage.notes}</p>}
+      {stage.notes && (
+        <p className="stage-notes">
+          <Rich text={stage.notes} />
+        </p>
+      )}
     </article>
   )
 }
@@ -155,17 +198,17 @@ export function SelectionTab({ exam }) {
 
       <dl className="key-value spaced">
         <dt>Final merit</dt>
-        <dd>{selection.meritCalculation ?? <Unknown />}</dd>
+        <dd>{selection.meritCalculation ? <Rich text={selection.meritCalculation} /> : <Unknown />}</dd>
         <dt>Tie-breaking</dt>
-        <dd>{selection.tieBreaking ?? <Unknown>Not published in the sources reviewed</Unknown>}</dd>
+        <dd>{selection.tieBreaking ? <Rich text={selection.tieBreaking} /> : <Unknown>Not published in the sources reviewed</Unknown>}</dd>
         <dt>Normalization</dt>
-        <dd>{selection.normalization ?? <Unknown>Not applicable or not stated</Unknown>}</dd>
+        <dd>{selection.normalization ? <Rich text={selection.normalization} /> : <Unknown>Not applicable or not stated</Unknown>}</dd>
         <dt>Language / medium</dt>
-        <dd>{selection.languages ?? <Unknown />}</dd>
+        <dd>{selection.languages ? <Rich text={selection.languages} /> : <Unknown />}</dd>
         <dt>Document verification</dt>
-        <dd>{selection.documentVerification ?? <Unknown />}</dd>
+        <dd>{selection.documentVerification ? <Rich text={selection.documentVerification} /> : <Unknown />}</dd>
         <dt>Probation / training</dt>
-        <dd>{selection.probation ?? <Unknown />}</dd>
+        <dd>{selection.probation ? <Rich text={selection.probation} /> : <Unknown />}</dd>
       </dl>
 
       {exam.rankAndAllocation?.text && (
@@ -173,7 +216,9 @@ export function SelectionTab({ exam }) {
           <BlockTitle sourceIds={exam.rankAndAllocation.sources} sources={exam.sources}>
             From rank to post
           </BlockTitle>
-          <p>{exam.rankAndAllocation.text}</p>
+          <p>
+            <Rich text={exam.rankAndAllocation.text} />
+          </p>
           <p className="faint small">No rank guarantees a particular post. Allocation depends on vacancies, category, preferences and medical fitness in that year.</p>
         </>
       )}
@@ -225,7 +270,9 @@ export function SyllabusTab({ exam }) {
             <EstimateTag>Not part of the official syllabus</EstimateTag>
             <ul className="plain-list">
               {syllabus.supplementary.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item}>
+                  <Rich text={item} />
+                </li>
               ))}
             </ul>
           </div>

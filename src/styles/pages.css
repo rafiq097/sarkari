@@ -1193,3 +1193,306 @@
   font-weight: 500;
   white-space: nowrap;
 }
+
+/* ---------- Scannable profile layout ---------- */
+
+/* Tabs stay pinned just below the 64px site header. */
+.profile .tabs {
+  position: sticky;
+  top: 64px;
+  z-index: 30;
+  background: #121110f2;
+  backdrop-filter: blur(10px);
+  margin-left: calc(var(--gutter) * -1);
+  margin-right: calc(var(--gutter) * -1);
+  padding: 0 var(--gutter);
+}
+
+.tab-panel {
+  scroll-margin-top: 120px;
+}
+
+/* Emphasised figures inside running text. */
+strong.figure {
+  color: var(--text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.lead-text {
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+/* At a glance tiles */
+.glance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  gap: 10px;
+  margin: 0 0 28px;
+}
+
+.glance-tile {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4px;
+  padding: 16px 18px;
+  border-radius: var(--radius-large);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg-raised) 100%);
+}
+
+.glance-tile dd {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.glance-tile dt {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Post cards */
+.post-group {
+  margin-bottom: 20px;
+}
+
+.post-group-name {
+  font: 500 0.74rem var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 10px;
+}
+
+.post-card {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  transition: border-color 0.2s;
+}
+
+.post-card:hover {
+  border-color: var(--line-strong);
+}
+
+.post-card h4 {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.post-pay {
+  font-size: 0.84rem;
+  color: var(--sage);
+}
+
+.post-note {
+  color: var(--brick);
+}
+
+/* Guide sections as cards */
+.guide-sections {
+  gap: 18px;
+}
+
+.guide-section {
+  padding: 24px 26px;
+  border-radius: var(--radius-large);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  scroll-margin-top: 130px;
+}
+
+.guide-section.kind-preparation {
+  border: 1px dashed #d6a2f266;
+  background: var(--bg-raised);
+}
+
+.guide-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.guide-section-head h3 {
+  font-size: 1.45rem;
+}
+
+.guide-step {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 0.8rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.guide-lead {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--text) !important;
+  padding-left: 14px;
+  border-left: 3px solid var(--accent);
+}
+
+.guide-contents {
+  top: 130px;
+}
+
+.quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.quick-facts > div {
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  border: 1px solid #ffd21f40;
+}
+
+.quick-facts dt {
+  font: 500 0.66rem var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.quick-facts dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.check-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.check-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+.check-list svg {
+  margin-top: 3px;
+  color: var(--sage);
+}
+
+/* Stage stepper */
+.stage-flow {
+  position: relative;
+  padding-left: 46px;
+}
+
+.stage-flow::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  bottom: 18px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), var(--line-strong));
+}
+
+.stage-card {
+  position: relative;
+}
+
+.stage-dot {
+  position: absolute;
+  left: -46px;
+  top: 16px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .guide-section {
+    padding: 18px;
+  }
+
+  .stage-flow {
+    padding-left: 38px;
+  }
+
+  .stage-flow::before {
+    left: 13px;
+  }
+
+  .stage-dot {
+    left: -38px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Grid children must be allowed to shrink, or wide tables push the page sideways. */
+.guide {
+  grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+}
+
+.guide > *,
+.analytics-layout > *,
+.tab-body,
+.guide-section {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .guide {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Single-column grids get a shrinkable track so long tables scroll inside their wrapper. */
+.profile-header,
+.stage-flow,
+.guide-sections,
+.timeline,
+.calculator,
+.rule-card,
+.post-card,
+.filter-panel,
+.status-tile {
+  grid-template-columns: minmax(0, 1fr);
+}

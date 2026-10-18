@@ -8,6 +8,7 @@ import { ExternalLink, Scale, AlertTriangle } from 'lucide-react'
 import { LevelMeter, SourceChips, Unknown, EstimateTag, ConfidenceBadge } from '../Badges.jsx'
 import { BlockTitle } from './ProfileBasics.jsx'
 import { vocabulary } from '../../lib/data.js'
+import { Rich } from '../Rich.jsx'
 
 const workLifeLabels = {
   postings: 'Posting locations',
@@ -32,7 +33,7 @@ export function WorkTab({ exam }) {
       <dl className="key-value">
         {Object.entries(workLifeLabels).flatMap(([key, label]) => [
           <dt key={`${key}-t`}>{label}</dt>,
-          <dd key={`${key}-d`}>{workLife[key] ?? <Unknown />}</dd>,
+          <dd key={`${key}-d`}>{workLife[key] ? <Rich text={workLife[key]} /> : <Unknown />}</dd>,
         ])}
       </dl>
 
@@ -57,7 +58,9 @@ export function WorkTab({ exam }) {
               </dd>,
             ])}
           </dl>
-          {difficulty.rationale && <p className="rationale">{difficulty.rationale}</p>}
+          {difficulty.rationale && <p className="rationale">
+              <Rich text={difficulty.rationale} />
+            </p>}
         </div>
         <div className="panel">
           <h3>
@@ -71,7 +74,9 @@ export function WorkTab({ exam }) {
               </dd>,
             ])}
           </dl>
-          {ratings.rationale && <p className="rationale">{ratings.rationale}</p>}
+          {ratings.rationale && <p className="rationale">
+              <Rich text={ratings.rationale} />
+            </p>}
         </div>
       </div>
 
@@ -98,7 +103,9 @@ export function WorkTab({ exam }) {
                   <td>
                     <LevelMeter level={factor.level} />
                   </td>
-                  <td className="small">{factor.note}</td>
+                  <td className="small">
+                    <Rich text={factor.note} />
+                  </td>
                 </tr>
               ))}
             </tbody>

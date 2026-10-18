@@ -124,6 +124,7 @@ Long-form explainer shown as the first profile tab.
                   "paragraphs": ["..."],
                   "bullets": ["..."],
                   "table": { "columns": ["Stage", "Marks"], "rows": [["Prelims", "400"]] },
+                  "quickFacts": [ { "label": "Papers", "value": "2" } ],
                   "kind": "official | explainer | preparation" } ],
   "sources": [] }
 ```

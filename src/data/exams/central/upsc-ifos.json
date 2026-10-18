@@ -1,0 +1,776 @@
+{
+  "id": "upsc-ifos",
+  "name": "Indian Forest Service Examination",
+  "abbreviation": "UPSC IFoS",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "forest",
+  "organization": {
+    "id": "upsc",
+    "name": "Union Public Service Commission",
+    "abbreviation": "UPSC",
+    "website": "https://www.upsc.gov.in"
+  },
+  "department": "Ministry of Environment, Forest and Climate Change",
+  "technical": true,
+  "summary": "Recruits officers to the Indian Forest Service, an All India Service that manages forests, wildlife and protected areas in every state. Screening is through the same Prelims as the Civil Services Exam, but with a separate, higher shortlist. Then come a six-paper Main exam in English with two science or engineering optionals, and a 300-mark interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "medical-exam",
+    "physical-test",
+    "document-verification"
+  ],
+  "frequency": "Annual (official UPSC calendar)",
+  "officialLinks": [
+    {
+      "label": "IFoS 2026 notification",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-IFSP-26-Engl-040226.pdf"
+    },
+    {
+      "label": "Apply online",
+      "url": "https://upsconline.nic.in"
+    },
+    {
+      "label": "UPSC website",
+      "url": "https://www.upsc.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. The application is filed with the CSE form (tick IFoS), Prelims is the CSE Prelims in May, and the IFoS Main exam usually runs for 7 days in November or December. The final result usually comes in the first half of the following year.",
+    "cycles": [
+      {
+        "cycle": "IFoS 2026",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-02-04",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-02-24",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Preliminary exam (CSE Prelims)",
+            "date": "2026-05-24",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Main exam begins (7 days)",
+            "date": "2026-11-22",
+            "dateType": "official-tentative",
+            "source": "s2"
+          }
+        ]
+      },
+      {
+        "cycle": "IFoS 2027",
+        "events": [
+          {
+            "event": "Notification (with CSE)",
+            "date": "2027-01-13",
+            "dateType": "official-tentative",
+            "source": "s3"
+          },
+          {
+            "event": "Preliminary exam (CSE Prelims)",
+            "date": "2027-05-23",
+            "dateType": "official-tentative",
+            "source": "s3"
+          },
+          {
+            "event": "Main exam begins (7 days)",
+            "date": "2027-11-21",
+            "dateType": "official-tentative",
+            "source": "s3"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Indian Forest Service (IFS / IFoS)",
+      "group": "All India Service",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Forest and wildlife management, protected areas, afforestation, forest protection and law enforcement, tribal and community forestry in the allotted state cadre."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "summary": "At least 21 and under 32 years on 1 August of the exam year. For IFoS 2026: born between 2 August 1994 and 1 August 2005.",
+      "referenceDate": "1 August of the exam year",
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC (eligible for reservation)",
+          "years": 3
+        },
+        {
+          "category": "Defence personnel disabled in hostilities",
+          "years": 3
+        },
+        {
+          "category": "Ex-servicemen incl. ECO/SSCO (conditions apply)",
+          "years": 5
+        },
+        {
+          "category": "PwBD (eligible categories)",
+          "years": 10,
+          "note": "Cumulative with SC/ST/OBC."
+        }
+      ]
+    },
+    "nationality": "Citizen of India, or a subject of Nepal or Bhutan, or other specified categories with a Government of India eligibility certificate, as in the IFoS Rules.",
+    "domicile": null,
+    "education": {
+      "summary": "A bachelor's degree with at least one of Animal Husbandry and Veterinary Science, Botany, Chemistry, Geology, Mathematics, Physics, Statistics or Zoology; or a bachelor's degree in Agriculture, Forestry or Engineering.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "General / EWS",
+        "limit": "6"
+      },
+      {
+        "category": "OBC",
+        "limit": "9"
+      },
+      {
+        "category": "SC / ST",
+        "limit": "Unlimited (within age limit)"
+      },
+      {
+        "category": "PwBD (General / EWS)",
+        "limit": "9"
+      }
+    ],
+    "experience": null,
+    "physical": "Physical and medical standards are those in Appendix III of the IFoS Rules 2026. They are stricter than for most civil services because the work is field-based.",
+    "medical": "Medical examination by a board before appointment, as per Appendix III.",
+    "other": [
+      "You apply once, on the CSE form, by choosing IFoS. You may opt for CSE, IFoS or both.",
+      "Sitting any one Prelims paper counts as an IFoS attempt if you applied for IFoS.",
+      "Fee: Rs 100 at the Prelims stage and Rs 200 for Mains. Women, SC, ST and PwBD candidates are exempt."
+    ],
+    "examVsPost": "Any graduate can take the CSE Prelims, but only candidates with one of the listed science, agriculture, forestry or engineering degrees can apply for IFoS. A BA or B.Com graduate without such a subject is not eligible for IFoS.",
+    "disqualifications": [
+      "Applications cannot be withdrawn or edited after submission."
+    ],
+    "reservation": "IFoS 2026 had about 80 vacancies: 33 UR, 21 OBC, 12 SC, 8 EWS, 6 ST, plus 5 PwBD vacancies (including 2 backlog).",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageMin": 21,
+    "ageMax": 31,
+    "ageReferenceDate": "2026-08-01",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    },
+    "minEducation": "graduate",
+    "educationFields": [
+      "biology",
+      "chemistry",
+      "geology",
+      "mathematics",
+      "physics",
+      "statistics",
+      "veterinary",
+      "agriculture",
+      "forestry",
+      "engineering-any"
+    ],
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "notes": "Physical standards apply. Attempts: 6 General/EWS, 9 OBC, unlimited SC/ST."
+  },
+  "selection": {
+    "stages": [
+      {
+        "name": "Preliminary Examination (CSE Prelims)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "General Studies Paper I",
+            "marks": 200,
+            "duration": "2 hours",
+            "negative": "One third of the question's marks",
+            "qualifying": false
+          },
+          {
+            "name": "General Studies Paper II (CSAT)",
+            "marks": 200,
+            "duration": "2 hours",
+            "negative": "One third of the question's marks",
+            "qualifying": true,
+            "notes": "Qualifying at 33%."
+          }
+        ],
+        "notes": "A separate IFoS list is drawn up from the same Prelims, about 12 to 13 times the IFoS vacancies. Because IFoS has far fewer vacancies than CSE, its Prelims cutoff is usually higher."
+      },
+      {
+        "name": "IFoS Main Examination (written)",
+        "type": "descriptive",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper I: General English",
+            "marks": 300,
+            "duration": "3 hours"
+          },
+          {
+            "name": "Paper II: General Knowledge",
+            "marks": 300,
+            "duration": "3 hours"
+          },
+          {
+            "name": "Papers III and IV: Optional subject 1 (two papers)",
+            "marks": 400,
+            "duration": "3 hours each"
+          },
+          {
+            "name": "Papers V and VI: Optional subject 2 (two papers)",
+            "marks": 400,
+            "duration": "3 hours each"
+          }
+        ],
+        "notes": "Written total 1400. All papers are set and answered in English only. About twice the vacancies are called for interview."
+      },
+      {
+        "name": "Interview / Personality Test",
+        "type": "interview",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Personality Test",
+            "marks": 300,
+            "qualifying": false,
+            "notes": "No minimum marks."
+          }
+        ],
+        "notes": "The board looks for suitability for a forest service career, including interest in the outdoors and the natural world."
+      },
+      {
+        "name": "Medical and physical examination",
+        "type": "medical",
+        "countsInMerit": false,
+        "notes": "As per Appendix III of the IFoS Rules."
+      }
+    ],
+    "meritCalculation": "Final marks = Main written (1400) + Personality Test (300) = 1700. Prelims marks are not counted.",
+    "tieBreaking": "(1) Higher marks in General Knowledge and General English plus the Personality Test; (2) then General Knowledge and General English alone; (3) then the older candidate; (4) any remaining tie at the Commission's discretion.",
+    "normalization": "None.",
+    "languages": "Prelims in Hindi and English. Main exam in English only.",
+    "documentVerification": "Original documents are checked after qualifying for the interview.",
+    "probation": "Training at the Indira Gandhi National Forest Academy, Dehradun, after the common Foundation Course.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "syllabus": {
+    "officialLink": "https://www.upsc.gov.in/sites/default/files/Notif-IFSP-26-Engl-040226.pdf",
+    "sections": [
+      {
+        "stage": "Preliminary",
+        "subject": "Same as CSE Prelims",
+        "topics": [
+          "GS Paper I: current events, history, geography, polity, economy, environment, general science",
+          "GS Paper II (CSAT): comprehension, reasoning, decision making, basic numeracy and data interpretation (Class 10 level)"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "General English",
+        "topics": [
+          "Essay in English",
+          "Precis writing, comprehension and other questions testing understanding of English and correct use of words"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "General Knowledge",
+        "topics": [
+          "Current events and matters an educated person should know, including Indian polity and Constitution, history of India and geography"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Optional subjects (choose any two of 14)",
+        "topics": [
+          "Agriculture",
+          "Agricultural Engineering",
+          "Animal Husbandry and Veterinary Science",
+          "Botany",
+          "Chemistry",
+          "Chemical Engineering",
+          "Civil Engineering",
+          "Forestry",
+          "Geology",
+          "Mathematics",
+          "Mechanical Engineering",
+          "Physics",
+          "Statistics",
+          "Zoology"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Combinations not allowed",
+        "topics": [
+          "Agriculture with Agricultural Engineering",
+          "Agriculture with Animal Husbandry and Veterinary Science",
+          "Agriculture with Forestry",
+          "Chemistry with Chemical Engineering",
+          "Mathematics with Statistics",
+          "More than one of the engineering subjects (Agricultural, Chemical, Civil, Mechanical)"
+        ]
+      }
+    ],
+    "supplementary": [
+      "Each optional has 8 questions per paper; the full topic lists are in the notification.",
+      "Many candidates prepare CSE and IFoS together because the Prelims is shared; the IFoS Mains is a separate preparation."
+    ],
+    "sources": [
+      "s1"
+    ]
+  },
+  "syllabusTags": [
+    "current-affairs",
+    "indian-history",
+    "geography",
+    "indian-polity",
+    "indian-economy",
+    "environment",
+    "general-science",
+    "reasoning",
+    "quantitative-aptitude",
+    "english-language",
+    "essay-writing",
+    "forestry",
+    "agriculture",
+    "biology",
+    "chemistry",
+    "physics",
+    "mathematics",
+    "statistics",
+    "geology",
+    "engineering-civil",
+    "engineering-mechanical",
+    "engineering-chemical",
+    "optional-subject",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2020,
+      "vacancies": 90,
+      "applicants": 261605,
+      "appeared": 118054,
+      "qualifiedNextStage": 1113,
+      "interviewed": 209,
+      "selected": 89,
+      "note": "222 qualified for interview; 1 PwBD vacancy unfilled.",
+      "source": "s5"
+    },
+    {
+      "year": 2021,
+      "vacancies": 110,
+      "applicants": 279810,
+      "appeared": 123210,
+      "qualifiedNextStage": 1357,
+      "interviewed": 251,
+      "selected": 108,
+      "note": "269 qualified for interview; 2 PwBD vacancies unfilled.",
+      "source": "s4"
+    },
+    {
+      "year": 2022,
+      "vacancies": 150,
+      "applicants": 270592,
+      "appeared": 129412,
+      "qualifiedNextStage": 1875,
+      "interviewed": 349,
+      "selected": 147,
+      "note": "366 qualified for interview; 3 PwBD vacancies unfilled.",
+      "source": "s6"
+    }
+  ],
+  "rankAndAllocation": {
+    "text": "UPSC ranks candidates on the 1700-mark total. The Ministry of Environment, Forest and Climate Change allots state cadres under the cadre allocation policy in force, taking into account rank, category and the cadre preferences (including home state) given in the Mains application.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "salary": {
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 10",
+    "payScale": "56,100 to 1,77,500 (Level 10)",
+    "startingBasic": 56100,
+    "officialGross": null,
+    "specialAllowances": [
+      {
+        "name": "Field allowances",
+        "detail": "Allowances for remote or difficult postings are paid as per state cadre rules."
+      }
+    ],
+    "pension": "National Pension System, with the Unified Pension Scheme option.",
+    "increments": "3% a year; time-scale promotions as for other All India Services.",
+    "notes": "Pay follows the same All India Service pay rules as the IAS and IPS.",
+    "asOf": "2026-10",
+    "sources": [
+      "s7"
+    ]
+  },
+  "career": {
+    "progression": [
+      {
+        "post": "Assistant Conservator of Forests (probation and field training)",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Divisional Forest Officer / Deputy Conservator of Forests",
+        "level": "Level 11",
+        "timeline": "Early career",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Conservator of Forests",
+        "level": "Level 13",
+        "timeline": "Mid career",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Chief Conservator of Forests",
+        "level": "Level 14",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Additional Principal Chief Conservator of Forests",
+        "level": "Level 15",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Principal Chief Conservator of Forests (Head of Forest Force)",
+        "level": "Level 17",
+        "timeline": "Top post in a state",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions depend on years of service, cadre vacancies, appraisal reports and vigilance clearance. Central deputation is possible to the Environment Ministry and related bodies.",
+    "departmentalExams": "Professional and departmental tests during training at IGNFA.",
+    "macp": "Not applicable (Group A All India Service).",
+    "sources": [
+      "s7"
+    ]
+  },
+  "benefits": [
+    {
+      "item": "Government accommodation",
+      "detail": "Quarters as per entitlement, often in forest divisions.",
+      "conditional": true,
+      "sources": [
+        "s7"
+      ]
+    },
+    {
+      "item": "Vehicle and staff for field work",
+      "detail": "Provided with the post.",
+      "conditional": true,
+      "sources": [
+        "s7"
+      ]
+    }
+  ],
+  "workLife": {
+    "postings": "Allotted state cadre, mostly forest divisions, often rural or remote; central deputation later.",
+    "transfers": "Every few years within the cadre.",
+    "nature": "Strongly field-based: forest patrols, wildlife protection, plantation and community work.",
+    "workload": "High during fire season, wildlife conflict and enforcement drives.",
+    "publicInteraction": "High with forest-dependent and tribal communities.",
+    "hazards": "Wildlife, rough terrain, and confrontations with poachers or illegal loggers.",
+    "stability": "Very high (permanent All India Service).",
+    "sources": [
+      "s1"
+    ]
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "high",
+    "physicalRequirements": "medium",
+    "selectionUncertainty": "high",
+    "rationale": "About 1.2 to 1.3 lakh appear for 90 to 150 vacancies (2022: 1,29,412 appeared for 150, about 860 per vacancy). Two technical optionals at honours level, plus a higher Prelims cutoff than CSE."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual exam leading to an All India Service. Postings are mostly in forest areas of the allotted state."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Very few vacancies",
+        "level": "high",
+        "note": "Only about 80 to 150 vacancies a year."
+      },
+      {
+        "factor": "Long cycle",
+        "level": "high",
+        "note": "Prelims in May, Mains in November or December, result the following year."
+      },
+      {
+        "factor": "Irregular recruitment",
+        "level": "low",
+        "note": "Held every year."
+      }
+    ]
+  },
+  "guide": {
+    "sources": [
+      "s1"
+    ],
+    "sections": [
+      {
+        "title": "How IFoS works with the Civil Services Exam",
+        "kind": "official",
+        "paragraphs": [
+          "There is one application and one Prelims for both CSE and IFoS. On the form you choose CSE, IFoS or both. After Prelims, UPSC makes two separate lists: one for CSE Mains and one for IFoS Mains, each about 12 to 13 times its own vacancies.",
+          "IFoS has far fewer vacancies than CSE (about 80 in 2026 compared with about 933), so its list is shorter and its Prelims cutoff is usually higher. You can qualify for both Mains in the same year."
+        ],
+        "quickFacts": [
+          {
+            "label": "Application",
+            "value": "Shared with CSE"
+          },
+          {
+            "label": "Prelims",
+            "value": "Shared with CSE"
+          },
+          {
+            "label": "Vacancies 2026",
+            "value": "about 80"
+          }
+        ]
+      },
+      {
+        "title": "The Main exam",
+        "kind": "official",
+        "paragraphs": [
+          "The IFoS Mains has six papers of 3 hours each, all in English, over about 7 days. Unlike CSE, there are no qualifying language papers and no GS papers. Instead you take two optional subjects."
+        ],
+        "table": {
+          "columns": [
+            "Paper",
+            "Subject",
+            "Marks"
+          ],
+          "rows": [
+            [
+              "I",
+              "General English",
+              "300"
+            ],
+            [
+              "II",
+              "General Knowledge",
+              "300"
+            ],
+            [
+              "III, IV",
+              "Optional subject 1 (two papers)",
+              "200 + 200"
+            ],
+            [
+              "V, VI",
+              "Optional subject 2 (two papers)",
+              "200 + 200"
+            ],
+            [
+              "",
+              "Written total",
+              "1400"
+            ],
+            [
+              "",
+              "Personality Test",
+              "300"
+            ],
+            [
+              "",
+              "Grand total",
+              "1700"
+            ]
+          ]
+        },
+        "quickFacts": [
+          {
+            "label": "Papers",
+            "value": "6"
+          },
+          {
+            "label": "Language",
+            "value": "English only"
+          },
+          {
+            "label": "Written",
+            "value": "1400"
+          },
+          {
+            "label": "Interview",
+            "value": "300"
+          },
+          {
+            "label": "Total",
+            "value": "1700"
+          }
+        ]
+      },
+      {
+        "title": "Choosing two optionals",
+        "kind": "official",
+        "paragraphs": [
+          "You choose two of 14 science, agriculture and engineering subjects. Some pairs are not allowed because they overlap: Agriculture cannot be paired with Agricultural Engineering, Animal Husbandry or Forestry; Chemistry cannot be paired with Chemical Engineering; Mathematics cannot be paired with Statistics; and you can take only one engineering subject."
+        ],
+        "quickFacts": [
+          {
+            "label": "Choose",
+            "value": "2 of 14"
+          },
+          {
+            "label": "Each optional",
+            "value": "2 papers x 200"
+          }
+        ]
+      },
+      {
+        "title": "Who is eligible",
+        "kind": "official",
+        "paragraphs": [
+          "Age and attempts are the same as CSE. The degree requirement is narrower: a bachelor's degree with at least one of Animal Husbandry and Veterinary Science, Botany, Chemistry, Geology, Mathematics, Physics, Statistics or Zoology, or a degree in Agriculture, Forestry or Engineering. Physical and medical standards are stricter than for desk services."
+        ],
+        "quickFacts": [
+          {
+            "label": "Age",
+            "value": "21 to under 32"
+          },
+          {
+            "label": "Degree",
+            "value": "listed science, agri, forestry or engineering"
+          }
+        ]
+      },
+      {
+        "title": "Common confusions",
+        "kind": "explainer",
+        "bullets": [
+          "IFoS (Indian Forest Service) is different from IFS (Indian Foreign Service), which is filled through CSE.",
+          "Clearing CSE Prelims does not by itself qualify you for IFoS Mains; the IFoS list is separate.",
+          "IFoS Mains is entirely in English, even if you write CSE Mains in another language."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Indian Forest Service Examination 2026 notification",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-IFSP-26-Engl-040226.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "UPSC Programme of Examinations 2026",
+      "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "UPSC Annual Calendar 2027",
+      "url": "https://upsc.gov.in/content/annual-calendar-2027-0",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s4",
+      "title": "73rd Annual Report 2022-23 (IFoS 2021 statistics)",
+      "url": "https://www.upsc.gov.in/sites/default/files/73rd-AnnualReport-2022-23-Engl-220824.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2024,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s5",
+      "title": "72nd Annual Report 2021-22 (IFoS 2020 statistics)",
+      "url": "https://www.upsc.gov.in/sites/default/files/72nd-AnnualReport-2021-22-ENGLISH-270423.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2023,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s6",
+      "title": "74th Annual Report 2023-24 (IFoS 2022 statistics)",
+      "url": "https://www.upsc.gov.in/sites/default/files/74thAnnualReport-2023-24-Engl-230326.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s7",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Specific height, chest and walking-test figures from Appendix III of the IFoS Rules were not verified from the official text.",
+      "Official IFoS category cutoffs were not reachable.",
+      "Promotion timings are typical, not guaranteed."
+    ],
+    "notes": "Scheme, eligibility, optional rules and vacancies are from the 2026 notification; statistics from UPSC annual reports."
+  },
+  "lastVerified": "2026-10-18"
+}
