@@ -2,7 +2,7 @@
 
 Resume from this file if work spans sessions. Research notes live in docs/research-notes/.
 
-## Done
+## Done (see HANDOFF.md for the full list and next steps)
 - UI: all pages, tools, theme, date-aware status (src/lib/status.js)
 - Pay rules: src/data/pay-rules/pay-rules.json (Central DA 60% from 1 Jan 2026; AP 41.86%; TS 40.04%; KA 15.75%)
 - Profiles: central/upsc-cse (full explainer)
