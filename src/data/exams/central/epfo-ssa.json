@@ -1,0 +1,300 @@
+{
+  "id": "epfo-ssa",
+  "name": "EPFO Social Security Assistant",
+  "abbreviation": "EPFO SSA",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "social-security",
+  "organization": {
+    "id": "epfo",
+    "name": "Employees' Provident Fund Organisation",
+    "abbreviation": "EPFO",
+    "website": "https://www.epfindia.gov.in"
+  },
+  "department": "EPFO regional offices",
+  "technical": false,
+  "summary": "Group C posts in the Employees' Provident Fund Organisation (Level 5, Rs 29,200 basic). The 2023 drive had 2,674 posts. Prelims, mains and a computer typing test.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test"
+  ],
+  "frequency": "Irregular (2019, 2023)",
+  "officialLinks": [
+    {
+      "label": "EPFO recruitment",
+      "url": "https://www.epfindia.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The 2023 drive had 2,674 SSA posts (applications 27 March to 26 April 2023). A new drive was being reported in 2026 but details were not confirmed.",
+    "cycles": [
+      {
+        "cycle": "SSA 2023",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2023-03-27",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2023-04-26",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Social Security Assistant",
+      "group": "Group C",
+      "payLevel": "Level 5",
+      "startingBasic": 29200,
+      "ageMin": 18,
+      "ageMax": 27,
+      "responsibilities": "PF claims, accounts and member services."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 27 years.",
+      "referenceDate": "Closing date"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A bachelor's degree and typing speed of 35 wpm in English or 30 wpm in Hindi on computer.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Typing skill needed.",
+    "ageMin": 18,
+    "ageMax": 27,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Phase 1 (prelims)",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Phase 2 (mains)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Computer typing test",
+        "type": "skill",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Mains merit, with a qualifying typing test.",
+    "languages": "English and Hindi.",
+    "documentVerification": "After results.",
+    "probation": "Two years."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.epfindia.gov.in",
+    "sections": [
+      {
+        "stage": "Phase 1 and 2",
+        "subject": "Typical areas",
+        "topics": [
+          "Reasoning, quantitative aptitude, English, general awareness",
+          "Computer knowledge"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "quantitative-aptitude",
+    "english-language",
+    "general-awareness",
+    "computer-awareness",
+    "typing-skill"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2023,
+      "vacancies": 2674,
+      "note": "SSA posts (plus 185 stenographers in the same notice).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 5",
+    "payScale": "29,200 to 92,300",
+    "startingBasic": 29200,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "SSA",
+        "level": "Level 5",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Section Supervisor",
+        "level": "Level 7",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Assistant Accounts Officer / EO",
+        "level": "Level 8",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "EPFO promotion rules."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "EPFO offices in the zone you choose.",
+    "transfers": "Mostly within the zone.",
+    "nature": "Office and field work.",
+    "workload": "Moderate.",
+    "publicInteraction": "Medium.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Graduate-level aptitude papers with a large applicant pool."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "low",
+    "rationale": "Good Level 5 pay; drives are years apart."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "Notices do not follow a fixed yearly date."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "EPFO recruitment 2023: SSA and Stenographer posts",
+      "url": "https://affairscloud.com/jobs/epfo-recruitment-2023-ssa-stenographer-posts-2859-vacancies-apply-online",
+      "publisher": "AffairsCloud",
+      "year": 2023,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "2026 cycle not confirmed.",
+      "Typing speed rule from secondary reports."
+    ],
+    "notes": "From secondary reports of the 2023 notice."
+  },
+  "lastVerified": "2026-10-18"
+}

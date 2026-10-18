@@ -1,0 +1,256 @@
+{
+  "id": "fci-category-3",
+  "name": "FCI Category III (Assistant Grade III, JE, Steno, Typist)",
+  "abbreviation": "FCI AG III",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "revenue-clerical",
+  "organization": {
+    "id": "fci",
+    "name": "Food Corporation of India",
+    "abbreviation": "FCI",
+    "website": "https://fci.gov.in"
+  },
+  "department": "Food Corporation of India (zone-wise)",
+  "technical": false,
+  "summary": "Non-executive posts in the Food Corporation of India: Assistant Grade III (General, Accounts, Technical, Depot), Junior Engineer, Steno and Typist. Two online phases, no interview. The last big drive had about 5,000 posts.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "FCI recruitment",
+      "url": "https://fci.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The last Category III drive (about 5,000 posts) was in 2022. A new notice was expected in 2026 but had not been released by October 2026.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Assistant Grade III (General, Accounts, Technical, Depot)",
+      "group": "Category III",
+      "payLevel": "FCI IDA scale",
+      "startingBasic": 28200,
+      "ageMin": 18,
+      "ageMax": 27,
+      "responsibilities": "Depot, accounts and office work."
+    },
+    {
+      "name": "Junior Engineer (Civil, Electrical-Mechanical)",
+      "group": "Category III",
+      "payLevel": "FCI IDA scale",
+      "startingBasic": null,
+      "responsibilities": "Godown construction and maintenance."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 27 (28 for Hindi posts), as reported.",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A degree (AG III General); B.Com (Accounts); B.Sc in agriculture or related subjects (Technical); engineering degree or diploma (JE).",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Hindi posts up to 28.",
+    "ageMin": 18,
+    "ageMax": 27,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Phase 1 (online)",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Phase 2 (online, post-specific)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Skill test (Steno, Typist)",
+        "type": "skill",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Phase 2 merit, zone-wise.",
+    "languages": "English and Hindi.",
+    "documentVerification": "After results.",
+    "probation": "As per FCI rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://fci.gov.in",
+    "sections": [
+      {
+        "stage": "Phase 1 and 2",
+        "subject": "Typical areas",
+        "topics": [
+          "Reasoning, quantitative aptitude, English, general awareness",
+          "Post-specific subjects (accounts, agriculture, engineering)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "quantitative-aptitude",
+    "english-language",
+    "general-awareness",
+    "accountancy-commerce",
+    "agriculture"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "FCI IDA scale",
+    "payScale": "28,200 to 79,200 (AG III)",
+    "startingBasic": 28200,
+    "notes": "IDA pay with quarterly DA; not modelled.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "AG III",
+        "level": "Category III",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "AG II, AG I, Manager (internal)",
+        "level": "Higher grades",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "FCI internal promotion and departmental exams."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "FCI depots and offices in the zone.",
+    "transfers": "Within the zone.",
+    "nature": "Depot, stock and office work.",
+    "workload": "Moderate.",
+    "publicInteraction": "Medium.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Large applicant pool for zone-wise posts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Good PSU pay; drives are years apart."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "Notices do not follow a fixed yearly date."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "FCI Assistant Grade 3 recruitment 2026: eligibility, pay, selection",
+      "url": "https://articles.findmycollege.com/news/fci-assistant-grade-3-recruitment-2026-expected-this-month-notification-date-eligibility-pay-scale-and-selection-process/",
+      "publisher": "FindMyCollege",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "No 2026 notice; vacancies and dates unknown."
+    ],
+    "notes": "From secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

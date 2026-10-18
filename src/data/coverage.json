@@ -13,9 +13,12 @@
         "upsc-cds",
         "upsc-nda-na",
         "upsc-capf-ac",
-        "upsc-epfo"
+        "upsc-epfo",
+        "upsc-cms",
+        "upsc-ies-iss",
+        "upsc-geo-scientist"
       ],
-      "notes": "Official 2026 notifications, 2026 and 2027 calendars and annual reports used; EPFO from a secondary report. CMS, IES/ISS and CGS pending."
+      "notes": "Official calendars, notifications and annual reports; CMS, IES/ISS, Geo-Scientist and EPFO details partly secondary."
     },
     {
       "jurisdiction": "central",
@@ -55,7 +58,8 @@
       "profiles": [
         "ibps-po",
         "ibps-clerk",
-        "ibps-rrb"
+        "ibps-rrb",
+        "ibps-so"
       ],
       "notes": "PO from the official 2026 notice; Clerk and RRB from secondary reports. SO pending."
     },
@@ -76,9 +80,10 @@
       "website": "https://opportunities.rbi.org.in",
       "status": "partial",
       "profiles": [
-        "rbi-grade-b"
+        "rbi-grade-b",
+        "rbi-assistant"
       ],
-      "notes": "Grade B from a secondary report. Assistant pending."
+      "notes": "Grade B and Assistant from secondary reports."
     },
     {
       "jurisdiction": "andhra-pradesh",
@@ -171,7 +176,8 @@
       "status": "partial",
       "profiles": [
         "ctet",
-        "kvs-nvs-teachers"
+        "kvs-nvs-teachers",
+        "emrs-teachers"
       ],
       "notes": "CTET from the official bulletin; KVS/NVS from the official press note and reports. EMRS pending."
     },
@@ -192,9 +198,12 @@
       "status": "partial",
       "profiles": [
         "afcat",
-        "army-agniveer"
+        "army-agniveer",
+        "navy-agniveer",
+        "iaf-agniveervayu",
+        "coast-guard-enrolled"
       ],
-      "notes": "Agnipath package from the official PIB release; AFCAT and cycle dates secondary. Navy and Air Force Agniveer, Coast Guard pending."
+      "notes": "Agnipath package from the official PIB release; Coast Guard from the official CGEPT notice; other details secondary."
     },
     {
       "jurisdiction": "central",
@@ -204,7 +213,8 @@
       "profiles": [
         "lic-aao",
         "nabard-grade-a",
-        "ib-acio"
+        "ib-acio",
+        "sebi-grade-a"
       ],
       "notes": "Secondary reports; NABARD pay and age not confirmed."
     },
@@ -239,6 +249,31 @@
       "notes": "2024 cycle from secondary reports."
     },
     {
+      "jurisdiction": "central",
+      "name": "Science and engineering (ISRO, DRDO, BARC, GATE PSUs)",
+      "website": "https://www.isro.gov.in",
+      "status": "partial",
+      "profiles": [
+        "isro-scientist",
+        "drdo-scientist-b",
+        "barc-oces",
+        "gate-psu"
+      ],
+      "notes": "DRDO GATE route from the official notice; other figures secondary."
+    },
+    {
+      "jurisdiction": "central",
+      "name": "Social security and food bodies (ESIC, EPFO, FCI)",
+      "website": "https://www.esic.gov.in",
+      "status": "partial",
+      "profiles": [
+        "esic-udc",
+        "epfo-ssa",
+        "fci-category-3"
+      ],
+      "notes": "No 2026 notices confirmed; secondary reports, low confidence."
+    },
+    {
       "jurisdiction": "karnataka",
       "name": "Karnataka Public Service Commission (KPSC)",
       "website": "https://kpsc.kar.nic.in",
@@ -264,15 +299,9 @@
     }
   ],
   "pending": [
-    "UPSC CMS, IES/ISS, Combined Geo-Scientist",
-    "Navy and Air Force Agniveer, Coast Guard",
-    "SEBI Grade A, RBI Assistant, IBPS SO",
-    "ISRO, DRDO, BARC, NIC; GATE and PSU recruitment through GATE",
-    "EMRS, ESIC, EPFO SSA, FCI",
-    "Telangana power utilities AE (TGGENCO, TGTRANSCO, DISCOMs): no 2026 notice found",
-    "Remaining APPSC 2026 notifications",
     "TG DSC official notification when released",
-    "Karnataka profiles (KPSC, KEA, police): pay rules and region page ready, profiles not yet written"
+    "Remaining small APPSC 2026 notifications",
+    "Telangana power utilities AE (no 2026 notice found)"
   ],
   "excluded": [
     "Routes whose main post starts below Rs 20,000 basic pay, such as SSC MTS and Havaldar, RRB Group D and Assistant Loco Pilot, and Level 1 state posts.",

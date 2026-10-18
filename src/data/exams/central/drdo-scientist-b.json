@@ -1,0 +1,282 @@
+{
+  "id": "drdo-scientist-b",
+  "name": "DRDO Scientist B (RAC, through GATE)",
+  "abbreviation": "DRDO Scientist B",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "scientific-research",
+  "organization": {
+    "id": "drdo",
+    "name": "Defence Research and Development Organisation (Recruitment and Assessment Centre)",
+    "abbreviation": "DRDO",
+    "website": "https://rac.gov.in"
+  },
+  "department": "DRDO laboratories",
+  "technical": true,
+  "summary": "Scientist B posts (Level 10) in DRDO labs, shortlisted on GATE scores and selected by interview. The 2025 advertisement (Advt 156) had about 155 posts.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "gate-based",
+    "interview"
+  ],
+  "frequency": "Yearly (when advertised)",
+  "officialLinks": [
+    {
+      "label": "RAC (DRDO)",
+      "url": "https://rac.gov.in"
+    },
+    {
+      "label": "DRDO GATE public notice",
+      "url": "https://www.drdo.gov.in/drdo/sites/default/files/message-board-documents/GATEpublicNotice2026.pdf"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "RAC advertises Scientist B posts when needed, using a valid GATE score for shortlisting. The 2025 advertisement had 152 posts plus 3 added. No 2026 advertisement was out by October 2026.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Scientist B",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Defence research and development.",
+      "notes": "Engineering, science, and some humanities disciplines through GATE."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Age limits are in each advertisement; reports differ.",
+      "referenceDate": "As per advertisement"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A first-class BE/BTech or master's in the discipline, plus a valid GATE score in the matching paper.",
+      "finalYearAllowed": false,
+      "minMarks": "First class"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "As per advertisement"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-any",
+      "science"
+    ],
+    "notes": "Needs a valid GATE score.",
+    "ageMin": 21,
+    "ageMax": null,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Shortlisting on GATE score",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Interview",
+        "type": "interview",
+        "countsInMerit": true
+      }
+    ],
+    "meritCalculation": "Selection on interview performance among GATE-shortlisted candidates.",
+    "languages": "English.",
+    "documentVerification": "At interview.",
+    "probation": "As per DRDO rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://rac.gov.in",
+    "sections": [
+      {
+        "stage": "GATE and interview",
+        "subject": "Discipline",
+        "topics": [
+          "GATE syllabus of the matching paper",
+          "Interview on core subjects and projects"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "engineering-electronics",
+    "engineering-mechanical",
+    "engineering-computer",
+    "engineering-mathematics",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 155,
+      "note": "Advt 156: 152 posts plus 3 added.",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 10",
+    "payScale": "56,100 to 1,77,500",
+    "startingBasic": 56100,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Scientist B",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Scientist C to G",
+        "level": "Level 11 to 14",
+        "timeline": "Merit-based reviews",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Flexible complementing scheme."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Research centres and labs across India.",
+    "transfers": "Between centres when needed.",
+    "nature": "Research, design and testing.",
+    "workload": "Moderate to high.",
+    "publicInteraction": "Low.",
+    "hazards": "Low to moderate.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "low",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "high",
+    "rationale": "Needs a top GATE score, then a technical interview."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "medium",
+    "rationale": "Strong research career; advertisements are not fixed."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "Notices do not follow a fixed yearly date."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "DRDO public notice on recruitment through GATE 2026",
+      "url": "https://www.drdo.gov.in/drdo/sites/default/files/message-board-documents/GATEpublicNotice2026.pdf",
+      "publisher": "Defence Research and Development Organisation",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "DRDO recruitment through GATE",
+      "url": "https://www.pw.live/gate/exams/drdo-recruitment-through-gate",
+      "publisher": "Physics Wallah",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Age limits differ between reports, so none is shown."
+    ],
+    "notes": "GATE-based method from the official DRDO notice; numbers secondary."
+  },
+  "lastVerified": "2026-10-18"
+}

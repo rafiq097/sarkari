@@ -1,0 +1,273 @@
+{
+  "id": "iaf-agniveervayu",
+  "name": "Indian Air Force Agniveervayu",
+  "abbreviation": "Agniveervayu",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "iaf",
+    "name": "Indian Air Force",
+    "abbreviation": "IAF",
+    "website": "https://agnipathvayu.cdac.in"
+  },
+  "department": "Indian Air Force (Agnipath scheme)",
+  "technical": false,
+  "summary": "Four-year enrolment in the Air Force as an Agniveervayu after Class 12 (science or other streams) or a diploma. Online test, adaptability tests, fitness test and medicals. Agnipath package from Rs 30,000 a month.",
+  "employmentType": "fixed-tenure",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam"
+  ],
+  "frequency": "Twice a year (two intakes)",
+  "officialLinks": [
+    {
+      "label": "Agniveervayu portal",
+      "url": "https://agnipathvayu.cdac.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Two intakes a year. Intake 01/2027: notified 12 January 2026, applications to early February (reopened 3 to 10 March), online test on 30 and 31 March 2026.",
+    "cycles": [
+      {
+        "cycle": "Intake 01/2027",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-01-12",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Online test",
+            "date": "2026-03-30",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Agniveervayu",
+      "group": "Agniveer",
+      "payLevel": "Agnipath package",
+      "startingBasic": null,
+      "ageMin": 17,
+      "ageMax": 21,
+      "responsibilities": "Air Force technical and ground trades.",
+      "notes": "Science and non-science streams have separate tests."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "17.5 to 21 years (birth-date window set per intake).",
+      "referenceDate": "As per intake notice"
+    },
+    "nationality": "Unmarried Indian citizens (men and women).",
+    "education": {
+      "summary": "Science: Class 12 with Maths, Physics and English, 50% overall and 50% in English, or a 3-year engineering diploma. Other streams: Class 12 in any subject with 50% and 50% in English.",
+      "finalYearAllowed": false,
+      "minMarks": "50% overall and 50% in English"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "physical": "Fitness test and Air Force medical standards.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "50% in English is needed.",
+    "ageMin": 17,
+    "ageMax": 21,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Online test",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Physical fitness test and adaptability tests",
+        "type": "physical",
+        "countsInMerit": false
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "All-India merit from the online test among those who pass the later stages.",
+    "languages": "English and Hindi.",
+    "documentVerification": "At the selection centre.",
+    "probation": "Four-year engagement including training."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://agnipathvayu.cdac.in",
+    "sections": [
+      {
+        "stage": "Online test",
+        "subject": "Typical areas",
+        "topics": [
+          "English",
+          "Physics and Mathematics (science stream)",
+          "Reasoning and general awareness"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "physics",
+    "mathematics",
+    "reasoning",
+    "general-awareness",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "Agnipath package",
+    "payScale": "Rs 30,000 (year 1), 33,000, 36,500, 40,000 (year 4) a month",
+    "startingBasic": null,
+    "officialGross": 30000,
+    "officialGrossNote": "First-year package Rs 30,000 a month: Rs 21,000 in hand and Rs 9,000 to the Agniveer Corpus Fund, matched by the government.",
+    "pension": "No pension or gratuity. Seva Nidhi of about Rs 11.71 lakh (tax free) after four years.",
+    "notes": "Life insurance of Rs 48 lakh during service.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Agniveer",
+        "level": "Agnipath package",
+        "timeline": "Four years",
+        "timelineType": "official"
+      },
+      {
+        "post": "Regular cadre (up to 25% of each batch)",
+        "level": "Regular rank",
+        "timeline": "After four years, by selection",
+        "timelineType": "official"
+      }
+    ],
+    "promotionNotes": "Retention depends on performance during the four years."
+  },
+  "benefits": [
+    {
+      "item": "Insurance and Seva Nidhi",
+      "detail": "Rs 48 lakh life insurance during service; about Rs 11.71 lakh Seva Nidhi at exit.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Air Force stations across India.",
+    "transfers": "With the unit.",
+    "nature": "Technical and ground duties.",
+    "workload": "High.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate.",
+    "stability": "Fixed four-year term; regular cadre only for up to 25%."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "medium",
+    "rationale": "Class 12 level test with lakhs of applicants and fitness rounds."
+  },
+  "ratings": {
+    "careerGrowth": "low",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Regular intakes, but only four years unless retained."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Fixed tenure",
+        "level": "high",
+        "note": "About 75% leave after four years."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AGNIPATH scheme for recruitment of youth in the Armed Forces (14 Jun 2022)",
+      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1833747",
+      "publisher": "Press Information Bureau, Government of India",
+      "year": 2022,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "IAF Agniveervayu intake 01/2027",
+      "url": "https://www.pw.live/defence/exams/indian-air-force-agniveer-vayu-intake-01-2027",
+      "publisher": "Physics Wallah",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Test pattern and exact birth-date windows not reproduced."
+    ],
+    "notes": "Package from the official PIB release; intake dates secondary."
+  },
+  "lastVerified": "2026-10-18"
+}

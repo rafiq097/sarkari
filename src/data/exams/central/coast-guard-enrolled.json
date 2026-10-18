@@ -1,0 +1,317 @@
+{
+  "id": "coast-guard-enrolled",
+  "name": "Indian Coast Guard Navik and Yantrik (CGEPT)",
+  "abbreviation": "Coast Guard Navik",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "icg",
+    "name": "Indian Coast Guard",
+    "abbreviation": "ICG",
+    "website": "https://joinindiancoastguard.cdac.in"
+  },
+  "department": "Indian Coast Guard (Ministry of Defence)",
+  "technical": false,
+  "summary": "Permanent sailor posts in the Coast Guard: Navik GD (Class 12 science), Navik DB (Class 10) and Yantrik (engineering diploma). About 365 posts for the 2027 batches. Four selection stages.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Twice a year (two batches)",
+  "officialLinks": [
+    {
+      "label": "Join Indian Coast Guard",
+      "url": "https://joinindiancoastguard.cdac.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "CGEPT 01/2027 and 02/2027: online applications through SSC from 6 October to 21 October 2026.",
+    "cycles": [
+      {
+        "cycle": "CGEPT 01/2027 and 02/2027",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-10-06",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-10-21",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Navik (General Duty)",
+      "group": "Enrolled person",
+      "payLevel": "Level 3",
+      "startingBasic": 21700,
+      "ageMin": 18,
+      "ageMax": 22,
+      "responsibilities": "Seamanship and operations.",
+      "notes": "Class 12 with Maths and Physics. Men and women."
+    },
+    {
+      "name": "Navik (Domestic Branch)",
+      "group": "Enrolled person",
+      "payLevel": "Level 3",
+      "startingBasic": 21700,
+      "ageMin": 18,
+      "ageMax": 22,
+      "responsibilities": "Cook and steward duties.",
+      "notes": "Class 10. 02/2027 batch only."
+    },
+    {
+      "name": "Yantrik (Mechanical, Electrical, Electronics)",
+      "group": "Enrolled person",
+      "payLevel": "Level 5",
+      "startingBasic": 29200,
+      "ageMin": 18,
+      "ageMax": 22,
+      "responsibilities": "Engine and electrical systems.",
+      "notes": "Class 10 plus an AICTE engineering diploma. Yantrik pay Rs 6,200 extra. 01/2027 batch only."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "SC / ST",
+          "years": 5
+        }
+      ],
+      "summary": "About 18 to 22: Navik GD born 1 Nov 2005 to 1 May 2009; Yantrik 1 May 2005 to 1 May 2009; Navik DB 1 Nov 2005 to 1 Oct 2009. OBC 3 and SC/ST 5 years relaxation.",
+      "referenceDate": "Birth-date windows in the notice"
+    },
+    "nationality": "Indian citizens (men and women; women only for Navik GD).",
+    "education": {
+      "summary": "Navik GD: Class 12 with Maths and Physics. Navik DB: Class 10. Yantrik: Class 10 plus a 3 or 4-year AICTE diploma in electrical, mechanical or electronics engineering.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "physical": "Physical fitness test and medical standards.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Navik GD needs Class 12 science; Yantrik needs a diploma.",
+    "ageMin": 18,
+    "ageMax": 22,
+    "minEducation": "class-10",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Stage I: computer-based exam",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Objective test (bilingual)",
+            "marks": 100,
+            "questions": 100,
+            "duration": "1 hour"
+          }
+        ],
+        "notes": "No negative marking. Pass mark 40 (UR, EWS, OBC) and 35 (SC, ST)."
+      },
+      {
+        "name": "Stage II: assessment and adaptability test, fitness test, document check",
+        "type": "physical",
+        "countsInMerit": false
+      },
+      {
+        "name": "Stage III and IV: medical exam and final document verification",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Zone-wise merit from Stage I among candidates who clear all stages.",
+    "languages": "Hindi and English.",
+    "documentVerification": "Stages II to IV.",
+    "probation": "Training at INS Chilka and other establishments."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://joinindiancoastguard.cdac.in",
+    "sections": [
+      {
+        "stage": "Stage I",
+        "subject": "Typical areas",
+        "topics": [
+          "Mathematics, physics and English (Navik GD)",
+          "Reasoning and general knowledge",
+          "Engineering subjects for Yantrik"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "mathematics",
+    "physics",
+    "english-language",
+    "reasoning",
+    "general-awareness",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2027,
+      "vacancies": 365,
+      "note": "Tentative, both 2027 batches, as reported.",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 3 (Navik), Level 5 (Yantrik)",
+    "payScale": "Navik 21,700; Yantrik 29,200 plus Rs 6,200 Yantrik pay",
+    "startingBasic": 21700,
+    "pension": "As per government rules.",
+    "notes": "Starting basic shown is Navik.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Navik / Yantrik",
+        "level": "Level 3 / 5",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Pradhan Navik, Uttam Adhikari and above",
+        "level": "Higher levels",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions up to Pradhan Adhikari, with officer entry possible."
+  },
+  "benefits": [
+    {
+      "item": "Service benefits",
+      "detail": "Free medical care, rations, leave travel and canteen facilities as per Coast Guard rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Coast Guard ships and stations along the coast.",
+    "transfers": "Periodic.",
+    "nature": "Maritime security and rescue.",
+    "workload": "High.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate to high.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "medium",
+    "rationale": "Few hundred posts for many applicants; fitness rounds filter many."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Permanent posts, two batches a year."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Sea duty",
+        "level": "medium",
+        "note": "Long periods at sea."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CGEPT 01/2027 and 02/2027 notification (copy of the official notice)",
+      "url": "https://www.karmasandhan.com/wp-content/uploads/ICG-CGEPT-01_2027-and-02_2027-Notification.pdf",
+      "publisher": "Indian Coast Guard",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Coast Guard Navik and Yantrik 2027: 365 posts",
+      "url": "https://easyapplications.in/all-india-jobs/indian-coast-guard-navik-yantrik-recruitment-2027/",
+      "publisher": "EasyApplications",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Stage I exam date not yet announced."
+    ],
+    "notes": "Eligibility, pay, ages and pattern from the official notice."
+  },
+  "lastVerified": "2026-10-18"
+}

@@ -1,0 +1,293 @@
+{
+  "id": "sebi-grade-a",
+  "name": "SEBI Officer Grade A (Assistant Manager)",
+  "abbreviation": "SEBI Grade A",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "regulatory",
+  "organization": {
+    "id": "sebi",
+    "name": "Securities and Exchange Board of India",
+    "abbreviation": "SEBI",
+    "website": "https://www.sebi.gov.in"
+  },
+  "department": "Securities and Exchange Board of India",
+  "technical": false,
+  "summary": "Officer entry into the market regulator in General, Legal, IT, Research, Official Language and Engineering streams. Two online phases and an interview. The 2025 drive had 110 posts (later raised).",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview"
+  ],
+  "frequency": "Usually yearly",
+  "officialLinks": [
+    {
+      "label": "SEBI careers",
+      "url": "https://www.sebi.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "2025 cycle: notified 30 October 2025, Phase 1 on 10 January 2026, Phase 2 on 21 February 2026, final result in June 2026. The next notice is usually around October or November.",
+    "cycles": [
+      {
+        "cycle": "Grade A 2025",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2025-10-30",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Phase 1",
+            "date": "2026-01-10",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Phase 2",
+            "date": "2026-02-21",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Assistant Manager (Officer Grade A)",
+      "group": "Grade A officer",
+      "payLevel": "SEBI Grade A scale",
+      "startingBasic": null,
+      "ageMax": 30,
+      "responsibilities": "Market supervision, investigation, legal and IT work.",
+      "notes": "Streams: General, Legal, IT, Research, Official Language, Engineering."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Under 30 on the cut-off date (30 September 2025 in the last cycle).",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A degree or postgraduate qualification as listed for each stream (for example a master's, LLB, CA/CFA or engineering degree).",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "As per notice"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Stream-wise degrees apply.",
+    "ageMin": 21,
+    "ageMax": 30,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Phase 1 (online, two papers)",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Phase 2 (online, two papers)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Interview",
+        "type": "interview",
+        "countsInMerit": true
+      }
+    ],
+    "meritCalculation": "Final merit on Phase 2 and interview marks.",
+    "languages": "English and Hindi.",
+    "documentVerification": "At interview.",
+    "probation": "As per SEBI rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.sebi.gov.in",
+    "sections": [
+      {
+        "stage": "Phase 1 and 2",
+        "subject": "Typical areas",
+        "topics": [
+          "General awareness, English, quantitative aptitude, reasoning",
+          "Securities markets, finance, economics, accounting, management",
+          "Stream subject paper"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "quantitative-aptitude",
+    "reasoning",
+    "general-awareness",
+    "indian-economy",
+    "accountancy-commerce",
+    "management",
+    "law",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 110,
+      "note": "As notified; reported later as revised upward.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "SEBI Grade A scale",
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "Pay scale not confirmed from the notice.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Assistant Manager",
+        "level": "Grade A",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Manager",
+        "level": "Grade B",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions through SEBI internal processes."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Mostly Mumbai, with regional offices.",
+    "transfers": "All-India transfer liability.",
+    "nature": "Office and field work.",
+    "workload": "Moderate.",
+    "publicInteraction": "Medium.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "medium",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "high",
+    "rationale": "About a hundred posts and a finance-heavy syllabus."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "medium",
+    "rationale": "Prestigious regulator job; few posts."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Very few posts",
+        "level": "high",
+        "note": "Around a hundred a year."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SEBI Grade A notification 2025 released",
+      "url": "https://scroll.in/announcements/1087466/sebi-grade-a-notification-2025-released-apply-from-october-30",
+      "publisher": "Scroll.in",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "SEBI Grade A phase results 2026",
+      "url": "https://www.pw.live/banking/exams/sebi-grade-a-prelims-result-2026",
+      "publisher": "Physics Wallah",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Pay scale, paper marks and final vacancy count not confirmed."
+    ],
+    "notes": "From secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

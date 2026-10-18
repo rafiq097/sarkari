@@ -1,0 +1,336 @@
+{
+  "id": "upsc-geo-scientist",
+  "name": "Combined Geo-Scientist Examination",
+  "abbreviation": "UPSC Geo-Scientist",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "scientific-research",
+  "organization": {
+    "id": "upsc",
+    "name": "Union Public Service Commission",
+    "abbreviation": "UPSC",
+    "website": "https://www.upsc.gov.in"
+  },
+  "department": "Geological Survey of India and Central Ground Water Board",
+  "technical": true,
+  "summary": "UPSC exam for Geologists, Geophysicists, Chemists and Hydrogeologists in GSI and CGWB (Level 10). Prelims, mains and a personality test. The 2027 exam has 127 posts.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview"
+  ],
+  "frequency": "Yearly (UPSC calendar)",
+  "officialLinks": [
+    {
+      "label": "UPSC",
+      "url": "https://www.upsc.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "The 2027 exam was notified on 2 September 2026 (127 posts); applications closed on 22 September. Prelims are set for 10 January 2027 and mains for June 2027.",
+    "cycles": [
+      {
+        "cycle": "Geo-Scientist 2027",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-09-02",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-09-22",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Prelims",
+            "date": "2027-01-10",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Geologist, Geophysicist, Chemist (GSI)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Mapping, mineral exploration and lab work."
+    },
+    {
+      "name": "Scientist B: Hydrogeology, Chemical, Geophysics (CGWB)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Groundwater surveys and management."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "21 to 32 years on 1 January of the exam year.",
+      "referenceDate": "1 January of the exam year"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A master's degree in Geology, Applied Geology, Geophysics, Chemistry, Hydrogeology or a related earth science, as listed per post.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "geology",
+      "chemistry",
+      "physics"
+    ],
+    "notes": "Subject needed depends on the post.",
+    "ageMin": 21,
+    "ageMax": 32,
+    "minEducation": "postgraduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Prelims (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General Studies",
+            "marks": 100,
+            "duration": "2 hours"
+          },
+          {
+            "name": "Subject paper",
+            "marks": 300,
+            "duration": "2 hours"
+          }
+        ]
+      },
+      {
+        "name": "Mains (descriptive)",
+        "type": "descriptive",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Three subject papers",
+            "marks": 600,
+            "duration": "3 hours each"
+          }
+        ]
+      },
+      {
+        "name": "Personality test",
+        "type": "interview",
+        "countsInMerit": true,
+        "notes": "200 marks."
+      }
+    ],
+    "meritCalculation": "Prelims, mains and interview marks all count (1,200 in total).",
+    "languages": "English.",
+    "documentVerification": "Before the interview.",
+    "probation": "Two years."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.upsc.gov.in",
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Earth science",
+        "topics": [
+          "Physical geology, structural geology, mineralogy, petrology",
+          "Stratigraphy and palaeontology",
+          "Economic geology and hydrogeology",
+          "Geophysics or chemistry for those posts"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "geology",
+    "chemistry",
+    "physics",
+    "general-awareness",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2027,
+      "vacancies": 127,
+      "note": "Tentative, across GSI and CGWB.",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 10",
+    "payScale": "56,100 to 1,77,500",
+    "startingBasic": 56100,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Geologist / Scientist B",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Senior Geologist / Scientist C",
+        "level": "Level 11",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Flexible complementing scheme for scientists."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Research centres and labs across India.",
+    "transfers": "Between centres when needed.",
+    "nature": "Field surveys, often in remote areas, plus lab work.",
+    "workload": "Moderate to high.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate (field work).",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "medium",
+    "timePressure": "medium",
+    "technicalComplexity": "high",
+    "physicalRequirements": "medium",
+    "selectionUncertainty": "medium",
+    "rationale": "Postgraduate science syllabus; a smaller, specialist pool."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Yearly Group A science jobs; lots of field travel."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Field postings",
+        "level": "medium",
+        "note": "Long field seasons away from base."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "UPSC Programme of Examinations / Recruitment Tests 2026",
+      "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "UPSC Geo-Scientist recruitment 2027: notification, 127 vacancies",
+      "url": "https://padhai.ai/upsc-update/notifications/upsc-geoscientist-notification",
+      "publisher": "Padhai",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Post-wise 2027 split varies between reports."
+    ],
+    "notes": "2026 schedule from the official calendar; 2027 notice details secondary."
+  },
+  "lastVerified": "2026-10-18"
+}

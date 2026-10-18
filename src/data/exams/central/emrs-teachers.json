@@ -1,0 +1,302 @@
+{
+  "id": "emrs-teachers",
+  "name": "EMRS Teacher and Staff Recruitment (NESTS)",
+  "abbreviation": "EMRS",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "teaching",
+  "organization": {
+    "id": "nests",
+    "name": "National Education Society for Tribal Students",
+    "abbreviation": "NESTS",
+    "website": "https://nests.tribal.gov.in"
+  },
+  "department": "Eklavya Model Residential Schools (Ministry of Tribal Affairs)",
+  "technical": false,
+  "summary": "Teaching and non-teaching posts in Eklavya Model Residential Schools for tribal students: Principal, PGT, TGT, hostel warden and others. The 2025 drive had 7,267 posts. Tier 1 and Tier 2 exams.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "skill-test",
+    "document-verification"
+  ],
+  "frequency": "Irregular (2023, 2025)",
+  "officialLinks": [
+    {
+      "label": "NESTS",
+      "url": "https://nests.tribal.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Advertisement NESTS/Adv/2025/01 (7,267 posts): Tier 1 (OMR) in December 2025, Tier 2 from 22 to 25 March 2026, Tier 2 results reported in September 2026, followed by skill tests and interviews.",
+    "cycles": [
+      {
+        "cycle": "EMRS 2025",
+        "events": [
+          {
+            "event": "Tier 2 exam",
+            "date": "2026-03-22",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Tier 2 result",
+            "date": "2026-09-03",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Principal, PGT, TGT, Hostel Warden and non-teaching staff",
+      "group": "Group A, B and C",
+      "payLevel": "As per notice",
+      "startingBasic": null,
+      "responsibilities": "Teaching and running residential schools for tribal students.",
+      "notes": "2025: 7,267 posts in total."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Age limits by post as per the notice.",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "Teacher posts follow KVS-style norms: a degree or postgraduate degree in the subject with B.Ed, and CTET for TGT.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "education"
+    ],
+    "notes": "Post-wise ages not confirmed.",
+    "ageMin": 18,
+    "ageMax": null,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Tier 1 (OMR)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Tier 2 (subject)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Skill test or interview (where applicable)",
+        "type": "interview",
+        "countsInMerit": true
+      }
+    ],
+    "meritCalculation": "Tier 1 and Tier 2 marks, plus skill test or interview where applicable.",
+    "languages": "English and Hindi.",
+    "documentVerification": "After final merit.",
+    "probation": "As per NESTS rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://nests.tribal.gov.in",
+    "sections": [
+      {
+        "stage": "Tier 1 and 2",
+        "subject": "Typical areas",
+        "topics": [
+          "General awareness, reasoning and languages",
+          "Teaching aptitude and subject knowledge"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "reasoning",
+    "general-awareness",
+    "english-language",
+    "hindi-language"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 7267,
+      "note": "All posts, NESTS/Adv/2025/01.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "As per post",
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "Post-wise pay levels not confirmed here.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "TGT / PGT",
+        "level": "Central pay levels",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Vice-Principal / Principal",
+        "level": "Higher levels",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "NESTS service rules."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Residential schools in tribal areas across India.",
+    "transfers": "As per NESTS.",
+    "nature": "Teaching with residential duties.",
+    "workload": "High.",
+    "publicInteraction": "High.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Large drive, but remote postings reduce competition for some posts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "low",
+    "rationale": "Central-style jobs with remote postings."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Remote postings",
+        "level": "high",
+        "note": "Schools are in tribal areas."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "EMRS Tier 2 admit card 2026 for 7,267 posts",
+      "url": "https://news.careers360.com/emrs-tier-2-admit-card-2026-out-esse-recruitment-7267-non-teaching-posts-principal-pgt-tgt-exam-from-march-22-download-pdf/amp",
+      "publisher": "Careers360",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "EMRS Tier 2 result 2026 released",
+      "url": "https://www.sarkarijobs.com/news/emrs-tier-2-result-2026-released-for-7267-teaching-and-non-teaching-posts-check-here/",
+      "publisher": "SarkariJobs",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Post-wise ages, pay and vacancies not confirmed."
+    ],
+    "notes": "From secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

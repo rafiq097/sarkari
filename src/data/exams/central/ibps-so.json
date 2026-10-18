@@ -1,0 +1,280 @@
+{
+  "id": "ibps-so",
+  "name": "IBPS Specialist Officers (CRP SPL)",
+  "abbreviation": "IBPS SO",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "banking",
+  "organization": {
+    "id": "ibps",
+    "name": "Institute of Banking Personnel Selection",
+    "abbreviation": "IBPS",
+    "website": "https://www.ibps.in"
+  },
+  "department": "Public sector banks",
+  "technical": false,
+  "summary": "Specialist Officer (Scale I) posts in public sector banks: IT Officer, Agricultural Field Officer, Law Officer, Rajbhasha Adhikari and HR Officer. Prelims, mains and an interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview"
+  ],
+  "frequency": "Yearly",
+  "officialLinks": [
+    {
+      "label": "IBPS",
+      "url": "https://www.ibps.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "CRP SPL-XVI (2026): applications closed in July 2026; prelims planned for August and mains for November 2026, then interviews and bank allotment.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "IT Officer",
+      "group": "JMGS-I",
+      "payLevel": "JMGS-I",
+      "startingBasic": 48480,
+      "responsibilities": "Bank IT systems.",
+      "notes": "2026: 301 posts."
+    },
+    {
+      "name": "Agricultural Field Officer",
+      "group": "JMGS-I",
+      "payLevel": "JMGS-I",
+      "startingBasic": 48480,
+      "responsibilities": "Farm loans and rural credit.",
+      "notes": "2026: 190 posts."
+    },
+    {
+      "name": "Law Officer, Rajbhasha Adhikari, HR / Personnel Officer",
+      "group": "JMGS-I",
+      "payLevel": "JMGS-I",
+      "startingBasic": 48480,
+      "responsibilities": "Legal, Hindi and HR functions.",
+      "notes": "2026: 105 law, 89 Rajbhasha, 60 HR."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "20 to 30 years on 1 July of the cycle year.",
+      "referenceDate": "1 July of the cycle year"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A degree in the specialism: engineering or computer degree (IT), agriculture degree (AFO), LLB (Law), postgraduate in Hindi (Rajbhasha), postgraduate in HR or labour (HR).",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-computer",
+      "computer-applications",
+      "agriculture",
+      "law",
+      "languages",
+      "management"
+    ],
+    "notes": "Degree must match the specialism.",
+    "ageMin": 20,
+    "ageMax": 30,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Prelims (online)",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Mains (professional knowledge)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Interview",
+        "type": "interview",
+        "countsInMerit": true
+      }
+    ],
+    "meritCalculation": "Final merit on mains and interview marks, then provisional bank allotment.",
+    "languages": "English and Hindi.",
+    "documentVerification": "At interview.",
+    "probation": "As per bank rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.ibps.in",
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Typical areas",
+        "topics": [
+          "Reasoning, English, quantitative aptitude or general awareness (prelims)",
+          "Professional knowledge of the specialism (mains)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "english-language",
+    "quantitative-aptitude",
+    "banking-awareness",
+    "engineering-computer",
+    "agriculture",
+    "law",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 745,
+      "note": "As notified; one report says it rose to 1,035.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "bank-12bps",
+    "payLevel": "JMGS-I",
+    "payScale": "48,480 to 85,920",
+    "startingBasic": 48480,
+    "pension": "NPS.",
+    "notes": "Same Scale I pay as bank POs; bank DA changes every quarter.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Specialist Officer (Scale I)",
+        "level": "JMGS-I",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Manager (Scale II)",
+        "level": "MMGS-II",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Bank promotion policy applies."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Bank branches and offices across India.",
+    "transfers": "Periodic, all-India.",
+    "nature": "Specialist banking work.",
+    "workload": "High.",
+    "publicInteraction": "Medium to high.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "medium",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Specialist degree filters the pool, but posts per stream are few."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Yearly cycle for degree specialists."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Transfers",
+        "level": "medium",
+        "note": "All-India postings in public sector banks."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IBPS SO recruitment 2026 (CRP SPL-XVI)",
+      "url": "https://www.sahisarkarijobs.in/job/ibps-so-crp-spl-xvi-recruitment-2026/",
+      "publisher": "Sahi Sarkari Jobs",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Final vacancy count and exam dates not confirmed.",
+      "Paper-wise marks not reproduced."
+    ],
+    "notes": "From secondary reports of the official notice."
+  },
+  "lastVerified": "2026-10-18"
+}

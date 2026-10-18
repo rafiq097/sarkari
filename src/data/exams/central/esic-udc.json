@@ -1,0 +1,276 @@
+{
+  "id": "esic-udc",
+  "name": "ESIC Upper Division Clerk and Stenographer",
+  "abbreviation": "ESIC UDC",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "social-security",
+  "organization": {
+    "id": "esic",
+    "name": "Employees' State Insurance Corporation",
+    "abbreviation": "ESIC",
+    "website": "https://www.esic.gov.in"
+  },
+  "department": "ESIC regional offices and hospitals",
+  "technical": false,
+  "summary": "Group C office posts in ESIC: Upper Division Clerk and Stenographer (Level 4), recruited region-wise. Prelims, mains and a computer or skill test.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "ESIC recruitment",
+      "url": "https://www.esic.gov.in/recruitments"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Region-wise drives come every few years. A new UDC and Stenographer drive was expected in 2026 but no official notice was confirmed by October 2026.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Upper Division Clerk",
+      "group": "Group C",
+      "payLevel": "Level 4",
+      "startingBasic": 25500,
+      "ageMin": 18,
+      "ageMax": 27,
+      "responsibilities": "Office and accounts work."
+    },
+    {
+      "name": "Stenographer",
+      "group": "Group C",
+      "payLevel": "Level 4",
+      "startingBasic": 25500,
+      "ageMin": 18,
+      "ageMax": 27,
+      "responsibilities": "Shorthand and office support."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 27 years (as reported).",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A bachelor's degree with computer knowledge (UDC); Class 12 with shorthand skill (Stenographer).",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "UDC needs a degree.",
+    "ageMin": 18,
+    "ageMax": 27,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Prelims",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Mains",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Computer skill or shorthand test",
+        "type": "skill",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Mains merit, with a qualifying skill test.",
+    "languages": "English and Hindi.",
+    "documentVerification": "After results.",
+    "probation": "Two years."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.esic.gov.in/recruitments",
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Typical areas",
+        "topics": [
+          "Reasoning, quantitative aptitude, English, general awareness"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "quantitative-aptitude",
+    "english-language",
+    "general-awareness",
+    "computer-awareness",
+    "stenography-skill"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 4",
+    "payScale": "25,500 to 81,100",
+    "startingBasic": 25500,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "UDC",
+        "level": "Level 4",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Head Clerk / Assistant",
+        "level": "Level 6",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "ESIC promotion rules."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "ESIC offices in the region you applied to.",
+    "transfers": "Mostly within the region.",
+    "nature": "Office and field work.",
+    "workload": "Moderate.",
+    "publicInteraction": "Medium.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "SSC-style papers with many applicants per region."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "low",
+    "rationale": "Regional posting; drives are irregular."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "Notices do not follow a fixed yearly date."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ESIC recruitment 2026: UDC, MTS, Stenographer guide",
+      "url": "https://truejobs.co.in/blog/esic-recruitment-2026-udc-mts-stenographer-nursing-paramedic",
+      "publisher": "TrueJobs",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "No official 2026 notice; vacancies and dates unknown."
+    ],
+    "notes": "Pay level and stages from secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

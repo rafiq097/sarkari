@@ -1,0 +1,260 @@
+{
+  "id": "rbi-assistant",
+  "name": "RBI Assistant",
+  "abbreviation": "RBI Assistant",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "regulatory",
+  "organization": {
+    "id": "rbi",
+    "name": "Reserve Bank of India",
+    "abbreviation": "RBI",
+    "website": "https://opportunities.rbi.org.in"
+  },
+  "department": "Reserve Bank of India offices",
+  "technical": false,
+  "summary": "Clerical-level entry into the Reserve Bank of India, office-wise. Prelims, mains and a language proficiency test in the local language. Age 20 to 28.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "RBI opportunities",
+      "url": "https://opportunities.rbi.org.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Recruitment is office-wise and irregular. The 2026 cycle was reported with about 650 posts; check the RBI site for the current notice.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Assistant",
+      "group": "Class III",
+      "payLevel": "RBI scale",
+      "startingBasic": null,
+      "ageMin": 20,
+      "ageMax": 28,
+      "responsibilities": "Office work in RBI regional offices.",
+      "notes": "You apply to one RBI office and must know its local language."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "20 to 28 years (on 1 February 2026 in the reported cycle).",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Must know the language of the state of the chosen office.",
+    "education": {
+      "summary": "A bachelor's degree with at least 50% (pass class for SC, ST, PwBD) and basic computer skills.",
+      "finalYearAllowed": false,
+      "minMarks": "50%"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Local language needed for the chosen office.",
+    "ageMin": 20,
+    "ageMax": 28,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Prelims (online)",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Mains (online)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Language proficiency test",
+        "type": "skill",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Final merit on mains marks; the language test is qualifying.",
+    "languages": "English and Hindi.",
+    "documentVerification": "At the language test.",
+    "probation": "As per RBI rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://opportunities.rbi.org.in",
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Typical areas",
+        "topics": [
+          "English",
+          "Numerical ability",
+          "Reasoning",
+          "General awareness and computer knowledge (mains)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "quantitative-aptitude",
+    "reasoning",
+    "general-awareness",
+    "computer-awareness",
+    "banking-awareness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 650,
+      "note": "As reported.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "RBI Assistant scale",
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "Pay not confirmed from the notice; RBI pay is set by its own scales.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Assistant",
+        "level": "Class III",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Grade A officer (internal exam)",
+        "level": "Grade A",
+        "timeline": "By departmental exam",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Internal promotion exams lead to officer grades."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "The RBI office you applied to.",
+    "transfers": "Usually within the region.",
+    "nature": "Office and field work.",
+    "workload": "Moderate.",
+    "publicInteraction": "Medium.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Few posts per office and fast-paced banking-style papers."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "low",
+    "rationale": "Local posting and RBI perks; cycles are irregular."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "Notices do not follow a fixed yearly date."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RBI Assistant 2026",
+      "url": "https://indianpaycalculator.in/sarkari-result/jobs/rbi-assistant-2026",
+      "publisher": "Indian Pay Calculator",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Official notice not read; vacancies, dates and pay not confirmed."
+    ],
+    "notes": "From a secondary report; stages follow the usual RBI pattern."
+  },
+  "lastVerified": "2026-10-18"
+}

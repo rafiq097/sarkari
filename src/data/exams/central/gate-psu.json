@@ -1,0 +1,240 @@
+{
+  "id": "gate-psu",
+  "name": "PSU jobs through GATE (Executive / Engineer Trainee)",
+  "abbreviation": "GATE PSU",
+  "profileType": "recruitment-pathway",
+  "jurisdiction": "central",
+  "sector": "engineering-psu",
+  "organization": {
+    "id": "gate-psus",
+    "name": "Central PSUs recruiting through GATE",
+    "abbreviation": "PSUs",
+    "website": "https://gate2027.iitm.ac.in"
+  },
+  "department": "Central public sector companies such as NTPC, PGCIL, GAIL, THDC, Grid-India, DTL and NSPCL",
+  "technical": true,
+  "summary": "Many central PSUs hire engineers as trainees using GATE scores, followed by group discussion or interview. Each company notifies separately after GATE. Some (ONGC, IOCL) are moving to their own tests.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "gate-based",
+    "interview"
+  ],
+  "frequency": "Yearly, after GATE (held in February)",
+  "officialLinks": [
+    {
+      "label": "GATE 2027",
+      "url": "https://gate2027.iitm.ac.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "GATE is held every February. PSUs announce GATE-based hiring around the GATE application window or after results, each with its own disciplines and cut-offs.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Executive Trainee / Engineer Trainee / Assistant Engineer",
+      "group": "E1 or E2 grade (by company)",
+      "payLevel": "IDA scale (by company)",
+      "startingBasic": null,
+      "responsibilities": "Engineering roles in power, oil, gas and other PSUs.",
+      "notes": "Disciplines and pay differ by company."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "Usually up to about 27 to 28 for general candidates; each PSU sets its own limit.",
+      "referenceDate": "As per each PSU notice"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "BE / BTech in the matching discipline with the minimum marks set by each PSU (often 60 to 65%), plus a valid GATE score.",
+      "finalYearAllowed": true,
+      "minMarks": "Set by each PSU"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-any"
+    ],
+    "notes": "Each PSU sets its own age and marks rules.",
+    "ageMin": 18,
+    "ageMax": null,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "GATE score shortlisting",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Group discussion and / or interview",
+        "type": "interview",
+        "countsInMerit": true
+      },
+      {
+        "name": "Medical",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Weighted GATE score plus GD / interview, as set by each PSU.",
+    "languages": "English.",
+    "documentVerification": "At interview.",
+    "probation": "One-year training."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://gate2027.iitm.ac.in",
+    "sections": [
+      {
+        "stage": "GATE",
+        "subject": "Engineering discipline",
+        "topics": [
+          "Engineering mathematics and general aptitude",
+          "Core subjects of the GATE paper"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "engineering-mathematics",
+    "engineering-civil",
+    "engineering-mechanical",
+    "engineering-electrical",
+    "engineering-electronics",
+    "engineering-computer",
+    "engineering-chemical",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "IDA scales",
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "Pay varies by company and grade; many offer about Rs 40,000 to 60,000 basic plus perks.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Engineer Trainee",
+        "level": "E1 / E2",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Engineer, Senior Engineer, Manager",
+        "level": "E3 to E5",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Company-specific promotion policies."
+  },
+  "benefits": [
+    {
+      "item": "PSU benefits",
+      "detail": "Performance pay, housing or HRA, medical and leave as per company rules.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Plants, sites and offices across India.",
+    "transfers": "As per company.",
+    "nature": "Operations, projects and maintenance.",
+    "workload": "High.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate on plant sites.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "high",
+    "rationale": "Needs a high GATE rank; seats per discipline are few."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "medium",
+    "rationale": "Very good pay and perks; hiring varies by year and company."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Company hiring varies",
+        "level": "medium",
+        "note": "Some PSUs skip GATE hiring in some years."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GATE 2027: expected PSU and central government recruitment",
+      "url": "https://www.pw.live/gate/exams/gate-2027-all-expected-psu-central-govt-recruitment",
+      "publisher": "Physics Wallah",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Company-wise pay, ages and vacancies change every year."
+    ],
+    "notes": "A pathway summary from secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

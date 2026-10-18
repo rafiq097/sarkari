@@ -1,0 +1,342 @@
+{
+  "id": "upsc-cms",
+  "name": "Combined Medical Services Examination",
+  "abbreviation": "UPSC CMS",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "health",
+  "organization": {
+    "id": "upsc",
+    "name": "Union Public Service Commission",
+    "abbreviation": "UPSC",
+    "website": "https://www.upsc.gov.in"
+  },
+  "department": "Railways, Ordnance Factories Health Service, Central Health Service, NDMC and MCD",
+  "technical": false,
+  "summary": "UPSC exam for MBBS doctors to join central services as Medical Officers (Level 10). Two computer-based papers of 250 marks each, then a 100-mark personality test.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "medical-exam"
+  ],
+  "frequency": "Yearly (UPSC calendar)",
+  "officialLinks": [
+    {
+      "label": "UPSC",
+      "url": "https://www.upsc.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Held every year. 2026: notification 11 March, last date 31 March, exam 2 August 2026. The 2027 notice usually comes in March.",
+    "cycles": [
+      {
+        "cycle": "CMS 2026",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-03-11",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-03-31",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Exam",
+            "date": "2026-08-02",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Assistant Divisional Medical Officer (Railways)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Railway hospitals and health units."
+    },
+    {
+      "name": "Medical Officer (Ordnance Factories Health Service)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Ordnance factory hospitals."
+    },
+    {
+      "name": "Junior Scale Medical Officer (Central Health Service)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "CGHS and central hospitals."
+    },
+    {
+      "name": "General Duty Medical Officer (NDMC, MCD)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Delhi municipal hospitals."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Under 32 years (as per the notice).",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "MBBS. Final-year students may apply if they finish the internship before appointment.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "medicine"
+    ],
+    "notes": "MBBS needed.",
+    "ageMin": 18,
+    "ageMax": 32,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Computer-based exam",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper I: General Medicine and Paediatrics",
+            "marks": 250,
+            "duration": "2 hours"
+          },
+          {
+            "name": "Paper II: Surgery, Gynaecology and Obstetrics, Preventive and Social Medicine",
+            "marks": 250,
+            "duration": "2 hours"
+          }
+        ]
+      },
+      {
+        "name": "Personality test",
+        "type": "interview",
+        "countsInMerit": true,
+        "notes": "100 marks."
+      }
+    ],
+    "meritCalculation": "Final merit out of 600: two papers (500) plus personality test (100).",
+    "languages": "English.",
+    "documentVerification": "Before the personality test.",
+    "probation": "As per service rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.upsc.gov.in",
+    "sections": [
+      {
+        "stage": "Papers I and II",
+        "subject": "MBBS subjects",
+        "topics": [
+          "General medicine (including cardiology, neurology, dermatology, psychiatry)",
+          "Paediatrics",
+          "Surgery (including ENT, ophthalmology, orthopaedics)",
+          "Gynaecology and obstetrics",
+          "Preventive and social medicine"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "medicine",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 1358,
+      "note": "As reported for CMS 2026.",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 10",
+    "payScale": "56,100 to 1,77,500",
+    "startingBasic": 56100,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "notes": "Non-Practising Allowance for doctors is not modelled.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Medical Officer",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Senior Medical Officer",
+        "level": "Level 11",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Chief Medical Officer",
+        "level": "Level 12 and above",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Dynamic assured career progression applies in central health services."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Central hospitals and dispensaries across India.",
+    "transfers": "Within the service.",
+    "nature": "Clinical practice.",
+    "workload": "High.",
+    "publicInteraction": "Very high.",
+    "hazards": "Moderate (infection exposure).",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Broad MBBS syllabus and many MBBS graduates competing."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "high",
+    "rationale": "Yearly exam with Group A entry."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Location",
+        "level": "medium",
+        "note": "Railway and factory postings can be remote."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "UPSC Programme of Examinations / Recruitment Tests 2026",
+      "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "UPSC CMS 2026: notification, eligibility, pattern",
+      "url": "https://competition.careers360.com/articles/upsc-cms-2026",
+      "publisher": "Careers360",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Vacancy count and age reference date from a secondary report."
+    ],
+    "notes": "Dates from the official UPSC calendar."
+  },
+  "lastVerified": "2026-10-18"
+}
