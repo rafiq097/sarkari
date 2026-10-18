@@ -1,0 +1,322 @@
+{
+  "id": "ibps-rrb",
+  "name": "Common Recruitment Process for Regional Rural Banks (Officers and Office Assistants)",
+  "abbreviation": "IBPS RRB",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "banking",
+  "organization": {
+    "id": "ibps",
+    "name": "Institute of Banking Personnel Selection",
+    "abbreviation": "IBPS",
+    "website": "https://www.ibps.in"
+  },
+  "department": "Regional Rural Banks (including Andhra Pradesh Grameena Bank, Telangana Grameena Bank and Karnataka Grameena Bank)",
+  "technical": false,
+  "summary": "Recruitment for Regional Rural Banks: Office Assistant (Multipurpose), Officer Scale I (Assistant Manager), and Scale II and III specialist and generalist officers. Strong local-language requirement and rural postings.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "document-verification"
+  ],
+  "frequency": "Annual (IBPS calendar)",
+  "officialLinks": [
+    {
+      "label": "IBPS website",
+      "url": "https://www.ibps.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. CRP RRB-XV (2026): registration reported for September 2026, Prelims in November to December 2026, Mains around December 2026 to January 2027.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "Office Assistant (Multipurpose)",
+      "group": "Clerical",
+      "payLevel": "RRB clerical scale",
+      "startingBasic": null,
+      "ageMax": 28,
+      "responsibilities": "Counter and back-office work in rural branches."
+    },
+    {
+      "name": "Officer Scale I (Assistant Manager)",
+      "group": "Officer",
+      "payLevel": "Scale I",
+      "startingBasic": 48480,
+      "ageMax": 30,
+      "responsibilities": "Branch officer in a rural bank."
+    },
+    {
+      "name": "Officer Scale II (General Banking and Specialist)",
+      "group": "Officer",
+      "payLevel": "Scale II",
+      "startingBasic": null,
+      "responsibilities": "Manager; needs experience.",
+      "notes": "Experience required."
+    },
+    {
+      "name": "Officer Scale III (Senior Manager)",
+      "group": "Officer",
+      "payLevel": "Scale III",
+      "startingBasic": null,
+      "responsibilities": "Senior branch manager; needs experience.",
+      "notes": "Experience required."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Typical limits: Office Assistant 18 to 28; Officer Scale I 18 to 30; Scale II 21 to 32; Scale III 21 to 40 (check the current notice).",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "As per notice.",
+    "domicile": "Proficiency in the local language of the RRB's state is required.",
+    "education": {
+      "summary": "Graduate in any discipline for Office Assistant and Scale I (preference for agriculture, rural economics and similar for Scale I); specific degrees and experience for Scale II and III.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "The 40 upper limit applies only to Scale III; Office Assistant 28, Scale I 30. Local language needed.",
+    "ageMin": 18,
+    "ageMax": 40,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Preliminary (Office Assistant and Scale I)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "Reasoning and Numerical / Quantitative Ability",
+            "marks": 80,
+            "questions": 80,
+            "duration": "45 minutes",
+            "negative": "0.25"
+          }
+        ]
+      },
+      {
+        "name": "Main / single exam",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Reasoning, Quantitative Aptitude, General Awareness, English or Hindi, Computer Knowledge",
+            "marks": 200,
+            "negative": "0.25"
+          }
+        ]
+      },
+      {
+        "name": "Interview (officers only)",
+        "type": "interview",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Interview",
+            "marks": 100
+          }
+        ]
+      }
+    ],
+    "meritCalculation": "Office Assistant: Mains marks. Officers: Mains and interview in an 80:20 ratio.",
+    "languages": "English, Hindi and regional languages.",
+    "documentVerification": "At the allotted RRB.",
+    "probation": "As per RRB."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Tests",
+        "topics": [
+          "Reasoning",
+          "Quantitative aptitude",
+          "General and financial awareness",
+          "English or Hindi language",
+          "Computer knowledge"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "quantitative-aptitude",
+    "banking-awareness",
+    "current-affairs",
+    "english-language",
+    "hindi-language",
+    "computer-awareness",
+    "agriculture"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 8183,
+      "note": "Office Assistant vacancies reported for RRB-XV.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "bank-12bps",
+    "payLevel": "RRB scales",
+    "payScale": "Scale I from 48,480",
+    "startingBasic": 48480,
+    "pension": "NPS.",
+    "increments": "As per scale.",
+    "notes": "Starting basic shown for Officer Scale I. RRB staff pay follows the public sector bank settlement.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Officer Scale I",
+        "level": "Scale I",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Scale II and III",
+        "level": "Scale II to III",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions within the RRB.",
+    "macp": "Not applicable."
+  },
+  "benefits": [
+    {
+      "item": "Bank staff benefits",
+      "detail": "As per RRB rules.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Rural and semi-urban branches within one state.",
+    "transfers": "Within the state.",
+    "nature": "Branch banking, agriculture loans.",
+    "workload": "High; small branches.",
+    "publicInteraction": "Very high.",
+    "hazards": "Low.",
+    "stability": "High."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Short, fast Prelims; competition depends on the state."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual; you work in your home state, mostly in rural areas."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Rural postings",
+        "level": "medium",
+        "note": "Most branches are rural."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IBPS RRB XV Office Assistant (Multipurpose) 2026 notification report",
+      "url": "https://www.sreedharscce.com/blogs/ibps-rrb-xv-office-assistant-notification/",
+      "publisher": "Sreedhar's CCE (reports the IBPS notice)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Official notice not fetched; vacancies and dates from a secondary report.",
+      "Age limits shown are typical of recent notices.",
+      "Office Assistant starting basic not confirmed."
+    ],
+    "notes": "Indicative."
+  },
+  "lastVerified": "2026-10-18"
+}

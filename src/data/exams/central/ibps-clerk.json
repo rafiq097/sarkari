@@ -1,0 +1,318 @@
+{
+  "id": "ibps-clerk",
+  "name": "Common Recruitment Process for Customer Service Associates (Clerks)",
+  "abbreviation": "IBPS Clerk",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "banking",
+  "organization": {
+    "id": "ibps",
+    "name": "Institute of Banking Personnel Selection",
+    "abbreviation": "IBPS",
+    "website": "https://www.ibps.in"
+  },
+  "department": "11 public sector banks",
+  "technical": false,
+  "summary": "State-wise recruitment of clerks (Customer Service Associates) for 11 public sector banks. Prelims and Mains, no interview, and a local language proficiency test for the state you apply in.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification"
+  ],
+  "frequency": "Annual (IBPS calendar)",
+  "officialLinks": [
+    {
+      "label": "IBPS website",
+      "url": "https://www.ibps.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. 2026 cycle (CSA-XVI): applications 1 to 21 August 2026, Prelims tentatively 10 to 11 October 2026, Mains tentatively 27 December 2026.",
+    "cycles": [
+      {
+        "cycle": "CRP CSA-XVI",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-08-01",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-08-21",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Preliminary exam",
+            "date": "2026-10-10",
+            "dateType": "official-tentative",
+            "source": "s1"
+          },
+          {
+            "event": "Main exam",
+            "date": "2026-12-27",
+            "dateType": "official-tentative",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Customer Service Associate (Clerk)",
+      "group": "Clerical cadre",
+      "payLevel": "Bank clerical scale",
+      "startingBasic": 24050,
+      "responsibilities": "Cash, deposits, customer service and back office in a branch.",
+      "notes": "Scale 24,050 to 64,480 (12th Bipartite Settlement)."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Usually 20 to 28 years on the date in the notice.",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India or other categories as per notice.",
+    "domicile": "Apply for one state or UT; proficiency in its official language is required (Telugu for AP and Telangana, Kannada for Karnataka).",
+    "education": {
+      "summary": "A degree in any discipline; computer literacy (certificate, or computers as a subject) as per the notice.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "State language proficiency needed.",
+    "ageMin": 20,
+    "ageMax": 28,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Preliminary (online)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "English, Numerical Ability, Reasoning",
+            "marks": 100,
+            "questions": 100,
+            "duration": "60 minutes (sectional timers)",
+            "negative": "0.25"
+          }
+        ]
+      },
+      {
+        "name": "Main (online)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General/Financial Awareness, General English, Reasoning and Computer Aptitude, Quantitative Aptitude",
+            "marks": 200,
+            "negative": "0.25"
+          }
+        ]
+      },
+      {
+        "name": "Language Proficiency Test",
+        "type": "skill",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Final provisional allotment on Mains marks, state-wise.",
+    "languages": "English, Hindi and regional languages as per notice.",
+    "documentVerification": "At the allotted bank.",
+    "probation": "As per bank."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Tests",
+        "topics": [
+          "English",
+          "Numerical and quantitative aptitude",
+          "Reasoning and computer aptitude",
+          "General and financial awareness"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "quantitative-aptitude",
+    "reasoning",
+    "computer-awareness",
+    "banking-awareness",
+    "current-affairs"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 11403,
+      "note": "As reported for CSA-XVI.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "bank-12bps",
+    "payLevel": "Clerical scale",
+    "payScale": "24,050 to 64,480",
+    "startingBasic": 24050,
+    "pension": "NPS.",
+    "increments": "As per scale.",
+    "notes": "Bank DA is revised quarterly; gross not estimated.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Clerk",
+        "level": "Clerical",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Officer (JMGS-I) via internal promotion",
+        "level": "JMGS-I",
+        "timeline": "After eligible service and test",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Internal promotion exams lead to officer posts.",
+    "macp": "Not applicable."
+  },
+  "benefits": [
+    {
+      "item": "Bank staff benefits",
+      "detail": "Medical, leave fare concession, staff loans, as per bank.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Branches in your chosen state.",
+    "transfers": "Mostly within the state.",
+    "nature": "Branch counter and back office.",
+    "workload": "High footfall.",
+    "publicInteraction": "Very high.",
+    "hazards": "Low.",
+    "stability": "High."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Simple syllabus but very speed-dependent with lakhs of applicants."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual; you stay in your state."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "State-wise vacancies",
+        "level": "medium",
+        "note": "Your state may have few vacancies in a given year."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IBPS Clerk 2026 (CRP CSA-XVI) notification report",
+      "url": "https://www.sreedharscce.com/blogs/ibps-clerk-notification/",
+      "publisher": "Sreedhar's CCE (reports the IBPS notice)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Official notice not fetched; dates and vacancies from a secondary report.",
+      "Exact age reference date and section-wise marks not confirmed for 2026."
+    ],
+    "notes": "Indicative."
+  },
+  "lastVerified": "2026-10-18"
+}
