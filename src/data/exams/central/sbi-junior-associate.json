@@ -1,0 +1,352 @@
+{
+  "id": "sbi-junior-associate",
+  "name": "SBI Junior Associates (Customer Support and Sales)",
+  "abbreviation": "SBI Clerk",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "banking",
+  "organization": {
+    "id": "sbi",
+    "name": "State Bank of India (Central Recruitment and Promotion Department)",
+    "abbreviation": "SBI",
+    "website": "https://sbi.bank.in/web/careers/current-openings"
+  },
+  "department": "State Bank of India",
+  "technical": false,
+  "summary": "Clerical-cadre recruitment in SBI, state by state: you apply for one state and must know its local language. Online Prelims and Mains, then a local language test. Starting basic Rs 26,730; SBI states total starting pay of about Rs 46,000 a month at a metro.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification"
+  ],
+  "frequency": "Annual (SBI recruitment calendar)",
+  "officialLinks": [
+    {
+      "label": "JA 2026 advertisement",
+      "url": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. 2026 cycle: Prelims tentatively September 2026 and Mains November 2026.",
+    "cycles": [
+      {
+        "cycle": "SBI JA 2026",
+        "events": [
+          {
+            "event": "Preliminary exam",
+            "date": "2026-09",
+            "dateType": "official-tentative",
+            "source": "s1"
+          },
+          {
+            "event": "Main exam",
+            "date": "2026-11",
+            "dateType": "official-tentative",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Junior Associate (Customer Support and Sales)",
+      "group": "Clerical cadre",
+      "payLevel": "SBI clerical scale",
+      "startingBasic": 26730,
+      "responsibilities": "Counter services, cash, accounts, customer support and product sales.",
+      "notes": "No inter-state transfer for 5 years."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC (non-creamy layer)",
+          "years": 3
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Trained SBI apprentices (engaged on or after 1 Jan 2022)",
+          "years": null,
+          "note": "As per the advertisement."
+        }
+      ],
+      "summary": "20 to 28 years on 1 April 2026.",
+      "referenceDate": "1 April"
+    },
+    "nationality": "Indian citizen.",
+    "domicile": "You apply for one state or UT only and must be proficient in its local language (Telugu or Urdu for Telangana, Telugu for Andhra Pradesh, Kannada for Karnataka). A language test is held after Mains unless your Class 10 or 12 marksheet shows the language.",
+    "education": {
+      "summary": "Graduation in any discipline. Final-year students may apply with proof of passing by the date in the advertisement.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Once per recruitment project"
+      }
+    ],
+    "examVsPost": "Vacancies are state-wise; you compete only within the state you choose.",
+    "disqualifications": [
+      "Failing the local language test means no appointment."
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-04-01",
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Local language proficiency of the chosen state is required.",
+    "ageMin": 20,
+    "ageMax": 28,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Preliminary (online)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "English Language",
+            "questions": 30,
+            "marks": 30,
+            "duration": "20 minutes",
+            "negative": "0.25"
+          },
+          {
+            "name": "Numerical Ability",
+            "questions": 35,
+            "marks": 35,
+            "duration": "20 minutes",
+            "negative": "0.25"
+          },
+          {
+            "name": "Reasoning Ability",
+            "questions": 35,
+            "marks": 35,
+            "duration": "20 minutes",
+            "negative": "0.25"
+          }
+        ],
+        "notes": "100 marks, 1 hour. No sectional minimum; about 10 times the vacancies go to Mains by aggregate."
+      },
+      {
+        "name": "Main (online)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General / Financial Awareness",
+            "questions": 50,
+            "marks": 50,
+            "duration": "35 minutes",
+            "negative": "0.25"
+          },
+          {
+            "name": "General English",
+            "questions": 40,
+            "marks": 40,
+            "duration": "35 minutes",
+            "negative": "0.25"
+          },
+          {
+            "name": "Quantitative Aptitude",
+            "questions": 50,
+            "marks": 50,
+            "duration": "45 minutes",
+            "negative": "0.25"
+          },
+          {
+            "name": "Reasoning Ability and Computer Aptitude",
+            "questions": 50,
+            "marks": 60,
+            "duration": "45 minutes",
+            "negative": "0.25"
+          }
+        ],
+        "notes": "190 questions, 200 marks, 2 hours 40 minutes. Minimum aggregate and sectional marks set by the bank (5% relaxation for reserved categories). SBI apprentices get 5 bonus marks."
+      },
+      {
+        "name": "Local language test",
+        "type": "skill",
+        "countsInMerit": false,
+        "notes": "Qualifying; waived if Class 10 or 12 records show the language."
+      }
+    ],
+    "meritCalculation": "Final selection on Mains marks, state-wise and category-wise.",
+    "languages": "English, Hindi and the regional language as per the advertisement.",
+    "documentVerification": "Before joining.",
+    "probation": "6 months, as per SBI rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf",
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Tests",
+        "topics": [
+          "English",
+          "Numerical / quantitative aptitude",
+          "Reasoning and computer aptitude",
+          "General and financial awareness"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "quantitative-aptitude",
+    "reasoning",
+    "computer-awareness",
+    "banking-awareness",
+    "current-affairs",
+    "telugu-language",
+    "kannada-language"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 7680,
+      "note": "Regular vacancies across all states (backlog listed separately).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "bank-12bps",
+    "payLevel": "SBI clerical scale",
+    "payScale": "24,050 to 64,480",
+    "startingBasic": 26730,
+    "officialGross": 46000,
+    "officialGrossNote": "SBI states total starting emoluments of about Rs 46,000 a month at a metro such as Mumbai, including DA and allowances (rate at the time of the advertisement).",
+    "pension": "NPS.",
+    "increments": "As per the scale; graduates get two advance increments (24,050 + 2 = 26,730).",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Junior Associate",
+        "level": "Clerical",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Officer (JMGS-I) via internal promotion",
+        "level": "JMGS-I",
+        "timeline": "After eligible service and promotion test",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Internal promotion to officer is a common path in SBI.",
+    "macp": "Not applicable."
+  },
+  "benefits": [
+    {
+      "item": "SBI staff benefits",
+      "detail": "Medical, leave fare concession, staff loans as per SBI rules.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Branches in your chosen state.",
+    "transfers": "Within the state; no inter-state transfer for 5 years.",
+    "nature": "Counter and back office.",
+    "workload": "High footfall at urban branches.",
+    "publicInteraction": "Very high.",
+    "hazards": "Low.",
+    "stability": "High."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Simple syllabus, tight timers, very large applicant pool, state-wise merit."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "high",
+    "rationale": "You stay in your chosen state; internal promotion to officer is possible."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Language test",
+        "level": "low",
+        "note": "Required unless school records show the language."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SBI Junior Associates (Customer Support & Sales) 2026 detailed advertisement",
+      "url": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf",
+      "publisher": "State Bank of India",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "State-wise vacancy figures for AP, Telangana and Karnataka not reproduced.",
+      "Application dates not recorded."
+    ],
+    "notes": "From the official English advertisement."
+  },
+  "lastVerified": "2026-10-18"
+}

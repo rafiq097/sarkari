@@ -1,0 +1,428 @@
+{
+  "id": "sbi-po",
+  "name": "SBI Probationary Officers",
+  "abbreviation": "SBI PO",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "banking",
+  "organization": {
+    "id": "sbi",
+    "name": "State Bank of India (Central Recruitment and Promotion Department)",
+    "abbreviation": "SBI",
+    "website": "https://sbi.bank.in/web/careers/current-openings"
+  },
+  "department": "State Bank of India",
+  "technical": false,
+  "summary": "Officer entry into India's largest bank. Three phases: Prelims, Mains (objective plus descriptive), and Phase III (psychometric test, group exercise and interview). Selected officers start in JMGS-I. Widely seen as the most sought-after bank PO job.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "document-verification"
+  ],
+  "frequency": "Annual (SBI recruitment calendar)",
+  "officialLinks": [
+    {
+      "label": "SBI PO 2026-27 advertisement (Hindi)",
+      "url": "https://sbi.bank.in/documents/77530/57941334/23062026_SBI+_+Detailed+Advt.+PO+26-27_09+-+Hindi.pdf/0f0ff4e1-2ef6-1e3f-719f-bb95ec1a2e13?t=1782216346313"
+    },
+    {
+      "label": "SBI careers",
+      "url": "https://sbi.bank.in/web/careers/current-openings"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. 2026-27 cycle: applications 18 June to 8 July 2026, Prelims in August, Mains in September, Phase III in October to November, final result by November or December 2026.",
+    "cycles": [
+      {
+        "cycle": "SBI PO 2026-27 (CRPD/PO/2026-27/09)",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-06-18",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-07-08",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Preliminary exam",
+            "date": "2026-08",
+            "dateType": "official-tentative",
+            "source": "s1"
+          },
+          {
+            "event": "Main exam",
+            "date": "2026-09",
+            "dateType": "official-tentative",
+            "source": "s1"
+          },
+          {
+            "event": "Phase III (psychometric, group exercise, interview)",
+            "date": "2026-10",
+            "dateType": "official-tentative",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Probationary Officer",
+      "group": "JMGS-I (officer)",
+      "payLevel": "Bank scale JMGS-I",
+      "startingBasic": 48480,
+      "responsibilities": "Branch operations, credit, customer relationships; leadership roles after probation.",
+      "notes": "Scale 48,480-2,000/7-62,480-2,340/2-67,160-2,680/7-85,920. Advance increments, if any, as stated in the advertisement."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC (non-creamy layer)",
+          "years": 3
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Ex-servicemen (as per rules)",
+          "years": 5
+        }
+      ],
+      "summary": "21 to 30 years on 1 April of the advertisement year (2026-27: on 1 Apr 2026).",
+      "referenceDate": "1 April"
+    },
+    "nationality": "Citizen of India, or other categories as per the advertisement.",
+    "education": {
+      "summary": "Graduation in any discipline. Final-year students may apply if they can show proof of passing by the date in the advertisement.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "General / EWS",
+        "limit": "4"
+      },
+      {
+        "category": "OBC / PwBD (General, OBC)",
+        "limit": "7"
+      },
+      {
+        "category": "SC / ST",
+        "limit": "No limit"
+      }
+    ],
+    "examVsPost": "There is only one post (PO), but you must also meet SBI's conditions on CIBIL / credit history at joining.",
+    "other": [
+      "Fee as per the advertisement; SC, ST and PwBD exempt."
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-04-01",
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Attempt limits apply (4 for General/EWS).",
+    "ageMin": 21,
+    "ageMax": 30,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Phase I: Preliminary (online)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "English Language",
+            "questions": 40,
+            "marks": 40,
+            "duration": "20 minutes"
+          },
+          {
+            "name": "Quantitative Aptitude",
+            "questions": 30,
+            "marks": 30,
+            "duration": "20 minutes"
+          },
+          {
+            "name": "Reasoning Ability",
+            "questions": 30,
+            "marks": 30,
+            "duration": "20 minutes"
+          }
+        ],
+        "notes": "100 marks, 1 hour. Negative marking 0.25."
+      },
+      {
+        "name": "Phase II: Main (online objective + descriptive)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Objective tests: reasoning and computer aptitude, data analysis and interpretation, general/economy/banking awareness, English",
+            "marks": 200
+          },
+          {
+            "name": "Descriptive test: letter writing and essay (English)",
+            "marks": 50,
+            "duration": "30 minutes"
+          }
+        ]
+      },
+      {
+        "name": "Phase III: psychometric test, group exercise and interview",
+        "type": "interview",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Group exercise + interview",
+            "marks": 50
+          }
+        ],
+        "notes": "The psychometric test profile is used in the interview."
+      }
+    ],
+    "meritCalculation": "Final merit combines Phase II (Mains) and Phase III marks; Prelims is not counted. Recent advertisements weighted Mains and Phase III 75:25.",
+    "languages": "English and Hindi, except English papers.",
+    "documentVerification": "At Phase III and joining.",
+    "probation": "2 years, with in-house training."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://sbi.bank.in/documents/77530/57941334/23062026_SBI+_+Detailed+Advt.+PO+26-27_09+-+Hindi.pdf/0f0ff4e1-2ef6-1e3f-719f-bb95ec1a2e13?t=1782216346313",
+    "sections": [
+      {
+        "stage": "Prelims and Mains",
+        "subject": "Tests",
+        "topics": [
+          "English: reading comprehension, grammar, vocabulary",
+          "Quantitative aptitude and data analysis and interpretation",
+          "Reasoning and computer aptitude",
+          "General, economy and banking awareness",
+          "Descriptive English: letter and essay"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "quantitative-aptitude",
+    "reasoning",
+    "data-interpretation",
+    "banking-awareness",
+    "current-affairs",
+    "indian-economy",
+    "computer-awareness",
+    "essay-writing",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 1500,
+      "note": "Advertisement CRPD/PO/2026-27/09 (regular plus backlog).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": {
+    "sources": [
+      "s1"
+    ],
+    "text": "Selected candidates are posted by SBI to circles across India based on its needs; preferences may be sought but are not binding."
+  },
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "bank-12bps",
+    "payLevel": "JMGS-I",
+    "payScale": "48,480 to 85,920",
+    "startingBasic": 48480,
+    "pension": "NPS.",
+    "increments": "As per the scale.",
+    "notes": "Bank DA changes quarterly; SBI also gives allowances and perquisites as per its rules. Gross pay is not estimated here.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Probationary Officer / Assistant Manager",
+        "level": "JMGS-I",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Deputy Manager",
+        "level": "MMGS-II",
+        "timeline": "After eligible service and promotion test",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Manager / Chief Manager",
+        "level": "MMGS-III / SMGS-IV",
+        "timeline": "Mid career",
+        "timelineType": "typical"
+      },
+      {
+        "post": "AGM to Managing Director",
+        "level": "SMGS-V and above",
+        "timeline": "By selection",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "SBI has a fast-track promotion policy for officers; promotions depend on tests, interviews and performance.",
+    "macp": "Not applicable."
+  },
+  "benefits": [
+    {
+      "item": "SBI officer benefits",
+      "detail": "Leased accommodation, medical, leave fare concession, concessional staff loans, as per SBI rules.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Any SBI branch or office in India; rural postings are common early.",
+    "transfers": "Regular, including inter-circle.",
+    "nature": "Branch and office.",
+    "workload": "High; targets and long hours.",
+    "publicInteraction": "Very high.",
+    "hazards": "Low.",
+    "stability": "High."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "high",
+    "rationale": "Fewer posts than IBPS PO (about 1,500 to 2,000) with a tougher Mains and an attempt limit."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual; strong career ladder in the largest bank."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Attempt limit",
+        "level": "medium",
+        "note": "4 attempts for General/EWS."
+      },
+      {
+        "factor": "Workload",
+        "level": "medium",
+        "note": "Sales and compliance pressure."
+      }
+    ]
+  },
+  "guide": {
+    "sources": [
+      "s1"
+    ],
+    "sections": [
+      {
+        "title": "Three phases",
+        "kind": "explainer",
+        "quickFacts": [
+          {
+            "label": "Posts 2026-27",
+            "value": "1,500"
+          },
+          {
+            "label": "Age",
+            "value": "21 to 30"
+          },
+          {
+            "label": "Attempts (General)",
+            "value": "4"
+          }
+        ],
+        "paragraphs": [
+          "Phase I screens. Phase II (Mains) has a 200-mark objective test and a 50-mark descriptive test in English. Phase III is a psychometric test, a group exercise and an interview. Final merit combines Phases II and III only."
+        ],
+        "bullets": [
+          "SBI PO has an attempt limit; IBPS PO does not.",
+          "SBI pay follows bank scales, not the central pay matrix."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SBI PO 2026-27 detailed advertisement CRPD/PO/2026-27/09 (Hindi)",
+      "url": "https://sbi.bank.in/documents/77530/57941334/23062026_SBI+_+Detailed+Advt.+PO+26-27_09+-+Hindi.pdf/0f0ff4e1-2ef6-1e3f-719f-bb95ec1a2e13?t=1782216346313",
+      "publisher": "State Bank of India",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "SBI PO 2026 notification released (1,500 posts)",
+      "url": "https://www.amarujala.com/jobs/government-jobs/sbi-po-recruitment-2026-notification-released-registration-started-apply-online-till-july-8-check-vacancy-2026-06-18",
+      "publisher": "Amar Ujala",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Only the Hindi advertisement was available, in a legacy font; marks for each Mains test and the exact merit weightage are from earlier SBI PO advertisements, not re-read for 2026-27.",
+      "Starting basic with advance increments not confirmed."
+    ],
+    "notes": "Dates, age, scale and vacancies confirmed."
+  },
+  "lastVerified": "2026-10-18"
+}
