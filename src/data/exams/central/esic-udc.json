@@ -28,8 +28,26 @@
   ],
   "status": {
     "type": "recurring",
-    "note": "Region-wise drives come every few years. New drives are announced on the ESIC website when posts are approved.",
-    "cycles": []
+    "note": "Region-wise drives come every few years. The last UDC drive, Advertisement 278/2025 (11 July 2025), was examined by AIIMS New Delhi; the final result came on 3 January 2026, followed by region-wise document verification.",
+    "cycles": [
+      {
+        "cycle": "UDC, Advt 278/2025",
+        "events": [
+          {
+            "event": "Advertisement",
+            "date": "2025-07-11",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Final result",
+            "date": "2026-01-03",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
   },
   "posts": [
     {
@@ -256,6 +274,15 @@
       "accessed": "2026-10-18"
     },
     {
+      "id": "s2",
+      "title": "ESIC notice: document verification for UDC, Gujarat Region (Advt 278/2025)",
+      "url": "https://esic.gov.in/attachments/recruitmentfile/SCHEDULE_OF_DOCUMENT_VERIFICATION_IN_RESPECT_OF_SHORTLISTED_CANDIDATES_FOR_THE_POST_OF_UPPER_DIVISION_CLERK_UDC_IN_ESIC_GUJARAT_REGION_1771825438.pdf",
+      "publisher": "Employees' State Insurance Corporation",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
       "id": "payMatrix",
       "title": "7th CPC pay matrix",
       "url": "https://doe.gov.in/pay-commission-matrix",
@@ -266,11 +293,11 @@
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "No official 2026 notice; vacancies and dates unknown."
+      "Vacancies and paper pattern of the 2025 drive not reproduced."
     ],
-    "notes": "Pay level and stages from secondary reports."
+    "notes": "Cycle dates from an official ESIC notice; pay level and stages from secondary reports."
   },
   "lastVerified": "2026-10-18"
 }

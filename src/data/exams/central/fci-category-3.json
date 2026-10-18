@@ -28,8 +28,26 @@
   ],
   "status": {
     "type": "recurring",
-    "note": "The last Category III drive (about 5,000 posts) was in 2022. Category III drives have come every few years; watch fci.gov.in.",
-    "cycles": []
+    "note": "Zone-wise drives come every few years. The last, Advt 01/2022 (about 5,000 posts), took applications from 6 September to 5 October 2022.",
+    "cycles": [
+      {
+        "cycle": "Advt 01/2022-FCI Category III",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2022-09-06",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2022-10-05",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
   },
   "posts": [
     {
@@ -117,12 +135,21 @@
     ],
     "stages": [
       {
-        "name": "Phase 1 (online)",
+        "name": "Phase I (online, common to all posts)",
         "type": "objective",
-        "countsInMerit": false
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "English 25, Reasoning 25, Numerical aptitude 25, General studies and current affairs 25 (15 minutes each)",
+            "marks": 100,
+            "questions": 100,
+            "duration": "60 minutes",
+            "negative": "One fourth of a mark"
+          }
+        ]
       },
       {
-        "name": "Phase 2 (online, post-specific)",
+        "name": "Phase II (online, post-specific papers)",
         "type": "objective",
         "countsInMerit": true
       },
@@ -243,14 +270,23 @@
       "year": 2026,
       "type": "secondary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Advt. No. 01/2022-FCI Category III: zone-wise recruitment of non-executives",
+      "url": "https://fci.gov.in/fci-storage/storage/app/uploads/653f851f7c7ba1698661663.pdf",
+      "publisher": "Food Corporation of India",
+      "year": 2022,
+      "type": "primary",
+      "accessed": "2026-10-18"
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "No 2026 notice; vacancies and dates unknown."
+      "Next notice not yet out; figures are from the 2022 drive."
     ],
-    "notes": "From secondary reports."
+    "notes": "Pattern, pay and dates from the official 2022 advertisement."
   },
   "lastVerified": "2026-10-18"
 }

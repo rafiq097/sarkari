@@ -28,7 +28,7 @@
   ],
   "status": {
     "type": "recurring",
-    "note": "The 2023 drive had 2,674 SSA posts (applications 27 March to 26 April 2023). New drives have come every few years.",
+    "note": "Drives come every few years. The 2023 drive had 2,674 SSA posts: applications 27 March to 26 April 2023, computer-based test by NTA in August 2023, result on 3 January 2024.",
     "cycles": [
       {
         "cycle": "SSA 2023",
@@ -37,13 +37,25 @@
             "event": "Applications open",
             "date": "2023-03-27",
             "dateType": "official",
-            "source": "s1"
+            "source": "s2"
           },
           {
             "event": "Last date to apply",
             "date": "2023-04-26",
             "dateType": "official",
-            "source": "s1"
+            "source": "s2"
+          },
+          {
+            "event": "Computer-based test begins",
+            "date": "2023-08-18",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Result",
+            "date": "2024-01-03",
+            "dateType": "official",
+            "source": "s2"
           }
         ]
       }
@@ -178,8 +190,8 @@
     {
       "year": 2023,
       "vacancies": 2674,
-      "note": "SSA posts (plus 185 stenographers in the same notice).",
-      "source": "s1"
+      "note": "SSA posts in the 2023 advertisement.",
+      "source": "s2"
     }
   ],
   "rankAndAllocation": null,
@@ -279,6 +291,15 @@
       "accessed": "2026-10-18"
     },
     {
+      "id": "s2",
+      "title": "EPFO advertisement for the post of Social Security Assistant (2023)",
+      "url": "https://www.epfindia.gov.in/site_docs/PDFs/Recruitments_PDFs/Advertisement_for_SSA_24032023.pdf",
+      "publisher": "Employees' Provident Fund Organisation",
+      "year": 2023,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
       "id": "payMatrix",
       "title": "7th CPC pay matrix",
       "url": "https://doe.gov.in/pay-commission-matrix",
@@ -289,12 +310,12 @@
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "2026 cycle not confirmed.",
-      "Typing speed rule from secondary reports."
+      "Typing speed rule from secondary reports.",
+      "The official advertisement link has since been removed from the EPFO site."
     ],
-    "notes": "From secondary reports of the 2023 notice."
+    "notes": "Posts, pay level and dates from the official 2023 advertisement and result notices."
   },
   "lastVerified": "2026-10-18"
 }
