@@ -159,7 +159,7 @@ function SalaryEstimate({ salary }) {
   if (!estimate) {
     return (
       <p className="muted">
-        {salary.officialGross ? `Gross pay stated by the recruiter: ${formatRupees(salary.officialGross)} per month. ${salary.officialGrossNote ?? ''}` : 'An in-hand estimate is not modelled for this pay system. Use the figures in the official notification.'}
+        {salary.officialGross ? `Gross pay stated by the recruiter: ${formatRupees(salary.officialGross)} per month. ${salary.officialGrossNote ?? ''}` : `An in-hand estimate is not modelled for this pay system. ${salary.officialGrossNote ?? 'Use the figures in the official notification.'}`}
       </p>
     )
   }

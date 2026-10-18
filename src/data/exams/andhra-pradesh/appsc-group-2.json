@@ -1,0 +1,436 @@
+{
+  "id": "appsc-group-2",
+  "name": "APPSC Group-II Services",
+  "abbreviation": "APPSC Group 2",
+  "profileType": "exam",
+  "jurisdiction": "andhra-pradesh",
+  "sector": "revenue-clerical",
+  "organization": {
+    "id": "appsc",
+    "name": "Andhra Pradesh Public Service Commission",
+    "abbreviation": "APPSC",
+    "website": "https://psc.ap.gov.in"
+  },
+  "department": "Government of Andhra Pradesh (Revenue, Panchayat Raj, Commercial Tax, Secretariat, Treasuries, Excise and others)",
+  "technical": false,
+  "summary": "Large Andhra Pradesh recruitment for executive and non-executive posts: Deputy Tahsildar, Deputy MPDO, GST Officer, Sub-Registrar, Assistant Section Officer, Excise SI, Senior and Junior Accountants and more. An objective Screening test and an objective two-paper Mains; no interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification"
+  ],
+  "frequency": "Irregular (notified every 1 to 3 years)",
+  "officialLinks": [
+    {
+      "label": "Brief Notification 37/2026",
+      "url": "https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Brief Notification 37/2026 (686 posts) issued on 13 October 2026. Applications 10 to 30 November 2026; detailed notification with age and Screening date due by 10 November 2026.",
+    "cycles": [
+      {
+        "cycle": "Notification 37/2026",
+        "events": [
+          {
+            "event": "Brief notification",
+            "date": "2026-10-13",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Applications open",
+            "date": "2026-11-10",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-11-30",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Deputy Tahsildar (A.P. Revenue Service)",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 44570,
+      "responsibilities": "Mandal revenue administration.",
+      "notes": "200 posts."
+    },
+    {
+      "name": "Deputy Mandal Parishad Development Officer",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 45830,
+      "responsibilities": "Mandal-level rural development.",
+      "notes": "176 posts."
+    },
+    {
+      "name": "Goods and Service Tax Officer (erstwhile ACTO)",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 45830,
+      "responsibilities": "State GST assessment.",
+      "notes": "40 posts."
+    },
+    {
+      "name": "Municipal Commissioner Grade-III",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 45830,
+      "responsibilities": "Runs a small municipality.",
+      "notes": "6 posts."
+    },
+    {
+      "name": "Assistant Registrar of Cooperative Societies",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 45830,
+      "responsibilities": "Cooperative regulation.",
+      "notes": "10 posts."
+    },
+    {
+      "name": "Sub-Registrar Grade-II",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 44570,
+      "responsibilities": "Registration of documents.",
+      "notes": "7 posts. Law degree preferred."
+    },
+    {
+      "name": "Prohibition and Excise Sub-Inspector",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 40970,
+      "responsibilities": "Excise enforcement.",
+      "notes": "29 posts. Physical requirements apply."
+    },
+    {
+      "name": "Assistant Section Officer (GAD / Finance / Law)",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 40970,
+      "responsibilities": "AP Secretariat work.",
+      "notes": "71 + 5 + 4 posts. Finance needs a Maths, Economics or Commerce degree; Law needs a law degree."
+    },
+    {
+      "name": "Senior Accountant (Treasuries and Accounts)",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 34580,
+      "responsibilities": "Accounts in HODs.",
+      "notes": "90 posts. Computer certificate or computer degree required."
+    },
+    {
+      "name": "Junior Accountant",
+      "group": "Group-II",
+      "payLevel": "RPS 2022",
+      "startingBasic": 25220,
+      "responsibilities": "Accounts in departments.",
+      "notes": "48 posts."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "AP State Government employees",
+          "years": 5,
+          "note": "Based on service, as per notification."
+        },
+        {
+          "category": "Ex-servicemen / NCC instructors",
+          "years": 3,
+          "note": "Plus length of service, as per notification."
+        }
+      ],
+      "summary": "Set in the detailed notification (due by 10 November 2026). For reference, Group-I 07/2026 used 18 to 44 on 1 July 2026 under G.O.Ms.No.187 and 188 of 14 Sep 2026.",
+      "referenceDate": "Date of detailed notification is the crucial date"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre and zonal rules apply.",
+    "education": {
+      "summary": "Bachelor's degree for most posts. ASO (Finance): degree in Maths, Economics or Commerce. ASO (Law): law degree. Senior and Junior Accountant: degree plus a BTET computer certificate (Office Automation, PC Maintenance or Web Designing) or a computer degree.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "physical": "Excise SI has physical requirements (see detailed notification).",
+    "examVsPost": "Some posts need specific degrees or computer certificates; check each post.",
+    "reservation": "Andhra Pradesh rules: SC 15% (sub-categorised into groups as per the 2025 orders, applied as stated in the notification), ST 6%, BC 29% (A 7%, B 10%, C 1%, D 7%, E 4%), EWS 10%. Horizontal reservation for women (33 1/3%), PwBD, ex-servicemen and sportspersons. Local, zonal and multi-zonal reservation under the AP Presidential Order and local cadre rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "andhra-pradesh",
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Age limits confirmed only in the detailed notification; 44 is the Group-I 2026 limit, used here as an envelope.",
+    "ageMin": 18,
+    "ageMax": 44,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Screening test (objective, OMR)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "General Studies and Mental Ability (degree standard)",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third of the marks"
+          }
+        ]
+      },
+      {
+        "name": "Main exam (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper I: Social history of AP (social and cultural movements); overview of the Indian Constitution",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third"
+          },
+          {
+            "name": "Paper II: Indian and AP economy; science and technology",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third"
+          }
+        ]
+      },
+      {
+        "name": "Computer Proficiency Test (specified posts)",
+        "type": "skill",
+        "countsInMerit": false,
+        "notes": "Practical, qualifying."
+      },
+      {
+        "name": "Certificate verification",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the Main exam (300 marks). No interview.",
+    "languages": "English and Telugu.",
+    "documentVerification": "After Mains.",
+    "probation": "As per AP rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf",
+    "sections": [
+      {
+        "stage": "Screening",
+        "subject": "General Studies and Mental Ability",
+        "topics": [
+          "History, geography, polity, economy of India and AP",
+          "Current affairs",
+          "Mental ability and reasoning"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper I",
+        "topics": [
+          "Social history of Andhra Pradesh: social and cultural movements",
+          "General overview of the Indian Constitution"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper II",
+        "topics": [
+          "Indian and AP economy",
+          "Science and technology"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "ap-history-culture",
+    "indian-polity",
+    "indian-economy",
+    "ap-economy-policy",
+    "science-technology",
+    "current-affairs",
+    "reasoning",
+    "geography",
+    "computer-awareness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 686,
+      "note": "Brief Notification 37/2026 (provisional).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": {
+    "sources": [
+      "s1"
+    ],
+    "text": "Merit-cum-preference across posts, with community, local and horizontal reservations."
+  },
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ap-rps-2022",
+    "payLevel": "AP RPS 2022",
+    "payScale": "25,220 to 1,30,580 (by post)",
+    "startingBasic": 44570,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment in the scale.",
+    "notes": "Starting basic shown is Deputy Tahsildar (44,570-1,27,480). Executive posts like Deputy MPDO and GST Officer start at 45,830.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Deputy Tahsildar",
+        "level": "Group-II",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Tahsildar (Mandal Revenue Officer)",
+        "level": "Higher scale",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Deputy Collector",
+        "level": "Group-I",
+        "timeline": "Senior, by promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Departmental tests conducted by APPSC are needed for many promotions.",
+    "departmentalExams": "APPSC departmental tests (held twice a year).",
+    "macp": "Automatic Advancement Scheme as per AP rules."
+  },
+  "benefits": [
+    {
+      "item": "State government benefits",
+      "detail": "HRA or quarters, EHS, leave and LTC as per AP rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Mandals, municipalities and offices across AP by zone.",
+    "transfers": "Every 2 to 3 years.",
+    "nature": "Field (revenue, panchayat, tax) or desk (Secretariat, accounts).",
+    "workload": "High in revenue posts.",
+    "publicInteraction": "Very high.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Fully objective, AP-focused syllabus; competition for about 700 posts is very high."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Good state posts but notified irregularly."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Every few years."
+      },
+      {
+        "factor": "Litigation",
+        "level": "medium",
+        "note": "Past cycles faced court cases over reservation rosters."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "APPSC Brief Notification No. 37/2026: Group-II Services",
+      "url": "https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf",
+      "publisher": "Andhra Pradesh Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Age limits and Screening date are in the detailed notification, not yet read.",
+      "Computer Proficiency Test post list not reproduced."
+    ],
+    "notes": "Posts, pay scales, qualifications and scheme from the brief notification."
+  },
+  "lastVerified": "2026-10-18"
+}
