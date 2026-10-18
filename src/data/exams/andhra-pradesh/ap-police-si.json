@@ -1,0 +1,341 @@
+{
+  "id": "ap-police-si",
+  "name": "AP Police Sub-Inspector (Civil, AR and others)",
+  "abbreviation": "AP Police SI",
+  "profileType": "exam",
+  "jurisdiction": "andhra-pradesh",
+  "sector": "capf-police",
+  "organization": {
+    "id": "slprb-ap",
+    "name": "State Level Police Recruitment Board, Andhra Pradesh",
+    "abbreviation": "SLPRB AP",
+    "website": "https://slprb.ap.gov.in"
+  },
+  "department": "Andhra Pradesh Police",
+  "technical": false,
+  "summary": "Graduate entry as Stipendiary Cadet Trainee Sub-Inspector in AP Police: Civil, Armed Reserve, Special Protection Force and technical SI posts. Preliminary test, physical tests, final written exam.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular (2018, 2022, 2026 cycles)",
+  "officialLinks": [
+    {
+      "label": "SLPRB AP",
+      "url": "https://slprb.ap.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Notifications 81 and 82/SLPRB/2026 issued on 16 September 2026. Application dates to be announced by press release.",
+    "cycles": [
+      {
+        "cycle": "2026 recruitment",
+        "events": [
+          {
+            "event": "Notifications issued",
+            "date": "2026-09-16",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "SCT SI (Civil), men and women",
+      "group": "Non-gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 44570,
+      "responsibilities": "Station house officer duties, investigation, law and order.",
+      "notes": "253 posts."
+    },
+    {
+      "name": "SCT Reserve SI (AR), men and women",
+      "group": "Non-gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 44570,
+      "responsibilities": "Armed reserve platoon command.",
+      "notes": "116 posts."
+    },
+    {
+      "name": "SI (Men), Special Protection Force",
+      "group": "Non-gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 44570,
+      "responsibilities": "Security of installations.",
+      "notes": "9 posts."
+    },
+    {
+      "name": "SCT SI (Communications)",
+      "group": "Non-gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 45830,
+      "responsibilities": "Police communications.",
+      "notes": "50 posts. Diploma or B.Tech in ECE, EEE, CSE or IT, or B.Sc Electronics."
+    },
+    {
+      "name": "SCT SI (Police Transport Organisation), men",
+      "group": "Non-gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 44570,
+      "responsibilities": "Police vehicle fleet.",
+      "notes": "10 posts. Diploma in Electrical, Mechanical or Automobile Engineering."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "Ex-servicemen and others",
+          "years": null,
+          "note": "As per notification."
+        }
+      ],
+      "summary": "21 to 27 years on 1 July 2026.",
+      "referenceDate": "1 July 2026"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre rules apply.",
+    "education": {
+      "summary": "A bachelor's degree (Civil, AR, SPF). Technical SI posts need the diplomas or degrees listed above.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "physical": "Physical Measurement Test and Physical Efficiency Test (a qualifying 1,600 m run among others). Eyesight: distant vision 6/6 in both eyes; colour blindness and squint disqualify.",
+    "reservation": "AP reservation (SC, ST, BC A to E, EWS) with 33 1/3% horizontal reservation for women in civil posts, plus local cadre (district / zone) rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-07-01",
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "andhra-pradesh",
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Physical tests. Technical SI posts accept diplomas.",
+    "ageMin": 21,
+    "ageMax": 27,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Preliminary Written Test",
+        "type": "objective",
+        "countsInMerit": false,
+        "notes": "Qualifying. Minimum 40% (OC, EWS), 35% (BC), 30% (SC, ST)."
+      },
+      {
+        "name": "Physical Measurement Test",
+        "type": "physical",
+        "countsInMerit": false
+      },
+      {
+        "name": "Physical Efficiency Test",
+        "type": "physical",
+        "countsInMerit": false,
+        "notes": "Includes a qualifying 1,600 m run."
+      },
+      {
+        "name": "Final Written Examination",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Certificate verification and medical",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the Final Written Examination among candidates who clear the qualifying stages.",
+    "languages": "English and Telugu.",
+    "documentVerification": "After the final written exam.",
+    "probation": "Training at the AP Police Academy with stipend, then probation."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "Written tests",
+        "subject": "Typical papers",
+        "topics": [
+          "Arithmetic and reasoning / mental ability",
+          "General studies",
+          "English and Telugu (qualifying where specified)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "quantitative-aptitude",
+    "reasoning",
+    "general-awareness",
+    "ap-history-culture",
+    "english-language",
+    "telugu-language",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 438,
+      "note": "Notifications 81 (378) and 82 (60) of 2026.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ap-rps-2022",
+    "payLevel": "AP RPS 2022",
+    "payScale": "44,570 to 1,27,480",
+    "startingBasic": 44570,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment.",
+    "notes": "Stipend during training; regular pay after training.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Sub-Inspector",
+        "level": "RPS 2022",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Inspector",
+        "level": "Higher scale",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "DSP",
+        "level": "Group-I scale",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Seniority and departmental tests."
+  },
+  "benefits": [
+    {
+      "item": "Police benefits",
+      "detail": "Uniform, quarters where available, police health schemes as per AP rules.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Police stations and units across the zone.",
+    "transfers": "Frequent.",
+    "nature": "Field policing.",
+    "workload": "Very high.",
+    "publicInteraction": "Very high.",
+    "hazards": "Moderate to high.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "medium",
+    "rationale": "Several elimination stages including physical tests for a few hundred posts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Recruitment comes every few years."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Gaps of several years."
+      },
+      {
+        "factor": "Litigation",
+        "level": "medium",
+        "note": "The 2022 cycle results were revised after court cases."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AP Police Recruitment 2026: SLPRB announces 2,050 SI, Constable, Fireman and other vacancies (six notifications of 16 Sep 2026)",
+      "url": "https://www.sarkarijobs.com/ap-police-recruitment-2026-notice-out-slprb-announces-2050-si-constable-fireman-and-other-vacancies/",
+      "publisher": "SarkariJobs (reports the SLPRB notifications)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "SLPRB AP press note, 16 Sep 2026",
+      "url": "https://slprb.ap.gov.in/2026_PDFS/PressNote_dated_16092026.pdf",
+      "publisher": "State Level Police Recruitment Board, AP",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Official notification text not machine-readable; details from a secondary report.",
+      "PET and PMT figures not reproduced.",
+      "Exam marks per paper not confirmed."
+    ],
+    "notes": "Indicative."
+  },
+  "lastVerified": "2026-10-18"
+}

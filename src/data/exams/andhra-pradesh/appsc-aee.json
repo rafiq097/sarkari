@@ -1,0 +1,353 @@
+{
+  "id": "appsc-aee",
+  "name": "APPSC Assistant Executive Engineers in Engineering Services",
+  "abbreviation": "APPSC AEE",
+  "profileType": "exam",
+  "jurisdiction": "andhra-pradesh",
+  "sector": "engineering-psu",
+  "organization": {
+    "id": "appsc",
+    "name": "Andhra Pradesh Public Service Commission",
+    "abbreviation": "APPSC",
+    "website": "https://psc.ap.gov.in"
+  },
+  "department": "AP Water Resources, Panchayat Raj, Rural Water Supply, Roads and Buildings, Public Health, Tribal Welfare engineering departments",
+  "technical": true,
+  "summary": "Gazetted Assistant Executive Engineer posts across Andhra Pradesh engineering departments, mostly Civil (Water Resources alone has 224). One computer-based exam of three papers (450 marks); no Screening test and no interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "Brief Notification 27/2026",
+      "url": "https://psc.ap.gov.in/Documents/NotificationDocuments/AEE_Revised_272026.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Brief Notification 27/2026 issued 13 October 2026; applications 2 to 22 November 2026.",
+    "cycles": [
+      {
+        "cycle": "Notification 27/2026",
+        "events": [
+          {
+            "event": "Brief notification",
+            "date": "2026-10-13",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Applications open",
+            "date": "2026-11-02",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-11-22",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "AEE (Civil), Water Resources",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "Irrigation projects and canals.",
+      "notes": "224 posts."
+    },
+    {
+      "name": "AEE, Panchayat Raj and Rural Development Engineering",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "Rural roads and buildings.",
+      "notes": "100 posts."
+    },
+    {
+      "name": "AEE (Civil), Roads and Buildings",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "State roads and buildings.",
+      "notes": "75 posts."
+    },
+    {
+      "name": "AEE, Rural Water Supply and Sanitation",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "Drinking water schemes.",
+      "notes": "73 posts."
+    },
+    {
+      "name": "AEE, Public Health and Municipal Engineering",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "Urban water and sewerage.",
+      "notes": "21 posts."
+    },
+    {
+      "name": "AEE, Tribal Welfare Engineering",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "Tribal area works.",
+      "notes": "6 posts."
+    },
+    {
+      "name": "AEE (Electrical), Roads and Buildings",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "Electrical works.",
+      "notes": "4 posts."
+    },
+    {
+      "name": "AEE (Mechanical), Water Resources",
+      "group": "Gazetted",
+      "payLevel": "RPS 2022",
+      "startingBasic": 57100,
+      "responsibilities": "Mechanical works in irrigation.",
+      "notes": "Vacancies per notification."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "Ex-servicemen and others",
+          "years": null,
+          "note": "As per notification."
+        }
+      ],
+      "summary": "18 to 44 years on 1 July 2026.",
+      "referenceDate": "1 July 2026"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre and zonal rules apply.",
+    "education": {
+      "summary": "A bachelor's degree in the relevant branch of engineering (Civil, Mechanical or Electrical, as per post), held by the date of the detailed notification.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": null,
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-07-01",
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "andhra-pradesh",
+    "educationFields": [
+      "engineering-civil",
+      "engineering-mechanical",
+      "engineering-electrical"
+    ],
+    "notes": "",
+    "ageMin": 18,
+    "ageMax": 44,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Written exam (CBRT, objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper 1: General Studies and Mental Ability (common)",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third"
+          },
+          {
+            "name": "Paper 2: Civil and Mechanical Engineering (or Electrical for R&B Electrical)",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third"
+          },
+          {
+            "name": "Paper 3: Civil Engineering (or the branch of the post)",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third"
+          }
+        ],
+        "notes": "Single-level exam; no Screening test regardless of applications. Normalization if held in multiple sessions."
+      }
+    ],
+    "meritCalculation": "Merit on the 450-mark written exam.",
+    "languages": "English (with Telugu translation as per notification).",
+    "documentVerification": "After the exam.",
+    "probation": "As per AP rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://psc.ap.gov.in/Documents/NotificationDocuments/AEE_Revised_272026.pdf",
+    "sections": [
+      {
+        "stage": "Written",
+        "subject": "Papers",
+        "topics": [
+          "General studies and mental ability",
+          "Civil and mechanical engineering fundamentals",
+          "Civil engineering (or branch subject) in depth"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "general-awareness",
+    "reasoning",
+    "ap-history-culture",
+    "engineering-civil",
+    "engineering-mechanical",
+    "engineering-electrical"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 503,
+      "note": "Sum of listed posts in the brief notification excluding AEE (Mech), whose count was not legible.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ap-rps-2022",
+    "payLevel": "AP RPS 2022",
+    "payScale": "57,100 to 1,47,760",
+    "startingBasic": 57100,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Assistant Executive Engineer",
+        "level": "RPS 2022",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Deputy Executive Engineer",
+        "level": "Higher scale",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Executive Engineer / Superintending Engineer",
+        "level": "Higher scales",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Departmental tests required for promotion.",
+    "departmentalExams": "APPSC departmental tests."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Project and division offices across AP.",
+    "transfers": "Periodic.",
+    "nature": "Field engineering.",
+    "workload": "High during project seasons.",
+    "publicInteraction": "Moderate.",
+    "hazards": "Site risks.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "medium",
+    "timePressure": "medium",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Degree-level engineering papers with a general studies paper; a large number of posts this cycle."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Good gazetted engineering entry, notified irregularly."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Every few years."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "APPSC Brief Notification No. 27/2026: Assistant Executive Engineers",
+      "url": "https://psc.ap.gov.in/Documents/NotificationDocuments/AEE_Revised_272026.pdf",
+      "publisher": "Andhra Pradesh Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "AEE (Mech) vacancy count not legible.",
+      "Detailed notification (community break-up) not read."
+    ],
+    "notes": "From the official brief notification."
+  },
+  "lastVerified": "2026-10-18"
+}
