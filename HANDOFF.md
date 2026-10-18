@@ -65,7 +65,7 @@ Removed by scope rule: ssc-mts-havaldar.
 1. More AP and Telangana profiles from section 7 (priority: TREIRB gurukul, MHSRB staff nurse, APPSC lecturers, TG power AE).
 2. Central extras (only if asked): UPSC CMS, IES/ISS, CGS, EPFO EO/APFC; AFCAT; Agniveer; NABARD, SEBI, LIC AAO; ISRO, DRDO, BARC, GATE PSUs; KVS/NVS, CTET, UGC NET; AIIMS NORCET; IB ACIO; EPFO SSA; FCI; ESIC.
 3. Keep src/data/coverage.json updated as profiles are added.
-4. Final QA: browser screenshots (Chrome headless: ; headless minimum width is about 500px; test /plan and /profile after saving a profile manually), lint, build, stop the preview server, commit.
+4. Final QA: browser screenshots (Chrome headless: run `"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --disable-gpu --window-size=1360,1500 --virtual-time-budget=5000 --screenshot=<file>.png http://localhost:4173/<path>` after `npx vite preview --port 4173`; headless minimum width is about 500px; test /plan and /profile after saving a profile manually), lint, build, stop the preview server, commit.
 
 ## 9. Known UI/data notes
 - AP 10% HRA slab ceiling not verified.
