@@ -44,11 +44,7 @@ export function Layout() {
           </Link>
           <nav className="primary-nav" aria-label="Primary">
             <NavLink to="/exams">All exams</NavLink>
-            {regionLinks.map((link) => (
-              <NavLink key={link.to} to={link.to}>
-                {link.label}
-              </NavLink>
-            ))}
+            <NavLink to="/central">Central</NavLink>
             <NavLink to="/tools">Tools</NavLink>
           </nav>
           <div className="header-search">

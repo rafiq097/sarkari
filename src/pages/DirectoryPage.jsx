@@ -6,9 +6,9 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router'
 import { SlidersHorizontal, X, UserCheck } from 'lucide-react'
-import { Breadcrumbs, ChipFilter, EmptyState, PageHeader } from '../components/Common.jsx'
+import { Breadcrumbs, ChipFilter, EmptyState, PageHeader, SegmentedFilter } from '../components/Common.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
-import { examIndex, vocabulary } from '../lib/data.js'
+import { examIndex, vocabulary, governmentFilterOptions } from '../lib/data.js'
 import { searchExams } from '../lib/search.js'
 import { evaluateExam } from '../lib/eligibility.js'
 import { useSaved } from '../lib/saved.jsx'
@@ -47,6 +47,8 @@ function optionsWithCounts(definition) {
     .filter((option) => option.count > 0)
 }
 
+const regionOptions = governmentFilterOptions()
+
 /** Directory page. */
 export default function DirectoryPage() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -66,6 +68,11 @@ export default function DirectoryPage() {
 
   const activeFilters = filterDefinitions.map((definition) => ({ definition, values: readList(searchParams, definition.key) })).filter((entry) => entry.values.length)
   const activeCount = activeFilters.length + (minimumBasic ? 1 : 0) + (onlyEligible ? 1 : 0)
+  const selectedRegions = readList(searchParams, 'region')
+  // The pill row shows a single government; a multi-government choice from the panel highlights none.
+  const quickRegion = selectedRegions.length <= 1 ? (selectedRegions[0] ?? '') : null
+  const statusValues = readList(searchParams, 'status')
+  const isActiveOnly = statusValues.length === 1 && statusValues[0] === 'active'
 
   const results = useMemo(() => {
     let records = searchExams(query)
@@ -102,11 +109,28 @@ export default function DirectoryPage() {
         </button>
       </div>
 
+      <div className="quick-filters">
+        <SegmentedFilter label="Government" options={regionOptions} value={quickRegion} onChange={(key) => setParam('region', key ? [key] : [])} />
+        <span className="quick-filters-divider" aria-hidden="true" />
+        <label className={`chip ${isActiveOnly ? 'is-on' : ''}`}>
+          <input type="checkbox" checked={isActiveOnly} onChange={(event) => setParam('status', event.target.checked ? ['active'] : [])} />
+          Active now
+        </label>
+        {candidate && (
+          <label className={`chip ${onlyEligible ? 'is-on' : ''}`}>
+            <input type="checkbox" checked={onlyEligible} onChange={(event) => setParam('eligible', event.target.checked ? '1' : '')} />
+            <UserCheck size={14} aria-hidden="true" /> Eligible for me
+          </label>
+        )}
+      </div>
+
       {areFiltersOpen && (
         <div id="filter-panel" className="filter-panel">
-          {filterDefinitions.map((definition) => (
-            <ChipFilter key={definition.key} legend={definition.legend} options={optionsWithCounts(definition)} selected={readList(searchParams, definition.key)} onChange={(values) => setParam(definition.key, values)} />
-          ))}
+          <div className="filter-groups">
+            {filterDefinitions.map((definition) => (
+              <ChipFilter key={definition.key} legend={definition.legend} options={optionsWithCounts(definition)} selected={readList(searchParams, definition.key)} onChange={(values) => setParam(definition.key, values)} />
+            ))}
+          </div>
           <div className="filter-row">
             <label className="field">
               <span>Minimum starting basic pay (Rs per month)</span>
@@ -128,6 +152,14 @@ export default function DirectoryPage() {
                 </p>
               )}
             </div>
+          </div>
+          <div className="filter-panel-foot">
+            <button type="button" className="button button-ghost" onClick={() => setSearchParams(query ? { q: query } : {}, { replace: true })}>
+              Clear all
+            </button>
+            <button type="button" className="button button-primary" onClick={() => setAreFiltersOpen(false)}>
+              Show {results.length} result{results.length === 1 ? '' : 's'}
+            </button>
           </div>
         </div>
       )}

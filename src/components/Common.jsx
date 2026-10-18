@@ -1,6 +1,7 @@
 /**
  * General building blocks: breadcrumbs, section headings, empty states, scroll reveal,
- * real-data counters, tabs and multi-select chip filters. Used by most pages.
+ * real-data counters, tabs, chip filters, single-choice pill filters and the "Show all"
+ * toggle. Used by most pages.
  */
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
@@ -138,22 +139,46 @@ export function Tabs({ tabs, selected, onSelect, label }) {
   )
 }
 
-/** Multi-select chip group used by the directory filters. */
+// Long chip groups show this many options until expanded; selected options always show.
+const collapsedOptionCount = 10
+
+/** Multi-select chip group used by the directory filters; long groups collapse. */
 export function ChipFilter({ legend, options, selected, onChange }) {
+  const [isExpanded, setIsExpanded] = useState(false)
   const toggle = (key) => onChange(selected.includes(key) ? selected.filter((value) => value !== key) : [...selected, key])
+  const isLong = options.length > collapsedOptionCount + 2
+  const visible = isLong && !isExpanded ? options.filter((option, position) => position < collapsedOptionCount || selected.includes(option.key)) : options
   return (
     <fieldset className="chip-filter">
-      <legend>{legend}</legend>
+      <legend>
+        {legend}
+        {selected.length > 0 && <span className="chip-chosen">{selected.length} chosen</span>}
+      </legend>
       <div className="chip-row">
-        {options.map((option) => (
+        {visible.map((option) => (
           <label key={option.key} className={`chip ${selected.includes(option.key) ? 'is-on' : ''}`}>
             <input type="checkbox" checked={selected.includes(option.key)} onChange={() => toggle(option.key)} />
             {option.label}
             {option.count != null && <span className="chip-count">{option.count}</span>}
           </label>
         ))}
+        {isLong && <ShowAllToggle isExpanded={isExpanded} total={options.length} noun="options" onToggle={() => setIsExpanded(!isExpanded)} />}
       </div>
     </fieldset>
+  )
+}
+
+/** Single-choice pill row (for example All / Central / a state); options are { key, label, count? }. */
+export function SegmentedFilter({ label, options, value, onChange }) {
+  return (
+    <div className="segmented" role="radiogroup" aria-label={label}>
+      {options.map((option) => (
+        <button key={option.key} type="button" role="radio" aria-checked={value === option.key} className={value === option.key ? 'is-on' : ''} onClick={() => onChange(option.key)}>
+          {option.label}
+          {option.count != null && <span className="chip-count">{option.count}</span>}
+        </button>
+      ))}
+    </div>
   )
 }
 

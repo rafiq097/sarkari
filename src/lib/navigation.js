@@ -3,6 +3,7 @@
  */
 import { UserCheck, GitCompareArrows, Layers, IndianRupee, ChartLine, CalendarDays, Target } from 'lucide-react'
 
+// The header shows only Central; states are reached from the home page, footer, mobile menu and directory filters.
 export const regionLinks = [
   { to: '/central', label: 'Central' },
   { to: '/andhra-pradesh', label: 'Andhra Pradesh' },

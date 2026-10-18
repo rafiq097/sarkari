@@ -3,23 +3,17 @@
  * dates, in-depth guides and the tool list. All numbers come from the exam index.
  */
 import { Link } from 'react-router'
-import { ArrowRight, Landmark, MapPinned, CalendarClock, BookOpenText, ShieldCheck, UserRound } from 'lucide-react'
+import { ArrowRight, CalendarClock, BookOpenText, ShieldCheck, UserRound } from 'lucide-react'
 import { useSaved } from '../lib/saved.jsx'
 import { isProfileUsable, summariseMatches } from '../lib/candidate.js'
 import { SearchBox } from '../components/SearchBox.jsx'
-import { Counter, Reveal, SectionHeading } from '../components/Common.jsx'
+import { Counter, SectionHeading } from '../components/Common.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
+import { RegionCards } from '../components/RegionCards.jsx'
 import { StatusBadge } from '../components/Badges.jsx'
 import { toolLinks } from '../lib/navigation.js'
-import { examIndex, sourceIndex, vocabulary, jurisdictionRoutes } from '../lib/data.js'
+import { examIndex, sourceIndex, vocabulary } from '../lib/data.js'
 import { formatDate, todayIso } from '../lib/format.js'
-
-const regionBlurbs = {
-  central: 'UPSC, SSC, Railways, banks, defence, CAPF, science bodies and PSUs.',
-  'andhra-pradesh': 'APPSC, police, DSC teachers, village and ward secretariats and more.',
-  telangana: 'TGPSC, police, teacher recruitment, gurukul and health boards and more.',
-  karnataka: 'KPSC, KEA, police, teacher recruitment, power utilities and more.',
-}
 
 const quickSearches = ['UPSC', 'SSC CGL', 'Bank PO', 'Group 2', 'Police constable', 'Teacher', 'GATE PSU', 'Junior Engineer']
 
@@ -112,24 +106,7 @@ export default function HomePage() {
       <PersonalStrip />
 
       <SectionHeading number="01" title="Choose a government" description="Each section lists every profiled exam and recruitment route for that government." />
-      <div className="region-grid">
-        {Object.entries(vocabulary.jurisdictions).map(([key, label], position) => {
-          const count = examIndex.filter((exam) => exam.jurisdiction === key).length
-          const Icon = key === 'central' ? Landmark : MapPinned
-          return (
-            <Reveal key={key} delay={position * 60}>
-              <Link to={jurisdictionRoutes[key]} className="region-card">
-                <Icon size={22} aria-hidden="true" />
-                <h3>{label}</h3>
-                <p>{regionBlurbs[key]}</p>
-                <span className="region-count">
-                  <span className="numeric">{count}</span> profiles <ArrowRight size={14} aria-hidden="true" />
-                </span>
-              </Link>
-            </Reveal>
-          )
-        })}
-      </div>
+      <RegionCards />
 
       <SectionHeading number="02" title="Recruitment status today" description="Active means applications are open or an official schedule exists. Historical routes are kept for reference and clearly marked." />
       <div className="status-strip">

@@ -6,8 +6,8 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router'
 import { Layers, Info } from 'lucide-react'
-import { Breadcrumbs, EmptyState, PageHeader } from '../components/Common.jsx'
-import { examIndex, labelFor, vocabulary } from '../lib/data.js'
+import { Breadcrumbs, EmptyState, PageHeader, SegmentedFilter } from '../components/Common.jsx'
+import { examIndex, labelFor, governmentFilterOptions } from '../lib/data.js'
 
 const shownCompanions = 15
 
@@ -60,17 +60,10 @@ export default function SyllabusPage() {
             ))}
           </select>
         </label>
-        <label className="field">
-          <span>Show companions from</span>
-          <select value={regionFilter} onChange={(event) => setRegionFilter(event.target.value)}>
-            <option value="">All governments</option>
-            {Object.entries(vocabulary.jurisdictions).map(([key, label]) => (
-              <option key={key} value={key}>
-                {label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <div className="field">
+          <span className="field-label">Show companions from</span>
+          <SegmentedFilter label="Show companions from" options={governmentFilterOptions('All governments')} value={regionFilter} onChange={setRegionFilter} />
+        </div>
       </div>
 
       {base && (

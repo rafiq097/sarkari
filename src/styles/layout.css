@@ -126,8 +126,9 @@
   display: none;
 }
 
-@media (max-width: 1080px) {
-  .primary-nav a:nth-child(n + 2):nth-child(-n + 5) {
+/* Tools is also in the mobile menu and footer, so it drops first on narrow screens. */
+@media (max-width: 900px) {
+  .primary-nav > a:last-child {
     display: none;
   }
 }

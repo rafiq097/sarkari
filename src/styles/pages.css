@@ -104,8 +104,79 @@
   transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
 }
 
-.region-card svg:first-child {
+.region-card {
+  position: relative;
+}
+
+.region-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   color: var(--accent);
+}
+
+.region-active,
+.region-soon {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+}
+
+.region-active {
+  background: var(--sage-soft);
+  color: var(--sage);
+}
+
+.region-soon {
+  background: var(--stone-soft);
+  color: var(--text-muted);
+}
+
+/* The title link covers the card; exam chips sit above it so they stay clickable. */
+.region-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.region-card:has(.region-card-link:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.region-card-link:focus-visible {
+  outline: none;
+}
+
+.region-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.region-top a {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+.region-top a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.region-card.is-empty {
+  border-style: dashed;
 }
 
 .region-card:hover {
@@ -310,6 +381,41 @@
   border: 1px solid var(--line);
   background: var(--bg-raised);
   animation: menu-in 0.2s var(--ease);
+}
+
+/* Filter groups sit in two columns on wide screens so the panel stays short. */
+.filter-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 22px 32px;
+  align-items: start;
+}
+
+.filter-panel-foot {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 0 -22px -22px;
+  padding: 14px 22px;
+  background: var(--bg-raised);
+  border-top: 1px solid var(--line);
+  border-radius: 0 0 var(--radius-large) var(--radius-large);
+}
+
+.quick-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.quick-filters-divider {
+  width: 1px;
+  height: 22px;
+  background: var(--line-strong);
 }
 
 .filter-row {
@@ -904,26 +1010,210 @@
 }
 
 /* Eligibility */
-.eligibility-form {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
-  gap: 18px;
-  margin: 20px 0 28px;
-}
-
-.form-checks {
-  align-content: end;
-  gap: 10px;
-}
-
-.form-wide {
-  grid-column: 1 / -1;
-}
-
-.form-actions {
+/* Candidate form: numbered steps, used on My profile and the eligibility checker. */
+.candidate-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 14px;
+  margin: 20px 0 28px;
+  min-width: 0;
+}
+
+.form-step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+}
+
+.form-step.is-done {
+  border-color: #7fd4a355;
+}
+
+.form-step-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.form-step-head h2 {
+  font-size: 1.15rem;
+}
+
+.form-step-head p {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.form-step-number {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-3);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.form-step.is-done .form-step-number {
+  background: var(--sage);
+  color: var(--accent-ink);
+}
+
+.form-step-optional {
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--stone-soft);
+  color: var(--text-muted);
+  font: 500 0.7rem var(--font-body);
+  vertical-align: middle;
+}
+
+/* Fields share the row evenly and never overflow into each other. */
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+  gap: 14px;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
   gap: 10px;
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.toggle-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.chip-chosen {
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.chip-row .show-all {
+  margin-top: 0;
+  padding: 5px 12px;
+  font-size: 0.82rem;
+}
+
+/* My profile: form beside a sticky live summary. */
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 22px;
+  align-items: start;
+}
+
+.match-panel {
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-large);
+}
+
+.match-panel h2 {
+  font-size: 1.15rem;
+}
+
+.match-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+  font-size: 0.9rem;
+}
+
+.match-row .numeric {
+  margin-left: auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.match-row.tone-sage {
+  color: var(--sage);
+}
+
+.match-row.tone-accent {
+  color: var(--accent);
+}
+
+.match-row.tone-brick {
+  color: var(--brick);
+}
+
+.match-row:hover {
+  background: var(--surface-2);
+}
+
+.match-plan {
+  justify-content: center;
+}
+
+.match-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.match-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.match-checklist .is-done {
+  color: var(--sage);
+}
+
+.match-save {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .match-panel {
+    position: static;
+    order: -1;
+  }
 }
 
 .verdict-tabs {

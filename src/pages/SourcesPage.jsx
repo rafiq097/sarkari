@@ -5,8 +5,14 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router'
 import { ExternalLink } from 'lucide-react'
-import { Breadcrumbs, EmptyState, PageHeader } from '../components/Common.jsx'
+import { Breadcrumbs, EmptyState, PageHeader, SegmentedFilter } from '../components/Common.jsx'
 import { sourceIndex } from '../lib/data.js'
+
+const sourceTypeOptions = [
+  { key: '', label: 'All' },
+  { key: 'primary', label: 'Primary' },
+  { key: 'secondary', label: 'Secondary' },
+]
 
 /** Source directory page. */
 export default function SourcesPage() {
@@ -28,14 +34,7 @@ export default function SourcesPage() {
           <span>Search sources</span>
           <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Publisher, title or address" />
         </label>
-        <label className="field inline-field">
-          <span>Type</span>
-          <select value={type} onChange={(event) => setType(event.target.value)}>
-            <option value="">All</option>
-            <option value="primary">Primary</option>
-            <option value="secondary">Secondary</option>
-          </select>
-        </label>
+        <SegmentedFilter label="Source type" options={sourceTypeOptions} value={type} onChange={setType} />
       </div>
       <p className="result-count" role="status">
         <span className="numeric">{visible.length}</span> sources

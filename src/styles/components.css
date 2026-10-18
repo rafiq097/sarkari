@@ -259,6 +259,12 @@
   border-color: #ffe066;
 }
 
+.button-small {
+  min-height: 30px;
+  padding: 4px 10px;
+  font-size: 0.82rem;
+}
+
 .button-ghost {
   background: none;
   border-color: transparent;
@@ -698,6 +704,7 @@
 .field {
   display: grid;
   gap: 6px;
+  min-width: 0;
 }
 
 .field > span,
@@ -714,6 +721,13 @@
   border-radius: var(--radius);
   border: 1px solid var(--line-strong);
   background: var(--surface);
+}
+
+/* Inside a form field the control fills its grid cell and never overflows into the next one. */
+.field input,
+.field select {
+  width: 100%;
+  min-width: 0;
 }
 
 .field input:focus,
@@ -914,4 +928,37 @@
 .show-all:focus-visible {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+/* Single-choice pill row used as a quick filter on several pages. */
+.segmented {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.segmented button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-soft);
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.segmented button:hover {
+  color: var(--text);
+  border-color: var(--text-faint);
+}
+
+.segmented button.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
 }

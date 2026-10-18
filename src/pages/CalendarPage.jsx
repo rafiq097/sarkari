@@ -6,8 +6,8 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router'
 import { Info } from 'lucide-react'
-import { Breadcrumbs, EmptyState, PageHeader, SectionHeading } from '../components/Common.jsx'
-import { useProfiles, examIndex, labelFor, vocabulary, getIndexRecord } from '../lib/data.js'
+import { Breadcrumbs, EmptyState, PageHeader, SectionHeading, SegmentedFilter } from '../components/Common.jsx'
+import { useProfiles, examIndex, labelFor, getIndexRecord, governmentFilterOptions } from '../lib/data.js'
 import { formatDate, todayIso } from '../lib/format.js'
 import { useSaved } from '../lib/saved.jsx'
 import { verdictFor, isProfileUsable } from '../lib/candidate.js'
@@ -85,20 +85,10 @@ export default function CalendarPage() {
         <div>Recruiters change dates often. Tentative dates come only from official annual calendars. Confirm every date on the official website before acting.</div>
       </div>
       <div className="tool-controls">
-        <label className="field inline-field">
-          <span>Government</span>
-          <select value={region} onChange={(event) => setRegion(event.target.value)}>
-            <option value="">All</option>
-            {Object.entries(vocabulary.jurisdictions).map(([key, label]) => (
-              <option key={key} value={key}>
-                {label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <SegmentedFilter label="Government" options={governmentFilterOptions()} value={region} onChange={setRegion} />
         {hasProfile && (
-          <label className="check-row">
-            <input type="checkbox" checked={onlyMine} onChange={(event) => setOnlyMine(event.target.checked)} /> Only exams that may fit my profile
+          <label className={`chip ${onlyMine ? 'is-on' : ''}`}>
+            <input type="checkbox" checked={onlyMine} onChange={(event) => setOnlyMine(event.target.checked)} /> Only exams that may fit me
           </label>
         )}
       </div>

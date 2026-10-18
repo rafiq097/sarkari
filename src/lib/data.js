@@ -91,3 +91,13 @@ export const jurisdictionRoutes = {
   telangana: '/telangana',
   karnataka: '/karnataka',
 }
+
+/** Pill options for a government filter: "All" plus every government that has profiles, with counts. */
+export function governmentFilterOptions(allLabel = 'All') {
+  return [
+    { key: '', label: allLabel, count: examIndex.length },
+    ...Object.entries(vocabulary.jurisdictions)
+      .map(([key, label]) => ({ key, label, count: examIndex.filter((exam) => exam.jurisdiction === key).length }))
+      .filter((option) => option.count > 0),
+  ]
+}

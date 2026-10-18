@@ -6,6 +6,7 @@ import { Link } from 'react-router'
 import { Info } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SectionHeading } from '../components/Common.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
+import { RegionCards } from '../components/RegionCards.jsx'
 import { examsInJurisdiction, labelFor, payRules } from '../lib/data.js'
 import { formatDate } from '../lib/format.js'
 
@@ -59,7 +60,7 @@ export default function RegionPage({ jurisdiction }) {
         </div>
       )}
 
-      {sectors.length === 0 && <EmptyState title="No profiles yet">Profiles for {regionName} are being researched. See the coverage report for progress.</EmptyState>}
+      {sectors.length === 0 && <EmptyState title="No profiles yet">Exam profiles for {regionName} are not added yet. Its pay rules are already in the salary explorer.</EmptyState>}
 
       {sectors.map(([sector, sectorExams], position) => (
         <section key={sector}>
@@ -73,6 +74,11 @@ export default function RegionPage({ jurisdiction }) {
           </div>
         </section>
       ))}
+
+      <section>
+        <SectionHeading title="Other governments" description="Switch to another government's exams." />
+        <RegionCards exclude={jurisdiction} />
+      </section>
     </>
   )
 }
