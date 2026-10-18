@@ -113,7 +113,7 @@ export function Layout() {
             <p className="brand-name">
               Sarkari <em>Atlas</em>
             </p>
-            <p>An independent research guide to Central, Andhra Pradesh and Telangana government recruitment. Not affiliated with any government body. The official notification is always authoritative.</p>
+            <p>An independent research guide to Central, Andhra Pradesh, Telangana and Karnataka government recruitment. Not affiliated with any government body. The official notification is always authoritative.</p>
           </div>
           <div>
             <p className="footer-heading">Browse</p>

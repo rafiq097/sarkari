@@ -181,7 +181,7 @@ export default function SalaryPage() {
         <Info size={18} aria-hidden="true" />
         <div>
           <strong>Central versus state pay. </strong>
-          Central employees follow the 7th CPC pay matrix with DA revised twice a year. Andhra Pradesh and Telangana use a master scale set by their own Pay Revision Commissions. Each state sets its own DA, so the same basic pay gives a different gross in each government.
+          Central employees follow the 7th CPC pay matrix with DA revised twice a year. Andhra Pradesh and Telangana use a master scale set by their own Pay Revision Commissions, and Karnataka uses scales set by its State Pay Commission. Each state sets its own DA, so the same basic pay gives a different gross in each government.
         </div>
       </div>
 

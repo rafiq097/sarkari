@@ -161,6 +161,30 @@
         "ap-power-aee"
       ],
       "notes": "2026 AEE recruitment from a secondary report."
+    },
+    {
+      "jurisdiction": "karnataka",
+      "name": "Karnataka Public Service Commission (KPSC)",
+      "website": "https://kpsc.kar.nic.in",
+      "status": "pending",
+      "profiles": [],
+      "notes": "KAS, FDA, SDA and technical posts pending."
+    },
+    {
+      "jurisdiction": "karnataka",
+      "name": "Karnataka Examinations Authority (KEA)",
+      "website": "https://cetonline.karnataka.gov.in/kea",
+      "status": "pending",
+      "profiles": [],
+      "notes": "Pending."
+    },
+    {
+      "jurisdiction": "karnataka",
+      "name": "Karnataka State Police",
+      "website": "https://ksp.karnataka.gov.in",
+      "status": "pending",
+      "profiles": [],
+      "notes": "PSI and constable pending."
     }
   ],
   "pending": [
@@ -171,18 +195,18 @@
     "KVS, NVS, CTET, UGC NET, EMRS",
     "AIIMS NORCET, ESIC, EPFO SSA, FCI, IB ACIO",
     "Remaining APPSC 2026 notifications",
-    "TG DSC official notification when released"
+    "TG DSC official notification when released",
+    "Karnataka profiles (KPSC, KEA, police): pay rules and region page ready, profiles not yet written"
   ],
   "excluded": [
     "Routes whose main post starts below Rs 20,000 basic pay, such as SSC MTS and Havaldar, RRB Group D and Assistant Loco Pilot, and Level 1 state posts.",
     "Very small or niche cycles, such as APPSC Forest Range Officer 2026 (5 posts).",
-    "District-level and contract recruitments (anganwadi, outsourcing, home guards).",
-    "Karnataka recruitment: removed from scope at the owner's request."
+    "District-level and contract recruitments (anganwadi, outsourcing, home guards)."
   ],
   "gaps": [
     "Official category-wise cutoffs were collected only where the PDF was reachable (UPSC CSE 2024).",
     "Several 2026 cycle figures (CPO, GD, IBPS Clerk, IBPS RRB, RBI Grade B, AP police, TG TET) come from secondary reports and are marked so.",
-    "The AP 10% HRA slab ceiling was not confirmed from official orders.",
+    "Karnataka HRA rates under the 2024 pay scales and the AP 10% HRA slab ceiling were not confirmed from official orders.",
     "Bank and RBI gross pay is not modelled because DA there changes every quarter."
   ]
 }

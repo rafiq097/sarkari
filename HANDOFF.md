@@ -47,11 +47,11 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 - AP SLPRB: `https://slprb.ap.gov.in/` (2026 press note is a scanned image).
 - RBI opportunities page did not parse; RBI facts used a secondary report.
 
-## 6. Done (44 profiles, all committed; scope = Central, AP, Telangana)
+## 6. Done (44 profiles, all committed; scope = Central, AP, Telangana, Karnataka)
 Central (24): upsc-cse (full guide), upsc-ifos, upsc-ese, upsc-cds, upsc-nda-na, upsc-capf-ac, ssc-cgl, ssc-chsl, ssc-je, ssc-stenographer, ssc-cht, ssc-cpo, ssc-gd-constable, rrb-ntpc-graduate, rrb-ntpc-undergraduate, rrb-je, rpf-si, rpf-constable, ibps-po, ibps-clerk, ibps-rrb, sbi-po, sbi-junior-associate, rbi-grade-b.
 Andhra Pradesh (12): appsc-group-1 (07/2026), appsc-group-2 (37/2026), appsc-aee (27/2026), appsc-hwo (25/2026), appsc-amvi (36/2026), appsc-aso-statistics (20/2026), appsc-horticulture-officer (19/2026), ap-police-si, ap-police-constable (SLPRB Sep 2026), ap-dsc (2026 prelim notice, 2,721 posts), ap-tet (2026), ap-power-aee (630 AEE posts 2026).
 Telangana (8): tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4, tgpsc-aee (01/G/RB/2026), tg-tet, tg-dsc (recurring, 2024 cycle), ts-police (TGPRB 2026: 7,437 posts, official press note).
-Karnataka: DROPPED from scope at Rafiq's request (removed from nav, routes, vocabulary, pay rules).
+Karnataka: back in scope (route, nav, pay rules ka-7spc, vocabulary, coverage). No profiles yet; do not research further unless asked.
 Removed by scope rule: ssc-mts-havaldar.
 
 ## 7. Research leads (not profiled)

@@ -1,5 +1,5 @@
 /**
- * Region page for Central, Andhra Pradesh or Telangana. Groups that
+ * Region page for Central, Andhra Pradesh, Telangana or Karnataka. Groups that
  * government's profiles by sector and links to the pay rules in force there.
  */
 import { Link } from 'react-router'
@@ -13,12 +13,14 @@ const regionIntros = {
   central: 'Union Government recruitment through UPSC, SSC, Railway boards, bank and insurance bodies, defence services, central armed police, science and research organizations, PSUs and other central bodies. Posts are open to candidates from every state.',
   'andhra-pradesh': 'Recruitment by the Andhra Pradesh Public Service Commission, State Level Police Recruitment Board, School Education department (DSC), village and ward secretariats, power utilities, courts and other state bodies. Local-cadre and zonal rules affect how posts are filled.',
   telangana: 'Recruitment by the Telangana Public Service Commission, Telangana State Level Police Recruitment Board, School Education department (DSC), gurukul and health recruitment boards, power utilities, courts and other state bodies. Local-cadre and zonal rules affect how posts are filled.',
+  karnataka: 'Recruitment by the Karnataka Public Service Commission, Karnataka Examinations Authority, Karnataka State Police, School Education department, power utilities, courts and other state bodies. Kannada language requirements and Kalyana-Karnataka (Article 371J) reservation affect eligibility and selection.',
 }
 
 const payRuleByRegion = {
   central: 'central-7cpc',
   'andhra-pradesh': 'ap-rps-2022',
   telangana: 'ts-rps-2020',
+  karnataka: 'ka-7spc',
 }
 
 /** Profiles of one government grouped by sector. */
