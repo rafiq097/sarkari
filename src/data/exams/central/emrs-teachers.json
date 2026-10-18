@@ -53,12 +53,47 @@
   },
   "posts": [
     {
-      "name": "Principal, PGT, TGT, Hostel Warden and non-teaching staff",
-      "group": "Group A, B and C",
-      "payLevel": "As per notice",
+      "name": "Principal",
+      "group": "Group A",
+      "payLevel": "Level 12",
+      "startingBasic": 78800,
+      "ageMax": 50,
+      "responsibilities": "Heads a residential school.",
+      "notes": "2025: 225 posts."
+    },
+    {
+      "name": "Post Graduate Teacher (PGT)",
+      "group": "Group B",
+      "payLevel": "Level 8",
+      "startingBasic": 47600,
+      "ageMax": 40,
+      "responsibilities": "Teaches Classes XI and XII.",
+      "notes": "2025: 1,460 posts."
+    },
+    {
+      "name": "Trained Graduate Teacher (TGT) and Librarian",
+      "group": "Group B",
+      "payLevel": "Level 7",
+      "startingBasic": 44900,
+      "ageMax": 35,
+      "responsibilities": "Teaches Classes VI to X.",
+      "notes": "2025: 3,962 TGTs. CTET needed."
+    },
+    {
+      "name": "Hostel Warden, Female Staff Nurse",
+      "group": "Group C",
+      "payLevel": "Level 5",
+      "startingBasic": 29200,
+      "responsibilities": "Residential care and health.",
+      "notes": "2025: 635 wardens, 550 nurses."
+    },
+    {
+      "name": "Accountant, JSA, Lab Attendant",
+      "group": "Group C",
+      "payLevel": "Level 6, 2 and 1",
       "startingBasic": null,
-      "responsibilities": "Teaching and running residential schools for tribal students.",
-      "notes": "2025: 7,267 posts in total."
+      "responsibilities": "Office and lab support.",
+      "notes": "2025: 61, 228 and 146 posts."
     }
   ],
   "eligibility": {
@@ -83,8 +118,8 @@
           "note": "After deducting military service from actual age, as per notice."
         }
       ],
-      "summary": "Age limits by post as per the notice.",
-      "referenceDate": "As per notice"
+      "summary": "Principal up to 50, PGT up to 40, TGT up to 35 (EMRS staff up to 55), on the cut-off date in the notice (23 October 2025 last cycle).",
+      "referenceDate": "Cut-off date in the notice"
     },
     "nationality": "Citizen of India.",
     "education": {
@@ -111,9 +146,9 @@
     "educationFields": [
       "education"
     ],
-    "notes": "Post-wise ages not confirmed.",
+    "notes": "TGT closes at 35, PGT at 40; CTET needed for TGT.",
     "ageMin": 18,
-    "ageMax": null,
+    "ageMax": 40,
     "minEducation": "graduate",
     "relaxationYears": {
       "OBC": 3,
@@ -179,18 +214,19 @@
     {
       "year": 2025,
       "vacancies": 7267,
-      "note": "All posts, NESTS/Adv/2025/01.",
-      "source": "s1"
+      "note": "Principal 225, PGT 1,460, TGT 3,962, staff nurse 550, hostel warden 635, accountant 61, JSA 228, lab attendant 146.",
+      "source": "s3"
     }
   ],
   "rankAndAllocation": null,
   "salary": {
     "asOf": "2026-10",
     "payRuleSet": "central-7cpc",
-    "payLevel": "As per post",
-    "payScale": null,
-    "startingBasic": null,
-    "notes": "Post-wise pay levels not confirmed here.",
+    "payLevel": "Level 7 (TGT), Level 8 (PGT), Level 12 (Principal)",
+    "payScale": "TGT 44,900; PGT 47,600; Principal 78,800 (first cells)",
+    "startingBasic": 44900,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "notes": "Starting basic shown is TGT.",
     "sources": [
       "payMatrix"
     ]
@@ -264,6 +300,15 @@
   },
   "sources": [
     {
+      "id": "s3",
+      "title": "EMRS Staff Selection Exam (ESSE) 2025 notification",
+      "url": "https://nests.tribal.gov.in/WriteReadData/RTF1984/1758792855.pdf",
+      "publisher": "National Education Society for Tribal Students",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
       "id": "s1",
       "title": "EMRS Tier 2 admit card 2026 for 7,267 posts",
       "url": "https://news.careers360.com/emrs-tier-2-admit-card-2026-out-esse-recruitment-7267-non-teaching-posts-principal-pgt-tgt-exam-from-march-22-download-pdf/amp",
@@ -292,11 +337,11 @@
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "high",
     "gaps": [
-      "Post-wise ages, pay and vacancies not confirmed."
+      "Paper-wise marks not reproduced."
     ],
-    "notes": "From secondary reports."
+    "notes": "Posts, pay levels and ages from the official ESSE-2025 notice; result dates secondary."
   },
   "lastVerified": "2026-10-18"
 }

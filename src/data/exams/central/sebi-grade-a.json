@@ -60,7 +60,7 @@
       "name": "Assistant Manager (Officer Grade A)",
       "group": "Grade A officer",
       "payLevel": "SEBI Grade A scale",
-      "startingBasic": null,
+      "startingBasic": 62500,
       "ageMax": 30,
       "responsibilities": "Market supervision, investigation, legal and IT work.",
       "notes": "Streams: General, Legal, IT, Research, Official Language, Engineering."
@@ -78,18 +78,13 @@
           "years": 3
         },
         {
-          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "category": "PwBD",
           "years": 10,
-          "note": "10, 13 and 15 years respectively."
-        },
-        {
-          "category": "Ex-servicemen",
-          "years": 3,
-          "note": "After deducting military service from actual age, as per notice."
+          "note": "13 (OBC) and 15 (SC/ST) years."
         }
       ],
-      "summary": "Under 30 on the cut-off date (30 September 2025 in the last cycle).",
-      "referenceDate": "As per notice"
+      "summary": "Not over 30 on 30 September of the cycle year; relaxations of 5 (SC, ST), 3 (OBC) and 10 to 15 years (PwBD).",
+      "referenceDate": "30 September of the cycle year"
     },
     "nationality": "Citizen of India.",
     "education": {
@@ -134,14 +129,42 @@
     ],
     "stages": [
       {
-        "name": "Phase 1 (online, two papers)",
+        "name": "Phase I (online screening)",
         "type": "objective",
-        "countsInMerit": false
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "Paper 1: General awareness, English, quantitative aptitude, reasoning",
+            "marks": 100,
+            "duration": "60 minutes",
+            "negative": "One fourth of the question's marks"
+          },
+          {
+            "name": "Paper 2: Stream subject (General: commerce, accounts, finance, economics, company law)",
+            "marks": 100,
+            "duration": "40 minutes",
+            "negative": "One fourth of the question's marks"
+          }
+        ],
+        "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 40% aggregate."
       },
       {
-        "name": "Phase 2 (online, two papers)",
-        "type": "objective",
-        "countsInMerit": true
+        "name": "Phase II (online)",
+        "type": "descriptive",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper 1: English descriptive (weight 1/3)",
+            "marks": 100,
+            "duration": "60 minutes"
+          },
+          {
+            "name": "Paper 2: Stream subject (weight 2/3)",
+            "marks": 100,
+            "duration": "40 minutes"
+          }
+        ],
+        "notes": "Aggregate cut-off 50%."
       },
       {
         "name": "Interview",
@@ -149,7 +172,7 @@
         "countsInMerit": true
       }
     ],
-    "meritCalculation": "Final merit on Phase 2 and interview marks.",
+    "meritCalculation": "Phase II 85% and interview 15%. Phase I only shortlists.",
     "languages": "English and Hindi.",
     "documentVerification": "At interview.",
     "probation": "As per SEBI rules."
@@ -188,8 +211,8 @@
     {
       "year": 2025,
       "vacancies": 110,
-      "note": "As notified; reported later as revised upward.",
-      "source": "s1"
+      "note": "As notified; an addendum later raised General (56 to 77) and Research (4 to 8) posts.",
+      "source": "s3"
     }
   ],
   "rankAndAllocation": null,
@@ -197,11 +220,13 @@
     "asOf": "2026-10",
     "payRuleSet": "other",
     "payLevel": "SEBI Grade A scale",
-    "payScale": null,
-    "startingBasic": null,
-    "notes": "Pay scale not confirmed from the notice.",
+    "payScale": "62,500 - 3,600 (4) - 76,900 - 4,050 (7) - 1,05,250 - EB - 4,050 (4) - 1,21,450 - 4,650 (1) - 1,26,100 (17 years)",
+    "startingBasic": 62500,
+    "officialGross": 184000,
+    "officialGrossNote": "SEBI states gross pay at Mumbai at the start of the scale of about Rs 1,84,000 a month without accommodation (about Rs 1,43,000 with accommodation).",
+    "notes": "Two years of probation.",
     "sources": [
-      "s1"
+      "s3"
     ]
   },
   "career": {
@@ -280,14 +305,23 @@
       "year": 2026,
       "type": "secondary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "SEBI: Recruitment of Officer Grade A (Assistant Manager) 2025",
+      "url": "https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf",
+      "publisher": "Securities and Exchange Board of India",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "high",
     "gaps": [
-      "Pay scale, paper marks and final vacancy count not confirmed."
+      "Final result date from a secondary report."
     ],
-    "notes": "From secondary reports."
+    "notes": "Pattern, cut-offs, weightage, age and pay from the official 2025 notice."
   },
   "lastVerified": "2026-10-18"
 }

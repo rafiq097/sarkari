@@ -28,8 +28,38 @@
   ],
   "status": {
     "type": "recurring",
-    "note": "Recruitment is office-wise and irregular. The 2026 cycle was reported with about 650 posts; check the RBI site for the current notice.",
-    "cycles": []
+    "note": "Notified every year or two, office-wise. Panel Year 2025: 650 posts, applications 16 February to 8 March 2026, prelims from 11 April and mains on 7 June 2026.",
+    "cycles": [
+      {
+        "cycle": "Assistant, Panel Year 2025",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-02-16",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-03-08",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Prelims",
+            "date": "2026-04-11",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Mains",
+            "date": "2026-06-07",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
   },
   "posts": [
     {
@@ -164,8 +194,8 @@
     {
       "year": 2026,
       "vacancies": 650,
-      "note": "As reported.",
-      "source": "s1"
+      "note": "Panel Year 2025 advertisement.",
+      "source": "s2"
     }
   ],
   "rankAndAllocation": null,
@@ -247,14 +277,23 @@
       "year": 2026,
       "type": "secondary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "RBI: Recruitment for the post of Assistant, Panel Year 2025",
+      "url": "https://www.rbi.org.in/scripts/bs_viewcontent.aspx?Id=4912",
+      "publisher": "Reserve Bank of India",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "Official notice not read; vacancies, dates and pay not confirmed."
+      "Pay and paper-wise pattern not reproduced (the RBI site blocks automated reading)."
     ],
-    "notes": "From a secondary report; stages follow the usual RBI pattern."
+    "notes": "Posts, stages and dates from the official RBI advertisement page."
   },
   "lastVerified": "2026-10-18"
 }
