@@ -1,0 +1,290 @@
+{
+  "id": "army-agniveer",
+  "name": "Indian Army Agniveer (Agnipath scheme)",
+  "abbreviation": "Army Agniveer",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "indian-army",
+    "name": "Indian Army",
+    "abbreviation": "Army",
+    "website": "https://joinindianarmy.nic.in"
+  },
+  "department": "Indian Army (Agnipath scheme, Ministry of Defence)",
+  "technical": false,
+  "summary": "Four-year enrolment in the Army as an Agniveer (General Duty, Technical, Clerk, Tradesman). Monthly package from Rs 30,000 to Rs 40,000, about Rs 11.71 lakh Seva Nidhi at exit, and up to 25% of each batch kept as regular soldiers.",
+  "employmentType": "fixed-tenure",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Yearly",
+  "officialLinks": [
+    {
+      "label": "Join Indian Army",
+      "url": "https://joinindianarmy.nic.in"
+    },
+    {
+      "label": "Agnipath scheme (PIB)",
+      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1833747"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Yearly cycle: notification around February, online Common Entrance Exam around June, then recruitment rallies. In 2026 the notification came on 12 February, the CEE ran from 1 to 16 June and the result came on 12 July 2026.",
+    "cycles": [
+      {
+        "cycle": "Agniveer 2026-27",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-02-12",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Common Entrance Exam begins",
+            "date": "2026-06-01",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "CEE result",
+            "date": "2026-07-12",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Agniveer (GD, Technical, Clerk / Store Keeper, Tradesman)",
+      "group": "Agniveer rank",
+      "payLevel": "Agnipath package",
+      "startingBasic": null,
+      "ageMin": 17,
+      "ageMax": 21,
+      "responsibilities": "Soldier duties in the chosen category for four years.",
+      "notes": "GD needs Class 10; Technical and Clerk need Class 12 with subject conditions."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "17.5 to 21 years (the 2026-27 cycle used birth dates between 1 July 2005 and 1 July 2009).",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "Citizen of India (and other categories as per notice).",
+    "education": {
+      "summary": "General Duty: Class 10. Technical, Clerk and other categories: Class 12 or Class 10 with the subject and marks conditions in the notice.",
+      "finalYearAllowed": false,
+      "minMarks": "As per category"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "physical": "Physical fitness test and physical measurement standards by region, then a medical exam.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Higher categories need Class 12.",
+    "ageMin": 17,
+    "ageMax": 21,
+    "minEducation": "class-10",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Online Common Entrance Exam",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Recruitment rally: physical fitness and measurement tests",
+        "type": "physical",
+        "countsInMerit": true
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      },
+      {
+        "name": "Document verification",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the CEE and rally performance, region-wise.",
+    "languages": "English and Hindi plus regional languages.",
+    "documentVerification": "At the rally.",
+    "probation": "Four-year engagement including training."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://joinindianarmy.nic.in",
+    "sections": [
+      {
+        "stage": "CEE",
+        "subject": "Typical areas",
+        "topics": [
+          "General knowledge and general science",
+          "Mathematics",
+          "Logical reasoning",
+          "English (for some categories)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "general-awareness",
+    "general-science",
+    "mathematics",
+    "reasoning",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "Agnipath package",
+    "payScale": "Rs 30,000 (year 1), 33,000, 36,500, 40,000 (year 4) a month",
+    "startingBasic": null,
+    "officialGross": 30000,
+    "officialGrossNote": "First-year package Rs 30,000 a month: Rs 21,000 in hand and Rs 9,000 to the Agniveer Corpus Fund, matched by the government.",
+    "pension": "No pension or gratuity. Seva Nidhi of about Rs 11.71 lakh (tax free) on exit after four years.",
+    "notes": "Non-contributory life insurance of Rs 48 lakh during service.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Agniveer",
+        "level": "Agnipath package",
+        "timeline": "Four years",
+        "timelineType": "official"
+      },
+      {
+        "post": "Regular soldier (up to 25% of each batch)",
+        "level": "Regular cadre",
+        "timeline": "After four years, by selection",
+        "timelineType": "official"
+      }
+    ],
+    "promotionNotes": "Selection to the regular cadre is based on performance during the four years."
+  },
+  "benefits": [
+    {
+      "item": "Insurance and Seva Nidhi",
+      "detail": "Rs 48 lakh life insurance during service; about Rs 11.71 lakh Seva Nidhi at exit.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Army units across India, including field areas.",
+    "transfers": "With the unit.",
+    "nature": "Soldier duties.",
+    "workload": "Very high.",
+    "publicInteraction": "Low.",
+    "hazards": "High.",
+    "stability": "Fixed four-year term; regular cadre only for up to 25%."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "medium",
+    "rationale": "Basic written test, but tough physical standards and many applicants."
+  },
+  "ratings": {
+    "careerGrowth": "low",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Yearly intake, but only four years unless retained."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Fixed tenure",
+        "level": "high",
+        "note": "About 75% leave after four years."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AGNIPATH scheme for recruitment of youth in the Armed Forces (14 Jun 2022)",
+      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1833747",
+      "publisher": "Press Information Bureau, Government of India",
+      "year": 2022,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Army Agniveer CEE 2026-27: dates and result",
+      "url": "https://resultbharat.com/Army-Agniveer-CEE-2026-27.html",
+      "publisher": "ResultBharat",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "CEE pattern and category-wise education rules not reproduced.",
+      "Exact age limits for 2026-27 are from a secondary report."
+    ],
+    "notes": "Package, Seva Nidhi, insurance and retention from the official PIB release; cycle dates secondary."
+  },
+  "lastVerified": "2026-10-18"
+}

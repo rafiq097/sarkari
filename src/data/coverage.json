@@ -12,9 +12,10 @@
         "upsc-ese",
         "upsc-cds",
         "upsc-nda-na",
-        "upsc-capf-ac"
+        "upsc-capf-ac",
+        "upsc-epfo"
       ],
-      "notes": "Official 2026 notifications, 2026 and 2027 calendars and annual reports used. CMS, IES/ISS, CGS and EPFO tests pending."
+      "notes": "Official 2026 notifications, 2026 and 2027 calendars and annual reports used; EPFO from a secondary report. CMS, IES/ISS and CGS pending."
     },
     {
       "jurisdiction": "central",
@@ -91,9 +92,10 @@
         "appsc-hwo",
         "appsc-amvi",
         "appsc-aso-statistics",
-        "appsc-horticulture-officer"
+        "appsc-horticulture-officer",
+        "appsc-lecturers"
       ],
-      "notes": "Official 2026 notifications. ASO, HWO, AMVI, Horticulture and others notified in 2026 but not yet profiled. FRO (5 posts) skipped as a minor cycle."
+      "notes": "Official 2026 notifications; lecturers from the official 13/2023 notice and reports of 30/2026. FRO (5 posts) skipped as a minor cycle."
     },
     {
       "jurisdiction": "andhra-pradesh",
@@ -163,6 +165,80 @@
       "notes": "2026 AEE recruitment from a secondary report."
     },
     {
+      "jurisdiction": "central",
+      "name": "CBSE (CTET; KVS and NVS recruitment)",
+      "website": "https://www.cbse.gov.in",
+      "status": "partial",
+      "profiles": [
+        "ctet",
+        "kvs-nvs-teachers"
+      ],
+      "notes": "CTET from the official bulletin; KVS/NVS from the official press note and reports. EMRS pending."
+    },
+    {
+      "jurisdiction": "central",
+      "name": "National Testing Agency (UGC NET)",
+      "website": "https://nta.ac.in",
+      "status": "covered",
+      "profiles": [
+        "ugc-net"
+      ],
+      "notes": "From the official December 2026 bulletin."
+    },
+    {
+      "jurisdiction": "central",
+      "name": "Defence entries (AFCAT, Agniveer)",
+      "website": "https://joinindianarmy.nic.in",
+      "status": "partial",
+      "profiles": [
+        "afcat",
+        "army-agniveer"
+      ],
+      "notes": "Agnipath package from the official PIB release; AFCAT and cycle dates secondary. Navy and Air Force Agniveer, Coast Guard pending."
+    },
+    {
+      "jurisdiction": "central",
+      "name": "Insurance, rural banking and intelligence (LIC, NABARD, IB)",
+      "website": "https://licindia.in",
+      "status": "partial",
+      "profiles": [
+        "lic-aao",
+        "nabard-grade-a",
+        "ib-acio"
+      ],
+      "notes": "Secondary reports; NABARD pay and age not confirmed."
+    },
+    {
+      "jurisdiction": "central",
+      "name": "AIIMS (NORCET)",
+      "website": "https://www.aiimsexams.ac.in",
+      "status": "partial",
+      "profiles": [
+        "aiims-norcet"
+      ],
+      "notes": "Secondary reports of NORCET-10."
+    },
+    {
+      "jurisdiction": "telangana",
+      "name": "TREIRB (gurukul teachers and lecturers)",
+      "website": "https://treirb.telangana.gov.in",
+      "status": "partial",
+      "profiles": [
+        "tg-gurukul-treirb"
+      ],
+      "notes": "2023 cycle from secondary reports; no 2026 notification yet."
+    },
+    {
+      "jurisdiction": "telangana",
+      "name": "MHSRB Telangana (nursing officers)",
+      "website": "https://mhsrb.telangana.gov.in",
+      "status": "partial",
+      "profiles": [
+        "tg-staff-nurse"
+      ],
+      "notes": "2024 cycle from secondary reports."
+    },
+    {
       "jurisdiction": "karnataka",
       "name": "Karnataka Public Service Commission (KPSC)",
       "website": "https://kpsc.kar.nic.in",
@@ -188,12 +264,12 @@
     }
   ],
   "pending": [
-    "UPSC CMS, IES/ISS, Combined Geo-Scientist, EPFO EO/AO and APFC",
-    "AFCAT, Agniveer (Army, Navy, Air Force), Coast Guard",
-    "NABARD Grade A, SEBI Grade A, LIC AAO, RBI Assistant, IBPS SO",
+    "UPSC CMS, IES/ISS, Combined Geo-Scientist",
+    "Navy and Air Force Agniveer, Coast Guard",
+    "SEBI Grade A, RBI Assistant, IBPS SO",
     "ISRO, DRDO, BARC, NIC; GATE and PSU recruitment through GATE",
-    "KVS, NVS, CTET, UGC NET, EMRS",
-    "AIIMS NORCET, ESIC, EPFO SSA, FCI, IB ACIO",
+    "EMRS, ESIC, EPFO SSA, FCI",
+    "Telangana power utilities AE (TGGENCO, TGTRANSCO, DISCOMs): no 2026 notice found",
     "Remaining APPSC 2026 notifications",
     "TG DSC official notification when released",
     "Karnataka profiles (KPSC, KEA, police): pay rules and region page ready, profiles not yet written"

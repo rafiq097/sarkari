@@ -1,0 +1,276 @@
+{
+  "id": "ctet",
+  "name": "Central Teacher Eligibility Test",
+  "abbreviation": "CTET",
+  "profileType": "eligibility-test",
+  "jurisdiction": "central",
+  "sector": "teaching",
+  "organization": {
+    "id": "cbse",
+    "name": "Central Board of Secondary Education",
+    "abbreviation": "CBSE",
+    "website": "https://www.cbse.gov.in"
+  },
+  "department": "Ministry of Education (conducted by CBSE)",
+  "technical": false,
+  "summary": "The national teacher eligibility test. Paper I qualifies you to teach Classes I to V and Paper II Classes VI to VIII in KVS, NVS and other central schools. The certificate is valid for life. It is not a job by itself.",
+  "employmentType": "eligibility-only",
+  "recruitmentMethods": [
+    "eligibility-test"
+  ],
+  "frequency": "Usually twice a year",
+  "officialLinks": [
+    {
+      "label": "CTET portal",
+      "url": "https://ctet.nic.in"
+    },
+    {
+      "label": "Information bulletin, Sept 2026 session",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "The 22nd edition was first set for 6 September 2026 and later moved to 12 and 13 December 2026 by CBSE notice. Applications closed on 10 June 2026.",
+    "cycles": [
+      {
+        "cycle": "CTET 22nd edition (2026)",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-05-11",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-06-10",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Exam (rescheduled)",
+            "date": "2026-12-12",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "CTET certificate (Paper I and/or Paper II)",
+      "group": "Eligibility certificate",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Makes you eligible to apply for teacher posts in central government schools and CBSE schools."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "The bulletin sets no upper age limit for the test.",
+      "referenceDate": "Not applicable"
+    },
+    "nationality": "As per the bulletin.",
+    "education": {
+      "summary": "Minimum qualifications as notified by NCTE. Paper I: Senior Secondary (Class 12) with a teacher-training diploma such as D.El.Ed. Paper II: a degree with B.Ed. Final-year trainees may appear. Reserved categories get up to 5% relaxation in qualifying marks.",
+      "finalYearAllowed": true,
+      "minMarks": "As per NCTE norms"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No limit; qualified candidates may retake to improve their score"
+      }
+    ],
+    "examVsPost": "Passing CTET gives no job. You still need to clear a recruitment such as KVS/NVS, where CTET is one eligibility condition.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "education"
+    ],
+    "notes": "Paper I needs a teacher-training diploma after Class 12; Paper II needs a degree with B.Ed.",
+    "ageMin": null,
+    "ageMax": null,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Paper I and/or Paper II (OMR, objective)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "Paper I (Classes I to V): Child Development and Pedagogy 30, Language I 30, Language II 30, Mathematics 30, Environmental Studies 30",
+            "marks": 150,
+            "questions": 150,
+            "duration": "2 hours 30 minutes"
+          },
+          {
+            "name": "Paper II (Classes VI to VIII): Child Development and Pedagogy 30, Language I 30, Language II 30, Mathematics and Science or Social Studies 60",
+            "marks": 150,
+            "questions": 150,
+            "duration": "2 hours 30 minutes"
+          }
+        ],
+        "notes": "All questions are multiple choice with four options."
+      }
+    ],
+    "meritCalculation": "Qualifying test: 60% or more is a pass (NCTE notification of 11 Feb 2011). Schools may give concessions to reserved categories.",
+    "languages": "English, Hindi and a list of languages for Language I and II.",
+    "documentVerification": "At the recruitment stage.",
+    "probation": "Not applicable."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
+    "sections": [
+      {
+        "stage": "Paper I",
+        "subject": "Five sections of 30 marks",
+        "topics": [
+          "Child development and pedagogy (age 6 to 11)",
+          "Language I (medium of instruction)",
+          "Language II",
+          "Mathematics",
+          "Environmental studies"
+        ]
+      },
+      {
+        "stage": "Paper II",
+        "subject": "Four sections",
+        "topics": [
+          "Child development and pedagogy (age 11 to 14)",
+          "Language I and Language II",
+          "Mathematics and science (60) or social studies (60)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "english-language",
+    "hindi-language",
+    "mathematics",
+    "general-science"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": null,
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "No salary: this is an eligibility test.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Teacher in a central school (after recruitment)",
+        "level": "Level 6 to 8",
+        "timeline": "After a recruitment such as KVS/NVS",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "See KVS and NVS teacher recruitment."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Not applicable.",
+    "transfers": "Not applicable.",
+    "nature": "Not applicable.",
+    "workload": "Not applicable.",
+    "publicInteraction": "Not applicable.",
+    "hazards": "Not applicable.",
+    "stability": "Not applicable."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "low",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Qualifying test with no limit on attempts; the 60% pass mark still filters many."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "high",
+    "rationale": "Held often and valid for life; the job depends on teacher recruitments."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "No job guarantee",
+        "level": "medium",
+        "note": "Posts depend on KVS, NVS and other recruitments."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CTET September 2026 Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf",
+      "publisher": "Central Board of Secondary Education",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Public notice: 22nd CTET on 12 and 13 December 2026 (14 Sep 2026)",
+      "url": "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260914325514446.pdf",
+      "publisher": "Central Board of Secondary Education",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Exact NCTE qualification combinations are summarised, not reproduced."
+    ],
+    "notes": "Pattern, pass mark, validity, fee and dates from official CBSE documents."
+  },
+  "lastVerified": "2026-10-18"
+}

@@ -1,0 +1,268 @@
+{
+  "id": "ugc-net",
+  "name": "UGC National Eligibility Test",
+  "abbreviation": "UGC NET",
+  "profileType": "eligibility-test",
+  "jurisdiction": "central",
+  "sector": "teaching",
+  "organization": {
+    "id": "nta",
+    "name": "National Testing Agency",
+    "abbreviation": "NTA",
+    "website": "https://nta.ac.in"
+  },
+  "department": "University Grants Commission (conducted by NTA)",
+  "technical": false,
+  "summary": "The test for Junior Research Fellowship and eligibility for Assistant Professor in universities and colleges, in 87 subjects. Held twice a year. Two papers in one 3-hour sitting, no negative marking.",
+  "employmentType": "eligibility-only",
+  "recruitmentMethods": [
+    "eligibility-test"
+  ],
+  "frequency": "Twice a year (June and December)",
+  "officialLinks": [
+    {
+      "label": "UGC NET portal",
+      "url": "https://ugcnet.nta.nic.in"
+    },
+    {
+      "label": "December 2026 bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610161905649093.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "December 2026 session: applications 8 to 28 October 2026 (late fee to 31 October), exam from 14 December 2026.",
+    "cycles": [
+      {
+        "cycle": "UGC NET December 2026",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-10-08",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-10-28",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Exam begins",
+            "date": "2026-12-14",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "JRF, Assistant Professor eligibility or PhD admission",
+      "group": "Eligibility certificate",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "JRF gives a research fellowship; Assistant Professor eligibility lets you apply for college and university posts."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "OBC-NCL, SC, ST, PwBD, third gender, women (JRF)",
+          "years": 5
+        }
+      ],
+      "summary": "JRF: not more than 30 on the first day of the exam month (1 December 2026), with 5 years relaxation for OBC-NCL, SC, ST, PwBD, third gender and women. No upper age limit for Assistant Professor eligibility.",
+      "referenceDate": "1st of the exam month"
+    },
+    "nationality": "Indian nationals.",
+    "education": {
+      "summary": "A master's degree or equivalent with at least 55% (50% for OBC-NCL, SC, ST, PwBD and third gender). Final-year master's students may apply.",
+      "finalYearAllowed": true,
+      "minMarks": "55% (50% for reserved categories)"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No limit"
+      }
+    ],
+    "examVsPost": "NET is eligibility. A job needs a separate college or university recruitment.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "JRF closes at 30 (plus relaxation); no age limit for Assistant Professor eligibility.",
+    "ageMin": null,
+    "ageMax": null,
+    "minEducation": "postgraduate",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Computer-based test (Paper 1 and Paper 2)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "Paper 1: Teaching and research aptitude",
+            "marks": 100,
+            "questions": 50,
+            "duration": "3 hours (both papers together)"
+          },
+          {
+            "name": "Paper 2: Your subject",
+            "marks": 200,
+            "questions": 100,
+            "duration": "3 hours (both papers together)"
+          }
+        ],
+        "notes": "No negative marking. No break between the papers."
+      }
+    ],
+    "meritCalculation": "Assistant Professor eligibility goes to the top 6% of those who appeared, among candidates with at least 40% aggregate (35% reserved), split by subject and category. JRF is a smaller slice from the same ranking.",
+    "languages": "English and Hindi (language subjects in that language).",
+    "documentVerification": "At fellowship or recruitment stage.",
+    "probation": "Not applicable."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610161905649093.pdf",
+    "sections": [
+      {
+        "stage": "Paper 1",
+        "subject": "Teaching and research aptitude",
+        "topics": [
+          "Teaching and research aptitude",
+          "Comprehension, communication and reasoning",
+          "Data interpretation and ICT",
+          "Higher education system"
+        ]
+      },
+      {
+        "stage": "Paper 2",
+        "subject": "Chosen subject (87 options)",
+        "topics": [
+          "Master's-level syllabus of the chosen subject"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "reasoning",
+    "data-interpretation",
+    "computer-awareness"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": null,
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "No salary for the test itself. JRF gives a monthly fellowship as notified by UGC.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Assistant Professor (after recruitment)",
+        "level": "Academic Level 10",
+        "timeline": "After a college or university recruitment",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Academic promotions under UGC rules."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Not applicable.",
+    "transfers": "Not applicable.",
+    "nature": "Not applicable.",
+    "workload": "Not applicable.",
+    "publicInteraction": "Not applicable.",
+    "hazards": "Not applicable.",
+    "stability": "Not applicable."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "medium",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Only about 6% of those who appear qualify for Assistant Professor eligibility."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "high",
+    "rationale": "Held twice a year; opens academic careers."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "No job guarantee",
+        "level": "medium",
+        "note": "Academic posts depend on separate recruitments."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "UGC-NET December 2026 Information Bulletin",
+      "url": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610161905649093.pdf",
+      "publisher": "National Testing Agency",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "JRF fellowship amount not reproduced."
+    ],
+    "notes": "Dates, pattern, eligibility and qualifying rules from the official NTA bulletin."
+  },
+  "lastVerified": "2026-10-18"
+}

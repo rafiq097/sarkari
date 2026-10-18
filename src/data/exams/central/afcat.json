@@ -1,0 +1,328 @@
+{
+  "id": "afcat",
+  "name": "Air Force Common Admission Test",
+  "abbreviation": "AFCAT",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "iaf",
+    "name": "Indian Air Force",
+    "abbreviation": "IAF",
+    "website": "https://afcat.cdac.in"
+  },
+  "department": "Indian Air Force",
+  "technical": false,
+  "summary": "Officer entry into the Indian Air Force for Flying and Ground Duty (Technical and Non-Technical) branches. Held twice a year. A computer-based test, then the Air Force Selection Board (AFSB) and medicals. Officers start at Level 10.",
+  "employmentType": "short-service",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "ssb-interview",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Twice a year (AFCAT 1 and AFCAT 2)",
+  "officialLinks": [
+    {
+      "label": "AFCAT portal",
+      "url": "https://afcat.cdac.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "AFCAT 1 is usually notified in November with the test in late January or February; AFCAT 2 is notified around May or June with the test in August. AFCAT 01/2026 (340 posts) was notified on 9 November 2025 for courses starting in January 2027.",
+    "cycles": [
+      {
+        "cycle": "AFCAT 01/2026",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2025-11-09",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Applications open",
+            "date": "2025-11-17",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Flying Branch",
+      "group": "Short Service Commission",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "ageMin": 20,
+      "ageMax": 24,
+      "responsibilities": "Pilot.",
+      "notes": "Up to 26 with a valid commercial pilot licence."
+    },
+    {
+      "name": "Ground Duty (Technical): Aeronautical Engineer (Electronics / Mechanical)",
+      "group": "Permanent or Short Service Commission",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "ageMin": 20,
+      "ageMax": 26,
+      "responsibilities": "Aircraft and systems engineering."
+    },
+    {
+      "name": "Ground Duty (Non-Technical): Weapon Systems, Administration, Accounts, Logistics, Education, Meteorology",
+      "group": "Permanent or Short Service Commission",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "ageMin": 20,
+      "ageMax": 26,
+      "responsibilities": "Support and command branches."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "Flying: 20 to 24 (26 with a commercial pilot licence). Ground Duty: 20 to 26. Age is counted on the course start date.",
+      "referenceDate": "Course commencement date"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "Flying: Class 12 with 50% in Maths and Physics plus a degree with 60% (or BE/BTech 60%). Ground Duty Technical: Class 12 with 50% in Physics and Maths plus a four-year engineering degree. Accounts: B.Com/BBA with 60%. Other branches as per notice.",
+      "finalYearAllowed": true,
+      "minMarks": "60% in the degree for most branches"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "Within the age limits"
+      }
+    ],
+    "physical": "Air Force medical standards; Flying branch has stricter standards.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Flying branch closes at 24.",
+    "ageMin": 20,
+    "ageMax": 26,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "AFCAT online test",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Verbal ability, general awareness, numerical ability, reasoning and military aptitude",
+            "marks": 300,
+            "questions": 100,
+            "duration": "2 hours",
+            "negative": "Minus 1 for a wrong answer (plus 3 for a right one)"
+          }
+        ]
+      },
+      {
+        "name": "Air Force Selection Board (AFSB)",
+        "type": "ssb",
+        "countsInMerit": true,
+        "notes": "Officer intelligence rating, psychology tests, group tasks and interview. Flying candidates also take the CPSS."
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from AFCAT and AFSB marks among medically fit candidates.",
+    "languages": "English.",
+    "documentVerification": "At AFSB.",
+    "probation": "Training at the Air Force Academy and other institutes."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://afcat.cdac.in",
+    "sections": [
+      {
+        "stage": "AFCAT",
+        "subject": "Five areas",
+        "topics": [
+          "English comprehension and vocabulary",
+          "General awareness and current affairs",
+          "Numerical ability",
+          "Reasoning and military aptitude"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "general-awareness",
+    "current-affairs",
+    "quantitative-aptitude",
+    "reasoning",
+    "military-aptitude",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 340,
+      "note": "AFCAT 01/2026, courses from January 2027.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "defence-7cpc",
+    "payLevel": "Level 10 (Flying Officer)",
+    "payScale": "56,100 to 1,77,500",
+    "startingBasic": 56100,
+    "fixedAdditions": [
+      {
+        "name": "Military Service Pay",
+        "amount": 15500,
+        "daApplies": true
+      }
+    ],
+    "specialAllowances": [
+      {
+        "name": "Flying allowance",
+        "detail": "For the Flying branch, as per rules."
+      },
+      {
+        "name": "Technical allowance",
+        "detail": "For eligible technical branches."
+      },
+      {
+        "name": "Training stipend",
+        "detail": "Rs 56,100 a month during training."
+      }
+    ],
+    "pension": "Defence pension for officers granted Permanent Commission; SSC officers released early do not get a pension.",
+    "notes": "Flight Lieutenant moves to Level 10B and Squadron Leader to Level 11.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Flying Officer",
+        "level": "Level 10",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Flight Lieutenant",
+        "level": "Level 10B",
+        "timeline": "Time scale",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Squadron Leader",
+        "level": "Level 11",
+        "timeline": "Time scale",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Short Service officers may be considered for Permanent Commission."
+  },
+  "benefits": [
+    {
+      "item": "Armed forces benefits",
+      "detail": "Free medical care, subsidised canteen, quarters, leave travel and group insurance.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Air Force stations across India.",
+    "transfers": "Every 2 to 3 years.",
+    "nature": "Military officer duties.",
+    "workload": "High.",
+    "publicInteraction": "Low.",
+    "hazards": "Moderate to high for flying duties.",
+    "stability": "High during the commission."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "medium",
+    "selectionUncertainty": "high",
+    "rationale": "Few hundred seats; the AFSB and medicals reject many who clear the test."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Two tests every year and officer status from day one."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Short service tenure",
+        "level": "medium",
+        "note": "Permanent Commission is not guaranteed for SSC officers."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AFCAT 1 notification 2026: vacancies, eligibility, pattern, pay",
+      "url": "https://dishapublication.com/blogs/news/afcat-1-notification-2026-out-vacancies-syllabus-eligibility-criteria-and-more",
+      "publisher": "Disha Publication (reports the official notice)",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "AFCAT 01/2026 test date and AFCAT 02/2026 details not confirmed.",
+      "Branch-wise vacancy split varies between reports."
+    ],
+    "notes": "From a secondary report of the official notice."
+  },
+  "lastVerified": "2026-10-18"
+}

@@ -1,0 +1,334 @@
+{
+  "id": "tg-gurukul-treirb",
+  "name": "Telangana Gurukul Teachers and Lecturers (TREIRB)",
+  "abbreviation": "TG Gurukul",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "teaching",
+  "organization": {
+    "id": "treirb",
+    "name": "Telangana Residential Educational Institutions Recruitment Board",
+    "abbreviation": "TREIRB",
+    "website": "https://treirb.telangana.gov.in"
+  },
+  "department": "Telangana residential (gurukul) school and college societies: Social Welfare, Tribal Welfare, BC Welfare, Minority Welfare and General",
+  "technical": false,
+  "summary": "Teacher and lecturer posts in Telangana's residential gurukul schools and colleges. The 2023 drive had 9,210 posts: 4,006 TGT, 1,276 PGT, 2,008 junior college and 868 degree college posts, plus PD, librarian and art teachers.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification"
+  ],
+  "frequency": "Irregular (2017, 2023)",
+  "officialLinks": [
+    {
+      "label": "TREIRB website",
+      "url": "https://treirb.telangana.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The last cycle was notified in April 2023 (9,210 posts), with written exams in August 2023 and results from February 2024. A new TREIRB drive was being talked about in 2026 but no notification was confirmed by October 2026.",
+    "cycles": [
+      {
+        "cycle": "TREIRB 2023",
+        "events": [
+          {
+            "event": "Applications open (degree and junior college posts)",
+            "date": "2023-04-17",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Written exams begin",
+            "date": "2023-08-01",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "TGT and PGT results",
+            "date": "2024-02-08",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Trained Graduate Teacher (TGT)",
+      "group": "School",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": 42300,
+      "responsibilities": "Teaches Classes VI to X in gurukul schools.",
+      "notes": "2023: 4,006 posts. Scale 42,300 to 1,15,270. Needs B.Ed and TET Paper II."
+    },
+    {
+      "name": "Post Graduate Teacher (PGT)",
+      "group": "School",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": 45960,
+      "responsibilities": "Teaches senior classes in gurukul schools.",
+      "notes": "2023: 1,276 posts. Scale 45,960 to 1,24,150."
+    },
+    {
+      "name": "Junior Lecturer, Physical Director and Librarian (junior colleges)",
+      "group": "Junior college",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": 54220,
+      "responsibilities": "Teaches intermediate (Class 11 and 12) students.",
+      "notes": "2023: 2,008 posts. Scale 54,220 to 1,33,630."
+    },
+    {
+      "name": "Degree Lecturer, Physical Director and Librarian (degree colleges)",
+      "group": "Degree college",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": 58850,
+      "responsibilities": "Teaches in gurukul degree colleges.",
+      "notes": "2023: 868 posts. Scale 58,850 to 1,37,050. Needs NET or PhD."
+    },
+    {
+      "name": "School Librarian, Physical Director, Art, Craft and Music Teachers",
+      "group": "School",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Library, sports and arts teaching.",
+      "notes": "2023: 434 librarians, 275 PDs, 132 art, 88 craft and 123 music teachers."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Telangana State Government employees",
+          "years": 5,
+          "note": "Based on regular service."
+        },
+        {
+          "category": "Ex-servicemen, NCC instructors",
+          "years": 3,
+          "note": "Plus length of service."
+        }
+      ],
+      "summary": "18 to 44 years (2023 cycle).",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local-cadre rules apply under the Presidential Order 2018.",
+    "education": {
+      "summary": "TGT: a degree with 50%, B.Ed and TET Paper II. PGT: a postgraduate degree with B.Ed. Junior Lecturer: a postgraduate degree with 50% (45% reserved) and B.Ed. Degree Lecturer: a postgraduate degree with NET (PhD holders exempt).",
+      "finalYearAllowed": false,
+      "minMarks": "50% in the qualifying degree for most posts"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Telangana rules: SC 15% (sub-categorised from 2025), ST 10%, BC 29%, EWS 10%, with horizontal reservation for women, PwBD, ex-servicemen and sportspersons, and local-cadre rules under the Presidential Order 2018.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "education"
+    ],
+    "notes": "Figures from the 2023 cycle.",
+    "ageMin": 18,
+    "ageMax": 44,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Written tests (Paper I, II and III by post, objective)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Demonstration class (lecturers, PDs, art and music)",
+        "type": "skill",
+        "countsInMerit": true
+      },
+      {
+        "name": "Certificate verification",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the written papers, plus the demonstration for lecturer and some school posts.",
+    "languages": "English and Telugu.",
+    "documentVerification": "After results.",
+    "probation": "As per society rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://treirb.telangana.gov.in",
+    "sections": [
+      {
+        "stage": "Written tests",
+        "subject": "Typical areas",
+        "topics": [
+          "General studies with Telangana focus",
+          "Pedagogy and teaching aptitude",
+          "Subject knowledge for the post",
+          "English language"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "general-awareness",
+    "telangana-history-culture",
+    "english-language"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2023,
+      "vacancies": 9210,
+      "note": "All TREIRB posts in the 2023 drive.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": "TGT 42,300 to 1,15,270; PGT 45,960 to 1,24,150; JL 54,220 to 1,33,630; DL 58,850 to 1,37,050",
+    "startingBasic": 42300,
+    "pension": "Contributory Pension Scheme.",
+    "notes": "Starting basic shown is TGT.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "TGT",
+        "level": "TS RPS 2020",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "PGT / Principal",
+        "level": "Higher scales",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions within each residential society."
+  },
+  "benefits": [
+    {
+      "item": "State government benefits",
+      "detail": "HRA or quarters, Employees Health Scheme and leave as per Telangana rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Residential schools and colleges across Telangana, many in rural areas.",
+    "transfers": "Within the society.",
+    "nature": "Teaching with residential duties.",
+    "workload": "High.",
+    "publicInteraction": "High.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Thousands of posts, but many lakh applications across posts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Large drives come years apart."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "The last two drives were six years apart."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TS Gurukulam notification 2023 for 9,210 posts",
+      "url": "https://www.freshersnow.com/ts-gurukulam-notification/",
+      "publisher": "FreshersNow (reports the official notifications)",
+      "year": 2023,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "TREIRB results 2023",
+      "url": "https://www.careerpower.in/blog/treirb-results-2023",
+      "publisher": "Career Power",
+      "year": 2024,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Paper-wise marks not reproduced.",
+      "No 2026 notification confirmed."
+    ],
+    "notes": "From secondary reports of the 2023 notifications."
+  },
+  "lastVerified": "2026-10-18"
+}

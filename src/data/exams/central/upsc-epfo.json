@@ -1,0 +1,322 @@
+{
+  "id": "upsc-epfo",
+  "name": "UPSC EPFO Enforcement Officer / Accounts Officer and APFC",
+  "abbreviation": "UPSC EPFO",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "social-security",
+  "organization": {
+    "id": "upsc",
+    "name": "Union Public Service Commission",
+    "abbreviation": "UPSC",
+    "website": "https://www.upsc.gov.in"
+  },
+  "department": "Employees' Provident Fund Organisation (Ministry of Labour)",
+  "technical": false,
+  "summary": "UPSC recruitment for EPFO officers: Enforcement Officer / Accounts Officer (Level 8) and Assistant Provident Fund Commissioner (Level 10). One objective test and an interview, weighted 75:25.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview"
+  ],
+  "frequency": "Irregular (2020, 2023, 2025, 2026)",
+  "officialLinks": [
+    {
+      "label": "UPSC recruitment",
+      "url": "https://www.upsc.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "The 2025 cycle had 230 posts (EO/AO 156, APFC 74); interviews followed in 2026. For 2026 only APFC (80 posts) was notified, with the test reported for 20 December 2026.",
+    "cycles": [
+      {
+        "cycle": "EPFO 2026 (APFC)",
+        "events": [
+          {
+            "event": "Recruitment test (APFC)",
+            "date": "2026-12-20",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Enforcement Officer / Accounts Officer",
+      "group": "Group B",
+      "payLevel": "Level 8",
+      "startingBasic": 47600,
+      "ageMax": 30,
+      "responsibilities": "Inspections and accounts of provident fund compliance.",
+      "notes": "2025: 156 posts."
+    },
+    {
+      "name": "Assistant Provident Fund Commissioner",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "ageMax": 35,
+      "responsibilities": "Heads regional PF work and quasi-judicial hearings.",
+      "notes": "2025: 74 posts; 2026: 80 posts."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Up to 30 for EO/AO and up to 35 for APFC (general category), as on the closing date.",
+      "referenceDate": "Closing date of application"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A bachelor's degree. For APFC a diploma in company law, labour laws or public administration is desirable.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "EO/AO closes at 30; APFC at 35.",
+    "ageMin": 18,
+    "ageMax": 35,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Recruitment test (objective, offline)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General abilities, labour laws, accounting, social security and current affairs",
+            "marks": 300,
+            "questions": 120,
+            "duration": "2 hours",
+            "negative": "One third of the question's marks"
+          }
+        ]
+      },
+      {
+        "name": "Interview",
+        "type": "interview",
+        "countsInMerit": true,
+        "notes": "100 marks."
+      }
+    ],
+    "meritCalculation": "Test 75% and interview 25%.",
+    "languages": "English and Hindi.",
+    "documentVerification": "Before interview.",
+    "probation": "Two years."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.upsc.gov.in",
+    "sections": [
+      {
+        "stage": "Recruitment test",
+        "subject": "Typical areas",
+        "topics": [
+          "Indian freedom struggle, current events, polity and economy",
+          "Accounting and auditing",
+          "Industrial relations and labour laws",
+          "Social security in India",
+          "Quantitative aptitude, reasoning and computer basics"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "indian-history",
+    "indian-polity",
+    "indian-economy",
+    "current-affairs",
+    "accountancy-commerce",
+    "law",
+    "quantitative-aptitude",
+    "reasoning",
+    "computer-awareness",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 230,
+      "note": "EO/AO 156, APFC 74.",
+      "source": "s1"
+    },
+    {
+      "year": 2026,
+      "vacancies": 80,
+      "note": "APFC only; EO/AO vacancies withdrawn.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 8 (EO/AO), Level 10 (APFC)",
+    "payScale": "47,600 (EO/AO) and 56,100 (APFC) first cells",
+    "startingBasic": 47600,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "notes": "Starting basic shown is EO/AO; APFC starts at 56,100.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "EO/AO",
+        "level": "Level 8",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "APFC",
+        "level": "Level 10",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Regional PF Commissioner",
+        "level": "Level 11 and above",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions within the EPFO cadre."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "EPFO regional offices across India.",
+    "transfers": "All-India for APFC.",
+    "nature": "Compliance, inspection and administration.",
+    "workload": "Moderate.",
+    "publicInteraction": "High.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "A single test with a broad syllabus; few posts per cycle."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Good desk jobs; cycles are irregular."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Vacancy changes",
+        "level": "medium",
+        "note": "EO/AO posts were withdrawn from the 2026 cycle."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "UPSC EPFO notification: vacancies, eligibility, pattern and 2026 update",
+      "url": "https://edutap.in/upsc-epfo/notification/",
+      "publisher": "EduTap",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Category-wise vacancies not reproduced.",
+      "Official notice not read directly."
+    ],
+    "notes": "From a secondary report of UPSC notices."
+  },
+  "lastVerified": "2026-10-18"
+}

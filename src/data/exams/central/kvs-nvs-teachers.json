@@ -1,0 +1,388 @@
+{
+  "id": "kvs-nvs-teachers",
+  "name": "KVS and NVS Teacher Recruitment (PGT, TGT, PRT and others)",
+  "abbreviation": "KVS NVS",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "teaching",
+  "organization": {
+    "id": "cbse",
+    "name": "Central Board of Secondary Education",
+    "abbreviation": "CBSE",
+    "website": "https://www.cbse.gov.in"
+  },
+  "department": "Kendriya Vidyalaya Sangathan and Navodaya Vidyalaya Samiti (Ministry of Education)",
+  "technical": false,
+  "summary": "Teacher and staff recruitment for Kendriya Vidyalayas and Navodaya Vidyalayas, run by CBSE. The 2025 drive had 14,967 posts: about 5,800 TGT, 3,000 PGT and 3,365 PRT. Tier 1 screening, Tier 2 and an interview for teachers.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "document-verification"
+  ],
+  "frequency": "Irregular (large drives every few years)",
+  "officialLinks": [
+    {
+      "label": "CBSE recruitment notices",
+      "url": "https://www.cbse.gov.in/cbsenew/cbse.html"
+    },
+    {
+      "label": "KVS",
+      "url": "https://kvsangathan.nic.in"
+    },
+    {
+      "label": "NVS",
+      "url": "https://navodaya.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Recruitment Notification 01/2025: registration from 14 November 2025 (extended to 11 December 2025), Tier 1 on 10 and 11 January 2026, Tier 2 results declared in phases from 17 August 2026, then interviews and skill tests.",
+    "cycles": [
+      {
+        "cycle": "KVS NVS Recruitment 2025",
+        "events": [
+          {
+            "event": "Registration opens",
+            "date": "2025-11-14",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Tier 1 exam",
+            "date": "2026-01-10",
+            "dateType": "official",
+            "source": "s3"
+          },
+          {
+            "event": "Tier 2 shortlist published",
+            "date": "2026-03-24",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Tier 2 results begin (phase-wise)",
+            "date": "2026-08-17",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Post Graduate Teacher (PGT)",
+      "group": "Group B",
+      "payLevel": "Level 8",
+      "startingBasic": 47600,
+      "ageMax": 40,
+      "responsibilities": "Teaches Classes XI and XII.",
+      "notes": "2025: 2,978 (KVS 1,465, NVS 1,513) plus 18 NVS PGT (MIL)."
+    },
+    {
+      "name": "Trained Graduate Teacher (TGT)",
+      "group": "Group B",
+      "payLevel": "Level 7",
+      "startingBasic": 44900,
+      "ageMax": 35,
+      "responsibilities": "Teaches Classes VI to X.",
+      "notes": "2025: 5,772 (KVS 2,794, NVS 2,978) plus 443 NVS TGT (third language). CTET Paper II needed."
+    },
+    {
+      "name": "Primary Teacher (PRT)",
+      "group": "Group C",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "ageMax": 30,
+      "responsibilities": "Teaches Classes I to V.",
+      "notes": "2025: 3,365 (KVS only)."
+    },
+    {
+      "name": "Principal, Vice-Principal, Assistant Commissioner",
+      "group": "Group A",
+      "payLevel": "As per notice",
+      "startingBasic": null,
+      "responsibilities": "School and regional leadership.",
+      "notes": "2025: 227 Principal, 58 Vice-Principal, 17 Assistant Commissioner."
+    },
+    {
+      "name": "Librarian and non-teaching posts",
+      "group": "Group B and C",
+      "payLevel": "As per notice",
+      "startingBasic": null,
+      "responsibilities": "Library, office and lab posts.",
+      "notes": "2025: 147 Librarian, 1,942 non-teaching."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Upper age limit by post: PRT 30, TGT 35, PGT 40 (relaxations as per central rules).",
+      "referenceDate": "Last date of application"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "PRT: Senior Secondary with a teacher-training diploma (D.El.Ed or equivalent) and CTET Paper I. TGT: a degree in the subject with B.Ed and CTET Paper II. PGT: a master's degree in the subject with B.Ed.",
+      "finalYearAllowed": false,
+      "minMarks": "Typically 50% in the qualifying degree, as per the notice"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "examVsPost": "One application per post; for posts in both KVS and NVS you give an organisation preference.",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "education"
+    ],
+    "notes": "PRT closes at 30, TGT at 35, PGT at 40. CTET needed for PRT and TGT.",
+    "ageMin": 18,
+    "ageMax": 40,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Tier 1 (OMR, screening)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "Six parts",
+            "marks": 300,
+            "questions": 100,
+            "duration": "2 hours",
+            "notes": "Parts I to IV: 20 questions (60 marks) each; Parts V and VI: 10 questions (30 marks) each."
+          }
+        ]
+      },
+      {
+        "name": "Tier 2 (post-specific)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Interview (teaching posts)",
+        "type": "interview",
+        "countsInMerit": true,
+        "notes": "100 marks."
+      }
+    ],
+    "meritCalculation": "Teaching posts: Tier 2 85% and interview 15%. Some non-teaching posts use Tier 2 with a skill test or Tier 2 alone.",
+    "languages": "English and Hindi.",
+    "documentVerification": "After final merit.",
+    "probation": "As per KVS / NVS rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.cbse.gov.in/cbsenew/cbse.html",
+    "sections": [
+      {
+        "stage": "Tier 1 and 2",
+        "subject": "Typical areas",
+        "topics": [
+          "General awareness, reasoning and computer literacy",
+          "English and Hindi",
+          "Perspectives on education and pedagogy",
+          "Subject knowledge for the post"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "english-language",
+    "hindi-language",
+    "reasoning",
+    "general-awareness",
+    "computer-awareness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 14967,
+      "note": "All KVS and NVS posts, teaching and non-teaching, Recruitment Notification 01/2025.",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 6 to Level 8 (by post)",
+    "payScale": "PRT 35,400; TGT 44,900; PGT 47,600 (first cells)",
+    "startingBasic": 44900,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "notes": "Starting basic shown is TGT (Level 7).",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "TGT",
+        "level": "Level 7",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "PGT",
+        "level": "Level 8",
+        "timeline": "By promotion or direct recruitment",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Vice-Principal / Principal",
+        "level": "Higher levels",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions follow KVS and NVS recruitment rules."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Anywhere in India; NVS schools are residential and mostly rural.",
+    "transfers": "All-India transfer liability.",
+    "nature": "Teaching; NVS includes residential duties.",
+    "workload": "Moderate to high.",
+    "publicInteraction": "High.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Large applicant pool for central school jobs; subject depth matters in Tier 2."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "low",
+    "rationale": "Good central pay and stability, but drives are irregular and postings are all-India."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Large drives come years apart."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CBSE press release: phase-wise Tier 2 results, KVS NVS Recruitment 2025 (17 Aug 2026)",
+      "url": "https://www.cbse.gov.in/cbsenew/documents/KVS_NVS_Recruitment_2025_Press_Note_17082026.pdf",
+      "publisher": "Central Board of Secondary Education",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "CBSE begins registration for 14,967 KVS and NVS vacancies: eligibility, fee, pattern",
+      "url": "https://news.careers360.com/kvs-nvs-recruitment-2025-cbse-begins-registration-for-14967-teaching-staff-vacancies-eligibility-fee-pay-scale-exam-pattern",
+      "publisher": "Careers360 (reports the official notice)",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "KVS recruitment 2025-26: age, pay, pattern",
+      "url": "https://www.pw.live/teaching/exams/kvs-recruitment-2025-26",
+      "publisher": "Physics Wallah",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Tier 2 paper pattern by post not reproduced.",
+      "Age limits and qualifications are from secondary reports."
+    ],
+    "notes": "Post counts and stages from reports of the official notice; result phases from the official CBSE press release."
+  },
+  "lastVerified": "2026-10-18"
+}

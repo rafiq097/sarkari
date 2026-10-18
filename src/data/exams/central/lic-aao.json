@@ -1,0 +1,354 @@
+{
+  "id": "lic-aao",
+  "name": "LIC Assistant Administrative Officer (Generalist and Specialist)",
+  "abbreviation": "LIC AAO",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "insurance",
+  "organization": {
+    "id": "lic",
+    "name": "Life Insurance Corporation of India",
+    "abbreviation": "LIC",
+    "website": "https://licindia.in"
+  },
+  "department": "Life Insurance Corporation of India",
+  "technical": false,
+  "summary": "Officer entry into LIC as Assistant Administrative Officer, one of the best-paid graduate exams (basic Rs 88,635). The 2025 drive had 841 posts including 81 Assistant Engineers. Prelims, mains and interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "medical-exam"
+  ],
+  "frequency": "Irregular (2023, 2025)",
+  "officialLinks": [
+    {
+      "label": "LIC careers",
+      "url": "https://licindia.in/careers"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The 2025 cycle (841 posts) had prelims on 3 October 2025 and mains in November 2025, followed by interviews.",
+    "cycles": [
+      {
+        "cycle": "LIC AAO and AE 2025",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2025-08-16",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2025-09-08",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Prelims",
+            "date": "2025-10-03",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "AAO (Generalist)",
+      "group": "Officer",
+      "payLevel": "LIC officer scale",
+      "startingBasic": 88635,
+      "ageMin": 21,
+      "ageMax": 30,
+      "responsibilities": "Branch and divisional administration, underwriting and claims.",
+      "notes": "2025: 350 posts."
+    },
+    {
+      "name": "AAO (Specialist): CA, CS, Actuarial, Insurance, Legal",
+      "group": "Officer",
+      "payLevel": "LIC officer scale",
+      "startingBasic": 88635,
+      "ageMin": 21,
+      "ageMax": 32,
+      "responsibilities": "Specialist functions.",
+      "notes": "2025: 410 posts. Legal and CA up to 32."
+    },
+    {
+      "name": "Assistant Engineer (Civil, Electrical and others)",
+      "group": "Officer",
+      "payLevel": "LIC officer scale",
+      "startingBasic": null,
+      "responsibilities": "Property and engineering work.",
+      "notes": "2025: 81 posts."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "21 to 30 for Generalist and most Specialist streams; 21 to 32 for Legal and CA (as on 1 August 2025).",
+      "referenceDate": "1 August of the cycle year (2025)"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "Generalist: a bachelor's degree in any discipline. Specialists need the relevant professional qualification (law degree with 50%, ICAI, ICSI, actuarial or insurance fellowship).",
+      "finalYearAllowed": false,
+      "minMarks": "Law: 50% (45% SC, ST, PwBD)"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Legal and CA streams up to 32.",
+    "ageMin": 21,
+    "ageMax": 30,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Prelims (online, qualifying)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "Reasoning 35, Quantitative aptitude 35, English 30 (qualifying)",
+            "marks": 100,
+            "questions": 100,
+            "duration": "1 hour"
+          }
+        ],
+        "notes": "About 20 times the vacancies are called for mains. No negative marking reported."
+      },
+      {
+        "name": "Mains (online)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Reasoning 90, General knowledge 60, Data analysis 90, Insurance and financial market awareness 60",
+            "marks": 300,
+            "questions": 120,
+            "duration": "2 hours"
+          },
+          {
+            "name": "English descriptive (letter and precis), qualifying",
+            "marks": 25,
+            "duration": "30 minutes",
+            "qualifying": true
+          }
+        ]
+      },
+      {
+        "name": "Interview",
+        "type": "interview",
+        "countsInMerit": true
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Final merit on mains and interview marks.",
+    "languages": "English and Hindi (English descriptive in English).",
+    "documentVerification": "Before interview.",
+    "probation": "As per LIC rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://licindia.in/careers",
+    "sections": [
+      {
+        "stage": "Mains",
+        "subject": "Four objective sections",
+        "topics": [
+          "Reasoning",
+          "General knowledge and current affairs",
+          "Data analysis and interpretation",
+          "Insurance and financial market awareness"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "quantitative-aptitude",
+    "english-language",
+    "general-awareness",
+    "current-affairs",
+    "data-interpretation",
+    "insurance-awareness",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 841,
+      "note": "AAO Generalist 350, Specialist 410, Assistant Engineer 81.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "LIC officer scale",
+    "payScale": "88,635 - 4,385 (14) - 1,50,025 - 4,750 (4) - 1,69,025",
+    "startingBasic": 88635,
+    "officialGross": 126000,
+    "officialGrossNote": "Reported total of about Rs 1,26,000 a month in an A-class city.",
+    "pension": "National Pension System.",
+    "notes": "LIC pay is set by its own wage settlement, not the central pay matrix.",
+    "sources": [
+      "s2"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s2"
+    ],
+    "progression": [
+      {
+        "post": "AAO",
+        "level": "Officer",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Administrative Officer, Assistant Divisional Manager",
+        "level": "Higher scales",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions through LIC internal processes."
+  },
+  "benefits": [
+    {
+      "item": "LIC staff benefits",
+      "detail": "Medical cover, leave travel, housing loans and other staff benefits as per LIC rules.",
+      "conditional": false,
+      "sources": [
+        "s2"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Branches and offices across India.",
+    "transfers": "Periodic.",
+    "nature": "Insurance administration.",
+    "workload": "Moderate.",
+    "publicInteraction": "High.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Few hundred posts with very high pay attract a large pool; speed matters."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Very good pay; cycles are irregular."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Cycles every two years or more."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LIC AAO, AE recruitment 2025: registration begins for 841 posts",
+      "url": "https://news.careers360.com/lic-aao-ae-recruitment-2025-841-posts-registration-licindia-in-begins-prelims-exam-october-3-mains-interview-medical-examination",
+      "publisher": "Careers360 (reports the official notice)",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "LIC AAO notification 2025: age, eligibility and salary",
+      "url": "https://www.oliveboard.in/blog/lic-aao-notification/",
+      "publisher": "Oliveboard",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Interview marks and final weightage not confirmed.",
+      "Mains date and final result date not confirmed."
+    ],
+    "notes": "From secondary reports of the official notice."
+  },
+  "lastVerified": "2026-10-18"
+}

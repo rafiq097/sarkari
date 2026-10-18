@@ -1,0 +1,342 @@
+{
+  "id": "ib-acio",
+  "name": "IB Assistant Central Intelligence Officer Grade II / Executive",
+  "abbreviation": "IB ACIO",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "intelligence",
+  "organization": {
+    "id": "mha-ib",
+    "name": "Intelligence Bureau, Ministry of Home Affairs",
+    "abbreviation": "IB (MHA)",
+    "website": "https://www.mha.gov.in"
+  },
+  "department": "Intelligence Bureau, Ministry of Home Affairs",
+  "technical": false,
+  "summary": "Graduate entry into the Intelligence Bureau as ACIO Grade II / Executive (Level 7). The 2025 drive had 3,717 posts. Objective Tier 1, descriptive Tier 2 and an interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular (2023, 2025)",
+  "officialLinks": [
+    {
+      "label": "MHA vacancies",
+      "url": "https://www.mha.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The 2025 cycle (3,717 posts) finished with the final result on 3 June 2026. A new cycle had not been announced by October 2026.",
+    "cycles": [
+      {
+        "cycle": "ACIO-II/Exe 2025",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2025-07-19",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2025-08-10",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Interviews",
+            "date": "2026-04-01",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Final result",
+            "date": "2026-06-03",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Assistant Central Intelligence Officer Grade II / Executive",
+      "group": "Group C (non-gazetted)",
+      "payLevel": "Level 7",
+      "startingBasic": 44900,
+      "responsibilities": "Intelligence collection and analysis across India.",
+      "notes": "Central allowances plus the special security allowance admissible to IB staff."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 27 years on the last date of application (10 August 2025 in the last cycle).",
+      "referenceDate": "Last date of application"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A bachelor's degree from a recognised university. Knowledge of computers is listed.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Age as on the closing date.",
+    "ageMin": 18,
+    "ageMax": 27,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Tier 1 (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Current affairs, general studies, numerical aptitude, reasoning, English (20 questions each)",
+            "marks": 100,
+            "questions": 100,
+            "duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "name": "Tier 2 (descriptive)",
+        "type": "descriptive",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Essay 20, English comprehension 10, two long answers 20",
+            "marks": 50,
+            "duration": "1 hour"
+          }
+        ]
+      },
+      {
+        "name": "Tier 3 (interview)",
+        "type": "interview",
+        "countsInMerit": true,
+        "notes": "100 marks."
+      }
+    ],
+    "meritCalculation": "Final merit on Tier 1, Tier 2 and interview marks together, then character verification and medical.",
+    "languages": "English and Hindi.",
+    "documentVerification": "At interview.",
+    "probation": "As per IB rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.mha.gov.in",
+    "sections": [
+      {
+        "stage": "Tier 1 and 2",
+        "subject": "Five areas plus writing",
+        "topics": [
+          "Current affairs and general studies",
+          "Numerical and logical aptitude",
+          "English",
+          "Essay and comprehension (Tier 2)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "current-affairs",
+    "general-awareness",
+    "quantitative-aptitude",
+    "reasoning",
+    "english-language",
+    "essay-writing",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 3717,
+      "note": "ACIO-II/Exe 2025.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 7",
+    "payScale": "44,900 to 1,42,400",
+    "startingBasic": 44900,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "notes": "Special security allowance for IB staff is not modelled.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "ACIO-II",
+        "level": "Level 7",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "ACIO-I",
+        "level": "Level 8",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "DCIO and above",
+        "level": "Group B / A",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions within the IB cadre."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Anywhere in India, including border and sensitive areas.",
+    "transfers": "All-India.",
+    "nature": "Field and desk intelligence work.",
+    "workload": "High.",
+    "publicInteraction": "Low to medium.",
+    "hazards": "Moderate.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Lakhs of graduates apply; the descriptive paper and interview add uncertainty."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "low",
+    "rationale": "Respected central job, but cycles are irregular."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Cycles come every one to two years or more."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IB ACIO 2025: application begins for 3,717 Grade 2 / Executive posts",
+      "url": "https://news.careers360.com/ib-acio-2025-application-begins-for-3717-grade-2-executive-post-apply-by-august-10-cut-off-mark-category-wise-exam-patter-tier-1-2/amp",
+      "publisher": "Careers360 (reports the official notice)",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "IB ACIO Grade 2 Executive final result 2026",
+      "url": "https://www.careerpower.in/blog/ib-acio-grade-2-executive-final-result-2026",
+      "publisher": "Career Power",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Category-wise vacancies and Tier 1 negative marking not confirmed.",
+      "Tier 1 exam date varies between reports, so it is left out."
+    ],
+    "notes": "From secondary reports of the official notice and result."
+  },
+  "lastVerified": "2026-10-18"
+}

@@ -1,0 +1,297 @@
+{
+  "id": "nabard-grade-a",
+  "name": "NABARD Assistant Manager (Grade A)",
+  "abbreviation": "NABARD Grade A",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "regulatory",
+  "organization": {
+    "id": "nabard",
+    "name": "National Bank for Agriculture and Rural Development",
+    "abbreviation": "NABARD",
+    "website": "https://www.nabard.org"
+  },
+  "department": "National Bank for Agriculture and Rural Development",
+  "technical": false,
+  "summary": "Officer entry into NABARD, the apex rural development bank, mainly in the Rural Development Banking Service (RDBS). Phase I, Phase II, a psychometric test and an interview. The 2025 cycle had 91 posts.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview"
+  ],
+  "frequency": "Usually yearly",
+  "officialLinks": [
+    {
+      "label": "NABARD careers",
+      "url": "https://www.nabard.org"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The 2025 cycle (91 posts) had Phase II on 25 January 2026, interviews on 10 April 2026 and the final result on 6 May 2026. The next cycle had not been notified by October 2026.",
+    "cycles": [
+      {
+        "cycle": "Grade A 2025",
+        "events": [
+          {
+            "event": "Phase II exam",
+            "date": "2026-01-25",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Interviews",
+            "date": "2026-04-10",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Final result",
+            "date": "2026-05-06",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Assistant Manager (RDBS)",
+      "group": "Grade A officer",
+      "payLevel": "NABARD Grade A scale",
+      "startingBasic": null,
+      "responsibilities": "Rural credit, development projects and refinance.",
+      "notes": "2025: 85 posts."
+    },
+    {
+      "name": "Assistant Manager (Legal Service, Protocol and Security Service)",
+      "group": "Grade A officer",
+      "payLevel": "NABARD Grade A scale",
+      "startingBasic": null,
+      "responsibilities": "Legal and security functions.",
+      "notes": "2025: 2 Legal and 4 Protocol and Security."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Age limit as per each notification (not confirmed here).",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "A degree in the discipline listed for each RDBS stream, with the minimum marks set in the notification.",
+      "finalYearAllowed": false,
+      "minMarks": "As per notification"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "As per notification"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Upper age and marks rules not confirmed; check the notification.",
+    "ageMin": 21,
+    "ageMax": null,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Phase I (online, screening)",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Phase II (online, objective and descriptive)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Psychometric test",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Interview",
+        "type": "interview",
+        "countsInMerit": true
+      }
+    ],
+    "meritCalculation": "Final merit on Phase II and interview marks.",
+    "languages": "English and Hindi.",
+    "documentVerification": "At interview.",
+    "probation": "As per NABARD rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.nabard.org",
+    "sections": [
+      {
+        "stage": "Phase I and II",
+        "subject": "Typical areas",
+        "topics": [
+          "Reasoning, quantitative aptitude, English and computers",
+          "Economic and social issues, agriculture and rural development",
+          "Stream subject paper for specialist streams"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "quantitative-aptitude",
+    "english-language",
+    "computer-awareness",
+    "indian-economy",
+    "social-issues",
+    "agriculture",
+    "banking-awareness",
+    "interview-personality"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2025,
+      "vacancies": 91,
+      "note": "RDBS 85, Legal 2, Protocol and Security 4.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": "NABARD Grade A scale",
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "Pay scale not confirmed from the notification.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Assistant Manager",
+        "level": "Grade A",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Manager",
+        "level": "Grade B",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions through NABARD internal processes."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "NABARD regional offices and districts across India.",
+    "transfers": "All-India.",
+    "nature": "Rural development banking.",
+    "workload": "Moderate.",
+    "publicInteraction": "Medium.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "medium",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "high",
+    "rationale": "Under a hundred posts a year with a wide syllabus."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "medium",
+    "rationale": "Prestigious and well paid; very few posts."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Very few posts",
+        "level": "high",
+        "note": "Under a hundred openings per cycle."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NABARD Grade A final result 2026",
+      "url": "https://www.bankersadda.com/nabard-grade-a-final-result-2026/",
+      "publisher": "Adda247 (BankersAdda)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Age limit, education marks, pay scale and exam pattern not confirmed.",
+      "Notification and Phase I dates not confirmed."
+    ],
+    "notes": "Only dates, posts and stages from a secondary report."
+  },
+  "lastVerified": "2026-10-18"
+}

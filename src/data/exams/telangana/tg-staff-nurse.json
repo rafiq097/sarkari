@@ -1,0 +1,297 @@
+{
+  "id": "tg-staff-nurse",
+  "name": "Telangana Nursing Officer (Staff Nurse) Recruitment (MHSRB)",
+  "abbreviation": "TG Staff Nurse",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "health",
+  "organization": {
+    "id": "mhsrb-telangana",
+    "name": "Medical and Health Services Recruitment Board, Telangana",
+    "abbreviation": "MHSRB",
+    "website": "https://mhsrb.telangana.gov.in"
+  },
+  "department": "Telangana health departments: Public Health, Medical Education, Vaidya Vidhana Parishad, AYUSH, MNJ Cancer Institute, Insurance Medical Services",
+  "technical": false,
+  "summary": "Nursing Officer (Staff Nurse) posts in Telangana government hospitals. The 2024 cycle filled 2,322 posts. Selection is 80 marks for a written test plus up to 20 marks for government contract or outsourced service.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular (2022, 2024)",
+  "officialLinks": [
+    {
+      "label": "MHSRB website",
+      "url": "https://mhsrb.telangana.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The 2024 cycle (2,050 posts, later 2,322) held its computer-based test in November 2024; the final merit list was due in April 2026. A new cycle with 375 approved posts was reported in 2026 but not yet notified.",
+    "cycles": [
+      {
+        "cycle": "Nursing Officer 2024",
+        "events": [
+          {
+            "event": "Final merit list",
+            "date": "2026-04-09",
+            "dateType": "official",
+            "source": "s3"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Nursing Officer (Staff Nurse)",
+      "group": "Non-gazetted",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": 36750,
+      "ageMin": 18,
+      "ageMax": 46,
+      "responsibilities": "Ward nursing in government hospitals.",
+      "notes": "2024: 2,322 posts (1,576 Public Health and Medical Education, 332 TVVP, 61 AYUSH, 80 MNJ, 272 IMS, 1 Preventive Medicine)."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Telangana State Government employees",
+          "years": 5,
+          "note": "Based on regular service."
+        },
+        {
+          "category": "Ex-servicemen, NCC instructors",
+          "years": 3,
+          "note": "Plus length of service."
+        }
+      ],
+      "summary": "18 to 46 years.",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local-cadre rules apply.",
+    "education": {
+      "summary": "GNM or B.Sc Nursing, with registration in the Telangana Nursing Council by the application date.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Telangana rules: SC 15% (sub-categorised from 2025), ST 10%, BC 29%, EWS 10%, with horizontal reservation for women, PwBD, ex-servicemen and sportspersons, and local-cadre rules under the Presidential Order 2018.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "nursing"
+    ],
+    "notes": "Telangana Nursing Council registration needed.",
+    "ageMin": 18,
+    "ageMax": 46,
+    "minEducation": "diploma",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Computer-based test",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Nursing (80 questions)",
+            "marks": 80,
+            "questions": 80,
+            "duration": "1 hour"
+          }
+        ],
+        "notes": "English only, no negative marking."
+      },
+      {
+        "name": "Service weightage and certificate verification",
+        "type": "document",
+        "countsInMerit": true,
+        "notes": "Up to 20 marks for government contract or outsourced service: 2.5 per 6 months in tribal areas, 2 per 6 months elsewhere."
+      }
+    ],
+    "meritCalculation": "Out of 100: written test 80 plus service weightage up to 20.",
+    "languages": "English.",
+    "documentVerification": "Before the final merit list.",
+    "probation": "As per state rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://mhsrb.telangana.gov.in",
+    "sections": [
+      {
+        "stage": "CBT",
+        "subject": "Nursing",
+        "topics": [
+          "GNM and B.Sc Nursing syllabus: medical-surgical, community, child health, obstetric and mental health nursing"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "nursing"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2024,
+      "vacancies": 2322,
+      "note": "2,050 notified, 272 added.",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": "36,750 to 1,06,990",
+    "startingBasic": 36750,
+    "pension": "Contributory Pension Scheme.",
+    "notes": "Scale as reported for the cycle.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Staff Nurse",
+        "level": "TS RPS 2020",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Head Nurse / Nursing Superintendent",
+        "level": "Higher scales",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ]
+  },
+  "benefits": [
+    {
+      "item": "State government benefits",
+      "detail": "HRA, Employees Health Scheme and leave as per Telangana rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Government hospitals across Telangana.",
+    "transfers": "Periodic, within rules.",
+    "nature": "Clinical nursing in shifts.",
+    "workload": "High.",
+    "publicInteraction": "Very high.",
+    "hazards": "Moderate (infection exposure).",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "medium",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Many nursing graduates apply; contract-service weightage helps those already working."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Large cycles, a few years apart."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "medium",
+        "note": "Cycles depend on government approvals."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MHSRB Telangana Nursing Officer recruitment: age, pattern, weightage, pay",
+      "url": "https://www.careerpower.in/blog/mhsrb-telangana-nursing-officer-recruitment",
+      "publisher": "Career Power",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "MHSRB to hire 2,050 nursing officers",
+      "url": "https://deccanchronicle.com/southern-states/telangana/mhsrb-to-hire-for-2050-nursing-officers-1824440",
+      "publisher": "Deccan Chronicle",
+      "year": 2024,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "MHSRB Telangana Nursing Officer merit list 2026",
+      "url": "https://www.mysarkarinaukri.com/en/mhsrb-telangana-nursing-officer-merit-list-2026/",
+      "publisher": "MySarkariNaukri",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Exact CBT date of the 2024 cycle varies between reports.",
+      "Official notification not read directly."
+    ],
+    "notes": "From secondary reports."
+  },
+  "lastVerified": "2026-10-18"
+}

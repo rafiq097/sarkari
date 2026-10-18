@@ -1,0 +1,341 @@
+{
+  "id": "aiims-norcet",
+  "name": "AIIMS Nursing Officer Recruitment Common Eligibility Test",
+  "abbreviation": "AIIMS NORCET",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "health",
+  "organization": {
+    "id": "aiims-delhi",
+    "name": "All India Institute of Medical Sciences, New Delhi",
+    "abbreviation": "AIIMS",
+    "website": "https://www.aiimsexams.ac.in"
+  },
+  "department": "AIIMS institutes across India",
+  "technical": false,
+  "summary": "The common test for Nursing Officer (Group B, Level 7) posts in all AIIMS. NORCET-10 (2026) had about 2,550 posts. A qualifying prelim and a mains that decides rank.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification"
+  ],
+  "frequency": "Twice a year (recent pattern)",
+  "officialLinks": [
+    {
+      "label": "AIIMS exams portal",
+      "url": "https://www.aiimsexams.ac.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "NORCET-10: applications 24 February to 16 March 2026, prelims 11 April 2026, mains 30 April 2026. A new NORCET is usually announced every six months or so.",
+    "cycles": [
+      {
+        "cycle": "NORCET-10 (2026)",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-02-24",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-03-16",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Stage I (prelims)",
+            "date": "2026-04-11",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Stage II (mains)",
+            "date": "2026-04-30",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Nursing Officer",
+      "group": "Group B",
+      "payLevel": "Level 7",
+      "startingBasic": 44900,
+      "ageMin": 18,
+      "ageMax": 30,
+      "responsibilities": "Ward and specialty nursing in AIIMS hospitals.",
+      "notes": "NORCET-10: about 2,551 posts across AIIMS."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 30 for UR and EWS; OBC up to 33, SC and ST up to 35; PwBD relaxation as per rules.",
+      "referenceDate": "Last date of application"
+    },
+    "nationality": "Citizen of India.",
+    "education": {
+      "summary": "B.Sc (Hons) Nursing, B.Sc Nursing or Post-Basic B.Sc Nursing; or a GNM diploma with 2 years of experience in a 50-bed hospital. Registration as Nurse and Midwife with a nursing council is required.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "nursing"
+    ],
+    "notes": "GNM holders need 2 years of experience.",
+    "ageMin": 18,
+    "ageMax": 30,
+    "minEducation": "diploma",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Stage I (prelims, CBT)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "80 nursing and 20 general knowledge and aptitude questions",
+            "marks": 100,
+            "questions": 100,
+            "duration": "90 minutes",
+            "negative": "One third mark per wrong answer (reported)"
+          }
+        ]
+      },
+      {
+        "name": "Stage II (mains, CBT)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Case-based nursing questions",
+            "questions": 160,
+            "duration": "3 hours"
+          }
+        ]
+      }
+    ],
+    "meritCalculation": "All-India rank from Stage II; AIIMS posts are allotted by rank and preference.",
+    "languages": "English and Hindi.",
+    "documentVerification": "At the allotted AIIMS.",
+    "probation": "As per AIIMS rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://www.aiimsexams.ac.in",
+    "sections": [
+      {
+        "stage": "Stage I and II",
+        "subject": "Nursing",
+        "topics": [
+          "Medical-surgical, child health, mental health, community and obstetric nursing",
+          "Nursing foundations and pharmacology",
+          "General knowledge and aptitude (Stage I)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "nursing",
+    "general-awareness",
+    "reasoning"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 2551,
+      "note": "NORCET-10, as reported.",
+      "source": "s3"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 7",
+    "payScale": "44,900 to 1,42,400",
+    "startingBasic": 44900,
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year.",
+    "notes": "Nursing allowance and other AIIMS allowances are not modelled.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Nursing Officer",
+        "level": "Level 7",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Senior Nursing Officer",
+        "level": "Level 8",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Assistant Nursing Superintendent and above",
+        "level": "Higher levels",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions within each AIIMS."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "AIIMS hospitals across India.",
+    "transfers": "Usually within the allotted AIIMS.",
+    "nature": "Clinical nursing in shifts.",
+    "workload": "High.",
+    "publicInteraction": "Very high.",
+    "hazards": "Moderate (infection exposure).",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "medium",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Very large pool of nursing graduates for a few thousand posts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "high",
+    "rationale": "Regular cycles and central pay."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "Shift work",
+        "level": "medium",
+        "note": "Night duties are routine."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AIIMS NORCET-10 2026 notification",
+      "url": "https://www.pw.live/nursing/exams/aiims-norcet-10-2026",
+      "publisher": "Physics Wallah",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "NORCET-10 (2026) official notification summary",
+      "url": "https://nprep.in/blogs/norcet-10-2026-official-notification-summary---eligibility-dates-and-details",
+      "publisher": "Nprep",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "AIIMS NORCET 10 Nursing Officer Recruitment 2026",
+      "url": "https://www.mysarkarinaukri.com/find/all-india-institute-of-medical-sciences-jobs/153727?page=1",
+      "publisher": "MySarkariNaukri",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Stage II marks and negative marking not confirmed.",
+      "Per-AIIMS vacancy split not reproduced."
+    ],
+    "notes": "From secondary reports of the official notice."
+  },
+  "lastVerified": "2026-10-18"
+}
