@@ -3,12 +3,17 @@
  * official timeline) and Eligibility (age, education, attempts, reservation).
  * Rendered by pages/ExamPage.jsx.
  */
+import { useState } from 'react'
 import { Link } from 'react-router'
 import { ExternalLink, AlertTriangle, Info, UserCheck } from 'lucide-react'
 import { SourceChips, ValueOrUnknown, Unknown, StatusBadge } from '../Badges.jsx'
 import { labelFor } from '../../lib/data.js'
 import { formatCount, formatDate, formatRupees } from '../../lib/format.js'
 import { Rich } from '../Rich.jsx'
+import { ShowAllToggle } from '../Common.jsx'
+
+// Long post lists open with this many cards; the rest appear on "Show all".
+const collapsedPostCount = 6
 
 /** Heading for a block inside a tab, with its source chips. */
 export function BlockTitle({ children, sourceIds, sources }) {
@@ -72,11 +77,13 @@ function AtAGlance({ exam }) {
   )
 }
 
-/** Posts grouped by service group, shown as cards. */
+/** Posts grouped by service group, shown as cards; long lists start collapsed. */
 function PostCards({ posts }) {
+  const [isExpanded, setIsExpanded] = useState(false)
+  const visiblePosts = isExpanded ? posts : posts.slice(0, collapsedPostCount)
   const groups = new Map()
-  for (const post of posts) groups.set(post.group ?? 'Other', [...(groups.get(post.group ?? 'Other') ?? []), post])
-  return [...groups.entries()].map(([group, groupPosts]) => (
+  for (const post of visiblePosts) groups.set(post.group ?? 'Other', [...(groups.get(post.group ?? 'Other') ?? []), post])
+  const groupBlocks = [...groups.entries()].map(([group, groupPosts]) => (
     <div key={group} className="post-group">
       <p className="post-group-name">
         {group} <span className="faint numeric">{groupPosts.length}</span>
@@ -96,6 +103,12 @@ function PostCards({ posts }) {
       </div>
     </div>
   ))
+  return (
+    <>
+      {groupBlocks}
+      {posts.length > collapsedPostCount && <ShowAllToggle isExpanded={isExpanded} total={posts.length} noun="posts" onToggle={() => setIsExpanded(!isExpanded)} />}
+    </>
+  )
 }
 
 /** Overview tab. */

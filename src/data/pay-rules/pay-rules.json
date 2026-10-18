@@ -1,6 +1,6 @@
 {
   "asOf": "2026-10-18",
-  "note": "Rates below are those in force on the research date. Gross and in-hand figures shown on this site are estimates built from these rules. They exclude income tax, arrears, and post-specific allowances unless stated.",
+  "note": "Rates below are the latest notified rates; check official orders for later revisions. Gross and in-hand figures shown on this site are estimates built from these rules. They exclude income tax, arrears, and post-specific allowances unless stated.",
   "ruleSets": {
     "central-7cpc": {
       "label": "Central Government, 7th CPC pay matrix",
@@ -207,7 +207,7 @@
     },
     "ts-rps-2020": {
       "label": "Telangana, Revised Pay Scales 2020 (1st PRC)",
-      "payCommission": "Telangana RPS 2020 (G.O.Ms.No.51, 11 Jun 2021): master scale Rs 19,000 to Rs 1,62,070, 30% fitment. The 2nd Telangana PRC report is not implemented as of the research date.",
+      "payCommission": "Telangana RPS 2020 (G.O.Ms.No.51, 11 Jun 2021): master scale Rs 19,000 to Rs 1,62,070, 30% fitment. The 2nd Telangana PRC report had not been implemented when these rules were compiled; check for a later revision.",
       "daPercent": 40.04,
       "daEffective": "2024-07-01",
       "daNote": "G.O.Ms.No.128 and 130 (6 Oct 2026) sanctioned 37.31% from 1 Jan 2024 and 40.04% from 1 Jul 2024, paid with the October 2026 salary. Figures from secondary reports of the GOs.",

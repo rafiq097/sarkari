@@ -444,14 +444,6 @@
   gap: 10px;
 }
 
-.exam-card-sector {
-  font-size: 0.78rem;
-  color: var(--text-faint);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .exam-card-actions {
   margin-left: auto;
   display: flex;
@@ -461,8 +453,9 @@
 }
 
 .exam-card h3 {
-  font-size: 1.22rem;
-  line-height: 1.25;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 /* The whole card is clickable through the title link's stretched hit area. */
@@ -482,68 +475,129 @@
   outline-offset: 2px;
 }
 
-.exam-abbreviation {
-  display: block;
-  font: 500 0.78rem var(--font-mono);
-  letter-spacing: 0.06em;
-  color: var(--accent);
-  margin-bottom: 4px;
-}
-
 .exam-card-meta {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.84rem;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: -4px;
+  font-size: 0.82rem;
   color: var(--text-muted);
+  min-width: 0;
 }
 
-.dot {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: var(--text-faint);
-  margin: 0 4px;
+.exam-card-fullname,
+.exam-card-where {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exam-card-where {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-faint);
 }
 
 .exam-card-summary {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text-soft);
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
+/* Three headline numbers: pay, posts, who can apply. */
 .exam-card-facts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin: 4px 0 0;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.85fr) minmax(0, 1fr);
+  margin: 2px 0 0;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.exam-card-facts > div {
+  padding: 10px 12px;
+  min-width: 0;
+}
+
+.exam-card-facts > div + div {
+  border-left: 1px solid var(--line);
 }
 
 .exam-card-facts dt {
-  font: 500 0.68rem var(--font-mono);
-  letter-spacing: 0.1em;
+  font: 500 0.64rem var(--font-mono);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-faint);
+  white-space: nowrap;
 }
 
 .exam-card-facts dd {
-  margin: 3px 0 0;
+  margin: 4px 0 0;
+  font-size: 0.86rem;
+  line-height: 1.3;
+  color: var(--text);
 }
 
-.exam-card-event {
+.exam-card-facts dd.numeric {
+  font-size: 0.98rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.exam-card-facts dd.is-unknown {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.exam-card-facts dd.is-pay {
+  color: var(--accent);
+}
+
+.exam-card-age {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.exam-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.exam-card-competition {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+}
+
+/* Next official step; urgent when the date is close. */
+.next-step {
   display: flex;
   align-items: center;
   gap: 7px;
-  margin-top: auto;
+  min-width: 0;
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+
+.next-step.is-urgent {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.next-step.is-urgent strong {
+  font-weight: 700;
+}
+
 
 /* Tabs */
 .tabs {
@@ -840,4 +894,24 @@
   background: var(--surface-2);
   color: var(--text-soft);
   font-size: 0.82rem;
+}
+
+/* Expands a collapsed list inside a tab. */
+.show-all {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 8px 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.show-all:hover,
+.show-all:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
 }

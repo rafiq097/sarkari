@@ -20,10 +20,12 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 - Do NOT shrink data; make it scannable instead (done in UI: quick facts, bold figures, cards, stepper).
 - Skip less-preferred routes: main post starting basic below Rs 20,000 (MTS, RRB Group D, ALP, Level 1 state posts) and tiny or niche cycles (e.g. AP FRO with 5 posts). List them as excluded in coverage.
 - Big exams get a `guide` explainer with `quickFacts` per section.
+- Never delete finished profiles or regions. "Drop less popular" means skip them in future research only.
+- No info dumps: cards show short name, one-line hook, 3 numbers (pay, posts, who), next-step chip. Exam pages open on Quick look (4 big answers, steps, top posts); long lists collapse with ShowAllToggle (Common.jsx).
 
 ## 3. Code map
 - `src/App.jsx` routes; `src/components/Layout.jsx` header/footer; `src/lib/navigation.js` nav links.
-- Pages (`src/pages`): Home, Region (central/AP/TS/KA), Directory (URL filters), ExamPage (9 tabs incl. Explainer, sticky tabs), Compare, Eligibility, Syllabus overlap, Salary, Analytics, Calendar, Sources, Coverage, Saved, Tools, Methodology, Profile (My Profile), NotFound.
+- Pages (`src/pages`): Home, Region (central/AP/TS/KA), Directory (URL filters), ExamPage (10 tabs: Quick look default, Explainer, sticky tabs), Compare, Eligibility, Syllabus overlap, Salary, Analytics, Calendar, Sources, Coverage, Saved, Tools, Methodology, Profile (My Profile), NotFound.
 - Profile tabs: `src/components/profile/*.jsx`. Rich text figures: `components/Rich.jsx`. Personal verdicts: `components/MyVerdict.jsx`, form `components/CandidateForm.jsx`, logic `lib/candidate.js`.
 - Logic: `lib/data.js` (index + lazy profiles + date-aware status), `lib/eligibility.js`, `lib/salary.js` (DA/HRA/TA, fixedAdditions e.g. MSP), `lib/saved.jsx` (localStorage: bookmarks, compare, candidate profile), `lib/search.js`, `lib/stats.js`, `lib/status.js`.
 - Data: `src/data/exams/<jurisdiction>/<id>.json`, `src/data/pay-rules/pay-rules.json`, `src/data/vocabulary.json`, `src/data/coverage.json` (still a stub: fill it).
@@ -73,6 +75,7 @@ Removed by scope rule: ssc-mts-havaldar.
 - Bank and RBI gross pay are not modelled (quarterly DA); `officialGross` shows where the recruiter states it (SBI JA about Rs 46,000 at metro).
 
 ## 10. Latest additions
+- Card redesign (`ExamCard.jsx`: HeadlineNumber, NextStepChip with countdown under 45 days), Quick look tab (`profile/ProfileQuickLook.jsx`), index field `vacancies` (latest year) from build-data, posts list collapsed to 6.
 - My Profile (`/profile`): details saved in browser, editable any time, used on exam pages (Your eligibility panel), cards (verdict badge), home strip, calendar filter, directory filter, eligibility checker.
 - Your plan (`/plan`, `src/lib/recommend.js`, `src/pages/PlanPage.jsx`): ranked picks with transparent points and reasons, focus subjects, prepare-together (syllabus overlap with top pick), last-chance-by-age alerts, coming-up dates. Linked from home, profile and tools.
 - Coverage report (src/data/coverage.json) and README are done.

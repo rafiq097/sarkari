@@ -156,3 +156,12 @@ export function ChipFilter({ legend, options, selected, onChange }) {
     </fieldset>
   )
 }
+
+/** "Show all N" / "Show fewer" toggle for long lists, so a tab opens short and expands on demand. */
+export function ShowAllToggle({ isExpanded, total, noun, onToggle }) {
+  return (
+    <button type="button" className="show-all" onClick={onToggle} aria-expanded={isExpanded}>
+      {isExpanded ? 'Show fewer' : `Show all ${total} ${noun}`}
+    </button>
+  )
+}

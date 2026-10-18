@@ -51,3 +51,16 @@ export function todayIso() {
   const day = String(now.getDate()).padStart(2, '0')
   return `${now.getFullYear()}-${month}-${day}`
 }
+
+/** Whole days from today until an ISO date (negative when past), or null when undated. */
+export function daysFromToday(isoDate) {
+  if (!isoDate || isoDate.length < 10) return null
+  return Math.round((new Date(isoDate) - new Date(todayIso())) / 86400000)
+}
+
+/** First sentence of a summary, used as a one-line hook on cards. */
+export function firstSentence(text) {
+  // A full stop followed by a space and a capital ends a sentence; "Rs." and "B.Ed." do not match.
+  const match = text?.match(/^(.+?[.!?])\s+(?=[A-Z])/)
+  return match ? match[1] : text
+}

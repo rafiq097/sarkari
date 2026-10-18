@@ -135,6 +135,13 @@ function pickKeyEvent(exam, today) {
   return past.length ? { ...past[0], upcoming: false } : null
 }
 
+/** Latest recorded vacancy count (newest year with a number), shown on cards as a hook. */
+function latestVacancies(exam) {
+  const rows = (exam.statistics ?? []).filter((row) => row.vacancies != null)
+  const newest = rows.reduce((best, row) => (best && best.year >= row.year ? best : row), null)
+  return newest ? { year: newest.year, count: newest.vacancies } : null
+}
+
 /** Builds the compact record the directory, filters and tools use. */
 function toIndexRecord(exam, today) {
   return {
@@ -158,6 +165,7 @@ function toIndexRecord(exam, today) {
     postNames: (exam.posts ?? []).map((post) => post.name),
     eligibilityRules: exam.eligibilityRules,
     posts: (exam.posts ?? []).map(({ name, ageMin, ageMax, education, payLevel, startingBasic }) => ({ name, ageMin, ageMax, education, payLevel, startingBasic })),
+    vacancies: latestVacancies(exam),
     stages: (exam.selection?.stages ?? []).map((stage) => ({ name: stage.name, type: stage.type })),
     salary: {
       payRuleSet: exam.salary?.payRuleSet ?? 'other',

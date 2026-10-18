@@ -1,14 +1,15 @@
 /**
  * Exam card for directories and lists, plus the bookmark / compare action buttons
- * reused on profiles. Reads the compact index record only.
+ * reused on profiles. Reads the compact index record only. The card shows a hook and three
+ * headline numbers; everything else lives on the exam page.
  */
 import { Link } from 'react-router'
-import { Bookmark, BookmarkCheck, GitCompareArrows, Check, Landmark, MapPin, CalendarClock } from 'lucide-react'
+import { Bookmark, BookmarkCheck, GitCompareArrows, Check, MapPin, CalendarClock } from 'lucide-react'
 import { StatusBadge, LevelMeter } from './Badges.jsx'
 import { VerdictBadge } from './MyVerdict.jsx'
 import { useSaved } from '../lib/saved.jsx'
 import { labelFor } from '../lib/data.js'
-import { formatDate, formatRupees } from '../lib/format.js'
+import { formatDate, formatRupees, formatCount, daysFromToday, firstSentence } from '../lib/format.js'
 
 /** Bookmark toggle button. */
 export function BookmarkButton({ examId, compact = false }) {
@@ -40,6 +41,9 @@ export function CompareButton({ examId, compact = false }) {
   )
 }
 
+// Upcoming official dates closer than this many days get a highlighted countdown chip.
+const urgentWithinDays = 45
+
 /** Short line describing the key official date. */
 export function KeyEventLine({ keyEvent }) {
   if (!keyEvent) return <span className="muted">No dated official event recorded</span>
@@ -47,19 +51,54 @@ export function KeyEventLine({ keyEvent }) {
     <span>
       {keyEvent.upcoming ? 'Next: ' : 'Last: '}
       {keyEvent.event} {formatDate(keyEvent.date)}
-      {keyEvent.dateType === 'official-tentative' && ' (tentative, official calendar)'}
+      {keyEvent.dateType === 'official-tentative' && ' (tentative)'}
     </span>
   )
 }
 
-/** Card summarising one exam. */
+/** Countdown text such as "today", "tomorrow" or "in 9 days". */
+function countdownText(days) {
+  if (days === 0) return 'today'
+  if (days === 1) return 'tomorrow'
+  return `in ${days} days`
+}
+
+/** Next-step chip: a bright countdown when an official date is close, a quiet line otherwise. */
+export function NextStepChip({ keyEvent }) {
+  const days = keyEvent?.upcoming ? daysFromToday(keyEvent.date) : null
+  if (days != null && days <= urgentWithinDays) {
+    return (
+      <p className="next-step is-urgent">
+        <CalendarClock size={14} aria-hidden="true" />
+        <span>
+          {keyEvent.event} <strong>{countdownText(days)}</strong>
+        </span>
+      </p>
+    )
+  }
+  return (
+    <p className="next-step">
+      <CalendarClock size={14} aria-hidden="true" />
+      <KeyEventLine keyEvent={keyEvent} />
+    </p>
+  )
+}
+
+/** One headline figure; a quiet "Varies" when the data has no single number. */
+function HeadlineNumber({ value, className = '' }) {
+  if (value == null) return <dd className="numeric is-unknown">Varies</dd>
+  return <dd className={`numeric ${className}`}>{value}</dd>
+}
+
+/** Card summarising one exam: a short name, a one-line hook and three headline numbers. */
 export function ExamCard({ exam }) {
+  const rules = exam.eligibilityRules ?? {}
+  const ageText = rules.ageMax != null ? `Age ${rules.ageMin ?? 18} to ${rules.ageMax}` : 'Age varies'
   return (
     <article className="exam-card">
       <div className="exam-card-top">
         <StatusBadge status={exam.status} />
         <VerdictBadge exam={exam} />
-        <span className="exam-card-sector">{labelFor('sectors', exam.sector)}</span>
         <div className="exam-card-actions">
           <BookmarkButton examId={exam.id} compact />
           <CompareButton examId={exam.id} compact />
@@ -67,32 +106,39 @@ export function ExamCard({ exam }) {
       </div>
       <h3>
         <Link to={`/exams/${exam.id}`} className="exam-card-link">
-          {exam.abbreviation && <span className="exam-abbreviation">{exam.abbreviation}</span>}
-          {exam.name}
+          {exam.abbreviation || exam.name}
         </Link>
       </h3>
       <p className="exam-card-meta">
-        <Landmark size={14} aria-hidden="true" /> {exam.organization?.abbreviation || exam.organization?.name}
-        <span className="dot" aria-hidden="true" />
-        <MapPin size={14} aria-hidden="true" /> {labelFor('jurisdictions', exam.jurisdiction)}
+        {exam.abbreviation && <span className="exam-card-fullname">{exam.name}</span>}
+        <span className="exam-card-where">
+          <MapPin size={13} aria-hidden="true" /> {labelFor('jurisdictions', exam.jurisdiction)} / {labelFor('sectors', exam.sector)}
+        </span>
       </p>
-      <p className="exam-card-summary">{exam.summary}</p>
+      <p className="exam-card-summary">{firstSentence(exam.summary)}</p>
       <dl className="exam-card-facts">
         <div>
           <dt>Starting basic</dt>
-          <dd className="numeric">{formatRupees(exam.salary.startingBasic) ?? 'Varies'}</dd>
+          <HeadlineNumber value={formatRupees(exam.salary.startingBasic)} className="is-pay" />
         </div>
         <div>
-          <dt>Competition</dt>
+          <dt>{exam.vacancies ? `Posts ${exam.vacancies.year}` : 'Posts'}</dt>
+          <HeadlineNumber value={formatCount(exam.vacancies?.count)} />
+        </div>
+        <div>
+          <dt>Who can apply</dt>
           <dd>
-            <LevelMeter level={exam.difficulty.competition} />
+            {labelFor('educationLevels', rules.minEducation)}
+            <span className="exam-card-age">{ageText}</span>
           </dd>
         </div>
       </dl>
-      <p className="exam-card-event">
-        <CalendarClock size={14} aria-hidden="true" />
-        <KeyEventLine keyEvent={exam.keyEvent} />
-      </p>
+      <div className="exam-card-foot">
+        <NextStepChip keyEvent={exam.keyEvent} />
+        <span className="exam-card-competition" title="Competition">
+          <LevelMeter level={exam.difficulty.competition} label="Competition" />
+        </span>
+      </div>
     </article>
   )
 }
