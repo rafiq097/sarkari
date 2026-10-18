@@ -112,9 +112,10 @@
       "website": null,
       "status": "partial",
       "profiles": [
-        "ap-dsc"
+        "ap-dsc",
+        "ap-tet"
       ],
-      "notes": "DSC 2026 from a report of the preliminary notification. AP TET pending."
+      "notes": "DSC 2026 and TET 2026 from secondary reports of official notifications."
     },
     {
       "jurisdiction": "telangana",
@@ -159,7 +160,7 @@
     "ISRO, DRDO, BARC, NIC; GATE and PSU recruitment through GATE",
     "KVS, NVS, CTET, UGC NET, EMRS",
     "AIIMS NORCET, ESIC, EPFO SSA, FCI, IB ACIO",
-    "AP TET; remaining APPSC 2026 notifications",
+    "Remaining APPSC 2026 notifications",
     "Official Telangana police and DSC notifications when released"
   ],
   "excluded": [

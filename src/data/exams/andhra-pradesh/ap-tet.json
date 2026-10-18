@@ -1,0 +1,252 @@
+{
+  "id": "ap-tet",
+  "name": "Andhra Pradesh Teacher Eligibility Test",
+  "abbreviation": "AP TET",
+  "profileType": "eligibility-test",
+  "jurisdiction": "andhra-pradesh",
+  "sector": "teaching",
+  "organization": {
+    "id": "ap-school-education",
+    "name": "Department of School Education, Andhra Pradesh",
+    "abbreviation": "AP School Education",
+    "website": "https://cse.ap.gov.in"
+  },
+  "department": "Department of School Education, Andhra Pradesh",
+  "technical": false,
+  "summary": "Qualifying test needed to teach in Andhra Pradesh government schools. Paper I covers classes I to V and Paper II covers classes VI to VIII. The certificate is valid for life, and the score counts towards DSC merit.",
+  "employmentType": "eligibility-only",
+  "recruitmentMethods": [
+    "eligibility-test"
+  ],
+  "frequency": "Usually once or twice a year",
+  "officialLinks": [
+    {
+      "label": "TET-DSC portal",
+      "url": "https://tet2dsc.apcfss.in"
+    },
+    {
+      "label": "School Education AP",
+      "url": "https://cse.ap.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "June 2026 session: notification 5 June 2026, applications until 5 July, CBT 5 to 21 August 2026, results around 15 September 2026. A Special TET for in-service teachers ran 11 to 21 October 2026.",
+    "cycles": [
+      {
+        "cycle": "AP TET 2026 (June notification)",
+        "events": [
+          {
+            "event": "Notification and applications open",
+            "date": "2026-06-05",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-07-05",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Computer-based test begins",
+            "date": "2026-08-05",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Result",
+            "date": "2026-09-15",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "TET qualification (Paper I and/or Paper II)",
+      "group": "Eligibility certificate",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Makes you eligible for AP teacher recruitment (DSC)."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [],
+      "summary": "Minimum age as per notification; no upper age limit for the TET itself.",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "As per notification.",
+    "education": {
+      "summary": "Paper I: Intermediate with D.El.Ed (or equivalent). Paper II: a degree with B.Ed (or equivalent), as per NCTE norms listed in the notification.",
+      "finalYearAllowed": true,
+      "minMarks": "As per NCTE norms in the notification"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No limit; retake to improve your score"
+      }
+    ],
+    "other": [
+      "Fee: Rs 1,000 per paper (2026 session).",
+      "The certificate has lifetime validity."
+    ],
+    "examVsPost": "TET does not give a job; DSC/TRT does. The TET score is used in DSC merit.",
+    "reservation": null,
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "education"
+    ],
+    "notes": "Needs D.El.Ed (Paper I) or B.Ed with a degree (Paper II).",
+    "ageMin": 18,
+    "ageMax": null,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Computer-based test",
+        "type": "objective",
+        "countsInMerit": false,
+        "notes": "Two sessions a day. Paper I and Paper II are separate."
+      }
+    ],
+    "meritCalculation": "Qualifying; the score is used in AP DSC merit.",
+    "languages": "As per notification.",
+    "documentVerification": "At DSC stage.",
+    "probation": "Not applicable."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://tet2dsc.apcfss.in",
+    "sections": [
+      {
+        "stage": "Paper I and II",
+        "subject": "Typical areas",
+        "topics": [
+          "Child development and pedagogy",
+          "Language I (Telugu or other) and English",
+          "Mathematics and environmental studies (Paper I)",
+          "Maths and science or social studies (Paper II)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "telugu-language",
+    "english-language",
+    "mathematics",
+    "general-science"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "other",
+    "payLevel": null,
+    "payScale": null,
+    "startingBasic": null,
+    "notes": "No salary: this is an eligibility test.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Teacher (after DSC selection)",
+        "level": "AP RPS 2022",
+        "timeline": "After DSC",
+        "timelineType": "typical"
+      }
+    ]
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Not applicable.",
+    "transfers": "Not applicable.",
+    "nature": "Not applicable.",
+    "workload": "Not applicable.",
+    "publicInteraction": "Not applicable.",
+    "hazards": "Not applicable.",
+    "stability": "Not applicable."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "low",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "low",
+    "rationale": "Qualifying test; a higher score helps in DSC."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "high",
+    "rationale": "Held regularly; the job depends on DSC."
+  },
+  "risk": {
+    "overall": "low",
+    "factors": [
+      {
+        "factor": "No job guarantee",
+        "level": "medium",
+        "note": "Teacher posts depend on DSC notifications."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AP TET 2026 notification out at tet2dsc.apcfss.in",
+      "url": "https://competition.careers360.com/articles/ap-tet-2026-notification-out-at-tet2dsc-apcfss-in-apply-online-till-july-5",
+      "publisher": "Careers360 (reports the official notification)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Pass marks and paper-wise pattern not confirmed from the official notification."
+    ],
+    "notes": "Dates from a secondary report."
+  },
+  "lastVerified": "2026-10-18"
+}
