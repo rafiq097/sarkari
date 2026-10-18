@@ -77,6 +77,9 @@ Removed by scope rule: ssc-mts-havaldar only. Never delete finished profiles; sk
 - Bank and RBI gross pay are not modelled (quarterly DA); `officialGross` shows where the recruiter states it (SBI JA about Rs 46,000 at metro).
 
 ## 10. Latest additions
+- Oct 2026 extras: page titles (lib/useDocumentTitle.js), calendar countdowns, Share button on exam pages, "Prepare for these together" in Quick look (lib/syllabus.js shared with the syllabus page and plan), directory "Your qualification" filter means at-or-below, home counts are static.
+- Upgraded to official notices: SEBI, NABARD, EMRS, IBPS Clerk, IBPS RRB, SSC GD, SSC CPO, FCI, ESIC, EPFO SSA, TG DSC (RBI Assistant: official page text, site blocks scripts). Still weak: AP DSC (detailed notice due), AP power AEE, GATE PSU (pathway), and other medium ones.
+- Status notes must describe patterns, never "not notified by <month year>".
 - Custom dropdown components/Select.jsx (keyboard, filter box for long lists, groups) replaces every native select.
 - Directory quick filters include "For BTech grads" (?btech=1).
 - Karnataka: shown as a pay-rules guide only; it will not get exam profiles.
