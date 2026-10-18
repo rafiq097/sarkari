@@ -1,0 +1,286 @@
+{
+  "id": "ts-police",
+  "name": "Telangana Police Sub-Inspector and Constable Recruitment",
+  "abbreviation": "TS Police",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "capf-police",
+  "organization": {
+    "id": "tslprb",
+    "name": "Telangana State Level Police Recruitment Board",
+    "abbreviation": "TSLPRB",
+    "website": "https://www.tslprb.in"
+  },
+  "department": "Telangana Police, Excise, Fire, Prisons and SPF",
+  "technical": false,
+  "summary": "Telangana's mass police recruitment for Stipendiary Cadet Trainee Sub-Inspectors and Police Constables (civil, AR, TSSP) and related posts in excise, fire and prisons. Preliminary test, physical tests, final written exam.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "physical-test",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular (2016, 2018, 2022)",
+  "officialLinks": [
+    {
+      "label": "TSLPRB website",
+      "url": "https://www.tslprb.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The last large cycle was notified in April 2022 (applications 2 to 20 May 2022); final written results came in 2023 and selections followed. No new notification was found by October 2026.",
+    "cycles": [
+      {
+        "cycle": "2022 recruitment",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2022-05-02",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2022-05-20",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "SCT Sub-Inspector (Civil, AR, TSSP and others)",
+      "group": "Non-gazetted",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Station house and investigation duties.",
+      "notes": "2022: reported 554 to 587 posts."
+    },
+    {
+      "name": "SCT Police Constable (Civil, AR, TSSP and others)",
+      "group": "Non-gazetted",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Police station and armed reserve duties.",
+      "notes": "2022: reported about 16,000 to 17,000 posts."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "Others",
+          "years": null,
+          "note": "As per notification."
+        }
+      ],
+      "summary": "Age limits are set in each notification; the 2022 notification gave extra age relaxation. Check the next notification.",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre (district / zone) rules with 95% local reservation.",
+    "education": {
+      "summary": "Constable: Intermediate (Class 12). SI: a bachelor's degree. Technical posts need specific qualifications.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "physical": "Physical measurement and efficiency tests (running, long jump, shot put) as per notification.",
+    "reservation": null,
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Upper age limit depends on the notification. SI posts need a degree.",
+    "ageMin": 18,
+    "ageMax": null,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 0
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Preliminary written test",
+        "type": "objective",
+        "countsInMerit": false
+      },
+      {
+        "name": "Physical measurement and efficiency tests",
+        "type": "physical",
+        "countsInMerit": false
+      },
+      {
+        "name": "Final written exam",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Certificate verification and medical",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from the final written exam among candidates clearing the qualifying stages.",
+    "languages": "English, Telugu, Urdu.",
+    "probation": "Training with stipend."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "Written tests",
+        "subject": "Typical areas",
+        "topics": [
+          "Arithmetic and reasoning",
+          "General studies including Telangana history and movement",
+          "English (SI)"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "quantitative-aptitude",
+    "reasoning",
+    "general-awareness",
+    "telangana-history-culture",
+    "telangana-movement",
+    "english-language",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": null,
+    "startingBasic": null,
+    "pension": "Contributory Pension Scheme.",
+    "notes": "Pay scales are in each notification; not confirmed here.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Constable",
+        "level": "RPS 2020",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Head Constable, ASI, SI",
+        "level": "Higher scales",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ]
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Within the district or unit.",
+    "transfers": "Periodic.",
+    "nature": "Field policing.",
+    "workload": "Very high.",
+    "publicInteraction": "Very high.",
+    "hazards": "Moderate.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "medium",
+    "rationale": "Lakhs of candidates; physical tests eliminate many."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "low",
+    "rationale": "Large intakes but years apart."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Last cycle 2022."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TSLPRB notification 2022: age limit and application dates",
+      "url": "https://news.aglasem.com/tslprb-notification-2022-age-limit-application-date/",
+      "publisher": "AglaSem (reports the TSLPRB notification)",
+      "year": 2022,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "TS Police mains result 2023 for Constable and SI",
+      "url": "https://scroll.in/announcements/1050100/ts-police-mains-result-2023-declared-for-constable-and-si-posts-check-direct-links",
+      "publisher": "Scroll",
+      "year": 2023,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Vacancy counts for 2022 differ between reports.",
+      "Age limits, pay scales and PET standards not verified from the official notification.",
+      "Next cycle not notified."
+    ],
+    "notes": "Indicative profile for a recurring route."
+  },
+  "lastVerified": "2026-10-18"
+}

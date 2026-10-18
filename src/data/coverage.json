@@ -87,7 +87,11 @@
       "profiles": [
         "appsc-group-1",
         "appsc-group-2",
-        "appsc-aee"
+        "appsc-aee",
+        "appsc-hwo",
+        "appsc-amvi",
+        "appsc-aso-statistics",
+        "appsc-horticulture-officer"
       ],
       "notes": "Official 2026 notifications. ASO, HWO, AMVI, Horticulture and others notified in 2026 but not yet profiled. FRO (5 posts) skipped as a minor cycle."
     },
@@ -106,9 +110,11 @@
       "jurisdiction": "andhra-pradesh",
       "name": "School Education Department, AP (DSC, TET)",
       "website": null,
-      "status": "pending",
-      "profiles": [],
-      "notes": "Not yet researched."
+      "status": "partial",
+      "profiles": [
+        "ap-dsc"
+      ],
+      "notes": "DSC 2026 from a report of the preliminary notification. AP TET pending."
     },
     {
       "jurisdiction": "telangana",
@@ -122,7 +128,7 @@
         "tgpsc-group-4",
         "tgpsc-aee"
       ],
-      "notes": "Official notifications. 2026 notices for DEO, DIET lecturers, Town Planning and TGPCB posts not yet profiled."
+      "notes": "Official notifications. Small 2026 cycles (DEO/Gazetted HM 24 posts, DIET lecturers about 45, TGPCB AEE 19, Asst. Director Town Planning 10) left out as less preferred."
     },
     {
       "jurisdiction": "telangana",
@@ -130,17 +136,20 @@
       "website": "https://schooledu.telangana.gov.in",
       "status": "partial",
       "profiles": [
-        "tg-tet"
+        "tg-tet",
+        "tg-dsc"
       ],
-      "notes": "TET from a secondary report. DSC 2026 not notified at research time."
+      "notes": "TET and DSC from secondary reports. DSC 2026 not notified at research time."
     },
     {
       "jurisdiction": "telangana",
       "name": "Telangana State Level Police Recruitment Board",
       "website": null,
-      "status": "pending",
-      "profiles": [],
-      "notes": "No 2026 notification found; last cycle 2022."
+      "status": "partial",
+      "profiles": [
+        "ts-police"
+      ],
+      "notes": "Recurring profile from the 2022 cycle (secondary reports)."
     }
   ],
   "pending": [
@@ -150,8 +159,8 @@
     "ISRO, DRDO, BARC, NIC; GATE and PSU recruitment through GATE",
     "KVS, NVS, CTET, UGC NET, EMRS",
     "AIIMS NORCET, ESIC, EPFO SSA, FCI, IB ACIO",
-    "AP DSC and AP TET; more APPSC 2026 notifications",
-    "Telangana police (TGPRB), TG DSC, more TGPSC 2026 notifications"
+    "AP TET; remaining APPSC 2026 notifications",
+    "Official Telangana police and DSC notifications when released"
   ],
   "excluded": [
     "Routes whose main post starts below Rs 20,000 basic pay, such as SSC MTS and Havaldar, RRB Group D and Assistant Loco Pilot, and Level 1 state posts.",

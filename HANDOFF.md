@@ -47,10 +47,10 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 - AP SLPRB: `https://slprb.ap.gov.in/` (2026 press note is a scanned image).
 - RBI opportunities page did not parse; RBI facts used a secondary report.
 
-## 6. Done (40 profiles, all committed)
+## 6. Done (42 profiles, all committed)
 Central (24): upsc-cse (full guide), upsc-ifos, upsc-ese, upsc-cds, upsc-nda-na, upsc-capf-ac, ssc-cgl, ssc-chsl, ssc-je, ssc-stenographer, ssc-cht, ssc-cpo, ssc-gd-constable, rrb-ntpc-graduate, rrb-ntpc-undergraduate, rrb-je, rpf-si, rpf-constable, ibps-po, ibps-clerk, ibps-rrb, sbi-po, sbi-junior-associate, rbi-grade-b.
 Andhra Pradesh (10): ap-dsc, appsc-hwo, appsc-amvi, appsc-aso-statistics, appsc-horticulture-officer, appsc-group-1 (07/2026, 166 posts, screening 24 Jan 2027), appsc-group-2 (37/2026, 686 posts), appsc-aee (27/2026), ap-police-si, ap-police-constable (SLPRB 2026).
-Telangana (6): tgpsc-aee, tg-tet, tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4.
+Telangana (8): ts-police, tg-dsc, tgpsc-aee, tg-tet, tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4.
 Karnataka: none yet.
 Removed by scope: ssc-mts-havaldar.
 

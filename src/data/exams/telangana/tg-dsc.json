@@ -1,0 +1,257 @@
+{
+  "id": "tg-dsc",
+  "name": "Telangana Teacher Recruitment Test (DSC)",
+  "abbreviation": "TG DSC",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "teaching",
+  "organization": {
+    "id": "ts-school-education",
+    "name": "Department of School Education, Telangana",
+    "abbreviation": "TG School Education",
+    "website": "https://schooledu.telangana.gov.in"
+  },
+  "department": "School Education, Telangana",
+  "technical": false,
+  "summary": "Recruitment of government school teachers in Telangana (School Assistants, Secondary Grade Teachers, Language Pandits, PETs and special education teachers) through a computer-based Teacher Recruitment Test, with TET score weightage.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular (2017, 2024)",
+  "officialLinks": [
+    {
+      "label": "School Education Telangana",
+      "url": "https://schooledu.telangana.gov.in"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The last DSC (2024) recruited about 11,062 teachers. A 2026 DSC had not been officially notified by mid-October 2026.",
+    "cycles": []
+  },
+  "posts": [
+    {
+      "name": "School Assistant",
+      "group": "Teacher",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "High school subject teacher."
+    },
+    {
+      "name": "Secondary Grade Teacher",
+      "group": "Teacher",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Primary classes."
+    },
+    {
+      "name": "Language Pandit and Physical Education Teacher",
+      "group": "Teacher",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Languages and physical education."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "Others",
+          "years": null,
+          "note": "As per notification."
+        }
+      ],
+      "summary": "Set in each notification.",
+      "referenceDate": "As per notification"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "District cadre with local reservation.",
+    "education": {
+      "summary": "SGT: Intermediate with D.El.Ed. School Assistant: degree in the subject with B.Ed. TG TET (or CTET where allowed) is required for SGT and SA posts, as per NCTE norms.",
+      "finalYearAllowed": false,
+      "minMarks": "As per NCTE norms"
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "examVsPost": "TET is a separate qualifying test; its score carries 20% weightage in the TRT merit.",
+    "reservation": null,
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "education"
+    ],
+    "notes": "Needs D.El.Ed or B.Ed and TG TET.",
+    "ageMin": 18,
+    "ageMax": null,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Teacher Recruitment Test (computer-based)",
+        "type": "objective",
+        "countsInMerit": true
+      },
+      {
+        "name": "Certificate verification",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "TRT marks with 20% weightage for the TET score, as stated in the TG TET notification.",
+    "languages": "Telugu, English, Urdu and others as per post.",
+    "probation": "As per rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": null,
+    "sections": [
+      {
+        "stage": "TRT",
+        "subject": "Typical areas",
+        "topics": [
+          "General knowledge and current affairs",
+          "Perspectives in education",
+          "Child development and pedagogy",
+          "Subject content and methodology"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "teaching-pedagogy",
+    "teaching-subject",
+    "current-affairs",
+    "telugu-language",
+    "english-language"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2024,
+      "vacancies": 11062,
+      "note": "As reported for DSC 2024.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": null,
+    "startingBasic": null,
+    "pension": "Contributory Pension Scheme.",
+    "notes": "Teacher scales by post are in the notification.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "SGT",
+        "level": "RPS 2020",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "School Assistant, Headmaster",
+        "level": "Higher scales",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ]
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Schools in your district, often rural.",
+    "transfers": "Under the transfer policy.",
+    "nature": "Teaching.",
+    "workload": "Moderate.",
+    "publicInteraction": "High.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Many TET-qualified candidates compete for district-wise posts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "low",
+    "rationale": "District posting; DSC is irregular."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Years between DSCs."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TSPSC TRT / TG DSC overview and vacancies",
+      "url": "https://teachersbadi.in/tspsc-trt/",
+      "publisher": "Teachersbadi",
+      "year": 2024,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "low",
+    "gaps": [
+      "Official DSC 2024 notification not read; vacancy count as reported.",
+      "Age, pay and exam pattern not verified."
+    ],
+    "notes": "Indicative profile for a recurring route."
+  },
+  "lastVerified": "2026-10-18"
+}
