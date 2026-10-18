@@ -1,0 +1,387 @@
+{
+  "id": "ssc-je",
+  "name": "Junior Engineer (Civil, Mechanical, Electrical) Examination",
+  "abbreviation": "SSC JE",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "engineering-psu",
+  "organization": {
+    "id": "ssc",
+    "name": "Staff Selection Commission",
+    "abbreviation": "SSC",
+    "website": "https://ssc.gov.in"
+  },
+  "department": "BRO, CPWD, CWC, MES, DGQA, Farakka Barrage, NTRO and other central bodies; also Scientific Assistant in IMD",
+  "technical": true,
+  "summary": "Recruits Junior Engineers (Civil, Electrical, Mechanical and Telecom) for central organizations, and from 2026 also Scientific Assistants for the India Meteorological Department. Group B, Level 6. Diploma or degree holders in the relevant branch can apply.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification",
+    "medical-exam"
+  ],
+  "frequency": "Annual (SSC calendar)",
+  "officialLinks": [
+    {
+      "label": "JE 2026 notice",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2026.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. 2026 cycle: Paper I tentatively October/November 2026 and Paper II in December 2026.",
+    "cycles": [
+      {
+        "cycle": "JE 2026",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-09-02",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-09-22",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Correction window",
+            "date": "2026-09-28",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Junior Engineer (Civil)",
+      "group": "Group B",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Site supervision, estimates and maintenance of civil works."
+    },
+    {
+      "name": "Junior Engineer (Electrical / Mechanical)",
+      "group": "Group B",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Electrical and mechanical works and maintenance."
+    },
+    {
+      "name": "Junior Engineer (Telecom)",
+      "group": "Group B",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Telecom engineering."
+    },
+    {
+      "name": "Scientific Assistant, India Meteorological Department",
+      "group": "Group B",
+      "payLevel": "Level 6",
+      "startingBasic": 35400,
+      "responsibilities": "Weather observation and instruments.",
+      "notes": "Choose Part D, E or F (stream) in the application."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "Upper limit up to 30 years for most organizations and up to 32 for some (as listed post-wise in the notice).",
+      "referenceDate": "As per notice"
+    },
+    "nationality": "Citizen of India, or other categories as per the notice.",
+    "education": {
+      "summary": "Degree or three-year diploma in the relevant branch (Civil, Electrical, Mechanical, Telecom). Some organizations accept only degrees or require experience with a diploma; see the post table in the notice.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "examVsPost": "Each organization lists its own qualification; a diploma is not accepted everywhere. You may be eligible for more than one post (for example JE Telecom and IMD Scientific Assistant).",
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "engineering-civil",
+      "engineering-mechanical",
+      "engineering-electrical",
+      "engineering-electronics",
+      "physics"
+    ],
+    "notes": "Most posts close at 30; some at 32. Qualifications are by organization.",
+    "ageMin": 18,
+    "ageMax": 32,
+    "minEducation": "diploma",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Paper I (computer-based, qualifying)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "General Intelligence and Reasoning",
+            "marks": 50,
+            "questions": 50
+          },
+          {
+            "name": "General Awareness",
+            "marks": 50,
+            "questions": 50
+          },
+          {
+            "name": "Branch part (A Civil, B Electrical, C Mechanical, D to F IMD streams, G Telecom)",
+            "marks": 100,
+            "questions": 100
+          }
+        ],
+        "notes": "2 hours. Minus 0.25 per wrong answer. Separate shortlists for JE Civil, JE Electrical and Mechanical, IMD and JE Telecom."
+      },
+      {
+        "name": "Paper II (computer-based)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Branch subject",
+            "marks": 300,
+            "questions": 100,
+            "duration": "2 hours",
+            "negative": "1 mark per wrong answer"
+          }
+        ]
+      },
+      {
+        "name": "Document verification and medical",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Paper I is qualifying; merit is from Paper II.",
+    "languages": "English and Hindi.",
+    "documentVerification": "After Paper II.",
+    "probation": "As per user organization."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2026.pdf",
+    "sections": [
+      {
+        "stage": "Paper I and II",
+        "subject": "Branch parts",
+        "topics": [
+          "Part A: General Engineering (Civil and Structural)",
+          "Part B: General Engineering (Electrical)",
+          "Part C: General Engineering (Mechanical)",
+          "Parts D to F: IMD streams (including Physics)",
+          "Part G: Telecommunication"
+        ]
+      },
+      {
+        "stage": "Paper I",
+        "subject": "Common",
+        "topics": [
+          "General intelligence and reasoning",
+          "General awareness"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "reasoning",
+    "general-awareness",
+    "engineering-civil",
+    "engineering-electrical",
+    "engineering-mechanical",
+    "engineering-electronics",
+    "physics"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 1748,
+      "note": "Tentative vacancies in the notice.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": {
+    "sources": [
+      "s1"
+    ],
+    "text": "Allocation by merit and organization preference within your branch list."
+  },
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 6",
+    "payScale": "35,400 to 1,12,400",
+    "startingBasic": 35400,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP.",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "Junior Engineer",
+        "level": "Level 6",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Assistant Engineer",
+        "level": "Level 7 to 8",
+        "timeline": "After qualifying service",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Executive Engineer",
+        "level": "Level 10 to 11",
+        "timeline": "Senior, by promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Depends on the organization (CPWD, MES, BRO and so on).",
+    "macp": "MACP at 10, 20 and 30 years."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Project sites and offices across India; BRO in border areas.",
+    "transfers": "Periodic.",
+    "nature": "Field and site work.",
+    "workload": "Moderate to high.",
+    "publicInteraction": "Moderate (contractors).",
+    "hazards": "Site risks; remote postings in BRO.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Diploma-level engineering with a 1-mark penalty in Paper II; competition is high for under 2,000 posts."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual. Promotion to AE and EE depends on the organization."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Long cycles",
+        "level": "medium",
+        "note": "Notice to joining often takes a year or more."
+      },
+      {
+        "factor": "Pattern changes",
+        "level": "medium",
+        "note": "SSC revises schemes from time to time; read each year's notice."
+      },
+      {
+        "factor": "Irregular recruitment",
+        "level": "low",
+        "note": "Held every year."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Notice: Junior Engineer Examination, 2026",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2026.pdf",
+      "publisher": "Staff Selection Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Post-wise age and qualification table summarised; see notice.",
+      "Cutoffs not collected."
+    ],
+    "notes": "From the JE 2026 notice."
+  },
+  "lastVerified": "2026-10-18"
+}

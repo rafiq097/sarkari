@@ -1,0 +1,418 @@
+{
+  "id": "ssc-chsl",
+  "name": "Combined Higher Secondary (10+2) Level Examination",
+  "abbreviation": "SSC CHSL",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "ssc",
+  "organization": {
+    "id": "ssc",
+    "name": "Staff Selection Commission",
+    "abbreviation": "SSC",
+    "website": "https://ssc.gov.in"
+  },
+  "department": "Central ministries, departments and offices",
+  "technical": false,
+  "summary": "Class 12 level recruitment for Lower Division Clerk / Junior Secretariat Assistant and Data Entry Operator posts across central government. Tier I screens; Tier II, with qualifying computer and typing or data-entry tests, decides merit.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification"
+  ],
+  "frequency": "Annual (SSC calendar)",
+  "officialLinks": [
+    {
+      "label": "CHSL 2026 notice",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2026.pdf"
+    },
+    {
+      "label": "SSC website",
+      "url": "https://ssc.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. The 2026 cycle was notified in September 2026; Tier I and Tier II dates are announced later by SSC.",
+    "cycles": [
+      {
+        "cycle": "CHSL 2026",
+        "events": [
+          {
+            "event": "Applications open",
+            "date": "2026-09-07",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply (11 PM)",
+            "date": "2026-10-07",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Lower Division Clerk / Junior Secretariat Assistant",
+      "group": "Group C",
+      "payLevel": "Level 2",
+      "startingBasic": 19900,
+      "responsibilities": "Clerical work, typing, records in central offices."
+    },
+    {
+      "name": "Data Entry Operator",
+      "group": "Group C",
+      "payLevel": "Level 4 / Level 5",
+      "startingBasic": 25500,
+      "responsibilities": "Data entry and computer operations."
+    },
+    {
+      "name": "Data Entry Operator Grade A",
+      "group": "Group C",
+      "payLevel": "Level 4",
+      "startingBasic": 25500,
+      "responsibilities": "Data entry and computer operations."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC",
+          "years": 3
+        },
+        {
+          "category": "PwBD (unreserved / OBC / SC-ST)",
+          "years": 10,
+          "note": "10, 13 and 15 years respectively."
+        },
+        {
+          "category": "Ex-servicemen",
+          "years": 3,
+          "note": "After deducting military service from actual age, as per notice."
+        }
+      ],
+      "summary": "18 to 27 years on 1 August of the exam year. For CHSL 2026: born between 2 August 1999 and 1 August 2008.",
+      "referenceDate": "1 August of the exam year"
+    },
+    "nationality": "Citizen of India, or other categories with an eligibility certificate, as per the notice.",
+    "education": {
+      "summary": "Class 12 pass. For DEO / DEO Grade A in the Ministry of Consumer Affairs, Food and Public Distribution, the SSC and the Ministry of Culture: Class 12 in the Science stream with Mathematics.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit (within age limit)"
+      }
+    ],
+    "other": [
+      "Fee exemption for women, SC, ST, PwBD and ex-servicemen."
+    ],
+    "examVsPost": "Some DEO posts need Science with Maths in Class 12; LDC/JSA posts accept any stream.",
+    "disqualifications": [
+      "Typing or skill test failure blocks selection for that post."
+    ],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus horizontal reservation for PwBD and ex-servicemen as per rules.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-08-01",
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "educationFields": [
+      "any"
+    ],
+    "notes": "",
+    "ageMin": 18,
+    "ageMax": 27,
+    "minEducation": "class-12",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Tier I (computer-based)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "English Language (basic knowledge)",
+            "marks": 50,
+            "questions": 25,
+            "duration": "15 min (sectional)",
+            "negative": "0.50 per wrong answer"
+          },
+          {
+            "name": "General Intelligence",
+            "marks": 50,
+            "questions": 25,
+            "duration": "15 min",
+            "negative": "0.50"
+          },
+          {
+            "name": "Quantitative Aptitude (basic arithmetic)",
+            "marks": 50,
+            "questions": 25,
+            "duration": "15 min",
+            "negative": "0.50"
+          },
+          {
+            "name": "General Awareness",
+            "marks": 50,
+            "questions": 25,
+            "duration": "15 min",
+            "negative": "0.50"
+          }
+        ],
+        "notes": "100 questions, 200 marks, 60 minutes. Screening."
+      },
+      {
+        "name": "Tier II (computer-based, same day)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Section I: Mathematical Abilities (30 Q) + Reasoning (30 Q)",
+            "marks": 180,
+            "questions": 60,
+            "duration": "1 hour",
+            "negative": "1 mark per wrong answer"
+          },
+          {
+            "name": "Section II: English (40 Q) + General Awareness (20 Q)",
+            "marks": 180,
+            "questions": 60,
+            "duration": "1 hour",
+            "negative": "1 mark"
+          },
+          {
+            "name": "Section III: Computer Knowledge Test",
+            "marks": 45,
+            "questions": 15,
+            "duration": "15 min",
+            "qualifying": true,
+            "negative": "1 mark"
+          },
+          {
+            "name": "Section IV: Skill / Typing Test",
+            "duration": "15 min",
+            "qualifying": true,
+            "notes": "DEO (specified ministries): 15,000 key depressions per hour. Other DEO: 8,000 per hour. LDC/JSA: typing 35 wpm English or 30 wpm Hindi."
+          }
+        ],
+        "notes": "Sessions I (2 hours 15 minutes) and II on the same day. Every section must be qualified."
+      },
+      {
+        "name": "Document verification",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit from Tier II Sections I and II (360 marks); Sections III and IV are qualifying.",
+    "normalization": "Multi-shift scores are normalized as per SSC rules.",
+    "languages": "English and Hindi (except English sections).",
+    "documentVerification": "After Tier II.",
+    "probation": "As per user department."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2026.pdf",
+    "sections": [
+      {
+        "stage": "Tier I",
+        "subject": "Four sections",
+        "topics": [
+          "English: grammar, vocabulary, comprehension",
+          "General intelligence: verbal and non-verbal reasoning",
+          "Quantitative aptitude: arithmetic, algebra, geometry, mensuration, trigonometry, data interpretation (basic)",
+          "General awareness: current events, history, geography, polity, economy, science"
+        ]
+      },
+      {
+        "stage": "Tier II",
+        "subject": "Paper sections",
+        "topics": [
+          "Mathematical abilities and reasoning",
+          "English language and comprehension, general awareness",
+          "Computer knowledge",
+          "Typing / data entry skill"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "reasoning",
+    "quantitative-aptitude",
+    "general-awareness",
+    "current-affairs",
+    "computer-awareness",
+    "typing-skill"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 2536,
+      "selected": null,
+      "note": "Tentative vacancies in the notice.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": {
+    "sources": [
+      "s1"
+    ],
+    "text": "Posts are allotted on merit-cum-preference; skill test standards differ by post."
+  },
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 2 (LDC/JSA) to Level 5 (DEO)",
+    "payScale": "19,900 to 92,300",
+    "startingBasic": 19900,
+    "pension": "NPS with the UPS option.",
+    "increments": "3% a year; MACP at 10, 20 and 30 years.",
+    "notes": "Starting basic shown is LDC/JSA (Level 2). DEO posts start at Level 4 (25,500).",
+    "sources": [
+      "payMatrix"
+    ]
+  },
+  "career": {
+    "sources": [
+      "payMatrix"
+    ],
+    "progression": [
+      {
+        "post": "LDC / JSA",
+        "level": "Level 2",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "UDC / SSA",
+        "level": "Level 4",
+        "timeline": "By seniority or departmental exam",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Assistant / ASO",
+        "level": "Level 6 to 7",
+        "timeline": "Mid career",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Depends on the cadre; many staff also take CGL later for a higher post.",
+    "macp": "MACP at 10, 20 and 30 years if not promoted."
+  },
+  "benefits": [
+    {
+      "item": "Central government benefits",
+      "detail": "CGHS where available, LTC, earned and half-pay leave, HRA or government quarters, NPS with the UPS option.",
+      "conditional": false,
+      "sources": [
+        "payMatrix"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Central offices across India.",
+    "transfers": "Limited.",
+    "nature": "Desk.",
+    "workload": "Moderate.",
+    "publicInteraction": "Low to moderate.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "School-level syllabus, but very large applicant numbers for about 2,000 to 5,000 posts, and speed decides Tier II."
+  },
+  "ratings": {
+    "careerGrowth": "low",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual entry-level recruitment; growth is slow without further exams."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Long cycles",
+        "level": "medium",
+        "note": "Notice to joining often takes a year or more."
+      },
+      {
+        "factor": "Pattern changes",
+        "level": "medium",
+        "note": "SSC revises schemes from time to time; read each year's notice."
+      },
+      {
+        "factor": "Irregular recruitment",
+        "level": "low",
+        "note": "Held every year."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Notice: Combined Higher Secondary (10+2) Level Examination, 2026",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2026.pdf",
+      "publisher": "Staff Selection Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "payMatrix",
+      "title": "7th CPC pay matrix",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Tier I and Tier II dates not yet announced in the notice.",
+      "Official cutoffs and applicant counts not collected."
+    ],
+    "notes": "From the CHSL 2026 notice."
+  },
+  "lastVerified": "2026-10-18"
+}

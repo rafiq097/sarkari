@@ -1,0 +1,204 @@
+{
+  "id": "ssc-cgl",
+  "name": "Combined Graduate Level Examination",
+  "abbreviation": "SSC CGL",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "ssc",
+  "organization": { "id": "ssc", "name": "Staff Selection Commission", "abbreviation": "SSC", "website": "https://ssc.gov.in" },
+  "department": "Central ministries and departments (CSS, CBIC, CBDT, CBI, CAG, Department of Posts and others)",
+  "technical": false,
+  "summary": "The largest graduate-level recruitment for Group B and C posts in central ministries: Assistant Section Officer, Income Tax, GST and Customs Inspectors, CBI Sub-Inspector, Assistant Audit Officer, Auditor, Tax Assistant and more. Two computer-based tiers: Tier I screens, and Tier II decides your rank and post, with qualifying computer and typing tests.",
+  "employmentType": "permanent",
+  "recruitmentMethods": ["competitive-exam", "skill-test", "document-verification", "medical-exam"],
+  "frequency": "Annual (SSC calendar)",
+  "officialLinks": [
+    { "label": "CGL 2026 notice", "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf" },
+    { "label": "SSC website", "url": "https://ssc.gov.in" }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. Usual pattern: notice in spring or early summer, Tier I a few months later, Tier II about three months after Tier I, then document verification and post allocation.",
+    "cycles": [
+      { "cycle": "CGL 2026", "events": [
+        { "event": "Notice published", "date": "2026-05-21", "dateType": "official", "source": "s1" },
+        { "event": "Last date to apply (11 PM)", "date": "2026-06-22", "dateType": "official", "source": "s1" },
+        { "event": "Correction window ends", "date": "2026-07-01", "dateType": "official", "source": "s1" }
+      ] }
+    ]
+  },
+  "posts": [
+    { "name": "Assistant Section Officer (CSS, MEA, AFHQ and others)", "group": "Group B", "payLevel": "Level 7", "startingBasic": 44900, "ageMin": 20, "ageMax": 30, "responsibilities": "Secretariat work in central ministries; file processing and policy support." },
+    { "name": "Inspector (Central GST and Central Excise), Preventive Officer, Examiner (CBIC)", "group": "Group B", "payLevel": "Level 7", "startingBasic": 44900, "ageMax": 30, "responsibilities": "Indirect tax enforcement, customs checks at ports and airports.", "notes": "Physical standards apply for Inspector posts." },
+    { "name": "Inspector of Income Tax (CBDT)", "group": "Group C", "payLevel": "Level 7", "startingBasic": 44900, "ageMax": 30, "responsibilities": "Income tax assessment support, surveys and searches." },
+    { "name": "Sub-Inspector, Central Bureau of Investigation", "group": "Group B", "payLevel": "Level 7", "startingBasic": 44900, "ageMin": 20, "ageMax": 30, "responsibilities": "Criminal investigation.", "notes": "Physical standards apply." },
+    { "name": "Assistant Enforcement Officer (Enforcement Directorate)", "group": "Group B", "payLevel": "Level 7", "startingBasic": 44900, "responsibilities": "Money laundering and foreign exchange investigations." },
+    { "name": "Inspector of Posts", "group": "Group B", "payLevel": "Level 7", "startingBasic": 44900, "responsibilities": "Supervision of post offices." },
+    { "name": "Assistant Audit Officer / Assistant Accounts Officer (CAG)", "group": "Group B (Gazetted)", "payLevel": "Level 8", "startingBasic": 47600, "responsibilities": "Government audit and accounts.", "notes": "Takes Tier II Paper III. CA, CMA, CS, MBA (Finance), M.Com or M.Bus.Ec are desirable qualifications." },
+    { "name": "Junior Statistical Officer (MoSPI)", "group": "Group B", "payLevel": "Level 7", "startingBasic": 44900, "ageMax": 32, "responsibilities": "Statistical surveys and data work.", "notes": "Needs 60% in Maths at Class 12 or Statistics in the degree. Takes Tier II Paper II." },
+    { "name": "Statistical Investigator Grade II (Registrar General of India)", "group": "Group B", "payLevel": "Level 6", "startingBasic": 35400, "responsibilities": "Census and statistical work.", "notes": "Degree in Statistics, Maths, Economics, Demography, Population Studies, OR, IT or Computer Science and related, as per notice. Takes Paper II." },
+    { "name": "Auditor / Accountant / Junior Accountant", "group": "Group C", "payLevel": "Level 5", "startingBasic": 29200, "ageMax": 27, "responsibilities": "Audit and accounts in CAG, CGDA and other offices." },
+    { "name": "Postal Assistant / Sorting Assistant", "group": "Group C", "payLevel": "Level 4", "startingBasic": 25500, "ageMax": 27, "responsibilities": "Counter and sorting work in post offices." },
+    { "name": "Upper Division Clerk / Senior Secretariat Assistant", "group": "Group C", "payLevel": "Level 4", "startingBasic": 25500, "ageMax": 27, "responsibilities": "Clerical and accounts work." },
+    { "name": "Tax Assistant (CBDT, CBIC)", "group": "Group C", "payLevel": "Level 4", "startingBasic": 25500, "ageMax": 27, "responsibilities": "Clerical and data work in tax offices.", "notes": "Higher DEST (typing) standard." }
+  ],
+  "eligibility": {
+    "age": {
+      "summary": "Age band depends on the post: 18 to 27 (most Group C posts), 18 to 30 (most Inspector and some Group B posts), 20 to 30 (ASO, CBI Sub-Inspector and some others) or 18 to 32 (JSO). Calculated on 1 August of the exam year.",
+      "referenceDate": "1 August of the exam year (1 Aug 2026 for CGL 2026)",
+      "relaxations": [
+        { "category": "SC / ST", "years": 5 },
+        { "category": "OBC", "years": 3 },
+        { "category": "PwBD (unreserved / OBC / SC-ST)", "years": 10, "note": "10, 13 and 15 years respectively." },
+        { "category": "Ex-servicemen", "years": 3, "note": "3 years after deducting military service from actual age." },
+        { "category": "Other categories (central government employees, widows and so on)", "years": null, "note": "As listed in the notice." }
+      ]
+    },
+    "nationality": "Citizen of India, or a subject of Nepal or Bhutan, or other categories with an eligibility certificate, as per the notice.",
+    "domicile": null,
+    "education": {
+      "summary": "A bachelor's degree in any subject for most posts. JSO: 60% in Maths at Class 12, or Statistics in the degree. Statistical Investigator: a degree in a listed quantitative subject. Qualification must be held by 1 August of the exam year.",
+      "finalYearAllowed": true,
+      "minMarks": "60% in Class 12 Mathematics (JSO option only)"
+    },
+    "attempts": [{ "category": "All", "limit": "No attempt limit (within age limits)" }],
+    "experience": null,
+    "physical": "Physical standards apply to CBIC Inspector, CBN Inspector, CBI Sub-Inspector and some other posts, as per the notice.",
+    "medical": "Medical tests by the user department after final selection.",
+    "other": ["Final-year students may apply if the degree is completed by the cut-off date in the notice.", "Women, SC, ST, PwBD and ex-servicemen candidates are exempt from the fee."],
+    "examVsPost": "One exam, many posts with different age, degree and physical rules. You give a post preference list; you are only considered for posts you are eligible for and have chosen. Being in the merit list does not guarantee your top choice.",
+    "disqualifications": ["Wrong category or age claims lead to cancellation at document verification."],
+    "reservation": "Central reservation (SC 15%, ST 7.5%, OBC 27%, EWS 10%) plus PwBD and ex-servicemen, applied post by post.",
+    "sources": ["s1"]
+  },
+  "eligibilityRules": {
+    "ageMin": 18,
+    "ageMax": 32,
+    "ageReferenceDate": "2026-08-01",
+    "relaxationYears": { "OBC": 3, "SC": 5, "ST": 5, "EWS": 0, "PwBD": 10 },
+    "minEducation": "graduate",
+    "educationFields": ["any"],
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "notes": "The 18 to 32 band is the widest (JSO). Most Group C posts close at 27 and most Inspector posts at 30. Check each post."
+  },
+  "selection": {
+    "stages": [
+      { "name": "Tier I (computer-based)", "type": "objective", "countsInMerit": false, "papers": [
+        { "name": "General Intelligence and Reasoning", "marks": 50, "questions": 25, "duration": "15 min (sectional)", "negative": "0.50 per wrong answer" },
+        { "name": "General Awareness", "marks": 50, "questions": 25, "duration": "15 min", "negative": "0.50" },
+        { "name": "Quantitative Aptitude", "marks": 50, "questions": 25, "duration": "15 min", "negative": "0.50" },
+        { "name": "English Comprehension", "marks": 50, "questions": 25, "duration": "15 min", "negative": "0.50" }
+      ], "notes": "100 questions, 200 marks, 1 hour with a 15-minute timer per section. Screening only. English and Hindi, except the English section." },
+      { "name": "Tier II, Paper I (compulsory)", "type": "objective", "countsInMerit": true, "papers": [
+        { "name": "Section I: Mathematical Abilities (30 Q) + Reasoning (30 Q)", "marks": 180, "questions": 60, "duration": "1 hour (30 min each)", "negative": "1 mark per wrong answer" },
+        { "name": "Section II: English Language (45 Q) + General Awareness (25 Q)", "marks": 210, "questions": 70, "duration": "1 hour (40 + 20 min)", "negative": "1 mark" },
+        { "name": "Section III: Computer Knowledge Test", "marks": 60, "questions": 20, "duration": "15 min", "negative": "1 mark", "qualifying": true },
+        { "name": "Section IV: Data Entry Speed Test (about 2000 key depressions)", "duration": "15 min", "qualifying": true, "notes": "Higher standard for Tax Assistant, UDC/SSA (CBN) and computer-proficiency posts." }
+      ], "notes": "Each question is worth 3 marks. Sections I to III in Session I (2 hours 15 minutes), DEST in Session II on the same day." },
+      { "name": "Tier II, Paper II: Statistics (JSO and SI Grade II only)", "type": "objective", "countsInMerit": true, "papers": [{ "name": "Statistics", "marks": 200, "questions": 100, "duration": "2 hours", "negative": "0.50" }] },
+      { "name": "Tier II, Paper III: General Studies (Finance and Economics) (AAO only)", "type": "objective", "countsInMerit": true, "papers": [{ "name": "Finance and Economics", "marks": 200, "questions": 100, "duration": "2 hours", "negative": "0.50" }] },
+      { "name": "Document verification and post allocation", "type": "document", "countsInMerit": false }
+    ],
+    "meritCalculation": "Final merit is based on Tier II: Paper I Sections I and II (390 marks) for all posts, plus Paper II for JSO and SI, or Paper III for AAO. Sections III and IV of Paper I are qualifying. Tier I only shortlists.",
+    "tieBreaking": "As specified in the notice.",
+    "normalization": "Scores of multi-shift papers are normalized under SSC's notice of 2 June 2025.",
+    "languages": "English and Hindi, except English sections.",
+    "documentVerification": "After Tier II, before final allocation.",
+    "probation": "As per the user department (usually 2 years).",
+    "sources": ["s1"]
+  },
+  "syllabus": {
+    "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf",
+    "sections": [
+      { "stage": "Tier I", "subject": "General Intelligence and Reasoning", "topics": ["Analogies, similarities and differences", "Series, coding and decoding", "Classification, syllogism", "Venn diagrams, spatial orientation", "Non-verbal reasoning, figure series"] },
+      { "stage": "Tier I", "subject": "Quantitative Aptitude", "topics": ["Number system, percentages, ratio and proportion", "Averages, interest, profit and loss, discount", "Time and work, time and distance", "Algebra, geometry, mensuration, trigonometry", "Data interpretation (charts and tables)"] },
+      { "stage": "Tier I", "subject": "English Comprehension", "topics": ["Vocabulary, grammar, sentence structure", "Synonyms, antonyms, error spotting, fill in the blanks", "Comprehension passages"] },
+      { "stage": "Tier I", "subject": "General Awareness", "topics": ["Current events", "History, culture, geography, economy, polity", "General science"] },
+      { "stage": "Tier II", "subject": "Paper I", "topics": ["Mathematical abilities at a deeper level than Tier I", "Reasoning and general intelligence", "English language and comprehension", "General awareness", "Computer knowledge: computer basics, software, internet, email, networking, cyber security", "Typing/data entry speed"] },
+      { "stage": "Tier II", "subject": "Paper II: Statistics", "topics": ["Collection and presentation of data, measures of central tendency and dispersion", "Correlation and regression, probability, distributions", "Sampling, statistical inference, analysis of variance, time series, index numbers"] },
+      { "stage": "Tier II", "subject": "Paper III: Finance and Economics", "topics": ["Financial accounting fundamentals", "Economics and governance: comptroller and auditor general, finance commission, micro and macro economics, Indian economy, economic reforms"] }
+    ],
+    "supplementary": ["The full indicative syllabus is in Para 13 of the notice.", "The same core subjects (maths, reasoning, English, GA) serve CHSL, MTS, CPO and bank exams."],
+    "sources": ["s1"]
+  },
+  "syllabusTags": ["quantitative-aptitude", "reasoning", "english-language", "general-awareness", "current-affairs", "indian-history", "geography", "indian-polity", "indian-economy", "general-science", "computer-awareness", "typing-skill", "statistics", "accountancy-commerce"],
+  "cutoffs": [],
+  "statistics": [
+    { "year": 2026, "vacancies": 12256, "applicants": null, "appeared": null, "qualifiedNextStage": null, "interviewed": null, "selected": null, "note": "Tentative vacancies in the notice; updated vacancies are posted on the SSC website.", "source": "s1" }
+  ],
+  "rankAndAllocation": {
+    "text": "SSC allocates posts in merit order using the post preferences you submit. You can only get posts whose age, education and physical rules you meet. Computer-proficiency and typing posts need the higher CKT/DEST standards. Departments, not SSC, decide postings within their zones.",
+    "sources": ["s1"]
+  },
+  "salary": {
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 4 to Level 8 (by post)",
+    "payScale": "Level 4 (25,500) to Level 8 (47,600) first cell",
+    "startingBasic": 44900,
+    "specialAllowances": [{ "name": "Varies by post", "detail": "Shown for the Level 7 posts (ASO, Inspectors); see the post cards for other levels." }],
+    "pension": "National Pension System with the Unified Pension Scheme option.",
+    "increments": "3% a year; MACP financial upgrades at 10, 20 and 30 years if not promoted.",
+    "notes": "Starting basic shown is for Level 7 posts. Level 8 (AAO) starts at 47,600; Level 4 posts at 25,500.",
+    "asOf": "2026-10",
+    "sources": ["s2"]
+  },
+  "career": {
+    "progression": [
+      { "post": "ASO (CSS)", "level": "Level 7", "timeline": "Entry", "timelineType": "official" },
+      { "post": "Section Officer", "level": "Level 8", "timeline": "After qualifying service and seniority", "timelineType": "typical" },
+      { "post": "Under Secretary", "level": "Level 11", "timeline": "Mid career", "timelineType": "typical" },
+      { "post": "Deputy Secretary / Director", "level": "Level 12 to 13", "timeline": "Senior", "timelineType": "typical" }
+    ],
+    "promotionNotes": "Each post has its own cadre. Inspectors (CBIC/CBDT) move to Superintendent / Income Tax Officer and then into Group A through promotion. Promotion speed varies widely between departments and with cadre vacancies.",
+    "departmentalExams": "Departmental exams exist in some cadres (for example the CAG audit cadres).",
+    "macp": "MACP: one financial upgrade each at 10, 20 and 30 years of service if no promotion.",
+    "sources": ["s2"]
+  },
+  "benefits": [{ "item": "Central government benefits", "detail": "CGHS where available, LTC, leave, HRA or quarters, NPS/UPS.", "conditional": false, "sources": ["s2"] }],
+  "workLife": {
+    "postings": "ASO mostly in Delhi; field posts (Inspectors, Postal, Audit) across India by zone.",
+    "transfers": "Desk posts: rare. Field enforcement posts: periodic within the zone.",
+    "nature": "Desk for secretariat, audit and clerical posts; field for Inspector and CBI posts.",
+    "workload": "Moderate; heavier in enforcement posts.",
+    "publicInteraction": "High for tax, customs and postal posts.",
+    "hazards": "Low, except enforcement raids.",
+    "stability": "Very high.",
+    "sources": ["s1"]
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "School and graduate-level subjects, but tens of lakhs apply and Tier II rewards speed with a 1-mark penalty per wrong answer. Post choice depends on fine rank differences."
+  },
+  "ratings": { "careerGrowth": "medium", "locationFlexibility": "medium", "recruitmentRegularity": "high", "rationale": "Annual recruitment for 10,000 or more posts. Growth depends heavily on the cadre you land in." },
+  "risk": { "overall": "medium", "factors": [
+    { "factor": "Long cycles", "level": "medium", "note": "Notice to joining often takes more than a year." },
+    { "factor": "Pattern changes", "level": "medium", "note": "SSC has revised CGL tiers several times in recent years." },
+    { "factor": "Irregular recruitment", "level": "low", "note": "Held every year." }
+  ] },
+  "guide": {
+    "sources": ["s1"],
+    "sections": [
+      { "title": "One exam, about 30 kinds of posts", "kind": "explainer", "quickFacts": [{ "label": "Vacancies 2026", "value": "about 12,256" }, { "label": "Tiers", "value": "2" }, { "label": "Pay levels", "value": "4 to 8" }],
+        "paragraphs": ["CGL fills graduate-level posts across central government, from Tax Assistant (Level 4) to Assistant Audit Officer (Level 8). Each post has its own age band and some have special degree or physical rules, so read your target posts first."] },
+      { "title": "Tier I: the screen", "kind": "official", "quickFacts": [{ "label": "Questions", "value": "100" }, { "label": "Marks", "value": "200" }, { "label": "Time", "value": "1 hour" }, { "label": "Wrong answer", "value": "minus 0.50" }],
+        "paragraphs": ["Four sections of 25 questions each (reasoning, general awareness, quantitative aptitude, English), each with a 15-minute timer. Tier I marks only decide who goes to Tier II."] },
+      { "title": "Tier II: the rank decider", "kind": "official", "quickFacts": [{ "label": "Merit marks (Paper I)", "value": "390" }, { "label": "Per question", "value": "3 marks" }, { "label": "Wrong answer", "value": "minus 1" }],
+        "paragraphs": ["Paper I is compulsory: maths and reasoning (180 marks), English and GA (210 marks), then a qualifying computer test and a 15-minute data entry test. JSO and Statistical Investigator candidates also take Statistics (Paper II), and AAO candidates take Finance and Economics (Paper III)."],
+        "bullets": ["CKT and DEST do not add marks, but failing them blocks you from posts that need them.", "Posts like ASO, CBIC Inspector and Postal Assistant need higher CKT/DEST standards."] },
+      { "title": "Common confusions", "kind": "explainer", "bullets": ["Tier I marks are not added to the final score.", "Your age band is set by the post, not the exam.", "There is no interview in CGL.", "Women, SC, ST, PwBD and ex-servicemen candidates do not pay the fee."] }
+    ]
+  },
+  "sources": [
+    { "id": "s1", "title": "Notice: Combined Graduate Level Examination, 2026", "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf", "publisher": "Staff Selection Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s2", "title": "7th CPC pay matrix", "url": "https://doe.gov.in/pay-commission-matrix", "publisher": "Department of Expenditure", "year": 2016, "type": "primary", "accessed": "2026-10-18" }
+  ],
+  "dataQuality": { "confidence": "high", "gaps": ["Tier I and Tier II exam dates after the notice were not confirmed from SSC.", "Official CGL cutoffs and applicant counts not collected.", "Full list of about 30 posts shortened to the main posts; see the notice for all."], "notes": "Posts, ages, education and scheme from the CGL 2026 notice." },
+  "lastVerified": "2026-10-18"
+}
