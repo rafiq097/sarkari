@@ -50,11 +50,11 @@ function PersonalStrip() {
   const matches = summariseMatches(candidate)
   const preferred = matches.eligible.filter((entry) => entry.preferred).length
   return (
-    <Link to="/profile" className="personal-strip is-set">
+    <Link to="/plan" className="personal-strip is-set">
       <UserRound size={20} aria-hidden="true" />
       <span>
         <strong>{candidate.name ? `${candidate.name}, ` : ''}you likely fit {matches.eligible.length} exams</strong>
-        <span className="muted"> ({preferred} in your preferred governments and sectors), and {matches.check.length} need a closer look.</span>
+        <span className="muted"> ({preferred} in your preferred governments and sectors), and {matches.check.length} need a closer look. Open your plan.</span>
       </span>
       <ArrowRight size={16} aria-hidden="true" />
     </Link>

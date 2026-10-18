@@ -74,3 +74,8 @@ Removed by scope: ssc-mts-havaldar.
 - Karnataka HRA percentages under the 2024 scales are not verified; AP 10% HRA slab ceiling not verified.
 - Defence pay rule set has no pension deduction (armed forces outside NPS) and adds MSP 15,500 with DA.
 - Bank and RBI gross pay are not modelled (quarterly DA); `officialGross` shows where the recruiter states it (SBI JA about Rs 46,000 at metro).
+
+## 10. Latest additions
+- My Profile (`/profile`): details saved in browser, editable any time, used on exam pages (Your eligibility panel), cards (verdict badge), home strip, calendar filter, directory filter, eligibility checker.
+- Your plan (`/plan`, `src/lib/recommend.js`, `src/pages/PlanPage.jsx`): ranked picks with transparent points and reasons, focus subjects, prepare-together (syllabus overlap with top pick), last-chance-by-age alerts, coming-up dates. Linked from home, profile and tools.
+- Rafiq paused exam data work ("leave exams, I will start later"). Resume from section 8 when he asks.

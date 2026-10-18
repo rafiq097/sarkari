@@ -1579,3 +1579,130 @@ strong.figure {
 .personal-strip:hover {
   border-color: var(--accent);
 }
+
+/* Your plan */
+.pick-list {
+  display: grid;
+  gap: 10px;
+}
+
+.pick-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+  padding: 16px 18px;
+  border-radius: var(--radius-large);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.pick-card:first-child {
+  border-color: #ffd21f77;
+}
+
+.pick-rank {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+.pick-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.pick-score {
+  display: grid;
+  justify-items: center;
+}
+
+.pick-score .numeric {
+  font-size: 1.6rem;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.reason-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.reason-list li {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: var(--sage-soft);
+  color: var(--text-soft);
+}
+
+.reason-list li.is-minus {
+  background: var(--brick-soft);
+}
+
+.reason-list .numeric {
+  font-weight: 600;
+  color: var(--sage);
+}
+
+.reason-list li.is-minus .numeric {
+  color: var(--brick);
+}
+
+.focus-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.focus-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  border: 1px solid #ffd21f40;
+  background: var(--accent-soft);
+}
+
+.focus-list svg {
+  color: var(--accent);
+}
+
+.mini-list {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.panel-icon {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .pick-card {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .pick-score {
+    grid-column: 2;
+    justify-items: start;
+  }
+}

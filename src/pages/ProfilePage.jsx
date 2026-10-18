@@ -4,7 +4,7 @@
  * calendar, eligibility checker). Editable or clearable at any time.
  */
 import { Link } from 'react-router'
-import { ShieldCheck, Trash2, CheckCircle2, CircleHelp, XCircle } from 'lucide-react'
+import { ShieldCheck, Trash2, CheckCircle2, CircleHelp, XCircle, Target } from 'lucide-react'
 import { Breadcrumbs, PageHeader, SectionHeading, EmptyState } from '../components/Common.jsx'
 import { CandidateForm } from '../components/CandidateForm.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
@@ -46,6 +46,14 @@ export default function ProfilePage() {
 
       {matches && (
         <>
+          <Link to="/plan" className="personal-strip is-set spaced">
+            <Target size={20} aria-hidden="true" />
+            <span>
+              <strong>See your plan</strong>
+              <span className="muted"> Ranked suggestions, focus subjects and exams to prepare together.</span>
+            </span>
+          </Link>
+
           <SectionHeading number="01" title="What fits you" description="Indicative only; the official notification decides. Historical routes are excluded." />
           <div className="status-strip">
             <Link to="/eligibility" className="status-tile">
