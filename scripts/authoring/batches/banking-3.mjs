@@ -1,6 +1,6 @@
 /**
- * Batch: IBPS Clerk (CRP CSA-XVI) and IBPS RRB (CRP RRB-XV). Cycle figures from
- * reports of the 2026 notices (secondary); structure as in recent IBPS notices.
+ * Batch: IBPS Clerk (CRP CSA-XVI) and IBPS RRB (CRP RRBs-XV), from the official 2026
+ * notifications and the IBPS 2026-27 calendar; vacancy totals as reported.
  */
 const ibps = { id: 'ibps', name: 'Institute of Banking Personnel Selection', abbreviation: 'IBPS', website: 'https://www.ibps.in' }
 
@@ -12,13 +12,13 @@ export default [
     recruitmentMethods: ['competitive-exam', 'skill-test', 'document-verification'], frequency: 'Annual (IBPS calendar)',
     officialLinks: [{ label: 'IBPS website', url: 'https://www.ibps.in' }],
     status: { type: 'active', note: 'Held every year. 2026 cycle (CSA-XVI): applications 1 to 21 August 2026, Prelims tentatively 10 to 11 October 2026, Mains tentatively 27 December 2026.', cycles: [{ cycle: 'CRP CSA-XVI', events: [
-      { event: 'Applications open', date: '2026-08-01', dateType: 'official', source: 's1' },
-      { event: 'Last date to apply', date: '2026-08-21', dateType: 'official', source: 's1' },
-      { event: 'Preliminary exam', date: '2026-10-10', dateType: 'official-tentative', source: 's1' },
-      { event: 'Main exam', date: '2026-12-27', dateType: 'official-tentative', source: 's1' }] }] },
+      { event: 'Applications open', date: '2026-08-01', dateType: 'official', source: 's2' },
+      { event: 'Last date to apply', date: '2026-08-21', dateType: 'official', source: 's2' },
+      { event: 'Preliminary exam', date: '2026-10-10', dateType: 'official-tentative', source: 's3' },
+      { event: 'Main exam', date: '2026-12-27', dateType: 'official-tentative', source: 's3' }] }] },
     posts: [{ name: 'Customer Service Associate (Clerk)', group: 'Clerical cadre', payLevel: 'Bank clerical scale', startingBasic: 24050, responsibilities: 'Cash, deposits, customer service and back office in a branch.', notes: 'Scale 24,050 to 64,480 (12th Bipartite Settlement).' }],
     eligibility: {
-      age: { summary: 'Usually 20 to 28 years on the date in the notice.', referenceDate: 'As per notice' },
+      age: { summary: '20 to 28 years on 1 August of the cycle year (2026 cycle).', referenceDate: '1 August of the cycle year' },
       nationality: 'Citizen of India or other categories as per notice.',
       domicile: 'Apply for one state or UT; proficiency in its official language is required (Telugu for AP and Telangana, Kannada for Karnataka).',
       education: { summary: 'A degree in any discipline; computer literacy (certificate, or computers as a subject) as per the notice.', finalYearAllowed: false, minMarks: null },
@@ -27,8 +27,8 @@ export default [
     eligibilityRules: { ageMin: 20, ageMax: 28, minEducation: 'graduate', relaxationYears: { OBC: 3, SC: 5, ST: 5, EWS: 0, PwBD: 10 }, notes: 'State language proficiency needed.' },
     selection: {
       stages: [
-        { name: 'Preliminary (online)', type: 'objective', countsInMerit: false, papers: [{ name: 'English, Numerical Ability, Reasoning', marks: 100, questions: 100, duration: '60 minutes (sectional timers)', negative: '0.25' }] },
-        { name: 'Main (online)', type: 'objective', countsInMerit: true, papers: [{ name: 'General/Financial Awareness, General English, Reasoning and Computer Aptitude, Quantitative Aptitude', marks: 200, negative: '0.25' }] },
+        { name: 'Preliminary (online)', type: 'objective', countsInMerit: false, papers: [{ name: 'English 30, Numerical Ability 35, Reasoning 35 (20 minutes each)', marks: 100, questions: 100, duration: '60 minutes', negative: '0.25' }], notes: 'You must clear the cut-off in each test.' },
+        { name: 'Main (online)', type: 'objective', countsInMerit: true, papers: [{ name: 'General / Financial Awareness 40 questions (50 marks), General English 40 (40), Reasoning 40 (60), Quantitative Aptitude 40 (50)', marks: 200, questions: 160, duration: '125 minutes', negative: '0.25' }] },
         { name: 'Language Proficiency Test', type: 'skill', countsInMerit: false }],
       meritCalculation: 'Final provisional allotment on Mains marks, state-wise.', languages: 'English, Hindi and regional languages as per notice.', documentVerification: 'At the allotted bank.', probation: 'As per bank.',
     },
@@ -42,8 +42,8 @@ export default [
     difficulty: { syllabusDepth: 'low', competition: 'high', timePressure: 'high', technicalComplexity: 'low', physicalRequirements: 'low', selectionUncertainty: 'medium', rationale: 'Simple syllabus but very speed-dependent with lakhs of applicants.' },
     ratings: { careerGrowth: 'medium', locationFlexibility: 'high', recruitmentRegularity: 'high', rationale: 'Annual; you stay in your state.' },
     risk: { overall: 'low', factors: [{ factor: 'State-wise vacancies', level: 'medium', note: 'Your state may have few vacancies in a given year.' }] },
-    sources: [['s1', 'IBPS Clerk 2026 (CRP CSA-XVI) notification report', 'https://www.sreedharscce.com/blogs/ibps-clerk-notification/', 'Sreedhar\'s CCE (reports the IBPS notice)', 2026, 'secondary']],
-    dataQuality: { confidence: 'low', gaps: ['Official notice not fetched; dates and vacancies from a secondary report.', 'Exact age reference date and section-wise marks not confirmed for 2026.'], notes: 'Indicative.' },
+    sources: [['s1', 'IBPS Clerk 2026 (CRP CSA-XVI) notification report', 'https://www.sreedharscce.com/blogs/ibps-clerk-notification/', 'Sreedhar\'s CCE (reports the IBPS notice)', 2026, 'secondary'], ['s2', 'IBPS CRP CSA-XVI notification (vacancies of 2027-28)', 'https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf', 'Institute of Banking Personnel Selection', 2026], ['s3', 'IBPS tentative calendar of online CRPs 2026-27', 'https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf', 'Institute of Banking Personnel Selection', 2026]],
+    dataQuality: { confidence: 'high', gaps: ['Vacancy total as reported; indicative state-wise numbers change with corrigenda.'], notes: 'Age, pattern, pay and dates from the official notification and calendar.' },
   },
   {
     id: 'ibps-rrb', name: 'Common Recruitment Process for Regional Rural Banks (Officers and Office Assistants)', abbreviation: 'IBPS RRB', jurisdiction: 'central', sector: 'banking', organization: ibps,
@@ -51,14 +51,18 @@ export default [
     summary: 'Recruitment for Regional Rural Banks: Office Assistant (Multipurpose), Officer Scale I (Assistant Manager), and Scale II and III specialist and generalist officers. Strong local-language requirement and rural postings.',
     recruitmentMethods: ['competitive-exam', 'interview', 'document-verification'], frequency: 'Annual (IBPS calendar)',
     officialLinks: [{ label: 'IBPS website', url: 'https://www.ibps.in' }],
-    status: { type: 'active', note: 'Held every year. CRP RRB-XV (2026): registration reported for September 2026, Prelims in November to December 2026, Mains around December 2026 to January 2027.', cycles: [] },
+    status: { type: 'active', note: 'Held every year. CRP RRBs-XV (2026): registration 1 to 27 September 2026. Officer Scale I prelims 21 and 22 November, Officer mains 20 December 2026; Office Assistant prelims 6, 12 and 13 December 2026, mains 30 January 2027.', cycles: [{ cycle: 'CRP RRBs-XV', events: [
+      { event: 'Registration opens', date: '2026-09-01', dateType: 'official', source: 's2' },
+      { event: 'Officer Scale I prelims', date: '2026-11-21', dateType: 'official-tentative', source: 's3' },
+      { event: 'Office Assistant prelims', date: '2026-12-06', dateType: 'official-tentative', source: 's3' },
+      { event: 'Office Assistant mains', date: '2027-01-30', dateType: 'official-tentative', source: 's3' }] }] },
     posts: [
       { name: 'Office Assistant (Multipurpose)', group: 'Clerical', payLevel: 'RRB clerical scale', startingBasic: null, ageMax: 28, responsibilities: 'Counter and back-office work in rural branches.' },
       { name: 'Officer Scale I (Assistant Manager)', group: 'Officer', payLevel: 'Scale I', startingBasic: 48480, ageMax: 30, responsibilities: 'Branch officer in a rural bank.' },
       { name: 'Officer Scale II (General Banking and Specialist)', group: 'Officer', payLevel: 'Scale II', startingBasic: null, responsibilities: 'Manager; needs experience.', notes: 'Experience required.' },
       { name: 'Officer Scale III (Senior Manager)', group: 'Officer', payLevel: 'Scale III', startingBasic: null, responsibilities: 'Senior branch manager; needs experience.', notes: 'Experience required.' }],
     eligibility: {
-      age: { summary: 'Typical limits: Office Assistant 18 to 28; Officer Scale I 18 to 30; Scale II 21 to 32; Scale III 21 to 40 (check the current notice).', referenceDate: 'As per notice' },
+      age: { summary: 'On 1 September of the cycle year: Office Assistant 18 to 28; Officer Scale I 18 to 30; Scale II 21 to 32; Scale III as per the notice.', referenceDate: '1 September of the cycle year' },
       nationality: 'As per notice.',
       domicile: 'Proficiency in the local language of the RRB\'s state is required.',
       education: { summary: 'Graduate in any discipline for Office Assistant and Scale I (preference for agriculture, rural economics and similar for Scale I); specific degrees and experience for Scale II and III.', finalYearAllowed: false, minMarks: null },
@@ -82,7 +86,7 @@ export default [
     difficulty: { syllabusDepth: 'low', competition: 'high', timePressure: 'high', technicalComplexity: 'low', physicalRequirements: 'low', selectionUncertainty: 'medium', rationale: 'Short, fast Prelims; competition depends on the state.' },
     ratings: { careerGrowth: 'medium', locationFlexibility: 'high', recruitmentRegularity: 'high', rationale: 'Annual; you work in your home state, mostly in rural areas.' },
     risk: { overall: 'low', factors: [{ factor: 'Rural postings', level: 'medium', note: 'Most branches are rural.' }] },
-    sources: [['s1', 'IBPS RRB XV Office Assistant (Multipurpose) 2026 notification report', 'https://www.sreedharscce.com/blogs/ibps-rrb-xv-office-assistant-notification/', 'Sreedhar\'s CCE (reports the IBPS notice)', 2026, 'secondary']],
-    dataQuality: { confidence: 'low', gaps: ['Official notice not fetched; vacancies and dates from a secondary report.', 'Age limits shown are typical of recent notices.', 'Office Assistant starting basic not confirmed.'], notes: 'Indicative.' },
+    sources: [['s1', 'IBPS RRB XV Office Assistant (Multipurpose) 2026 notification report', 'https://www.sreedharscce.com/blogs/ibps-rrb-xv-office-assistant-notification/', 'Sreedhar\'s CCE (reports the IBPS notice)', 2026, 'secondary'], ['s2', 'IBPS CRP RRBs-XV notification (Officers and Office Assistants)', 'https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf', 'Institute of Banking Personnel Selection', 2026], ['s3', 'IBPS tentative calendar of online CRPs 2026-27', 'https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf', 'Institute of Banking Personnel Selection', 2026]],
+    dataQuality: { confidence: 'medium', gaps: ['Vacancy total as reported.', 'Office Assistant starting basic not confirmed.'], notes: 'Ages and dates from the official notification and calendar.' },
   },
 ]

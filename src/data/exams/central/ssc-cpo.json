@@ -105,8 +105,8 @@
           "note": "After deducting military service from actual age, as per notice."
         }
       ],
-      "summary": "Usually 20 to 25 years on 1 August of the exam year (check the current notice).",
-      "referenceDate": "1 August of the exam year (usual)"
+      "summary": "20 to 25 years on 1 August of the exam year (2026: born 2 August 2001 to 1 August 2006).",
+      "referenceDate": "1 August of the exam year"
     },
     "nationality": "Citizen of India.",
     "education": {
@@ -129,15 +129,15 @@
   },
   "eligibilityRules": {
     "ageReferenceDate": null,
-    "finalYearAllowed": false,
+    "finalYearAllowed": true,
     "gender": "any",
     "domicile": null,
     "educationFields": [
       "any"
     ],
-    "notes": "Under 25 on the reference date is the usual rule. Physical tests apply. Delhi Police SI men need a driving licence.",
+    "notes": "Physical tests apply. Delhi Police SI men need a light motor vehicle licence by the physical tests.",
     "ageMin": 20,
-    "ageMax": 24,
+    "ageMax": 25,
     "minEducation": "graduate",
     "relaxationYears": {
       "OBC": 3,
@@ -234,8 +234,8 @@
     {
       "year": 2026,
       "vacancies": 1871,
-      "note": "Tentative vacancies as reported (another report gives 2,018).",
-      "source": "s1"
+      "note": "Tentative vacancies as reported. The official notice lists 205 male and 112 female Delhi Police posts plus force-wise CAPF posts.",
+      "source": "s2"
     }
   ],
   "rankAndAllocation": null,
@@ -347,6 +347,15 @@
       "accessed": "2026-10-18"
     },
     {
+      "id": "s2",
+      "title": "SSC notice: Sub-Inspector in Delhi Police and CAPFs Examination, 2026",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf",
+      "publisher": "Staff Selection Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
       "id": "sscCalendar",
       "title": "SSC tentative calendar of examinations 2026-27 (released 8 Jan 2026)",
       "url": "https://news.careers360.com/ssc-exam-calendar-2026-cgle-junior-engineer-selection-post-phase-14-chsl-stenographer-mts-havaldar-notification-schedule/amp",
@@ -366,10 +375,10 @@
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "Official 2026 notice could not be fetched; dates, vacancies and pattern are from a secondary report.",
-      "Exact Paper II pattern, age limits and physical standards for 2026 not verified."
+      "CAPF force-wise total not added up from the notice.",
+      "Physical standards not reproduced in full."
     ],
     "notes": "Treat this profile as indicative until checked against the SSC notice."
   },

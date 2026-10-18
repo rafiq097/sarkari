@@ -29,8 +29,38 @@
   ],
   "status": {
     "type": "active",
-    "note": "Held every year. CRP RRB-XV (2026): registration reported for September 2026, Prelims in November to December 2026, Mains around December 2026 to January 2027.",
-    "cycles": []
+    "note": "Held every year. CRP RRBs-XV (2026): registration 1 to 27 September 2026. Officer Scale I prelims 21 and 22 November, Officer mains 20 December 2026; Office Assistant prelims 6, 12 and 13 December 2026, mains 30 January 2027.",
+    "cycles": [
+      {
+        "cycle": "CRP RRBs-XV",
+        "events": [
+          {
+            "event": "Registration opens",
+            "date": "2026-09-01",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Officer Scale I prelims",
+            "date": "2026-11-21",
+            "dateType": "official-tentative",
+            "source": "s3"
+          },
+          {
+            "event": "Office Assistant prelims",
+            "date": "2026-12-06",
+            "dateType": "official-tentative",
+            "source": "s3"
+          },
+          {
+            "event": "Office Assistant mains",
+            "date": "2027-01-30",
+            "dateType": "official-tentative",
+            "source": "s3"
+          }
+        ]
+      }
+    ]
   },
   "posts": [
     {
@@ -88,8 +118,8 @@
           "note": "After deducting military service from actual age, as per notice."
         }
       ],
-      "summary": "Typical limits: Office Assistant 18 to 28; Officer Scale I 18 to 30; Scale II 21 to 32; Scale III 21 to 40 (check the current notice).",
-      "referenceDate": "As per notice"
+      "summary": "On 1 September of the cycle year: Office Assistant 18 to 28; Officer Scale I 18 to 30; Scale II 21 to 32; Scale III as per the notice.",
+      "referenceDate": "1 September of the cycle year"
     },
     "nationality": "As per notice.",
     "domicile": "Proficiency in the local language of the RRB's state is required.",
@@ -307,16 +337,33 @@
       "year": 2026,
       "type": "secondary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "IBPS CRP RRBs-XV notification (Officers and Office Assistants)",
+      "url": "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf",
+      "publisher": "Institute of Banking Personnel Selection",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "IBPS tentative calendar of online CRPs 2026-27",
+      "url": "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf",
+      "publisher": "Institute of Banking Personnel Selection",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "Official notice not fetched; vacancies and dates from a secondary report.",
-      "Age limits shown are typical of recent notices.",
+      "Vacancy total as reported.",
       "Office Assistant starting basic not confirmed."
     ],
-    "notes": "Indicative."
+    "notes": "Ages and dates from the official notification and calendar."
   },
   "lastVerified": "2026-10-18"
 }

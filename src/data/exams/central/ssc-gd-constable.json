@@ -40,6 +40,18 @@
             "date": "2026-02-23",
             "dateType": "official",
             "source": "s1"
+          },
+          {
+            "event": "Computer-based exam ends",
+            "date": "2026-05-30",
+            "dateType": "official",
+            "source": "s3"
+          },
+          {
+            "event": "PET / PST shortlist published",
+            "date": "2026-10-12",
+            "dateType": "official",
+            "source": "s3"
           }
         ]
       }
@@ -83,8 +95,8 @@
           "note": "After deducting military service from actual age, as per notice."
         }
       ],
-      "summary": "Usually 18 to 23 years on 1 January of the exam year (check the current notice).",
-      "referenceDate": "1 January of the exam year (usual)"
+      "summary": "18 to 23 years on 1 January of the exam year (2026 cycle).",
+      "referenceDate": "1 January of the exam year"
     },
     "nationality": "Citizen of India; domicile certificate decides the state/area vacancies you compete for.",
     "education": {
@@ -207,8 +219,8 @@
     {
       "year": 2026,
       "vacancies": 25487,
-      "note": "As reported for the 2026 cycle.",
-      "source": "s1"
+      "note": "Tentative, from the 2026 notice.",
+      "source": "s2"
     }
   ],
   "rankAndAllocation": null,
@@ -320,6 +332,24 @@
       "accessed": "2026-10-18"
     },
     {
+      "id": "s2",
+      "title": "SSC notice: Constable (GD) in CAPFs, SSF and Rifleman (GD) in Assam Rifles Examination, 2026",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_CTGD_2026.pdf",
+      "publisher": "Staff Selection Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "SSC write-up: shortlisting for PET / PST, Constable (GD) 2026 (12 Oct 2026)",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/writeup_12102026.pdf",
+      "publisher": "Staff Selection Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
       "id": "sscCalendar",
       "title": "SSC tentative calendar of examinations 2026-27 (released 8 Jan 2026)",
       "url": "https://news.careers360.com/ssc-exam-calendar-2026-cgle-junior-engineer-selection-post-phase-14-chsl-stenographer-mts-havaldar-notification-schedule/amp",
@@ -339,12 +369,11 @@
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "high",
     "gaps": [
-      "Official GD notice could not be fetched; age, physical standards and NCC bonus details are not quoted from it.",
-      "Rescheduled 2026 exam date not recorded."
+      "Physical standards not reproduced in full."
     ],
-    "notes": "Indicative profile; verify on ssc.gov.in."
+    "notes": "Vacancies, age, pay and pattern from the official 2026 notice; later stages from the SSC write-up."
   },
   "lastVerified": "2026-10-18"
 }

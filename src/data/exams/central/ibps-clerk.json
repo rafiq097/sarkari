@@ -38,25 +38,25 @@
             "event": "Applications open",
             "date": "2026-08-01",
             "dateType": "official",
-            "source": "s1"
+            "source": "s2"
           },
           {
             "event": "Last date to apply",
             "date": "2026-08-21",
             "dateType": "official",
-            "source": "s1"
+            "source": "s2"
           },
           {
             "event": "Preliminary exam",
             "date": "2026-10-10",
             "dateType": "official-tentative",
-            "source": "s1"
+            "source": "s3"
           },
           {
             "event": "Main exam",
             "date": "2026-12-27",
             "dateType": "official-tentative",
-            "source": "s1"
+            "source": "s3"
           }
         ]
       }
@@ -94,8 +94,8 @@
           "note": "After deducting military service from actual age, as per notice."
         }
       ],
-      "summary": "Usually 20 to 28 years on the date in the notice.",
-      "referenceDate": "As per notice"
+      "summary": "20 to 28 years on 1 August of the cycle year (2026 cycle).",
+      "referenceDate": "1 August of the cycle year"
     },
     "nationality": "Citizen of India or other categories as per notice.",
     "domicile": "Apply for one state or UT; proficiency in its official language is required (Telugu for AP and Telangana, Kannada for Karnataka).",
@@ -146,13 +146,14 @@
         "countsInMerit": false,
         "papers": [
           {
-            "name": "English, Numerical Ability, Reasoning",
+            "name": "English 30, Numerical Ability 35, Reasoning 35 (20 minutes each)",
             "marks": 100,
             "questions": 100,
-            "duration": "60 minutes (sectional timers)",
+            "duration": "60 minutes",
             "negative": "0.25"
           }
-        ]
+        ],
+        "notes": "You must clear the cut-off in each test."
       },
       {
         "name": "Main (online)",
@@ -160,8 +161,10 @@
         "countsInMerit": true,
         "papers": [
           {
-            "name": "General/Financial Awareness, General English, Reasoning and Computer Aptitude, Quantitative Aptitude",
+            "name": "General / Financial Awareness 40 questions (50 marks), General English 40 (40), Reasoning 40 (60), Quantitative Aptitude 40 (50)",
             "marks": 200,
+            "questions": 160,
+            "duration": "125 minutes",
             "negative": "0.25"
           }
         ]
@@ -304,15 +307,32 @@
       "year": 2026,
       "type": "secondary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "IBPS CRP CSA-XVI notification (vacancies of 2027-28)",
+      "url": "https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf",
+      "publisher": "Institute of Banking Personnel Selection",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "IBPS tentative calendar of online CRPs 2026-27",
+      "url": "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf",
+      "publisher": "Institute of Banking Personnel Selection",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "high",
     "gaps": [
-      "Official notice not fetched; dates and vacancies from a secondary report.",
-      "Exact age reference date and section-wise marks not confirmed for 2026."
+      "Vacancy total as reported; indicative state-wise numbers change with corrigenda."
     ],
-    "notes": "Indicative."
+    "notes": "Age, pattern, pay and dates from the official notification and calendar."
   },
   "lastVerified": "2026-10-18"
 }
