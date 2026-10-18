@@ -1,0 +1,106 @@
+/**
+ * Calendar of official dates: every dated event across profiles, split into
+ * upcoming and past, filterable by government. Only official or official-tentative
+ * dates exist in the data; predictions are never shown.
+ */
+import { useMemo, useState } from 'react'
+import { Link } from 'react-router'
+import { Info } from 'lucide-react'
+import { Breadcrumbs, EmptyState, PageHeader, SectionHeading } from '../components/Common.jsx'
+import { useProfiles, examIndex, labelFor, vocabulary } from '../lib/data.js'
+import { formatDate, todayIso } from '../lib/format.js'
+
+const allIds = examIndex.map((exam) => exam.id)
+
+/** Groups events by "Month Year". */
+function groupByMonth(events) {
+  const groups = new Map()
+  for (const event of events) {
+    const key = event.date.slice(0, 7)
+    groups.set(key, [...(groups.get(key) ?? []), event])
+  }
+  return [...groups.entries()]
+}
+
+/** Event list for one period. */
+function EventGroups({ events }) {
+  if (!events.length) return <EmptyState title="No dated events">Nothing in this period for the chosen government.</EmptyState>
+  return groupByMonth(events).map(([month, monthEvents]) => (
+    <section key={month} className="calendar-month">
+      <h3>{formatDate(month)}</h3>
+      <ol className="event-list">
+        {monthEvents.map((event) => (
+          <li key={`${event.examId}-${event.cycle}-${event.event}-${event.date}`}>
+            <span className="event-date numeric">{formatDate(event.date)}</span>
+            <span className="event-name">
+              <Link to={`/exams/${event.examId}`}>{event.examLabel}</Link>
+              <span className="muted">
+                {' '}
+                {event.cycle}: {event.event}
+              </span>
+              {event.dateType === 'official-tentative' && <span className="faint"> (tentative, official calendar)</span>}
+            </span>
+            <span className="faint small">{labelFor('jurisdictions', event.jurisdiction)}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))
+}
+
+/** Calendar page. */
+export default function CalendarPage() {
+  const { profiles, isLoading } = useProfiles(allIds)
+  const [region, setRegion] = useState('')
+  const today = todayIso()
+
+  const events = useMemo(
+    () =>
+      profiles
+        .filter((exam) => !region || exam.jurisdiction === region)
+        .flatMap((exam) =>
+          (exam.status.cycles ?? []).flatMap((cycle) =>
+            cycle.events
+              .filter((event) => event.date)
+              .map((event) => ({ ...event, cycle: cycle.cycle, examId: exam.id, examLabel: exam.abbreviation || exam.name, jurisdiction: exam.jurisdiction })),
+          ),
+        ),
+    [profiles, region],
+  )
+  const upcoming = events.filter((event) => event.date >= today).sort((a, b) => a.date.localeCompare(b.date))
+  const past = events.filter((event) => event.date < today).sort((a, b) => b.date.localeCompare(a.date))
+
+  return (
+    <>
+      <Breadcrumbs items={[{ label: 'Tools', to: '/tools' }, { label: 'Calendar' }]} />
+      <PageHeader eyebrow="Tool" title="Official dates" lead="Notifications, application deadlines, exams and results taken from official notices and calendars." />
+      <div className="callout">
+        <Info size={18} aria-hidden="true" />
+        <div>Recruiters change dates often. Tentative dates come only from official annual calendars. Confirm every date on the official website before acting.</div>
+      </div>
+      <div className="tool-controls">
+        <label className="field inline-field">
+          <span>Government</span>
+          <select value={region} onChange={(event) => setRegion(event.target.value)}>
+            <option value="">All</option>
+            {Object.entries(vocabulary.jurisdictions).map(([key, label]) => (
+              <option key={key} value={key}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+      {isLoading ? (
+        <div className="page-fallback" aria-busy="true" />
+      ) : (
+        <>
+          <SectionHeading number="01" title="Upcoming" description={`${upcoming.length} dated events from ${formatDate(today)}`} />
+          <EventGroups events={upcoming} />
+          <SectionHeading number="02" title="Recent and past" description="Most recent first." />
+          <EventGroups events={past.slice(0, 120)} />
+        </>
+      )}
+    </>
+  )
+}

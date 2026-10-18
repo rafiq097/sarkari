@@ -1,122 +1,65 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+/**
+ * Route table for the portal. Every page renders inside Layout; pages are lazily
+ * loaded so the first paint only ships the shell and the compact exam index.
+ */
+import { lazy, Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import { Layout } from './components/Layout.jsx'
+import { SavedProvider } from './lib/saved.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
+const HomePage = lazy(() => import('./pages/HomePage.jsx'))
+const DirectoryPage = lazy(() => import('./pages/DirectoryPage.jsx'))
+const RegionPage = lazy(() => import('./pages/RegionPage.jsx'))
+const ExamPage = lazy(() => import('./pages/ExamPage.jsx'))
+const ComparePage = lazy(() => import('./pages/ComparePage.jsx'))
+const EligibilityPage = lazy(() => import('./pages/EligibilityPage.jsx'))
+const SyllabusPage = lazy(() => import('./pages/SyllabusPage.jsx'))
+const SalaryPage = lazy(() => import('./pages/SalaryPage.jsx'))
+const AnalyticsPage = lazy(() => import('./pages/AnalyticsPage.jsx'))
+const CalendarPage = lazy(() => import('./pages/CalendarPage.jsx'))
+const SourcesPage = lazy(() => import('./pages/SourcesPage.jsx'))
+const CoveragePage = lazy(() => import('./pages/CoveragePage.jsx'))
+const SavedPage = lazy(() => import('./pages/SavedPage.jsx'))
+const ToolsPage = lazy(() => import('./pages/ToolsPage.jsx'))
+const MethodologyPage = lazy(() => import('./pages/MethodologyPage.jsx'))
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage.jsx'))
 
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+/** Quiet placeholder while a page chunk loads (usually a few milliseconds). */
+function PageFallback() {
+  return <div className="page-fallback" aria-hidden="true" />
 }
 
-export default App
+/** Root component: saved-state provider, router and routes. */
+export default function App() {
+  return (
+    <SavedProvider>
+      <BrowserRouter>
+        <Suspense fallback={<PageFallback />}>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route path="exams" element={<DirectoryPage />} />
+              <Route path="exams/:examId" element={<ExamPage />} />
+              <Route path="central" element={<RegionPage jurisdiction="central" />} />
+              <Route path="andhra-pradesh" element={<RegionPage jurisdiction="andhra-pradesh" />} />
+              <Route path="telangana" element={<RegionPage jurisdiction="telangana" />} />
+              <Route path="karnataka" element={<RegionPage jurisdiction="karnataka" />} />
+              <Route path="compare" element={<ComparePage />} />
+              <Route path="eligibility" element={<EligibilityPage />} />
+              <Route path="syllabus" element={<SyllabusPage />} />
+              <Route path="salary" element={<SalaryPage />} />
+              <Route path="analytics" element={<AnalyticsPage />} />
+              <Route path="calendar" element={<CalendarPage />} />
+              <Route path="sources" element={<SourcesPage />} />
+              <Route path="coverage" element={<CoveragePage />} />
+              <Route path="saved" element={<SavedPage />} />
+              <Route path="tools" element={<ToolsPage />} />
+              <Route path="methodology" element={<MethodologyPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </SavedProvider>
+  )
+}

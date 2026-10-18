@@ -4,37 +4,22 @@
  */
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
-import { Menu, X, BookMarked, GitCompareArrows, UserCheck, Layers, IndianRupee, ChartLine, CalendarDays, Library, ClipboardList, Compass } from 'lucide-react'
+import { Menu, X, BookMarked, GitCompareArrows, Library, ClipboardList, Compass } from 'lucide-react'
+import { regionLinks, toolLinks } from '../lib/navigation.js'
 import { SearchBox } from './SearchBox.jsx'
 import { useSaved } from '../lib/saved.jsx'
-import { payRules } from '../lib/data.js'
-import { formatDate } from '../lib/format.js'
-
-export const regionLinks = [
-  { to: '/central', label: 'Central' },
-  { to: '/andhra-pradesh', label: 'Andhra Pradesh' },
-  { to: '/telangana', label: 'Telangana' },
-  { to: '/karnataka', label: 'Karnataka' },
-]
-
-export const toolLinks = [
-  { to: '/eligibility', label: 'Eligibility checker', icon: UserCheck, text: 'See which exams fit your age, category and degree.' },
-  { to: '/compare', label: 'Compare', icon: GitCompareArrows, text: 'Up to four exams side by side.' },
-  { to: '/syllabus', label: 'Syllabus overlap', icon: Layers, text: 'Find exams you can prepare for together.' },
-  { to: '/salary', label: 'Salary and career', icon: IndianRupee, text: 'Pay level, allowances, in-hand estimate and promotions.' },
-  { to: '/analytics', label: 'Cutoffs and selection', icon: ChartLine, text: 'Official cutoffs, vacancies and selection rates.' },
-  { to: '/calendar', label: 'Calendar', icon: CalendarDays, text: 'Official dates and recruitment status.' },
-]
 
 /** Header, navigation and footer around the current page. */
 export function Layout() {
   const location = useLocation()
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  // The menu belongs to the path it was opened on, so any navigation closes it.
+  const [menuOpenOnPath, setMenuOpenOnPath] = useState(null)
+  const isMenuOpen = menuOpenOnPath === location.pathname
+  const setIsMenuOpen = (shouldOpen) => setMenuOpenOnPath(shouldOpen ? location.pathname : null)
   const { bookmarks, compare } = useSaved()
 
-  // Close the mobile menu and return to the top whenever the route changes.
+  // Return to the top whenever the route changes.
   useEffect(() => {
-    setIsMenuOpen(false)
     window.scrollTo({ top: 0 })
   }, [location.pathname])
 
@@ -80,7 +65,7 @@ export function Layout() {
               {bookmarks.length > 0 && <span className="pip">{bookmarks.length}</span>}
               <span className="visually-hidden">Saved exams ({bookmarks.length})</span>
             </NavLink>
-            <button type="button" className="header-icon menu-toggle" aria-expanded={isMenuOpen} aria-controls="mobile-menu" onClick={() => setIsMenuOpen((open) => !open)}>
+            <button type="button" className="header-icon menu-toggle" aria-expanded={isMenuOpen} aria-controls="mobile-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
               <span className="visually-hidden">Menu</span>
             </button>
@@ -121,7 +106,6 @@ export function Layout() {
               Sarkari <em>Atlas</em>
             </p>
             <p>An independent research guide to Central, Andhra Pradesh, Telangana and Karnataka government recruitment. Not affiliated with any government body. The official notification is always authoritative.</p>
-            <p className="footer-date">Pay rules verified {formatDate(payRules.asOf)}.</p>
           </div>
           <div>
             <p className="footer-heading">Browse</p>

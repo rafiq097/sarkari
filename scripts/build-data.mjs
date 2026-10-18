@@ -111,7 +111,7 @@ function validateExam(exam, filePath) {
   validateStatus(exam, knownSourceIds)
   validateEligibilityRules(exam)
   validateRatings(exam)
-  for (const section of ['eligibility', 'selection', 'syllabus', 'salary', 'career', 'workLife', 'rankAndAllocation']) {
+  for (const section of ['eligibility', 'selection', 'syllabus', 'salary', 'career', 'workLife', 'rankAndAllocation', 'guide']) {
     checkSourceReferences(examId, section, exam[section]?.sources, knownSourceIds)
   }
   for (const row of [...(exam.cutoffs ?? []), ...(exam.statistics ?? [])]) {
@@ -170,6 +170,7 @@ function toIndexRecord(exam, today) {
     syllabusTags: exam.syllabusTags ?? [],
     cutoffCount: (exam.cutoffs ?? []).length,
     statisticCount: (exam.statistics ?? []).length,
+    hasGuide: Boolean(exam.guide?.sections?.length),
     confidence: exam.dataQuality?.confidence ?? 'low',
     sourceCount: (exam.sources ?? []).length,
     lastVerified: exam.lastVerified,

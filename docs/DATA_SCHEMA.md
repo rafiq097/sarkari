@@ -117,6 +117,18 @@ Gross / in-hand estimates are computed by the UI from `src/data/pay-rules/*.json
 ## Career
 `{ "progression": [ { "post", "level", "timeline", "timelineType": "official | typical" } ], "promotionNotes", "departmentalExams", "macp", "sources" }`
 
+## Guide (optional, used for big exams)
+Long-form explainer shown as the first profile tab.
+```
+{ "sections": [ { "title": "How the exam works",
+                  "paragraphs": ["..."],
+                  "bullets": ["..."],
+                  "table": { "columns": ["Stage", "Marks"], "rows": [["Prelims", "400"]] },
+                  "kind": "official | explainer | preparation" } ],
+  "sources": [] }
+```
+`kind: preparation` marks advice that is not official.
+
 ## Source
 `{ id, title, url, publisher, year, type: "primary | secondary", accessed }`
 
