@@ -47,35 +47,33 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 - AP SLPRB: `https://slprb.ap.gov.in/` (2026 press note is a scanned image).
 - RBI opportunities page did not parse; RBI facts used a secondary report.
 
-## 6. Done (44 profiles, all committed)
+## 6. Done (44 profiles, all committed; scope = Central, AP, Telangana)
 Central (24): upsc-cse (full guide), upsc-ifos, upsc-ese, upsc-cds, upsc-nda-na, upsc-capf-ac, ssc-cgl, ssc-chsl, ssc-je, ssc-stenographer, ssc-cht, ssc-cpo, ssc-gd-constable, rrb-ntpc-graduate, rrb-ntpc-undergraduate, rrb-je, rpf-si, rpf-constable, ibps-po, ibps-clerk, ibps-rrb, sbi-po, sbi-junior-associate, rbi-grade-b.
-Andhra Pradesh (12): ap-power-aee, ap-tet, ap-dsc, appsc-hwo, appsc-amvi, appsc-aso-statistics, appsc-horticulture-officer, appsc-group-1 (07/2026, 166 posts, screening 24 Jan 2027), appsc-group-2 (37/2026, 686 posts), appsc-aee (27/2026), ap-police-si, ap-police-constable (SLPRB 2026).
-Telangana (8): ts-police, tg-dsc, tgpsc-aee, tg-tet, tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4.
-Karnataka: none yet.
-Removed by scope: ssc-mts-havaldar.
+Andhra Pradesh (12): appsc-group-1 (07/2026), appsc-group-2 (37/2026), appsc-aee (27/2026), appsc-hwo (25/2026), appsc-amvi (36/2026), appsc-aso-statistics (20/2026), appsc-horticulture-officer (19/2026), ap-police-si, ap-police-constable (SLPRB Sep 2026), ap-dsc (2026 prelim notice, 2,721 posts), ap-tet (2026), ap-power-aee (630 AEE posts 2026).
+Telangana (8): tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4, tgpsc-aee (01/G/RB/2026), tg-tet, tg-dsc (recurring, 2024 cycle), ts-police (TGPRB 2026: 7,437 posts, official press note).
+Karnataka: DROPPED from scope at Rafiq's request (removed from nav, routes, vocabulary, pay rules).
+Removed by scope rule: ssc-mts-havaldar.
 
-## 7. Researched but NOT yet written (facts ready)
-- (WRITTEN as tgpsc-aee) TGPSC AEE (Civil) R&B, Notification 01/G/RB/2026 dated 02/06/2026: 222 posts (multi-zone), age 18-44 on 01/07/2026 (G.O.Ms.No.86 GA dt 18/05/2026 raised upper age by 10 years, 34 to 44), pay 54,220-1,33,630, apply 06/06/2026 to 13/07/2026 5 PM, exam tentatively October 2026, objective: Paper I GS & General Abilities 150 Q/150 M/150 min, Paper II Civil Engg (degree) 150 Q/300 M/150 min, total 450; min marks OC/EWS/sports 40%, BC 35%, SC/ST/PH 30%. Source: TGPSC directRecruitment page (preview link). Also 02/G/RB/2026 AEE (Electrical) exists.
-- (WRITTEN as tg-tet) TG TET June 2026: notification 13 Apr 2026, apply 15-30 Apr, CBT 15-30 Jun 2026, no negative marking, fee Rs 750/1000 (Gen/OBC), Rs 700/950 (SC/ST/PwBD); TET score has 20% weightage in TRT; held twice a year. Source: Careers360 article (secondary).
-- TG DSC 2026: not officially notified by mid-Oct 2026 (last DSC 2024 had 11,062 posts).
-- Other APPSC 2026 notices on the list page (not profiled): ASO 20/2026, HWO 25/2026, ASWO/ATWO 26/2026, AMVI 36/2026, Horticulture 19/2026, Asst. Environmental Engineer 08/2026, Inspector of Factories 14/2026, Asst. Director 09/2026, Draughtsman 15/2026, FSO 17/2026, FBO 18/2026 (23 posts, 25,220), FRO 16/2026 (5 posts, skipped).
-- TGPSC 2026 notices: DEO/Gazetted HM 03/G/SE/2026, DIET lecturers 04/G/SE/2026, Town Planning 05 and 06/G/TP/2026, TGPCB AEE and Analyst.
-- NABARD Grade A 2026: not notified as of Aug 2026. RBI Grade B 2026: 60 posts (done).
+## 7. Research leads (not profiled)
+- APPSC 2026 notices still unprofiled: ASWO/ATWO 26/2026, Asst. Environmental Engineer 08/2026, Inspector of Factories 14/2026, Asst. Director 09/2026, Draughtsman 15/2026, FSO 17/2026, FBO 18/2026 (23 posts), FRO 16/2026 (5 posts, skipped as minor). List page: https://portal-psc.ap.gov.in/HomePages/RecruitmentNotifications.aspx
+- TGPSC small 2026 notices skipped as less preferred (listed in coverage): DEO/Gazetted HM 03/G/SE/2026 (24 posts, 58,850), DIET lecturers 04/G/SE/2026 (~45), TGPCB AEE 02/OG/PC/2026 (19), ADTP 05/G/TP/2026 (10). AEE (Electrical) 02/G/RB/2026 also exists.
+- Telangana still to research: TREIRB gurukul teachers, MHSRB staff nurse, TG power utilities AE, Singareni. TG DSC 2026 official notice when released.
+- AP still to research: APPSC lecturers (Degree/Junior/Polytechnic, 2023 cycles with 2026 results).
+- NABARD Grade A 2026 not notified as of Aug 2026.
 
-## 8. Next steps (in order)
-1. TS police (TGLPRB): last cycle 2022, research needed.
-2. (DROPPED) Karnataka is out of scope at Rafiq's request. Focus only on AP and Telangana.
-3. AP extras: AP DSC / AP TET (school education portal), APPSC ASO 20/2026, HWO.
-4. Central extras worth adding: UPSC CMS, IES/ISS, CGS, EPFO EO/APFC; AFCAT; Agniveer (fixed tenure); NABARD Grade A, SEBI Grade A, LIC AAO; ISRO ICRB scientist, DRDO, BARC, GATE (as eligibility route) + major PSUs via GATE; KVS/NVS teachers, CTET, UGC NET; AIIMS NORCET; IB ACIO; EPFO SSA; FCI; ESIC.
-5. (DONE) coverage.json filled; keep it updated as profiles are added.
-6. (README DONE) Final browser screenshots (Chrome headless: `"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --screenshot=... --window-size=1360,1500 http://localhost:4173/...`; headless minimum width is about 500px), lint, build, stop the preview server, commit.
+## 8. Next steps (when Rafiq asks)
+1. More AP and Telangana profiles from section 7 (priority: TREIRB gurukul, MHSRB staff nurse, APPSC lecturers, TG power AE).
+2. Central extras (only if asked): UPSC CMS, IES/ISS, CGS, EPFO EO/APFC; AFCAT; Agniveer; NABARD, SEBI, LIC AAO; ISRO, DRDO, BARC, GATE PSUs; KVS/NVS, CTET, UGC NET; AIIMS NORCET; IB ACIO; EPFO SSA; FCI; ESIC.
+3. Keep src/data/coverage.json updated as profiles are added.
+4. Final QA: browser screenshots (Chrome headless: ; headless minimum width is about 500px; test /plan and /profile after saving a profile manually), lint, build, stop the preview server, commit.
 
 ## 9. Known UI/data notes
-- Karnataka HRA percentages under the 2024 scales are not verified; AP 10% HRA slab ceiling not verified.
+- AP 10% HRA slab ceiling not verified.
 - Defence pay rule set has no pension deduction (armed forces outside NPS) and adds MSP 15,500 with DA.
 - Bank and RBI gross pay are not modelled (quarterly DA); `officialGross` shows where the recruiter states it (SBI JA about Rs 46,000 at metro).
 
 ## 10. Latest additions
 - My Profile (`/profile`): details saved in browser, editable any time, used on exam pages (Your eligibility panel), cards (verdict badge), home strip, calendar filter, directory filter, eligibility checker.
 - Your plan (`/plan`, `src/lib/recommend.js`, `src/pages/PlanPage.jsx`): ranked picks with transparent points and reasons, focus subjects, prepare-together (syllabus overlap with top pick), last-chance-by-age alerts, coming-up dates. Linked from home, profile and tools.
-- Rafiq paused exam data work ("leave exams, I will start later"). Resume from section 8 when he asks.
+- Coverage report (src/data/coverage.json) and README are done.
+- Rafiq stopped work here (Oct 2026). Resume from section 8 only when he asks.
