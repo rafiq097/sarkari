@@ -1496,3 +1496,86 @@ strong.figure {
 .status-tile {
   grid-template-columns: minmax(0, 1fr);
 }
+
+/* My profile markers */
+.pip-dot {
+  min-width: 9px;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  top: 7px;
+  right: 7px;
+  background: var(--sage);
+}
+
+.verdict-badge {
+  font-size: 0.68rem;
+  padding: 1px 7px 1px 5px;
+}
+
+.for-you {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: var(--radius-large);
+  border: 1px solid var(--line-strong);
+  background: var(--bg-raised);
+}
+
+.for-you.tone-sage { border-color: #7fd4a366; }
+.for-you.tone-sage > svg { color: var(--sage); }
+.for-you.tone-accent { border-color: #ffd21f55; }
+.for-you.tone-accent > svg { color: var(--accent); }
+.for-you.tone-brick { border-color: #ff7d5c66; }
+.for-you.tone-brick > svg { color: var(--brick); }
+
+.for-you-empty {
+  align-items: center;
+  color: var(--text-muted);
+}
+
+.for-you-empty > svg {
+  color: var(--accent);
+}
+
+.for-you-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.personal-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 36px;
+  padding: 16px 20px;
+  border-radius: var(--radius-large);
+  border: 1px dashed #ffd21f66;
+  background: var(--accent-soft);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.personal-strip > svg:first-child {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.personal-strip > svg:last-child {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.personal-strip.is-set {
+  border-style: solid;
+  border-color: #7fd4a366;
+  background: var(--sage-soft);
+}
+
+.personal-strip.is-set > svg:first-child {
+  color: var(--sage);
+}
+
+.personal-strip:hover {
+  border-color: var(--accent);
+}

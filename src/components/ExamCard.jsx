@@ -5,6 +5,7 @@
 import { Link } from 'react-router'
 import { Bookmark, BookmarkCheck, GitCompareArrows, Check, Landmark, MapPin, CalendarClock } from 'lucide-react'
 import { StatusBadge, LevelMeter } from './Badges.jsx'
+import { VerdictBadge } from './MyVerdict.jsx'
 import { useSaved } from '../lib/saved.jsx'
 import { labelFor } from '../lib/data.js'
 import { formatDate, formatRupees } from '../lib/format.js'
@@ -57,6 +58,7 @@ export function ExamCard({ exam }) {
     <article className="exam-card">
       <div className="exam-card-top">
         <StatusBadge status={exam.status} />
+        <VerdictBadge exam={exam} />
         <span className="exam-card-sector">{labelFor('sectors', exam.sector)}</span>
         <div className="exam-card-actions">
           <BookmarkButton examId={exam.id} compact />

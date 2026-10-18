@@ -7,8 +7,10 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router'
 import { Info } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SectionHeading } from '../components/Common.jsx'
-import { useProfiles, examIndex, labelFor, vocabulary } from '../lib/data.js'
+import { useProfiles, examIndex, labelFor, vocabulary, getIndexRecord } from '../lib/data.js'
 import { formatDate, todayIso } from '../lib/format.js'
+import { useSaved } from '../lib/saved.jsx'
+import { verdictFor, isProfileUsable } from '../lib/candidate.js'
 
 const allIds = examIndex.map((exam) => exam.id)
 
@@ -52,12 +54,16 @@ function EventGroups({ events }) {
 export default function CalendarPage() {
   const { profiles, isLoading } = useProfiles(allIds)
   const [region, setRegion] = useState('')
+  const { candidate } = useSaved()
+  const [onlyMine, setOnlyMine] = useState(false)
+  const hasProfile = isProfileUsable(candidate)
   const today = todayIso()
 
   const events = useMemo(
     () =>
       profiles
         .filter((exam) => !region || exam.jurisdiction === region)
+        .filter((exam) => !onlyMine || !hasProfile || verdictFor(getIndexRecord(exam.id), candidate)?.verdict !== 'not-eligible')
         .flatMap((exam) =>
           (exam.status.cycles ?? []).flatMap((cycle) =>
             cycle.events
@@ -65,7 +71,7 @@ export default function CalendarPage() {
               .map((event) => ({ ...event, cycle: cycle.cycle, examId: exam.id, examLabel: exam.abbreviation || exam.name, jurisdiction: exam.jurisdiction })),
           ),
         ),
-    [profiles, region],
+    [profiles, region, onlyMine, hasProfile, candidate],
   )
   const upcoming = events.filter((event) => event.date >= today).sort((a, b) => a.date.localeCompare(b.date))
   const past = events.filter((event) => event.date < today).sort((a, b) => b.date.localeCompare(a.date))
@@ -90,6 +96,11 @@ export default function CalendarPage() {
             ))}
           </select>
         </label>
+        {hasProfile && (
+          <label className="check-row">
+            <input type="checkbox" checked={onlyMine} onChange={(event) => setOnlyMine(event.target.checked)} /> Only exams that may fit my profile
+          </label>
+        )}
       </div>
       {isLoading ? (
         <div className="page-fallback" aria-busy="true" />

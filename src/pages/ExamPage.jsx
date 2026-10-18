@@ -11,7 +11,8 @@ import { OverviewTab, EligibilityTab } from '../components/profile/ProfileBasics
 import { GuideTab, SelectionTab, SyllabusTab } from '../components/profile/ProfileExam.jsx'
 import { StatsTab, SalaryTab } from '../components/profile/ProfileNumbers.jsx'
 import { WorkTab, SourcesTab } from '../components/profile/ProfileJudgement.jsx'
-import { useProfile, labelFor, jurisdictionRoutes } from '../lib/data.js'
+import { useProfile, labelFor, jurisdictionRoutes, getIndexRecord } from '../lib/data.js'
+import { ForYouPanel } from '../components/MyVerdict.jsx'
 import { formatRupees } from '../lib/format.js'
 
 const allTabs = [
@@ -100,6 +101,7 @@ export default function ExamPage() {
             <dd>{labelFor('employmentTypes', exam.employmentType)}</dd>
           </div>
         </dl>
+        {!isHistorical && <ForYouPanel exam={getIndexRecord(exam.id)} />}
         {isHistorical && (
           <div className="callout callout-brick">
             <AlertTriangle size={18} aria-hidden="true" />

@@ -4,7 +4,7 @@
  */
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
-import { Menu, X, BookMarked, GitCompareArrows, Library, ClipboardList, Compass } from 'lucide-react'
+import { Menu, X, BookMarked, GitCompareArrows, Library, ClipboardList, Compass, UserRound } from 'lucide-react'
 import { regionLinks, toolLinks } from '../lib/navigation.js'
 import { SearchBox } from './SearchBox.jsx'
 import { useSaved } from '../lib/saved.jsx'
@@ -16,7 +16,7 @@ export function Layout() {
   const [menuOpenOnPath, setMenuOpenOnPath] = useState(null)
   const isMenuOpen = menuOpenOnPath === location.pathname
   const setIsMenuOpen = (shouldOpen) => setMenuOpenOnPath(shouldOpen ? location.pathname : null)
-  const { bookmarks, compare } = useSaved()
+  const { bookmarks, compare, candidate } = useSaved()
 
   // Return to the top whenever the route changes.
   useEffect(() => {
@@ -60,6 +60,11 @@ export function Layout() {
               {compare.length > 0 && <span className="pip">{compare.length}</span>}
               <span className="visually-hidden">Comparison ({compare.length})</span>
             </NavLink>
+            <NavLink to="/profile" className="header-icon" title="My profile">
+              <UserRound size={18} aria-hidden="true" />
+              {candidate && <span className="pip pip-dot" aria-hidden="true" />}
+              <span className="visually-hidden">My profile{candidate ? ' (saved)' : ''}</span>
+            </NavLink>
             <NavLink to="/saved" className="header-icon" title="Saved exams">
               <BookMarked size={18} aria-hidden="true" />
               {bookmarks.length > 0 && <span className="pip">{bookmarks.length}</span>}
@@ -80,6 +85,9 @@ export function Layout() {
               {link.label}
             </NavLink>
           ))}
+          <NavLink to="/profile">
+            <UserRound size={16} aria-hidden="true" /> My profile
+          </NavLink>
           <p className="menu-label">Tools</p>
           {toolLinks.map((link) => (
             <NavLink key={link.to} to={link.to}>
@@ -129,6 +137,7 @@ export function Layout() {
             <Link to="/sources">Source directory</Link>
             <Link to="/coverage">Coverage report</Link>
             <Link to="/methodology">Methodology</Link>
+            <Link to="/profile">My profile</Link>
             <Link to="/saved">Saved exams</Link>
           </div>
         </div>

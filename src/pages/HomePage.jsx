@@ -3,7 +3,9 @@
  * dates, in-depth guides and the tool list. All numbers come from the exam index.
  */
 import { Link } from 'react-router'
-import { ArrowRight, Landmark, MapPinned, CalendarClock, BookOpenText, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Landmark, MapPinned, CalendarClock, BookOpenText, ShieldCheck, UserRound } from 'lucide-react'
+import { useSaved } from '../lib/saved.jsx'
+import { isProfileUsable, summariseMatches } from '../lib/candidate.js'
 import { SearchBox } from '../components/SearchBox.jsx'
 import { Counter, Reveal, SectionHeading } from '../components/Common.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
@@ -28,6 +30,35 @@ function upcomingEvents(limit) {
     .filter((exam) => exam.keyEvent?.upcoming && exam.keyEvent.date >= today)
     .sort((a, b) => a.keyEvent.date.localeCompare(b.keyEvent.date))
     .slice(0, limit)
+}
+
+/** Personal summary when a profile is saved, otherwise an invitation to create one. */
+function PersonalStrip() {
+  const { candidate } = useSaved()
+  if (!isProfileUsable(candidate)) {
+    return (
+      <Link to="/profile" className="personal-strip">
+        <UserRound size={20} aria-hidden="true" />
+        <span>
+          <strong>Set up your profile once</strong>
+          <span className="muted"> Enter age, category and degree, and every page will show what fits you. No login.</span>
+        </span>
+        <ArrowRight size={16} aria-hidden="true" />
+      </Link>
+    )
+  }
+  const matches = summariseMatches(candidate)
+  const preferred = matches.eligible.filter((entry) => entry.preferred).length
+  return (
+    <Link to="/profile" className="personal-strip is-set">
+      <UserRound size={20} aria-hidden="true" />
+      <span>
+        <strong>{candidate.name ? `${candidate.name}, ` : ''}you likely fit {matches.eligible.length} exams</strong>
+        <span className="muted"> ({preferred} in your preferred governments and sectors), and {matches.check.length} need a closer look.</span>
+      </span>
+      <ArrowRight size={16} aria-hidden="true" />
+    </Link>
+  )
 }
 
 /** Landing page. */
@@ -77,6 +108,8 @@ export default function HomePage() {
           </div>
         </dl>
       </section>
+
+      <PersonalStrip />
 
       <SectionHeading number="01" title="Choose a government" description="Each section lists every profiled exam and recruitment route for that government." />
       <div className="region-grid">
