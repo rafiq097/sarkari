@@ -1,0 +1,281 @@
+{
+  "id": "tgpsc-group-3",
+  "name": "TGPSC Group-III Services",
+  "abbreviation": "TGPSC Group 3",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "revenue-clerical",
+  "organization": {
+    "id": "tgpsc",
+    "name": "Telangana Public Service Commission (formerly TSPSC)",
+    "abbreviation": "TGPSC",
+    "website": "https://www.tgpsc.gov.in"
+  },
+  "department": "Government of Telangana",
+  "technical": false,
+  "summary": "Telangana Group-III posts such as Senior Accountant, Auditor, Senior Assistant and Junior Accountant in various departments. Three objective papers (450 marks).",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "TGPSC notifications",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Last cycle: Notification 29/2022; exam in November 2024 for about 1,388 posts; results in 2025.",
+    "cycles": [
+      {
+        "cycle": "Notification 29/2022",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2022-12-30",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Senior Accountant, Auditor, Senior Assistant and similar",
+      "group": "Group-III",
+      "payLevel": "RPS 2020",
+      "startingBasic": 32810,
+      "responsibilities": "Accounts and office work.",
+      "notes": "Senior Accountant (Finance) 32,810-96,890 in 2022."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Telangana State Government employees",
+          "years": 5,
+          "note": "Based on service."
+        },
+        {
+          "category": "Ex-servicemen, NCC instructors",
+          "years": 3,
+          "note": "Plus length of service."
+        }
+      ],
+      "summary": "18 to 44 on 1 July 2022 (2022 cycle).",
+      "referenceDate": "1 July (2022 cycle)"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre rules.",
+    "education": {
+      "summary": "A bachelor's degree (some posts need commerce or specific subjects).",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Telangana rules: SC 15% (sub-categorised into three groups under the 2025 SC rationalisation Act), ST 10%, BC 29% (A 7%, B 10%, C 1%, D 7%, E 4%), EWS 10%. Horizontal reservation for women (33 1/3%), PwBD, ex-servicemen and sportspersons. 95% of posts in local cadres are reserved for local candidates under the Presidential Order 2018.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "any"
+    ],
+    "notes": "",
+    "ageMin": 18,
+    "ageMax": 44,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Written exam (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper I: General Studies and General Abilities",
+            "marks": 150,
+            "questions": 150
+          },
+          {
+            "name": "Paper II: History, Polity and Society (incl. Telangana state formation)",
+            "marks": 150,
+            "questions": 150
+          },
+          {
+            "name": "Paper III: Economy and Development",
+            "marks": 150,
+            "questions": 150
+          }
+        ]
+      }
+    ],
+    "meritCalculation": "Merit on 450 marks. Minimum aggregate to qualify: 40% (OC, EWS, sportspersons), 35% (BC), 30% (SC, ST, PH).",
+    "languages": "English, Telugu, Urdu."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://websitenew.tgpsc.gov.in/directRecruitment",
+    "sections": [
+      {
+        "stage": "Written",
+        "subject": "Three papers",
+        "topics": [
+          "General studies",
+          "History, polity and society with Telangana formation",
+          "Economy and development"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "general-awareness",
+    "reasoning",
+    "telangana-history-culture",
+    "telangana-movement",
+    "indian-polity",
+    "indian-economy",
+    "telangana-economy-policy"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2022,
+      "vacancies": 1363,
+      "note": "Total in the notification table (reported 1,388 after additions).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": "From about 32,810",
+    "startingBasic": 32810,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Senior Accountant / Senior Assistant",
+        "level": "Group-III",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Superintendent",
+        "level": "Higher scale",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ]
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Offices across Telangana.",
+    "transfers": "Limited.",
+    "nature": "Desk.",
+    "workload": "Moderate.",
+    "publicInteraction": "Moderate.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Objective three-paper exam, large field."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "low",
+    "rationale": "Desk posts close to home; irregular notifications."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Group notifications come every few years."
+      },
+      {
+        "factor": "Litigation and leaks",
+        "level": "high",
+        "note": "The 2022 Group-I was cancelled after a paper leak; the 2024 Group-I was litigated until the Supreme Court in April 2026."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TGPSC Notification No. 29/2022: Group-III Services",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment",
+      "publisher": "Telangana Public Service Commission",
+      "year": 2022,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Post list summarised.",
+      "Next cycle not notified."
+    ],
+    "notes": "From the official 2022 notification."
+  },
+  "lastVerified": "2026-10-18"
+}

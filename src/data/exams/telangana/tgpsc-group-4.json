@@ -1,0 +1,300 @@
+{
+  "id": "tgpsc-group-4",
+  "name": "TGPSC Group-IV Services",
+  "abbreviation": "TGPSC Group 4",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "revenue-clerical",
+  "organization": {
+    "id": "tgpsc",
+    "name": "Telangana Public Service Commission (formerly TSPSC)",
+    "abbreviation": "TGPSC",
+    "website": "https://www.tgpsc.gov.in"
+  },
+  "department": "Government of Telangana",
+  "technical": false,
+  "summary": "The largest Telangana recruitment for Junior Assistant, Junior Accountant, Ward Officer and similar posts. Two objective papers: General Studies and Secretarial Abilities (300 marks).",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "TGPSC notifications",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Last cycle: Notification 19/2022 (about 8,000 posts); exam held in 2023 and results in 2024.",
+    "cycles": [
+      {
+        "cycle": "Notification 19/2022",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2022-12-01",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Junior Assistant, Junior Accountant, Ward Officer and similar",
+      "group": "Group-IV",
+      "payLevel": "RPS 2020",
+      "startingBasic": 24280,
+      "responsibilities": "Office and accounts support in departments and municipalities.",
+      "notes": "Junior Accountant (Director of Insurance) 24,280-72,850 in 2022."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Telangana State Government employees",
+          "years": 5,
+          "note": "Based on service."
+        },
+        {
+          "category": "Ex-servicemen, NCC instructors",
+          "years": 3,
+          "note": "Plus length of service."
+        }
+      ],
+      "summary": "18 to 44 on 1 July 2022 (2022 cycle).",
+      "referenceDate": "1 July (2022 cycle)"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre rules (district posts).",
+    "education": {
+      "summary": "A bachelor's degree for most posts.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Telangana rules: SC 15% (sub-categorised into three groups under the 2025 SC rationalisation Act), ST 10%, BC 29% (A 7%, B 10%, C 1%, D 7%, E 4%), EWS 10%. Horizontal reservation for women (33 1/3%), PwBD, ex-servicemen and sportspersons. 95% of posts in local cadres are reserved for local candidates under the Presidential Order 2018.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "any"
+    ],
+    "notes": "",
+    "ageMin": 18,
+    "ageMax": 44,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Written exam (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper I: General Studies",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes"
+          },
+          {
+            "name": "Paper II: Secretarial Abilities",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes"
+          }
+        ]
+      }
+    ],
+    "meritCalculation": "Merit on 300 marks. Minimum aggregate to qualify: 40% (OC, EWS, sportspersons), 35% (BC), 30% (SC, ST, PH).",
+    "languages": "English, Telugu, Urdu."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://websitenew.tgpsc.gov.in/directRecruitment",
+    "sections": [
+      {
+        "stage": "Paper I",
+        "subject": "General Studies",
+        "topics": [
+          "Current affairs and international events",
+          "General science, environment and disaster management",
+          "Geography and economy of India and Telangana",
+          "Indian constitution and political system",
+          "Modern Indian history and the national movement",
+          "History of Telangana and the Telangana movement",
+          "Society, culture, heritage, arts and literature of Telangana",
+          "Policies of the Telangana State"
+        ]
+      },
+      {
+        "stage": "Paper II",
+        "subject": "Secretarial Abilities",
+        "topics": [
+          "Mental ability (verbal and non-verbal)",
+          "Logical reasoning",
+          "Comprehension",
+          "Re-arrangement of sentences",
+          "Numerical and arithmetical abilities"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "current-affairs",
+    "general-science",
+    "environment",
+    "geography",
+    "telangana-economy-policy",
+    "indian-polity",
+    "indian-history",
+    "telangana-history-culture",
+    "telangana-movement",
+    "reasoning",
+    "quantitative-aptitude",
+    "english-language"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2022,
+      "vacancies": 8039,
+      "note": "Total in the notification table (more were added later by addenda).",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": "From 24,280",
+    "startingBasic": 24280,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Junior Assistant",
+        "level": "Group-IV",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Senior Assistant",
+        "level": "Higher scale",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      }
+    ],
+    "departmentalExams": "Departmental tests for promotion."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "District offices, often near home.",
+    "transfers": "Limited.",
+    "nature": "Desk.",
+    "workload": "Moderate.",
+    "publicInteraction": "Moderate.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Simple syllabus but a very large applicant pool."
+  },
+  "ratings": {
+    "careerGrowth": "low",
+    "locationFlexibility": "high",
+    "recruitmentRegularity": "low",
+    "rationale": "Entry-level desk posts near home; irregular."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Group notifications come every few years."
+      },
+      {
+        "factor": "Litigation and leaks",
+        "level": "high",
+        "note": "The 2022 Group-I was cancelled after a paper leak; the 2024 Group-I was litigated until the Supreme Court in April 2026."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TGPSC Notification No. 19/2022: Group-IV Services",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment",
+      "publisher": "Telangana Public Service Commission",
+      "year": 2022,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Official applicant counts not collected.",
+      "Next cycle not notified."
+    ],
+    "notes": "From the official 2022 notification."
+  },
+  "lastVerified": "2026-10-18"
+}

@@ -1,0 +1,481 @@
+{
+  "id": "tgpsc-group-1",
+  "name": "TGPSC Group-I Services",
+  "abbreviation": "TGPSC Group 1",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "civil-services",
+  "organization": {
+    "id": "tgpsc",
+    "name": "Telangana Public Service Commission (formerly TSPSC)",
+    "abbreviation": "TGPSC",
+    "website": "https://www.tgpsc.gov.in"
+  },
+  "department": "Government of Telangana",
+  "technical": false,
+  "summary": "Telangana's top state service exam: Deputy Collector, DSP, Commercial Tax Officer, MPDO, Municipal Commissioner and more. Objective Prelims, then six descriptive Main papers plus qualifying English (900 marks). There is no interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "TGPSC notifications",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "The last cycle (Notification 02/2024, 563 posts) finished its exams in 2024. The High Court division bench upheld the results in February 2026 and the Supreme Court rejected the challenges on 2 April 2026. A new Group-I notification had not appeared on the TGPSC site by October 2026.",
+    "cycles": [
+      {
+        "cycle": "Notification 02/2024",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2024-02-19",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2024-03-14",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Supreme Court upholds recruitment",
+            "date": "2026-04-02",
+            "dateType": "official",
+            "source": "s2"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Deputy Collector",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 58850,
+      "responsibilities": "Revenue Divisional Officer; path to IAS by conferment.",
+      "notes": "2024: 45 posts. Age 18 to 46."
+    },
+    {
+      "name": "Deputy Superintendent of Police Cat-II",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 58850,
+      "ageMin": 21,
+      "ageMax": 35,
+      "responsibilities": "Sub-division police officer.",
+      "notes": "2024: 115 posts. Age 21 to 35."
+    },
+    {
+      "name": "Commercial Tax Officer",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 58850,
+      "responsibilities": "State GST administration.",
+      "notes": "2024: 48 posts."
+    },
+    {
+      "name": "Mandal Parishad Development Officer",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 51320,
+      "responsibilities": "Mandal administration and rural development.",
+      "notes": "2024: 140 posts."
+    },
+    {
+      "name": "Municipal Commissioner Grade-II",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 51320,
+      "responsibilities": "Runs a municipality.",
+      "notes": "2024: 41 posts."
+    },
+    {
+      "name": "Assistant Audit Officer / Assistant Treasury Officer",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 51320,
+      "responsibilities": "State audit and treasury.",
+      "notes": "2024: 41 + 38 posts."
+    },
+    {
+      "name": "Assistant Excise Superintendent",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 51320,
+      "ageMin": 21,
+      "ageMax": 35,
+      "responsibilities": "Excise enforcement.",
+      "notes": "2024: 30 posts."
+    },
+    {
+      "name": "Regional Transport Officer, District Panchayat Officer, District Registrar, Asst. Commissioner of Labour and others",
+      "group": "Group-I",
+      "payLevel": "RPS 2020",
+      "startingBasic": 54220,
+      "responsibilities": "District heads of departments.",
+      "notes": "Smaller numbers each."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Telangana State Government employees",
+          "years": 5,
+          "note": "Based on service."
+        },
+        {
+          "category": "Ex-servicemen, NCC instructors",
+          "years": 3,
+          "note": "Plus length of service."
+        }
+      ],
+      "summary": "18 to 46 for most posts; 21 to 35 for DSP, Assistant Excise Superintendent and some others; on 1 July of the notification year (2024 cycle).",
+      "referenceDate": "1 July (2024 cycle)"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local status (by study in Telangana under the Presidential Order 2018) decides eligibility for the 95% local quota in multi-zone posts.",
+    "education": {
+      "summary": "A bachelor's degree for most posts; specific degrees for some (see notification).",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "physical": "DSP and Excise posts have physical standards.",
+    "examVsPost": "Merit is drawn multi-zone wise; you give post and zone preferences.",
+    "reservation": "Telangana rules: SC 15% (sub-categorised into three groups under the 2025 SC rationalisation Act), ST 10%, BC 29% (A 7%, B 10%, C 1%, D 7%, E 4%), EWS 10%. Horizontal reservation for women (33 1/3%), PwBD, ex-servicemen and sportspersons. 95% of posts in local cadres are reserved for local candidates under the Presidential Order 2018.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "any"
+    ],
+    "notes": "Police and excise posts close at 35. Figures from the 2024 cycle.",
+    "ageMin": 18,
+    "ageMax": 46,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Preliminary test (objective)",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "General Studies and Mental Ability",
+            "marks": 150,
+            "questions": 150,
+            "duration": "2 hours 30 minutes"
+          }
+        ],
+        "notes": "In English, Telugu and Urdu. 50 times the vacancies in each multi-zone are admitted to Mains."
+      },
+      {
+        "name": "Main exam (descriptive)",
+        "type": "descriptive",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "General English (qualifying, SSC standard)",
+            "marks": 150,
+            "duration": "3 hours",
+            "qualifying": true,
+            "notes": "Minimum 40% (OC, EWS), 35% (BC), 30% (SC, ST, PH)."
+          },
+          {
+            "name": "Paper I: General Essay",
+            "marks": 150,
+            "duration": "3 hours"
+          },
+          {
+            "name": "Paper II: History, Culture and Geography (India and Telangana)",
+            "marks": 150,
+            "duration": "3 hours"
+          },
+          {
+            "name": "Paper III: Indian Society, Constitution and Governance",
+            "marks": 150,
+            "duration": "3 hours"
+          },
+          {
+            "name": "Paper IV: Economy and Development (India and Telangana)",
+            "marks": 150,
+            "duration": "3 hours"
+          },
+          {
+            "name": "Paper V: Science, Technology and Data Interpretation",
+            "marks": 150,
+            "duration": "3 hours"
+          },
+          {
+            "name": "Paper VI: Telangana Movement and State Formation",
+            "marks": 150,
+            "duration": "3 hours"
+          }
+        ],
+        "notes": "Answer in English, Telugu or Urdu (one medium per paper)."
+      }
+    ],
+    "meritCalculation": "Final merit = six Main papers (900). No interview. Minimum aggregate to qualify: 40% (OC, EWS, sportspersons), 35% (BC), 30% (SC, ST, PH).",
+    "tieBreaking": "Ties are broken by higher marks in specified papers, then age and date of qualification, as set out in the notification.",
+    "languages": "English, Telugu, Urdu.",
+    "documentVerification": "After Mains.",
+    "probation": "As per TS State and Subordinate Service Rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://websitenew.tgpsc.gov.in/directRecruitment",
+    "sections": [
+      {
+        "stage": "Prelims",
+        "subject": "General Studies and Mental Ability",
+        "topics": [
+          "Current affairs, international relations",
+          "History of India and Telangana, Telangana movement",
+          "Geography, economy and polity of India and Telangana",
+          "Science and technology, environment",
+          "Mental ability and logical reasoning"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Six papers",
+        "topics": [
+          "Essay on social issues, economic growth, politics, heritage, science, education",
+          "History (1757 to 1947), Telangana heritage, geography of India and Telangana",
+          "Indian society, constitution, governance",
+          "Indian and Telangana economy, development and environment",
+          "Science and technology, data interpretation",
+          "Telangana idea, movement and state formation"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "indian-history",
+    "telangana-history-culture",
+    "telangana-movement",
+    "indian-polity",
+    "governance",
+    "indian-economy",
+    "telangana-economy-policy",
+    "geography",
+    "science-technology",
+    "data-interpretation",
+    "environment",
+    "essay-writing",
+    "english-language",
+    "current-affairs",
+    "reasoning"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2024,
+      "vacancies": 563,
+      "note": "Notification 02/2024.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": {
+    "sources": [
+      "s1"
+    ],
+    "text": "Selection by Mains merit, multi-zone, community and local reservation, and post preferences."
+  },
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": "51,320 to 1,37,050 (by post)",
+    "startingBasic": 58850,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment in the scale.",
+    "notes": "Starting basic shown is Deputy Collector / DSP / CTO (58,850-1,37,050).",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Deputy Collector",
+        "level": "Group-I",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Special Grade Deputy Collector",
+        "level": "Higher scale",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "IAS (conferment)",
+        "level": "IAS",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "State civil service officers can be appointed to IAS through the UPSC select list after long service."
+  },
+  "benefits": [
+    {
+      "item": "State government benefits",
+      "detail": "HRA or quarters, Employees Health Scheme, leave and LTC as per Telangana rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Across Telangana by multi-zone.",
+    "transfers": "Every 2 to 3 years.",
+    "nature": "Field administration and policing.",
+    "workload": "High.",
+    "publicInteraction": "Very high.",
+    "hazards": "Moderate for police.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "high",
+    "rationale": "Six descriptive papers with heavy Telangana content; very large applicant pool."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Top state posts, but notifications are irregular and often litigated."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Group notifications come every few years."
+      },
+      {
+        "factor": "Litigation and leaks",
+        "level": "high",
+        "note": "The 2022 Group-I was cancelled after a paper leak; the 2024 Group-I was litigated until the Supreme Court in April 2026."
+      }
+    ]
+  },
+  "guide": {
+    "sources": [
+      "s1"
+    ],
+    "sections": [
+      {
+        "title": "How TS Group-I works",
+        "kind": "official",
+        "quickFacts": [
+          {
+            "label": "Last cycle",
+            "value": "563 posts (2024)"
+          },
+          {
+            "label": "Final marks",
+            "value": "900"
+          },
+          {
+            "label": "Interview",
+            "value": "None"
+          }
+        ],
+        "paragraphs": [
+          "Prelims (150 objective marks) shortlists 50 per vacancy in each multi-zone. Mains has a qualifying English paper and six 150-mark descriptive papers, including one devoted to the Telangana movement and state formation. Rank is the Mains total; there is no interview."
+        ],
+        "bullets": [
+          "You can write each Mains paper in English, Telugu or Urdu, but not mix languages within a paper.",
+          "Local status under the 2018 Presidential Order matters for the 95% local quota."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TGPSC Notification No. 02/2024: Group-I Services",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment",
+      "publisher": "Telangana Public Service Commission",
+      "year": 2024,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "SC rejects plea on TGPSC Group 1 posts",
+      "url": "https://www.siasat.com/sc-rejects-plea-on-tgpsc-group-1-posts-cm-welcomes-ruling-3445694/",
+      "publisher": "Siasat Daily",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Next cycle not yet notified; figures are from 2024.",
+      "Cutoffs not collected."
+    ],
+    "notes": "Scheme and posts from the official 2024 notification."
+  },
+  "lastVerified": "2026-10-18"
+}

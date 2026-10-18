@@ -1,0 +1,337 @@
+{
+  "id": "tgpsc-group-2",
+  "name": "TGPSC Group-II Services",
+  "abbreviation": "TGPSC Group 2",
+  "profileType": "exam",
+  "jurisdiction": "telangana",
+  "sector": "revenue-clerical",
+  "organization": {
+    "id": "tgpsc",
+    "name": "Telangana Public Service Commission (formerly TSPSC)",
+    "abbreviation": "TGPSC",
+    "website": "https://www.tgpsc.gov.in"
+  },
+  "department": "Government of Telangana",
+  "technical": false,
+  "summary": "Telangana executive and non-executive posts such as Naib Tahsildar, Assistant Commercial Tax Officer, Sub-Registrar, Municipal Commissioner Gr-III and Assistant Section Officer. Four objective papers (600 marks); no interview.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "document-verification"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "TGPSC notifications",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment"
+    }
+  ],
+  "status": {
+    "type": "recurring",
+    "note": "Last cycle: Notification 28/2022 (783 posts); exam in December 2024; 782 selected in 2025. No new notification on the TGPSC site by October 2026.",
+    "cycles": [
+      {
+        "cycle": "Notification 28/2022",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2022-12-29",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Naib Tahsildar",
+      "group": "Group-II",
+      "payLevel": "RPS 2020",
+      "startingBasic": 42300,
+      "responsibilities": "Mandal revenue administration.",
+      "notes": "2022: 98 posts."
+    },
+    {
+      "name": "Assistant Commercial Tax Officer",
+      "group": "Group-II",
+      "payLevel": "RPS 2020",
+      "startingBasic": 42300,
+      "responsibilities": "State GST.",
+      "notes": "2022: 59 posts."
+    },
+    {
+      "name": "Municipal Commissioner Grade-III",
+      "group": "Group-II",
+      "payLevel": "RPS 2020",
+      "startingBasic": 43490,
+      "responsibilities": "Small municipality.",
+      "notes": "2022: 11 posts."
+    },
+    {
+      "name": "Sub-Registrar Grade-II, ASO, Excise SI and others",
+      "group": "Group-II",
+      "payLevel": "RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Various departments.",
+      "notes": "See the notification for counts and pay."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "Telangana State Government employees",
+          "years": 5,
+          "note": "Based on service."
+        },
+        {
+          "category": "Ex-servicemen, NCC instructors",
+          "years": 3,
+          "note": "Plus length of service."
+        }
+      ],
+      "summary": "18 to 44 on 1 July 2022 (2022 cycle).",
+      "referenceDate": "1 July (2022 cycle)"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre rules (95% local).",
+    "education": {
+      "summary": "A bachelor's degree; some posts need specific degrees.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "Telangana rules: SC 15% (sub-categorised into three groups under the 2025 SC rationalisation Act), ST 10%, BC 29% (A 7%, B 10%, C 1%, D 7%, E 4%), EWS 10%. Horizontal reservation for women (33 1/3%), PwBD, ex-servicemen and sportspersons. 95% of posts in local cadres are reserved for local candidates under the Presidential Order 2018.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": null,
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "telangana",
+    "educationFields": [
+      "any"
+    ],
+    "notes": "From the 2022 cycle.",
+    "ageMin": 18,
+    "ageMax": 44,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Written exam (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper I: General Studies and General Abilities",
+            "marks": 150,
+            "questions": 150,
+            "duration": "2 hours 30 minutes"
+          },
+          {
+            "name": "Paper II: History, Polity and Society",
+            "marks": 150,
+            "questions": 150,
+            "duration": "2 hours 30 minutes"
+          },
+          {
+            "name": "Paper III: Economy and Development",
+            "marks": 150,
+            "questions": 150,
+            "duration": "2 hours 30 minutes"
+          },
+          {
+            "name": "Paper IV: Telangana Movement and State Formation",
+            "marks": 150,
+            "questions": 150,
+            "duration": "2 hours 30 minutes"
+          }
+        ]
+      }
+    ],
+    "meritCalculation": "Merit on 600 marks. No interview. Minimum aggregate to qualify: 40% (OC, EWS, sportspersons), 35% (BC), 30% (SC, ST, PH).",
+    "languages": "English, Telugu, Urdu.",
+    "documentVerification": "After results.",
+    "probation": "As per rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://websitenew.tgpsc.gov.in/directRecruitment",
+    "sections": [
+      {
+        "stage": "Written",
+        "subject": "Four papers",
+        "topics": [
+          "General studies and abilities",
+          "Socio-cultural history of India and Telangana, constitution, society",
+          "Indian and Telangana economy, development",
+          "Telangana movement and state formation"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "general-awareness",
+    "reasoning",
+    "telangana-history-culture",
+    "indian-polity",
+    "social-issues",
+    "indian-economy",
+    "telangana-economy-policy",
+    "telangana-movement",
+    "current-affairs"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2022,
+      "vacancies": 783,
+      "selected": 782,
+      "note": "Notification 28/2022; 782 selected (1 withheld).",
+      "source": "s2"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ts-rps-2020",
+    "payLevel": "TS RPS 2020",
+    "payScale": "From 42,300 (by post)",
+    "startingBasic": 42300,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment.",
+    "notes": "Starting basic shown is Naib Tahsildar / ACTO (42,300-1,15,270).",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Naib Tahsildar",
+        "level": "Group-II",
+        "timeline": "Entry",
+        "timelineType": "official"
+      },
+      {
+        "post": "Tahsildar",
+        "level": "Higher scale",
+        "timeline": "By promotion",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Deputy Collector",
+        "level": "Group-I",
+        "timeline": "Senior",
+        "timelineType": "typical"
+      }
+    ],
+    "departmentalExams": "TGPSC departmental tests."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Mandals and offices across Telangana by zone.",
+    "transfers": "Periodic.",
+    "nature": "Field and desk.",
+    "workload": "High in revenue.",
+    "publicInteraction": "Very high.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Objective but long Telangana-heavy syllabus; lakhs of candidates."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Good posts, irregular notifications."
+  },
+  "risk": {
+    "overall": "high",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "Group notifications come every few years."
+      },
+      {
+        "factor": "Litigation and leaks",
+        "level": "high",
+        "note": "The 2022 Group-I was cancelled after a paper leak; the 2024 Group-I was litigated until the Supreme Court in April 2026."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TGPSC Notification No. 28/2022: Group-II Services",
+      "url": "https://websitenew.tgpsc.gov.in/directRecruitment",
+      "publisher": "Telangana Public Service Commission",
+      "year": 2022,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "TSPSC Group 2 result 2025: 782 candidates selected",
+      "url": "https://news.careers360.com/tspsc-group-2-result-2025-declared-782-candidates-selected-for-appointment-how-check-scorecards-tgpsc-gov-in/amp",
+      "publisher": "Careers360",
+      "year": 2025,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Next cycle not notified; ages and pay from 2022.",
+      "Full post list not reproduced."
+    ],
+    "notes": "From the official 2022 notification."
+  },
+  "lastVerified": "2026-10-18"
+}
