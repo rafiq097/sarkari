@@ -1,19 +1,19 @@
 {
   "id": "ts-police",
-  "name": "Telangana Police Sub-Inspector and Constable Recruitment",
+  "name": "Telangana Police Recruitment (SI, ASI and Constable)",
   "abbreviation": "TS Police",
   "profileType": "exam",
   "jurisdiction": "telangana",
   "sector": "capf-police",
   "organization": {
-    "id": "tslprb",
+    "id": "tgprb",
     "name": "Telangana State Level Police Recruitment Board",
-    "abbreviation": "TSLPRB",
-    "website": "https://www.tslprb.in"
+    "abbreviation": "TGPRB",
+    "website": "https://www.tgprb.in"
   },
-  "department": "Telangana Police, Excise, Fire, Prisons and SPF",
+  "department": "Telangana Police, Special Protection Force, Fire and Disaster Response, Prisons and Correctional Services",
   "technical": false,
-  "summary": "Telangana's mass police recruitment for Stipendiary Cadet Trainee Sub-Inspectors and Police Constables (civil, AR, TSSP) and related posts in excise, fire and prisons. Preliminary test, physical tests, final written exam.",
+  "summary": "Telangana's police recruitment for Stipendiary Cadet Trainee Sub-Inspectors, Police Constables and equivalent posts. The 2026 drive has 7,437 vacancies across four notifications. Written tests, physical tests and a final exam.",
   "employmentType": "permanent",
   "recruitmentMethods": [
     "competitive-exam",
@@ -21,29 +21,39 @@
     "medical-exam",
     "document-verification"
   ],
-  "frequency": "Irregular (2016, 2018, 2022)",
+  "frequency": "Irregular (2016, 2018, 2022, 2026)",
   "officialLinks": [
     {
-      "label": "TSLPRB website",
-      "url": "https://www.tslprb.in"
+      "label": "TGPRB website",
+      "url": "https://www.tgprb.in"
+    },
+    {
+      "label": "Press note, 8 Sep 2026",
+      "url": "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf"
     }
   ],
   "status": {
-    "type": "recurring",
-    "note": "The last large cycle was notified in April 2022 (applications 2 to 20 May 2022); final written results came in 2023 and selections followed. No new notification was found by October 2026.",
+    "type": "active",
+    "note": "Four notifications issued on 29 July 2026 (7,437 posts). Online applications from 19 August 2026; deadline extended to 16 September 2026. Test dates to be announced by the Board.",
     "cycles": [
       {
-        "cycle": "2022 recruitment",
+        "cycle": "Police Recruitment 2026",
         "events": [
           {
-            "event": "Applications open",
-            "date": "2022-05-02",
+            "event": "Notifications issued",
+            "date": "2026-07-29",
             "dateType": "official",
             "source": "s1"
           },
           {
-            "event": "Last date to apply",
-            "date": "2022-05-20",
+            "event": "Applications open",
+            "date": "2026-08-19",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply (extended)",
+            "date": "2026-09-16",
             "dateType": "official",
             "source": "s1"
           }
@@ -53,20 +63,36 @@
   },
   "posts": [
     {
-      "name": "SCT Sub-Inspector (Civil, AR, TSSP and others)",
+      "name": "SCT Sub-Inspector (Civil) and equivalent posts",
       "group": "Non-gazetted",
       "payLevel": "TS RPS 2020",
       "startingBasic": null,
-      "responsibilities": "Station house and investigation duties.",
-      "notes": "2022: reported 554 to 587 posts."
+      "responsibilities": "Station house and investigation duties; equivalent posts in SPF, Fire and Prisons.",
+      "notes": "275 posts. Starting annual salary incl. HRA about Rs 7,33,990 to 7,99,980 (Police/SPF) or Rs 6,74,820 to 7,35,490 (equivalent posts elsewhere), as stated by the Board."
     },
     {
-      "name": "SCT Police Constable (Civil, AR, TSSP and others)",
+      "name": "SCT Assistant Sub-Inspector, Finger Print Bureau",
       "group": "Non-gazetted",
       "payLevel": "TS RPS 2020",
       "startingBasic": null,
-      "responsibilities": "Police station and armed reserve duties.",
-      "notes": "2022: reported about 16,000 to 17,000 posts."
+      "responsibilities": "Fingerprint examination.",
+      "notes": "23 posts. Starting annual salary incl. HRA about Rs 5,85,640 to 6,38,280."
+    },
+    {
+      "name": "SCT Police Constable (Civil) and equivalent posts",
+      "group": "Non-gazetted",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Police station, armed reserve and equivalent duties.",
+      "notes": "7,112 posts. Starting annual salary incl. HRA about Rs 4,21,310 to 4,59,180."
+    },
+    {
+      "name": "SCT Police Constable (Mechanic / Driver)",
+      "group": "Non-gazetted",
+      "payLevel": "TS RPS 2020",
+      "startingBasic": null,
+      "responsibilities": "Police vehicles.",
+      "notes": "27 posts."
     }
   ],
   "eligibility": {
@@ -82,11 +108,11 @@
           "note": "As per notification."
         }
       ],
-      "summary": "Age limits are set in each notification; the 2022 notification gave extra age relaxation. Check the next notification.",
+      "summary": "Age limits are set in each notification (not reproduced here).",
       "referenceDate": "As per notification"
     },
     "nationality": "Citizen of India.",
-    "domicile": "Local cadre (district / zone) rules with 95% local reservation.",
+    "domicile": "Local cadre rules with local reservation.",
     "education": {
       "summary": "Constable: Intermediate (Class 12). SI: a bachelor's degree. Technical posts need specific qualifications.",
       "finalYearAllowed": false,
@@ -98,8 +124,8 @@
         "limit": "No attempt limit"
       }
     ],
-    "physical": "Physical measurement and efficiency tests (running, long jump, shot put) as per notification.",
-    "reservation": null,
+    "physical": "Physical measurement and efficiency tests as per notification.",
+    "reservation": "Telangana reservation rules. In 2026 the SC Group I, II and III sub-classification is applied in police recruitment for the first time, and women get 33.3% reservation in all SPF and Fire Services posts.",
     "sources": [
       "s1"
     ]
@@ -112,7 +138,7 @@
     "educationFields": [
       "any"
     ],
-    "notes": "Upper age limit depends on the notification. SI posts need a degree.",
+    "notes": "Upper age limit is in each notification. SI posts need a degree.",
     "ageMin": 18,
     "ageMax": null,
     "minEducation": "class-12",
@@ -152,7 +178,8 @@
     ],
     "meritCalculation": "Merit from the final written exam among candidates clearing the qualifying stages.",
     "languages": "English, Telugu, Urdu.",
-    "probation": "Training with stipend."
+    "documentVerification": "Aadhaar verification is used from the 2026 cycle.",
+    "probation": "Stipendiary training; regular pay after training."
   },
   "syllabus": {
     "sources": [
@@ -182,7 +209,14 @@
     "physical-fitness"
   ],
   "cutoffs": [],
-  "statistics": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 7437,
+      "note": "Interim count on 8 Sep 2026: 2,76,085 candidates had submitted applications (3,80,762 candidatures) while applications were still open.",
+      "source": "s1"
+    }
+  ],
   "rankAndAllocation": null,
   "salary": {
     "asOf": "2026-10",
@@ -190,8 +224,10 @@
     "payLevel": "TS RPS 2020",
     "payScale": null,
     "startingBasic": null,
+    "officialGross": 35109,
+    "officialGrossNote": "The Board states a starting annual salary including HRA of about Rs 4,21,310 for constables (about Rs 35,109 a month) and about Rs 7,33,990 for SIs (about Rs 61,166 a month).",
     "pension": "Contributory Pension Scheme.",
-    "notes": "Pay scales are in each notification; not confirmed here.",
+    "notes": "Risk allowance up to 50 to 60% of salary in high-risk units, family medical treatment and welfare loans, as stated by the Board.",
     "sources": [
       "s1"
     ]
@@ -215,7 +251,24 @@
       }
     ]
   },
-  "benefits": [],
+  "benefits": [
+    {
+      "item": "Risk allowance",
+      "detail": "Up to 50 to 60% of salary in high-risk units.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Medical and welfare loans",
+      "detail": "Medical treatment for employee and family; loans for house building, children's education and marriage.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
   "workLife": {
     "sources": [
       "s1"
@@ -225,7 +278,7 @@
     "nature": "Field policing.",
     "workload": "Very high.",
     "publicInteraction": "Very high.",
-    "hazards": "Moderate.",
+    "hazards": "Moderate to high in special units.",
     "stability": "Very high."
   },
   "difficulty": {
@@ -235,13 +288,13 @@
     "technicalComplexity": "low",
     "physicalRequirements": "high",
     "selectionUncertainty": "medium",
-    "rationale": "Lakhs of candidates; physical tests eliminate many."
+    "rationale": "Over 2.7 lakh applicants by 8 Sep 2026 for 7,437 posts; physical tests eliminate many."
   },
   "ratings": {
     "careerGrowth": "medium",
     "locationFlexibility": "high",
     "recruitmentRegularity": "low",
-    "rationale": "Large intakes but years apart."
+    "rationale": "Large intakes, but years apart."
   },
   "risk": {
     "overall": "medium",
@@ -249,38 +302,28 @@
       {
         "factor": "Irregular recruitment",
         "level": "high",
-        "note": "Last cycle 2022."
+        "note": "Several years between cycles."
       }
     ]
   },
   "sources": [
     {
       "id": "s1",
-      "title": "TSLPRB notification 2022: age limit and application dates",
-      "url": "https://news.aglasem.com/tslprb-notification-2022-age-limit-application-date/",
-      "publisher": "AglaSem (reports the TSLPRB notification)",
-      "year": 2022,
-      "type": "secondary",
-      "accessed": "2026-10-18"
-    },
-    {
-      "id": "s2",
-      "title": "TS Police mains result 2023 for Constable and SI",
-      "url": "https://scroll.in/announcements/1050100/ts-police-mains-result-2023-declared-for-constable-and-si-posts-check-direct-links",
-      "publisher": "Scroll",
-      "year": 2023,
-      "type": "secondary",
+      "title": "TGPRB press note on Police Recruitment 2026 (Rc Nos. 189, 225, 234 and 279/2026), 8 Sep 2026",
+      "url": "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf",
+      "publisher": "Telangana State Level Police Recruitment Board",
+      "year": 2026,
+      "type": "primary",
       "accessed": "2026-10-18"
     }
   ],
   "dataQuality": {
-    "confidence": "low",
+    "confidence": "medium",
     "gaps": [
-      "Vacancy counts for 2022 differ between reports.",
-      "Age limits, pay scales and PET standards not verified from the official notification.",
-      "Next cycle not notified."
+      "Notification texts not read: age limits, PET standards and exam pattern not reproduced.",
+      "Test dates not yet announced."
     ],
-    "notes": "Indicative profile for a recurring route."
+    "notes": "Vacancies, dates and pay from the official press note."
   },
   "lastVerified": "2026-10-18"
 }

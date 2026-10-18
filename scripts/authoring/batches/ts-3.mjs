@@ -7,7 +7,8 @@ const tslprb = { id: 'tslprb', name: 'Telangana State Level Police Recruitment B
 const tsSchool = { id: 'ts-school-education', name: 'Department of School Education, Telangana', abbreviation: 'TG School Education', website: 'https://schooledu.telangana.gov.in' }
 const tsRelax = [{ category: 'SC, ST, BC and EWS', years: 5 }, { category: 'Others', years: null, note: 'As per notification.' }]
 
-export default [
+// The ts-police spec here is superseded by ts-4.mjs (2026 official data) and is filtered out below.
+const specs = [
   {
     id: 'ts-police', name: 'Telangana Police Sub-Inspector and Constable Recruitment', abbreviation: 'TS Police', jurisdiction: 'telangana', sector: 'capf-police', organization: tslprb,
     department: 'Telangana Police, Excise, Fire, Prisons and SPF', summary: 'Telangana\'s mass police recruitment for Stipendiary Cadet Trainee Sub-Inspectors and Police Constables (civil, AR, TSSP) and related posts in excise, fire and prisons. Preliminary test, physical tests, final written exam.',
@@ -76,3 +77,5 @@ export default [
     dataQuality: { confidence: 'low', gaps: ['Official DSC 2024 notification not read; vacancy count as reported.', 'Age, pay and exam pattern not verified.'], notes: 'Indicative profile for a recurring route.' },
   },
 ]
+
+export default specs.filter((spec) => spec.id !== 'ts-police')

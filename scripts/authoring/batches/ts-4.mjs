@@ -1,0 +1,52 @@
+/**
+ * Batch: Telangana Police Recruitment 2026 (TGPRB), from the official press note of
+ * 8 Sep 2026 (four notifications of 29 Jul 2026). Replaces the earlier 2022-based profile.
+ */
+const tgprb = { id: 'tgprb', name: 'Telangana State Level Police Recruitment Board', abbreviation: 'TGPRB', website: 'https://www.tgprb.in' }
+const pressNote = 'https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf'
+
+export default [
+  {
+    id: 'ts-police', name: 'Telangana Police Recruitment (SI, ASI and Constable)', abbreviation: 'TS Police', jurisdiction: 'telangana', sector: 'capf-police', organization: tgprb,
+    department: 'Telangana Police, Special Protection Force, Fire and Disaster Response, Prisons and Correctional Services',
+    summary: 'Telangana\'s police recruitment for Stipendiary Cadet Trainee Sub-Inspectors, Police Constables and equivalent posts. The 2026 drive has 7,437 vacancies across four notifications. Written tests, physical tests and a final exam.',
+    recruitmentMethods: ['competitive-exam', 'physical-test', 'medical-exam', 'document-verification'], frequency: 'Irregular (2016, 2018, 2022, 2026)',
+    officialLinks: [{ label: 'TGPRB website', url: 'https://www.tgprb.in' }, { label: 'Press note, 8 Sep 2026', url: pressNote }],
+    status: { type: 'active', note: 'Four notifications issued on 29 July 2026 (7,437 posts). Online applications from 19 August 2026; deadline extended to 16 September 2026. Test dates to be announced by the Board.', cycles: [{ cycle: 'Police Recruitment 2026', events: [
+      { event: 'Notifications issued', date: '2026-07-29', dateType: 'official', source: 's1' },
+      { event: 'Applications open', date: '2026-08-19', dateType: 'official', source: 's1' },
+      { event: 'Last date to apply (extended)', date: '2026-09-16', dateType: 'official', source: 's1' }] }] },
+    posts: [
+      { name: 'SCT Sub-Inspector (Civil) and equivalent posts', group: 'Non-gazetted', payLevel: 'TS RPS 2020', startingBasic: null, responsibilities: 'Station house and investigation duties; equivalent posts in SPF, Fire and Prisons.', notes: '275 posts. Starting annual salary incl. HRA about Rs 7,33,990 to 7,99,980 (Police/SPF) or Rs 6,74,820 to 7,35,490 (equivalent posts elsewhere), as stated by the Board.' },
+      { name: 'SCT Assistant Sub-Inspector, Finger Print Bureau', group: 'Non-gazetted', payLevel: 'TS RPS 2020', startingBasic: null, responsibilities: 'Fingerprint examination.', notes: '23 posts. Starting annual salary incl. HRA about Rs 5,85,640 to 6,38,280.' },
+      { name: 'SCT Police Constable (Civil) and equivalent posts', group: 'Non-gazetted', payLevel: 'TS RPS 2020', startingBasic: null, responsibilities: 'Police station, armed reserve and equivalent duties.', notes: '7,112 posts. Starting annual salary incl. HRA about Rs 4,21,310 to 4,59,180.' },
+      { name: 'SCT Police Constable (Mechanic / Driver)', group: 'Non-gazetted', payLevel: 'TS RPS 2020', startingBasic: null, responsibilities: 'Police vehicles.', notes: '27 posts.' }],
+    eligibility: {
+      age: { summary: 'Age limits are set in each notification (not reproduced here).', referenceDate: 'As per notification', relaxations: [{ category: 'SC, ST, BC and EWS', years: 5 }, { category: 'Others', years: null, note: 'As per notification.' }] },
+      nationality: 'Citizen of India.', domicile: 'Local cadre rules with local reservation.',
+      education: { summary: 'Constable: Intermediate (Class 12). SI: a bachelor\'s degree. Technical posts need specific qualifications.', finalYearAllowed: false, minMarks: null },
+      attempts: [{ category: 'All', limit: 'No attempt limit' }],
+      physical: 'Physical measurement and efficiency tests as per notification.',
+      reservation: 'Telangana reservation rules. In 2026 the SC Group I, II and III sub-classification is applied in police recruitment for the first time, and women get 33.3% reservation in all SPF and Fire Services posts.',
+    },
+    eligibilityRules: { ageMin: 18, ageMax: null, minEducation: 'class-12', relaxationYears: { OBC: 5, SC: 5, ST: 5, EWS: 5, PwBD: 0 }, domicile: 'telangana', notes: 'Upper age limit is in each notification. SI posts need a degree.' },
+    selection: { stages: [
+      { name: 'Preliminary written test', type: 'objective', countsInMerit: false },
+      { name: 'Physical measurement and efficiency tests', type: 'physical', countsInMerit: false },
+      { name: 'Final written exam', type: 'objective', countsInMerit: true },
+      { name: 'Certificate verification and medical', type: 'document', countsInMerit: false }],
+      meritCalculation: 'Merit from the final written exam among candidates clearing the qualifying stages.', languages: 'English, Telugu, Urdu.', documentVerification: 'Aadhaar verification is used from the 2026 cycle.', probation: 'Stipendiary training; regular pay after training.' },
+    syllabus: { officialLink: null, sections: [{ stage: 'Written tests', subject: 'Typical areas', topics: ['Arithmetic and reasoning', 'General studies including Telangana history and movement', 'English (SI)'] }] },
+    syllabusTags: ['quantitative-aptitude', 'reasoning', 'general-awareness', 'telangana-history-culture', 'telangana-movement', 'english-language', 'physical-fitness'],
+    statistics: [{ year: 2026, vacancies: 7437, note: 'Interim count on 8 Sep 2026: 2,76,085 candidates had submitted applications (3,80,762 candidatures) while applications were still open.', source: 's1' }],
+    salary: { payRuleSet: 'ts-rps-2020', payLevel: 'TS RPS 2020', payScale: null, startingBasic: null, officialGross: 35109, officialGrossNote: 'The Board states a starting annual salary including HRA of about Rs 4,21,310 for constables (about Rs 35,109 a month) and about Rs 7,33,990 for SIs (about Rs 61,166 a month).', pension: 'Contributory Pension Scheme.', notes: 'Risk allowance up to 50 to 60% of salary in high-risk units, family medical treatment and welfare loans, as stated by the Board.' },
+    career: { progression: [{ post: 'Constable', level: 'RPS 2020', timeline: 'Entry', timelineType: 'official' }, { post: 'Head Constable, ASI, SI', level: 'Higher scales', timeline: 'By promotion', timelineType: 'typical' }], sources: ['s1'] },
+    benefits: [{ item: 'Risk allowance', detail: 'Up to 50 to 60% of salary in high-risk units.', conditional: true, sources: ['s1'] }, { item: 'Medical and welfare loans', detail: 'Medical treatment for employee and family; loans for house building, children\'s education and marriage.', conditional: false, sources: ['s1'] }],
+    workLife: { postings: 'Within the district or unit.', transfers: 'Periodic.', nature: 'Field policing.', workload: 'Very high.', publicInteraction: 'Very high.', hazards: 'Moderate to high in special units.', stability: 'Very high.' },
+    difficulty: { syllabusDepth: 'low', competition: 'high', timePressure: 'medium', technicalComplexity: 'low', physicalRequirements: 'high', selectionUncertainty: 'medium', rationale: 'Over 2.7 lakh applicants by 8 Sep 2026 for 7,437 posts; physical tests eliminate many.' },
+    ratings: { careerGrowth: 'medium', locationFlexibility: 'high', recruitmentRegularity: 'low', rationale: 'Large intakes, but years apart.' },
+    risk: { overall: 'medium', factors: [{ factor: 'Irregular recruitment', level: 'high', note: 'Several years between cycles.' }] },
+    sources: [['s1', 'TGPRB press note on Police Recruitment 2026 (Rc Nos. 189, 225, 234 and 279/2026), 8 Sep 2026', pressNote, 'Telangana State Level Police Recruitment Board', 2026]],
+    dataQuality: { confidence: 'medium', gaps: ['Notification texts not read: age limits, PET standards and exam pattern not reproduced.', 'Test dates not yet announced.'], notes: 'Vacancies, dates and pay from the official press note.' },
+  },
+]

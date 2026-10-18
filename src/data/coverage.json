@@ -145,12 +145,12 @@
     {
       "jurisdiction": "telangana",
       "name": "Telangana State Level Police Recruitment Board",
-      "website": null,
+      "website": "https://www.tgprb.in",
       "status": "partial",
       "profiles": [
         "ts-police"
       ],
-      "notes": "Recurring profile from the 2022 cycle (secondary reports)."
+      "notes": "Police Recruitment 2026 (7,437 posts) from the official TGPRB press note of 8 Sep 2026."
     },
     {
       "jurisdiction": "andhra-pradesh",
@@ -171,7 +171,7 @@
     "KVS, NVS, CTET, UGC NET, EMRS",
     "AIIMS NORCET, ESIC, EPFO SSA, FCI, IB ACIO",
     "Remaining APPSC 2026 notifications",
-    "Official Telangana police and DSC notifications when released"
+    "TG DSC official notification when released"
   ],
   "excluded": [
     "Routes whose main post starts below Rs 20,000 basic pay, such as SSC MTS and Havaldar, RRB Group D and Assistant Loco Pilot, and Level 1 state posts.",
