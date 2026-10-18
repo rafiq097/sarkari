@@ -34,12 +34,12 @@ export function Layout() {
       </a>
       <header className="site-header">
         <div className="header-inner">
-          <Link to="/" className="brand" aria-label="Sarkari Atlas home">
+          <Link to="/" className="brand" aria-label="Sarkari Shiksha home">
             <span className="brand-mark" aria-hidden="true">
               <Compass size={18} />
             </span>
             <span className="brand-name">
-              Sarkari <em>Atlas</em>
+              Sarkari <em>Shiksha</em>
             </span>
           </Link>
           <nav className="primary-nav" aria-label="Primary">
@@ -111,7 +111,7 @@ export function Layout() {
         <div className="footer-inner">
           <div className="footer-about">
             <p className="brand-name">
-              Sarkari <em>Atlas</em>
+              Sarkari <em>Shiksha</em>
             </p>
             <p>An independent research guide to Central, Andhra Pradesh, Telangana and Karnataka government recruitment. Not affiliated with any government body. The official notification is always authoritative.</p>
           </div>

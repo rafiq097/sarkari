@@ -1,4 +1,4 @@
-# Sarkari Atlas
+# Sarkari Shiksha
 
 A static research portal for Central, Andhra Pradesh, Telangana and Karnataka government recruitment: eligibility, exam stages, syllabus, cutoffs, pay, career growth, and personal tools (My Profile, Your plan, eligibility checker, comparison, syllabus overlap, salary explorer, calendar).
 

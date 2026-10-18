@@ -1,4 +1,4 @@
-# HANDOFF: Sarkari Atlas (govt exams portal) - read this first in a new chat
+# HANDOFF: Sarkari Shiksha (govt exams portal) - read this first in a new chat
 
 Original brief: `prompt.md`. Progress notes: `PROGRESS.md`. Data schema: `docs/DATA_SCHEMA.md`.
 Research notes: `docs/research-notes/upsc.md` (UPSC 2026 and 2027 calendars).
