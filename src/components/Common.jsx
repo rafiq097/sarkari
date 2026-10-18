@@ -104,7 +104,7 @@ export function Counter({ value }) {
     const startTime = performance.now()
     // 900 ms ease-out count, short enough not to delay reading.
     const step = (now) => {
-      const progress = Math.min(1, (now - startTime) / 900)
+      const progress = Math.min(1, Math.max(0, (now - startTime) / 900))
       setDisplayed(Math.round(value * (1 - (1 - progress) ** 3)))
       if (progress < 1) frameId = requestAnimationFrame(step)
     }

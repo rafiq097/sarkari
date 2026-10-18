@@ -1,0 +1,1388 @@
+{
+  "id": "upsc-cse",
+  "name": "Civil Services Examination",
+  "abbreviation": "UPSC CSE",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "civil-services",
+  "organization": {
+    "id": "upsc",
+    "name": "Union Public Service Commission",
+    "abbreviation": "UPSC",
+    "website": "https://www.upsc.gov.in"
+  },
+  "department": "Department of Personnel and Training (DoPT), Government of India",
+  "technical": false,
+  "summary": "One national exam that fills 23 services, including the IAS, Indian Foreign Service, IPS, the IRS and other Central Group A and Group B services. It has three stages: an objective Preliminary exam that only screens, a nine-paper descriptive Main exam, and a 275-mark Personality Test. Final rank comes from Mains plus interview marks, out of 2025.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "interview",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Annual (official UPSC calendar)",
+  "officialLinks": [
+    {
+      "label": "CSE 2026 notification",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CSP-26-Engl-040226.pdf"
+    },
+    {
+      "label": "Apply online",
+      "url": "https://upsconline.nic.in"
+    },
+    {
+      "label": "Service allocation portal",
+      "url": "https://cseplus.nic.in"
+    },
+    {
+      "label": "UPSC website",
+      "url": "https://www.upsc.gov.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year on the official UPSC calendar. Usual pattern: notification in January or February, Prelims in late May, Mains from late August, interviews from about January, and the final result around March or April of the following year. Dates of recent and upcoming cycles are listed below.",
+    "cycles": [
+      {
+        "cycle": "CSE 2026",
+        "events": [
+          {
+            "event": "Notification (Examination Notice 05/2026-CSE)",
+            "date": "2026-02-04",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply (6 PM)",
+            "date": "2026-02-24",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Preliminary exam",
+            "date": "2026-05-24",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Preliminary result (13,343 qualified for Mains)",
+            "date": "2026-06-15",
+            "dateType": "official",
+            "source": "s8"
+          },
+          {
+            "event": "Main exam begins (5 days)",
+            "date": "2026-08-21",
+            "dateType": "official",
+            "source": "s8"
+          }
+        ]
+      },
+      {
+        "cycle": "CSE 2027",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2027-01-13",
+            "dateType": "official-tentative",
+            "source": "s6"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2027-02-02",
+            "dateType": "official-tentative",
+            "source": "s6"
+          },
+          {
+            "event": "Preliminary exam",
+            "date": "2027-05-23",
+            "dateType": "official-tentative",
+            "source": "s6"
+          },
+          {
+            "event": "Main exam begins (5 days)",
+            "date": "2027-08-20",
+            "dateType": "official-tentative",
+            "source": "s6"
+          }
+        ]
+      },
+      {
+        "cycle": "CSE 2025",
+        "events": [
+          {
+            "event": "Preliminary exam",
+            "date": "2025-05-25",
+            "dateType": "official",
+            "source": "s7"
+          },
+          {
+            "event": "Final result (958 recommended)",
+            "date": "2026-03-06",
+            "dateType": "official",
+            "source": "s7"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Indian Administrative Service (IAS)",
+      "group": "All India Service",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "District and state administration (Sub-Divisional Magistrate, District Collector), policy roles in state and central ministries."
+    },
+    {
+      "name": "Indian Foreign Service (IFS)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Diplomacy: embassies, consulates, Ministry of External Affairs.",
+      "notes": "Not the Indian Forest Service, which has its own exam (IFoS)."
+    },
+    {
+      "name": "Indian Police Service (IPS)",
+      "group": "All India Service",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Police leadership: ASP, SP, DIG and above; central police organizations.",
+      "notes": "Not identified as suitable for PwBD candidates in CSE 2026."
+    },
+    {
+      "name": "Indian Audit and Accounts Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Government audit under the Comptroller and Auditor General."
+    },
+    {
+      "name": "Indian Civil Accounts Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Accounts and payments of central ministries."
+    },
+    {
+      "name": "Indian Corporate Law Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Company law administration, Ministry of Corporate Affairs."
+    },
+    {
+      "name": "Indian Defence Accounts Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Financial management of the defence services."
+    },
+    {
+      "name": "Indian Defence Estates Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Management of defence land and cantonments."
+    },
+    {
+      "name": "Indian Information Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Government media and communication (PIB, Doordarshan, AIR)."
+    },
+    {
+      "name": "Indian Postal Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Management of the Department of Posts."
+    },
+    {
+      "name": "Indian P&T Accounts and Finance Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Finance and accounts of the Departments of Telecom and Posts."
+    },
+    {
+      "name": "Indian Railway Management Service (Traffic)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Railway operations and commercial management."
+    },
+    {
+      "name": "Indian Railway Management Service (Personnel)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Railway human resources."
+    },
+    {
+      "name": "Indian Railway Management Service (Accounts)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Railway finance and accounts."
+    },
+    {
+      "name": "Indian Railway Protection Force Service",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Officer cadre of the Railway Protection Force.",
+      "notes": "Not identified as suitable for PwBD candidates in CSE 2026."
+    },
+    {
+      "name": "Indian Revenue Service (Customs and Indirect Taxes)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Customs, GST and central excise administration."
+    },
+    {
+      "name": "Indian Revenue Service (Income Tax)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Direct tax administration."
+    },
+    {
+      "name": "Indian Trade Service (Grade III)",
+      "group": "Group A",
+      "payLevel": "Level 10",
+      "startingBasic": 56100,
+      "responsibilities": "Foreign trade policy and administration (DGFT)."
+    },
+    {
+      "name": "Armed Forces Headquarters Civil Service (Section Officer grade)",
+      "group": "Group B",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Civilian administration at the armed forces headquarters."
+    },
+    {
+      "name": "DANICS",
+      "group": "Group B",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Civil administration in Delhi and union territories (Andaman and Nicobar, Lakshadweep, Daman and Diu, Dadra and Nagar Haveli)."
+    },
+    {
+      "name": "DANIPS",
+      "group": "Group B",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Police service for Delhi and the same union territories.",
+      "notes": "Not identified as suitable for PwBD candidates in CSE 2026."
+    },
+    {
+      "name": "Pondicherry Civil Service",
+      "group": "Group B",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Civil administration in Puducherry."
+    },
+    {
+      "name": "Pondicherry Police Service",
+      "group": "Group B",
+      "payLevel": null,
+      "startingBasic": null,
+      "responsibilities": "Police service in Puducherry.",
+      "notes": "Not identified as suitable for PwBD candidates in CSE 2026."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "summary": "At least 21 and under 32 years on 1 August of the exam year. For CSE 2026: born between 2 August 1994 and 1 August 2005, both dates included.",
+      "referenceDate": "1 August of the exam year (1 Aug 2026 for CSE 2026)",
+      "relaxations": [
+        {
+          "category": "SC / ST",
+          "years": 5
+        },
+        {
+          "category": "OBC (eligible for reservation)",
+          "years": 3
+        },
+        {
+          "category": "Defence personnel disabled in hostilities or a disturbed area",
+          "years": 3
+        },
+        {
+          "category": "Ex-servicemen incl. ECO/SSCO with 5 years of military service (conditions apply)",
+          "years": 5
+        },
+        {
+          "category": "PwBD (blindness/low vision, deaf/hard of hearing, locomotor, autism/intellectual/SLD/mental illness, multiple)",
+          "years": 10,
+          "note": "Cumulative with SC/ST/OBC relaxation, so up to 15 years for SC/ST PwBD and 13 for OBC PwBD."
+        }
+      ]
+    },
+    "nationality": "IAS, IFS and IPS: citizen of India only. Other services: citizen of India, or a subject of Nepal or Bhutan, a Tibetan refugee who came before 1 Jan 1962, or a person of Indian origin who migrated from specified countries, with a Government of India eligibility certificate.",
+    "domicile": null,
+    "education": {
+      "summary": "A graduate degree in any subject from a university established by an Act of Parliament or a State Legislature, a deemed university, or an equivalent qualification. Professional and technical degrees recognised as equivalent are accepted.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "General / EWS",
+        "limit": "6"
+      },
+      {
+        "category": "OBC",
+        "limit": "9"
+      },
+      {
+        "category": "SC / ST",
+        "limit": "Unlimited (within age limit)"
+      },
+      {
+        "category": "PwBD (General / EWS / OBC)",
+        "limit": "9"
+      },
+      {
+        "category": "PwBD (SC / ST)",
+        "limit": "Unlimited (within age limit)"
+      }
+    ],
+    "experience": null,
+    "physical": "No physical test. Physical and medical standards of Appendix III of the CSE Rules apply; IPS and other police services have stricter standards.",
+    "medical": "Medical examination before appointment as per Appendix III of the CSE Rules. PwBD candidates are appointed only to services identified as suitable for their disability.",
+    "other": [
+      "Sitting for any one paper of the Preliminary exam counts as an attempt, even if the candidature is later cancelled.",
+      "Date of birth is taken only from the Class 10 (Matriculation) or equivalent certificate and cannot be changed later.",
+      "Final-year students may sit the Prelims and Mains but must prove they have passed when they qualify for the interview. MBBS and similar candidates must show proof of internship completion at the interview.",
+      "Fee: Rs 100 for Prelims and Rs 200 for Mains. Women, SC, ST and PwBD candidates are exempt."
+    ],
+    "examVsPost": "Clearing the exam does not decide the service. You must list service preferences (and home-cadre preferences for IAS and IPS) in the application, and DoPT allocates a service by rank, category, preference, vacancy and medical fitness. PwBD candidates can only be allocated to services identified for their disability: IPS, RPF Service, DANIPS and Pondicherry Police Service were not identified for any PwBD category in CSE 2026.",
+    "disqualifications": [
+      "A serving IAS or IFS officer cannot apply. If appointed to IAS/IFS after Prelims, the candidate cannot write Mains; if appointed after Mains begins, they are not considered for any service from that year's result.",
+      "A candidate already selected for IPS cannot opt for IPS again.",
+      "From CSE 2026, a candidate allocated IPS or a Central Group A service can sit the next year's CSE only by taking a one-time exemption from training (joining only the Foundation Course). For any later CSE they must resign.",
+      "Candidates allocated a service through CSE 2025 or earlier get one final chance, in CSE 2026 or CSE 2027, without resigning.",
+      "Applications cannot be withdrawn or edited after submission."
+    ],
+    "reservation": "Central reservation applies: SC 15%, ST 7.5%, OBC (non-creamy layer) 27%, EWS 10%, plus PwBD reservation. CSE 2026 had about 933 vacancies including 33 for PwBD (7 blindness/low vision, 11 deaf/hard of hearing, 8 locomotor, 7 multiple disabilities). OBC and EWS certificates must follow the financial-year and issue-date rules in the notification.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageMin": 21,
+    "ageMax": 31,
+    "ageReferenceDate": "2026-08-01",
+    "relaxationYears": {
+      "OBC": 3,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 0,
+      "PwBD": 10
+    },
+    "minEducation": "graduate",
+    "educationFields": [
+      "any"
+    ],
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "notes": "Upper limit means you must not have turned 32 on 1 Aug 2026 (so up to 31 completed years). Attempt limits apply: 6 General/EWS, 9 OBC and PwBD, unlimited SC/ST."
+  },
+  "selection": {
+    "stages": [
+      {
+        "name": "Preliminary Examination",
+        "type": "objective",
+        "countsInMerit": false,
+        "papers": [
+          {
+            "name": "General Studies Paper I",
+            "marks": 200,
+            "questions": 100,
+            "duration": "2 hours",
+            "negative": "One third of the question's marks",
+            "qualifying": false,
+            "notes": "The only paper that decides the Prelims cutoff."
+          },
+          {
+            "name": "General Studies Paper II (CSAT)",
+            "marks": 200,
+            "questions": 80,
+            "duration": "2 hours",
+            "negative": "One third of the question's marks",
+            "qualifying": true,
+            "notes": "Qualifying at 33% (66 marks). Both papers must be attempted or the candidate is disqualified."
+          }
+        ],
+        "notes": "Screening only. About 12 to 13 times the number of vacancies are admitted to Mains. Prelims marks are not added to the final score. Papers are set in Hindi and English. The question count is the usual pattern; the notification fixes marks and duration."
+      },
+      {
+        "name": "Main Examination (written)",
+        "type": "descriptive",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper A: one Indian language (Eighth Schedule)",
+            "marks": 300,
+            "duration": "3 hours",
+            "qualifying": true,
+            "notes": "Qualifying, 25% needed. Matriculation standard. Exempt for candidates from Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim and eligible hearing-impaired PwBD candidates."
+          },
+          {
+            "name": "Paper B: English",
+            "marks": 300,
+            "duration": "3 hours",
+            "qualifying": true,
+            "notes": "Qualifying, 25% needed. Matriculation standard."
+          },
+          {
+            "name": "Paper I: Essay",
+            "marks": 250,
+            "duration": "3 hours",
+            "qualifying": false
+          },
+          {
+            "name": "Paper II: General Studies I (heritage, culture, history, geography, society)",
+            "marks": 250,
+            "duration": "3 hours",
+            "qualifying": false
+          },
+          {
+            "name": "Paper III: General Studies II (governance, constitution, polity, social justice, international relations)",
+            "marks": 250,
+            "duration": "3 hours",
+            "qualifying": false
+          },
+          {
+            "name": "Paper IV: General Studies III (technology, economy, biodiversity, environment, security, disaster management)",
+            "marks": 250,
+            "duration": "3 hours",
+            "qualifying": false
+          },
+          {
+            "name": "Paper V: General Studies IV (ethics, integrity, aptitude)",
+            "marks": 250,
+            "duration": "3 hours",
+            "qualifying": false
+          },
+          {
+            "name": "Paper VI: Optional subject, paper 1",
+            "marks": 250,
+            "duration": "3 hours",
+            "qualifying": false
+          },
+          {
+            "name": "Paper VII: Optional subject, paper 2",
+            "marks": 250,
+            "duration": "3 hours",
+            "qualifying": false
+          }
+        ],
+        "notes": "Papers I to VII (1750 marks) count for merit. They are taken into account only if the candidate gets 25% in both Paper A and Paper B. The Commission can fix minimum marks in any paper: for CSE 2024 it required at least 10% in each of the seven merit papers. About twice the number of vacancies are called for interview."
+      },
+      {
+        "name": "Interview / Personality Test",
+        "type": "interview",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Personality Test",
+            "marks": 275,
+            "qualifying": false,
+            "notes": "No minimum qualifying marks."
+          }
+        ],
+        "notes": "A board assesses suitability for public service through a guided conversation, with your application (DAF) in front of them. Original documents are verified at this stage."
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false,
+        "notes": "Recommended candidates are examined against the physical and medical standards in Appendix III of the CSE Rules before appointment."
+      }
+    ],
+    "meritCalculation": "Final marks = Main written Papers I to VII (1750) + Personality Test (275) = 2025. Prelims marks and the qualifying language papers are not counted.",
+    "tieBreaking": "CSE 2026 rules: (1) higher marks in the five compulsory papers (Essay and GS I to IV) plus the Personality Test; (2) if still equal, higher marks in the five compulsory papers alone; (3) if still equal, the older candidate; (4) any remaining tie at the Commission's discretion. (CSE 2024 used only steps 1 and 3.)",
+    "normalization": "No normalization: all candidates write the same papers.",
+    "languages": "Prelims papers are in Hindi and English. Main papers (except Papers A and B) can be answered in English or any Eighth Schedule language; a candidate writing Papers I to V in an Indian language may still write the optional papers in English.",
+    "documentVerification": "Eligibility is checked against original documents only after a candidate qualifies for the interview. Until then, candidature at every stage is provisional.",
+    "probation": "Common Foundation Course followed by service-specific training. Probation periods are set by each service's rules (for example, LBSNAA training and district attachment for IAS).",
+    "sources": [
+      "s1",
+      "s2"
+    ]
+  },
+  "syllabus": {
+    "officialLink": "https://www.upsc.gov.in/sites/default/files/Notif-CSP-26-Engl-040226.pdf",
+    "sections": [
+      {
+        "stage": "Preliminary",
+        "subject": "General Studies Paper I (200 marks)",
+        "topics": [
+          "Current events of national and international importance",
+          "History of India and the Indian National Movement",
+          "Indian and world geography: physical, social and economic geography of India and the world",
+          "Indian polity and governance: Constitution, political system, Panchayati Raj, public policy, rights issues",
+          "Economic and social development: sustainable development, poverty, inclusion, demographics, social sector initiatives",
+          "General issues on environmental ecology, biodiversity and climate change (no subject specialisation needed)",
+          "General science"
+        ]
+      },
+      {
+        "stage": "Preliminary",
+        "subject": "General Studies Paper II, CSAT (200 marks, qualifying)",
+        "topics": [
+          "Comprehension",
+          "Interpersonal skills including communication skills",
+          "Logical reasoning and analytical ability",
+          "Decision making and problem solving",
+          "General mental ability",
+          "Basic numeracy: numbers and their relations, orders of magnitude (Class 10 level)",
+          "Data interpretation: charts, graphs, tables, data sufficiency (Class 10 level)"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper A (Indian language) and Paper B (English), qualifying",
+        "topics": [
+          "Comprehension of given passages",
+          "Precis writing",
+          "Usage and vocabulary",
+          "Short essays",
+          "Translation from English to the Indian language and back (Paper A only)"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper I: Essay",
+        "topics": [
+          "Essays on multiple topics",
+          "Marks for keeping to the subject, orderly arrangement of ideas, concise writing and exact expression"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper II: General Studies I",
+        "topics": [
+          "Indian culture: art forms, literature and architecture from ancient to modern times",
+          "Modern Indian history from the mid-18th century: events, personalities, issues",
+          "The freedom struggle: stages and contributors from different parts of the country",
+          "Post-independence consolidation and reorganisation",
+          "World history from the 18th century: industrial revolution, world wars, redrawing of boundaries, colonisation and decolonisation, communism, capitalism, socialism",
+          "Salient features of Indian society and its diversity",
+          "Role of women and women's organisations; population, poverty, development, urbanisation",
+          "Effects of globalisation on Indian society",
+          "Social empowerment, communalism, regionalism and secularism",
+          "Salient features of world physical geography",
+          "Distribution of key natural resources; location factors for primary, secondary and tertiary industries",
+          "Geophysical phenomena (earthquakes, tsunami, volcanoes, cyclones); changes in critical geographical features, flora and fauna"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper III: General Studies II",
+        "topics": [
+          "Indian Constitution: history, evolution, features, amendments, significant provisions, basic structure",
+          "Union and state functions, federal issues, devolution of powers and finances to local levels",
+          "Separation of powers, dispute redressal mechanisms and institutions",
+          "Comparison of the Indian constitutional scheme with other countries",
+          "Parliament and state legislatures: structure, functioning, business, powers and privileges",
+          "Executive and judiciary; ministries and departments; pressure groups and associations",
+          "Salient features of the Representation of People's Act",
+          "Constitutional posts and bodies; statutory, regulatory and quasi-judicial bodies",
+          "Government policies and interventions; development processes and the role of NGOs, SHGs and donors",
+          "Welfare schemes for vulnerable sections and the institutions that protect them",
+          "Social sector: health, education, human resources; poverty and hunger",
+          "Governance, transparency and accountability, e-governance, citizens' charters",
+          "Role of civil services in a democracy",
+          "India and its neighbourhood; bilateral, regional and global groupings",
+          "Effect of policies of developed and developing countries on India; the Indian diaspora",
+          "Important international institutions, agencies and fora"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper IV: General Studies III",
+        "topics": [
+          "Indian economy: planning, resource mobilisation, growth, development, employment",
+          "Inclusive growth",
+          "Government budgeting",
+          "Major crops and cropping patterns; irrigation; storage, transport and marketing of farm produce; e-technology for farmers",
+          "Farm subsidies and MSP; Public Distribution System; buffer stocks and food security; economics of animal rearing",
+          "Food processing industries and supply chains",
+          "Land reforms",
+          "Liberalisation and industrial policy",
+          "Infrastructure: energy, ports, roads, airports, railways",
+          "Investment models",
+          "Science and technology developments and applications; achievements of Indians; indigenisation",
+          "IT, space, computers, robotics, nanotechnology, biotechnology, intellectual property rights",
+          "Conservation, pollution, environmental impact assessment",
+          "Disaster management",
+          "Development and the spread of extremism",
+          "External state and non-state actors in internal security",
+          "Communication networks, media and social media in internal security; cyber security basics; money laundering",
+          "Border area security; organised crime and terrorism",
+          "Security forces and agencies and their mandate"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Paper V: General Studies IV (Ethics, Integrity and Aptitude)",
+        "topics": [
+          "Ethics and human interface: essence, determinants, consequences and dimensions of ethics; ethics in private and public relationships",
+          "Human values: lessons from leaders, reformers and administrators; role of family, society and education",
+          "Attitude: content, structure, function, influence on thought and behaviour; moral and political attitudes; persuasion",
+          "Aptitude and foundational values: integrity, impartiality, non-partisanship, objectivity, dedication, empathy, tolerance, compassion",
+          "Emotional intelligence and its use in administration",
+          "Contributions of moral thinkers and philosophers from India and the world",
+          "Public service values and ethics in public administration; ethical dilemmas; laws, rules and conscience; accountability; ethics in international relations and funding; corporate governance",
+          "Probity in governance: public service, transparency, Right to Information, codes of ethics and conduct, citizens' charters, work culture, service delivery, use of public funds, corruption",
+          "Case studies on all of the above"
+        ]
+      },
+      {
+        "stage": "Main",
+        "subject": "Papers VI and VII: one optional subject (48 choices)",
+        "topics": [
+          "Agriculture",
+          "Animal Husbandry and Veterinary Science",
+          "Anthropology",
+          "Botany",
+          "Chemistry",
+          "Civil Engineering",
+          "Commerce and Accountancy",
+          "Economics",
+          "Electrical Engineering",
+          "Geography",
+          "Geology",
+          "History",
+          "Law",
+          "Management",
+          "Mathematics",
+          "Mechanical Engineering",
+          "Medical Science",
+          "Philosophy",
+          "Physics",
+          "Political Science and International Relations",
+          "Psychology",
+          "Public Administration",
+          "Sociology",
+          "Statistics",
+          "Zoology",
+          "Literature of one language: Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santhali, Sindhi, Tamil, Telugu, Urdu or English"
+        ]
+      }
+    ],
+    "supplementary": [
+      "Optional papers are set at roughly honours level (above a bachelor's, below a master's); for engineering, medical science and law they are at bachelor's level. The detailed topic list for every optional is in the notification.",
+      "NCERT textbooks (Classes 6 to 12) are the common starting point for history, geography, polity, economy and science.",
+      "Previous years' papers on the UPSC website show the depth expected; mains answers reward structure and balance over volume of facts.",
+      "Prelims GS I and Mains GS overlap heavily, so most candidates prepare for both together and switch to Prelims-only revision a few months before May."
+    ],
+    "sources": [
+      "s1"
+    ]
+  },
+  "syllabusTags": [
+    "current-affairs",
+    "indian-history",
+    "geography",
+    "indian-polity",
+    "indian-economy",
+    "environment",
+    "general-science",
+    "science-technology",
+    "reasoning",
+    "quantitative-aptitude",
+    "data-interpretation",
+    "english-language",
+    "essay-writing",
+    "ethics",
+    "governance",
+    "social-issues",
+    "international-relations",
+    "optional-subject",
+    "interview-personality"
+  ],
+  "cutoffs": [
+    {
+      "year": 2024,
+      "stage": "Preliminary (GS Paper I only)",
+      "scale": "out of 200",
+      "values": {
+        "General": 87.98,
+        "EWS": 85.92,
+        "OBC": 87.28,
+        "SC": 79.03,
+        "ST": 74.23,
+        "PwBD-1": 69.42,
+        "PwBD-2": 65.3,
+        "PwBD-3": 40.56,
+        "PwBD-5": 40.56
+      },
+      "note": "Marks of the last candidate qualified. GS Paper II needed 33%.",
+      "source": "s2"
+    },
+    {
+      "year": 2024,
+      "stage": "Main (written)",
+      "scale": "out of 1750",
+      "values": {
+        "General": 729,
+        "EWS": 696,
+        "OBC": 702,
+        "SC": 685,
+        "ST": 684,
+        "PwBD-1": 663,
+        "PwBD-2": 696,
+        "PwBD-3": 307,
+        "PwBD-5": 361
+      },
+      "note": "Subject to 10% in each of the seven merit papers.",
+      "source": "s2"
+    },
+    {
+      "year": 2024,
+      "stage": "Final (written + interview)",
+      "scale": "out of 2025",
+      "values": {
+        "General": 947,
+        "EWS": 917,
+        "OBC": 910,
+        "SC": 880,
+        "ST": 884,
+        "PwBD-1": 876,
+        "PwBD-2": 913,
+        "PwBD-3": 701,
+        "PwBD-5": 461
+      },
+      "note": "Marks of the last recommended candidate in each category.",
+      "source": "s2"
+    }
+  ],
+  "statistics": [
+    {
+      "year": 2020,
+      "vacancies": 836,
+      "applicants": 1040060,
+      "appeared": 482770,
+      "qualifiedNextStage": 10564,
+      "interviewed": 2049,
+      "selected": 833,
+      "note": "2,053 qualified for interview; 833 recommended excluding 3 whose category changed.",
+      "source": "s5"
+    },
+    {
+      "year": 2021,
+      "vacancies": 749,
+      "applicants": 1093984,
+      "appeared": 508619,
+      "qualifiedNextStage": 9214,
+      "interviewed": 1819,
+      "selected": 748,
+      "note": "1,824 qualified for interview.",
+      "source": "s4"
+    },
+    {
+      "year": 2022,
+      "vacancies": 1022,
+      "applicants": 1135697,
+      "appeared": 573735,
+      "qualifiedNextStage": 13090,
+      "interviewed": 2525,
+      "selected": 1020,
+      "note": "2,529 qualified for interview; 1,020 recommended excluding 2 whose category changed.",
+      "source": "s3"
+    },
+    {
+      "year": 2025,
+      "vacancies": null,
+      "applicants": null,
+      "appeared": null,
+      "qualifiedNextStage": null,
+      "interviewed": null,
+      "selected": 958,
+      "note": "Final result 6 Mar 2026. Official applicant and appeared counts not yet published in an annual report.",
+      "source": "s7"
+    }
+  ],
+  "rankAndAllocation": {
+    "text": "UPSC publishes a single merit list by rank. DoPT then allocates services: in order of rank, each candidate gets the highest service in their own preference list that still has a vacancy in their category. For IAS and IPS, candidates also give home-cadre preferences, and state cadres are allotted under the cadre allocation policy in force for that year. Reserved-category candidates who make the general merit on their own can be counted against unreserved vacancies. A reserve list is held after the main list. Preferences cannot be changed once submitted, and a candidate who lists no service is not allocated one. The rank needed for IAS changes every year with vacancies, category and how many higher-ranked candidates choose IAS.",
+    "sources": [
+      "s1",
+      "s10"
+    ]
+  },
+  "salary": {
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 10 (Group A services)",
+    "payScale": "56,100 to 1,77,500 (Level 10)",
+    "startingBasic": 56100,
+    "officialGross": null,
+    "officialGrossNote": "",
+    "specialAllowances": [
+      {
+        "name": "Group B services",
+        "detail": "AFHQ Civil Service, DANICS, DANIPS and the Pondicherry services enter below Level 10; check the service rules for the exact level."
+      },
+      {
+        "name": "IPS and police services",
+        "detail": "Uniform and other police allowances as per rules."
+      },
+      {
+        "name": "Foreign Service",
+        "detail": "Officers posted abroad receive Foreign Allowance under MEA rules, which varies by country."
+      }
+    ],
+    "pension": "National Pension System, with the Unified Pension Scheme option (from 1 Apr 2025). Employee contributes 10% of basic plus DA.",
+    "increments": "3% of basic once a year (1 January or 1 July). Promotions move the officer up pay levels.",
+    "notes": "Group A officers start at Level 10. An IAS officer moves through Level 11 (Senior Time Scale), Level 12, 13, 14 and higher with seniority and empanelment.",
+    "asOf": "2026-10",
+    "sources": [
+      "s9",
+      "s1"
+    ]
+  },
+  "career": {
+    "progression": [
+      {
+        "post": "IAS: Assistant Collector / Sub-Divisional Magistrate (Junior Time Scale)",
+        "level": "Level 10",
+        "timeline": "Entry, after training",
+        "timelineType": "official"
+      },
+      {
+        "post": "IAS: Senior Time Scale (Additional Collector, Deputy Secretary)",
+        "level": "Level 11",
+        "timeline": "From about the 5th year of service",
+        "timelineType": "typical"
+      },
+      {
+        "post": "IAS: Junior Administrative Grade (District Collector)",
+        "level": "Level 12",
+        "timeline": "From about the 9th year",
+        "timelineType": "typical"
+      },
+      {
+        "post": "IAS: Selection Grade (Collector, Director)",
+        "level": "Level 13",
+        "timeline": "From about the 13th year",
+        "timelineType": "typical"
+      },
+      {
+        "post": "IAS: Super Time Scale (Secretary in state, Joint Secretary)",
+        "level": "Level 14",
+        "timeline": "From about the 16th year",
+        "timelineType": "typical"
+      },
+      {
+        "post": "IAS: Above Super Time Scale (Principal Secretary, Additional Secretary)",
+        "level": "Level 15",
+        "timeline": "About 25 years, subject to vacancies and empanelment",
+        "timelineType": "typical"
+      },
+      {
+        "post": "IAS: Apex scale (Chief Secretary, Secretary to Government of India)",
+        "level": "Level 17",
+        "timeline": "Senior-most officers only",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Cabinet Secretary",
+        "level": "Level 18",
+        "timeline": "One post, the highest civil service position",
+        "timelineType": "official"
+      }
+    ],
+    "promotionNotes": "Higher grades depend on years of service, vacancies in the cadre, performance appraisal reports, vigilance clearance and, for central posts, empanelment by the Government of India. Other Group A services have similar ladders with their own top posts (for example Chief Commissioner in the IRS, Director General of Police in the IPS).",
+    "departmentalExams": "Probationers pass service-specific departmental and language tests during training.",
+    "macp": "MACP applies only to Group B and C posts; Group A officers progress through time-scale promotions and non-functional upgradation where the service rules provide it.",
+    "sources": [
+      "s9"
+    ]
+  },
+  "benefits": [
+    {
+      "item": "Government accommodation",
+      "detail": "Official housing as per entitlement; HRA is not paid while in government quarters.",
+      "conditional": true,
+      "sources": [
+        "s9"
+      ]
+    },
+    {
+      "item": "Health cover",
+      "detail": "CGHS (central) or the state health scheme of the cadre for All India Service officers.",
+      "conditional": false,
+      "sources": [
+        "s9"
+      ]
+    },
+    {
+      "item": "Leave",
+      "detail": "Earned leave, half-pay leave, and child care leave for women and single male parents, under central leave rules.",
+      "conditional": false,
+      "sources": [
+        "s9"
+      ]
+    },
+    {
+      "item": "Leave Travel Concession",
+      "detail": "Travel concession for home town and all-India travel in block years.",
+      "conditional": false,
+      "sources": [
+        "s9"
+      ]
+    },
+    {
+      "item": "Study leave and training abroad",
+      "detail": "Mid-career training and study leave with approval.",
+      "conditional": true,
+      "sources": [
+        "s9"
+      ]
+    }
+  ],
+  "workLife": {
+    "postings": "IAS and IPS officers serve in their allotted state cadre plus central deputation; Central Group A services post officers anywhere in India, and the Foreign Service abroad.",
+    "transfers": "Frequent, often every 2 to 3 years in field postings, decided by government.",
+    "nature": "Field-heavy early (district administration, policing); more policy and desk work later.",
+    "workload": "High and irregular, especially in district and police postings, elections and emergencies.",
+    "publicInteraction": "Very high in IAS, IPS and revenue services.",
+    "hazards": "Police services face physical risk; field postings can be in remote or conflict-affected areas.",
+    "stability": "Very high: permanent appointments with constitutional and statutory protection.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "high",
+    "rationale": "Over 5 lakh candidates appear for about 750 to 1,000 vacancies (CSE 2022: 5,73,735 appeared for 1,022 vacancies, about 560 per vacancy). Three stages, nine descriptive papers plus an optional, and a 275-mark interview make results hard to predict. Mains requires writing about 20 long answers in 3 hours per paper."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Runs every year on the UPSC calendar. Leads to the top civil service posts. You cannot choose your cadre or posting, and service allocation depends on rank."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Long selection cycle",
+        "level": "high",
+        "note": "From notification (Jan/Feb) to final result (about March to April of the next year) takes over a year."
+      },
+      {
+        "factor": "Limited attempts",
+        "level": "medium",
+        "note": "Six attempts for General/EWS; appearing in one Prelims paper uses an attempt."
+      },
+      {
+        "factor": "Rule changes",
+        "level": "medium",
+        "note": "CSE 2026 tightened rules for candidates already in service and changed tie-breaking."
+      },
+      {
+        "factor": "Irregular recruitment",
+        "level": "low",
+        "note": "Held every year without a break."
+      },
+      {
+        "factor": "Vacancy changes",
+        "level": "medium",
+        "note": "Vacancies vary year to year (for example 749 in 2021, 1,022 in 2022) and are finalised after the notification."
+      }
+    ]
+  },
+  "guide": {
+    "sources": [
+      "s1",
+      "s2",
+      "s3",
+      "s10"
+    ],
+    "sections": [
+      {
+        "title": "The big picture",
+        "kind": "explainer",
+        "paragraphs": [
+          "The Civil Services Examination (CSE) is one exam, run by UPSC every year, that recruits for 23 services at once. The IAS, IPS and Indian Foreign Service are the best known, but the same exam also fills the Indian Revenue Service, the Railway Management Services, audit, accounts, postal, information and trade services, and a few Group B services.",
+          "You do not apply for a particular service. You apply for the exam, list the services you would accept in order of preference, and your final rank decides which of them you get."
+        ],
+        "table": {
+          "columns": [
+            "Stage",
+            "When (usual)",
+            "What it decides"
+          ],
+          "rows": [
+            [
+              "Notification and application",
+              "January / February",
+              "Whether you are admitted to Prelims"
+            ],
+            [
+              "Preliminary exam",
+              "Late May",
+              "Shortlist for Mains (about 12 to 13 times the vacancies)"
+            ],
+            [
+              "Main exam (written)",
+              "August / September, 5 days",
+              "Shortlist for interview (about 2 times the vacancies)"
+            ],
+            [
+              "Personality Test",
+              "Roughly January to April",
+              "Adds up to 275 marks to your Mains score"
+            ],
+            [
+              "Final result",
+              "About March / April",
+              "Your rank, then DoPT allocates your service"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Stage 1: the Preliminary exam",
+        "kind": "official",
+        "paragraphs": [
+          "Prelims has two objective papers of 200 marks and 2 hours each, on the same day. Paper I (General Studies) decides whether you pass. Paper II (CSAT: comprehension, reasoning, basic numeracy and data interpretation at Class 10 level) is only qualifying: you need 33%, which is 66 out of 200.",
+          "Every wrong answer costs one third of that question's marks. Marking two answers counts as wrong. Leaving a question blank costs nothing.",
+          "Prelims is only a filter. Its marks are not added to your final score. UPSC does not announce the Prelims cutoff when it declares the Prelims result; category-wise cutoffs come out only after the final result. For CSE 2024 the General category Prelims cutoff was 87.98 out of 200 in Paper I."
+        ],
+        "bullets": [
+          "You must sit both papers. Missing either one disqualifies you.",
+          "Sitting even one paper uses up an attempt.",
+          "Papers are in Hindi and English."
+        ]
+      },
+      {
+        "title": "Stage 2: the Main exam",
+        "kind": "official",
+        "paragraphs": [
+          "Mains has nine descriptive papers of 3 hours each, written over five days. Two are language papers that you only need to pass. The other seven count for your rank.",
+          "The two language papers (one Indian language and English, 300 marks each, Class 10 standard) need 25% each. If you fall short in either, your other seven papers are not counted at all, however well you wrote them.",
+          "The Commission can also set a minimum in each merit paper. In CSE 2024 that minimum was 10% in each of the seven papers."
+        ],
+        "table": {
+          "columns": [
+            "Paper",
+            "Subject",
+            "Marks",
+            "Counts for rank?"
+          ],
+          "rows": [
+            [
+              "A",
+              "One Indian language",
+              "300",
+              "No, need 25%"
+            ],
+            [
+              "B",
+              "English",
+              "300",
+              "No, need 25%"
+            ],
+            [
+              "I",
+              "Essay",
+              "250",
+              "Yes"
+            ],
+            [
+              "II",
+              "GS I: heritage, culture, history, geography, society",
+              "250",
+              "Yes"
+            ],
+            [
+              "III",
+              "GS II: polity, governance, social justice, international relations",
+              "250",
+              "Yes"
+            ],
+            [
+              "IV",
+              "GS III: economy, agriculture, science and technology, environment, security, disasters",
+              "250",
+              "Yes"
+            ],
+            [
+              "V",
+              "GS IV: ethics, integrity and aptitude (with case studies)",
+              "250",
+              "Yes"
+            ],
+            [
+              "VI",
+              "Optional subject paper 1",
+              "250",
+              "Yes"
+            ],
+            [
+              "VII",
+              "Optional subject paper 2",
+              "250",
+              "Yes"
+            ],
+            [
+              "",
+              "Written total for rank",
+              "1750",
+              ""
+            ]
+          ]
+        },
+        "bullets": [
+          "You can write Papers I to VII in English or any Eighth Schedule language, such as Telugu or Kannada. If you write Papers I to V in an Indian language, you may still write the optional papers in English.",
+          "Paper A is not compulsory for candidates from Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland and Sikkim, or for eligible hearing-impaired candidates.",
+          "Anything that could reveal your identity in an answer script leads to a mark deduction or the script not being evaluated."
+        ]
+      },
+      {
+        "title": "Choosing the optional subject",
+        "kind": "explainer",
+        "paragraphs": [
+          "You choose one optional from 48: 25 subjects (from Agriculture to Zoology, including Public Administration, Sociology, Geography, Anthropology, Law and four engineering subjects) or the literature of one of 23 languages, including Telugu, Kannada and English. It is worth 500 of the 1750 written marks.",
+          "The optional does not need to match your degree. The syllabus is set at about honours level, and at bachelor's level for engineering, medical science and law. The full topic list for each optional is in the notification."
+        ]
+      },
+      {
+        "title": "Stage 3: the Personality Test (interview)",
+        "kind": "official",
+        "paragraphs": [
+          "About twice as many candidates as vacancies are called for interview. The board has your Detailed Application Form, covering your education, work, hobbies, achievements and home state, and the conversation usually grows from it.",
+          "UPSC's own description: the test is not a cross-examination and not a test of specialised or general knowledge, which the written papers already covered. It is a guided conversation to judge suitability for public service. The board looks for mental alertness, critical assimilation, clear and logical expression, balance of judgement, variety and depth of interest, ability for social cohesion and leadership, and intellectual and moral integrity.",
+          "The interview carries 275 marks and has no pass mark: everyone interviewed gets a score that is added to their Mains marks. Original documents (degree, category and disability certificates) are verified at this stage, and after Mains you get a 15-day window to upload proof of passing your degree."
+        ],
+        "bullets": [
+          "Interview language: you may be interviewed in English, Hindi or the Indian language you used for Mains, as offered in the e-summon process.",
+          "Candidates who are interviewed but not recommended can choose to appear on UPSC's Pratibha Setu portal, where registered employers can contact them."
+        ]
+      },
+      {
+        "title": "How the final rank is made",
+        "kind": "official",
+        "paragraphs": [
+          "Final score = seven Mains papers (out of 1750) + Personality Test (out of 275) = out of 2025. Prelims marks and the two language papers are not included. For CSE 2024, the last recommended General category candidate scored 947 out of 2025.",
+          "Ties are broken as follows (CSE 2026 rules): first by higher marks in Essay plus GS I to IV plus the interview; then by Essay plus GS I to IV alone; then the older candidate ranks higher; and any remaining tie is decided by the Commission."
+        ]
+      },
+      {
+        "title": "From rank to service and cadre",
+        "kind": "explainer",
+        "paragraphs": [
+          "UPSC sends the merit list to the Department of Personnel and Training. In rank order, each candidate is given the highest service on their preference list that still has a vacancy in their category. A General-rank candidate high enough for IAS but with IRS ranked above IAS in their list gets IRS.",
+          "For IAS and IPS, you also rank state cadres (your home cadre preference is asked separately). Cadres are allotted under the cadre allocation policy for that year, published on cseplus.nic.in. You cannot pick your district or city.",
+          "Preferences are fixed once you submit them. Leave a service out and you can never be given it; list none and you get no service at all. No rank guarantees a particular service, because vacancies and other candidates' choices change every year."
+        ]
+      },
+      {
+        "title": "Services, groups and pay levels explained",
+        "kind": "explainer",
+        "paragraphs": [
+          "Group A services start at Pay Level 10 of the 7th CPC pay matrix: basic pay Rs 56,100. DA (60% from 1 Jan 2026), HRA and transport allowance are added on top. The four Group B services (AFHQ Civil Service, DANICS, DANIPS and the Pondicherry services) start at a lower pay level.",
+          "'Level' here is the row of the central pay matrix, not a stage of the exam. Each promotion moves you to a higher level, and each yearly increment moves you about 3% along your current level."
+        ],
+        "table": {
+          "columns": [
+            "IAS stage",
+            "Pay level",
+            "Starting basic (first cell)",
+            "When (typical)"
+          ],
+          "rows": [
+            [
+              "Junior Time Scale (SDM)",
+              "10",
+              "Rs 56,100",
+              "Entry"
+            ],
+            [
+              "Senior Time Scale",
+              "11",
+              "Rs 67,700",
+              "About 5th year"
+            ],
+            [
+              "Junior Administrative Grade",
+              "12",
+              "Rs 78,800",
+              "About 9th year"
+            ],
+            [
+              "Selection Grade",
+              "13",
+              "Rs 1,23,100",
+              "About 13th year"
+            ],
+            [
+              "Super Time Scale",
+              "14",
+              "Rs 1,44,200",
+              "About 16th year"
+            ],
+            [
+              "Above Super Time Scale",
+              "15",
+              "Rs 1,82,200",
+              "About 25 years, if empanelled"
+            ],
+            [
+              "Apex Scale",
+              "17",
+              "Rs 2,25,000 (fixed)",
+              "Senior-most officers"
+            ],
+            [
+              "Cabinet Secretary",
+              "18",
+              "Rs 2,50,000 (fixed)",
+              "One post"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Common confusions",
+        "kind": "explainer",
+        "bullets": [
+          "IFS here means Indian Foreign Service. The Indian Forest Service (IFoS) has its own exam; its prelims is held through the CSE Prelims, but it has a separate application and Mains.",
+          "Clearing Prelims gives you nothing on its own; it only lets you write Mains that year.",
+          "'Rank 1 to 100 means IAS' is not a rule. It depends on IAS vacancies in your category and on the preferences of candidates ranked above you.",
+          "Final-year students can apply. You only need the degree certificate when you qualify for the interview.",
+          "Age is counted on 1 August of the exam year, not on the date you apply.",
+          "Serving IPS or Group A officers who want another attempt must follow the 2026 rules on training exemption and resignation.",
+          "A PwBD candidate can only be allotted services identified for their disability category."
+        ]
+      },
+      {
+        "title": "How candidates usually prepare",
+        "kind": "preparation",
+        "paragraphs": [
+          "Most candidates spend 12 to 24 months preparing before the first attempt, covering Prelims and Mains GS together because they overlap. They usually choose an optional early and treat it as a fixed 500-mark block, and practise writing answers for Mains from the start. The final three or four months before Prelims go to revision, mock tests and CSAT practice.",
+          "This is common practice, not an official requirement. Read the official syllabus and previous years' papers on the UPSC website first."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Examination Notice No. 05/2026-CSE, Civil Services Examination 2026",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CSP-26-Engl-040226.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Civil Services Examination 2024: minimum qualifying marks",
+      "url": "https://www.upsc.gov.in/sites/default/files/CutOff-CSE-2024-Engl-220425.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "74th Annual Report 2023-24 (CSE 2022 statistics)",
+      "url": "https://www.upsc.gov.in/sites/default/files/74thAnnualReport-2023-24-Engl-230326.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s4",
+      "title": "73rd Annual Report 2022-23 (CSE 2021 statistics)",
+      "url": "https://www.upsc.gov.in/sites/default/files/73rd-AnnualReport-2022-23-Engl-220824.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2024,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s5",
+      "title": "72nd Annual Report 2021-22 (CSE 2020 statistics)",
+      "url": "https://www.upsc.gov.in/sites/default/files/72nd-AnnualReport-2021-22-ENGLISH-270423.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2023,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s6",
+      "title": "UPSC Annual Calendar 2027 (programme of examinations, as on 20.05.2026)",
+      "url": "https://upsc.gov.in/content/annual-calendar-2027-0",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s7",
+      "title": "Civil Services Examination 2025 final results announced by UPSC",
+      "url": "https://www.newsonair.gov.in/civil-services-examination-2025-final-results-announced-by-upsc/",
+      "publisher": "All India Radio News (Prasar Bharati)",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s8",
+      "title": "UPSC Prelims 2026 result declared: 13,343 qualify for Mains",
+      "url": "https://www.iasgyan.in/blogs/upsc-prelims-result-2026-declared-13343-candidates-qualify-for-mains",
+      "publisher": "IAS Gyan",
+      "year": 2026,
+      "type": "secondary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s9",
+      "title": "7th CPC pay matrix and allowances",
+      "url": "https://doe.gov.in/pay-commission-matrix",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "year": 2016,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s10",
+      "title": "CSE service allocation and cadre allotment information",
+      "url": "https://cseplus.nic.in",
+      "publisher": "Department of Personnel and Training",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Official cutoffs found only for CSE 2024; cutoff PDFs for other years were not reachable.",
+      "Official applicant and appeared counts for CSE 2023 to 2025 are not yet in a published annual report.",
+      "CSE 2026 Prelims result and Mains start dates are from secondary reports.",
+      "Exact pay levels of the four Group B services were not confirmed.",
+      "IAS promotion years are typical timings, not guaranteed."
+    ],
+    "notes": "Eligibility, scheme, syllabus, services and tie-breaking are taken from the CSE 2026 notification. Statistics are from UPSC annual reports."
+  },
+  "lastVerified": "2026-10-18"
+}

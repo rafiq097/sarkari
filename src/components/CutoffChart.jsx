@@ -7,7 +7,7 @@ import { useState } from 'react'
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 
 // Categorical series colours, chosen to stay distinct on the warm dark surface.
-const seriesColours = ['#ffb627', '#7fd4a3', '#ff7d5c', '#d6a2f2', '#d8cfc0', '#8fa8b8', '#b8a46a', '#7fb3a8']
+const seriesColours = ['#ffd21f', '#7fd4a3', '#ff7d5c', '#d6a2f2', '#d8cfc0', '#8fa8b8', '#b8a46a', '#7fb3a8']
 
 /** Cutoff trend chart with a stage picker. */
 export function CutoffChart({ cutoffs }) {
@@ -38,10 +38,10 @@ export function CutoffChart({ cutoffs }) {
       <div className="chart-body" role="img" aria-label={`Cutoff marks by year for ${stageKey}`}>
         <ResponsiveContainer width="100%" height={280}>
           <LineChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
-            <CartesianGrid stroke="#312c27" vertical={false} />
-            <XAxis dataKey="year" stroke="#7b7266" tickLine={false} axisLine={{ stroke: '#453e37' }} fontSize={12} />
+            <CartesianGrid stroke="#33302c" vertical={false} />
+            <XAxis dataKey="year" stroke="#7b7266" tickLine={false} axisLine={{ stroke: '#4a4540' }} fontSize={12} />
             <YAxis stroke="#7b7266" tickLine={false} axisLine={false} fontSize={12} width={48} domain={['auto', 'auto']} />
-            <Tooltip contentStyle={{ background: '#26221e', border: '1px solid #453e37', borderRadius: 8, color: '#ede6d9' }} labelStyle={{ color: '#a1978a' }} />
+            <Tooltip contentStyle={{ background: '#262422', border: '1px solid #4a4540', borderRadius: 8, color: '#ede6d9' }} labelStyle={{ color: '#a1978a' }} />
             <Legend wrapperStyle={{ fontSize: 12, color: '#c9c0b2' }} />
             {categories.map((category, position) => (
               <Line key={category} type="monotone" dataKey={category} stroke={seriesColours[position % seriesColours.length]} strokeWidth={2} dot={{ r: 3 }} connectNulls />

@@ -6,7 +6,7 @@
   position: sticky;
   top: 0;
   z-index: 40;
-  background: #13110fe6;
+  background: #121110e6;
   backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--line);
 }

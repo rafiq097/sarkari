@@ -255,8 +255,8 @@
 }
 
 .button-primary:hover {
-  background: #ffc95a;
-  border-color: #ffc95a;
+  background: #ffe066;
+  border-color: #ffe066;
 }
 
 .button-ghost {
@@ -296,7 +296,7 @@
 
 .icon-button.is-on {
   color: var(--accent);
-  border-color: #ffb62766;
+  border-color: #ffd21f66;
   background: var(--accent-soft);
 }
 
@@ -434,7 +434,7 @@
 
 .exam-card:hover {
   border-color: var(--line-strong);
-  background: #211e1a;
+  background: #22201e;
   transform: translateY(-2px);
 }
 
@@ -717,7 +717,7 @@
 }
 
 .data-table tbody tr:hover td {
-  background: #1b1916;
+  background: #1b1a18;
 }
 
 .data-table td.numeric,

@@ -6,22 +6,22 @@
 :root {
   color-scheme: dark;
 
-  --bg: #13110f;
-  --bg-raised: #191714;
-  --surface: #1e1b18;
-  --surface-2: #26221e;
-  --surface-3: #2e2924;
-  --line: #312c27;
-  --line-strong: #453e37;
+  --bg: #121110;
+  --bg-raised: #181715;
+  --surface: #1d1c1a;
+  --surface-2: #262422;
+  --surface-3: #302d2a;
+  --line: #33302c;
+  --line-strong: #4a4540;
 
   --text: #ede6d9;
   --text-soft: #c9c0b2;
   --text-muted: #a1978a;
   --text-faint: #7b7266;
 
-  --accent: #ffb627;
-  --accent-soft: #ffb62722;
-  --accent-ink: #1b1407;
+  --accent: #ffd21f;
+  --accent-soft: #ffd21f2b;
+  --accent-ink: #171200;
   --sage: #7fd4a3;
   --sage-soft: #7fd4a31f;
   --brick: #ff7d5c;
@@ -91,7 +91,7 @@ a.text-link,
 .prose a {
   color: var(--accent);
   text-decoration: underline;
-  text-decoration-color: #ffb62755;
+  text-decoration-color: #ffd21f55;
   text-underline-offset: 3px;
 }
 
@@ -119,7 +119,7 @@ button {
 }
 
 ::selection {
-  background: #ffb62755;
+  background: #ffd21f55;
   color: var(--text);
 }
 

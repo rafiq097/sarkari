@@ -154,6 +154,7 @@ function toIndexRecord(exam, today) {
     status: exam.status?.type,
     statusNote: exam.status?.note ?? '',
     keyEvent: pickKeyEvent(exam, today),
+    cycles: (exam.status?.cycles ?? []).map((cycle) => ({ cycle: cycle.cycle, events: cycle.events.filter((event) => event.date).map(({ event, date, dateType }) => ({ event, date, dateType })) })),
     postNames: (exam.posts ?? []).map((post) => post.name),
     eligibilityRules: exam.eligibilityRules,
     posts: (exam.posts ?? []).map(({ name, ageMin, ageMax, education, payLevel, startingBasic }) => ({ name, ageMin, ageMax, education, payLevel, startingBasic })),
