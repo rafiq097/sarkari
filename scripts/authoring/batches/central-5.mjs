@@ -106,7 +106,7 @@ export default [
     department: 'Intelligence Bureau, Ministry of Home Affairs', summary: 'Graduate entry into the Intelligence Bureau as ACIO Grade II / Executive (Level 7). The 2025 drive had 3,717 posts. Objective Tier 1, descriptive Tier 2 and an interview.',
     recruitmentMethods: ['competitive-exam', 'interview', 'medical-exam', 'document-verification'], frequency: 'Irregular (2023, 2025)',
     officialLinks: [{ label: 'MHA vacancies', url: 'https://www.mha.gov.in' }],
-    status: { type: 'recurring', note: 'The 2025 cycle (3,717 posts) finished with the final result on 3 June 2026. A new cycle had not been announced by October 2026.', cycles: [{ cycle: 'ACIO-II/Exe 2025', events: [
+    status: { type: 'recurring', note: 'The 2025 cycle (3,717 posts) finished with the final result on 3 June 2026. New cycles have come every one to two years.', cycles: [{ cycle: 'ACIO-II/Exe 2025', events: [
       { event: 'Applications open', date: '2025-07-19', dateType: 'official', source: 's1' },
       { event: 'Last date to apply', date: '2025-08-10', dateType: 'official', source: 's1' },
       { event: 'Interviews', date: '2026-04-01', dateType: 'official', source: 's2' },
@@ -327,7 +327,7 @@ export default [
     department: 'National Bank for Agriculture and Rural Development', summary: 'Officer entry into NABARD, the apex rural development bank, mainly in the Rural Development Banking Service (RDBS). Phase I, Phase II, a psychometric test and an interview. The 2025 cycle had 91 posts.',
     recruitmentMethods: ['competitive-exam', 'interview'], frequency: 'Usually yearly',
     officialLinks: [{ label: 'NABARD careers', url: 'https://www.nabard.org' }],
-    status: { type: 'recurring', note: 'The 2025 cycle (91 posts) had Phase II on 25 January 2026, interviews on 10 April 2026 and the final result on 6 May 2026. The next cycle had not been notified by October 2026.', cycles: [{ cycle: 'Grade A 2025', events: [
+    status: { type: 'recurring', note: 'The 2025 cycle (91 posts) had Phase II on 25 January 2026, interviews on 10 April 2026 and the final result on 6 May 2026. NABARD usually notifies Grade A about once a year.', cycles: [{ cycle: 'Grade A 2025', events: [
       { event: 'Phase II exam', date: '2026-01-25', dateType: 'official', source: 's1' },
       { event: 'Interviews', date: '2026-04-10', dateType: 'official', source: 's1' },
       { event: 'Final result', date: '2026-05-06', dateType: 'official', source: 's1' }] }] },

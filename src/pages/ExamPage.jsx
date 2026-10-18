@@ -13,6 +13,7 @@ import { GuideTab, SelectionTab, SyllabusTab } from '../components/profile/Profi
 import { StatsTab, SalaryTab } from '../components/profile/ProfileNumbers.jsx'
 import { WorkTab, SourcesTab } from '../components/profile/ProfileJudgement.jsx'
 import { useProfile, labelFor, jurisdictionRoutes, getIndexRecord } from '../lib/data.js'
+import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 import { ForYouPanel } from '../components/MyVerdict.jsx'
 
 const allTabs = [
@@ -33,6 +34,7 @@ export default function ExamPage() {
   const { examId } = useParams()
   const [searchParams, setSearchParams] = useSearchParams()
   const { profile: exam, isLoading, notFound } = useProfile(examId)
+  useDocumentTitle(exam ? exam.abbreviation || exam.name : notFound ? 'Profile not found' : null)
 
   if (isLoading) return <div className="page-fallback" aria-busy="true" />
   if (notFound) {
@@ -45,7 +47,7 @@ export default function ExamPage() {
           </Link>
         }
       >
-        There is no profile at this address. It may have been renamed, or it is still being researched.
+        There is no profile at this address. It may have been renamed or removed.
       </EmptyState>
     )
   }

@@ -14,6 +14,7 @@ import { StatusBadge } from '../components/Badges.jsx'
 import { toolLinks } from '../lib/navigation.js'
 import { examIndex, sourceIndex, vocabulary } from '../lib/data.js'
 import { formatDate, todayIso } from '../lib/format.js'
+import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 
 const quickSearches = ['UPSC', 'SSC CGL', 'Bank PO', 'Group 2', 'Police constable', 'Teacher', 'GATE PSU', 'Junior Engineer']
 
@@ -57,6 +58,7 @@ function PersonalStrip() {
 
 /** Landing page. */
 export default function HomePage() {
+  useDocumentTitle('Government exams and jobs: eligibility, pay, dates')
   const statusCounts = { active: 0, recurring: 0, historical: 0 }
   for (const exam of examIndex) statusCounts[exam.status] = (statusCounts[exam.status] ?? 0) + 1
   const guides = examIndex.filter((exam) => exam.hasGuide).slice(0, 6)

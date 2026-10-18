@@ -9,6 +9,7 @@ import { ExamCard } from '../components/ExamCard.jsx'
 import { toolLinks } from '../lib/navigation.js'
 import { useSaved } from '../lib/saved.jsx'
 import { getIndexRecord } from '../lib/data.js'
+import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 
 /** Bookmarked exams. */
 export function SavedPage() {
@@ -113,6 +114,7 @@ export function MethodologyPage() {
 
 /** Not-found page. */
 export function NotFoundPage() {
+  useDocumentTitle('Page not found')
   return (
     <EmptyState
       icon={Compass}

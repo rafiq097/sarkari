@@ -5,6 +5,7 @@
  */
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
+import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 import { ChevronRight, SearchX } from 'lucide-react'
 
 /** Breadcrumb trail; the last item is the current page. */
@@ -28,6 +29,7 @@ export function Breadcrumbs({ items }) {
 
 /** Page header with an eyebrow label, title and lead paragraph. */
 export function PageHeader({ eyebrow, title, lead, children }) {
+  useDocumentTitle(typeof title === 'string' ? title : null)
   return (
     <header className="page-header">
       {eyebrow && <p className="eyebrow">{eyebrow}</p>}

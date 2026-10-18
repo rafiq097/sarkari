@@ -14,7 +14,7 @@ export default [
     department: 'Telangana residential (gurukul) school and college societies: Social Welfare, Tribal Welfare, BC Welfare, Minority Welfare and General', summary: 'Teacher and lecturer posts in Telangana\'s residential gurukul schools and colleges. The 2023 drive had 9,210 posts: 4,006 TGT, 1,276 PGT, 2,008 junior college and 868 degree college posts, plus PD, librarian and art teachers.',
     recruitmentMethods: ['competitive-exam', 'skill-test', 'document-verification'], frequency: 'Irregular (2017, 2023)',
     officialLinks: [{ label: 'TREIRB website', url: 'https://treirb.telangana.gov.in' }],
-    status: { type: 'recurring', note: 'The last cycle was notified in April 2023 (9,210 posts), with written exams in August 2023 and results from February 2024. A new TREIRB drive was being talked about in 2026 but no notification was confirmed by October 2026.', cycles: [{ cycle: 'TREIRB 2023', events: [
+    status: { type: 'recurring', note: 'The last cycle was notified in April 2023 (9,210 posts), with written exams in August 2023 and results from February 2024. Large TREIRB drives have come years apart (2017, 2023).', cycles: [{ cycle: 'TREIRB 2023', events: [
       { event: 'Applications open (degree and junior college posts)', date: '2023-04-17', dateType: 'official', source: 's1' },
       { event: 'Written exams begin', date: '2023-08-01', dateType: 'official', source: 's2' },
       { event: 'TGT and PGT results', date: '2024-02-08', dateType: 'official', source: 's2' }] }] },
@@ -57,7 +57,7 @@ export default [
     department: 'Telangana health departments: Public Health, Medical Education, Vaidya Vidhana Parishad, AYUSH, MNJ Cancer Institute, Insurance Medical Services', summary: 'Nursing Officer (Staff Nurse) posts in Telangana government hospitals. The 2024 cycle filled 2,322 posts. Selection is 80 marks for a written test plus up to 20 marks for government contract or outsourced service.',
     recruitmentMethods: ['competitive-exam', 'document-verification'], frequency: 'Irregular (2022, 2024)',
     officialLinks: [{ label: 'MHSRB website', url: 'https://mhsrb.telangana.gov.in' }],
-    status: { type: 'recurring', note: 'The 2024 cycle (2,050 posts, later 2,322) held its computer-based test in November 2024; the final merit list was due in April 2026. A new cycle with 375 approved posts was reported in 2026 but not yet notified.', cycles: [{ cycle: 'Nursing Officer 2024', events: [{ event: 'Final merit list', date: '2026-04-09', dateType: 'official', source: 's3' }] }] },
+    status: { type: 'recurring', note: 'The 2024 cycle (2,050 posts, later 2,322) held its computer-based test in November 2024; the final merit list was due in April 2026. New cycles depend on posts being sanctioned (375 posts were reported approved in 2026).', cycles: [{ cycle: 'Nursing Officer 2024', events: [{ event: 'Final merit list', date: '2026-04-09', dateType: 'official', source: 's3' }] }] },
     posts: [{ name: 'Nursing Officer (Staff Nurse)', group: 'Non-gazetted', payLevel: 'TS RPS 2020', startingBasic: 36750, ageMin: 18, ageMax: 46, responsibilities: 'Ward nursing in government hospitals.', notes: '2024: 2,322 posts (1,576 Public Health and Medical Education, 332 TVVP, 61 AYUSH, 80 MNJ, 272 IMS, 1 Preventive Medicine).' }],
     eligibility: {
       age: { summary: '18 to 46 years.', referenceDate: 'As per notification', relaxations: tsRelax },

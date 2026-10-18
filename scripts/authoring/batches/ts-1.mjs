@@ -16,7 +16,7 @@ export default [
     department: 'Government of Telangana', summary: 'Telangana\'s top state service exam: Deputy Collector, DSP, Commercial Tax Officer, MPDO, Municipal Commissioner and more. Objective Prelims, then six descriptive Main papers plus qualifying English (900 marks). There is no interview.',
     recruitmentMethods: ['competitive-exam', 'medical-exam', 'document-verification'], frequency: 'Irregular',
     officialLinks: [{ label: 'TGPSC notifications', url: 'https://websitenew.tgpsc.gov.in/directRecruitment' }],
-    status: { type: 'recurring', note: 'The last cycle (Notification 02/2024, 563 posts) finished its exams in 2024. The High Court division bench upheld the results in February 2026 and the Supreme Court rejected the challenges on 2 April 2026. A new Group-I notification had not appeared on the TGPSC site by October 2026.', cycles: [{ cycle: 'Notification 02/2024', events: [
+    status: { type: 'recurring', note: 'The last cycle (Notification 02/2024, 563 posts) finished its exams in 2024. The High Court division bench upheld the results in February 2026 and the Supreme Court rejected the challenges on 2 April 2026. Group-I has been notified every few years.', cycles: [{ cycle: 'Notification 02/2024', events: [
       { event: 'Notification', date: '2024-02-19', dateType: 'official', source: 's1' },
       { event: 'Last date to apply', date: '2024-03-14', dateType: 'official', source: 's1' },
       { event: 'Supreme Court upholds recruitment', date: '2026-04-02', dateType: 'official', source: 's2' }] }] },
@@ -76,7 +76,7 @@ export default [
     department: 'Government of Telangana', summary: 'Telangana executive and non-executive posts such as Naib Tahsildar, Assistant Commercial Tax Officer, Sub-Registrar, Municipal Commissioner Gr-III and Assistant Section Officer. Four objective papers (600 marks); no interview.',
     recruitmentMethods: ['competitive-exam', 'document-verification'], frequency: 'Irregular',
     officialLinks: [{ label: 'TGPSC notifications', url: 'https://websitenew.tgpsc.gov.in/directRecruitment' }],
-    status: { type: 'recurring', note: 'Last cycle: Notification 28/2022 (783 posts); exam in December 2024; 782 selected in 2025. No new notification on the TGPSC site by October 2026.', cycles: [{ cycle: 'Notification 28/2022', events: [{ event: 'Notification', date: '2022-12-29', dateType: 'official', source: 's1' }] }] },
+    status: { type: 'recurring', note: 'Last cycle: Notification 28/2022 (783 posts); exam in December 2024; 782 selected in 2025. Group-II notifications have come years apart.', cycles: [{ cycle: 'Notification 28/2022', events: [{ event: 'Notification', date: '2022-12-29', dateType: 'official', source: 's1' }] }] },
     posts: [
       { name: 'Naib Tahsildar', group: 'Group-II', payLevel: 'RPS 2020', startingBasic: 42300, responsibilities: 'Mandal revenue administration.', notes: '2022: 98 posts.' },
       { name: 'Assistant Commercial Tax Officer', group: 'Group-II', payLevel: 'RPS 2020', startingBasic: 42300, responsibilities: 'State GST.', notes: '2022: 59 posts.' },

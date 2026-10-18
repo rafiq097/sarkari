@@ -15,13 +15,20 @@ import { useSaved } from '../lib/saved.jsx'
 import { levelWeight, todayIso } from '../lib/format.js'
 import { Select } from '../components/Select.jsx'
 
+/** Position of an education level in the vocabulary order (unknown levels sort last). */
+function educationRank(level) {
+  const position = vocabulary.educationLevelOrder.indexOf(level)
+  return position === -1 ? Infinity : position
+}
+
 // Each multi-select filter: URL key, legend, option source and record matcher.
 const filterDefinitions = [
   { key: 'region', legend: 'Government', options: vocabulary.jurisdictions, matches: (exam, values) => values.includes(exam.jurisdiction) },
   { key: 'status', legend: 'Status', options: vocabulary.statusTypes, matches: (exam, values) => values.includes(exam.status) },
   { key: 'sector', legend: 'Sector', options: vocabulary.sectors, matches: (exam, values) => values.includes(exam.sector) },
   { key: 'nature', legend: 'Nature', options: { technical: 'Technical', 'non-technical': 'Non-technical' }, matches: (exam, values) => values.includes(exam.technical ? 'technical' : 'non-technical') },
-  { key: 'education', legend: 'Minimum qualification', options: vocabulary.educationLevels, matches: (exam, values) => values.includes(exam.eligibilityRules?.minEducation) },
+  // "I have this qualification": an exam matches when its minimum is at or below the chosen level.
+  { key: 'education', legend: 'Your qualification', options: vocabulary.educationLevels, matches: (exam, values) => values.some((value) => educationRank(exam.eligibilityRules?.minEducation) <= educationRank(value)) },
   { key: 'field', legend: 'Degree or branch accepted', options: vocabulary.educationFields, matches: (exam, values) => values.some((value) => (exam.eligibilityRules?.educationFields ?? ['any']).includes(value)) },
   { key: 'method', legend: 'Selection includes', options: vocabulary.recruitmentMethods, matches: (exam, values) => values.every((value) => exam.recruitmentMethods.includes(value)) },
   { key: 'employment', legend: 'Job type', options: vocabulary.employmentTypes, matches: (exam, values) => values.includes(exam.employmentType) },
