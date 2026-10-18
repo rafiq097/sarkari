@@ -281,50 +281,6 @@
         }
       ]
     },
-    "ka-7spc": {
-      "label": "Karnataka, 2024 Revised Pay Scales (7th State Pay Commission)",
-      "payCommission": "Karnataka 7th SPC (chair K. Sudhakar Rao), implemented from 1 Aug 2024 by Finance Department order FD 21 SRP 2024 (23 Aug 2024). Minimum basic Rs 27,000, maximum Rs 2,41,200. DA of 31% merged and 27.5% fitment added to pay as on 1 Jul 2022.",
-      "daPercent": 15.75,
-      "daEffective": "2026-01-01",
-      "daNote": "Raised from 14.25% to 15.75% w.e.f. 1 Jan 2026 (Finance Department order, May 2026). DA restarted from a low base because DA was merged into pay in 2024.",
-      "hra": [],
-      "hraNote": "HRA percentages under the 2024 scales could not be confirmed from an official order. Bengaluru is the only Category A city. Enter your HRA rate manually in the calculator.",
-      "transportAllowance": [],
-      "transportNote": "No general transport allowance.",
-      "pension": "National Pension System for those joining on or after 1 Apr 2006: employee 10% of (Basic + DA), Government 14%. Restoration of the old pension scheme has been discussed; no general change was verified.",
-      "pensionDeductionPercent": 10,
-      "otherDeductions": [
-        {
-          "name": "KGID",
-          "detail": "Compulsory Karnataka Government Insurance, slab by pay"
-        },
-        {
-          "name": "Group Insurance",
-          "detail": "Slab by group"
-        },
-        {
-          "name": "Professional tax",
-          "detail": "Rs 200 per month from Rs 25,000 gross (Rs 300 in February)"
-        }
-      ],
-      "increment": "Annual increment by the fixed stage amount of the pay scale.",
-      "sources": [
-        {
-          "title": "Karnataka implements 7th Pay Commission (minimum Rs 27,000, maximum Rs 2,41,200)",
-          "url": "https://thesouthfirst.com/karnataka/pay-hike-for-7-lakh-government-staff-as-karnataka-decides-to-implement-7th-pay-commission-recommendations",
-          "publisher": "The South First",
-          "year": 2024,
-          "type": "secondary"
-        },
-        {
-          "title": "Karnataka Government raises DA to 15.75%",
-          "url": "https://www.hrkatha.com/news/karnataka-government-raises-da-to-15-75/",
-          "publisher": "HR Katha",
-          "year": 2026,
-          "type": "secondary"
-        }
-      ]
-    },
     "bank-12bps": {
       "label": "Public sector banks, 12th Bipartite Settlement",
       "payCommission": "12th Bipartite Settlement / Joint Note (8 Mar 2024), effective 1 Nov 2022. Officers: JMGS-I starting basic Rs 48,480. Clerks: starting basic Rs 24,050.",

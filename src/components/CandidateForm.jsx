@@ -66,7 +66,6 @@ export function CandidateForm({ candidate, onChange, showPreferences = false }) 
           <option value="">Other / not set</option>
           <option value="andhra-pradesh">Andhra Pradesh</option>
           <option value="telangana">Telangana</option>
-          <option value="karnataka">Karnataka</option>
         </select>
       </label>
       <label className="field">

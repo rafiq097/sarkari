@@ -2,8 +2,7 @@
   "jurisdictions": {
     "central": "Central Government",
     "andhra-pradesh": "Andhra Pradesh",
-    "telangana": "Telangana",
-    "karnataka": "Karnataka"
+    "telangana": "Telangana"
   },
   "sectors": {
     "civil-services": "Civil Services",
@@ -68,7 +67,17 @@
     "postgraduate": "Postgraduate degree",
     "doctorate": "Doctorate"
   },
-  "educationLevelOrder": ["none", "class-8", "class-10", "class-12", "iti", "diploma", "graduate", "postgraduate", "doctorate"],
+  "educationLevelOrder": [
+    "none",
+    "class-8",
+    "class-10",
+    "class-12",
+    "iti",
+    "diploma",
+    "graduate",
+    "postgraduate",
+    "doctorate"
+  ],
   "educationFields": {
     "any": "Any discipline",
     "arts": "Arts / Humanities",
@@ -136,8 +145,6 @@
     "telangana-history-culture": "Telangana history and culture",
     "telangana-movement": "Telangana movement and state formation",
     "telangana-economy-policy": "Telangana economy and policy",
-    "karnataka-history-culture": "Karnataka history and culture",
-    "karnataka-economy-policy": "Karnataka economy and policy",
     "engineering-civil": "Civil engineering",
     "engineering-mechanical": "Mechanical engineering",
     "engineering-electrical": "Electrical engineering",
@@ -182,7 +189,11 @@
     "locationFlexibility": "Location flexibility",
     "recruitmentRegularity": "Recruitment regularity"
   },
-  "levels": ["low", "medium", "high"],
+  "levels": [
+    "low",
+    "medium",
+    "high"
+  ],
   "statusTypes": {
     "active": "Active",
     "recurring": "Recurring / expected",

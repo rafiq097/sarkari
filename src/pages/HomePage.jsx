@@ -18,7 +18,6 @@ const regionBlurbs = {
   central: 'UPSC, SSC, Railways, banks, defence, CAPF, science bodies and PSUs.',
   'andhra-pradesh': 'APPSC, police, DSC teachers, village and ward secretariats and more.',
   telangana: 'TGPSC, police, teacher recruitment, gurukul and health boards and more.',
-  karnataka: 'KPSC, KEA, police, teacher recruitment, power utilities and more.',
 }
 
 const quickSearches = ['UPSC', 'SSC CGL', 'Bank PO', 'Group 2', 'Police constable', 'Teacher', 'GATE PSU', 'Junior Engineer']
@@ -76,7 +75,7 @@ export default function HomePage() {
         <h1>
           Every route into government service, <em>checked against the source.</em>
         </h1>
-        <p className="lead">Eligibility, exam stages, syllabus, cutoffs, pay and career growth for Central, Andhra Pradesh, Telangana and Karnataka recruitment. Every fact links back to an official notification or document.</p>
+        <p className="lead">Eligibility, exam stages, syllabus, cutoffs, pay and career growth for Central, Andhra Pradesh and Telangana recruitment. Every fact links back to an official notification or document.</p>
         <div className="hero-search">
           <SearchBox size="large" placeholder="Try IAS, SSC CGL, Group 2, constable, bank PO" />
         </div>

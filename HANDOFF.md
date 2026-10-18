@@ -33,7 +33,7 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 1. Read the official notice: `python -I scripts/authoring/fetch_text.py <url> [marker] [chars]` (caches text in `.research-cache/<hash>.txt`; then `grep -n` / `sed -n` the .txt for key lines only).
 2. Write a batch spec in `scripts/authoring/batches/<name>.mjs` (copy the style of `ap-2.mjs` or `ts-1.mjs`). The generator adds structure and shared items (pay matrix source `payMatrix`, defence pay `defencePay`, SSC calendar `sscCalendar`, UPSC calendar `upscCalendar2027`, central relaxation/reservation for central exams).
 3. `node scripts/authoring/make-profile.mjs scripts/authoring/batches/<name>.mjs && npm run data` then commit.
-- payRuleSet values: central-7cpc, defence-7cpc, ap-rps-2022, ts-rps-2020, ka-7spc, bank-12bps, rbi, other.
+- payRuleSet values: central-7cpc, defence-7cpc, ap-rps-2022, ts-rps-2020, bank-12bps, rbi, other.
 - statistics rows need `source`; status events need `dateType` official or official-tentative.
 
 ## 5. Source access tips (saves a lot of time)
@@ -64,7 +64,7 @@ Removed by scope: ssc-mts-havaldar.
 
 ## 8. Next steps (in order)
 1. TS police (TGLPRB): last cycle 2022, research needed.
-2. Karnataka: KPSC KAS (Gazetted Probationers), KPSC FDA/SDA (Group C), KEA recruitments, KSP PSI and Civil Police Constable, GPSTR/HSTR teachers, KARTET, KPTCL AE/JE. Use `ka-7spc` pay rules (Karnataka HRA unverified: calculator asks user for HRA %).
+2. (DROPPED) Karnataka is out of scope at Rafiq's request. Focus only on AP and Telangana.
 3. AP extras: AP DSC / AP TET (school education portal), APPSC ASO 20/2026, HWO.
 4. Central extras worth adding: UPSC CMS, IES/ISS, CGS, EPFO EO/APFC; AFCAT; Agniveer (fixed tenure); NABARD Grade A, SEBI Grade A, LIC AAO; ISRO ICRB scientist, DRDO, BARC, GATE (as eligibility route) + major PSUs via GATE; KVS/NVS teachers, CTET, UGC NET; AIIMS NORCET; IB ACIO; EPFO SSA; FCI; ESIC.
 5. (DONE) coverage.json filled; keep it updated as profiles are added.

@@ -10,7 +10,7 @@ import { evaluateExam, ageOn, relaxedUpperAge } from './eligibility.js'
 import { todayIso } from './format.js'
 
 const levelOrder = vocabulary.educationLevelOrder
-const stateJurisdictions = new Set(['andhra-pradesh', 'telangana', 'karnataka'])
+const stateJurisdictions = new Set(['andhra-pradesh', 'telangana'])
 // Upcoming official dates within this many days count as "coming up".
 const soonWindowDays = 120
 

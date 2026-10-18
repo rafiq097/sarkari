@@ -7,7 +7,6 @@ export const regionLinks = [
   { to: '/central', label: 'Central' },
   { to: '/andhra-pradesh', label: 'Andhra Pradesh' },
   { to: '/telangana', label: 'Telangana' },
-  { to: '/karnataka', label: 'Karnataka' },
 ]
 
 export const toolLinks = [

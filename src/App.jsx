@@ -45,7 +45,6 @@ export default function App() {
               <Route path="central" element={<RegionPage jurisdiction="central" />} />
               <Route path="andhra-pradesh" element={<RegionPage jurisdiction="andhra-pradesh" />} />
               <Route path="telangana" element={<RegionPage jurisdiction="telangana" />} />
-              <Route path="karnataka" element={<RegionPage jurisdiction="karnataka" />} />
               <Route path="compare" element={<ComparePage />} />
               <Route path="eligibility" element={<EligibilityPage />} />
               <Route path="syllabus" element={<SyllabusPage />} />

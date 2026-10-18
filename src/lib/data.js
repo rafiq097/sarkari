@@ -89,5 +89,4 @@ export const jurisdictionRoutes = {
   central: '/central',
   'andhra-pradesh': '/andhra-pradesh',
   telangana: '/telangana',
-  karnataka: '/karnataka',
 }
