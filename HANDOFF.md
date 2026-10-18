@@ -67,8 +67,8 @@ Removed by scope: ssc-mts-havaldar.
 2. Karnataka: KPSC KAS (Gazetted Probationers), KPSC FDA/SDA (Group C), KEA recruitments, KSP PSI and Civil Police Constable, GPSTR/HSTR teachers, KARTET, KPTCL AE/JE. Use `ka-7spc` pay rules (Karnataka HRA unverified: calculator asks user for HRA %).
 3. AP extras: AP DSC / AP TET (school education portal), APPSC ASO 20/2026, HWO.
 4. Central extras worth adding: UPSC CMS, IES/ISS, CGS, EPFO EO/APFC; AFCAT; Agniveer (fixed tenure); NABARD Grade A, SEBI Grade A, LIC AAO; ISRO ICRB scientist, DRDO, BARC, GATE (as eligibility route) + major PSUs via GATE; KVS/NVS teachers, CTET, UGC NET; AIIMS NORCET; IB ACIO; EPFO SSA; FCI; ESIC.
-5. Fill `src/data/coverage.json` (organizations examined, pending, excluded under the Rs 20,000 / less-preferred rule, gaps).
-6. README (preview, deploy, update data with the generator), final browser screenshots (Chrome headless: `"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --screenshot=... --window-size=1360,1500 http://localhost:4173/...`; headless minimum width is about 500px), lint, build, stop the preview server, commit.
+5. (DONE) coverage.json filled; keep it updated as profiles are added.
+6. (README DONE) Final browser screenshots (Chrome headless: `"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --screenshot=... --window-size=1360,1500 http://localhost:4173/...`; headless minimum width is about 500px), lint, build, stop the preview server, commit.
 
 ## 9. Known UI/data notes
 - Karnataka HRA percentages under the 2024 scales are not verified; AP 10% HRA slab ceiling not verified.

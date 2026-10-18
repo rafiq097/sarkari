@@ -1,16 +1,53 @@
-# React + Vite
+# Sarkari Atlas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A static research portal for Central, Andhra Pradesh, Telangana and Karnataka government recruitment: eligibility, exam stages, syllabus, cutoffs, pay, career growth, and personal tools (My Profile, Your plan, eligibility checker, comparison, syllabus overlap, salary explorer, calendar).
 
-Currently, two official plugins are available:
+No backend. Personal data (profile, bookmarks, comparison) stays in the visitor's browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run locally
 
-## React Compiler
+```bash
+npm install
+npm run dev        # validates data, then starts Vite on http://localhost:5173
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build and preview
 
-## Expanding the ESLint configuration
+```bash
+npm run build      # validates data and builds to dist/
+npm run preview    # serves dist/ on http://localhost:4173
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploy
+
+Any static host works. Clean URLs need a fallback to `index.html`:
+
+- Netlify: `public/_redirects` is already included.
+- Vercel: `vercel.json` is already included.
+
+Publish the `dist/` folder.
+
+## Data
+
+- Exam profiles: `src/data/exams/<jurisdiction>/<id>.json` (schema in `docs/DATA_SCHEMA.md`).
+- Pay rules (DA, HRA, transport, pension, pay matrix): `src/data/pay-rules/pay-rules.json`.
+- Shared labels and tags: `src/data/vocabulary.json`.
+- Coverage report: `src/data/coverage.json`.
+- `npm run data` validates every profile (required fields, enums, source references, dates) and builds the indexes in `src/data/generated/` (not committed).
+
+### Adding or updating a profile
+
+1. Read the official notification. Helper: `python -I scripts/authoring/fetch_text.py <url> [marker] [chars]`.
+2. Write or edit a batch spec in `scripts/authoring/batches/` (see existing batches).
+3. Run `node scripts/authoring/make-profile.mjs scripts/authoring/batches/<file>.mjs`, then `npm run data`.
+
+Rules: official sources first, secondary sources marked `secondary`, unknown values `null` with a note in `dataQuality.gaps`. Only official dates; tentative dates only from official calendars. Status (active, recurring) is recomputed from dates in the browser, so pages age correctly.
+
+### Updating pay rules
+
+When DA changes, edit `daPercent`, `daEffective` and `daNote` of the rule set in `pay-rules.json`. All salary estimates update automatically.
+
+## Project notes
+
+- `HANDOFF.md`: current state, conventions and next steps.
+- `PROGRESS.md`: progress summary and scope rules.

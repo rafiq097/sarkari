@@ -126,9 +126,20 @@ export default function CoveragePage() {
         </>
       )}
 
+      {coverage.excluded?.length > 0 && (
+        <>
+          <SectionHeading number="04" title="Excluded by scope" description="Less-preferred routes deliberately left out." />
+          <ul className="plain-list">
+            {coverage.excluded.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
       {coverage.gaps?.length > 0 && (
         <>
-          <SectionHeading number="04" title="Known gaps across the dataset" />
+          <SectionHeading number="05" title="Known gaps across the dataset" />
           <ul className="plain-list">
             {coverage.gaps.map((item) => (
               <li key={item}>{item}</li>

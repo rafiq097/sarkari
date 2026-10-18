@@ -1,6 +1,42 @@
 {
-    "researchDate": "2026-10-18",
-    "organizations": [],
-    "pending": [],
-    "gaps": []
+  "researchDate": "2026-10-18",
+  "organizations": [
+    { "jurisdiction": "central", "name": "Union Public Service Commission (UPSC)", "website": "https://www.upsc.gov.in", "status": "partial", "profiles": ["upsc-cse", "upsc-ifos", "upsc-ese", "upsc-cds", "upsc-nda-na", "upsc-capf-ac"], "notes": "Official 2026 notifications, 2026 and 2027 calendars and annual reports used. CMS, IES/ISS, CGS and EPFO tests pending." },
+    { "jurisdiction": "central", "name": "Staff Selection Commission (SSC)", "website": "https://ssc.gov.in", "status": "partial", "profiles": ["ssc-cgl", "ssc-chsl", "ssc-je", "ssc-stenographer", "ssc-cht", "ssc-cpo", "ssc-gd-constable"], "notes": "CGL, CHSL, JE, Stenographer and CHT from official 2026 notices; CPO and GD from secondary reports. MTS excluded (Level 1 pay). Selection Posts pending." },
+    { "jurisdiction": "central", "name": "Railway Recruitment Boards (RRB) and RPF", "website": "https://www.rrbcdg.gov.in", "status": "partial", "profiles": ["rrb-ntpc-graduate", "rrb-ntpc-undergraduate", "rrb-je", "rpf-si", "rpf-constable"], "notes": "RRB PDFs block automated download; secondary reports used for cycle figures. Group D and ALP excluded (pay below Rs 20,000)." },
+    { "jurisdiction": "central", "name": "Institute of Banking Personnel Selection (IBPS)", "website": "https://www.ibps.in", "status": "partial", "profiles": ["ibps-po", "ibps-clerk", "ibps-rrb"], "notes": "PO from the official 2026 notice; Clerk and RRB from secondary reports. SO pending." },
+    { "jurisdiction": "central", "name": "State Bank of India", "website": "https://sbi.bank.in/web/careers/current-openings", "status": "covered", "profiles": ["sbi-po", "sbi-junior-associate"], "notes": "Official advertisements (PO only in Hindi)." },
+    { "jurisdiction": "central", "name": "Reserve Bank of India", "website": "https://opportunities.rbi.org.in", "status": "partial", "profiles": ["rbi-grade-b"], "notes": "Grade B from a secondary report. Assistant pending." },
+    { "jurisdiction": "andhra-pradesh", "name": "Andhra Pradesh Public Service Commission (APPSC)", "website": "https://psc.ap.gov.in", "status": "partial", "profiles": ["appsc-group-1", "appsc-group-2", "appsc-aee"], "notes": "Official 2026 notifications. ASO, HWO, AMVI, Horticulture and others notified in 2026 but not yet profiled. FRO (5 posts) skipped as a minor cycle." },
+    { "jurisdiction": "andhra-pradesh", "name": "State Level Police Recruitment Board, AP", "website": "https://slprb.ap.gov.in", "status": "partial", "profiles": ["ap-police-si", "ap-police-constable"], "notes": "Six notifications of 16 Sep 2026; details from a secondary report because the official press note is a scanned image." },
+    { "jurisdiction": "andhra-pradesh", "name": "School Education Department, AP (DSC, TET)", "website": null, "status": "pending", "profiles": [], "notes": "Not yet researched." },
+    { "jurisdiction": "telangana", "name": "Telangana Public Service Commission (TGPSC)", "website": "https://www.tgpsc.gov.in", "status": "partial", "profiles": ["tgpsc-group-1", "tgpsc-group-2", "tgpsc-group-3", "tgpsc-group-4", "tgpsc-aee"], "notes": "Official notifications. 2026 notices for DEO, DIET lecturers, Town Planning and TGPCB posts not yet profiled." },
+    { "jurisdiction": "telangana", "name": "Department of School Education, Telangana (TET, DSC)", "website": "https://schooledu.telangana.gov.in", "status": "partial", "profiles": ["tg-tet"], "notes": "TET from a secondary report. DSC 2026 not notified at research time." },
+    { "jurisdiction": "telangana", "name": "Telangana State Level Police Recruitment Board", "website": null, "status": "pending", "profiles": [], "notes": "No 2026 notification found; last cycle 2022." },
+    { "jurisdiction": "karnataka", "name": "Karnataka Public Service Commission (KPSC)", "website": "https://kpsc.kar.nic.in", "status": "pending", "profiles": [], "notes": "KAS, FDA, SDA and technical posts pending." },
+    { "jurisdiction": "karnataka", "name": "Karnataka Examinations Authority (KEA)", "website": "https://cetonline.karnataka.gov.in/kea", "status": "pending", "profiles": [], "notes": "Pending." },
+    { "jurisdiction": "karnataka", "name": "Karnataka State Police", "website": "https://ksp.karnataka.gov.in", "status": "pending", "profiles": [], "notes": "PSI and constable pending." }
+  ],
+  "pending": [
+    "UPSC CMS, IES/ISS, Combined Geo-Scientist, EPFO EO/AO and APFC",
+    "AFCAT, Agniveer (Army, Navy, Air Force), Coast Guard",
+    "NABARD Grade A, SEBI Grade A, LIC AAO, RBI Assistant, IBPS SO",
+    "ISRO, DRDO, BARC, NIC; GATE and PSU recruitment through GATE",
+    "KVS, NVS, CTET, UGC NET, EMRS",
+    "AIIMS NORCET, ESIC, EPFO SSA, FCI, IB ACIO",
+    "AP DSC and AP TET; more APPSC 2026 notifications",
+    "Telangana police (TGPRB), TG DSC, more TGPSC 2026 notifications",
+    "All Karnataka recruitment"
+  ],
+  "excluded": [
+    "Routes whose main post starts below Rs 20,000 basic pay, such as SSC MTS and Havaldar, RRB Group D and Assistant Loco Pilot, and Level 1 state posts.",
+    "Very small or niche cycles, such as APPSC Forest Range Officer 2026 (5 posts).",
+    "District-level and contract recruitments (anganwadi, outsourcing, home guards)."
+  ],
+  "gaps": [
+    "Official category-wise cutoffs were collected only where the PDF was reachable (UPSC CSE 2024).",
+    "Several 2026 cycle figures (CPO, GD, IBPS Clerk, IBPS RRB, RBI Grade B, AP police, TG TET) come from secondary reports and are marked so.",
+    "Karnataka HRA rates under the 2024 pay scales and the AP 10% HRA slab ceiling were not confirmed from official orders.",
+    "Bank and RBI gross pay is not modelled because DA there changes every quarter."
+  ]
 }
