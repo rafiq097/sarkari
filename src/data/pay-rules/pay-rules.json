@@ -1,0 +1,148 @@
+{
+  "asOf": "2026-10-18",
+  "note": "Rates below are those in force on the research date. Gross and in-hand figures shown on this site are estimates built from these rules. They exclude income tax, arrears, and post-specific allowances unless stated.",
+  "ruleSets": {
+    "central-7cpc": {
+      "label": "Central Government, 7th CPC pay matrix",
+      "payCommission": "7th Central Pay Commission (in force since 1 Jan 2016). The 8th CPC was constituted with Terms of Reference notified on 3 Nov 2025; it has 18 months to report and no revised pay is in force yet.",
+      "daPercent": 60,
+      "daEffective": "2026-01-01",
+      "daNote": "DA raised from 58% to 60% w.e.f. 1 Jan 2026 (Cabinet, 18 Apr 2026). The 1 Jul 2026 instalment had not been announced as of 17 Oct 2026.",
+      "hra": [
+        { "label": "X class city (e.g. Hyderabad, Bengaluru)", "percent": 30, "minimum": 5400 },
+        { "label": "Y class city (e.g. Visakhapatnam, Vijayawada, Warangal, Mysuru)", "percent": 20, "minimum": 3600 },
+        { "label": "Z class (all other places)", "percent": 10, "minimum": 1800 }
+      ],
+      "hraNote": "HRA moved to 30/20/10% from 1 Jan 2024 when DA reached 50%. Not paid if government quarters are allotted.",
+      "transportAllowance": [
+        { "levels": "9 and above", "higherCities": 7200, "otherPlaces": 3600 },
+        { "levels": "3 to 8", "higherCities": 3600, "otherPlaces": 1800 },
+        { "levels": "1 to 2", "higherCities": 1350, "otherPlaces": 900 }
+      ],
+      "transportNote": "DA is also paid on Transport Allowance. Higher TPTA cities include Hyderabad and Bengaluru.",
+      "pension": "NPS for those joining on or after 1 Jan 2004: employee 10% of (Basic + DA), Government 14%. Unified Pension Scheme (UPS) is an option under NPS from 1 Apr 2025: assured payout of 50% of average basic pay of the last 12 months for 25 years of qualifying service, proportionate down to a 10 year minimum.",
+      "pensionDeductionPercent": 10,
+      "otherDeductions": [
+        { "name": "CGEGIS", "detail": "Group A Rs 120, Group B Rs 60, Group C Rs 30 per month" },
+        { "name": "CGHS", "detail": "Only in CGHS cities. Rs 250 (Levels 1 to 5), 450 (Level 6), 650 (Levels 7 to 11), 1000 (Level 12 and above) per month" },
+        { "name": "Professional tax", "detail": "Levied by the state where posted (AP, Telangana, Karnataka: Rs 200 per month at these salary levels)" }
+      ],
+      "increment": "3% of basic pay once a year on 1 January or 1 July, rounded to the nearest 100 (moves one cell down the pay matrix level).",
+      "matrixFirstCells": {
+        "1": 18000, "2": 19900, "3": 21700, "4": 25500, "5": 29200, "6": 35400, "7": 44900, "8": 47600,
+        "9": 53100, "10": 56100, "11": 67700, "12": 78800, "13": 123100, "13A": 131100, "14": 144200,
+        "15": 182200, "16": 205400, "17": 225000, "18": 250000
+      },
+      "matrixLastCells": {
+        "1": 56900, "2": 63200, "3": 69100, "4": 81100, "5": 92300, "6": 112400, "7": 142400, "8": 151100,
+        "9": 167800, "10": 177500, "11": 208700, "12": 209200, "13": 215900, "13A": 216600, "14": 218200,
+        "15": 224100, "16": 224400, "17": 225000, "18": 250000
+      },
+      "sources": [
+        { "title": "Cabinet approves additional instalment of DA w.e.f. 01.01.2026", "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2253245", "publisher": "Press Information Bureau", "year": 2026, "type": "primary" },
+        { "title": "7th CPC pay matrix (Central Civil Services (Revised Pay) Rules, 2016)", "url": "https://doe.gov.in/pay-commission-matrix", "publisher": "Department of Expenditure", "year": 2016, "type": "primary" },
+        { "title": "8th CPC constituted, report due within 18 months (Lok Sabha reply)", "url": "https://www.gconnect.in/8th-pay-commission/8th-cpc-constituted-lok-sabha-government-update.html", "publisher": "GConnect (reports official reply)", "year": 2026, "type": "secondary" },
+        { "title": "July 2026 DA still pending after 14 Oct Cabinet meeting", "url": "https://www.outlookmoney.com/retirement/pension/july-2026-da-hike-central-government-employees-await-announcement-after-october-14-cabinet-meet", "publisher": "Outlook Money", "year": 2026, "type": "secondary" }
+      ]
+    },
+    "ap-rps-2022": {
+      "label": "Andhra Pradesh, Revised Pay Scales 2022 (11th PRC)",
+      "payCommission": "AP RPS 2022 (G.O.Ms.No.1, Finance, 17 Jan 2022): master scale Rs 20,000 to Rs 1,79,000. Notional from 1 Jul 2018, monetary benefit from 1 Apr 2020. A 12th PRC has been set up; its revision is not in force.",
+      "daPercent": 41.86,
+      "daEffective": "2025-01-01",
+      "daNote": "G.O.Ms.No.119 and 120 (11 Sep 2026) raised DA from 37.31% to 40.04% (from 1 Jul 2024) and to 41.86% (from 1 Jan 2025). Paid in cash from the September 2026 salary. Figures from secondary reports of the GOs.",
+      "hra": [
+        { "label": "District headquarters and cities above 2 lakh population", "percent": 16, "maximum": 17000 },
+        { "label": "Towns with 50,000 to 2 lakh population", "percent": 12, "maximum": 13000 },
+        { "label": "All other places", "percent": 10, "maximum": null }
+      ],
+      "hraNote": "Modified HRA order of Feb 2022, effective 1 Jan 2022. The ceiling for the 10% slab was not confirmed from the GO text.",
+      "transportAllowance": [],
+      "transportNote": "No general transport allowance; conveyance allowances apply only to specific posts.",
+      "pension": "Employees joining after 1 Sep 2004 are under the Contributory Pension Scheme (CPS, linked to NPS): employee 10% of (Basic + DA). The AP Guaranteed Pension Scheme Act, 2023 exists; its implementation status was not verified.",
+      "pensionDeductionPercent": 10,
+      "otherDeductions": [
+        { "name": "APGLI", "detail": "Compulsory state life insurance, slab by pay" },
+        { "name": "Group Insurance (GIS)", "detail": "Slab by category" },
+        { "name": "EHS", "detail": "Employees Health Scheme contribution" },
+        { "name": "Professional tax", "detail": "Rs 200 per month above Rs 20,000 gross" }
+      ],
+      "increment": "Annual increment = next stage in the master scale segment for the post.",
+      "sources": [
+        { "title": "Pay Scales RPS 2022 Circular Memo", "url": "https://apfinance.gov.in/uploads/index-docs/Pay_Scales_RPS_2022_Cir.Memo.pdf", "publisher": "Finance Department, Government of Andhra Pradesh", "year": 2023, "type": "primary" },
+        { "title": "AP issues modified order on benefits under revised pay scales (HRA slabs)", "url": "https://www.india.com/business/andhra-issues-modified-order-on-benefits-under-revised-pay-scales-of-govt-employees-details-here-5249268/", "publisher": "India.com (PTI)", "year": 2022, "type": "secondary" },
+        { "title": "AP DA 41.86% G.O.Ms.No.120", "url": "https://www.gsrmaths.in/2026/09/ap-da-41-86-go-120.html", "publisher": "GSR Info (teachers portal)", "year": 2026, "type": "secondary" }
+      ]
+    },
+    "ts-rps-2020": {
+      "label": "Telangana, Revised Pay Scales 2020 (1st PRC)",
+      "payCommission": "Telangana RPS 2020 (G.O.Ms.No.51, 11 Jun 2021): master scale Rs 19,000 to Rs 1,62,070, 30% fitment. The 2nd Telangana PRC report is not implemented as of the research date.",
+      "daPercent": 40.04,
+      "daEffective": "2024-07-01",
+      "daNote": "G.O.Ms.No.128 and 130 (6 Oct 2026) sanctioned 37.31% from 1 Jan 2024 and 40.04% from 1 Jul 2024, paid with the October 2026 salary. Figures from secondary reports of the GOs.",
+      "hra": [
+        { "label": "Greater Hyderabad (population above 50 lakh)", "percent": 24, "maximum": null },
+        { "label": "Cities above 2 lakh (e.g. Warangal, Karimnagar, Khammam, Nizamabad)", "percent": 17, "maximum": null },
+        { "label": "Towns of 50,000 to 2 lakh, and district headquarters", "percent": 13, "maximum": null },
+        { "label": "All other places", "percent": 11, "maximum": null }
+      ],
+      "hraNote": "RPS 2020 HRA order (G.O.Ms.No.53 of 11 Jun 2021, per secondary copy). No ceiling. One secondary copy prints 25% for Greater Hyderabad; the PRC recommended 24%.",
+      "transportAllowance": [],
+      "transportNote": "No general transport allowance.",
+      "pension": "Contributory Pension Scheme for those joining after 1 Sep 2004: employee 10% of (Basic + DA).",
+      "pensionDeductionPercent": 10,
+      "otherDeductions": [
+        { "name": "TSGLI", "detail": "Compulsory state life insurance, slab by pay" },
+        { "name": "Group Insurance (GIS)", "detail": "Slab by category" },
+        { "name": "Employees Health Scheme", "detail": "Contribution announced in 2026 (reported Rs 500 per month); verify with your DDO" },
+        { "name": "Professional tax", "detail": "Rs 200 per month above Rs 20,000 gross" }
+      ],
+      "increment": "Annual increment = next stage in the master scale segment for the post.",
+      "sources": [
+        { "title": "Telangana G.O.Ms.No.51 (2021), Revised Pay Scales 2020", "url": "https://cag.gov.in/uploads/media/T-S-G-O-Ms-No-51-063086719565106-07241759.pdf", "publisher": "Government of Telangana (copy on CAG site)", "year": 2021, "type": "primary" },
+        { "title": "TS RPS 2020 HRA rates, G.O.53", "url": "https://teachersbadi.in/ts-go27-hra-houserent-allowances-telangana-prc-rps-2015/", "publisher": "Teachersbadi", "year": 2021, "type": "secondary" },
+        { "title": "Telangana clears two pending DAs", "url": "https://www.deccanchronicle.com/southern-states/telangana/telangana-clears-two-pending-das-gives-637-hike-for-staff-pensioners-1993967", "publisher": "Deccan Chronicle", "year": 2026, "type": "secondary" }
+      ]
+    },
+    "ka-7spc": {
+      "label": "Karnataka, 2024 Revised Pay Scales (7th State Pay Commission)",
+      "payCommission": "Karnataka 7th SPC (chair K. Sudhakar Rao), implemented from 1 Aug 2024 by Finance Department order FD 21 SRP 2024 (23 Aug 2024). Minimum basic Rs 27,000, maximum Rs 2,41,200. DA of 31% merged and 27.5% fitment added to pay as on 1 Jul 2022.",
+      "daPercent": 15.75,
+      "daEffective": "2026-01-01",
+      "daNote": "Raised from 14.25% to 15.75% w.e.f. 1 Jan 2026 (Finance Department order, May 2026). DA restarted from a low base because DA was merged into pay in 2024.",
+      "hra": [],
+      "hraNote": "HRA percentages under the 2024 scales could not be confirmed from an official order. Bengaluru is the only Category A city. Enter your HRA rate manually in the calculator.",
+      "transportAllowance": [],
+      "transportNote": "No general transport allowance.",
+      "pension": "National Pension System for those joining on or after 1 Apr 2006: employee 10% of (Basic + DA), Government 14%. Restoration of the old pension scheme has been discussed; no general change was verified.",
+      "pensionDeductionPercent": 10,
+      "otherDeductions": [
+        { "name": "KGID", "detail": "Compulsory Karnataka Government Insurance, slab by pay" },
+        { "name": "Group Insurance", "detail": "Slab by group" },
+        { "name": "Professional tax", "detail": "Rs 200 per month from Rs 25,000 gross (Rs 300 in February)" }
+      ],
+      "increment": "Annual increment by the fixed stage amount of the pay scale.",
+      "sources": [
+        { "title": "Karnataka implements 7th Pay Commission (minimum Rs 27,000, maximum Rs 2,41,200)", "url": "https://thesouthfirst.com/karnataka/pay-hike-for-7-lakh-government-staff-as-karnataka-decides-to-implement-7th-pay-commission-recommendations", "publisher": "The South First", "year": 2024, "type": "secondary" },
+        { "title": "Karnataka Government raises DA to 15.75%", "url": "https://www.hrkatha.com/news/karnataka-government-raises-da-to-15-75/", "publisher": "HR Katha", "year": 2026, "type": "secondary" }
+      ]
+    },
+    "bank-12bps": {
+      "label": "Public sector banks, 12th Bipartite Settlement",
+      "payCommission": "12th Bipartite Settlement / Joint Note (8 Mar 2024), effective 1 Nov 2022. Officers: JMGS-I starting basic Rs 48,480. Clerks: starting basic Rs 24,050.",
+      "daPercent": null,
+      "daEffective": null,
+      "daNote": "Bank DA changes every quarter with the CPI. It is not modelled here; use the gross pay printed in the notification.",
+      "hra": [],
+      "hraNote": "Bank HRA is a percentage of basic that depends on the centre; check the notification.",
+      "transportAllowance": [],
+      "pension": "NPS for those joining after 1 Apr 2010.",
+      "pensionDeductionPercent": 10,
+      "otherDeductions": [],
+      "increment": "Stage-wise increments fixed in the settlement.",
+      "sources": [
+        { "title": "IBA 12th Bipartite Settlement and Joint Note", "url": "https://www.iba.org.in/", "publisher": "Indian Banks' Association", "year": 2024, "type": "primary" }
+      ]
+    }
+  }
+}
