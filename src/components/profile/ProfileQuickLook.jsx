@@ -9,7 +9,7 @@ import { LevelMeter } from '../Badges.jsx'
 import { NextStepChip, KeyEventLine } from '../ExamCard.jsx'
 import { labelFor, getIndexRecord } from '../../lib/data.js'
 import { estimateSalary } from '../../lib/salary.js'
-import { formatCount, formatRupees, firstSentence } from '../../lib/format.js'
+import { formatCount, formatRupees, firstSentence, payHeadline } from '../../lib/format.js'
 
 // Only this many post names are shown before "and N more".
 const visiblePostCount = 5
@@ -40,7 +40,7 @@ function QuestionCard({ question, answer, detail, tabId, tabLabel, onOpenTab, ch
 
 /** Age line with category relaxation, e.g. "Age 18 to 32. Extra years: SC 5, ST 5, OBC 3". */
 function ageDetail(rules) {
-  if (rules?.ageMax == null) return 'Age limits differ by post.'
+  if (rules?.ageMax == null) return rules?.ageMin != null ? `Minimum age ${rules.ageMin}; no upper limit in the general rule.` : 'No age limit in the general rule.'
   const relaxation = Object.entries(rules.relaxationYears ?? {})
     .filter(([, years]) => years > 0)
     .map(([category, years]) => `${category} ${years}`)
@@ -55,12 +55,21 @@ function latestCompetitionRow(statistics) {
 }
 
 /** Pay line: pay level plus estimated in-hand pay (or the recruiter's stated gross) when known. */
-function payDetail(salary) {
+function payDetail(exam) {
+  if (exam.employmentType === 'eligibility-only') return 'This is an eligibility test, not a job. Pay comes with the recruitment you clear later.'
+  const salary = exam.salary
   const estimate = salary?.startingBasic ? estimateSalary({ ruleSetKey: salary.payRuleSet, basicPay: salary.startingBasic, payLevel: salary.payLevel, fixedAdditions: salary.fixedAdditions ?? [] }) : null
-  const takeHome = estimate?.inHand && `about ${formatRupees(estimate.inHand)} a month in hand in a big city (estimate)`
-  const statedGross = salary?.officialGross && `about ${formatRupees(salary.officialGross)} a month gross (as stated by the recruiter)`
-  const parts = [salary?.payLevel, takeHome || statedGross].filter(Boolean)
-  return parts.length ? parts.join(', ') : 'Pay differs by post.'
+  const takeHome = estimate?.inHand && `About ${formatRupees(estimate.inHand)} a month in hand in a big city (estimate).`
+  const statedGross = salary?.officialGrossNote ?? (salary?.officialGross && `About ${formatRupees(salary.officialGross)} a month gross, as stated by the recruiter.`)
+  const parts = [salary?.payLevel && `${salary.payLevel}.`, takeHome || statedGross].filter(Boolean)
+  return parts.length ? parts.join(' ') : 'Pay differs by post.'
+}
+
+/** Big pay answer: basic, stated monthly pay, "No salary" for eligibility tests, or "Varies by post". */
+function payAnswer(exam) {
+  const pay = payHeadline(exam)
+  if (!pay.value) return pay.note === 'Varies' ? 'Varies by post' : pay.note
+  return pay.label === 'Starting basic' ? `${pay.value} basic` : `${pay.value} a month`
 }
 
 /** Quick look tab. */
@@ -82,7 +91,7 @@ export function QuickLookTab({ exam, onOpenTab }) {
         <QuestionCard question="Can I apply?" answer={labelFor('educationLevels', rules.minEducation)} detail={ageDetail(rules)} tabId="eligibility" tabLabel="Full eligibility" onOpenTab={onOpenTab}>
           {rules.finalYearAllowed && <p className="quick-tag">Final-year students can apply</p>}
         </QuestionCard>
-        <QuestionCard question="What will I earn?" answer={formatRupees(exam.salary?.startingBasic) ? `${formatRupees(exam.salary.startingBasic)} basic` : 'Varies by post'} detail={payDetail(exam.salary)} tabId="salary" tabLabel="Salary and growth" onOpenTab={onOpenTab} />
+        <QuestionCard question="What will I earn?" answer={payAnswer(exam)} detail={payDetail(exam)} tabId="salary" tabLabel="Salary and growth" onOpenTab={onOpenTab} />
         <QuestionCard
           question="How tough is it?"
           answer={perPost ? `${formatCount(perPost)} per post` : <LevelMeter level={exam.difficulty?.competition} label="Competition" />}

@@ -9,7 +9,7 @@ import { StatusBadge, LevelMeter } from './Badges.jsx'
 import { VerdictBadge } from './MyVerdict.jsx'
 import { useSaved } from '../lib/saved.jsx'
 import { labelFor } from '../lib/data.js'
-import { formatDate, formatRupees, formatCount, daysFromToday, firstSentence } from '../lib/format.js'
+import { formatDate, formatCount, daysFromToday, firstSentence, payHeadline } from '../lib/format.js'
 
 /** Bookmark toggle button. */
 export function BookmarkButton({ examId, compact = false }) {
@@ -84,16 +84,17 @@ export function NextStepChip({ keyEvent }) {
   )
 }
 
-/** One headline figure; a quiet "Varies" when the data has no single number. */
-function HeadlineNumber({ value, className = '' }) {
-  if (value == null) return <dd className="numeric is-unknown">Varies</dd>
+/** One headline figure; a quiet note (such as "Varies") when the data has no single number. */
+function HeadlineNumber({ value, className = '', fallback = 'Varies' }) {
+  if (value == null) return <dd className="numeric is-unknown">{fallback}</dd>
   return <dd className={`numeric ${className}`}>{value}</dd>
 }
 
 /** Card summarising one exam: a short name, a one-line hook and three headline numbers. */
 export function ExamCard({ exam }) {
   const rules = exam.eligibilityRules ?? {}
-  const ageText = rules.ageMax != null ? `Age ${rules.ageMin ?? 18} to ${rules.ageMax}` : 'Age varies'
+  const pay = payHeadline(exam)
+  const ageText = rules.ageMax != null ? `Age ${rules.ageMin ?? 18} to ${rules.ageMax}` : rules.ageMin != null ? `Age ${rules.ageMin}+` : 'No age limit'
   return (
     <article className="exam-card">
       <div className="exam-card-top">
@@ -118,12 +119,12 @@ export function ExamCard({ exam }) {
       <p className="exam-card-summary">{firstSentence(exam.summary)}</p>
       <dl className="exam-card-facts">
         <div>
-          <dt>Starting basic</dt>
-          <HeadlineNumber value={formatRupees(exam.salary.startingBasic)} className="is-pay" />
+          <dt>{pay.label}</dt>
+          <HeadlineNumber value={pay.value} className="is-pay" fallback={pay.note} />
         </div>
         <div>
           <dt>{exam.vacancies ? `Posts ${exam.vacancies.year}` : 'Posts'}</dt>
-          <HeadlineNumber value={formatCount(exam.vacancies?.count)} />
+          <HeadlineNumber value={formatCount(exam.vacancies?.count)} fallback={exam.employmentType === 'eligibility-only' ? '-' : 'Varies'} />
         </div>
         <div>
           <dt>Who can apply</dt>

@@ -2017,7 +2017,12 @@ strong.figure {
   font-size: 0.95rem;
 }
 
+/* Long status notes are cut to three lines; the full text is on the Overview tab. */
 .quick-detail {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 0.9rem;
   color: var(--text-soft);
 }

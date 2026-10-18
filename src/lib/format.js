@@ -64,3 +64,14 @@ export function firstSentence(text) {
   const match = text?.match(/^(.+?[.!?])\s+(?=[A-Z])/)
   return match ? match[1] : text
 }
+
+/**
+ * Headline pay for a profile: starting basic when known, else the recruiter's stated monthly
+ * gross (for example a fixed package), else a plain note. Used by cards and Quick look.
+ */
+export function payHeadline(exam) {
+  if (exam.employmentType === 'eligibility-only') return { label: 'Pay', value: null, note: 'No salary' }
+  if (exam.salary?.startingBasic) return { label: 'Starting basic', value: formatRupees(exam.salary.startingBasic), note: null }
+  if (exam.salary?.officialGross) return { label: 'Monthly pay', value: formatRupees(exam.salary.officialGross), note: null }
+  return { label: 'Starting basic', value: null, note: 'Varies' }
+}
