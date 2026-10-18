@@ -9,6 +9,7 @@ import { useState } from 'react'
 import { Check } from 'lucide-react'
 import { vocabulary } from '../lib/data.js'
 import { ShowAllToggle } from './Common.jsx'
+import { Select } from './Select.jsx'
 
 // Long chip lists start with this many options (selected ones always stay visible).
 const collapsedChipCount = 12
@@ -67,20 +68,9 @@ function FormStep({ number, title, hint, isDone, isOptional = false, children })
   )
 }
 
-/** Labelled select bound to one candidate field. */
+/** Labelled dropdown bound to one candidate field; options are [value, label] pairs. */
 function SelectField({ label, value, onChange, options }) {
-  return (
-    <label className="field">
-      <span>{label}</span>
-      <select value={value} onChange={(event) => onChange(event.target.value)}>
-        {options.map(([optionValue, optionLabel]) => (
-          <option key={optionValue} value={optionValue}>
-            {optionLabel}
-          </option>
-        ))}
-      </select>
-    </label>
-  )
+  return <Select label={label} value={value} onChange={onChange} options={options.map(([optionValue, optionLabel]) => ({ value: optionValue, label: optionLabel }))} />
 }
 
 const categoryOptions = [['GEN', 'General / Unreserved'], ['EWS', 'EWS'], ['OBC', 'OBC (non-creamy layer) / State BC'], ['SC', 'SC'], ['ST', 'ST']]

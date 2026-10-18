@@ -8,6 +8,7 @@ import { Link } from 'react-router'
 import { Layers, Info } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SegmentedFilter } from '../components/Common.jsx'
 import { examIndex, labelFor, governmentFilterOptions } from '../lib/data.js'
+import { Select } from '../components/Select.jsx'
 
 const shownCompanions = 15
 
@@ -49,17 +50,7 @@ export default function SyllabusPage() {
       </div>
 
       <div className="tool-controls">
-        <label className="field">
-          <span>I am preparing for</span>
-          <select value={baseId} onChange={(event) => setBaseId(event.target.value)}>
-            {taggedExams.map((exam) => (
-              <option key={exam.id} value={exam.id}>
-                {exam.abbreviation ? `${exam.abbreviation}: ` : ''}
-                {exam.name} ({labelFor('jurisdictions', exam.jurisdiction)})
-              </option>
-            ))}
-          </select>
-        </label>
+        <Select label="I am preparing for" className="select-wide" value={baseId} onChange={setBaseId} options={taggedExams.map((exam) => ({ value: exam.id, label: exam.abbreviation || exam.name, hint: exam.abbreviation ? exam.name : null, group: labelFor('jurisdictions', exam.jurisdiction) }))} />
         <div className="field">
           <span className="field-label">Show companions from</span>
           <SegmentedFilter label="Show companions from" options={governmentFilterOptions('All governments')} value={regionFilter} onChange={setRegionFilter} />

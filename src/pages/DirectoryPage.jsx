@@ -13,6 +13,7 @@ import { searchExams } from '../lib/search.js'
 import { evaluateExam } from '../lib/eligibility.js'
 import { useSaved } from '../lib/saved.jsx'
 import { levelWeight, todayIso } from '../lib/format.js'
+import { Select } from '../components/Select.jsx'
 
 // Each multi-select filter: URL key, legend, option source and record matcher.
 const filterDefinitions = [
@@ -104,13 +105,7 @@ export default function DirectoryPage() {
           </label>
           <input id="directory-query" type="search" placeholder="Search exams, posts, organizations" value={query} onChange={(event) => setParam('q', event.target.value)} />
         </div>
-        <select className="select-control" aria-label="Sort by" value={sortKey} onChange={(event) => setParam('sort', event.target.value)}>
-          {Object.entries(sortOptions).map(([key, option]) => (
-            <option key={key} value={key}>
-              {option.label}
-            </option>
-          ))}
-        </select>
+        <Select label="Sort by" hideLabel className="directory-sort" value={sortKey} onChange={(key) => setParam('sort', key)} options={Object.entries(sortOptions).map(([key, option]) => ({ value: key, label: option.label }))} />
         <button type="button" className={`button ${areFiltersOpen ? 'is-on' : ''}`} aria-expanded={areFiltersOpen} aria-controls="filter-panel" onClick={() => setAreFiltersOpen((open) => !open)}>
           <SlidersHorizontal size={16} aria-hidden="true" /> Filters {activeCount > 0 && <span className="pip-inline">{activeCount}</span>}
         </button>

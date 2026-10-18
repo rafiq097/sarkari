@@ -11,6 +11,7 @@ import { EstimateTag, SourceChips } from '../components/Badges.jsx'
 import { examIndex, labelFor, payRules } from '../lib/data.js'
 import { estimateSalary, centralMatrixCells } from '../lib/salary.js'
 import { formatDate, formatRupees } from '../lib/format.js'
+import { Select } from '../components/Select.jsx'
 
 const modelledRuleSets = Object.entries(payRules.ruleSets).filter(([, ruleSet]) => ruleSet.daPercent != null)
 const centralLevels = Object.keys(payRules.ruleSets['central-7cpc'].matrixFirstCells)
@@ -53,49 +54,24 @@ function Calculator() {
   return (
     <div className="calculator panel">
       <div className="calculator-inputs">
-        <label className="field">
-          <span>Pay rules</span>
-          <select
-            value={ruleSetKey}
-            onChange={(event) => {
-              setRuleSetKey(event.target.value)
-              setHraSlabIndex(0)
-            }}
-          >
-            {modelledRuleSets.map(([key, rules]) => (
-              <option key={key} value={key}>
-                {rules.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <Select
+          label="Pay rules"
+          value={ruleSetKey}
+          onChange={(key) => {
+            setRuleSetKey(key)
+            setHraSlabIndex(0)
+          }}
+          options={modelledRuleSets.map(([key, rules]) => ({ value: key, label: rules.label }))}
+        />
         <label className="field">
           <span>Basic pay (Rs per month)</span>
           <input type="number" min="0" step="100" value={basicPay} onChange={(event) => setBasicPay(event.target.value)} />
         </label>
         {ruleSetKey === 'central-7cpc' && (
-          <label className="field">
-            <span>Pay level (for transport allowance)</span>
-            <select value={payLevel} onChange={(event) => setPayLevel(event.target.value)}>
-              {centralLevels.map((level) => (
-                <option key={level} value={level}>
-                  Level {level}
-                </option>
-              ))}
-            </select>
-          </label>
+          <Select label="Pay level (for transport allowance)" value={payLevel} onChange={setPayLevel} options={centralLevels.map((level) => ({ value: level, label: `Level ${level}` }))} />
         )}
         {ruleSet.hra.length ? (
-          <label className="field">
-            <span>Posting place (HRA)</span>
-            <select value={hraSlabIndex} onChange={(event) => setHraSlabIndex(Number(event.target.value))}>
-              {ruleSet.hra.map((slab, position) => (
-                <option key={slab.label} value={position}>
-                  {slab.label} ({slab.percent}%)
-                </option>
-              ))}
-            </select>
-          </label>
+          <Select label="Posting place (HRA)" value={hraSlabIndex} onChange={(slabIndex) => setHraSlabIndex(Number(slabIndex))} options={ruleSet.hra.map((slab, position) => ({ value: position, label: `${slab.label} (${slab.percent}%)` }))} />
         ) : (
           <label className="field">
             <span>HRA % (enter yours)</span>
@@ -141,16 +117,7 @@ function MatrixViewer() {
   const cells = centralMatrixCells(level)
   return (
     <div className="panel">
-      <label className="field inline-field">
-        <span>Central pay level</span>
-        <select value={level} onChange={(event) => setLevel(event.target.value)}>
-          {centralLevels.map((key) => (
-            <option key={key} value={key}>
-              Level {key}
-            </option>
-          ))}
-        </select>
-      </label>
+      <Select label="Central pay level" className="select-inline" value={level} onChange={setLevel} options={centralLevels.map((key) => ({ value: key, label: `Level ${key}` }))} />
       <ol className="matrix-cells">
         {cells.map((cell, position) => (
           <li key={`${level}-${position}`}>
@@ -196,13 +163,7 @@ export default function SalaryPage() {
 
       <SectionHeading number="04" title="Starting pay across profiles" description="Starting basic pay of the main post in each current or recurring profile. Use the profile for post-wise pay." />
       <div className="tool-controls">
-        <label className="field inline-field">
-          <span>Sort</span>
-          <select value={sortKey} onChange={(event) => setSortKey(event.target.value)}>
-            <option value="basic">Highest basic first</option>
-            <option value="name">Name</option>
-          </select>
-        </label>
+        <Select label="Sort" className="select-inline" value={sortKey} onChange={setSortKey} options={[{ value: 'basic', label: 'Highest basic first' }, { value: 'name', label: 'Name' }]} />
       </div>
       <div className="table-wrap">
         <table className="data-table">

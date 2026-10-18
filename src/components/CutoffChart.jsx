@@ -5,6 +5,7 @@
  */
 import { useState } from 'react'
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { Select } from './Select.jsx'
 
 // Categorical series colours, chosen to stay distinct on the warm dark surface.
 const seriesColours = ['#ffd21f', '#7fd4a3', '#ff7d5c', '#d6a2f2', '#d8cfc0', '#8fa8b8', '#b8a46a', '#7fb3a8']
@@ -25,13 +26,7 @@ export function CutoffChart({ cutoffs }) {
       <div className="chart-head">
         <figcaption>Cutoff trend</figcaption>
         {chartableStages.length > 1 && (
-          <select className="select-control" aria-label="Stage" value={stageKey} onChange={(event) => setStageKey(event.target.value)}>
-            {chartableStages.map((key) => (
-              <option key={key} value={key}>
-                {key}
-              </option>
-            ))}
-          </select>
+          <Select label="Stage" hideLabel value={stageKey} onChange={setStageKey} options={chartableStages.map((key) => ({ value: key, label: key }))} />
         )}
         {chartableStages.length === 1 && <span className="muted small">{stageKey}</span>}
       </div>

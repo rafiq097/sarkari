@@ -13,6 +13,7 @@ import { CutoffChart } from '../CutoffChart.jsx'
 import { estimateSalary, getRuleSet } from '../../lib/salary.js'
 import { selectionRates } from '../../lib/stats.js'
 import { formatCount, formatPercent, formatRupees, formatDate } from '../../lib/format.js'
+import { Select } from '../Select.jsx'
 
 /** Cutoff table for every recorded year and stage. */
 function CutoffTable({ cutoffs, sources }) {
@@ -170,13 +171,7 @@ function SalaryEstimate({ salary }) {
           <Calculator size={16} aria-hidden="true" /> Indicative month-one pay <EstimateTag />
         </h4>
         {ruleSet.hra?.length > 0 ? (
-          <select className="select-control" aria-label="Posting place for HRA" value={hraSlabIndex} onChange={(event) => setHraSlabIndex(Number(event.target.value))}>
-            {ruleSet.hra.map((slab, position) => (
-              <option key={slab.label} value={position}>
-                {slab.label}
-              </option>
-            ))}
-          </select>
+          <Select label="Posting place for HRA" hideLabel value={hraSlabIndex} onChange={(slabIndex) => setHraSlabIndex(Number(slabIndex))} options={ruleSet.hra.map((slab, position) => ({ value: position, label: slab.label }))} />
         ) : (
           <label className="field inline-field">
             <span>HRA % (enter yours)</span>

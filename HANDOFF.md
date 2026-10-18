@@ -49,8 +49,8 @@ Commands: `npm run dev` | `npm run build` | `npm run data` (validates every prof
 - AP SLPRB: `https://slprb.ap.gov.in/` (2026 press note is a scanned image).
 - RBI opportunities page did not parse; RBI facts used a secondary report.
 
-## 6. Done (57 profiles, all committed; scope = Central, AP, Telangana, Karnataka)
-Central (34): upsc-cse (full guide), upsc-ifos, upsc-ese, upsc-cds, upsc-nda-na, upsc-capf-ac, upsc-epfo, ssc-cgl, ssc-chsl, ssc-je, ssc-stenographer, ssc-cht, ssc-cpo, ssc-gd-constable, rrb-ntpc-graduate, rrb-ntpc-undergraduate, rrb-je, rpf-si, rpf-constable, ibps-po, ibps-clerk, ibps-rrb, sbi-po, sbi-junior-associate, rbi-grade-b, ctet, kvs-nvs-teachers, ib-acio, afcat, lic-aao, aiims-norcet, ugc-net, nabard-grade-a, army-agniveer.
+## 6. Done (78 profiles, all committed; scope = Central, AP, Telangana, Karnataka)
+Central (55): upsc-cse (full guide), upsc-ifos, upsc-ese, upsc-cds, upsc-nda-na, upsc-capf-ac, upsc-epfo, ssc-cgl, ssc-chsl, ssc-je, ssc-stenographer, ssc-cht, ssc-cpo, ssc-gd-constable, rrb-ntpc-graduate, rrb-ntpc-undergraduate, rrb-je, rpf-si, rpf-constable, ibps-po, ibps-clerk, ibps-rrb, sbi-po, sbi-junior-associate, rbi-grade-b, ctet, kvs-nvs-teachers, ib-acio, afcat, lic-aao, aiims-norcet, ugc-net, nabard-grade-a, army-agniveer, upsc-cms, upsc-ies-iss, upsc-geo-scientist, navy-agniveer, iaf-agniveervayu, coast-guard-enrolled, sebi-grade-a, rbi-assistant, ibps-so, isro-scientist, drdo-scientist-b, barc-oces, gate-psu, emrs-teachers, esic-udc, fci-category-3, epfo-ssa, army-tgc, army-ssc-tech, navy-ssc-officer, aai-junior-executive.
 Andhra Pradesh (13): appsc-group-1 (07/2026), appsc-group-2 (37/2026), appsc-aee (27/2026), appsc-hwo (25/2026), appsc-amvi (36/2026), appsc-aso-statistics (20/2026), appsc-horticulture-officer (19/2026), ap-police-si, ap-police-constable (SLPRB Sep 2026), ap-dsc (2026 prelim notice, 2,721 posts), ap-tet (2026), ap-power-aee (630 AEE posts 2026). appsc-lecturers (13,16,17/2023 + 30/2026).
 Telangana (10): tgpsc-group-1 (02/2024; SC upheld 2 Apr 2026), tgpsc-group-2, tgpsc-group-3, tgpsc-group-4, tgpsc-aee (01/G/RB/2026), tg-tet, tg-dsc (recurring, 2024 cycle), ts-police (TGPRB 2026: 7,437 posts, official press note). tg-gurukul-treirb (2023, 9,210 posts), tg-staff-nurse (MHSRB 2024, 2,322 posts).
 Karnataka: back in scope (route, nav, pay rules ka-7spc, vocabulary, coverage). No profiles yet; do not research further unless asked.
@@ -77,6 +77,10 @@ Removed by scope rule: ssc-mts-havaldar only. Never delete finished profiles; sk
 - Bank and RBI gross pay are not modelled (quarterly DA); `officialGross` shows where the recruiter states it (SBI JA about Rs 46,000 at metro).
 
 ## 10. Latest additions
+- Custom dropdown components/Select.jsx (keyboard, filter box for long lists, groups) replaces every native select.
+- Directory quick filters include "For BTech grads" (?btech=1).
+- Karnataka: shown as a pay-rules guide only; it will not get exam profiles.
+- Rafiq liked the current layout (home hero, numbered sections, cards). Do not rebuild pages; only polish when asked.
 - Header shows only All exams, Central, Tools; states via RegionCards (components/RegionCards.jsx) on home and at the foot of region pages, footer and mobile menu.
 - My profile: stepped CandidateForm (3 steps, popular chips first) beside a sticky MatchPanel. Filters: SegmentedFilter pills (Common.jsx) via governmentFilterOptions (lib/data.js) on directory, calendar, syllabus, sources; directory has a quick filter row and a 2-column panel with "Show N results".
 - Site name: Sarkari Shiksha.

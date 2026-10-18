@@ -11,6 +11,7 @@ import { useSaved } from '../lib/saved.jsx'
 import { examIndex, getIndexRecord, labelFor, useProfiles, vocabulary } from '../lib/data.js'
 import { estimateSalary } from '../lib/salary.js'
 import { formatRupees } from '../lib/format.js'
+import { Select } from '../components/Select.jsx'
 
 /** One row definition: label and how to render a profile's cell. */
 const rows = [
@@ -76,31 +77,17 @@ export default function ComparePage() {
       <PageHeader eyebrow="Tool" title="Compare exams" lead={`Pick up to ${maximumCompared} exams. Facts come from each profile; rows marked analytical are our judgments. Cutoffs from different exams are not shown side by side because their scales and selection methods differ.`} />
 
       <div className="compare-picker">
-        <label className="field">
-          <span>Add an exam</span>
-          <select
-            className="select-control"
-            value=""
-            disabled={compare.length >= maximumCompared}
-            onChange={(event) => {
-              if (event.target.value) toggleCompare(event.target.value)
-            }}
-          >
-            <option value="">{compare.length >= maximumCompared ? 'Comparison is full' : 'Choose an exam'}</option>
-            {Object.keys(vocabulary.jurisdictions).map((jurisdiction) => (
-              <optgroup key={jurisdiction} label={labelFor('jurisdictions', jurisdiction)}>
-                {available
-                  .filter((exam) => exam.jurisdiction === jurisdiction)
-                  .map((exam) => (
-                    <option key={exam.id} value={exam.id}>
-                      {exam.abbreviation ? `${exam.abbreviation}: ` : ''}
-                      {exam.name}
-                    </option>
-                  ))}
-              </optgroup>
-            ))}
-          </select>
-        </label>
+        <Select
+          label="Add an exam"
+          className="select-wide"
+          value=""
+          disabled={compare.length >= maximumCompared}
+          placeholder={compare.length >= maximumCompared ? 'Comparison is full' : 'Choose an exam'}
+          onChange={toggleCompare}
+          options={Object.keys(vocabulary.jurisdictions).flatMap((jurisdiction) =>
+            available.filter((exam) => exam.jurisdiction === jurisdiction).map((exam) => ({ value: exam.id, label: exam.abbreviation || exam.name, hint: exam.abbreviation ? exam.name : null, group: labelFor('jurisdictions', jurisdiction) })),
+          )}
+        />
         {compare.length > 0 && (
           <button type="button" className="button button-ghost" onClick={() => setCompare([])}>
             Clear comparison
