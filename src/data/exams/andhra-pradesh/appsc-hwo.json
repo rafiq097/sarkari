@@ -1,0 +1,291 @@
+{
+  "id": "appsc-hwo",
+  "name": "APPSC Hostel Welfare Officer Grade-II",
+  "abbreviation": "APPSC HWO",
+  "profileType": "exam",
+  "jurisdiction": "andhra-pradesh",
+  "sector": "teaching",
+  "organization": {
+    "id": "appsc",
+    "name": "Andhra Pradesh Public Service Commission",
+    "abbreviation": "APPSC",
+    "website": "https://psc.ap.gov.in"
+  },
+  "department": "AP Social Welfare, Tribal Welfare and Backward Classes Welfare departments",
+  "technical": false,
+  "summary": "District-wide posts managing government welfare hostels for SC, ST and BC students. Needs a degree with B.Ed. One written exam.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "skill-test",
+    "document-verification"
+  ],
+  "frequency": "Irregular",
+  "officialLinks": [
+    {
+      "label": "Notification 25/2026",
+      "url": "https://psc.ap.gov.in/Documents/NotificationDocuments/HWO_252026.pdf"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Notification 25/2026 issued on 09/10/2026; applications 09/10/2026 to 29/10/2026. Exam date to be announced.",
+    "cycles": [
+      {
+        "cycle": "Notification 25/2026",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-10-09",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Applications open",
+            "date": "2026-10-09",
+            "dateType": "official",
+            "source": "s1"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-10-29",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Hostel Welfare Officer Grade-II",
+      "group": "District post",
+      "payLevel": "RPS 2022",
+      "startingBasic": 37640,
+      "responsibilities": "Runs welfare hostels: student welfare, food, discipline, records.",
+      "notes": "97 posts. Scale 37,640-1,15,500."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "relaxations": [
+        {
+          "category": "SC, ST, BC and EWS",
+          "years": 5
+        },
+        {
+          "category": "PwBD",
+          "years": 10
+        },
+        {
+          "category": "AP State Government employees",
+          "years": 5,
+          "note": "Based on service."
+        }
+      ],
+      "summary": "18 to 44 years on 1 July 2026.",
+      "referenceDate": "1 July 2026"
+    },
+    "nationality": "Citizen of India.",
+    "domicile": "Local cadre rules apply.",
+    "education": {
+      "summary": "Graduation with B.Ed. or B.T. (or equivalent), as per notification.",
+      "finalYearAllowed": false,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit"
+      }
+    ],
+    "reservation": "AP rules: SC 15% (sub-categorised as per 2025 orders), ST 6%, BC 29% (A 7, B 10, C 1, D 7, E 4), EWS 10%, horizontal reservation for women (33 1/3%), PwBD, ex-servicemen; local cadre rules for zonal and district posts.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageReferenceDate": "2026-07-01",
+    "finalYearAllowed": false,
+    "gender": "any",
+    "domicile": "andhra-pradesh",
+    "educationFields": [
+      "education"
+    ],
+    "notes": "",
+    "ageMin": 18,
+    "ageMax": 44,
+    "minEducation": "graduate",
+    "relaxationYears": {
+      "OBC": 5,
+      "SC": 5,
+      "ST": 5,
+      "EWS": 5,
+      "PwBD": 10
+    }
+  },
+  "selection": {
+    "sources": [
+      "s1"
+    ],
+    "stages": [
+      {
+        "name": "Written exam (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "Paper I: General Studies and Mental Ability",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third of the marks"
+          },
+          {
+            "name": "Paper II: Education (B.Ed. standard) as per notification",
+            "marks": 150,
+            "questions": 150,
+            "duration": "150 minutes",
+            "negative": "One third of the marks"
+          }
+        ]
+      },
+      {
+        "name": "Computer Proficiency Test",
+        "type": "skill",
+        "countsInMerit": false,
+        "notes": "Qualifying, where the notification prescribes it."
+      },
+      {
+        "name": "Certificate verification",
+        "type": "document",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Merit on the written exam. Minimum to qualify: OC, EWS, sportspersons 40%; BC 35%; SC, ST, PwBD 30%.",
+    "tieBreaking": "Equal marks are ranked by age (older first), as per APPSC rules.",
+    "languages": "General Studies paper in English with Telugu translation.",
+    "documentVerification": "After the exam.",
+    "probation": "As per AP rules."
+  },
+  "syllabus": {
+    "sources": [
+      "s1"
+    ],
+    "supplementary": [],
+    "officialLink": "https://psc.ap.gov.in/Documents/NotificationDocuments/HWO_252026.pdf",
+    "sections": [
+      {
+        "stage": "Written",
+        "subject": "Two papers",
+        "topics": [
+          "General studies and mental ability (AP focus)",
+          "Education (B.Ed. standard) as per notification"
+        ]
+      }
+    ]
+  },
+  "syllabusTags": [
+    "general-awareness",
+    "current-affairs",
+    "reasoning",
+    "ap-history-culture",
+    "ap-economy-policy",
+    "teaching-pedagogy"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2026,
+      "vacancies": 97,
+      "note": "Notification 25/2026.",
+      "source": "s1"
+    }
+  ],
+  "rankAndAllocation": null,
+  "salary": {
+    "asOf": "2026-10",
+    "payRuleSet": "ap-rps-2022",
+    "payLevel": "AP RPS 2022",
+    "payScale": "37,640-1,15,500",
+    "startingBasic": 37640,
+    "pension": "Contributory Pension Scheme.",
+    "increments": "Annual increment.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "sources": [
+      "s1"
+    ],
+    "progression": [
+      {
+        "post": "Hostel Welfare Officer Grade-II",
+        "level": "RPS 2022",
+        "timeline": "Entry",
+        "timelineType": "official"
+      }
+    ],
+    "promotionNotes": "Promotion by seniority and APPSC departmental tests.",
+    "departmentalExams": "APPSC departmental tests."
+  },
+  "benefits": [],
+  "workLife": {
+    "sources": [
+      "s1"
+    ],
+    "postings": "Within the district.",
+    "transfers": "Periodic.",
+    "nature": "Runs welfare hostels: student welfare, food, discipline, records.",
+    "workload": "Moderate to high.",
+    "publicInteraction": "High.",
+    "hazards": "Low.",
+    "stability": "Very high."
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "medium",
+    "timePressure": "medium",
+    "technicalComplexity": "medium",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "A general studies paper plus a subject paper; the subject degree requirement narrows the field."
+  },
+  "ratings": {
+    "careerGrowth": "medium",
+    "locationFlexibility": "medium",
+    "recruitmentRegularity": "low",
+    "rationale": "Specialist state post, notified every few years."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "Irregular recruitment",
+        "level": "high",
+        "note": "These posts are notified every few years."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "APPSC Notification No. 25/2026: Hostel Welfare Officer Grade-II",
+      "url": "https://psc.ap.gov.in/Documents/NotificationDocuments/HWO_252026.pdf",
+      "publisher": "Andhra Pradesh Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "medium",
+    "gaps": [
+      "Paper II marks and full syllabus not reproduced; see notification.",
+      "Community-wise vacancy break-up not reproduced."
+    ],
+    "notes": "Posts, age, pay and qualification from the official notification."
+  },
+  "lastVerified": "2026-10-18"
+}
