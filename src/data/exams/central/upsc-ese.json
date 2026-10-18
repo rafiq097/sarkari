@@ -1,0 +1,282 @@
+{
+  "id": "upsc-ese",
+  "name": "Engineering Services Examination",
+  "abbreviation": "UPSC ESE",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "engineering-psu",
+  "organization": { "id": "upsc", "name": "Union Public Service Commission", "abbreviation": "UPSC", "website": "https://www.upsc.gov.in" },
+  "department": "Rules notified by the Department of Telecommunications; posts across Railways, CPWD, Defence, Telecom, Water, Power and other ministries",
+  "technical": true,
+  "summary": "The main national exam for Group A engineering officers of the Government of India, in four branches: Civil, Mechanical, Electrical, and Electronics and Telecommunication. It has three stages: an objective Prelims (500 marks), a descriptive Mains (600 marks) and a 200-mark interview. Unlike CSE, Prelims marks count in the final rank of 1300.",
+  "employmentType": "permanent",
+  "recruitmentMethods": ["competitive-exam", "interview", "medical-exam", "document-verification"],
+  "frequency": "Annual (official UPSC calendar)",
+  "officialLinks": [
+    { "label": "ESE 2027 notification", "url": "https://www.upsc.gov.in/sites/default/files/Notif-ESEP-2027-Engl-160926.pdf" },
+    { "label": "Apply online", "url": "https://upsconline.nic.in" },
+    { "label": "UPSC website", "url": "https://www.upsc.gov.in" }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Held every year. Usual pattern: notification in September, Prelims in January or February, Mains in June, interviews in the following months, and the final result later in the year.",
+    "cycles": [
+      {
+        "cycle": "ESE 2027",
+        "events": [
+          { "event": "Notification (Notice 02/2027-ENGG)", "date": "2026-09-16", "dateType": "official", "source": "s1" },
+          { "event": "Last date to apply", "date": "2026-10-06", "dateType": "official", "source": "s1" },
+          { "event": "Preliminary / Stage I exam", "date": "2027-01-31", "dateType": "official", "source": "s1" },
+          { "event": "Main / Stage II exam", "date": "2027-06-18", "dateType": "official", "source": "s1" }
+        ]
+      },
+      {
+        "cycle": "ESE 2026",
+        "events": [
+          { "event": "Notification", "date": "2025-09-17", "dateType": "official", "source": "s2" },
+          { "event": "Preliminary exam", "date": "2026-02-08", "dateType": "official", "source": "s2" },
+          { "event": "Main exam", "date": "2026-06-21", "dateType": "official", "source": "s2" }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    { "name": "Central Engineering Service (CPWD)", "group": "Category I: Civil (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Design and construction of central government buildings and works." },
+    { "name": "Central Engineering Service (Roads)", "group": "Category I: Civil (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "National highway works, Ministry of Road Transport and Highways." },
+    { "name": "Survey of India Group A Service", "group": "Category I: Civil (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "National mapping and surveying." },
+    { "name": "AEE (Civil), Border Roads Engineering Service", "group": "Category I: Civil (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Roads and infrastructure in border areas." },
+    { "name": "AEE (QS&C), MES Surveyor Cadre", "group": "Category I: Civil (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Quantity surveying and contracts, Military Engineer Services." },
+    { "name": "Central Water Engineering Service", "group": "Category I: Civil (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Water resources, Central Water Commission." },
+    { "name": "Indian Railway Management Service (Civil / Stores)", "group": "Category I: Civil (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Railway civil engineering and stores." },
+    { "name": "Indian Defence Service of Engineers", "group": "Categories I to III (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Military Engineer Services works." },
+    { "name": "Indian Skill Development Service", "group": "All four categories (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Skill development and training institutions." },
+    { "name": "Indian Railway Management Service (Mechanical / Stores)", "group": "Category II: Mechanical", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Rolling stock and railway stores." },
+    { "name": "AEE, GSI Engineering Service", "group": "Category II: Mechanical", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Engineering support to the Geological Survey of India." },
+    { "name": "Indian Naval Material Management Service", "group": "Categories II to IV", "payLevel": null, "startingBasic": null, "responsibilities": "Naval stores and material management." },
+    { "name": "Indian Naval Armament Service", "group": "Categories II to IV", "payLevel": null, "startingBasic": null, "responsibilities": "Naval armament depots and engineering." },
+    { "name": "Defence Aeronautical Quality Assurance Service / SSO-II", "group": "Categories II and III", "payLevel": null, "startingBasic": null, "responsibilities": "Quality assurance of military aircraft." },
+    { "name": "Central Electrical and Mechanical Engineering Service", "group": "Categories II and III", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Electrical and mechanical works of CPWD." },
+    { "name": "Central Power Engineering Service", "group": "Categories II to IV", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Central Electricity Authority." },
+    { "name": "Indian Railway Management Service (Electrical / Stores)", "group": "Category III: Electrical", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Railway traction and electrical systems." },
+    { "name": "Indian Telecommunications Service", "group": "Category IV: E&T (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Telecom policy and licensing, Department of Telecommunications." },
+    { "name": "Indian Radio Regulatory Service", "group": "Category IV: E&T (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Spectrum management and wireless monitoring." },
+    { "name": "Indian Railway Management Service (Signal and Telecom / Stores)", "group": "Category IV: E&T (Group A)", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Railway signalling and telecom." },
+    { "name": "Junior Telecom Officer", "group": "Category IV: E&T (Group B)", "payLevel": null, "startingBasic": null, "responsibilities": "Telecom field and technical work." }
+  ],
+  "eligibility": {
+    "age": {
+      "summary": "At least 21 and under 30 years on 1 January of the exam year. For ESE 2027: born between 2 January 1997 and 1 January 2006.",
+      "referenceDate": "1 January of the exam year (1 Jan 2027 for ESE 2027)",
+      "relaxations": [
+        { "category": "SC / ST", "years": 5 },
+        { "category": "OBC (eligible for reservation)", "years": 3 },
+        { "category": "Defence personnel disabled in hostilities", "years": 3 },
+        { "category": "Ex-servicemen incl. ECO/SSCO with 5 years service (conditions apply)", "years": 5 },
+        { "category": "PwBD (low vision, deaf/hard of hearing, locomotor, SLD, mental illness)", "years": 10 },
+        { "category": "Government servants in specified departments", "years": 5, "note": "Upper limit up to 35 for permanent staff, or temporary staff with 3 years regular service, applying to services of their own department." }
+      ]
+    },
+    "nationality": "Citizen of India, or a subject of Nepal or Bhutan, or other specified categories with a Government of India eligibility certificate.",
+    "domicile": null,
+    "education": {
+      "summary": "A degree in engineering, or Sections A and B of the Institution of Engineers (India), or other listed equivalents (IETE graduate membership, Aeronautical Society of India associate membership, and so on). For Indian Naval Armament Service (electronics) and Indian Radio Regulatory Service, an M.Sc. with wireless communication, electronics, radio physics or radio engineering is also accepted.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [{ "category": "All categories", "limit": "No limit on attempts (within age limit)" }],
+    "experience": null,
+    "physical": "Physical and medical standards as in the ESE Rules. Some services (for example Border Roads) have additional field requirements.",
+    "medical": "Medical examination before appointment.",
+    "other": ["You write the exam in one branch (Civil, Mechanical, Electrical or E&T); you can only be allocated services of that branch."],
+    "examVsPost": "You choose one engineering category when applying, and you can be allotted only the services in that category. Some services in the list are Group B (for example Junior Telecom Officer) and pay below Level 10.",
+    "disqualifications": ["Applications cannot be withdrawn after submission."],
+    "reservation": "Central reservation: SC 15%, ST 7.5%, OBC 27%, EWS 10%, plus PwBD. ESE 2027 has about 480 vacancies including 19 for PwBD.",
+    "sources": ["s1"]
+  },
+  "eligibilityRules": {
+    "ageMin": 21,
+    "ageMax": 29,
+    "ageReferenceDate": "2027-01-01",
+    "relaxationYears": { "OBC": 3, "SC": 5, "ST": 5, "EWS": 0, "PwBD": 10 },
+    "minEducation": "graduate",
+    "educationFields": ["engineering-civil", "engineering-mechanical", "engineering-electrical", "engineering-electronics"],
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "notes": "Upper limit means under 30 on 1 Jan 2027 (up to 29 completed years). Some electronics posts also accept a relevant M.Sc."
+  },
+  "selection": {
+    "stages": [
+      {
+        "name": "Stage I: Preliminary (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          { "name": "Paper I: General Studies and Engineering Aptitude (common to all)", "marks": 200, "duration": "2 hours", "negative": "One third of the question's marks" },
+          { "name": "Paper II: your engineering branch", "marks": 300, "duration": "3 hours", "negative": "One third of the question's marks" }
+        ],
+        "notes": "Minimum qualifying marks are set in both papers. About 6 to 7 times the vacancies are admitted to Mains. Prelims marks are counted in the final merit."
+      },
+      {
+        "name": "Stage II: Main (conventional)",
+        "type": "descriptive",
+        "countsInMerit": true,
+        "papers": [
+          { "name": "Paper I: your engineering branch", "marks": 300, "duration": "3 hours" },
+          { "name": "Paper II: your engineering branch", "marks": 300, "duration": "3 hours" }
+        ],
+        "notes": "Answered in English only. About twice the vacancies are called for interview."
+      },
+      {
+        "name": "Stage III: Personality Test",
+        "type": "interview",
+        "countsInMerit": true,
+        "papers": [{ "name": "Personality Test", "marks": 200, "qualifying": false, "notes": "No minimum marks." }],
+        "notes": "Assesses leadership, initiative, intellectual curiosity, tact and other social qualities, mental and physical energy, practical application and integrity."
+      },
+      { "name": "Medical examination", "type": "medical", "countsInMerit": false }
+    ],
+    "meritCalculation": "Final marks = Prelims (500) + Mains (600) + Personality Test (200) = 1300.",
+    "tieBreaking": "(1) Higher marks in the three engineering papers (Prelims Paper II and Mains Papers I and II) plus the interview; (2) then the three engineering papers alone; (3) then the older candidate; (4) any remaining tie at the Commission's discretion. Marks are rounded to two decimals.",
+    "normalization": "None; each branch writes the same papers.",
+    "languages": "All papers are set in English and conventional papers must be answered in English.",
+    "documentVerification": "Original documents are produced at the interview.",
+    "probation": "Service-specific training and probation as per each service's rules.",
+    "sources": ["s1"]
+  },
+  "syllabus": {
+    "officialLink": "https://www.upsc.gov.in/sites/default/files/Notif-ESEP-2027-Engl-160926.pdf",
+    "sections": [
+      { "stage": "Preliminary", "subject": "Paper I: General Studies and Engineering Aptitude", "topics": ["Current issues of national and international importance in social, economic and industrial development", "Engineering aptitude: logical reasoning and analytical ability", "Engineering mathematics and numerical analysis", "General principles of design, drawing, importance of safety", "Standards and quality practices in production, construction, maintenance and services", "Basics of energy and environment: conservation, pollution, climate change, environmental impact assessment", "Basics of project management", "Basics of material science and engineering", "ICT tools and their engineering uses: networking, e-governance, technology-based education", "Ethics and values in the engineering profession"] },
+      { "stage": "Preliminary and Main", "subject": "Branch papers (Civil, Mechanical, Electrical or E&T)", "topics": ["The same branch syllabus is used for the Prelims objective Paper II and the two Mains conventional papers", "Standard: roughly an engineering degree examination of an Indian university", "Full topic lists for each branch are in Section III of the notification"] }
+    ],
+    "supplementary": ["Each of the 10 Paper I topics carries roughly 5% to 15% of that paper's marks, as stated in the notification.", "Candidates often prepare ESE alongside GATE, because the branch syllabus overlaps heavily."],
+    "sources": ["s1"]
+  },
+  "syllabusTags": ["current-affairs", "reasoning", "engineering-mathematics", "environment", "engineering-civil", "engineering-mechanical", "engineering-electrical", "engineering-electronics", "interview-personality"],
+  "cutoffs": [],
+  "statistics": [
+    { "year": 2020, "vacancies": null, "applicants": 233457, "appeared": 117644, "qualifiedNextStage": 2263, "interviewed": 843, "selected": 343, "note": "302 recommended initially plus 41 later; vacancy total not stated in the report.", "source": "s5" },
+    { "year": 2022, "vacancies": null, "applicants": 141058, "appeared": 48453, "qualifiedNextStage": 1655, "interviewed": 615, "selected": 213, "note": "213 recommended initially; results for 33 vacancies were pending when the report was written.", "source": "s4" },
+    { "year": 2023, "vacancies": null, "applicants": 83963, "appeared": 33864, "qualifiedNextStage": 3524, "interviewed": 1233, "selected": 401, "note": "401 recommended initially; results for 85 vacancies were pending when the report was written.", "source": "s3" }
+  ],
+  "rankAndAllocation": {
+    "text": "Within your branch, candidates are ranked on the 1300-mark total and allotted services by rank and the order of preference you give. Some services also have medical or field requirements.",
+    "sources": ["s1"]
+  },
+  "salary": {
+    "payRuleSet": "central-7cpc",
+    "payLevel": "Level 10 (Group A services)",
+    "payScale": "56,100 to 1,77,500 (Level 10)",
+    "startingBasic": 56100,
+    "officialGross": null,
+    "specialAllowances": [{ "name": "Group B posts", "detail": "Junior Telecom Officer and other Group B posts start below Level 10." }],
+    "pension": "National Pension System, with the Unified Pension Scheme option.",
+    "increments": "3% a year; promotions through the service's grade structure.",
+    "notes": "Pay depends on the service allotted; Group A services start at Level 10.",
+    "asOf": "2026-10",
+    "sources": ["s6"]
+  },
+  "career": {
+    "progression": [
+      { "post": "Assistant Executive Engineer / Assistant Divisional Engineer (Group A entry)", "level": "Level 10", "timeline": "Entry", "timelineType": "official" },
+      { "post": "Executive Engineer / Divisional Engineer", "level": "Level 11", "timeline": "Early career", "timelineType": "typical" },
+      { "post": "Superintending Engineer / Senior Administrative Grade", "level": "Level 13 to 14", "timeline": "Mid career", "timelineType": "typical" },
+      { "post": "Chief Engineer / Principal Chief Engineer / General Manager (Railways)", "level": "Level 14 to 16", "timeline": "Senior", "timelineType": "typical" }
+    ],
+    "promotionNotes": "Exact post names and timings differ by service (CPWD, Railways, Telecom, and so on) and depend on vacancies and appraisal.",
+    "departmentalExams": "Service-specific departmental exams during probation where rules require.",
+    "macp": "MACP applies only to Group B posts such as JTO.",
+    "sources": ["s6"]
+  },
+  "benefits": [
+    { "item": "Railway passes", "detail": "Officers of the Railway services get railway passes as per Railway rules.", "conditional": true, "sources": ["s6"] },
+    { "item": "Government accommodation", "detail": "As per entitlement.", "conditional": true, "sources": ["s6"] }
+  ],
+  "workLife": {
+    "postings": "Anywhere in India, including project sites, border areas (Border Roads) and defence establishments.",
+    "transfers": "Periodic, by service.",
+    "nature": "Mix of field engineering (construction, maintenance, operations) and office work.",
+    "workload": "Project deadlines and operations can mean long hours.",
+    "publicInteraction": "Moderate (contractors, public works).",
+    "hazards": "Construction and field-site risks; remote postings for some services.",
+    "stability": "Very high (permanent Group A service).",
+    "sources": ["s1"]
+  },
+  "difficulty": {
+    "syllabusDepth": "high",
+    "competition": "medium",
+    "timePressure": "high",
+    "technicalComplexity": "high",
+    "physicalRequirements": "low",
+    "selectionUncertainty": "medium",
+    "rationale": "Full engineering-degree syllabus, tested both objectively and in long answers. Competition is lower than CSE in candidates per vacancy (2023: 33,864 appeared for about 486 vacancies, about 70 per vacancy). Prelims, Mains and interview all count."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Annual exam leading to Group A engineering services. Postings depend on the service and are often outside big cities."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      { "factor": "Vacancy swings", "level": "medium", "note": "Vacancies have ranged from about 250 to 500 in recent years." },
+      { "factor": "Delayed final results for some vacancies", "level": "medium", "note": "UPSC annual reports note results for some vacancies being declared later." },
+      { "factor": "Irregular recruitment", "level": "low", "note": "Held every year." }
+    ]
+  },
+  "guide": {
+    "sources": ["s1"],
+    "sections": [
+      {
+        "title": "What ESE is for",
+        "kind": "explainer",
+        "quickFacts": [{ "label": "Branches", "value": "4" }, { "label": "Vacancies 2027", "value": "about 480" }, { "label": "Final marks", "value": "1300" }],
+        "paragraphs": ["ESE (often called IES) is UPSC's exam for engineer officers in central services: Railways, CPWD, Telecom, Defence engineering, the Central Water and Power services, and others. You pick one branch, Civil, Mechanical, Electrical, or Electronics and Telecommunication, and compete only within it."]
+      },
+      {
+        "title": "Stage I: Prelims",
+        "kind": "official",
+        "quickFacts": [{ "label": "Marks", "value": "500" }, { "label": "Papers", "value": "2" }, { "label": "Wrong answer", "value": "minus 1/3" }, { "label": "Counts in rank", "value": "Yes" }],
+        "paragraphs": ["Paper I (200 marks, 2 hours) is common to all branches: general studies and engineering aptitude, covering ten fixed topics. Paper II (300 marks, 3 hours) is your branch. UPSC sets minimum marks in both papers and admits about 6 to 7 times the vacancies to Mains.", "Unlike the Civil Services Exam, ESE Prelims marks are added to your final total, so every mark matters."]
+      },
+      {
+        "title": "Stage II: Mains",
+        "kind": "official",
+        "quickFacts": [{ "label": "Marks", "value": "600" }, { "label": "Papers", "value": "2 x 300" }, { "label": "Time", "value": "3 hours each" }],
+        "paragraphs": ["Two long-answer papers in your branch, in English. The syllabus is the same branch syllabus as Prelims Paper II, but answers must show derivations, design reasoning and numerical working."]
+      },
+      {
+        "title": "Stage III: Personality Test",
+        "kind": "official",
+        "quickFacts": [{ "label": "Marks", "value": "200" }, { "label": "Pass mark", "value": "None" }, { "label": "Called", "value": "about 2x vacancies" }],
+        "paragraphs": ["The board looks for leadership, initiative and intellectual curiosity, tact and other social qualities, mental and physical energy, practical application, and integrity. Expect questions on your engineering background and projects."]
+      },
+      {
+        "title": "Common confusions",
+        "kind": "explainer",
+        "bullets": [
+          "ESE has no attempt limit; only the age limit (under 30 on 1 January, with relaxations) applies.",
+          "Age is counted on 1 January of the exam year, not 1 August as in CSE.",
+          "Not every ESE service is Group A: Junior Telecom Officer is Group B.",
+          "IRMS engineering posts (Civil, Mechanical, Electrical, S&T, Stores) are filled through ESE; IRMS Traffic, Personnel and Accounts come through CSE."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    { "id": "s1", "title": "Engineering Services Examination 2027 notification (Notice 02/2027-ENGG)", "url": "https://www.upsc.gov.in/sites/default/files/Notif-ESEP-2027-Engl-160926.pdf", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s2", "title": "UPSC Programme of Examinations 2026", "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf", "publisher": "Union Public Service Commission", "year": 2025, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s3", "title": "74th Annual Report 2023-24 (ESE 2023 statistics)", "url": "https://www.upsc.gov.in/sites/default/files/74thAnnualReport-2023-24-Engl-230326.pdf", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s4", "title": "73rd Annual Report 2022-23 (ESE 2022 statistics)", "url": "https://www.upsc.gov.in/sites/default/files/73rd-AnnualReport-2022-23-Engl-220824.pdf", "publisher": "Union Public Service Commission", "year": 2024, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s5", "title": "72nd Annual Report 2021-22 (ESE 2020 statistics)", "url": "https://www.upsc.gov.in/sites/default/files/72nd-AnnualReport-2021-22-ENGLISH-270423.pdf", "publisher": "Union Public Service Commission", "year": 2023, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s6", "title": "7th CPC pay matrix", "url": "https://doe.gov.in/pay-commission-matrix", "publisher": "Department of Expenditure", "year": 2016, "type": "primary", "accessed": "2026-10-18" }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": ["Official ESE cutoffs not reachable.", "Pay levels of Naval, DGAQA and JTO posts not confirmed.", "Total vacancy counts for 2020, 2022 and 2023 not stated in the reports reviewed.", "Promotion post names differ by service; ladder shown is typical."],
+    "notes": "Scheme, eligibility and services from the 2027 notification; statistics from UPSC annual reports."
+  },
+  "lastVerified": "2026-10-18"
+}

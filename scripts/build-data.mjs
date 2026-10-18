@@ -164,6 +164,7 @@ function toIndexRecord(exam, today) {
       payLevel: exam.salary?.payLevel ?? null,
       startingBasic: exam.salary?.startingBasic ?? null,
       officialGross: exam.salary?.officialGross ?? null,
+      fixedAdditions: exam.salary?.fixedAdditions ?? [],
     },
     difficulty: exam.difficulty ?? {},
     ratings: exam.ratings ?? {},

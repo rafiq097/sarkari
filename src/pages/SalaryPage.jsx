@@ -217,7 +217,7 @@ export default function SalaryPage() {
           </thead>
           <tbody>
             {payTable.map((exam) => {
-              const estimate = estimateSalary({ ruleSetKey: exam.salary.payRuleSet, basicPay: exam.salary.startingBasic, payLevel: exam.salary.payLevel })
+              const estimate = estimateSalary({ ruleSetKey: exam.salary.payRuleSet, basicPay: exam.salary.startingBasic, payLevel: exam.salary.payLevel, fixedAdditions: exam.salary.fixedAdditions })
               return (
                 <tr key={exam.id}>
                   <td>

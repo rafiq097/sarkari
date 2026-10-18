@@ -31,22 +31,27 @@ function computeHra(basicPay, hraSlab, customHraPercent) {
 
 /**
  * Estimates monthly pay.
- * options: { ruleSetKey, basicPay, payLevel, hraSlabIndex, customHraPercent, higherTransportCity }
+ * options: { ruleSetKey, basicPay, payLevel, hraSlabIndex, customHraPercent, higherTransportCity, fixedAdditions }
+ * fixedAdditions: [{ name, amount, daApplies }] such as Military Service Pay.
  * Returns null when the rule set has no DA model (for example bank pay).
  */
-export function estimateSalary({ ruleSetKey, basicPay, payLevel, hraSlabIndex = 0, customHraPercent = null, higherTransportCity = true }) {
+export function estimateSalary({ ruleSetKey, basicPay, payLevel, hraSlabIndex = 0, customHraPercent = null, higherTransportCity = true, fixedAdditions = [] }) {
   const ruleSet = getRuleSet(ruleSetKey)
   if (!ruleSet || ruleSet.daPercent == null || !basicPay) return null
 
-  const dearnessAllowance = (basicPay * ruleSet.daPercent) / 100
+  const additions = fixedAdditions ?? []
+  // DA is paid on basic plus any addition the rules make DA-bearing (for example MSP).
+  const daBase = basicPay + additions.filter((addition) => addition.daApplies).reduce((total, addition) => total + addition.amount, 0)
+  const dearnessAllowance = (daBase * ruleSet.daPercent) / 100
+  const additionsTotal = additions.reduce((total, addition) => total + addition.amount, 0)
   const houseRentAllowance = computeHra(basicPay, ruleSet.hra?.[hraSlabIndex], customHraPercent)
   const transportRow = findTransportRow(ruleSet, payLevel)
   const transportBase = transportRow ? (higherTransportCity ? transportRow.higherCities : transportRow.otherPlaces) : 0
   // DA is paid on Transport Allowance at the same rate as on pay (central rules).
   const transportAllowance = transportBase * (1 + ruleSet.daPercent / 100)
 
-  const gross = basicPay + dearnessAllowance + houseRentAllowance + transportAllowance
-  const pensionContribution = ((basicPay + dearnessAllowance) * (ruleSet.pensionDeductionPercent ?? 0)) / 100
+  const gross = basicPay + additionsTotal + dearnessAllowance + houseRentAllowance + transportAllowance
+  const pensionContribution = ((basicPay + (basicPay * ruleSet.daPercent) / 100) * (ruleSet.pensionDeductionPercent ?? 0)) / 100
   // Professional tax is Rs 200 per month in all three states at these salary levels.
   const professionalTax = gross > 25000 ? 200 : 0
   const inHand = gross - pensionContribution - professionalTax
@@ -55,12 +60,14 @@ export function estimateSalary({ ruleSetKey, basicPay, payLevel, hraSlabIndex = 
     ruleSet,
     lines: [
       { label: 'Basic pay', amount: basicPay },
-      { label: `Dearness Allowance (${ruleSet.daPercent}%)`, amount: dearnessAllowance },
+      ...additions.map((addition) => ({ label: addition.name, amount: addition.amount })),
+      { label: `Dearness Allowance (${ruleSet.daPercent}%${additions.some((addition) => addition.daApplies) ? ' on basic + ' + additions.filter((addition) => addition.daApplies).map((addition) => addition.name).join(', ') : ''})`, amount: dearnessAllowance },
       { label: customHraPercent != null ? `HRA (${customHraPercent}%, entered)` : `HRA (${ruleSet.hra?.[hraSlabIndex]?.label ?? 'not modelled'})`, amount: houseRentAllowance },
       { label: 'Transport Allowance incl. DA', amount: transportAllowance },
     ],
     deductions: [
-      { label: `Pension contribution (${ruleSet.pensionDeductionPercent}% of basic + DA)`, amount: pensionContribution },
+      // Armed forces have no pension contribution, so that line is dropped when it is zero.
+      ...(pensionContribution > 0 ? [{ label: `Pension contribution (${ruleSet.pensionDeductionPercent}% of basic + DA)`, amount: pensionContribution }] : []),
       { label: 'Professional tax', amount: professionalTax },
     ],
     gross,

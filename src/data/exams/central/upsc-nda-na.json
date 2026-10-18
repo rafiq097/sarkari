@@ -1,0 +1,237 @@
+{
+  "id": "upsc-nda-na",
+  "name": "National Defence Academy and Naval Academy Examination",
+  "abbreviation": "UPSC NDA & NA",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": { "id": "upsc", "name": "Union Public Service Commission", "abbreviation": "UPSC", "website": "https://www.upsc.gov.in" },
+  "department": "Ministry of Defence (Army, Navy, Air Force)",
+  "technical": false,
+  "summary": "The Class 12 route to becoming an officer in the Army, Navy or Air Force. Held twice a year and open to unmarried men and women. Selected cadets train for 3 years at the National Defence Academy, Pune (with a degree), or 4 years at the Indian Naval Academy, then are commissioned as officers on a Permanent Commission.",
+  "employmentType": "permanent",
+  "recruitmentMethods": ["competitive-exam", "ssb-interview", "medical-exam", "document-verification"],
+  "frequency": "Twice a year (NDA I and NDA II, official UPSC calendar)",
+  "officialLinks": [
+    { "label": "NDA & NA (II) 2026 notification", "url": "https://www.upsc.gov.in/sites/default/files/Notif-NDA-II-2026-Engl-200526.pdf" },
+    { "label": "Apply online", "url": "https://upsconline.nic.in" },
+    { "label": "National Defence Academy", "url": "https://nda.nic.in" }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Two cycles every year. NDA I: notification in December, exam in April. NDA II: notification in May, exam in September. Courses start in January and July.",
+    "cycles": [
+      { "cycle": "NDA & NA (II) 2026 (158th NDA / 120th INAC, from 1 Jul 2027)", "events": [
+        { "event": "Notification", "date": "2026-05-20", "dateType": "official", "source": "s2" },
+        { "event": "Last date to apply", "date": "2026-06-09", "dateType": "official", "source": "s2" },
+        { "event": "Written exam", "date": "2026-09-13", "dateType": "official", "source": "s1" }
+      ] },
+      { "cycle": "NDA & NA (I) 2027", "events": [
+        { "event": "Notification", "date": "2026-12-02", "dateType": "official-tentative", "source": "s3" },
+        { "event": "Last date to apply", "date": "2026-12-22", "dateType": "official-tentative", "source": "s3" },
+        { "event": "Written exam", "date": "2027-04-11", "dateType": "official-tentative", "source": "s3" }
+      ] },
+      { "cycle": "NDA & NA (II) 2027", "events": [
+        { "event": "Notification", "date": "2027-05-12", "dateType": "official-tentative", "source": "s3" },
+        { "event": "Written exam", "date": "2027-09-19", "dateType": "official-tentative", "source": "s3" }
+      ] }
+    ]
+  },
+  "posts": [
+    { "name": "NDA Army wing", "group": "Permanent Commission", "payLevel": "Level 10 (Lieutenant)", "startingBasic": 56100, "responsibilities": "3 years at NDA, then about 1 year at IMA; commissioned as Lieutenant.", "notes": "NDA II 2026: 208 vacancies (198 male, 10 female)." },
+    { "name": "NDA Navy wing (Executive branch)", "group": "Permanent Commission", "payLevel": "Level 10 (Sub Lieutenant)", "startingBasic": 56100, "responsibilities": "3 years at NDA, then naval training; commissioned as Sub Lieutenant.", "notes": "NDA II 2026: 42 vacancies (37 male, 5 female)." },
+    { "name": "NDA Air Force wing: Flying", "group": "Permanent Commission", "payLevel": "Level 10 (Flying Officer)", "startingBasic": 56100, "responsibilities": "Pilot officer after NDA and Air Force Academy training.", "notes": "NDA II 2026: 92 vacancies (90 male, 2 female)." },
+    { "name": "NDA Air Force wing: Ground Duties (Technical)", "group": "Permanent Commission", "payLevel": "Level 10 (Flying Officer)", "startingBasic": 56100, "responsibilities": "Technical ground duty officer.", "notes": "NDA II 2026: 18 vacancies (16 male, 2 female)." },
+    { "name": "NDA Air Force wing: Ground Duties (Non-Technical)", "group": "Permanent Commission", "payLevel": "Level 10 (Flying Officer)", "startingBasic": 56100, "responsibilities": "Non-technical ground duty officer.", "notes": "NDA II 2026: 10 vacancies (8 male, 2 female)." },
+    { "name": "Indian Naval Academy (10+2 Cadet Entry Scheme, Executive branch)", "group": "Permanent Commission", "payLevel": "Level 10 (Sub Lieutenant)", "startingBasic": 56100, "responsibilities": "4 years at INA Ezhimala with a B.Tech; commissioned as Sub Lieutenant.", "notes": "NDA II 2026: 24 vacancies (21 male, 3 female)." }
+  ],
+  "eligibility": {
+    "age": {
+      "summary": "Unmarried men and women aged about 16 and a half to 19 and a half at course start. For NDA & NA (II) 2026: born between 1 January 2008 and 1 January 2011, both dates included.",
+      "referenceDate": "Date-of-birth window in each notification",
+      "relaxations": [{ "category": "SC / ST / OBC / EWS", "years": 0, "note": "No category age relaxation." }]
+    },
+    "nationality": "Citizen of India, or a subject of Nepal, or a person of Indian origin who migrated from specified countries, with a Government of India eligibility certificate (not needed for Gorkha subjects of Nepal).",
+    "domicile": null,
+    "education": {
+      "summary": "Army wing: Class 12 pass (any stream) under the 10+2 pattern. Air Force and Navy wings, and INA 10+2 Cadet Entry: Class 12 pass with Physics, Chemistry and Mathematics.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [{ "category": "All", "limit": "No attempt limit (within the age window)" }],
+    "experience": null,
+    "physical": "Service medical and physical standards, checked by a medical board after the SSB.",
+    "medical": "Service medical boards, with an appeal medical board.",
+    "other": [
+      "Must be unmarried and stay unmarried during training.",
+      "Class 12 students can apply; proof must reach the Army or Naval HQ by the date in the notice if not shown at the SSB.",
+      "Fee as per notice; women, SC and ST candidates are exempt."
+    ],
+    "examVsPost": "Anyone in the age window with Class 12 can sit the exam, but only candidates with Physics, Chemistry and Maths in Class 12 can be placed in the Navy, Air Force or INA. Arts and commerce students can choose the Army wing only.",
+    "disqualifications": ["Candidates earlier removed from a service academy on disciplinary grounds are not considered."],
+    "reservation": "No caste or EWS reservation. Vacancies are notified separately for men and women.",
+    "sources": ["s1"]
+  },
+  "eligibilityRules": {
+    "ageMin": 16,
+    "ageMax": 19,
+    "ageReferenceDate": null,
+    "relaxationYears": { "OBC": 0, "SC": 0, "ST": 0, "EWS": 0, "PwBD": 0 },
+    "minEducation": "class-12",
+    "educationFields": ["any"],
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "notes": "Exact eligibility is a date-of-birth window in each notice (NDA II 2026: born 1 Jan 2008 to 1 Jan 2011). Navy, Air Force and INA need Physics, Chemistry and Maths in Class 12. Must be unmarried."
+  },
+  "selection": {
+    "stages": [
+      { "name": "Written examination (objective)", "type": "objective", "countsInMerit": true, "papers": [
+        { "name": "Mathematics", "marks": 300, "duration": "2 hours 30 minutes", "negative": "One third of the question's marks" },
+        { "name": "General Ability Test (Part A English 200, Part B General Knowledge 400)", "marks": 600, "duration": "2 hours 30 minutes", "negative": "One third of the question's marks" }
+      ], "notes": "Written total 900. Maths and GAT Part B are bilingual (Hindi and English)." },
+      { "name": "SSB Intelligence and Personality Test", "type": "ssb", "countsInMerit": true, "papers": [{ "name": "SSB", "marks": 900 }], "notes": "Stage I: OIR test and PP&DT. Stage II over 4 days: interview, group testing tasks, psychology tests and conference. Air Force (flying) candidates also take the Computerised Pilot Selection System." },
+      { "name": "Medical examination", "type": "medical", "countsInMerit": false }
+    ],
+    "meritCalculation": "Final merit = written (900) + SSB (900) = 1800. Minimum marks apply separately to the written exam and the SSB.",
+    "tieBreaking": "As stated in the notification (rounding to two decimals, then written marks and age).",
+    "normalization": "None.",
+    "languages": "English paper in English; Maths and GK in Hindi and English.",
+    "documentVerification": "Original certificates at the SSB.",
+    "probation": "3 years at NDA (2.5 years common to all three wings) with a JNU degree (B.Sc., B.Sc. Computer, B.A. or B.Tech), then pre-commissioning training at IMA, the Naval Academy or Air Force Academy. INA cadets train for 4 years with a B.Tech.",
+    "sources": ["s1"]
+  },
+  "syllabus": {
+    "officialLink": "https://www.upsc.gov.in/sites/default/files/Notif-NDA-II-2026-Engl-200526.pdf",
+    "sections": [
+      { "stage": "Written", "subject": "Mathematics (300 marks)", "topics": ["Algebra: sets, relations, complex numbers, quadratic equations, binomial theorem, logarithms", "Matrices and determinants", "Trigonometry", "Analytical geometry of two and three dimensions", "Differential calculus", "Integral calculus and differential equations", "Vector algebra", "Statistics and probability"] },
+      { "stage": "Written", "subject": "GAT Part A: English (200 marks)", "topics": ["Grammar and usage", "Vocabulary", "Comprehension and cohesion in extended text"] },
+      { "stage": "Written", "subject": "GAT Part B: General Knowledge (400 marks)", "topics": ["Section A: Physics (about 25%)", "Section B: Chemistry (about 15%)", "Section C: General Science (about 10%)", "Section D: History, freedom movement (about 20%)", "Section E: Geography (about 20%)", "Section F: Current events (about 10%)"] }
+    ],
+    "supplementary": ["The full topic list is in the notification appendix.", "The Maths paper is at Class 11 and 12 level."],
+    "sources": ["s1"]
+  },
+  "syllabusTags": ["mathematics", "english-language", "physics", "chemistry", "general-science", "indian-history", "geography", "current-affairs", "military-aptitude", "interview-personality", "physical-fitness"],
+  "cutoffs": [],
+  "statistics": [
+    { "year": 2022, "vacancies": 400, "applicants": 534010, "appeared": 336220, "qualifiedNextStage": null, "interviewed": 5859, "selected": 538, "note": "NDA & NA (II) 2022. Recommended can exceed vacancies because lists are drawn per service and course.", "source": "s4" }
+  ],
+  "rankAndAllocation": {
+    "text": "Separate merit lists are made by service and gender. Candidates are placed by merit, their service preferences, PCM eligibility (for Navy and Air Force) and medical fitness. Air Force flying candidates must also clear the pilot aptitude test.",
+    "sources": ["s1"]
+  },
+  "salary": {
+    "payRuleSet": "defence-7cpc",
+    "payLevel": "Level 10 on commissioning",
+    "payScale": "56,100 to 1,77,500 (Level 10)",
+    "startingBasic": 56100,
+    "officialGross": null,
+    "fixedAdditions": [{ "name": "Military Service Pay", "amount": 15500, "daApplies": true }],
+    "specialAllowances": [
+      { "name": "During training", "detail": "Cadets are under training for 3 to 4 years; officer pay starts on commissioning." },
+      { "name": "Military Service Pay", "detail": "Rs 15,500 a month for officers from Lieutenant to Brigadier." },
+      { "name": "Flying and other allowances", "detail": "As per service rules." }
+    ],
+    "pension": "Defence pension (armed forces are not under NPS).",
+    "increments": "3% a year; time-scale promotions as for other Permanent Commission officers.",
+    "notes": "The salary estimate applies after commissioning.",
+    "asOf": "2026-10",
+    "sources": ["s5"]
+  },
+  "career": {
+    "progression": [
+      { "post": "Lieutenant / Sub Lieutenant / Flying Officer", "level": "Level 10", "timeline": "On commissioning (about 4 to 4.5 years after joining NDA)", "timelineType": "official" },
+      { "post": "Captain / Lieutenant (Navy) / Flight Lieutenant", "level": "Level 10B", "timeline": "After 2 years of commissioned service", "timelineType": "official" },
+      { "post": "Major / Lieutenant Commander / Squadron Leader", "level": "Level 11", "timeline": "After 6 years", "timelineType": "official" },
+      { "post": "Lieutenant Colonel / Commander / Wing Commander", "level": "Level 12A", "timeline": "After 13 years", "timelineType": "official" },
+      { "post": "Colonel and above", "level": "Level 13 and up", "timeline": "By selection", "timelineType": "typical" }
+    ],
+    "promotionNotes": "Time-scale promotions up to the Lt Col equivalent; selection boards above that. The time-scale years shown are those in the UPSC defence notices.",
+    "departmentalExams": "Service promotion exams as per rules.",
+    "macp": "Not applicable.",
+    "sources": ["s5"]
+  },
+  "benefits": [
+    { "item": "Free education at NDA", "detail": "Degree from Jawaharlal Nehru University on passing out.", "conditional": false, "sources": ["s1"] },
+    { "item": "Medical care, canteen and travel", "detail": "As for all armed forces officers.", "conditional": false, "sources": ["s5"] }
+  ],
+  "workLife": {
+    "postings": "Anywhere in India, at sea or at air bases, including border and field areas.",
+    "transfers": "Every 2 to 3 years.",
+    "nature": "Field and operational leadership.",
+    "workload": "Very demanding; long training and field tenures.",
+    "publicInteraction": "Low.",
+    "hazards": "Combat and operational risks.",
+    "stability": "Very high (Permanent Commission).",
+    "sources": ["s1"]
+  },
+  "difficulty": {
+    "syllabusDepth": "medium",
+    "competition": "high",
+    "timePressure": "high",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "high",
+    "rationale": "Over 3 lakh appear for about 400 seats (NDA II 2022: 3,36,220 appeared for 400 vacancies, about 840 per vacancy). Class 11 and 12 Maths at speed, then a 5-day SSB and a strict medical."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Twice-yearly exam with a free degree and a full officer career, but postings are entirely decided by the service."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      { "factor": "Narrow age window", "level": "high", "note": "About 3 years of eligibility, so only a few attempts are possible." },
+      { "factor": "SSB and medical", "level": "high", "note": "Most written qualifiers are not recommended at the SSB." },
+      { "factor": "Irregular recruitment", "level": "low", "note": "Held twice a year." }
+    ]
+  },
+  "guide": {
+    "sources": ["s1"],
+    "sections": [
+      {
+        "title": "What NDA is",
+        "kind": "official",
+        "quickFacts": [{ "label": "Vacancies NDA II 2026", "value": "394" }, { "label": "Training", "value": "3 years + academy" }, { "label": "Final marks", "value": "1800" }],
+        "paragraphs": ["NDA is the officer entry right after Class 12. You train for 3 years at the National Defence Academy in Pune, earning a JNU degree, then go to your service academy for final training. Women have been eligible since 2021 and vacancies are notified separately for them."]
+      },
+      {
+        "title": "The written exam",
+        "kind": "official",
+        "quickFacts": [{ "label": "Maths", "value": "300 marks, 2.5 hours" }, { "label": "GAT", "value": "600 marks, 2.5 hours" }, { "label": "Wrong answer", "value": "minus 1/3" }],
+        "paragraphs": ["Mathematics (Class 11 and 12 level) and the General Ability Test. GAT has English (200 marks) and General Knowledge (400 marks) covering physics, chemistry, general science, history, geography and current events."]
+      },
+      {
+        "title": "SSB and final merit",
+        "kind": "official",
+        "quickFacts": [{ "label": "SSB marks", "value": "900" }, { "label": "Days", "value": "about 5" }],
+        "paragraphs": ["The SSB is weighted equally with the written exam: 900 marks each. It has a screening day (intelligence test and picture discussion), then 4 days of interview, group tasks and psychology tests, ending with a conference."]
+      },
+      {
+        "title": "Common confusions",
+        "kind": "explainer",
+        "bullets": [
+          "Without Physics, Chemistry and Maths in Class 12 you can only be placed in the Army wing.",
+          "The Indian Naval Academy 10+2 Cadet Entry is filled through the same exam but trains for 4 years at Ezhimala, not at NDA.",
+          "There is no caste reservation or age relaxation in NDA.",
+          "Your eligibility is a date-of-birth window, so it changes with every cycle."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    { "id": "s1", "title": "NDA & NA Examination (II) 2026 notification", "url": "https://www.upsc.gov.in/sites/default/files/Notif-NDA-II-2026-Engl-200526.pdf", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s2", "title": "UPSC Programme of Examinations 2026", "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf", "publisher": "Union Public Service Commission", "year": 2025, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s3", "title": "UPSC Annual Calendar 2027", "url": "https://upsc.gov.in/content/annual-calendar-2027-0", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s4", "title": "74th Annual Report 2023-24 (NDA II 2022 statistics)", "url": "https://www.upsc.gov.in/sites/default/files/74thAnnualReport-2023-24-Engl-230326.pdf", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s5", "title": "CDS (II) 2026 notification: officer pay table, MSP and promotion timings", "url": "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": ["Official NDA cutoffs not reachable.", "Exact tie-breaking wording not reproduced.", "Navy and Air Force rank-equivalent promotion years are taken from the Army timings in the defence notices."],
+    "notes": "Vacancies, eligibility, scheme and training from the NDA & NA (II) 2026 notification."
+  },
+  "lastVerified": "2026-10-18"
+}

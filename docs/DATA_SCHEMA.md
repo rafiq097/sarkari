@@ -110,6 +110,7 @@ Selection rate is computed by the UI only when `selected` and `applicants` or `a
   "startingBasic": 56100,
   "officialGross": null, "officialGrossNote": "",
   "specialAllowances": [ { "name", "detail" } ],
+  "fixedAdditions": [ { "name": "Military Service Pay", "amount": 15500, "daApplies": true } ],
   "pension": "", "increments": "", "notes": "", "asOf": "2026-10", "sources": [] }
 ```
 Gross / in-hand estimates are computed by the UI from `src/data/pay-rules/*.json`.

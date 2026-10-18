@@ -1,0 +1,722 @@
+{
+  "id": "upsc-cds",
+  "name": "Combined Defence Services Examination",
+  "abbreviation": "UPSC CDS",
+  "profileType": "exam",
+  "jurisdiction": "central",
+  "sector": "defence",
+  "organization": {
+    "id": "upsc",
+    "name": "Union Public Service Commission",
+    "abbreviation": "UPSC",
+    "website": "https://www.upsc.gov.in"
+  },
+  "department": "Ministry of Defence (Army, Navy, Air Force)",
+  "technical": false,
+  "summary": "Graduate entry to officer training in the Army (IMA and OTA), Navy (INA) and Air Force (AFA). Held twice a year. An objective written exam is followed by a 5-day SSB interview and a medical. IMA, INA and AFA lead to a Permanent Commission; OTA leads to a Short Service Commission of 10 years, extendable to 14.",
+  "employmentType": "permanent",
+  "recruitmentMethods": [
+    "competitive-exam",
+    "ssb-interview",
+    "medical-exam",
+    "document-verification"
+  ],
+  "frequency": "Twice a year (CDS I and CDS II, official UPSC calendar)",
+  "officialLinks": [
+    {
+      "label": "CDS (II) 2026 notification",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf"
+    },
+    {
+      "label": "Apply online",
+      "url": "https://upsconline.nic.in"
+    },
+    {
+      "label": "Join Indian Army (SSB details)",
+      "url": "https://www.joinindianarmy.nic.in"
+    }
+  ],
+  "status": {
+    "type": "active",
+    "note": "Two cycles every year. CDS I: notification in December, exam in April. CDS II: notification in May, exam in September. Courses start in January/July (IMA, INA, AFA) and April/October (OTA).",
+    "cycles": [
+      {
+        "cycle": "CDS (II) 2026",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-05-20",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-06-09",
+            "dateType": "official",
+            "source": "s2"
+          },
+          {
+            "event": "Written exam",
+            "date": "2026-09-13",
+            "dateType": "official",
+            "source": "s1"
+          }
+        ]
+      },
+      {
+        "cycle": "CDS (I) 2027",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2026-12-02",
+            "dateType": "official-tentative",
+            "source": "s3"
+          },
+          {
+            "event": "Last date to apply",
+            "date": "2026-12-22",
+            "dateType": "official-tentative",
+            "source": "s3"
+          },
+          {
+            "event": "Written exam",
+            "date": "2027-04-11",
+            "dateType": "official-tentative",
+            "source": "s3"
+          }
+        ]
+      },
+      {
+        "cycle": "CDS (II) 2027",
+        "events": [
+          {
+            "event": "Notification",
+            "date": "2027-05-12",
+            "dateType": "official-tentative",
+            "source": "s3"
+          },
+          {
+            "event": "Written exam",
+            "date": "2027-09-19",
+            "dateType": "official-tentative",
+            "source": "s3"
+          }
+        ]
+      }
+    ]
+  },
+  "posts": [
+    {
+      "name": "Indian Military Academy, Dehradun (Army, Permanent Commission)",
+      "group": "Permanent Commission",
+      "payLevel": "Level 10 (Lieutenant)",
+      "startingBasic": 56100,
+      "responsibilities": "Army officer: about 18 months of training, then commissioned as Lieutenant.",
+      "notes": "CDS (II) 2026: 100 vacancies incl. 13 for NCC 'C' (Army)."
+    },
+    {
+      "name": "Indian Naval Academy, Ezhimala (Navy Executive / Hydro)",
+      "group": "Permanent Commission",
+      "payLevel": "Level 10 (Sub Lieutenant)",
+      "startingBasic": 56100,
+      "responsibilities": "Naval officer, executive branch (general service) or hydrography.",
+      "notes": "CDS (II) 2026: 26 vacancies incl. 6 NCC 'C' (Naval) and 1 Hydro."
+    },
+    {
+      "name": "Air Force Academy, Hyderabad (Flying branch)",
+      "group": "Permanent Commission",
+      "payLevel": "Level 10 (Flying Officer)",
+      "startingBasic": 56100,
+      "responsibilities": "Pilot officer; about 74 weeks of training.",
+      "notes": "CDS (II) 2026: 32 vacancies incl. 3 NCC 'C' (Air)."
+    },
+    {
+      "name": "Officers' Training Academy, Chennai: SSC (Non-Technical) Men",
+      "group": "Short Service Commission",
+      "payLevel": "Level 10 (Lieutenant)",
+      "startingBasic": 56100,
+      "responsibilities": "Army officer on Short Service Commission; about 49 weeks of training.",
+      "notes": "CDS (II) 2026: 275 vacancies."
+    },
+    {
+      "name": "Officers' Training Academy, Chennai: SSC (Non-Technical) Women",
+      "group": "Short Service Commission",
+      "payLevel": "Level 10 (Lieutenant)",
+      "startingBasic": 56100,
+      "responsibilities": "Army officer on Short Service Commission; about 49 weeks of training.",
+      "notes": "CDS (II) 2026: 18 vacancies."
+    }
+  ],
+  "eligibility": {
+    "age": {
+      "summary": "IMA and INA: 19 to 24, unmarried men. AFA: 20 to 24 (up to 26 with a DGCA Commercial Pilot Licence), men; those under 25 must be unmarried. OTA (SSC men): 19 to 25, unmarried. OTA (SSC women): 19 to 25; unmarried women, or issueless widows or divorcees who have not remarried. For CDS (II) 2026: IMA/INA born 1 Jul 2003 to 1 Jul 2008; AFA born 1 Jul 2003 to 1 Jul 2007; OTA born 1 Jul 2002 to 1 Jul 2008 (both dates included).",
+      "referenceDate": "Date-of-birth windows set in each notification (linked to the course start)",
+      "relaxations": [
+        {
+          "category": "SC / ST / OBC / EWS",
+          "years": 0,
+          "note": "No category age relaxation in CDS."
+        }
+      ]
+    },
+    "nationality": "Citizen of India, or a subject of Nepal or Bhutan, or other specified categories with a Government of India eligibility certificate (Gorkha subjects of Nepal do not need one).",
+    "domicile": null,
+    "education": {
+      "summary": "IMA and OTA: any degree. INA: a degree in engineering, or a B.Sc. with Physics, with Physics and Mathematics at Class 12. AFA: any degree with Physics and Mathematics at Class 12, or a B.E.",
+      "finalYearAllowed": true,
+      "minMarks": null
+    },
+    "attempts": [
+      {
+        "category": "All",
+        "limit": "No attempt limit (within age limits)"
+      }
+    ],
+    "experience": null,
+    "physical": "Service medical and physical standards for each academy, checked by a medical board after the SSB. Flying branch standards are the strictest.",
+    "medical": "Medical examination by Service Medical Boards; candidates may appeal to an Appeal Medical Board.",
+    "other": [
+      "Marriage is not allowed during training; a candidate who marries after applying will not be selected, and one who marries during training is discharged and must refund the training cost.",
+      "Male divorcees and widowers are not treated as unmarried and cannot apply.",
+      "Final-year students may apply; IMA/OTA/INA/AFA first-choice candidates must show degree proof at the SSB or by the date in the notice.",
+      "Fee: Rs 200. Women, SC and ST candidates are exempt."
+    ],
+    "examVsPost": "You list academy preferences (IMA, INA, AFA, OTA). Each academy has its own age, education and gender rules, so you may be eligible for some and not others. Merit lists are made separately for each academy, and separately for OTA men and OTA women.",
+    "disqualifications": [
+      "Candidates earlier removed from NDA, IMA, AFA, INA or OTA on disciplinary grounds are not considered.",
+      "Candidates earlier withdrawn from IMA for lack of officer-like qualities are not admitted to IMA again."
+    ],
+    "reservation": "No caste or EWS reservation in CDS. Specified vacancies are reserved for NCC 'C' certificate holders in IMA, INA and AFA.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "eligibilityRules": {
+    "ageMin": 19,
+    "ageMax": 25,
+    "ageReferenceDate": null,
+    "relaxationYears": {
+      "OBC": 0,
+      "SC": 0,
+      "ST": 0,
+      "EWS": 0,
+      "PwBD": 0
+    },
+    "minEducation": "graduate",
+    "educationFields": [
+      "any"
+    ],
+    "finalYearAllowed": true,
+    "gender": "any",
+    "domicile": null,
+    "notes": "Age window and gender differ by academy: IMA/INA men 19 to 24, AFA 20 to 24, OTA 19 to 25 (men and women). Must be unmarried (with limited exceptions for women and AFA candidates 25+). Not open to PwBD candidates (medical standards)."
+  },
+  "selection": {
+    "stages": [
+      {
+        "name": "Written examination (objective)",
+        "type": "objective",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "English",
+            "marks": 100,
+            "duration": "2 hours",
+            "negative": "One third (0.33) of the question's marks"
+          },
+          {
+            "name": "General Knowledge",
+            "marks": 100,
+            "duration": "2 hours",
+            "negative": "One third (0.33) of the question's marks"
+          },
+          {
+            "name": "Elementary Mathematics (IMA, INA, AFA only)",
+            "marks": 100,
+            "duration": "2 hours",
+            "negative": "One third (0.33) of the question's marks"
+          }
+        ],
+        "notes": "IMA/INA/AFA: 300 marks. OTA: English + GK = 200 marks. GK and Maths papers are bilingual (Hindi and English)."
+      },
+      {
+        "name": "SSB Intelligence and Personality Test",
+        "type": "ssb",
+        "countsInMerit": true,
+        "papers": [
+          {
+            "name": "SSB (IMA / INA / AFA)",
+            "marks": 300
+          },
+          {
+            "name": "SSB (OTA)",
+            "marks": 200
+          }
+        ],
+        "notes": "Stage I: Officer Intelligence Rating test and Picture Perception and Description Test; only those cleared go on. Stage II (4 days): interview, group testing tasks, psychology tests and a conference. Three assessors (Interviewing Officer, Group Testing Officer, Psychologist) assess holistically. AFA candidates also take the Computerised Pilot Selection System."
+      },
+      {
+        "name": "Medical examination",
+        "type": "medical",
+        "countsInMerit": false
+      }
+    ],
+    "meritCalculation": "Final merit = written marks + SSB marks. Candidates must clear the minimum marks set separately in the written exam and the SSB.",
+    "tieBreaking": "(1) Higher written total; (2) then higher General Knowledge marks; (3) then the older candidate; (4) any remaining tie at the Commission's discretion. Marks rounded to two decimals.",
+    "normalization": "None.",
+    "languages": "English paper in English; GK and Maths in Hindi and English.",
+    "documentVerification": "Original certificates must be carried to the SSB.",
+    "probation": "Training: IMA about 18 months; AFA about 74 weeks (flying); OTA about 49 weeks. Commissioned officers serve 6 months on probation.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "syllabus": {
+    "officialLink": "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf",
+    "sections": [
+      {
+        "stage": "Written",
+        "subject": "English",
+        "topics": [
+          "Understanding of English and workmanlike use of words",
+          "Grammar, vocabulary, comprehension"
+        ]
+      },
+      {
+        "stage": "Written",
+        "subject": "General Knowledge",
+        "topics": [
+          "Current events and everyday observation and experience in their scientific aspect",
+          "Questions on history of India and geography of a nature an educated person should answer without special study"
+        ]
+      },
+      {
+        "stage": "Written",
+        "subject": "Elementary Mathematics (matriculation level)",
+        "topics": [
+          "Arithmetic: number system, ratio and proportion, percentages, profit and loss, interest, time and work, elementary number theory",
+          "Algebra: basic operations, factors, HCF and LCM, equations, quadratic equations, inequalities, indices and logarithms",
+          "Trigonometry: ratios, identities, heights and distances",
+          "Geometry: lines and angles, triangles, circles, quadrilaterals",
+          "Mensuration: areas, surface areas and volumes",
+          "Statistics: collection and presentation of data, mean, median, mode"
+        ]
+      }
+    ],
+    "supplementary": [
+      "The detailed syllabus is in Appendix I of the notification.",
+      "SSB preparation is separate from the written exam and focuses on officer-like qualities, group tasks and psychological tests."
+    ],
+    "sources": [
+      "s1"
+    ]
+  },
+  "syllabusTags": [
+    "english-language",
+    "general-awareness",
+    "current-affairs",
+    "indian-history",
+    "geography",
+    "general-science",
+    "quantitative-aptitude",
+    "mathematics",
+    "military-aptitude",
+    "interview-personality",
+    "physical-fitness"
+  ],
+  "cutoffs": [],
+  "statistics": [
+    {
+      "year": 2022,
+      "vacancies": 339,
+      "applicants": 225740,
+      "appeared": 116387,
+      "qualifiedNextStage": null,
+      "interviewed": 4152,
+      "selected": 360,
+      "note": "CDS (II) 2022. Interviewed = attended SSB. Recommended can exceed vacancies because merit lists are drawn per academy.",
+      "source": "s4"
+    }
+  ],
+  "rankAndAllocation": {
+    "text": "UPSC publishes separate final merit lists for IMA, INA, AFA, OTA men and OTA women. You are placed in an academy by merit and your preference order, subject to medical fitness and vacancies. Candidates who qualify for both a Permanent Commission course and OTA but are not reached for the first are considered for OTA.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "salary": {
+    "payRuleSet": "defence-7cpc",
+    "payLevel": "Level 10 (Lieutenant)",
+    "payScale": "56,100 to 1,77,500 (Level 10)",
+    "startingBasic": 56100,
+    "officialGross": null,
+    "fixedAdditions": [
+      {
+        "name": "Military Service Pay",
+        "amount": 15500,
+        "daApplies": true
+      }
+    ],
+    "specialAllowances": [
+      {
+        "name": "Stipend during training",
+        "detail": "Rs 56,100 a month (first cell of Level 10) at IMA, INA, AFA and OTA. Training is not counted as commissioned service."
+      },
+      {
+        "name": "Military Service Pay",
+        "detail": "Rs 15,500 a month for Lieutenant to Brigadier."
+      },
+      {
+        "name": "Risk and Hardship Allowance",
+        "detail": "Depends on the area of posting."
+      },
+      {
+        "name": "Dress allowance",
+        "detail": "Rs 20,000 a year."
+      },
+      {
+        "name": "Free rations",
+        "detail": "In peace and field areas."
+      },
+      {
+        "name": "Children Education Allowance",
+        "detail": "Rs 2,250 a month per child (base rate, rises with DA)."
+      },
+      {
+        "name": "Flying allowance",
+        "detail": "For Air Force pilots, as per rules."
+      }
+    ],
+    "pension": "Defence pension (armed forces are not under NPS) after the qualifying service. SSC officers released at 10 or 14 years do not get a pension unless granted Permanent Commission.",
+    "increments": "3% a year in the pay matrix. Time-scale promotions to Captain, Major and Lieutenant Colonel.",
+    "notes": "Pay table from the CDS notice: Lieutenant L10, Captain L10B (61,300), Major L11 (69,400), Lt Col L12A (1,21,200), Colonel L13 (1,30,600), Brigadier L13A (1,39,600), Major General L14 (1,44,200), Lt General L15/16/17, Chief L18.",
+    "asOf": "2026-10",
+    "sources": [
+      "s1"
+    ]
+  },
+  "career": {
+    "progression": [
+      {
+        "post": "Lieutenant",
+        "level": "Level 10",
+        "timeline": "On commissioning",
+        "timelineType": "official"
+      },
+      {
+        "post": "Captain",
+        "level": "Level 10B",
+        "timeline": "After 2 years of commissioned service",
+        "timelineType": "official"
+      },
+      {
+        "post": "Major",
+        "level": "Level 11",
+        "timeline": "After 6 years",
+        "timelineType": "official"
+      },
+      {
+        "post": "Lieutenant Colonel",
+        "level": "Level 12A",
+        "timeline": "After 13 years",
+        "timelineType": "official"
+      },
+      {
+        "post": "Colonel",
+        "level": "Level 13",
+        "timeline": "By selection",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Brigadier",
+        "level": "Level 13A",
+        "timeline": "By selection",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Major General",
+        "level": "Level 14",
+        "timeline": "By selection",
+        "timelineType": "typical"
+      },
+      {
+        "post": "Lieutenant General",
+        "level": "Level 15 to 17",
+        "timeline": "By selection",
+        "timelineType": "typical"
+      }
+    ],
+    "promotionNotes": "Promotions up to Lieutenant Colonel are time-based, subject to promotion exams (Part B and D) and conditions. Colonel and above are by selection boards. SSC officers can be considered for Permanent Commission in their 10th year.",
+    "departmentalExams": "Promotion exams Part B and Part D for Army officers, as per rules.",
+    "macp": "Not applicable; armed forces have their own time-scale promotions.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "benefits": [
+    {
+      "item": "Accommodation",
+      "detail": "Service accommodation as available; no married accommodation during training.",
+      "conditional": true,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Medical care",
+      "detail": "Free medical care for the officer and family through the armed forces medical services.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Canteen and leave travel",
+      "detail": "CSD canteen and leave travel concessions as per service rules.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Insurance",
+      "detail": "Group insurance through the service insurance funds.",
+      "conditional": false,
+      "sources": [
+        "s1"
+      ]
+    }
+  ],
+  "workLife": {
+    "postings": "Anywhere in India, including border, high-altitude, sea and field areas.",
+    "transfers": "About every 2 to 3 years, field and peace postings in rotation.",
+    "nature": "Leadership of troops in the field; staff appointments later.",
+    "workload": "Demanding and on-call; long periods away from family in field postings.",
+    "publicInteraction": "Low to moderate.",
+    "hazards": "Combat, counter-insurgency and harsh-terrain risks.",
+    "stability": "Permanent Commission: very high. SSC: fixed tenure of 10 to 14 years unless granted Permanent Commission.",
+    "sources": [
+      "s1"
+    ]
+  },
+  "difficulty": {
+    "syllabusDepth": "low",
+    "competition": "high",
+    "timePressure": "medium",
+    "technicalComplexity": "low",
+    "physicalRequirements": "high",
+    "selectionUncertainty": "high",
+    "rationale": "The written syllabus is school to graduate level, but about 1.2 lakh appear for about 340 to 450 seats (CDS II 2022: 1,16,387 appeared for 339 vacancies, about 340 per vacancy). The SSB rejects most candidates and the medical is strict."
+  },
+  "ratings": {
+    "careerGrowth": "high",
+    "locationFlexibility": "low",
+    "recruitmentRegularity": "high",
+    "rationale": "Two exams a year without fail. Officer career with time-scale promotions; postings are decided by the service."
+  },
+  "risk": {
+    "overall": "medium",
+    "factors": [
+      {
+        "factor": "SSB recommendation rate",
+        "level": "high",
+        "note": "Only a small share of candidates who attend the SSB are recommended."
+      },
+      {
+        "factor": "Medical rejection",
+        "level": "medium",
+        "note": "Medical standards can disqualify otherwise selected candidates."
+      },
+      {
+        "factor": "Short Service tenure",
+        "level": "medium",
+        "note": "OTA officers serve 10 to 14 years unless granted Permanent Commission."
+      },
+      {
+        "factor": "Irregular recruitment",
+        "level": "low",
+        "note": "Held twice a year."
+      }
+    ]
+  },
+  "guide": {
+    "sources": [
+      "s1"
+    ],
+    "sections": [
+      {
+        "title": "Which academy, which commission",
+        "kind": "official",
+        "quickFacts": [
+          {
+            "label": "Exams a year",
+            "value": "2"
+          },
+          {
+            "label": "Vacancies CDS II 2026",
+            "value": "451"
+          },
+          {
+            "label": "Academies",
+            "value": "IMA, INA, AFA, OTA"
+          }
+        ],
+        "paragraphs": [
+          "CDS is the graduate route to becoming an officer. IMA (Army), INA (Navy) and AFA (Air Force) give a Permanent Commission, which is a full career. OTA Chennai gives a Short Service Commission in the Army: 10 years, extendable by 4. You can be considered for a Permanent Commission in your 10th year."
+        ],
+        "table": {
+          "columns": [
+            "Academy",
+            "Who",
+            "Age",
+            "Degree",
+            "Written marks",
+            "SSB marks"
+          ],
+          "rows": [
+            [
+              "IMA Dehradun",
+              "Unmarried men",
+              "19 to 24",
+              "Any degree",
+              "300",
+              "300"
+            ],
+            [
+              "INA Ezhimala",
+              "Unmarried men",
+              "19 to 24",
+              "Engineering, or B.Sc. Physics (Physics + Maths at 12th)",
+              "300",
+              "300"
+            ],
+            [
+              "AFA Hyderabad",
+              "Men (unmarried if under 25)",
+              "20 to 24 (26 with CPL)",
+              "Any degree with Physics + Maths at 12th, or B.E.",
+              "300",
+              "300"
+            ],
+            [
+              "OTA Chennai, men",
+              "Unmarried men",
+              "19 to 25",
+              "Any degree",
+              "200",
+              "200"
+            ],
+            [
+              "OTA Chennai, women",
+              "Unmarried women, issueless widows or divorcees",
+              "19 to 25",
+              "Any degree",
+              "200",
+              "200"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "The written exam",
+        "kind": "official",
+        "quickFacts": [
+          {
+            "label": "Papers",
+            "value": "3 (OTA: 2)"
+          },
+          {
+            "label": "Each",
+            "value": "100 marks, 2 hours"
+          },
+          {
+            "label": "Type",
+            "value": "Objective"
+          }
+        ],
+        "paragraphs": [
+          "English, General Knowledge and Elementary Mathematics, 100 marks and 2 hours each, all objective. OTA candidates skip Maths. UPSC sets minimum qualifying marks; only those above them are called to the SSB."
+        ]
+      },
+      {
+        "title": "The SSB: five days that decide most of it",
+        "kind": "official",
+        "quickFacts": [
+          {
+            "label": "Days",
+            "value": "about 5"
+          },
+          {
+            "label": "Stages",
+            "value": "2"
+          },
+          {
+            "label": "Assessors",
+            "value": "3"
+          }
+        ],
+        "paragraphs": [
+          "Stage I is a screening test: an intelligence test (OIR) and a picture perception and discussion test (PP&DT). Those who fail go home the same day.",
+          "Stage II runs over 4 days: a personal interview, outdoor group tasks with a Group Testing Officer, psychology tests, and a final conference where the board decides. The three assessors look for officer-like qualities and trainability. There is no fixed weight for each test; marks come from a holistic view."
+        ]
+      },
+      {
+        "title": "Common confusions",
+        "kind": "explainer",
+        "bullets": [
+          "There is no SC, ST, OBC or EWS reservation or age relaxation in CDS.",
+          "Through CDS, women are considered only for the Short Service Commission at OTA. IMA, INA and AFA through CDS are for men.",
+          "Marrying after applying or during training ends your selection.",
+          "SSC officers who are not given a Permanent Commission leave after 10 or 14 years, without a pension."
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Combined Defence Services Examination (II) 2026 notification",
+      "url": "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "UPSC Programme of Examinations 2026",
+      "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "UPSC Annual Calendar 2027",
+      "url": "https://upsc.gov.in/content/annual-calendar-2027-0",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "s4",
+      "title": "74th Annual Report 2023-24 (CDS II 2022 statistics)",
+      "url": "https://www.upsc.gov.in/sites/default/files/74thAnnualReport-2023-24-Engl-230326.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "dataQuality": {
+    "confidence": "high",
+    "gaps": [
+      "Official CDS cutoffs not reachable.",
+      "Medical height and weight standards not reproduced; see the notification appendix."
+    ],
+    "notes": "Vacancies, eligibility, scheme, SSB, pay and tenure from the CDS (II) 2026 notification."
+  },
+  "lastVerified": "2026-10-18"
+}

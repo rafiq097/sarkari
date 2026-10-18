@@ -32,7 +32,7 @@ const rows = [
     group: 'Pay',
     label: 'Indicative gross (first slab)',
     cell: (exam) => {
-      const estimate = estimateSalary({ ruleSetKey: exam.salary?.payRuleSet, basicPay: exam.salary?.startingBasic, payLevel: exam.salary?.payLevel })
+      const estimate = estimateSalary({ ruleSetKey: exam.salary?.payRuleSet, basicPay: exam.salary?.startingBasic, payLevel: exam.salary?.payLevel, fixedAdditions: exam.salary?.fixedAdditions })
       return estimate ? (
         <>
           {formatRupees(estimate.gross)} <EstimateTag />

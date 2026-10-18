@@ -152,6 +152,7 @@ function SalaryEstimate({ salary }) {
     ruleSetKey: salary.payRuleSet,
     basicPay: salary.startingBasic,
     payLevel: salary.payLevel,
+    fixedAdditions: salary.fixedAdditions,
     hraSlabIndex,
     customHraPercent: needsManualHra && customHra !== '' ? Number(customHra) : null,
   })
