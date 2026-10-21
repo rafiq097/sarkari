@@ -240,6 +240,57 @@
 .tone-brick.is-selected,
 .result-item.tone-brick > svg { color: var(--brick); }
 
+/* Clears the 64px sticky header when the results bar jumps here. */
+.verdict-tabs {
+  scroll-margin-top: 84px;
+}
+
+/* Live result counts pinned to the bottom while the results are still below the screen. */
+.results-bar {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  z-index: 35;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 6px 6px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: #1b1a18f2;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px #00000066;
+  animation: menu-in 0.25s var(--ease);
+}
+
+.results-bar-label {
+  margin-right: 6px;
+  font: 500 0.7rem var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.results-bar-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 999px;
+  background: none;
+  color: var(--text);
+}
+
+.results-bar-count:hover {
+  background: var(--surface-2);
+}
+
+.results-bar-count.tone-sage > svg { color: var(--sage); }
+.results-bar-count.tone-accent > svg { color: var(--accent); }
+.results-bar-count.tone-brick > svg { color: var(--brick); }
+
 .result-list {
   list-style: none;
   margin: 0;

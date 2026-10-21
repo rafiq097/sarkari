@@ -3,7 +3,7 @@
  * visitor's details (lib/eligibility.js). Uses and updates the same My Profile data,
  * so changes here appear everywhere. Results are indicative; notifications decide.
  */
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import { AlertTriangle, CheckCircle2, CircleHelp, XCircle, UserRound } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader } from '../components/Common.jsx'
@@ -45,11 +45,45 @@ function ResultItem({ exam, result }) {
   )
 }
 
+/**
+ * Reports whether the element is still below the bottom of the screen, so the page can
+ * show a pinned summary until the reader reaches it.
+ */
+function useIsBelowScreen(elementRef) {
+  const [isBelow, setIsBelow] = useState(false)
+  useEffect(() => {
+    const element = elementRef.current
+    if (!element || !('IntersectionObserver' in window)) return undefined
+    const observer = new IntersectionObserver(([entry]) => setIsBelow(!entry.isIntersecting && entry.boundingClientRect.top > 0))
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [elementRef])
+  return isBelow
+}
+
+/** Bar pinned to the bottom of the screen with live result counts; each count jumps to its group. */
+function ResultsBar({ counts, onPick }) {
+  return (
+    <div className="results-bar" role="group" aria-label="Jump to results">
+      <span className="results-bar-label">Results</span>
+      {Object.entries(verdictDetails).map(([verdict, details]) => (
+        <button key={verdict} type="button" className={`results-bar-count tone-${details.tone}`} onClick={() => onPick(verdict)}>
+          <details.icon size={15} aria-hidden="true" />
+          <span className="numeric">{counts[verdict]}</span>
+          <span className="visually-hidden">{details.label}</span>
+        </button>
+      ))}
+    </div>
+  )
+}
+
 /** Eligibility checker page. */
 export default function EligibilityPage() {
   const { candidate: savedCandidate, saveCandidate } = useSaved()
   const candidate = { ...emptyCandidate, ...(savedCandidate ?? {}) }
   const [verdictFilter, setVerdictFilter] = useState('eligible')
+  const resultsRef = useRef(null)
+  const areResultsBelowScreen = useIsBelowScreen(resultsRef)
 
   const results = useMemo(() => {
     const today = todayIso()
@@ -61,6 +95,10 @@ export default function EligibilityPage() {
   const counts = { eligible: 0, check: 0, 'not-eligible': 0 }
   for (const { result } of results) counts[result.verdict] += 1
   const visible = results.filter(({ result }) => result.verdict === verdictFilter)
+  const jumpToResults = (verdict) => {
+    setVerdictFilter(verdict)
+    resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <>
@@ -84,7 +122,7 @@ export default function EligibilityPage() {
         .
       </p>
 
-      <div className="verdict-tabs spaced" role="group" aria-label="Show results">
+      <div className="verdict-tabs spaced" role="group" aria-label="Show results" ref={resultsRef}>
         {Object.entries(verdictDetails).map(([verdict, details]) => (
           <button key={verdict} type="button" className={`verdict-tab tone-${details.tone} ${verdictFilter === verdict ? 'is-selected' : ''}`} aria-pressed={verdictFilter === verdict} onClick={() => setVerdictFilter(verdict)}>
             <details.icon size={16} aria-hidden="true" /> {details.label} <span className="numeric">{counts[verdict]}</span>
@@ -101,6 +139,7 @@ export default function EligibilityPage() {
       ) : (
         <EmptyState title="No exams in this group">Change your details or pick another result group.</EmptyState>
       )}
+      {areResultsBelowScreen && <ResultsBar counts={counts} onPick={jumpToResults} />}
     </>
   )
 }
