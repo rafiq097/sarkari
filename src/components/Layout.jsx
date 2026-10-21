@@ -52,7 +52,7 @@ export function Layout() {
             <SearchBox placeholder="Search" />
           </div>
           <div className="header-actions">
-            <NavLink to="/compare" className="header-icon" title="Comparison">
+            <NavLink to="/compare" className="header-icon header-icon-wide" title="Comparison">
               <GitCompareArrows size={18} aria-hidden="true" />
               {compare.length > 0 && <span className="pip">{compare.length}</span>}
               <span className="visually-hidden">Comparison ({compare.length})</span>
@@ -62,7 +62,7 @@ export function Layout() {
               {candidate && <span className="pip pip-dot" aria-hidden="true" />}
               <span className="visually-hidden">My profile{candidate ? ' (saved)' : ''}</span>
             </NavLink>
-            <NavLink to="/saved" className="header-icon" title="Saved exams">
+            <NavLink to="/saved" className="header-icon header-icon-wide" title="Saved exams">
               <BookMarked size={18} aria-hidden="true" />
               {bookmarks.length > 0 && <span className="pip">{bookmarks.length}</span>}
               <span className="visually-hidden">Saved exams ({bookmarks.length})</span>
@@ -85,10 +85,15 @@ export function Layout() {
           <NavLink to="/profile">
             <UserRound size={16} aria-hidden="true" /> My profile
           </NavLink>
+          <NavLink to="/saved">
+            <BookMarked size={16} aria-hidden="true" /> Saved exams
+            {bookmarks.length > 0 && <span className="menu-count numeric">{bookmarks.length}</span>}
+          </NavLink>
           <p className="menu-label">Tools</p>
           {toolLinks.map((link) => (
             <NavLink key={link.to} to={link.to}>
               <link.icon size={16} aria-hidden="true" /> {link.label}
+              {link.to === '/compare' && compare.length > 0 && <span className="menu-count numeric">{compare.length}</span>}
             </NavLink>
           ))}
           <NavLink to="/sources">

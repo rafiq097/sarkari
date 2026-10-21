@@ -184,6 +184,34 @@
   }
 }
 
+/* Small phones: the header keeps brand, profile and menu; Compare and Saved move into the menu. */
+@media (max-width: 480px) {
+  .header-inner {
+    gap: 12px;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .header-icon-wide {
+    display: none;
+  }
+}
+
+/* Saved and compared counts shown at the end of a mobile menu row. */
+.menu-count {
+  margin-left: auto;
+  min-width: 22px;
+  padding: 0 6px;
+  border-radius: 11px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 0.75rem;
+  line-height: 22px;
+  text-align: center;
+}
+
 @keyframes menu-in {
   from {
     opacity: 0;
