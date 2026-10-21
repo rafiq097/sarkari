@@ -5,7 +5,7 @@
  * Rendered by pages/ExamPage.jsx.
  */
 import { Link } from 'react-router'
-import { ArrowRightCircle } from 'lucide-react'
+import { ArrowRightCircle, ChevronRight } from 'lucide-react'
 import { LevelMeter } from '../Badges.jsx'
 import { NextStepChip, KeyEventLine } from '../ExamCard.jsx'
 import { labelFor, getIndexRecord } from '../../lib/data.js'
@@ -136,8 +136,11 @@ export function QuickLookTab({ exam, onOpenTab }) {
           <ol className="quick-steps">
             {stages.map((stage, position) => (
               <li key={stage.name}>
-                <span className="quick-step-number numeric">{position + 1}</span>
-                <span>{stage.name}</span>
+                <button type="button" className="quick-step-button" onClick={() => onOpenTab('selection', { step: position + 1 })}>
+                  <span className="quick-step-number numeric">{position + 1}</span>
+                  <span>{stage.name}</span>
+                  <ChevronRight size={15} aria-hidden="true" className="quick-step-go" />
+                </button>
               </li>
             ))}
           </ol>

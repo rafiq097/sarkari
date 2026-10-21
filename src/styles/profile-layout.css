@@ -585,14 +585,34 @@ strong.figure {
   list-style: none;
 }
 
-.quick-steps li {
+/* Each stage pill opens the Roadmap tab at that stage. */
+.quick-step-button {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 12px 7px 7px;
-  background: var(--surface-2);
+  padding: 7px 10px 7px 7px;
+  border: 1px solid transparent;
   border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text);
   font-size: 0.86rem;
+  text-align: left;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.quick-step-button:hover {
+  border-color: var(--accent);
+  background: var(--surface-3);
+}
+
+.quick-step-go {
+  color: var(--text-faint);
+  transition: color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.quick-step-button:hover .quick-step-go {
+  color: var(--accent);
+  transform: translateX(2px);
 }
 
 .quick-step-number {

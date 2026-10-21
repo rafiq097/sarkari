@@ -1,8 +1,9 @@
 /**
  * Builds the step-by-step selection roadmap shown on exam profiles (ExamRoadmap.jsx)
  * from data every profile already has: selection stages and papers, the official
- * timeline, merit rules, and rank allocation and joining notes. No new facts are made up:
- * a month only appears when an official timeline event clearly names that stage.
+ * timeline, merit rules, and rank allocation and joining notes. An official date appears
+ * only when a timeline event clearly names that stage; the month-after-notification figures
+ * are labelled estimates from typical gaps between stage types.
  */
 
 // Plain names for each stage type, used on chips and in the step detail.
@@ -136,10 +137,43 @@ function joiningStep(exam) {
   return { kind: 'joining', key: 'joining', title: 'Allocation and joining', label: 'Joining', parts, event: null }
 }
 
+// Typical months between stages, used only for the labelled estimate. The gap before a
+// stage depends on how long the previous stage takes to evaluate: written answers take
+// longer to mark than machine-scored tests. The first stage comes about 3 months after
+// the notification, and the final result about 1 month after the last stage.
+const monthsToFirstStage = 3
+const monthsAfterStageType = { objective: 2, descriptive: 5, interview: 1, ssb: 2, skill: 1, physical: 1, medical: 1, document: 1, merit: 1 }
+const monthsToFinalResult = 1
+
+/** Numbered part of a stage name ("tier-2", "phase-1"), or null; papers of one tier sit together. */
+function numberedKey(name) {
+  return [...matchKeys(name)].find((key) => /^(tier|phase|stage)-/.test(key)) ?? null
+}
+
+/**
+ * Adds an estimated month after notification to each stage step and the merit step.
+ * Stages sharing a numbered key with the previous one (Tier II papers) count as the same sitting.
+ */
+function addEstimatedMonths(steps) {
+  let month = 0
+  let previous = null
+  for (const step of steps) {
+    if (step.kind === 'merit') {
+      step.estimatedMonth = month + monthsToFinalResult
+    } else if (step.kind === 'stage') {
+      const isSameSitting = previous && numberedKey(step.title) && numberedKey(step.title) === numberedKey(previous.title)
+      if (!isSameSitting) month += previous ? (monthsAfterStageType[previous.type] ?? 2) : monthsToFirstStage
+      step.estimatedMonth = month
+      previous = step
+    }
+  }
+  return steps
+}
+
 /** All roadmap steps for one exam profile, in order. */
 export function buildRoadmap(exam) {
   const events = datedEvents(exam)
   const steps = stageSteps(exam, events)
   if (!steps.length) return []
-  return [...steps, meritStep(exam, steps, events), joiningStep(exam)].filter(Boolean)
+  return addEstimatedMonths([...steps, meritStep(exam, steps, events), joiningStep(exam)].filter(Boolean))
 }

@@ -71,8 +71,9 @@ export default function ExamPage() {
   const tabs = allTabs.filter((tab) => tab.id !== 'guide' || exam.guide?.sections?.length)
   const selectedTab = tabs.find((tab) => tab.id === searchParams.get('tab')) ?? tabs[0]
   // Switching tabs (from the tab bar or a Quick look link) shows the new tab from its start.
-  const selectTab = (tabId) => {
-    setSearchParams({ tab: tabId }, { replace: true })
+  // Extra parameters let Quick look open the Roadmap at a given stage (?step=).
+  const selectTab = (tabId, extraParams = {}) => {
+    setSearchParams({ tab: tabId, ...extraParams }, { replace: true })
     scrollTabStartIntoView()
   }
   const regionName = labelFor('jurisdictions', exam.jurisdiction)

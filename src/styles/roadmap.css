@@ -16,14 +16,18 @@
 
 /* ---------- Step chips and progress track ---------- */
 
+.roadmap-track-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background: var(--bg-raised);
+}
+
 .roadmap-track-wrap {
   overflow-x: auto;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
-  padding: 22px 20px 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-large);
-  background: var(--bg-raised);
+  padding: 22px 20px 14px;
 }
 
 .roadmap-track-wrap::-webkit-scrollbar {
@@ -43,6 +47,8 @@
 .roadmap-step {
   position: relative;
   display: grid;
+  /* Chips stretch to the tallest one, so every dot sits on the same line. */
+  grid-template-rows: 1fr auto;
   justify-items: center;
   gap: 16px;
   scroll-snap-align: center;
@@ -123,7 +129,28 @@
   color: var(--accent);
 }
 
-/* Dot under each chip; the line to the next dot fills in as steps are passed. */
+/* Dot and estimated month under each chip; the line to the next dot fills in as steps are passed. */
+.roadmap-marker {
+  position: relative;
+  justify-self: stretch;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.roadmap-month {
+  /* Fixed line box so a step without a month (Joining) keeps its dot level with the rest. */
+  line-height: 1.4;
+  min-height: 1.4em;
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  transition: color 0.3s var(--ease);
+}
+
+.roadmap-step.is-current .roadmap-month {
+  color: var(--accent);
+}
+
 .roadmap-dot {
   position: relative;
   z-index: 1;
@@ -144,10 +171,10 @@
   box-shadow: 0 0 0 5px #ffd21f2b;
 }
 
-.roadmap-step:not(:last-child)::after {
+.roadmap-step:not(:last-child) .roadmap-marker::after {
   content: '';
   position: absolute;
-  bottom: 5px;
+  top: 5px;
   left: 50%;
   width: calc(100% + var(--chip-gap));
   height: 2px;
@@ -155,8 +182,34 @@
   transition: background-position 0.45s var(--ease);
 }
 
-.roadmap-step.is-done::after {
+.roadmap-step.is-done .roadmap-marker::after {
   background-position: left;
+}
+
+/* Estimated end-to-end duration under the track. */
+.roadmap-estimate {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin: 0;
+  padding: 12px 20px 14px;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.roadmap-estimate svg {
+  color: var(--accent);
+}
+
+.roadmap-estimate strong {
+  color: var(--text);
+}
+
+.roadmap-copy {
+  margin-top: 10px;
+  margin-left: -10px;
 }
 
 /* ---------- Previous / Next ---------- */
@@ -319,12 +372,16 @@
 
 .roadmap-paper header {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
 }
 
 .roadmap-paper h5 {
+  flex: 1 1 140px;
+  min-width: 0;
+  overflow-wrap: anywhere;
   margin: 0;
   font-family: var(--font-body);
   font-size: 0.95rem;
@@ -485,7 +542,19 @@
   }
 
   .roadmap-track-wrap {
-    padding: 16px 14px 14px;
+    padding: 16px 14px 12px;
+  }
+
+  /* Icon beside the sentence, estimate tag underneath it. */
+  .roadmap-estimate {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px 14px 12px;
+  }
+
+  .roadmap-estimate .tag-estimate {
+    grid-column: 2;
+    justify-self: start;
   }
 
   .roadmap-track {
