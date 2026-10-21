@@ -8,6 +8,7 @@ import { Link } from 'react-router'
 import { Info } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SectionHeading } from '../components/Common.jsx'
 import { CutoffChart } from '../components/CutoffChart.jsx'
+import { Select } from '../components/Select.jsx'
 import { SourceChips } from '../components/Badges.jsx'
 import { selectionRates } from '../lib/stats.js'
 import { examIndex, labelFor, useProfile } from '../lib/data.js'
@@ -88,6 +89,10 @@ export default function AnalyticsPage() {
         <>
           <SectionHeading number="01" title="Exams with official figures" description={`${withData.length} profiles have cutoffs or selection statistics.`} />
           <div className="analytics-layout">
+            {/* Phones get a searchable picker so the chosen exam's figures sit right below it, not under a 60-item list. */}
+            <div className="analytics-picker">
+              <Select label="Exam" value={selectedId} onChange={setSelectedId} options={withData.map((exam) => ({ value: exam.id, label: exam.abbreviation || exam.name, group: labelFor('jurisdictions', exam.jurisdiction) }))} />
+            </div>
             <ul className="analytics-list" role="listbox" aria-label="Exams with data">
               {withData.map((exam) => (
                 <li key={exam.id}>

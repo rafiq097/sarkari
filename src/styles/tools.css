@@ -414,9 +414,34 @@
   border-color: var(--accent);
 }
 
+/* The long exam list scrolls on its own and stays pinned, so the figures beside it never
+   drift out of view (88px clears the 64px header plus breathing room). */
+.analytics-list {
+  position: sticky;
+  top: 88px;
+  align-self: start;
+  max-height: calc(100vh - 112px);
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+.analytics-picker {
+  display: none;
+}
+
 @media (max-width: 860px) {
   .analytics-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .analytics-list {
+    display: none;
+  }
+
+  .analytics-picker {
+    display: block;
   }
 }
 
