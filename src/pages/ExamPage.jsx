@@ -29,6 +29,22 @@ const allTabs = [
   { id: 'sources', label: 'Sources', icon: Library, render: (exam) => <SourcesTab exam={exam} /> },
 ]
 
+// Height of the sticky site header; the tab bar pins just below it.
+const siteHeaderHeight = 64
+
+/**
+ * Scrolls the tab bar to the top of the screen unless the start of the tab is already
+ * comfortably in view (below the header and in the upper half of the screen). Without
+ * this, a new tab opens mid-way down when the reader had scrolled, or below the fold on phones.
+ */
+function scrollTabStartIntoView() {
+  const anchor = document.getElementById('profile-tabs')
+  if (!anchor) return
+  const anchorTop = anchor.getBoundingClientRect().top
+  const isComfortablyVisible = anchorTop >= siteHeaderHeight && anchorTop <= window.innerHeight / 2
+  if (!isComfortablyVisible) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
 /** Profile page. */
 export default function ExamPage() {
   const { examId } = useParams()
@@ -54,11 +70,10 @@ export default function ExamPage() {
 
   const tabs = allTabs.filter((tab) => tab.id !== 'guide' || exam.guide?.sections?.length)
   const selectedTab = tabs.find((tab) => tab.id === searchParams.get('tab')) ?? tabs[0]
-  const selectTab = (tabId) => setSearchParams({ tab: tabId }, { replace: true })
-  // Links inside Quick look open a detailed tab and bring the tab bar into view.
-  const openTab = (tabId) => {
-    selectTab(tabId)
-    document.getElementById('profile-tabs')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  // Switching tabs (from the tab bar or a Quick look link) shows the new tab from its start.
+  const selectTab = (tabId) => {
+    setSearchParams({ tab: tabId }, { replace: true })
+    scrollTabStartIntoView()
   }
   const regionName = labelFor('jurisdictions', exam.jurisdiction)
   const isHistorical = exam.status.type === 'historical'
@@ -97,7 +112,7 @@ export default function ExamPage() {
       <div id="profile-tabs" />
       <Tabs tabs={tabs} selected={selectedTab.id} onSelect={selectTab} label="Profile sections" />
       <div role="tabpanel" id={`panel-${selectedTab.id}`} aria-labelledby={`tab-${selectedTab.id}`} tabIndex={0} className="tab-panel" key={selectedTab.id}>
-        {selectedTab.render(exam, openTab)}
+        {selectedTab.render(exam, selectTab)}
       </div>
     </article>
   )

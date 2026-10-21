@@ -18,9 +18,10 @@ export function Layout() {
   const setIsMenuOpen = (shouldOpen) => setMenuOpenOnPath(shouldOpen ? location.pathname : null)
   const { bookmarks, compare, candidate } = useSaved()
 
-  // Return to the top whenever the route changes.
+  // Return to the top whenever the route changes. 'instant' overrides the smooth CSS
+  // scrolling, which would otherwise stop part way when the new page swaps in.
   useEffect(() => {
-    window.scrollTo({ top: 0 })
+    window.scrollTo({ top: 0, behavior: 'instant' })
   }, [location.pathname])
 
   useEffect(() => {
