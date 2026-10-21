@@ -1,25 +1,14 @@
 /**
  * Exam profile tabs for how selection works: Guide (long-form explainer for big
- * exams), Selection (stages, papers, merit rules) and Syllabus (official topics plus
+ * exams), Roadmap (interactive stages, papers, merit and joining) and Syllabus (official topics plus
  * clearly labelled preparation notes). Rendered by pages/ExamPage.jsx.
  */
 import { ExternalLink, Lightbulb, BookOpen, CheckCircle2 } from 'lucide-react'
 import { Rich } from '../Rich.jsx'
 import { SourceChips, Unknown, EstimateTag } from '../Badges.jsx'
 import { BlockTitle } from './ProfileBasics.jsx'
+import { ExamRoadmap } from './ExamRoadmap.jsx'
 import { labelFor } from '../../lib/data.js'
-
-const stageTypeLabels = {
-  objective: 'Objective (MCQ)',
-  descriptive: 'Descriptive / written',
-  interview: 'Interview',
-  skill: 'Skill test',
-  physical: 'Physical test',
-  medical: 'Medical exam',
-  document: 'Document verification',
-  ssb: 'SSB interview',
-  merit: 'Merit list',
-}
 
 /** Optional table inside a guide section. */
 function GuideTable({ table }) {
@@ -120,108 +109,23 @@ export function GuideTab({ exam }) {
   )
 }
 
-/** One selection stage with its papers. */
-function StageCard({ stage, position }) {
-  return (
-    <article className="stage-card">
-      <span className="stage-dot numeric" aria-hidden="true">{position + 1}</span>
-      <header>
-        <span className="stage-step numeric">Stage {position + 1}</span>
-        <h4>{stage.name}</h4>
-        <span className="pill-list">
-          <span className="badge badge-stone badge-quiet">{stageTypeLabels[stage.type] ?? stage.type}</span>
-          {stage.countsInMerit === false && <span className="badge badge-accent badge-quiet">Qualifying only</span>}
-          {stage.countsInMerit === true && <span className="badge badge-sage badge-quiet">Counts in final merit</span>}
-        </span>
-      </header>
-      {stage.papers?.length > 0 && (
-        <div className="table-wrap">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Paper / test</th>
-                <th className="numeric">Marks</th>
-                <th className="numeric">Questions</th>
-                <th>Duration</th>
-                <th>Negative marking</th>
-              </tr>
-            </thead>
-            <tbody>
-              {stage.papers.map((paper) => (
-                <tr key={paper.name}>
-                  <td>
-                    <strong>{paper.name}</strong>
-                    {paper.qualifying && <span className="badge badge-accent badge-quiet small-badge">Qualifying</span>}
-                    {paper.notes && (
-                      <div className="faint small">
-                        <Rich text={paper.notes} />
-                      </div>
-                    )}
-                  </td>
-                  <td className="numeric">{paper.marks ?? '-'}</td>
-                  <td className="numeric">{paper.questions ?? '-'}</td>
-                  <td>{paper.duration ?? '-'}</td>
-                  <td>{paper.negative ?? '-'}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-      {stage.notes && (
-        <p className="stage-notes">
-          <Rich text={stage.notes} />
-        </p>
-      )}
-    </article>
-  )
-}
-
-/** Selection tab. */
+/** Roadmap tab: the interactive stage-by-stage roadmap, then exam-wide rules. */
 export function SelectionTab({ exam }) {
   const selection = exam.selection ?? {}
-  const stages = selection.stages ?? []
   return (
     <div className="tab-body">
       <BlockTitle sourceIds={selection.sources} sources={exam.sources}>
-        Stages in order
+        Stage by stage
       </BlockTitle>
-      {stages.length ? (
-        <div className="stage-flow">
-          {stages.map((stage, position) => (
-            <StageCard key={stage.name} stage={stage} position={position} />
-          ))}
-        </div>
-      ) : (
-        <Unknown>Selection stages not recorded.</Unknown>
-      )}
+      {selection.stages?.length ? <ExamRoadmap exam={exam} /> : <Unknown>Selection stages not recorded.</Unknown>}
 
-      <dl className="key-value spaced">
-        <dt>Final merit</dt>
-        <dd>{selection.meritCalculation ? <Rich text={selection.meritCalculation} /> : <Unknown />}</dd>
-        <dt>Tie-breaking</dt>
-        <dd>{selection.tieBreaking ? <Rich text={selection.tieBreaking} /> : <Unknown>Not published in the sources reviewed</Unknown>}</dd>
+      <BlockTitle>Exam rules</BlockTitle>
+      <dl className="key-value">
         <dt>Normalization</dt>
         <dd>{selection.normalization ? <Rich text={selection.normalization} /> : <Unknown>Not applicable or not stated</Unknown>}</dd>
         <dt>Language / medium</dt>
         <dd>{selection.languages ? <Rich text={selection.languages} /> : <Unknown />}</dd>
-        <dt>Document verification</dt>
-        <dd>{selection.documentVerification ? <Rich text={selection.documentVerification} /> : <Unknown />}</dd>
-        <dt>Probation / training</dt>
-        <dd>{selection.probation ? <Rich text={selection.probation} /> : <Unknown />}</dd>
       </dl>
-
-      {exam.rankAndAllocation?.text && (
-        <>
-          <BlockTitle sourceIds={exam.rankAndAllocation.sources} sources={exam.sources}>
-            From rank to post
-          </BlockTitle>
-          <p>
-            <Rich text={exam.rankAndAllocation.text} />
-          </p>
-          <p className="faint small">No rank guarantees a particular post. Allocation depends on vacancies, category, preferences and medical fitness in that year.</p>
-        </>
-      )}
     </div>
   )
 }

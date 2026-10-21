@@ -142,7 +142,7 @@ export function QuickLookTab({ exam, onOpenTab }) {
             ))}
           </ol>
           <MoreLink tabId="selection" onOpenTab={onOpenTab}>
-            Exam pattern and syllabus
+            Open the step-by-step roadmap
           </MoreLink>
         </section>
       )}

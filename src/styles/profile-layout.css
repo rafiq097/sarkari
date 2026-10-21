@@ -225,59 +225,9 @@ strong.figure {
   color: var(--sage);
 }
 
-/* Stage stepper */
-.stage-flow {
-  position: relative;
-  padding-left: 46px;
-}
-
-.stage-flow::before {
-  content: '';
-  position: absolute;
-  left: 16px;
-  top: 18px;
-  bottom: 18px;
-  width: 2px;
-  background: linear-gradient(180deg, var(--accent), var(--line-strong));
-}
-
-.stage-card {
-  position: relative;
-}
-
-.stage-dot {
-  position: absolute;
-  left: -46px;
-  top: 16px;
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 2px solid var(--accent);
-  color: var(--accent);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
 @media (max-width: 600px) {
   .guide-section {
     padding: 18px;
-  }
-
-  .stage-flow {
-    padding-left: 38px;
-  }
-
-  .stage-flow::before {
-    left: 13px;
-  }
-
-  .stage-dot {
-    left: -38px;
-    width: 28px;
-    height: 28px;
   }
 }
 
@@ -301,7 +251,6 @@ strong.figure {
 
 /* Single-column grids get a shrinkable track so long tables scroll inside their wrapper. */
 .profile-header,
-.stage-flow,
 .guide-sections,
 .timeline,
 .calculator,

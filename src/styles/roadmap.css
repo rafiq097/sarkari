@@ -1,0 +1,528 @@
+/*
+ * Interactive selection roadmap on exam profiles: step chips on a progress track,
+ * Previous / Next controls, and the animated detail panel with paper cards, the merit
+ * bar and joining notes. Used by components/profile/ExamRoadmap.jsx.
+ */
+
+.roadmap {
+  /* Clears the 64px header plus the sticky tab bar when scrolled back into view. */
+  scroll-margin-top: 124px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  margin-bottom: 8px;
+  --chip-gap: 30px;
+}
+
+/* ---------- Step chips and progress track ---------- */
+
+.roadmap-track-wrap {
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  padding: 22px 20px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background: var(--bg-raised);
+}
+
+.roadmap-track-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.roadmap-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(128px, 1fr);
+  gap: var(--chip-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.roadmap-step {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  scroll-snap-align: center;
+}
+
+.roadmap-step button {
+  width: 100%;
+  min-height: 104px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 4px;
+  padding: 12px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  color: var(--text-soft);
+  text-align: center;
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease), color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.roadmap-step button:hover {
+  border-color: var(--text-faint);
+  transform: translateY(-2px);
+}
+
+.roadmap-step.is-done button {
+  border-color: #ffd21f55;
+  color: var(--text);
+}
+
+.roadmap-step.is-current button {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  box-shadow: 0 0 0 3px #ffd21f1a, 0 10px 28px #00000055;
+  transform: translateY(-2px);
+}
+
+.roadmap-step-number {
+  font: 500 0.66rem var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.roadmap-step.is-current .roadmap-step-number,
+.roadmap-step.is-done .roadmap-step-number {
+  color: var(--accent);
+}
+
+.roadmap-step-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  /* Long stage names wrap to two lines at most; the panel shows the full name. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.roadmap-step-caption {
+  font: 0.74rem var(--font-mono);
+  color: var(--text-muted);
+}
+
+/* Chevron between chips, centred in the gap at chip mid-height (52px is half the chip). */
+.roadmap-arrow {
+  position: absolute;
+  top: 44px;
+  right: calc(var(--chip-gap) / -2 - 8px);
+  color: var(--text-faint);
+  transition: color 0.3s var(--ease);
+}
+
+.roadmap-step.is-done .roadmap-arrow {
+  color: var(--accent);
+}
+
+/* Dot under each chip; the line to the next dot fills in as steps are passed. */
+.roadmap-dot {
+  position: relative;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  transition: background 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.roadmap-step.is-done .roadmap-dot {
+  background: var(--accent);
+}
+
+.roadmap-step.is-current .roadmap-dot {
+  background: var(--accent);
+  transform: scale(1.35);
+  box-shadow: 0 0 0 5px #ffd21f2b;
+}
+
+.roadmap-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: calc(100% + var(--chip-gap));
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent) 50%, var(--line) 50%) right / 200% 100% no-repeat;
+  transition: background-position 0.45s var(--ease);
+}
+
+.roadmap-step.is-done::after {
+  background-position: left;
+}
+
+/* ---------- Previous / Next ---------- */
+
+.roadmap-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 10px 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background: var(--bg-raised);
+}
+
+.roadmap-nav.is-compact {
+  justify-content: flex-end;
+  margin-top: 22px;
+  padding: 16px 0 0;
+  border: none;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: none;
+}
+
+.roadmap-count {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.roadmap-nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* ---------- Detail panel ---------- */
+
+.roadmap-panel {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  animation: roadmap-in-forward 0.45s var(--ease);
+}
+
+.roadmap-panel.is-back {
+  animation-name: roadmap-in-back;
+}
+
+@keyframes roadmap-in-forward {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+}
+
+@keyframes roadmap-in-back {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+}
+
+.roadmap-panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 20px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.roadmap-panel-head h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 4px;
+  font-size: clamp(1.3rem, 3vw, 1.65rem);
+}
+
+.roadmap-panel-head h3 svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.roadmap-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font: 0.84rem var(--font-mono);
+  color: var(--text-muted);
+}
+
+.roadmap-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.roadmap-marks {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #ffd21f55;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.roadmap-subhead {
+  margin: 0 0 12px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Cards, legend rows and joining sections rise in one after another. */
+.roadmap-paper,
+.merit-legend li,
+.roadmap-joining section {
+  animation: roadmap-item-in 0.4s var(--ease) backwards;
+  animation-delay: calc(var(--item-index, 0) * 60ms + 120ms);
+}
+
+@keyframes roadmap-item-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.roadmap-papers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 12px;
+}
+
+.roadmap-paper {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--bg-raised);
+}
+
+.roadmap-paper.is-counts {
+  border-left-color: var(--accent);
+}
+
+.roadmap-paper.is-qualifying {
+  border-left-color: var(--stone);
+}
+
+.roadmap-paper header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.roadmap-paper h5 {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.roadmap-paper-marks {
+  flex-shrink: 0;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.78rem;
+}
+
+.roadmap-paper-role {
+  font: 500 0.7rem var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.roadmap-paper.is-counts .roadmap-paper-role {
+  color: var(--sage);
+}
+
+.roadmap-paper-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.roadmap-paper-facts li {
+  padding: 2px 9px;
+  border-radius: var(--radius-small);
+  background: var(--surface-2);
+  color: var(--text-soft);
+  font-size: 0.8rem;
+}
+
+.roadmap-paper-notes {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+.roadmap-notes {
+  margin-top: 16px;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+.roadmap-more {
+  margin-top: 14px;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.roadmap-more summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.roadmap-more p {
+  margin-top: 8px;
+}
+
+/* ---------- Final merit bar ---------- */
+
+.merit-bar {
+  display: flex;
+  gap: 3px;
+  height: 16px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-2);
+}
+
+.merit-segment {
+  flex-basis: 0;
+  transform-origin: left;
+  animation: merit-grow 0.7s var(--ease) backwards;
+  animation-delay: calc(var(--item-index, 0) * 120ms + 150ms);
+}
+
+@keyframes merit-grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+/* Segment and swatch colours follow the theme's categorical order. */
+.merit-segment:nth-child(5n + 1),
+.merit-legend li:nth-child(5n + 1) .merit-swatch { background: var(--accent); }
+.merit-segment:nth-child(5n + 2),
+.merit-legend li:nth-child(5n + 2) .merit-swatch { background: var(--sage); }
+.merit-segment:nth-child(5n + 3),
+.merit-legend li:nth-child(5n + 3) .merit-swatch { background: var(--plum); }
+.merit-segment:nth-child(5n + 4),
+.merit-legend li:nth-child(5n + 4) .merit-swatch { background: var(--brick); }
+.merit-segment:nth-child(5n + 5),
+.merit-legend li:nth-child(5n + 5) .merit-swatch { background: var(--stone); }
+
+.merit-legend {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.merit-legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
+.merit-legend strong {
+  margin-left: auto;
+  color: var(--text);
+}
+
+.merit-legend .faint {
+  min-width: 3.2em;
+  text-align: right;
+}
+
+.merit-swatch {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+/* ---------- Joining ---------- */
+
+.roadmap-joining {
+  display: grid;
+  gap: 18px;
+}
+
+.roadmap-joining p {
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 600px) {
+  .roadmap {
+    --chip-gap: 24px;
+  }
+
+  .roadmap-track-wrap {
+    padding: 16px 14px 14px;
+  }
+
+  .roadmap-track {
+    grid-auto-columns: 118px;
+  }
+
+  .roadmap-step button {
+    min-height: 96px;
+  }
+
+  .roadmap-arrow {
+    top: 40px;
+  }
+
+  .roadmap-panel {
+    padding: 18px 16px;
+  }
+
+  .roadmap-nav {
+    padding: 8px;
+  }
+
+  /* The panel badge already shows "Step x of n", so phones get two full-width buttons. */
+  .roadmap-count {
+    display: none;
+  }
+
+  .roadmap-nav-buttons {
+    width: 100%;
+  }
+
+  .roadmap-nav .button {
+    flex: 1;
+    padding: 10px 12px;
+  }
+
+  .roadmap-nav.is-compact {
+    padding: 16px 0 0;
+  }
+}

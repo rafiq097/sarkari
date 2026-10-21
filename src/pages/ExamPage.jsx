@@ -1,9 +1,9 @@
 /**
- * Exam profile page: short header with actions, then tabbed sections starting with Quick look.
+ * Exam profile page: short header with actions, then tabbed sections starting with the Roadmap.
  * The selected tab is kept in the URL (?tab=) so a section can be linked directly.
  */
 import { Link, useParams, useSearchParams } from 'react-router'
-import { Zap, BookOpenText, LayoutList, UserCheck, ListChecks, BookOpen, ChartLine, IndianRupee, Scale, Library, AlertTriangle } from 'lucide-react'
+import { Zap, BookOpenText, LayoutList, UserCheck, Route, BookOpen, ChartLine, IndianRupee, Scale, Library, AlertTriangle } from 'lucide-react'
 import { Breadcrumbs, EmptyState, Tabs } from '../components/Common.jsx'
 import { StatusBadge, ConfidenceBadge, DifficultyScore } from '../components/Badges.jsx'
 import { BookmarkButton, CompareButton, ShareButton } from '../components/ExamCard.jsx'
@@ -17,11 +17,11 @@ import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 import { ForYouPanel } from '../components/MyVerdict.jsx'
 
 const allTabs = [
+  { id: 'selection', label: 'Roadmap', icon: Route, render: (exam) => <SelectionTab exam={exam} /> },
   { id: 'quick', label: 'Quick look', icon: Zap, render: (exam, openTab) => <QuickLookTab exam={exam} onOpenTab={openTab} /> },
   { id: 'guide', label: 'Explainer', icon: BookOpenText, render: (exam) => <GuideTab exam={exam} /> },
   { id: 'overview', label: 'Overview', icon: LayoutList, render: (exam) => <OverviewTab exam={exam} /> },
   { id: 'eligibility', label: 'Eligibility', icon: UserCheck, render: (exam) => <EligibilityTab exam={exam} /> },
-  { id: 'selection', label: 'Exam and selection', icon: ListChecks, render: (exam) => <SelectionTab exam={exam} /> },
   { id: 'syllabus', label: 'Syllabus', icon: BookOpen, render: (exam) => <SyllabusTab exam={exam} /> },
   { id: 'cutoffs', label: 'Cutoffs', icon: ChartLine, render: (exam) => <StatsTab exam={exam} /> },
   { id: 'salary', label: 'Salary and career', icon: IndianRupee, render: (exam) => <SalaryTab exam={exam} /> },
