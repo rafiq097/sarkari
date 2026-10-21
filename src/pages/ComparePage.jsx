@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router'
 import { X, Plus, GitCompareArrows } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader } from '../components/Common.jsx'
-import { LevelMeter, StatusBadge, Unknown, EstimateTag } from '../components/Badges.jsx'
+import { LevelMeter, StatusBadge, Unknown, EstimateTag, DifficultyScore } from '../components/Badges.jsx'
 import { useSaved } from '../lib/saved.jsx'
 import { examIndex, getIndexRecord, labelFor, useProfiles, vocabulary } from '../lib/data.js'
 import { estimateSalary } from '../lib/salary.js'
@@ -44,6 +44,7 @@ const rows = [
     },
   },
   { group: 'Career', label: 'Top of ladder recorded', cell: (exam) => exam.career?.progression?.at(-1)?.post ?? <Unknown /> },
+  { group: 'Difficulty (analytical)', label: 'Overall (out of 100)', cell: (exam) => <DifficultyScore score={getIndexRecord(exam.id)?.difficultyScore} /> },
   ...Object.entries(vocabulary.difficultyKeys).map(([key, label]) => ({ group: 'Difficulty (analytical)', label, cell: (exam) => <LevelMeter level={exam.difficulty?.[key]} /> })),
   ...Object.entries(vocabulary.ratingKeys).map(([key, label]) => ({ group: 'Career and recruitment (analytical)', label, cell: (exam) => <LevelMeter level={exam.ratings?.[key]} /> })),
   { group: 'Risk (analytical)', label: 'Overall risk', cell: (exam) => <LevelMeter level={exam.risk?.overall} /> },

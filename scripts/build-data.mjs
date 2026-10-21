@@ -7,6 +7,7 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { difficultyScore } from '../src/lib/difficulty.js'
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..')
 const examsDirectory = join(projectRoot, 'src', 'data', 'exams')
@@ -175,6 +176,7 @@ function toIndexRecord(exam, today) {
       fixedAdditions: exam.salary?.fixedAdditions ?? [],
     },
     difficulty: exam.difficulty ?? {},
+    difficultyScore: difficultyScore(exam.difficulty, exam.statistics),
     ratings: exam.ratings ?? {},
     risk: exam.risk?.overall ?? null,
     syllabusTags: exam.syllabusTags ?? [],

@@ -446,8 +446,16 @@
 
 .exam-card-top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+}
+
+/* Status, difficulty and verdict badges wrap among themselves so the actions keep the first row. */
+.exam-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
 }
 
 .exam-card-actions {
@@ -602,4 +610,13 @@
 
 .next-step.is-urgent strong {
   font-weight: 700;
+}
+
+/* "Overall Hard 76/100" line above the six difficulty meters on the Work life tab. */
+.difficulty-overall {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 14px;
+  color: var(--text-muted);
 }

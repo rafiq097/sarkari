@@ -71,6 +71,7 @@ const ratingRules = [
   ['Technical complexity', 'Whether a specific degree, diploma or trade syllabus is examined, and at what depth.'],
   ['Physical requirements', 'Whether physical standards, endurance tests or demanding medicals are part of selection.'],
   ['Selection uncertainty', 'Number of stages, interview weight, normalization, and how much a single paper decides the result.'],
+  ['Overall difficulty (out of 100)', 'A weighted mix of the six difficulty ratings above: competition 30, selection uncertainty 20, syllabus depth 20, time pressure 15, technical complexity 8, physical requirements 7. Low earns 30% of a weight, medium 65%, high all of it. Where official candidates per vacancy are published, competition uses that figure instead. Bands: under 60 Easier, 60 to 71 Moderate, 72 to 84 Hard, 85 and above Very hard.'],
   ['Recruitment regularity', 'High: an annual cycle that has run on schedule. Medium: regular but with gaps or delays. Low: irregular, years apart, or one-off.'],
   ['Risk', 'Combines limited vacancies, irregular recruitment, changing eligibility, long cycles, and documented cancellations or litigation.'],
 ]

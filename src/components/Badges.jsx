@@ -4,6 +4,7 @@
  */
 import { CircleDot, RotateCw, Archive, HelpCircle, ShieldCheck, ShieldAlert, Shield, ExternalLink } from 'lucide-react'
 import { formatLevel } from '../lib/format.js'
+import { difficultyBand } from '../lib/difficulty.js'
 
 const statusDetails = {
   active: { label: 'Active', icon: CircleDot, tone: 'sage' },
@@ -34,6 +35,17 @@ export function LevelMeter({ level, label }) {
         ))}
       </span>
       <span className="level-text">{formatLevel(level)}</span>
+    </span>
+  )
+}
+
+/** Overall difficulty out of 100 with its band, for example "Hard 76/100". */
+export function DifficultyScore({ score }) {
+  if (score == null) return null
+  const band = difficultyBand(score)
+  return (
+    <span className={`badge badge-${band.tone} difficulty-score`} title={`Overall difficulty: ${score} out of 100 (${band.label}). Our analytical estimate.`}>
+      {band.label} <span className="numeric">{score}/100</span>
     </span>
   )
 }

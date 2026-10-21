@@ -39,6 +39,8 @@ const sortOptions = {
   relevance: { label: 'Relevance', compare: null },
   name: { label: 'Name A to Z', compare: (a, b) => a.name.localeCompare(b.name) },
   'pay-high': { label: 'Starting basic, high to low', compare: (a, b) => (b.salary.startingBasic ?? -1) - (a.salary.startingBasic ?? -1) },
+  'difficulty-low': { label: 'Difficulty, easiest first', compare: (a, b) => a.difficultyScore - b.difficultyScore },
+  'difficulty-high': { label: 'Difficulty, hardest first', compare: (a, b) => b.difficultyScore - a.difficultyScore },
   'competition-low': { label: 'Competition, lowest first', compare: (a, b) => (levelWeight[a.difficulty.competition] ?? 9) - (levelWeight[b.difficulty.competition] ?? 9) },
   'next-date': { label: 'Next official date', compare: (a, b) => (a.keyEvent?.upcoming ? a.keyEvent.date : '9999').localeCompare(b.keyEvent?.upcoming ? b.keyEvent.date : '9999') },
 }

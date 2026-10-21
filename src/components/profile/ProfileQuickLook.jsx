@@ -12,6 +12,7 @@ import { labelFor, getIndexRecord } from '../../lib/data.js'
 import { estimateSalary } from '../../lib/salary.js'
 import { companionsFor } from '../../lib/syllabus.js'
 import { formatCount, formatRupees, firstSentence, payHeadline } from '../../lib/format.js'
+import { difficultyBand } from '../../lib/difficulty.js'
 
 // Only this many post names are shown before "and N more".
 const visiblePostCount = 5
@@ -77,6 +78,11 @@ function payAnswer(exam) {
   return pay.label === 'Starting basic' ? `${pay.value} basic` : `${pay.value} a month`
 }
 
+/** "Hard, 76/100" style answer for the difficulty question. */
+function difficultyAnswer(score) {
+  return score == null ? 'Not rated' : `${difficultyBand(score).label}, ${score}/100`
+}
+
 /** Quick look tab. */
 export function QuickLookTab({ exam, onOpenTab }) {
   const rules = exam.eligibilityRules ?? {}
@@ -101,13 +107,19 @@ export function QuickLookTab({ exam, onOpenTab }) {
         <QuestionCard question="What will I earn?" answer={payAnswer(exam)} detail={payDetail(exam)} tabId="salary" tabLabel="Salary and growth" onOpenTab={onOpenTab} />
         <QuestionCard
           question="How tough is it?"
-          answer={perPost ? `${formatCount(perPost)} per post` : <LevelMeter level={exam.difficulty?.competition} label="Competition" />}
+          answer={difficultyAnswer(indexRecord?.difficultyScore)}
           detail={firstSentence(exam.difficulty?.rationale)}
           tabId="cutoffs"
           tabLabel="Cutoffs and numbers"
           onOpenTab={onOpenTab}
         >
-          {perPost && <p className="quick-tag">{`${competitionRow.appeared ? 'Appeared' : 'Applied'} per vacancy, ${competitionRow.year}`}</p>}
+          {perPost ? (
+            <p className="quick-tag">{`${formatCount(perPost)} ${competitionRow.appeared ? 'appeared' : 'applied'} per vacancy, ${competitionRow.year}`}</p>
+          ) : (
+            <p className="quick-tag">
+              <LevelMeter level={exam.difficulty?.competition} label="Competition" /> competition
+            </p>
+          )}
         </QuestionCard>
         <QuestionCard question="When is the next step?" answer={keyEvent?.upcoming ? <NextStepChip keyEvent={keyEvent} /> : 'Next cycle expected'} detail={keyEvent?.upcoming ? exam.frequency : exam.status?.note} tabId="overview" tabLabel="Official timeline" onOpenTab={onOpenTab}>
           {!keyEvent?.upcoming && keyEvent && (

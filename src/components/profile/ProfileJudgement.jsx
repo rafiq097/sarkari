@@ -5,9 +5,9 @@
  */
 import { Link } from 'react-router'
 import { ExternalLink, Scale, AlertTriangle } from 'lucide-react'
-import { LevelMeter, SourceChips, Unknown, EstimateTag, ConfidenceBadge } from '../Badges.jsx'
+import { LevelMeter, SourceChips, Unknown, EstimateTag, ConfidenceBadge, DifficultyScore } from '../Badges.jsx'
 import { BlockTitle } from './ProfileBasics.jsx'
-import { vocabulary } from '../../lib/data.js'
+import { vocabulary, getIndexRecord } from '../../lib/data.js'
 import { Rich } from '../Rich.jsx'
 
 const workLifeLabels = {
@@ -50,6 +50,9 @@ export function WorkTab({ exam }) {
           <h3>
             Difficulty <EstimateTag>Analytical</EstimateTag>
           </h3>
+          <p className="difficulty-overall">
+            Overall <DifficultyScore score={getIndexRecord(exam.id)?.difficultyScore} />
+          </p>
           <dl className="meter-list">
             {Object.entries(vocabulary.difficultyKeys).flatMap(([key, label]) => [
               <dt key={`${key}-t`}>{label}</dt>,
