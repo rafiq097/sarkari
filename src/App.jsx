@@ -3,7 +3,7 @@
  * loaded so the first paint only ships the shell and the compact exam index.
  */
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { HashRouter, Route, Routes } from 'react-router'
 import { Layout } from './components/Layout.jsx'
 import { SavedProvider } from './lib/saved.jsx'
 
@@ -35,7 +35,7 @@ function PageFallback() {
 export default function App() {
   return (
     <SavedProvider>
-      <BrowserRouter basename="/sarkari">
+      <HashRouter>
         <Suspense fallback={<PageFallback />}>
           <Routes>
             <Route element={<Layout />}>
@@ -63,7 +63,7 @@ export default function App() {
             </Route>
           </Routes>
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     </SavedProvider>
   )
 }
