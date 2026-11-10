@@ -35,7 +35,7 @@ function PageFallback() {
 export default function App() {
   return (
     <SavedProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/sarkari">
         <Suspense fallback={<PageFallback />}>
           <Routes>
             <Route element={<Layout />}>
