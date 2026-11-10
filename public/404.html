@@ -1,0 +1,20 @@
+<!doctype html>
+<!--
+  GitHub Pages fallback page. The app uses HashRouter, so a path such as
+  /sarkari/exams has no real file and GitHub serves this page instead.
+  It sends the visitor to the matching hash URL (/sarkari/#/exams).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting</title>
+    <script>
+      // Project pages live under /<repo>/, so the first path segment is the site base.
+      var pathParts = window.location.pathname.split('/')
+      var siteBase = '/' + pathParts[1] + '/'
+      var appPath = pathParts.slice(2).join('/')
+      window.location.replace(siteBase + '#/' + appPath + window.location.search)
+    </script>
+  </head>
+  <body></body>
+</html>
