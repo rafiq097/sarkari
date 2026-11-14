@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "data": "node scripts/build-data.mjs",
+    "check:feeds": "node scripts/check-feeds.mjs",
     "predev": "node scripts/build-data.mjs",
     "dev": "vite",
     "prebuild": "node scripts/build-data.mjs",

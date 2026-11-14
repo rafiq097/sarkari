@@ -522,3 +522,67 @@
   font-weight: 500;
   white-space: nowrap;
 }
+
+/* Subscribe page: how-to panels side by side, then the list of calendar feeds. */
+.subscribe-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.subscribe-steps ol {
+  list-style: decimal;
+  padding-left: 20px;
+  color: var(--text-soft);
+}
+
+@media (max-width: 760px) {
+  .subscribe-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feed-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.feed-row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.feed-name {
+  font-weight: 500;
+}
+
+/* The address can be long; it wraps anywhere instead of pushing the row wider. */
+.feed-address {
+  font: 0.74rem var(--font-mono);
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+.feed-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

@@ -5,7 +5,7 @@
  */
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router'
-import { Info } from 'lucide-react'
+import { Info, CalendarPlus } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SectionHeading, SegmentedFilter } from '../components/Common.jsx'
 import { useProfiles, examIndex, labelFor, getIndexRecord, governmentFilterOptions } from '../lib/data.js'
 import { formatDate, todayIso, daysFromToday, countdownText, urgentWithinDays } from '../lib/format.js'
@@ -96,6 +96,9 @@ export default function CalendarPage() {
       </div>
       <div className="tool-controls">
         <SegmentedFilter label="Government" options={governmentFilterOptions()} value={region} onChange={setRegion} />
+        <Link to="/subscribe" className="button button-small">
+          <CalendarPlus size={14} aria-hidden="true" /> Subscribe in your calendar
+        </Link>
         {hasProfile && (
           <label className={`chip ${onlyMine ? 'is-on' : ''}`}>
             <input type="checkbox" checked={onlyMine} onChange={(event) => setOnlyMine(event.target.checked)} /> Only exams that may fit me

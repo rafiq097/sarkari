@@ -17,6 +17,7 @@ const SyllabusPage = lazy(() => import('./pages/SyllabusPage.jsx'))
 const SalaryPage = lazy(() => import('./pages/SalaryPage.jsx'))
 const AnalyticsPage = lazy(() => import('./pages/AnalyticsPage.jsx'))
 const CalendarPage = lazy(() => import('./pages/CalendarPage.jsx'))
+const SubscribePage = lazy(() => import('./pages/SubscribePage.jsx'))
 const SourcesPage = lazy(() => import('./pages/SourcesPage.jsx'))
 const CoveragePage = lazy(() => import('./pages/CoveragePage.jsx'))
 const SavedPage = lazy(() => import('./pages/SavedPage.jsx'))
@@ -52,6 +53,7 @@ export default function App() {
               <Route path="salary" element={<SalaryPage />} />
               <Route path="analytics" element={<AnalyticsPage />} />
               <Route path="calendar" element={<CalendarPage />} />
+              <Route path="subscribe" element={<SubscribePage />} />
               <Route path="sources" element={<SourcesPage />} />
               <Route path="coverage" element={<CoveragePage />} />
               <Route path="saved" element={<SavedPage />} />

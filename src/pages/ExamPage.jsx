@@ -10,6 +10,7 @@ import { Zap, UserCheck, Route, IndianRupee, AlertTriangle } from 'lucide-react'
 import { Breadcrumbs, EmptyState, Tabs } from '../components/Common.jsx'
 import { StatusBadge, ConfidenceBadge, DifficultyScore, FreshnessBadge } from '../components/Badges.jsx'
 import { BookmarkButton, CompareButton, ShareButton } from '../components/ExamCard.jsx'
+import { CalendarButton } from '../components/CalendarButton.jsx'
 import { OverviewTab } from '../components/profile/ProfileOverview.jsx'
 import { EligibilityTab } from '../components/profile/ProfileBasics.jsx'
 import { ExamSyllabusTab, PayCareerTab } from '../components/profile/ProfileTabs.jsx'
@@ -105,6 +106,7 @@ export default function ExamPage() {
           <BookmarkButton examId={exam.id} />
           <CompareButton examId={exam.id} />
           <ShareButton title={exam.abbreviation || exam.name} />
+          {!isHistorical && <CalendarButton exam={exam} />}
         </div>
         {isHistorical && (
           <div className="callout callout-brick">
