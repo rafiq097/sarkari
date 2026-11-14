@@ -1,8 +1,15 @@
 # Sarkari Shiksha
 
-A static research portal for Central, Andhra Pradesh, Telangana and Karnataka government recruitment: eligibility, exam stages, syllabus, cutoffs, pay, career growth, and personal tools (My Profile, Your plan, eligibility checker, comparison, syllabus overlap, salary explorer, calendar).
+A static research portal for Central, Andhra Pradesh and Telangana government recruitment: eligibility, exam stages, syllabus, cutoffs, pay, career growth, and personal tools (My Profile, Your plan, eligibility checker, comparison, syllabus overlap, salary explorer, calendar).
 
 No backend. Personal data (profile, bookmarks, comparison) stays in the visitor's browser.
+
+## Coverage
+
+- Central: exam profiles.
+- Andhra Pradesh: exam profiles.
+- Telangana: exam profiles.
+- Karnataka: pay guide only (no exam profiles yet).
 
 ## Run locally
 
@@ -20,12 +27,11 @@ npm run preview    # serves dist/ on http://localhost:4173
 
 ## Deploy
 
-Any static host works. Clean URLs need a fallback to `index.html`:
+Hosted on GitHub Pages under the `/sarkari/` base path (`base` in `vite.config.js`).
 
-- Netlify: `public/_redirects` is already included.
-- Vercel: `vercel.json` is already included.
-
-Publish the `dist/` folder.
+- Every push to `main` runs `.github/workflows/deploy.yaml`, which builds the site and publishes `dist/` to GitHub Pages. It can also be started by hand from the Actions tab.
+- Routing uses HashRouter, so page URLs look like `/sarkari/#/exams`. No server rewrite rules are needed.
+- `public/404.html` sends old path-style URLs (for example `/sarkari/exams`) to the matching hash URL.
 
 ## Data
 

@@ -4,7 +4,7 @@ Original brief: `prompt.md`. Progress notes: `PROGRESS.md`. Data schema: `docs/D
 Research notes: `docs/research-notes/upsc.md` (UPSC 2026 and 2027 calendars).
 
 ## 1. What this is
-React 19 + Vite static site (no backend). Netlify/Vercel clean URLs (`public/_redirects`, `vercel.json`).
+React 19 + Vite static site (no backend). GitHub Pages under `/sarkari/` with HashRouter; deploys via GitHub Actions on push to main.
 Libraries: react-router 8, lucide-react, recharts, self-hosted fonts (@fontsource Fraunces, IBM Plex Sans/Mono).
 Commands: `npm run dev` | `npm run build` | `npm run data` (validates every profile, builds `src/data/generated/*.json`; also runs before dev/build) | `npx eslint src scripts`.
 
