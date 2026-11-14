@@ -161,7 +161,7 @@
           {
             "name": "Paper 2: Stream subject (weight 2/3)",
             "marks": 100,
-            "duration": "40 minutes"
+            "duration": "60 to 180 minutes, by stream"
           }
         ],
         "notes": "Aggregate cut-off 50%."
@@ -319,9 +319,423 @@
   "dataQuality": {
     "confidence": "high",
     "gaps": [
-      "Final result date from a secondary report."
+      "Final result date from a secondary report.",
+      "Variants cover the General, IT and Legal streams. Research, Official Language and Engineering (Electrical, Civil) streams are described only by the shared fields."
     ],
     "notes": "Pattern, cut-offs, weightage, age and pay from the official 2025 notice."
   },
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-18",
+  "variants": [
+    {
+      "id": "general",
+      "name": "General",
+      "eligibility": {
+        "education": {
+          "summary": "Master's degree or postgraduate diploma (minimum two years) in any discipline, or a bachelor's degree in law, or a bachelor's degree in engineering, or Chartered Accountant, Chartered Financial Analyst, Company Secretary or Cost Accountant."
+        },
+        "sources": [
+          "s3"
+        ]
+      },
+      "eligibilityRules": {
+        "educationFields": [
+          "any"
+        ],
+        "notes": "General stream: a plain bachelor's degree is not enough. Needs a master's or 2-year PG diploma, or a law or engineering degree, or CA / CFA / CS / Cost Accountant."
+      },
+      "posts": [
+        {
+          "name": "Assistant Manager (Officer Grade A)",
+          "group": "Grade A officer",
+          "payLevel": "SEBI Grade A scale",
+          "startingBasic": 62500,
+          "ageMax": 30,
+          "responsibilities": "Market supervision, investigation, legal and IT work.",
+          "notes": "General stream: 56 posts in the 2025 notice, later raised to 77 by an addendum."
+        }
+      ],
+      "selection": {
+        "stages": [
+          {
+            "name": "Phase I (online screening)",
+            "type": "objective",
+            "countsInMerit": false,
+            "papers": [
+              {
+                "name": "Paper 1: General awareness, English, quantitative aptitude, reasoning",
+                "marks": 100,
+                "duration": "60 minutes",
+                "negative": "One fourth of the question's marks"
+              },
+              {
+                "name": "Paper 2: General stream MCQs (commerce, accountancy, management, finance, costing, Companies Act, economics)",
+                "marks": 100,
+                "duration": "40 minutes",
+                "negative": "One fourth of the question's marks"
+              }
+            ],
+            "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 40% aggregate."
+          },
+          {
+            "name": "Phase II (online)",
+            "type": "objective",
+            "countsInMerit": true,
+            "papers": [
+              {
+                "name": "Paper 1: English descriptive test of drafting skills (weight 1/3)",
+                "marks": 100,
+                "duration": "60 minutes"
+              },
+              {
+                "name": "Paper 2: General stream MCQs, same subjects as Phase I (weight 2/3)",
+                "marks": 100,
+                "duration": "90 minutes"
+              }
+            ],
+            "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 50% aggregate."
+          },
+          {
+            "name": "Interview",
+            "type": "interview",
+            "countsInMerit": true
+          }
+        ],
+        "sources": [
+          "s3"
+        ]
+      },
+      "syllabus": {
+        "sections": [
+          {
+            "stage": "Phase I",
+            "subject": "Paper 1 (all streams)",
+            "topics": [
+              "General awareness, including some financial sector questions",
+              "English language",
+              "Quantitative aptitude",
+              "Test of reasoning"
+            ]
+          },
+          {
+            "stage": "Phase I and II",
+            "subject": "Paper 2: General stream (common syllabus for both phases)",
+            "topics": [
+              "Commerce and accountancy",
+              "Management",
+              "Finance",
+              "Costing",
+              "Companies Act",
+              "Economics"
+            ]
+          },
+          {
+            "stage": "Phase II",
+            "subject": "Paper 1 (all streams)",
+            "topics": [
+              "English descriptive test of drafting skills"
+            ]
+          }
+        ],
+        "sources": [
+          "s3"
+        ],
+        "officialLink": "https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf"
+      },
+      "syllabusTags": [
+        "english-language",
+        "quantitative-aptitude",
+        "reasoning",
+        "general-awareness",
+        "interview-personality",
+        "accountancy-commerce",
+        "management",
+        "indian-economy"
+      ]
+    },
+    {
+      "id": "it",
+      "name": "IT",
+      "eligibility": {
+        "education": {
+          "summary": "Bachelor's degree in engineering in any branch, or a bachelor's degree in any discipline with a postgraduate qualification (minimum two years) in computer science, computer application or information technology."
+        },
+        "sources": [
+          "s3"
+        ]
+      },
+      "eligibilityRules": {
+        "educationFields": [
+          "engineering-any",
+          "computer-applications"
+        ],
+        "notes": "IT stream: any engineering degree qualifies. Other graduates need a 2-year postgraduate qualification in computer science, computer application or IT."
+      },
+      "posts": [
+        {
+          "name": "Assistant Manager (Officer Grade A)",
+          "group": "Grade A officer",
+          "payLevel": "SEBI Grade A scale",
+          "startingBasic": 62500,
+          "ageMax": 30,
+          "responsibilities": "Market supervision, investigation, legal and IT work.",
+          "notes": "Information Technology stream: 22 posts in the 2025 notice."
+        }
+      ],
+      "selection": {
+        "stages": [
+          {
+            "name": "Phase I (online screening)",
+            "type": "objective",
+            "countsInMerit": false,
+            "papers": [
+              {
+                "name": "Paper 1: General awareness, English, quantitative aptitude, reasoning",
+                "marks": 100,
+                "duration": "60 minutes",
+                "negative": "One fourth of the question's marks"
+              },
+              {
+                "name": "Paper 2: IT stream MCQs on the specialised subject",
+                "marks": 100,
+                "duration": "40 minutes",
+                "negative": "One fourth of the question's marks"
+              }
+            ],
+            "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 40% aggregate."
+          },
+          {
+            "name": "Phase II (online)",
+            "type": "objective",
+            "countsInMerit": true,
+            "papers": [
+              {
+                "name": "Paper 1: English descriptive test of drafting skills (weight 1/3)",
+                "marks": 100,
+                "duration": "60 minutes"
+              },
+              {
+                "name": "Paper 2: IT stream MCQs on logic flow completion, debugging, syntax, program dry-run outputs and data analysis (weight 2/3)",
+                "marks": 100,
+                "duration": "180 minutes"
+              }
+            ],
+            "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 50% aggregate."
+          },
+          {
+            "name": "Interview",
+            "type": "interview",
+            "countsInMerit": true
+          }
+        ],
+        "sources": [
+          "s3"
+        ]
+      },
+      "syllabus": {
+        "sections": [
+          {
+            "stage": "Phase I",
+            "subject": "Paper 1 (all streams)",
+            "topics": [
+              "General awareness, including some financial sector questions",
+              "English language",
+              "Quantitative aptitude",
+              "Test of reasoning"
+            ]
+          },
+          {
+            "stage": "Phase I",
+            "subject": "Paper 2: IT stream (indicative weightage in brackets)",
+            "topics": [
+              "Database concepts (10): ER model, relational model, normal forms, indexing, transactions and concurrency control",
+              "SQL queries (10): joins, aggregate functions, set operations, nested queries",
+              "Programming concepts in Java, C or C++ (30): control flow, recursion, scope, parameter passing, OOP, exception handling",
+              "Data analytics languages, Python or R (10): regex, slicing, dataframes, file handling, charts",
+              "Algorithms for problem solving (10): tree and graph traversals, shortest paths, hashing, sorting, searching, greedy, dynamic programming, divide and conquer",
+              "Networking concepts (10): ISO/OSI stack, LAN technologies, TCP/UDP, IP, application layer protocols, firewalls",
+              "Information and cyber security concepts (10): cyber attacks, network security, authentication, CIA, network and systems audit",
+              "Data warehousing (5): extraction, cleaning, transformation, loading, data cube, data mart",
+              "Shell programming (5): shell scripting basics, variables, arguments, loops, basic UNIX commands"
+            ]
+          },
+          {
+            "stage": "Phase II",
+            "subject": "Paper 1 (all streams)",
+            "topics": [
+              "English descriptive test of drafting skills"
+            ]
+          },
+          {
+            "stage": "Phase II",
+            "subject": "Paper 2: IT stream (indicative weightage in brackets)",
+            "topics": [
+              "Algorithms (30): sorting, searching, greedy, dynamic programming, backtracking, divide and conquer, pattern searching",
+              "Data structures (40): array, linked list, stack, queue, binary tree, binary search tree, heap, hashing, matrix, JSON objects",
+              "String manipulation (10): length, substring, regex, search",
+              "Object oriented programming (20): abstraction, encapsulation, polymorphism, inheritance"
+            ]
+          }
+        ],
+        "sources": [
+          "s3"
+        ],
+        "officialLink": "https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf"
+      },
+      "syllabusTags": [
+        "english-language",
+        "quantitative-aptitude",
+        "reasoning",
+        "general-awareness",
+        "interview-personality",
+        "engineering-computer"
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal",
+      "eligibility": {
+        "education": {
+          "summary": "Bachelor's degree in law from a recognised university or institute."
+        },
+        "experience": "Not required. Desirable: two years of post-qualification experience as an advocate (including as an associate in an advocate's or solicitor's office or law firm) after enrolment under the Advocates Act, 1961. Up to 3.75 of the 15 interview marks are for relevant post-qualification experience.",
+        "sources": [
+          "s3"
+        ]
+      },
+      "eligibilityRules": {
+        "educationFields": [
+          "law"
+        ],
+        "notes": "Legal stream: needs a bachelor's degree in law. Two years as an advocate is desirable, not required."
+      },
+      "posts": [
+        {
+          "name": "Assistant Manager (Officer Grade A)",
+          "group": "Grade A officer",
+          "payLevel": "SEBI Grade A scale",
+          "startingBasic": 62500,
+          "ageMax": 30,
+          "responsibilities": "Market supervision, investigation, legal and IT work.",
+          "notes": "Legal stream: 20 posts in the 2025 notice."
+        }
+      ],
+      "selection": {
+        "stages": [
+          {
+            "name": "Phase I (online screening)",
+            "type": "objective",
+            "countsInMerit": false,
+            "papers": [
+              {
+                "name": "Paper 1: General awareness, English, quantitative aptitude, reasoning",
+                "marks": 100,
+                "duration": "60 minutes",
+                "negative": "One fourth of the question's marks"
+              },
+              {
+                "name": "Paper 2: Legal stream MCQs on the specialised subject",
+                "marks": 100,
+                "duration": "40 minutes",
+                "negative": "One fourth of the question's marks"
+              }
+            ],
+            "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 40% aggregate."
+          },
+          {
+            "name": "Phase II (online)",
+            "type": "descriptive",
+            "countsInMerit": true,
+            "papers": [
+              {
+                "name": "Paper 1: English descriptive test of drafting skills (weight 1/3)",
+                "marks": 100,
+                "duration": "60 minutes"
+              },
+              {
+                "name": "Paper 2, part 1: Legal stream, 70 MCQs of one mark each (weight 2/3 with part 2)",
+                "marks": 70,
+                "questions": 70,
+                "duration": "60 minutes"
+              },
+              {
+                "name": "Paper 2, part 2: Legal stream, 3 descriptive questions of 10 marks each, typed",
+                "marks": 30,
+                "questions": 3,
+                "duration": "60 minutes"
+              }
+            ],
+            "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 50% aggregate."
+          },
+          {
+            "name": "Interview",
+            "type": "interview",
+            "countsInMerit": true,
+            "notes": "Up to 3.75 of the 15 interview marks are for relevant post-qualification experience."
+          }
+        ],
+        "sources": [
+          "s3"
+        ]
+      },
+      "syllabus": {
+        "sections": [
+          {
+            "stage": "Phase I",
+            "subject": "Paper 1 (all streams)",
+            "topics": [
+              "General awareness, including some financial sector questions",
+              "English language",
+              "Quantitative aptitude",
+              "Test of reasoning"
+            ]
+          },
+          {
+            "stage": "Phase I",
+            "subject": "Paper 2: Legal stream",
+            "topics": [
+              "Constitution of India (selected parts)",
+              "Contract law: Indian Contract Act 1872, Sale of Goods Act 1930, Indian Partnership Act 1932, Specific Relief Act 1963",
+              "Code of Civil Procedure, 1908 (selected parts)",
+              "Transfer of Property Act, 1882 (Chapters III, IV and V)",
+              "Arbitration and Conciliation Act, 1996 (Part I)",
+              "The Limitation Act, 1963",
+              "Administrative law",
+              "Jurisprudence and interpretation of statutes",
+              "Important Latin terms and maxims",
+              "Law of torts and Consumer Protection Act, 2019"
+            ]
+          },
+          {
+            "stage": "Phase II",
+            "subject": "Paper 1 (all streams)",
+            "topics": [
+              "English descriptive test of drafting skills"
+            ]
+          },
+          {
+            "stage": "Phase II",
+            "subject": "Paper 2: Legal stream",
+            "topics": [
+              "Criminal law: Bharatiya Nyaya Sanhita 2023 (selected chapters), Bharatiya Nagarik Suraksha Sanhita 2023",
+              "Law of evidence: Bharatiya Sakshya Adhiniyam, 2023",
+              "Corporate laws: Companies Act 2013 (selected chapters), Limited Liability Partnership Act 2008, Insolvency and Bankruptcy Code 2016 (Parts I and II)",
+              "Securities laws: Securities Contracts (Regulation) Act 1956, SEBI Act 1992, Depositories Act 1996 and SEBI regulations on fraudulent trade practices, takeovers and insider trading"
+            ]
+          }
+        ],
+        "sources": [
+          "s3"
+        ],
+        "officialLink": "https://www.sebi.gov.in/sebi_data/careerfiles/oct-2025/1761782417659.pdf"
+      },
+      "syllabusTags": [
+        "english-language",
+        "quantitative-aptitude",
+        "reasoning",
+        "general-awareness",
+        "interview-personality",
+        "law"
+      ]
+    }
+  ]
 }

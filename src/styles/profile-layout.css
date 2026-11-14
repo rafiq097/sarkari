@@ -677,3 +677,19 @@ strong.figure {
     padding: 2px 16px 16px;
   }
 }
+
+/* Stream picker for profiles with variants, between the header and the tab bar. */
+.variant-picker {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 18px;
+}
+
+.variant-picker-label {
+  font: 500 0.7rem var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}

@@ -49,6 +49,24 @@ Rules
 | dataQuality | object | `{ confidence: high/medium/low, gaps: string[], notes }` |
 | lastVerified | `YYYY-MM-DD` or null | Required key. The day the profile was last checked against its sources (normally the latest `accessed` date in `sources`); `null` when never checked. The UI shows "Checked <Mon YYYY>", and a "May be outdated" badge with the official link when the date is null or older than 12 months. |
 
+| variants | Variant[] | optional; see Variants. Omit when the exam has no streams |
+
+## Variants (optional)
+For exams run in streams with different rules (for example SEBI Grade A: General, IT, Legal).
+```
+"variants": [ { "id": "it", "name": "IT",
+                "eligibility": { "education": { "summary": "..." } },
+                "eligibilityRules": { "educationFields": ["engineering-any"] },
+                "posts": [ ... ], "selection": { "stages": [ ... ] },
+                "syllabus": { "sections": [ ... ] }, "syllabusTags": [ ... ] } ]
+```
+- `id`: kebab-case, unique in the profile, used in the URL (`?variant=it`). `name`: short label for the picker. The first variant is the default.
+- A variant holds only the fields that differ. Allowed: `eligibility`, `eligibilityRules`, `posts`, `selection`, `syllabus`, `syllabusTags`, `pattern`. Every other field is shared and stays at the top level.
+- Merge rule (`src/lib/variants.js`): objects merge key by key at any depth, so a variant can change one nested value; arrays and plain values are replaced whole (a variant's `posts` or `stages` is its full list).
+- Top-level fields describe what all streams share, or the most common stream. Tools that are not stream-aware (directory filters, compare) read the top-level fields.
+- The validator checks every merged variant like a normal profile. The index stores each variant's merged `eligibilityRules` and `syllabusTags` for the eligibility checker and the syllabus overlap tool.
+- If only some streams are written as variants, say so in `dataQuality.gaps`.
+
 ## Status
 ```
 { "type": "active | recurring | historical",

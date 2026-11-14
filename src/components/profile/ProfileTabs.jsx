@@ -11,19 +11,18 @@ import { PostCards } from './ProfileBasics.jsx'
 import { GuideTab, SelectionTab, SyllabusTab } from './ProfileExam.jsx'
 import { StatsTab, PaySection, CareerSection } from './ProfileNumbers.jsx'
 import { WorkTab } from './ProfileJudgement.jsx'
-import { getIndexRecord } from '../../lib/data.js'
-import { companionsFor } from '../../lib/syllabus.js'
+import { companionsFor, overlapEntryFor } from '../../lib/syllabus.js'
 import { useFolds } from '../../lib/useFolds.js'
 
 // Exams sharing at least this share of syllabus subjects count as "prepare together".
 const minimumSimilarity = 0.35
 const companionCount = 4
 
-/** Exams whose syllabus overlaps enough to prepare for at the same time. */
-function companionExams(examId) {
-  const indexRecord = getIndexRecord(examId)
-  if (!indexRecord?.syllabusTags?.length) return []
-  return companionsFor(indexRecord, { limit: companionCount }).filter((entry) => entry.similarity >= minimumSimilarity)
+/** Exams whose syllabus overlaps enough to prepare for at the same time (for the chosen stream, if any). */
+function companionExams(exam) {
+  const baseEntry = overlapEntryFor(exam.id, exam.activeVariant?.id)
+  if (!baseEntry) return []
+  return companionsFor(baseEntry, { limit: companionCount }).filter((entry) => entry.similarity >= minimumSimilarity)
 }
 
 /** List of companion exams with the shared share of syllabus, plus a link to the overlap tool. */
@@ -32,8 +31,8 @@ function CompanionList({ companions }) {
     <div className="tab-body">
       <ul className="quick-posts">
         {companions.map((entry) => (
-          <li key={entry.exam.id}>
-            <Link to={`/exams/${entry.exam.id}`}>{entry.exam.abbreviation || entry.exam.name}</Link> <span className="faint">{Math.round(entry.coverage * 100)}% shared</span>
+          <li key={entry.key}>
+            <Link to={`/exams/${entry.exam.id}${entry.variant ? `?variant=${entry.variant.id}` : ''}`}>{entry.label}</Link> <span className="faint">{Math.round(entry.coverage * 100)}% shared</span>
           </li>
         ))}
       </ul>
@@ -50,7 +49,7 @@ export function ExamSyllabusTab({ exam, requestedSection }) {
   const guideSectionCount = exam.guide?.sections?.length ?? 0
   const subjectCount = exam.syllabus?.sections?.length ?? 0
   const cutoffYearCount = new Set((exam.cutoffs ?? []).map((row) => row.year)).size
-  const companions = companionExams(exam.id)
+  const companions = companionExams(exam)
   return (
     <div className="tab-stack">
       <SelectionTab exam={exam} />

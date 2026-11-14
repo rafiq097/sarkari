@@ -65,10 +65,11 @@ function ageDetail(rules) {
  * "Can I apply?" card. With a saved My Profile it shows the personal verdict and its
  * reasons; without one it shows the general rule and a prompt to add details.
  */
-function CanIApplyCard({ exam, indexRecord, onOpenTab }) {
+function CanIApplyCard({ exam, onOpenTab }) {
   const { candidate } = useSaved()
   const rules = exam.eligibilityRules ?? {}
-  const result = verdictFor(indexRecord, candidate)
+  // The verdict is for the stream being viewed, so it uses the merged rules, not the index's per-stream list.
+  const result = verdictFor({ eligibilityRules: rules }, candidate)
   const more = (
     <MoreLink tabId="eligibility" onOpenTab={onOpenTab}>
       Full eligibility
@@ -180,7 +181,7 @@ export function OverviewTab({ exam, onOpenTab, requestedSection }) {
   return (
     <div className="tab-body quick-look">
       <div className="quick-grid">
-        <CanIApplyCard exam={exam} indexRecord={indexRecord} onOpenTab={onOpenTab} />
+        <CanIApplyCard exam={exam} onOpenTab={onOpenTab} />
         <QuestionCard
           question="What is it?"
           answer={labelFor('profileTypes', exam.profileType)}

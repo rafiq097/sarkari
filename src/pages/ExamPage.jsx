@@ -2,12 +2,13 @@
  * Exam profile page: short header with actions, then four tabs (Overview, Eligibility,
  * Exam and syllabus, Pay and career). The selected tab and any opened collapsed section
  * are kept in the URL (?tab= and ?section=) so a section can be linked directly. Links
- * that use the ten older tab ids are redirected through lib/examTabs.js.
+ * that use the ten older tab ids are redirected through lib/examTabs.js. Profiles with
+ * stream variants get a picker at the top; the chosen stream is kept in the URL (?variant=).
  */
 import { useEffect } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router'
 import { Zap, UserCheck, Route, IndianRupee, AlertTriangle } from 'lucide-react'
-import { Breadcrumbs, EmptyState, Tabs } from '../components/Common.jsx'
+import { Breadcrumbs, EmptyState, SegmentedFilter, Tabs } from '../components/Common.jsx'
 import { StatusBadge, ConfidenceBadge, DifficultyScore, FreshnessBadge } from '../components/Badges.jsx'
 import { BookmarkButton, CompareButton, ShareButton } from '../components/ExamCard.jsx'
 import { CalendarButton } from '../components/CalendarButton.jsx'
@@ -16,6 +17,7 @@ import { EligibilityTab } from '../components/profile/ProfileBasics.jsx'
 import { ExamSyllabusTab, PayCareerTab } from '../components/profile/ProfileTabs.jsx'
 import { useProfile, labelFor, jurisdictionRoutes, getIndexRecord } from '../lib/data.js'
 import { resolveExamTab } from '../lib/examTabs.js'
+import { applyVariant } from '../lib/variants.js'
 import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 
 // Ids match examTabIds in lib/examTabs.js. render gets (exam, openTab, requestedSection).
@@ -46,7 +48,9 @@ function scrollTabStartIntoView() {
 export default function ExamPage() {
   const { examId } = useParams()
   const [searchParams, setSearchParams] = useSearchParams()
-  const { profile: exam, isLoading, notFound } = useProfile(examId)
+  const { profile: sharedProfile, isLoading, notFound } = useProfile(examId)
+  // For a profile with stream variants, every tab shows the chosen stream merged over the shared fields.
+  const exam = sharedProfile ? applyVariant(sharedProfile, searchParams.get('variant')) : null
   const resolved = resolveExamTab(searchParams.get('tab'), searchParams.get('section'))
 
   // Rewrite an older tab id in the address bar to the tab and section that now hold it.
@@ -80,8 +84,15 @@ export default function ExamPage() {
   // Switching tabs (from the tab bar or an Overview link) shows the new tab from its start.
   // Extra parameters let a link open one collapsed section (?section=).
   const selectTab = (tabId, extraParams = {}) => {
-    setSearchParams({ tab: tabId, ...extraParams }, { replace: true })
+    const variantParams = exam.activeVariant ? { variant: exam.activeVariant.id } : {}
+    setSearchParams({ tab: tabId, ...variantParams, ...extraParams }, { replace: true })
     scrollTabStartIntoView()
+  }
+  // Changing stream keeps the reader on the same tab and section.
+  const selectVariant = (variantId) => {
+    const updated = new URLSearchParams(searchParams)
+    updated.set('variant', variantId)
+    setSearchParams(updated, { replace: true })
   }
   const regionName = labelFor('jurisdictions', exam.jurisdiction)
   const isHistorical = exam.status.type === 'historical'
@@ -118,6 +129,14 @@ export default function ExamPage() {
           </div>
         )}
       </header>
+
+      {exam.activeVariant && (
+        <div className="variant-picker">
+          <span className="variant-picker-label">Stream</span>
+          <SegmentedFilter label="Stream" options={exam.variants.map((variant) => ({ key: variant.id, label: variant.name }))} value={exam.activeVariant.id} onChange={selectVariant} />
+          <span className="faint small">Eligibility, posts, exam papers and syllabus below are for this stream.</span>
+        </div>
+      )}
 
       <div id="profile-tabs" />
       <Tabs tabs={tabs} selected={selectedTab.id} onSelect={selectTab} label="Profile sections" />

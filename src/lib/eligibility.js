@@ -85,15 +85,40 @@ function checkRestrictions(rules, candidate) {
   return findings
 }
 
-/**
- * Evaluates one exam for a candidate.
- * Returns { verdict: 'eligible' | 'check' | 'not-eligible', findings: [{ level, text }] }.
- */
-export function evaluateExam(examRecord, candidate, todayIsoDate) {
-  const rules = examRecord.eligibilityRules ?? {}
+/** Evaluates one set of rules for a candidate. Returns { verdict, findings }. */
+function evaluateRules(rules, candidate, todayIsoDate) {
   const findings = [checkAge(rules, candidate, todayIsoDate), checkEducation(rules, candidate), ...checkRestrictions(rules, candidate)]
   if (rules.notes) findings.push({ level: 'check', text: rules.notes })
   const hasFail = findings.some((finding) => finding.level === 'fail')
   const needsCheck = findings.some((finding) => finding.level === 'check' || finding.level === 'unknown')
   return { verdict: hasFail ? 'not-eligible' : needsCheck ? 'check' : 'eligible', findings }
+}
+
+// Lower is better; used to pick the stream that fits a candidate best.
+const verdictRank = { eligible: 0, check: 1, 'not-eligible': 2 }
+
+/**
+ * Evaluates an exam with stream variants: every stream is checked with its own rules
+ * and the best-fitting one decides the verdict. A first finding names the streams that fit.
+ */
+function evaluateVariants(variants, candidate, todayIsoDate) {
+  const outcomes = variants.map((variant) => ({ variant, result: evaluateRules(variant.eligibilityRules ?? {}, candidate, todayIsoDate) }))
+  const best = [...outcomes].sort((a, b) => verdictRank[a.result.verdict] - verdictRank[b.result.verdict])[0]
+  const fittingNames = outcomes.filter((outcome) => outcome.result.verdict !== 'not-eligible').map((outcome) => outcome.variant.name)
+  if (!fittingNames.length) {
+    const allNames = variants.map((variant) => variant.name).join(', ')
+    return { verdict: 'not-eligible', variantId: best.variant.id, findings: [{ level: 'fail', text: `None of the streams fit (${allNames}). Reasons shown for ${best.variant.name}.` }, ...best.result.findings] }
+  }
+  const streamNote = { level: 'pass', text: `Streams that may fit you: ${fittingNames.join(', ')}. Details shown for ${best.variant.name}.` }
+  return { verdict: best.result.verdict, variantId: best.variant.id, findings: [streamNote, ...best.result.findings] }
+}
+
+/**
+ * Evaluates one exam for a candidate.
+ * Returns { verdict: 'eligible' | 'check' | 'not-eligible', findings: [{ level, text }] }.
+ * For an exam with stream variants the result also has `variantId`, the best-fitting stream.
+ */
+export function evaluateExam(examRecord, candidate, todayIsoDate) {
+  if (examRecord.variants?.length) return evaluateVariants(examRecord.variants, candidate, todayIsoDate)
+  return evaluateRules(examRecord.eligibilityRules ?? {}, candidate, todayIsoDate)
 }

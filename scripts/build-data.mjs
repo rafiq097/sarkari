@@ -8,6 +8,7 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from 'n
 import { join, basename, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { difficultyScore } from '../src/lib/difficulty.js'
+import { applyVariant, variantOverrideKeys } from '../src/lib/variants.js'
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..')
 const examsDirectory = join(projectRoot, 'src', 'data', 'exams')
@@ -22,6 +23,10 @@ const isoDatePattern = /^\d{4}(-\d{2}(-\d{2})?)?$/
 // Full calendar date only, used where a month or year alone is not precise enough.
 const fullDatePattern = /^\d{4}-\d{2}-\d{2}$/
 const levelValues = new Set(vocabulary.levels)
+// Variant ids go into URLs (?variant=it), so they are short kebab-case words.
+const variantIdPattern = /^[a-z0-9]+(-[a-z0-9]+)*$/
+// Keys every variant has besides its overrides.
+const variantIdentityKeys = ['id', 'name']
 
 /** Lists every JSON file under a directory, recursively. */
 function listJsonFiles(directory) {
@@ -85,6 +90,33 @@ function validateRatings(exam) {
   if (exam.risk?.overall && !levelValues.has(exam.risk.overall)) fail(exam.id, 'risk.overall must be low/medium/high')
 }
 
+/**
+ * Validates the stream variants of a profile: unique kebab-case ids, a name, only the
+ * allowed override fields, and that each merged variant still passes the same checks
+ * as the shared profile (rules enums, syllabus tags, source references).
+ */
+function validateVariants(exam, knownSourceIds) {
+  if (exam.variants === undefined) return
+  if (!Array.isArray(exam.variants) || exam.variants.length === 0) return fail(exam.id, 'variants must be a non-empty array (omit the field when there are no variants)')
+  const seenVariantIds = new Set()
+  for (const variant of exam.variants) {
+    const label = `variant "${variant.id}"`
+    if (!variantIdPattern.test(variant.id ?? '')) fail(exam.id, `${label} needs a kebab-case id`)
+    if (seenVariantIds.has(variant.id)) fail(exam.id, `duplicate variant id ${variant.id}`)
+    seenVariantIds.add(variant.id)
+    if (!variant.name) fail(exam.id, `${label} is missing name`)
+    const overrideKeys = Object.keys(variant).filter((key) => !variantIdentityKeys.includes(key))
+    if (overrideKeys.length === 0) fail(exam.id, `${label} overrides nothing`)
+    for (const key of overrideKeys) {
+      if (!variantOverrideKeys.includes(key)) fail(exam.id, `${label} may not override "${key}" (allowed: ${variantOverrideKeys.join(', ')})`)
+    }
+    const merged = applyVariant(exam, variant.id)
+    validateEligibilityRules({ ...merged, id: `${exam.id} ${label}` })
+    for (const tag of merged.syllabusTags ?? []) checkEnum(exam.id, `${label} syllabusTags`, tag, vocabulary.syllabusTags)
+    for (const section of ['eligibility', 'selection', 'syllabus']) checkSourceReferences(exam.id, `${label} ${section}`, merged[section]?.sources, knownSourceIds)
+  }
+}
+
 /** Validates one profile and returns its known source ids. */
 function validateExam(exam, filePath) {
   const examId = exam.id ?? basename(filePath)
@@ -116,6 +148,7 @@ function validateExam(exam, filePath) {
   validateStatus(exam, knownSourceIds)
   validateEligibilityRules(exam)
   validateRatings(exam)
+  validateVariants(exam, knownSourceIds)
   for (const section of ['eligibility', 'selection', 'syllabus', 'salary', 'career', 'workLife', 'rankAndAllocation', 'guide']) {
     checkSourceReferences(examId, section, exam[section]?.sources, knownSourceIds)
   }
@@ -191,6 +224,11 @@ function toIndexRecord(exam, today) {
     sourceCount: (exam.sources ?? []).length,
     lastVerified: exam.lastVerified,
     officialUrl: exam.officialLinks?.[0]?.url ?? exam.organization?.website ?? null,
+    // Per variant, only what the checker and the overlap tool need, already merged with the shared fields.
+    variants: (exam.variants ?? []).map((variant) => {
+      const merged = applyVariant(exam, variant.id)
+      return { id: variant.id, name: variant.name, eligibilityRules: merged.eligibilityRules, syllabusTags: merged.syllabusTags ?? [] }
+    }),
   }
 }
 
