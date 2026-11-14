@@ -1,12 +1,14 @@
 /**
  * Site frame: skip link, sticky header with primary navigation and search,
- * mobile menu, page outlet with route transition, and footer. Wraps every route in App.jsx.
+ * mobile menu, page outlet with route transition, footer and the offline/update notices.
+ * Wraps every route in App.jsx.
  */
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import { Menu, X, BookMarked, GitCompareArrows, Library, ClipboardList, Compass, UserRound } from 'lucide-react'
 import { regionLinks, toolLinks } from '../lib/navigation.js'
 import { SearchBox } from './SearchBox.jsx'
+import { PwaPrompts } from './PwaPrompts.jsx'
 import { useSaved } from '../lib/saved.jsx'
 
 /** Header, navigation and footer around the current page. */
@@ -144,6 +146,7 @@ export function Layout() {
           </div>
         </div>
       </footer>
+      <PwaPrompts />
     </>
   )
 }
