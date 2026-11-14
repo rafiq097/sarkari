@@ -708,6 +708,33 @@
       "year": 2026,
       "type": "primary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s5",
+      "title": "CDS Examination (II) 2026: English question paper",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CDSE-II-26-ENGLISH-140926.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s6",
+      "title": "CDS Examination (II) 2026: General Knowledge question paper",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CDSE-II-26-GENERAL-KNOWLEDGE-140926.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s7",
+      "title": "CDS Examination (II) 2026: Elementary Mathematics question paper",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-CDSE-II-26-ELEMENTARY-MATHEMATICS-140926.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-11-14"
     }
   ],
   "dataQuality": {
@@ -728,31 +755,52 @@
       {
         "id": "english",
         "name": "English",
-        "questions": null,
+        "questions": 120,
         "marks": 100,
         "minutes": 120,
-        "negativeFraction": 0.33
+        "negativeFraction": 0.33,
+        "valueSources": {
+          "questions": "s5",
+          "marks": "s1",
+          "minutes": "s1",
+          "negativeFraction": "s1"
+        }
       },
       {
         "id": "general-knowledge",
         "name": "General Knowledge",
-        "questions": null,
+        "questions": 120,
         "marks": 100,
         "minutes": 120,
-        "negativeFraction": 0.33
+        "negativeFraction": 0.33,
+        "valueSources": {
+          "questions": "s6",
+          "marks": "s1",
+          "minutes": "s1",
+          "negativeFraction": "s1"
+        }
       },
       {
         "id": "mathematics",
         "name": "Elementary Mathematics (IMA, INA, AFA only)",
-        "questions": null,
+        "questions": 100,
         "marks": 100,
         "minutes": 120,
-        "negativeFraction": 0.33
+        "negativeFraction": 0.33,
+        "valueSources": {
+          "questions": "s7",
+          "marks": "s1",
+          "minutes": "s1",
+          "negativeFraction": "s1"
+        }
       }
     ],
-    "notes": "OTA candidates take only English and General Knowledge (240 minutes). Question counts are not recorded in this profile.",
+    "notes": "OTA candidates take only English and General Knowledge (240 minutes). Marks, time and negative marking are from the notification; question counts are from the cover of the official CDS (II) 2026 question papers.",
     "sources": [
-      "s1"
+      "s1",
+      "s5",
+      "s6",
+      "s7"
     ]
   }
 }

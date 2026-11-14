@@ -121,6 +121,11 @@ function validatePattern(examId, label, pattern, knownSourceIds) {
     for (const key of ['questions', 'marks', 'minutes']) {
       if (!isNullOrPositive(section[key])) fail(examId, `${label} section ${section.id} ${key} must be a positive number or null`)
     }
+    // Every recorded value names the source it was read from (valueSources: { questions: "s1", ... }).
+    for (const key of ['questions', 'marks', 'minutes', 'negativeFraction']) {
+      const valueSource = section.valueSources?.[key]
+      if (section[key] != null && !knownSourceIds.has(valueSource)) fail(examId, `${label} section ${section.id} ${key} needs a known source in valueSources`)
+    }
     const negative = section.negativeFraction
     if (negative !== null && !(typeof negative === 'number' && negative >= 0 && negative <= 1)) fail(examId, `${label} section ${section.id} negativeFraction must be 0 to 1 or null`)
   }

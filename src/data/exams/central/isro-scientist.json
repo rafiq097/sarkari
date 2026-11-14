@@ -283,35 +283,25 @@
       "year": 2016,
       "type": "primary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s3",
+      "title": "ISRO ICRB Scientist/Engineer SC (based on GATE scores) 2026: frequently asked questions",
+      "url": "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/July/FREQUENTLY_ASKED_QUESTIONS(FAQ)_28072026.pdf",
+      "publisher": "Indian Space Research Organisation",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-11-14"
     }
   ],
   "dataQuality": {
     "confidence": "medium",
     "gaps": [
       "Exact branch-wise counts vary between reports.",
-      "Written test date not confirmed."
+      "Written test date not confirmed.",
+      "The 2026 advertisement ISRO:ICRB:02(GATE):2026 has no written test: the official FAQ says shortlisting for interview is on GATE scores (1:7). The written test stage in this profile describes other cycles and has no recorded pattern, so there is no mock test."
     ],
     "notes": "Posts, eligibility and pay from reports of the official advertisement."
   },
-  "lastVerified": "2026-10-18",
-  "pattern": {
-    "effectiveFrom": "2026",
-    "stage": "Written test (CBT)",
-    "totalMinutes": null,
-    "sectionSwitching": "free",
-    "sections": [
-      {
-        "id": "written-test",
-        "name": "Written test (CBT)",
-        "questions": null,
-        "marks": null,
-        "minutes": null,
-        "negativeFraction": null
-      }
-    ],
-    "notes": "Question count, marks, duration and negative marking are not recorded in this profile.",
-    "sources": [
-      "s1"
-    ]
-  }
+  "lastVerified": "2026-10-18"
 }

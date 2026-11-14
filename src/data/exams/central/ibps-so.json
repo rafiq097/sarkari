@@ -266,6 +266,15 @@
       "year": 2026,
       "type": "secondary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Detailed notification CRP SPL-XVI (Specialist Officers), structure of examination",
+      "url": "https://www.ibps.in/wp-content/uploads/Detailed-Notification-CRP-SPL-XVI_Final_V1_30.06.2026.pdf",
+      "publisher": "Institute of Banking Personnel Selection",
+      "year": 2026,
+      "type": "primary",
+      "accessed": "2026-11-14"
     }
   ],
   "dataQuality": {
@@ -279,22 +288,70 @@
   "lastVerified": "2026-10-18",
   "pattern": {
     "effectiveFrom": "2026",
-    "stage": "Mains (professional knowledge)",
-    "totalMinutes": null,
-    "sectionSwitching": "free",
+    "stage": "Online Preliminary Examination (IT Officer, Agriculture Field Officer, HR/Personnel Officer, Marketing Officer)",
+    "totalMinutes": 80,
+    "sectionSwitching": "locked",
     "sections": [
       {
+        "id": "english",
+        "name": "English Language",
+        "questions": 25,
+        "marks": 25,
+        "minutes": 20,
+        "negativeFraction": 0.25,
+        "valueSources": {
+          "questions": "s2",
+          "marks": "s2",
+          "minutes": "s2",
+          "negativeFraction": "s2"
+        }
+      },
+      {
+        "id": "reasoning",
+        "name": "Reasoning",
+        "questions": 25,
+        "marks": 25,
+        "minutes": 20,
+        "negativeFraction": 0.25,
+        "valueSources": {
+          "questions": "s2",
+          "marks": "s2",
+          "minutes": "s2",
+          "negativeFraction": "s2"
+        }
+      },
+      {
+        "id": "general-awareness",
+        "name": "General Awareness with special reference to Banking Industry",
+        "questions": 25,
+        "marks": 25,
+        "minutes": 20,
+        "negativeFraction": 0.25,
+        "valueSources": {
+          "questions": "s2",
+          "marks": "s2",
+          "minutes": "s2",
+          "negativeFraction": "s2"
+        }
+      },
+      {
         "id": "professional-knowledge",
-        "name": "Professional knowledge",
-        "questions": null,
-        "marks": null,
-        "minutes": null,
-        "negativeFraction": null
+        "name": "Professional Knowledge",
+        "questions": 25,
+        "marks": 50,
+        "minutes": 20,
+        "negativeFraction": 0.25,
+        "valueSources": {
+          "questions": "s2",
+          "marks": "s2",
+          "minutes": "s2",
+          "negativeFraction": "s2"
+        }
       }
     ],
-    "notes": "Question count, marks, duration and negative marking are not recorded in this profile.",
+    "notes": "Each test has its own time. Candidates must qualify in each of the four tests. Law Officer and Rajbhasha Adhikari have a different structure.",
     "sources": [
-      "s1"
+      "s2"
     ]
   }
 }

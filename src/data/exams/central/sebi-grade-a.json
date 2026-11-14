@@ -601,7 +601,13 @@
             "questions": null,
             "marks": 100,
             "minutes": 60,
-            "negativeFraction": 0.25
+            "negativeFraction": 0.25,
+            "valueSources": {
+              "questions": null,
+              "marks": "s3",
+              "minutes": "s3",
+              "negativeFraction": "s3"
+            }
           },
           {
             "id": "paper-2-it",
@@ -609,10 +615,16 @@
             "questions": null,
             "marks": 100,
             "minutes": 40,
-            "negativeFraction": 0.25
+            "negativeFraction": 0.25,
+            "valueSources": {
+              "questions": null,
+              "marks": "s3",
+              "minutes": "s3",
+              "negativeFraction": "s3"
+            }
           }
         ],
-        "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 40% aggregate. The number of questions is not stated in the notice.",
+        "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 40% aggregate. The official notice does not state the number of questions.",
         "sources": [
           "s3"
         ]

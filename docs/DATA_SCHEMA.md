@@ -83,6 +83,7 @@ The shape of one objective paper or stage. Copy values only from the notice; any
 - `effectiveFrom`: ISO date or year from which this pattern applies, or `null`. When the pattern changes, update the block and this value.
 - `sectionSwitching`: `locked` means sections run in order, each on its own timer, with no return; `free` means one timer and free movement.
 - `negativeFraction`: share of the question's marks deducted for a wrong answer (0.25 = one fourth), `0` for none, `null` when unknown.
+- Each section also has `valueSources`: `{ "questions": "s5", "marks": "s1", "minutes": "s1", "negativeFraction": "s1" }`. Every non-null value must name the source id it was read from (the validator checks this); use `null` for a value that is itself `null`.
 - For an exam with streams, put the block inside the variant it belongs to.
 - The engine never invents values: without minutes the mock is untimed, without marks each question counts 1, without `negativeFraction` nothing is deducted. It says so on the start screen.
 

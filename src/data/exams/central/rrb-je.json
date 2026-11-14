@@ -356,7 +356,13 @@
         "questions": 100,
         "marks": 100,
         "minutes": 90,
-        "negativeFraction": 0.3333
+        "negativeFraction": 0.3333,
+        "valueSources": {
+          "questions": "s1",
+          "marks": "s1",
+          "minutes": "s1",
+          "negativeFraction": "s1"
+        }
       }
     ],
     "notes": null,

@@ -308,6 +308,42 @@
       "year": 2016,
       "type": "primary",
       "accessed": "2026-10-18"
+    },
+    {
+      "id": "s2",
+      "title": "Special Advertisement No. 52/2025: Enforcement Officer / Accounts Officer and APFC in EPFO (scheme of the Combined Recruitment Test)",
+      "url": "https://www.upsc.gov.in/sites/default/files/SpecialAdvtNo-52-2025-Engl-290725.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s3",
+      "title": "Combined Recruitment Test APFC / EO / AO 2025: General Ability Test question paper",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-RT-APFC-EOAO-2025-GENERAL-ABILITY-TEST-011225.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s4",
+      "title": "Recruitment Test EO / AO 2023: General Ability Test question paper",
+      "url": "https://www.upsc.gov.in/sites/default/files/QP-EOAO-GENERAL-ABILITY-TEST-030723.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2023,
+      "type": "primary",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s5",
+      "title": "Recruitment Test EO / AO 2023: official answer key",
+      "url": "https://www.upsc.gov.in/sites/default/files/RT-Anskey-418-EO-AO-2023-050325.pdf",
+      "publisher": "Union Public Service Commission",
+      "year": 2025,
+      "type": "primary",
+      "accessed": "2026-11-14"
     }
   ],
   "dataQuality": {
@@ -320,23 +356,30 @@
   },
   "lastVerified": "2026-10-18",
   "pattern": {
-    "effectiveFrom": "2026",
-    "stage": "Recruitment test (objective, offline)",
+    "effectiveFrom": "2025",
+    "stage": "Combined Recruitment Test (General Ability Test)",
     "totalMinutes": 120,
     "sectionSwitching": "free",
     "sections": [
       {
         "id": "recruitment-test",
-        "name": "General abilities, labour laws, accounting, social security and current affairs",
+        "name": "General Ability Test",
         "questions": 120,
         "marks": 300,
         "minutes": 120,
-        "negativeFraction": 0.33
+        "negativeFraction": 0.33,
+        "valueSources": {
+          "questions": "s3",
+          "marks": "s3",
+          "minutes": "s2",
+          "negativeFraction": "s2"
+        }
       }
     ],
-    "notes": "Pattern from a secondary source.",
+    "notes": "Time and negative marking (one third of the question's marks) are from the official 2025 advertisement; 120 questions and 300 marks are from the cover of the official 2025 question paper.",
     "sources": [
-      "s1"
+      "s2",
+      "s3"
     ]
   }
 }

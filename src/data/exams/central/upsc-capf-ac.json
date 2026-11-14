@@ -5,186 +5,69 @@
   "profileType": "exam",
   "jurisdiction": "central",
   "sector": "capf-police",
-  "organization": {
-    "id": "upsc",
-    "name": "Union Public Service Commission",
-    "abbreviation": "UPSC",
-    "website": "https://www.upsc.gov.in"
-  },
+  "organization": { "id": "upsc", "name": "Union Public Service Commission", "abbreviation": "UPSC", "website": "https://www.upsc.gov.in" },
   "department": "Ministry of Home Affairs (BSF, CRPF, CISF, ITBP, SSB)",
   "technical": false,
   "summary": "Direct entry as Assistant Commandant, a Group A officer, in the BSF, CRPF, CISF, ITBP and SSB. There are four stages: two written papers, physical standards and efficiency tests, an interview, and a medical. Open to graduate men and women aged 20 to 25.",
   "employmentType": "permanent",
-  "recruitmentMethods": [
-    "competitive-exam",
-    "physical-test",
-    "interview",
-    "medical-exam",
-    "document-verification"
-  ],
+  "recruitmentMethods": ["competitive-exam", "physical-test", "interview", "medical-exam", "document-verification"],
   "frequency": "Annual (official UPSC calendar)",
   "officialLinks": [
-    {
-      "label": "CAPF (AC) 2026 notification",
-      "url": "https://www.upsc.gov.in/sites/default/files/ExamNotifi_CAPF_AC_Exam_2026_Eng_20022026.pdf"
-    },
-    {
-      "label": "Apply online",
-      "url": "https://upsconline.nic.in"
-    }
+    { "label": "CAPF (AC) 2026 notification", "url": "https://www.upsc.gov.in/sites/default/files/ExamNotifi_CAPF_AC_Exam_2026_Eng_20022026.pdf" },
+    { "label": "Apply online", "url": "https://upsconline.nic.in" }
   ],
   "status": {
     "type": "active",
     "note": "Held every year. Usual pattern: notification in February, written exam in July or August, then physical tests, interviews and medicals over the following months.",
     "cycles": [
-      {
-        "cycle": "CAPF (AC) 2026",
-        "events": [
-          {
-            "event": "Notification",
-            "date": "2026-02-20",
-            "dateType": "official",
-            "source": "s1"
-          },
-          {
-            "event": "Written exam",
-            "date": "2026-07-19",
-            "dateType": "official",
-            "source": "s2"
-          }
-        ]
-      },
-      {
-        "cycle": "CAPF (AC) 2027",
-        "events": [
-          {
-            "event": "Notification",
-            "date": "2027-02-17",
-            "dateType": "official-tentative",
-            "source": "s3"
-          },
-          {
-            "event": "Last date to apply",
-            "date": "2027-03-09",
-            "dateType": "official-tentative",
-            "source": "s3"
-          },
-          {
-            "event": "Written exam",
-            "date": "2027-07-04",
-            "dateType": "official-tentative",
-            "source": "s3"
-          }
-        ]
-      }
+      { "cycle": "CAPF (AC) 2026", "events": [
+        { "event": "Notification", "date": "2026-02-20", "dateType": "official", "source": "s1" },
+        { "event": "Written exam", "date": "2026-07-19", "dateType": "official", "source": "s2" }
+      ] },
+      { "cycle": "CAPF (AC) 2027", "events": [
+        { "event": "Notification", "date": "2027-02-17", "dateType": "official-tentative", "source": "s3" },
+        { "event": "Last date to apply", "date": "2027-03-09", "dateType": "official-tentative", "source": "s3" },
+        { "event": "Written exam", "date": "2027-07-04", "dateType": "official-tentative", "source": "s3" }
+      ] }
     ]
   },
   "posts": [
-    {
-      "name": "Assistant Commandant, Border Security Force",
-      "group": "Group A",
-      "payLevel": "Level 10",
-      "startingBasic": 56100,
-      "responsibilities": "Guarding the Pakistan and Bangladesh borders.",
-      "notes": "2026: 108 vacancies."
-    },
-    {
-      "name": "Assistant Commandant, Central Reserve Police Force",
-      "group": "Group A",
-      "payLevel": "Level 10",
-      "startingBasic": 56100,
-      "responsibilities": "Internal security, counter-insurgency, law and order support.",
-      "notes": "2026: 106 vacancies."
-    },
-    {
-      "name": "Assistant Commandant, Central Industrial Security Force",
-      "group": "Group A",
-      "payLevel": "Level 10",
-      "startingBasic": 56100,
-      "responsibilities": "Security of airports, ports, PSUs and critical installations.",
-      "notes": "2026: 70 vacancies."
-    },
-    {
-      "name": "Assistant Commandant, Sashastra Seema Bal",
-      "group": "Group A",
-      "payLevel": "Level 10",
-      "startingBasic": 56100,
-      "responsibilities": "Guarding the Nepal and Bhutan borders.",
-      "notes": "2026: 53 vacancies."
-    },
-    {
-      "name": "Assistant Commandant, Indo-Tibetan Border Police",
-      "group": "Group A",
-      "payLevel": "Level 10",
-      "startingBasic": 56100,
-      "responsibilities": "Guarding the China border in high-altitude areas.",
-      "notes": "2026: 12 vacancies."
-    }
+    { "name": "Assistant Commandant, Border Security Force", "group": "Group A", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Guarding the Pakistan and Bangladesh borders.", "notes": "2026: 108 vacancies." },
+    { "name": "Assistant Commandant, Central Reserve Police Force", "group": "Group A", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Internal security, counter-insurgency, law and order support.", "notes": "2026: 106 vacancies." },
+    { "name": "Assistant Commandant, Central Industrial Security Force", "group": "Group A", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Security of airports, ports, PSUs and critical installations.", "notes": "2026: 70 vacancies." },
+    { "name": "Assistant Commandant, Sashastra Seema Bal", "group": "Group A", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Guarding the Nepal and Bhutan borders.", "notes": "2026: 53 vacancies." },
+    { "name": "Assistant Commandant, Indo-Tibetan Border Police", "group": "Group A", "payLevel": "Level 10", "startingBasic": 56100, "responsibilities": "Guarding the China border in high-altitude areas.", "notes": "2026: 12 vacancies." }
   ],
   "eligibility": {
     "age": {
       "summary": "At least 20 and under 25 on 1 August of the exam year. For 2026: born between 2 August 2001 and 1 August 2006.",
       "referenceDate": "1 August of the exam year",
       "relaxations": [
-        {
-          "category": "SC / ST",
-          "years": 5
-        },
-        {
-          "category": "OBC (eligible for reservation)",
-          "years": 3
-        },
-        {
-          "category": "Civilian central government servants and ex-servicemen",
-          "years": 5,
-          "note": "Total relaxation for government service is capped at 5 years."
-        }
+        { "category": "SC / ST", "years": 5 },
+        { "category": "OBC (eligible for reservation)", "years": 3 },
+        { "category": "Civilian central government servants and ex-servicemen", "years": 5, "note": "Total relaxation for government service is capped at 5 years." }
       ]
     },
     "nationality": "Citizen of India.",
     "domicile": null,
-    "education": {
-      "summary": "A bachelor's degree in any subject from a recognised university, or equivalent.",
-      "finalYearAllowed": true,
-      "minMarks": null
-    },
-    "attempts": [
-      {
-        "category": "All",
-        "limit": "No attempt limit (within age limit)"
-      }
-    ],
+    "education": { "summary": "A bachelor's degree in any subject from a recognised university, or equivalent.", "finalYearAllowed": true, "minMarks": null },
+    "attempts": [{ "category": "All", "limit": "No attempt limit (within age limit)" }],
     "experience": null,
     "physical": "Men: height 165 cm, chest 81 cm unexpanded with 5 cm expansion, weight 50 kg. Women: height 157 cm, weight 46 kg. Physical Efficiency Test (men / women): 100 m in 16 / 18 seconds; 800 m in 3 min 45 s / 4 min 45 s; long jump 3.5 m / 3.0 m (3 chances); shot put 7.26 kg, 4.5 m (men only, 3 chances). Standard heights are relaxable for some categories as per Appendix V.",
     "medical": "Medical Standards Test after the interview, as per Appendix V; appeals are allowed only against the medical result.",
-    "other": [
-      "Women found pregnant at the PST/PET stage have their appointment kept in abeyance until after confinement, subject to fitness.",
-      "PET is qualifying: failing it means no interview call."
-    ],
+    "other": ["Women found pregnant at the PST/PET stage have their appointment kept in abeyance until after confinement, subject to fitness.", "PET is qualifying: failing it means no interview call."],
     "examVsPost": "You list force preferences. Allocation depends on rank, category, preference and medical fitness. Not all forces post women in every role.",
-    "disqualifications": [
-      "Height or chest even 0.1 cm below the minimum disqualifies."
-    ],
+    "disqualifications": ["Height or chest even 0.1 cm below the minimum disqualifies."],
     "reservation": "Central reservation applies (SC, ST, OBC, EWS). 10% of total vacancies are earmarked for ex-servicemen.",
-    "sources": [
-      "s1"
-    ]
+    "sources": ["s1"]
   },
   "eligibilityRules": {
     "ageMin": 20,
     "ageMax": 24,
     "ageReferenceDate": "2026-08-01",
-    "relaxationYears": {
-      "OBC": 3,
-      "SC": 5,
-      "ST": 5,
-      "EWS": 0,
-      "PwBD": 0
-    },
+    "relaxationYears": { "OBC": 3, "SC": 5, "ST": 5, "EWS": 0, "PwBD": 0 },
     "minEducation": "graduate",
-    "educationFields": [
-      "any"
-    ],
+    "educationFields": ["any"],
     "finalYearAllowed": true,
     "gender": "any",
     "domicile": null,
@@ -192,46 +75,13 @@
   },
   "selection": {
     "stages": [
-      {
-        "name": "Written exam",
-        "type": "objective",
-        "countsInMerit": true,
-        "papers": [
-          {
-            "name": "Paper I: General Ability and Intelligence (objective)",
-            "marks": 250,
-            "notes": "English and Hindi."
-          },
-          {
-            "name": "Paper II: General Studies, Essay and Comprehension (descriptive)",
-            "marks": 200,
-            "notes": "Part A essays 80 marks (English or Hindi); Part B comprehension, precis and language skills 120 marks (English only). Evaluated only if you clear the minimum in Paper I."
-          }
-        ],
-        "notes": "Minimum qualifying marks are fixed separately for each paper."
-      },
-      {
-        "name": "Physical Standards and Physical Efficiency Tests",
-        "type": "physical",
-        "countsInMerit": false,
-        "notes": "Qualifying only."
-      },
-      {
-        "name": "Interview / Personality Test",
-        "type": "interview",
-        "countsInMerit": true,
-        "papers": [
-          {
-            "name": "Personality Test",
-            "marks": 150
-          }
-        ]
-      },
-      {
-        "name": "Medical Standards Test",
-        "type": "medical",
-        "countsInMerit": false
-      }
+      { "name": "Written exam", "type": "objective", "countsInMerit": true, "papers": [
+        { "name": "Paper I: General Ability and Intelligence (objective)", "marks": 250, "notes": "English and Hindi." },
+        { "name": "Paper II: General Studies, Essay and Comprehension (descriptive)", "marks": 200, "notes": "Part A essays 80 marks (English or Hindi); Part B comprehension, precis and language skills 120 marks (English only). Evaluated only if you clear the minimum in Paper I." }
+      ], "notes": "Minimum qualifying marks are fixed separately for each paper." },
+      { "name": "Physical Standards and Physical Efficiency Tests", "type": "physical", "countsInMerit": false, "notes": "Qualifying only." },
+      { "name": "Interview / Personality Test", "type": "interview", "countsInMerit": true, "papers": [{ "name": "Personality Test", "marks": 150 }] },
+      { "name": "Medical Standards Test", "type": "medical", "countsInMerit": false }
     ],
     "meritCalculation": "Final merit = written (450) + interview (150) = 600. NCC certificate holders get consideration at the interview.",
     "tieBreaking": "As stated in the notification.",
@@ -239,137 +89,47 @@
     "languages": "Paper I in English and Hindi; Paper II essay in English or Hindi, the rest in English only.",
     "documentVerification": "Proof of degree is required after qualifying for the physical tests.",
     "probation": "Basic training at the force academy, then probation as per force rules.",
-    "sources": [
-      "s1"
-    ]
+    "sources": ["s1"]
   },
   "syllabus": {
     "officialLink": "https://www.upsc.gov.in/sites/default/files/ExamNotifi_CAPF_AC_Exam_2026_Eng_20022026.pdf",
     "sections": [
-      {
-        "stage": "Written",
-        "subject": "Paper I: General Ability and Intelligence",
-        "topics": [
-          "General mental ability: logical reasoning, quantitative aptitude, numerical ability, data interpretation",
-          "General science, including IT, biotechnology and environmental science",
-          "Current events: culture, music, arts, literature, sports, governance, society, development, business, international relations",
-          "Indian polity and economy, public administration, security issues, human rights",
-          "History of India, growth of nationalism and the freedom movement",
-          "Indian and world geography"
-        ]
-      },
-      {
-        "stage": "Written",
-        "subject": "Paper II: General Studies, Essay and Comprehension",
-        "topics": [
-          "Part A (80 marks): essays on modern Indian history and the freedom struggle, geography, polity, economy, security and human rights, analytical ability",
-          "Part B (120 marks): comprehension, precis writing, counter-arguments, grammar and language skills (English)"
-        ]
-      }
+      { "stage": "Written", "subject": "Paper I: General Ability and Intelligence", "topics": ["General mental ability: logical reasoning, quantitative aptitude, numerical ability, data interpretation", "General science, including IT, biotechnology and environmental science", "Current events: culture, music, arts, literature, sports, governance, society, development, business, international relations", "Indian polity and economy, public administration, security issues, human rights", "History of India, growth of nationalism and the freedom movement", "Indian and world geography"] },
+      { "stage": "Written", "subject": "Paper II: General Studies, Essay and Comprehension", "topics": ["Part A (80 marks): essays on modern Indian history and the freedom struggle, geography, polity, economy, security and human rights, analytical ability", "Part B (120 marks): comprehension, precis writing, counter-arguments, grammar and language skills (English)"] }
     ],
-    "supplementary": [
-      "Physical training for the PET should start alongside written preparation."
-    ],
-    "sources": [
-      "s1"
-    ]
+    "supplementary": ["Physical training for the PET should start alongside written preparation."],
+    "sources": ["s1"]
   },
-  "syllabusTags": [
-    "reasoning",
-    "quantitative-aptitude",
-    "data-interpretation",
-    "general-science",
-    "current-affairs",
-    "indian-polity",
-    "indian-economy",
-    "indian-history",
-    "geography",
-    "essay-writing",
-    "english-language",
-    "physical-fitness",
-    "interview-personality"
-  ],
+  "syllabusTags": ["reasoning", "quantitative-aptitude", "data-interpretation", "general-science", "current-affairs", "indian-polity", "indian-economy", "indian-history", "geography", "essay-writing", "english-language", "physical-fitness", "interview-personality"],
   "cutoffs": [],
   "statistics": [],
-  "rankAndAllocation": {
-    "text": "Candidates are allotted forces by rank, category and preference, subject to medical fitness and vacancies in each force.",
-    "sources": [
-      "s1"
-    ]
-  },
+  "rankAndAllocation": { "text": "Candidates are allotted forces by rank, category and preference, subject to medical fitness and vacancies in each force.", "sources": ["s1"] },
   "salary": {
     "payRuleSet": "central-7cpc",
     "payLevel": "Level 10",
     "payScale": "56,100 to 1,77,500",
     "startingBasic": 56100,
-    "specialAllowances": [
-      {
-        "name": "Risk and hardship allowances",
-        "detail": "Paid by area of posting (border, high altitude, counter-insurgency)."
-      },
-      {
-        "name": "Ration money and uniform",
-        "detail": "As per force rules."
-      }
-    ],
+    "specialAllowances": [{ "name": "Risk and hardship allowances", "detail": "Paid by area of posting (border, high altitude, counter-insurgency)." }, { "name": "Ration money and uniform", "detail": "As per force rules." }],
     "pension": "National Pension System (CAPF personnel joining after 1 Jan 2004).",
     "increments": "3% a year.",
     "notes": "CAPFs are central civil forces, so civilian central pay rules apply, with force-specific allowances.",
     "asOf": "2026-10",
-    "sources": [
-      "s4"
-    ]
+    "sources": ["s4"]
   },
   "career": {
     "progression": [
-      {
-        "post": "Assistant Commandant",
-        "level": "Level 10",
-        "timeline": "Entry",
-        "timelineType": "official"
-      },
-      {
-        "post": "Deputy Commandant",
-        "level": "Level 11",
-        "timeline": "Early career",
-        "timelineType": "typical"
-      },
-      {
-        "post": "Second-in-Command",
-        "level": "Level 12",
-        "timeline": "Mid career",
-        "timelineType": "typical"
-      },
-      {
-        "post": "Commandant",
-        "level": "Level 13",
-        "timeline": "Commands a battalion",
-        "timelineType": "typical"
-      },
-      {
-        "post": "Deputy Inspector General and above",
-        "level": "Level 13A and up",
-        "timeline": "By selection",
-        "timelineType": "typical"
-      }
+      { "post": "Assistant Commandant", "level": "Level 10", "timeline": "Entry", "timelineType": "official" },
+      { "post": "Deputy Commandant", "level": "Level 11", "timeline": "Early career", "timelineType": "typical" },
+      { "post": "Second-in-Command", "level": "Level 12", "timeline": "Mid career", "timelineType": "typical" },
+      { "post": "Commandant", "level": "Level 13", "timeline": "Commands a battalion", "timelineType": "typical" },
+      { "post": "Deputy Inspector General and above", "level": "Level 13A and up", "timeline": "By selection", "timelineType": "typical" }
     ],
     "promotionNotes": "Promotions depend on vacancies, service records and courses. Many top posts (IG, ADG, DG) are also filled by IPS officers on deputation, which limits cadre officers' rise; this is a long-running grievance in the forces.",
     "departmentalExams": "Force promotion courses.",
     "macp": "Group A: time-scale and non-functional upgradation per rules.",
-    "sources": [
-      "s4"
-    ]
+    "sources": ["s4"]
   },
-  "benefits": [
-    {
-      "item": "Accommodation and medical care",
-      "detail": "Force accommodation and CAPF medical facilities.",
-      "conditional": true,
-      "sources": [
-        "s4"
-      ]
-    }
-  ],
+  "benefits": [{ "item": "Accommodation and medical care", "detail": "Force accommodation and CAPF medical facilities.", "conditional": true, "sources": ["s4"] }],
   "workLife": {
     "postings": "Borders, conflict zones, high altitude (ITBP), industrial and airport sites (CISF).",
     "transfers": "Frequent rotation between hard and peace postings.",
@@ -378,9 +138,7 @@
     "publicInteraction": "Moderate.",
     "hazards": "High: insurgency, border firing, terrain and weather.",
     "stability": "Very high (permanent Group A).",
-    "sources": [
-      "s1"
-    ]
+    "sources": ["s1"]
   },
   "difficulty": {
     "syllabusDepth": "medium",
@@ -391,178 +149,36 @@
     "selectionUncertainty": "medium",
     "rationale": "A general syllabus plus a descriptive paper, a qualifying physical test and an interview, for about 300 to 350 posts a year. Official applicant counts were not checked, so competition is rated qualitatively."
   },
-  "ratings": {
-    "careerGrowth": "medium",
-    "locationFlexibility": "low",
-    "recruitmentRegularity": "high",
-    "rationale": "Annual exam; promotions above Commandant are slower because of IPS deputation to senior posts."
-  },
-  "risk": {
-    "overall": "medium",
-    "factors": [
-      {
-        "factor": "Physical and medical rejection",
-        "level": "medium",
-        "note": "Failing the PET or medical ends selection."
-      },
-      {
-        "factor": "Hard postings",
-        "level": "high",
-        "note": "Border and insurgency areas are part of normal service."
-      },
-      {
-        "factor": "Irregular recruitment",
-        "level": "low",
-        "note": "Held every year."
-      }
-    ]
-  },
+  "ratings": { "careerGrowth": "medium", "locationFlexibility": "low", "recruitmentRegularity": "high", "rationale": "Annual exam; promotions above Commandant are slower because of IPS deputation to senior posts." },
+  "risk": { "overall": "medium", "factors": [
+    { "factor": "Physical and medical rejection", "level": "medium", "note": "Failing the PET or medical ends selection." },
+    { "factor": "Hard postings", "level": "high", "note": "Border and insurgency areas are part of normal service." },
+    { "factor": "Irregular recruitment", "level": "low", "note": "Held every year." }
+  ] },
   "guide": {
-    "sources": [
-      "s1"
-    ],
+    "sources": ["s1"],
     "sections": [
-      {
-        "title": "The four stages",
-        "kind": "official",
-        "quickFacts": [
-          {
-            "label": "Vacancies 2026",
-            "value": "349"
-          },
-          {
-            "label": "Final marks",
-            "value": "600"
-          },
-          {
-            "label": "Age",
-            "value": "20 to under 25"
-          }
-        ],
-        "paragraphs": [
-          "Two written papers (450 marks), a qualifying physical test, an interview (150 marks) and a medical. Paper II is checked only if you clear the cut in Paper I, so the objective paper is your first gate."
-        ],
-        "table": {
-          "columns": [
-            "Test",
-            "Men",
-            "Women"
-          ],
-          "rows": [
-            [
-              "100 m race",
-              "16 s",
-              "18 s"
-            ],
-            [
-              "800 m race",
-              "3 min 45 s",
-              "4 min 45 s"
-            ],
-            [
-              "Long jump (3 chances)",
-              "3.5 m",
-              "3.0 m"
-            ],
-            [
-              "Shot put 7.26 kg (3 chances)",
-              "4.5 m",
-              "Not required"
-            ],
-            [
-              "Height",
-              "165 cm",
-              "157 cm"
-            ],
-            [
-              "Chest",
-              "81 cm + 5 cm expansion",
-              "Not applicable"
-            ],
-            [
-              "Weight",
-              "50 kg",
-              "46 kg"
-            ]
-          ]
-        }
-      },
-      {
-        "title": "Common confusions",
-        "kind": "explainer",
-        "bullets": [
-          "CAPF AC is not IPS; it is the cadre officer entry of each force.",
-          "Paper II is descriptive and partly English-only, which many candidates underestimate.",
-          "Even 0.1 cm below the height or chest minimum disqualifies."
-        ]
-      }
+      { "title": "The four stages", "kind": "official", "quickFacts": [{ "label": "Vacancies 2026", "value": "349" }, { "label": "Final marks", "value": "600" }, { "label": "Age", "value": "20 to under 25" }],
+      "paragraphs": ["Two written papers (450 marks), a qualifying physical test, an interview (150 marks) and a medical. Paper II is checked only if you clear the cut in Paper I, so the objective paper is your first gate."],
+      "table": { "columns": ["Test", "Men", "Women"], "rows": [["100 m race", "16 s", "18 s"], ["800 m race", "3 min 45 s", "4 min 45 s"], ["Long jump (3 chances)", "3.5 m", "3.0 m"], ["Shot put 7.26 kg (3 chances)", "4.5 m", "Not required"], ["Height", "165 cm", "157 cm"], ["Chest", "81 cm + 5 cm expansion", "Not applicable"], ["Weight", "50 kg", "46 kg"]] } },
+      { "title": "Common confusions", "kind": "explainer", "bullets": ["CAPF AC is not IPS; it is the cadre officer entry of each force.", "Paper II is descriptive and partly English-only, which many candidates underestimate.", "Even 0.1 cm below the height or chest minimum disqualifies."] }
     ]
   },
   "sources": [
-    {
-      "id": "s1",
-      "title": "CAPF (Assistant Commandants) Examination 2026 notification",
-      "url": "https://www.upsc.gov.in/sites/default/files/ExamNotifi_CAPF_AC_Exam_2026_Eng_20022026.pdf",
-      "publisher": "Union Public Service Commission",
-      "year": 2026,
-      "type": "primary",
-      "accessed": "2026-10-18"
-    },
-    {
-      "id": "s2",
-      "title": "UPSC Programme of Examinations 2026",
-      "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf",
-      "publisher": "Union Public Service Commission",
-      "year": 2025,
-      "type": "primary",
-      "accessed": "2026-10-18"
-    },
-    {
-      "id": "s3",
-      "title": "UPSC Annual Calendar 2027",
-      "url": "https://upsc.gov.in/content/annual-calendar-2027-0",
-      "publisher": "Union Public Service Commission",
-      "year": 2026,
-      "type": "primary",
-      "accessed": "2026-10-18"
-    },
-    {
-      "id": "s4",
-      "title": "7th CPC pay matrix",
-      "url": "https://doe.gov.in/pay-commission-matrix",
-      "publisher": "Department of Expenditure",
-      "year": 2016,
-      "type": "primary",
-      "accessed": "2026-10-18"
-    }
+    { "id": "s1", "title": "CAPF (Assistant Commandants) Examination 2026 notification", "url": "https://www.upsc.gov.in/sites/default/files/ExamNotifi_CAPF_AC_Exam_2026_Eng_20022026.pdf", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s2", "title": "UPSC Programme of Examinations 2026", "url": "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525.pdf", "publisher": "Union Public Service Commission", "year": 2025, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s3", "title": "UPSC Annual Calendar 2027", "url": "https://upsc.gov.in/content/annual-calendar-2027-0", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s4", "title": "7th CPC pay matrix", "url": "https://doe.gov.in/pay-commission-matrix", "publisher": "Department of Expenditure", "year": 2016, "type": "primary", "accessed": "2026-10-18" },
+    { "id": "s5", "title": "CAPF (ACs) Examination 2026: General Ability and Intelligence question paper", "url": "https://www.upsc.gov.in/sites/default/files/QP-CAPF-Exam-2026-GENERAL-ABILITY-AND-INTELLIGENCE-200726.pdf", "publisher": "Union Public Service Commission", "year": 2026, "type": "primary", "accessed": "2026-11-14" }
   ],
-  "dataQuality": {
-    "confidence": "high",
-    "gaps": [
-      "Official applicant and selection counts and cutoffs not collected.",
-      "Promotion timings are typical."
-    ],
-    "notes": "Vacancies, eligibility, scheme and physical standards from the 2026 notification."
-  },
+  "dataQuality": { "confidence": "high", "gaps": ["Official applicant and selection counts and cutoffs not collected.", "Promotion timings are typical."], "notes": "Vacancies, eligibility, scheme and physical standards from the 2026 notification." },
   "lastVerified": "2026-10-18",
   "pattern": {
-    "effectiveFrom": "2026",
-    "stage": "Written exam, Paper I",
-    "totalMinutes": null,
-    "sectionSwitching": "free",
+    "effectiveFrom": "2026", "stage": "Written exam, Paper I", "totalMinutes": 120, "sectionSwitching": "free",
     "sections": [
-      {
-        "id": "paper-1",
-        "name": "Paper I: General Ability and Intelligence (objective)",
-        "questions": null,
-        "marks": 250,
-        "minutes": null,
-        "negativeFraction": null
-      }
+      { "id": "paper-1", "name": "Paper I: General Ability and Intelligence (objective)", "questions": 125, "marks": 250, "minutes": 120, "negativeFraction": 0.33, "valueSources": { "questions": "s5", "marks": "s1", "minutes": "s1", "negativeFraction": "s1" } }
     ],
-    "notes": "Question count, duration and negative marking are not recorded in this profile. Paper II is descriptive and is not part of the mock.",
-    "sources": [
-      "s1"
-    ]
+    "notes": "Marks, time (10:00 AM to 12:00 noon) and negative marking are from the 2026 notification; the question count is from the cover of the official 2026 question paper. Paper II is descriptive and is not part of the mock.",
+    "sources": ["s1", "s5"]
   }
 }
