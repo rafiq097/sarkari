@@ -1,0 +1,59 @@
+# Daily check of the official notice pages listed in the exam profiles.
+# Runs scripts/watch-notices.mjs, which opens an issue per exam when a page changed and
+# one summary issue for pages that could not be fetched. This workflow then commits the
+# updated hashes and text snapshots in notice-watch/. Exam data is never edited here.
+name: Notice watcher
+
+on:
+  schedule:
+    # 02:30 UTC, which is 08:00 in India, once a day.
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+# Two runs at once would fight over the same hash file.
+concurrency:
+  group: notice-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Ensure issue labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create notice-watch --color FFD21F --description "An official notice page changed" --force
+          gh label create notice-watch-failures --color 8A8378 --description "Pages the notice watcher could not fetch" --force
+
+      # The script has no dependencies, so there is no npm install step.
+      - name: Check notice pages
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/watch-notices.mjs
+
+      - name: Commit updated hashes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add notice-watch
+          if git diff --cached --quiet; then
+            echo "No page changed."
+          else
+            git commit -m "Notice watcher: update page hashes"
+            git push
+          fi
