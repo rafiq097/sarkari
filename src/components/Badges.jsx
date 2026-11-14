@@ -1,10 +1,11 @@
 /**
  * Small status and data-quality markers used on cards, tables and profiles:
- * exam status, analytical level pills, unknown-value placeholders, confidence and source chips.
+ * exam status, analytical level pills, unknown-value placeholders, confidence, freshness and source chips.
  */
-import { CircleDot, RotateCw, Archive, HelpCircle, ShieldCheck, ShieldAlert, Shield, ExternalLink } from 'lucide-react'
+import { CircleDot, RotateCw, Archive, HelpCircle, ShieldCheck, ShieldAlert, Shield, ExternalLink, CalendarCheck, History } from 'lucide-react'
 import { formatLevel } from '../lib/format.js'
 import { difficultyBand } from '../lib/difficulty.js'
+import { freshnessOf } from '../lib/freshness.js'
 
 const statusDetails = {
   active: { label: 'Active', icon: CircleDot, tone: 'sage' },
@@ -81,6 +82,31 @@ export function ConfidenceBadge({ confidence }) {
       <Icon size={13} aria-hidden="true" />
       {details.label}
     </span>
+  )
+}
+
+/**
+ * Freshness marker for a profile: "Checked Oct 2026" while recent; once the check is
+ * over a year old (or was never recorded) a soft warning that links to the official site.
+ */
+export function FreshnessBadge({ lastVerified, officialUrl }) {
+  const freshness = freshnessOf(lastVerified)
+  if (!freshness.isStale) {
+    return (
+      <span className="badge badge-stone badge-quiet freshness-badge">
+        <CalendarCheck size={12} aria-hidden="true" />
+        {freshness.label}
+      </span>
+    )
+  }
+  const Wrapper = officialUrl ? 'a' : 'span'
+  const linkProps = officialUrl ? { href: officialUrl, target: '_blank', rel: 'noreferrer' } : {}
+  return (
+    <Wrapper className="badge badge-plum badge-quiet freshness-badge is-stale" title={freshness.label} {...linkProps}>
+      <History size={12} aria-hidden="true" />
+      May be outdated, check the official notice
+      {officialUrl && <ExternalLink size={10} aria-hidden="true" />}
+    </Wrapper>
   )
 }
 

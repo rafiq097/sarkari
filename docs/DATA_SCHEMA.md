@@ -47,7 +47,7 @@ Rules
 | risk | object | `{ overall, factors: [{ factor, level, note }] }` |
 | sources | Source[] | |
 | dataQuality | object | `{ confidence: high/medium/low, gaps: string[], notes }` |
-| lastVerified | date | |
+| lastVerified | `YYYY-MM-DD` or null | Required key. The day the profile was last checked against its sources (normally the latest `accessed` date in `sources`); `null` when never checked. The UI shows "Checked <Mon YYYY>", and a "May be outdated" badge with the official link when the date is null or older than 12 months. |
 
 ## Status
 ```

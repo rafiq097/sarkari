@@ -19,6 +19,8 @@ const warnings = []
 
 // Accepts YYYY, YYYY-MM or YYYY-MM-DD.
 const isoDatePattern = /^\d{4}(-\d{2}(-\d{2})?)?$/
+// Full calendar date only, used where a month or year alone is not precise enough.
+const fullDatePattern = /^\d{4}-\d{2}-\d{2}$/
 const levelValues = new Set(vocabulary.levels)
 
 /** Lists every JSON file under a directory, recursively. */
@@ -87,7 +89,7 @@ function validateRatings(exam) {
 function validateExam(exam, filePath) {
   const examId = exam.id ?? basename(filePath)
   if (exam.id !== basename(filePath, '.json')) fail(examId, 'id must equal file name')
-  for (const field of ['name', 'summary', 'organization', 'jurisdiction', 'sector', 'profileType', 'employmentType', 'lastVerified']) {
+  for (const field of ['name', 'summary', 'organization', 'jurisdiction', 'sector', 'profileType', 'employmentType']) {
     if (exam[field] == null || exam[field] === '') fail(examId, `missing ${field}`)
   }
   checkEnum(examId, 'jurisdiction', exam.jurisdiction, vocabulary.jurisdictions)
@@ -97,7 +99,9 @@ function validateExam(exam, filePath) {
   checkEnum(examId, 'employmentType', exam.employmentType, vocabulary.employmentTypes)
   for (const method of exam.recruitmentMethods ?? []) checkEnum(examId, 'recruitmentMethods', method, vocabulary.recruitmentMethods)
   for (const tag of exam.syllabusTags ?? []) checkEnum(examId, 'syllabusTags', tag, vocabulary.syllabusTags)
-  if (!isoDatePattern.test(exam.lastVerified ?? '')) fail(examId, 'lastVerified must be an ISO date')
+  // lastVerified must be present: a full YYYY-MM-DD date, or null when the profile was never checked.
+  if (exam.lastVerified === undefined) fail(examId, 'missing lastVerified (use null when unknown)')
+  else if (exam.lastVerified !== null && !fullDatePattern.test(exam.lastVerified)) fail(examId, 'lastVerified must be YYYY-MM-DD or null')
 
   const sources = exam.sources ?? []
   if (sources.length === 0) fail(examId, 'has no sources')
@@ -186,6 +190,7 @@ function toIndexRecord(exam, today) {
     confidence: exam.dataQuality?.confidence ?? 'low',
     sourceCount: (exam.sources ?? []).length,
     lastVerified: exam.lastVerified,
+    officialUrl: exam.officialLinks?.[0]?.url ?? exam.organization?.website ?? null,
   }
 }
 

@@ -620,3 +620,25 @@
   margin: 4px 0 14px;
   color: var(--text-muted);
 }
+
+/* Freshness marker: quiet when recent, a soft plum link once the last check is old. */
+.freshness-badge.is-stale {
+  /* Sits above the card's full-size link overlay so it stays clickable. */
+  position: relative;
+  z-index: 1;
+  white-space: normal;
+}
+
+a.freshness-badge:hover,
+a.freshness-badge:focus-visible {
+  text-decoration: underline;
+}
+
+.exam-card-checked {
+  display: flex;
+  margin-top: -2px;
+}
+
+.exam-card-checked .badge {
+  font-size: 0.68rem;
+}

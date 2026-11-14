@@ -5,7 +5,7 @@
  */
 import { Link } from 'react-router'
 import { Bookmark, BookmarkCheck, GitCompareArrows, Check, MapPin, CalendarClock, Share2 } from 'lucide-react'
-import { StatusBadge, LevelMeter, DifficultyScore } from './Badges.jsx'
+import { StatusBadge, LevelMeter, DifficultyScore, FreshnessBadge } from './Badges.jsx'
 import { VerdictBadge } from './MyVerdict.jsx'
 import { useSaved } from '../lib/saved.jsx'
 import { labelFor } from '../lib/data.js'
@@ -154,6 +154,9 @@ export function ExamCard({ exam }) {
           <LevelMeter level={exam.difficulty.competition} label="Competition" />
         </span>
       </div>
+      <p className="exam-card-checked">
+        <FreshnessBadge lastVerified={exam.lastVerified} officialUrl={exam.officialUrl} />
+      </p>
     </article>
   )
 }

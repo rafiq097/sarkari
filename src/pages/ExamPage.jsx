@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router'
 import { Zap, UserCheck, Route, IndianRupee, AlertTriangle } from 'lucide-react'
 import { Breadcrumbs, EmptyState, Tabs } from '../components/Common.jsx'
-import { StatusBadge, ConfidenceBadge, DifficultyScore } from '../components/Badges.jsx'
+import { StatusBadge, ConfidenceBadge, DifficultyScore, FreshnessBadge } from '../components/Badges.jsx'
 import { BookmarkButton, CompareButton, ShareButton } from '../components/ExamCard.jsx'
 import { OverviewTab } from '../components/profile/ProfileOverview.jsx'
 import { EligibilityTab } from '../components/profile/ProfileBasics.jsx'
@@ -94,6 +94,7 @@ export default function ExamPage() {
           <span className="badge badge-stone badge-quiet">{labelFor('sectors', exam.sector)}</span>
           <ConfidenceBadge confidence={exam.dataQuality?.confidence} />
           <DifficultyScore score={getIndexRecord(exam.id)?.difficultyScore} />
+          <FreshnessBadge lastVerified={exam.lastVerified} officialUrl={getIndexRecord(exam.id)?.officialUrl} />
         </div>
         {exam.abbreviation && <p className="profile-abbreviation">{exam.abbreviation}</p>}
         <h1>{exam.name}</h1>
