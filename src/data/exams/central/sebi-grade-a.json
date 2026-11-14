@@ -588,7 +588,35 @@
         "general-awareness",
         "interview-personality",
         "engineering-computer"
-      ]
+      ],
+      "pattern": {
+        "effectiveFrom": "2025",
+        "stage": "Phase I (online screening)",
+        "totalMinutes": 100,
+        "sectionSwitching": "locked",
+        "sections": [
+          {
+            "id": "paper-1",
+            "name": "Paper 1: General awareness, English, quantitative aptitude, reasoning",
+            "questions": null,
+            "marks": 100,
+            "minutes": 60,
+            "negativeFraction": 0.25
+          },
+          {
+            "id": "paper-2-it",
+            "name": "Paper 2: IT stream",
+            "questions": null,
+            "marks": 100,
+            "minutes": 40,
+            "negativeFraction": 0.25
+          }
+        ],
+        "notes": "Cut-offs: 30% in Paper 1, 40% in Paper 2 and 40% aggregate. The number of questions is not stated in the notice.",
+        "sources": [
+          "s3"
+        ]
+      }
     },
     {
       "id": "legal",

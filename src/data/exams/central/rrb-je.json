@@ -343,5 +343,25 @@
     ],
     "notes": "Vacancy total, pay and age from the CEN as reported."
   },
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-18",
+  "pattern": {
+    "effectiveFrom": "2025",
+    "stage": "CBT 1",
+    "totalMinutes": 90,
+    "sectionSwitching": "free",
+    "sections": [
+      {
+        "id": "cbt-1",
+        "name": "Mathematics, reasoning, general awareness, general science",
+        "questions": 100,
+        "marks": 100,
+        "minutes": 90,
+        "negativeFraction": 0.3333
+      }
+    ],
+    "notes": null,
+    "sources": [
+      "s1"
+    ]
+  }
 }

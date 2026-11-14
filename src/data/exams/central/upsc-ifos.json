@@ -772,5 +772,33 @@
     ],
     "notes": "Scheme, eligibility, optional rules and vacancies are from the 2026 notification; statistics from UPSC annual reports."
   },
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-18",
+  "pattern": {
+    "effectiveFrom": "2026",
+    "stage": "Preliminary Examination (CSE Prelims)",
+    "totalMinutes": 240,
+    "sectionSwitching": "locked",
+    "sections": [
+      {
+        "id": "gs-1",
+        "name": "General Studies Paper I",
+        "questions": null,
+        "marks": 200,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      },
+      {
+        "id": "csat",
+        "name": "General Studies Paper II (CSAT, qualifying)",
+        "questions": null,
+        "marks": 200,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      }
+    ],
+    "notes": "Same Preliminary Examination as the Civil Services Examination. Question counts are not recorded in this profile.",
+    "sources": [
+      "s1"
+    ]
+  }
 }

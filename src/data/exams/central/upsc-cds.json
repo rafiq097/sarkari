@@ -718,5 +718,41 @@
     ],
     "notes": "Vacancies, eligibility, scheme, SSB, pay and tenure from the CDS (II) 2026 notification."
   },
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-18",
+  "pattern": {
+    "effectiveFrom": "2026",
+    "stage": "Written examination (objective)",
+    "totalMinutes": 360,
+    "sectionSwitching": "locked",
+    "sections": [
+      {
+        "id": "english",
+        "name": "English",
+        "questions": null,
+        "marks": 100,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      },
+      {
+        "id": "general-knowledge",
+        "name": "General Knowledge",
+        "questions": null,
+        "marks": 100,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      },
+      {
+        "id": "mathematics",
+        "name": "Elementary Mathematics (IMA, INA, AFA only)",
+        "questions": null,
+        "marks": 100,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      }
+    ],
+    "notes": "OTA candidates take only English and General Knowledge (240 minutes). Question counts are not recorded in this profile.",
+    "sources": [
+      "s1"
+    ]
+  }
 }

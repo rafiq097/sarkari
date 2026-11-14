@@ -276,5 +276,25 @@
     ],
     "notes": "From secondary reports of the official notice."
   },
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-18",
+  "pattern": {
+    "effectiveFrom": "2026",
+    "stage": "Mains (professional knowledge)",
+    "totalMinutes": null,
+    "sectionSwitching": "free",
+    "sections": [
+      {
+        "id": "professional-knowledge",
+        "name": "Professional knowledge",
+        "questions": null,
+        "marks": null,
+        "minutes": null,
+        "negativeFraction": null
+      }
+    ],
+    "notes": "Question count, marks, duration and negative marking are not recorded in this profile.",
+    "sources": [
+      "s1"
+    ]
+  }
 }

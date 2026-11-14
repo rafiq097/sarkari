@@ -18,6 +18,7 @@ import './styles/profile.css'
 import './styles/tools.css'
 import './styles/profile-layout.css'
 import './styles/roadmap.css'
+import './styles/mock.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(

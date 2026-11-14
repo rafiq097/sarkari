@@ -1512,5 +1512,33 @@
     ],
     "notes": "Eligibility, scheme, syllabus, services and tie-breaking are taken from the CSE 2026 notification. Statistics are from UPSC annual reports."
   },
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-18",
+  "pattern": {
+    "effectiveFrom": "2026",
+    "stage": "Preliminary Examination",
+    "totalMinutes": 240,
+    "sectionSwitching": "locked",
+    "sections": [
+      {
+        "id": "gs-1",
+        "name": "General Studies Paper I",
+        "questions": 100,
+        "marks": 200,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      },
+      {
+        "id": "csat",
+        "name": "General Studies Paper II (CSAT, qualifying)",
+        "questions": 80,
+        "marks": 200,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      }
+    ],
+    "notes": "The two papers are held in separate sessions on the same day. The question count is the usual pattern; the notification fixes marks and duration.",
+    "sources": [
+      "s1"
+    ]
+  }
 }

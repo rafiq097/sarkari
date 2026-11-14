@@ -11,6 +11,7 @@ const HomePage = lazy(() => import('./pages/HomePage.jsx'))
 const DirectoryPage = lazy(() => import('./pages/DirectoryPage.jsx'))
 const RegionPage = lazy(() => import('./pages/RegionPage.jsx'))
 const ExamPage = lazy(() => import('./pages/ExamPage.jsx'))
+const MockTestPage = lazy(() => import('./pages/MockTestPage.jsx'))
 const ComparePage = lazy(() => import('./pages/ComparePage.jsx'))
 const EligibilityPage = lazy(() => import('./pages/EligibilityPage.jsx'))
 const SyllabusPage = lazy(() => import('./pages/SyllabusPage.jsx'))
@@ -43,6 +44,7 @@ export default function App() {
               <Route index element={<HomePage />} />
               <Route path="exams" element={<DirectoryPage />} />
               <Route path="exams/:examId" element={<ExamPage />} />
+              <Route path="exams/:examId/mock" element={<MockTestPage />} />
               <Route path="central" element={<RegionPage jurisdiction="central" />} />
               <Route path="andhra-pradesh" element={<RegionPage jurisdiction="andhra-pradesh" />} />
               <Route path="telangana" element={<RegionPage jurisdiction="telangana" />} />

@@ -1,0 +1,410 @@
+/*
+ * Mock test styles: start screen, the running test (sticky timer bar, question,
+ * options, palette, submit confirmation) and the result review. Loaded last by main.jsx.
+ */
+
+.mock-intro,
+.mock-result {
+  max-width: 980px;
+}
+
+.mock-start {
+  margin-top: 22px;
+}
+
+/* Running test: timer bar pinned under the site header. */
+.mock-bar {
+  position: sticky;
+  /* Height of the sticky site header. */
+  top: 64px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: 0 calc(var(--gutter) * -1) 20px;
+  padding: 10px var(--gutter);
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.mock-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.mock-timer.is-low {
+  color: var(--brick);
+  background: var(--brick-soft);
+}
+
+.mock-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+}
+
+.mock-sections button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 260px;
+  padding: 5px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: none;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mock-sections button.is-selected {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.mock-sections button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mock-submit {
+  margin-left: auto;
+}
+
+.mock-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 20px;
+  align-items: start;
+}
+
+.mock-question,
+.mock-palette,
+.mock-score {
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+}
+
+.mock-question-number {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font: 500 0.74rem var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.mock-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--plum);
+}
+
+.mock-question-text {
+  margin: 12px 0 18px;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.mock-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mock-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.15s var(--ease), background 0.15s var(--ease);
+}
+
+.mock-option:hover {
+  background: var(--surface-2);
+}
+
+.mock-option.is-chosen {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* The real radio stays for keyboard and screen readers; the letter badge is what is seen. */
+.mock-option input {
+  position: absolute;
+  opacity: 0;
+}
+
+.mock-option:has(input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.mock-option-letter {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--surface-3);
+  font: 600 0.78rem var(--font-mono);
+}
+
+.mock-option.is-chosen .mock-option-letter {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.mock-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.mock-actions-gap {
+  flex: 1;
+}
+
+/* Palette */
+.mock-palette {
+  position: sticky;
+  /* Clears the site header plus the timer bar. */
+  top: 132px;
+}
+
+.mock-palette h3 {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.mock-palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mock-palette-button {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: none;
+  color: var(--text-muted);
+  font: 500 0.8rem var(--font-mono);
+}
+
+.mock-palette-button.is-current {
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
+}
+
+.mock-palette-button.is-seen,
+.mock-legend-dot.is-seen {
+  border-color: var(--brick);
+  color: var(--brick);
+}
+
+.mock-palette-button.is-answered,
+.mock-legend-dot.is-answered {
+  border-color: transparent;
+  background: var(--sage);
+  color: var(--accent-ink);
+}
+
+.mock-palette-button.is-marked,
+.mock-legend-dot.is-marked {
+  border-color: transparent;
+  background: var(--plum);
+  color: var(--accent-ink);
+}
+
+/* Answered and marked: sage fill with a plum ring. */
+.mock-palette-button.is-answered-marked,
+.mock-legend-dot.is-answered-marked {
+  border: 3px solid var(--plum);
+  background: var(--sage);
+  color: var(--accent-ink);
+}
+
+.mock-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.mock-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mock-legend-dot {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+}
+
+/* Submit confirmation */
+.mock-confirm-backdrop {
+  position: fixed;
+  inset: 0;
+  /* Above the header, menus and offline notice. */
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #000000b3;
+}
+
+.mock-confirm {
+  width: min(440px, 100%);
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-large);
+  animation: page-in 0.2s var(--ease);
+}
+
+.mock-confirm-counts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.mock-confirm-counts dd {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.mock-confirm-counts dt {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.mock-confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+/* Result */
+.mock-score-value {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.mock-score-value span {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.mock-review-section h3 {
+  margin: 18px 0 8px;
+  font-size: 1rem;
+}
+
+.mock-review {
+  margin-bottom: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.mock-review summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.mock-review summary::-webkit-details-marker {
+  display: none;
+}
+
+.mock-review summary .faint {
+  margin-left: auto;
+}
+
+.mock-review.tone-sage summary svg { color: var(--sage); }
+.mock-review.tone-brick summary svg { color: var(--brick); }
+.mock-review.tone-stone summary svg { color: var(--stone); }
+
+.mock-review-number {
+  font-weight: 600;
+}
+
+.mock-review-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 14px 14px;
+  border-top: 1px solid var(--line);
+}
+
+.mock-origin {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.84rem;
+}
+
+@media (max-width: 820px) {
+  .mock-body {
+    grid-template-columns: 1fr;
+  }
+
+  .mock-palette {
+    position: static;
+  }
+
+  .mock-submit {
+    margin-left: 0;
+  }
+}
+
+/* Keeps "Not recorded" and "60 min" on one line in the pattern table. */
+.mock-intro .data-table .numeric {
+  white-space: nowrap;
+}

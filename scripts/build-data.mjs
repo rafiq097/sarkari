@@ -4,7 +4,7 @@
  * src/data/generated/exam-index.json and src/data/generated/source-index.json.
  * Run with `npm run data` (also runs before dev and build).
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync } from 'node:fs'
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync, existsSync } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { difficultyScore } from '../src/lib/difficulty.js'
@@ -12,6 +12,7 @@ import { applyVariant, variantOverrideKeys } from '../src/lib/variants.js'
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..')
 const examsDirectory = join(projectRoot, 'src', 'data', 'exams')
+const mocksDirectory = join(projectRoot, 'src', 'data', 'mocks')
 const generatedDirectory = join(projectRoot, 'src', 'data', 'generated')
 const vocabulary = JSON.parse(readFileSync(join(projectRoot, 'src', 'data', 'vocabulary.json'), 'utf8'))
 
@@ -27,6 +28,9 @@ const levelValues = new Set(vocabulary.levels)
 const variantIdPattern = /^[a-z0-9]+(-[a-z0-9]+)*$/
 // Keys every variant has besides its overrides.
 const variantIdentityKeys = ['id', 'name']
+const sectionSwitchingValues = ['locked', 'free']
+// A multiple-choice question needs at least this many options.
+const minimumOptionCount = 2
 
 /** Lists every JSON file under a directory, recursively. */
 function listJsonFiles(directory) {
@@ -90,6 +94,86 @@ function validateRatings(exam) {
   if (exam.risk?.overall && !levelValues.has(exam.risk.overall)) fail(exam.id, 'risk.overall must be low/medium/high')
 }
 
+/** True for null or a number above zero (pattern counts, marks and minutes). */
+function isNullOrPositive(value) {
+  return value === null || (typeof value === 'number' && value > 0)
+}
+
+/**
+ * Validates an exam pattern block (used by the mock test engine). Every value may be
+ * null when unknown, but the keys must be present so a missing value is a decision.
+ */
+function validatePattern(examId, label, pattern, knownSourceIds) {
+  if (pattern === undefined) return
+  if (pattern.effectiveFrom === undefined) fail(examId, `${label} is missing effectiveFrom (use null when unknown)`)
+  else if (pattern.effectiveFrom !== null && !isoDatePattern.test(pattern.effectiveFrom)) fail(examId, `${label} effectiveFrom must be an ISO date or null`)
+  if (!pattern.stage) fail(examId, `${label} is missing stage`)
+  if (!isNullOrPositive(pattern.totalMinutes)) fail(examId, `${label} totalMinutes must be a positive number or null`)
+  if (pattern.sectionSwitching !== null && !sectionSwitchingValues.includes(pattern.sectionSwitching)) fail(examId, `${label} sectionSwitching must be locked, free or null`)
+  checkSourceReferences(examId, label, pattern.sources, knownSourceIds)
+  if (!Array.isArray(pattern.sections) || pattern.sections.length === 0) return fail(examId, `${label} needs at least one section`)
+  const seenSectionIds = new Set()
+  for (const section of pattern.sections) {
+    if (!variantIdPattern.test(section.id ?? '')) fail(examId, `${label} section needs a kebab-case id`)
+    if (seenSectionIds.has(section.id)) fail(examId, `${label} has duplicate section id ${section.id}`)
+    seenSectionIds.add(section.id)
+    if (!section.name) fail(examId, `${label} section ${section.id} is missing name`)
+    for (const key of ['questions', 'marks', 'minutes']) {
+      if (!isNullOrPositive(section[key])) fail(examId, `${label} section ${section.id} ${key} must be a positive number or null`)
+    }
+    const negative = section.negativeFraction
+    if (negative !== null && !(typeof negative === 'number' && negative >= 0 && negative <= 1)) fail(examId, `${label} section ${section.id} negativeFraction must be 0 to 1 or null`)
+  }
+}
+
+/** Problems with one mock question; `sectionIds` are the pattern sections it may belong to. */
+function mockQuestionProblems(question, sectionIds) {
+  const found = []
+  if (!question.id || !question.text || !question.explanation) found.push('needs id, text and explanation')
+  if (!sectionIds.has(question.section)) found.push(`section "${question.section}" is not in the exam pattern`)
+  if (!Array.isArray(question.options) || question.options.length < minimumOptionCount) found.push(`needs at least ${minimumOptionCount} options`)
+  else if (!Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length) found.push('answer must be the index of one of its options')
+  if (typeof question.verified !== 'boolean') found.push('verified must be true or false')
+  if (question.source !== null && !/^https?:\/\//.test(question.source ?? '')) found.push('source must be a URL or null')
+  // A verified question must say where it came from.
+  if (question.verified && (!question.source || !question.year)) found.push('a verified question needs source and year')
+  return found
+}
+
+/**
+ * Validates the question sets in src/data/mocks/<examId>/. Each set must belong to an
+ * exam (and stream) that has a pattern block, and each question to one of its sections.
+ */
+function validateMockSets(examsById) {
+  if (!existsSync(mocksDirectory)) return
+  for (const filePath of listJsonFiles(mocksDirectory)) {
+    const mockSet = JSON.parse(readFileSync(filePath, 'utf8'))
+    const folderName = basename(dirname(filePath))
+    const label = `mock set ${folderName}/${basename(filePath)}`
+    const exam = examsById.get(folderName)
+    if (!exam || mockSet.examId !== folderName) {
+      fail(folderName, `${label}: folder name and examId must match an exam profile`)
+      continue
+    }
+    if (mockSet.variant && !(exam.variants ?? []).some((variant) => variant.id === mockSet.variant)) fail(exam.id, `${label}: unknown variant "${mockSet.variant}"`)
+    const pattern = applyVariant(exam, mockSet.variant).pattern
+    if (!pattern) {
+      fail(exam.id, `${label}: the exam${mockSet.variant ? ' variant' : ''} has no pattern block`)
+      continue
+    }
+    if (typeof mockSet.isSample !== 'boolean') fail(exam.id, `${label}: isSample must be true or false`)
+    const sectionIds = new Set(pattern.sections.map((section) => section.id))
+    const seenQuestionIds = new Set()
+    for (const question of mockSet.questions ?? []) {
+      if (seenQuestionIds.has(question.id)) fail(exam.id, `${label}: duplicate question id ${question.id}`)
+      seenQuestionIds.add(question.id)
+      for (const problem of mockQuestionProblems(question, sectionIds)) fail(exam.id, `${label} question ${question.id}: ${problem}`)
+      // Sample sets must never pass as real: none of their questions may be marked verified.
+      if (mockSet.isSample && question.verified) fail(exam.id, `${label} question ${question.id}: a sample set cannot hold verified questions`)
+    }
+  }
+}
+
 /**
  * Validates the stream variants of a profile: unique kebab-case ids, a name, only the
  * allowed override fields, and that each merged variant still passes the same checks
@@ -112,6 +196,7 @@ function validateVariants(exam, knownSourceIds) {
     }
     const merged = applyVariant(exam, variant.id)
     validateEligibilityRules({ ...merged, id: `${exam.id} ${label}` })
+    validatePattern(exam.id, `${label} pattern`, variant.pattern, knownSourceIds)
     for (const tag of merged.syllabusTags ?? []) checkEnum(exam.id, `${label} syllabusTags`, tag, vocabulary.syllabusTags)
     for (const section of ['eligibility', 'selection', 'syllabus']) checkSourceReferences(exam.id, `${label} ${section}`, merged[section]?.sources, knownSourceIds)
   }
@@ -149,6 +234,7 @@ function validateExam(exam, filePath) {
   validateEligibilityRules(exam)
   validateRatings(exam)
   validateVariants(exam, knownSourceIds)
+  validatePattern(examId, 'pattern', exam.pattern, knownSourceIds)
   for (const section of ['eligibility', 'selection', 'syllabus', 'salary', 'career', 'workLife', 'rankAndAllocation', 'guide']) {
     checkSourceReferences(examId, section, exam[section]?.sources, knownSourceIds)
   }
@@ -261,6 +347,8 @@ for (const filePath of listJsonFiles(examsDirectory)) {
   validateExam(exam, filePath)
   exams.push(exam)
 }
+
+validateMockSets(new Map(exams.map((exam) => [exam.id, exam])))
 
 mkdirSync(generatedDirectory, { recursive: true })
 const examIndex = exams.map((exam) => toIndexRecord(exam, today)).sort((a, b) => a.name.localeCompare(b.name))

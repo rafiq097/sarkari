@@ -318,5 +318,25 @@
     ],
     "notes": "From a secondary report of UPSC notices."
   },
-  "lastVerified": "2026-10-18"
+  "lastVerified": "2026-10-18",
+  "pattern": {
+    "effectiveFrom": "2026",
+    "stage": "Recruitment test (objective, offline)",
+    "totalMinutes": 120,
+    "sectionSwitching": "free",
+    "sections": [
+      {
+        "id": "recruitment-test",
+        "name": "General abilities, labour laws, accounting, social security and current affairs",
+        "questions": 120,
+        "marks": 300,
+        "minutes": 120,
+        "negativeFraction": 0.33
+      }
+    ],
+    "notes": "Pattern from a secondary source.",
+    "sources": [
+      "s1"
+    ]
+  }
 }

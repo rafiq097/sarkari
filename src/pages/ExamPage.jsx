@@ -7,7 +7,7 @@
  */
 import { useEffect } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router'
-import { Zap, UserCheck, Route, IndianRupee, AlertTriangle } from 'lucide-react'
+import { Zap, UserCheck, Route, IndianRupee, AlertTriangle, PencilLine } from 'lucide-react'
 import { Breadcrumbs, EmptyState, SegmentedFilter, Tabs } from '../components/Common.jsx'
 import { StatusBadge, ConfidenceBadge, DifficultyScore, FreshnessBadge } from '../components/Badges.jsx'
 import { BookmarkButton, CompareButton, ShareButton } from '../components/ExamCard.jsx'
@@ -18,6 +18,7 @@ import { ExamSyllabusTab, PayCareerTab } from '../components/profile/ProfileTabs
 import { useProfile, labelFor, jurisdictionRoutes, getIndexRecord } from '../lib/data.js'
 import { resolveExamTab } from '../lib/examTabs.js'
 import { applyVariant } from '../lib/variants.js'
+import { hasMockSets } from '../lib/mockData.js'
 import { useDocumentTitle } from '../lib/useDocumentTitle.js'
 
 // Ids match examTabIds in lib/examTabs.js. render gets (exam, openTab, requestedSection).
@@ -118,6 +119,13 @@ export default function ExamPage() {
           <CompareButton examId={exam.id} />
           <ShareButton title={exam.abbreviation || exam.name} />
           {!isHistorical && <CalendarButton exam={exam} />}
+          {/* Only exams (or streams) with a recorded paper pattern and a question set get a mock test. */}
+          {exam.pattern && hasMockSets(exam.id) && (
+            <Link to={`/exams/${exam.id}/mock${exam.activeVariant ? `?variant=${exam.activeVariant.id}` : ''}`} className="icon-button" title="Practice in the shape of the real paper">
+              <PencilLine size={16} aria-hidden="true" />
+              <span>Mock test</span>
+            </Link>
+          )}
         </div>
         {isHistorical && (
           <div className="callout callout-brick">

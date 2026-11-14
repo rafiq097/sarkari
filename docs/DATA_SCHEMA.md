@@ -50,6 +50,7 @@ Rules
 | lastVerified | `YYYY-MM-DD` or null | Required key. The day the profile was last checked against its sources (normally the latest `accessed` date in `sources`); `null` when never checked. The UI shows "Checked <Mon YYYY>", and a "May be outdated" badge with the official link when the date is null or older than 12 months. |
 
 | variants | Variant[] | optional; see Variants. Omit when the exam has no streams |
+| pattern | object | optional; see Pattern. Paper pattern used by the mock test engine |
 
 ## Variants (optional)
 For exams run in streams with different rules (for example SEBI Grade A: General, IT, Legal).
@@ -66,6 +67,38 @@ For exams run in streams with different rules (for example SEBI Grade A: General
 - Top-level fields describe what all streams share, or the most common stream. Tools that are not stream-aware (directory filters, compare) read the top-level fields.
 - The validator checks every merged variant like a normal profile. The index stores each variant's merged `eligibilityRules` and `syllabusTags` for the eligibility checker and the syllabus overlap tool.
 - If only some streams are written as variants, say so in `dataQuality.gaps`.
+
+## Pattern (optional, for the mock test engine)
+The shape of one objective paper or stage. Copy values only from the notice; anything unknown is `null`.
+```
+"pattern": { "effectiveFrom": "2025",
+             "stage": "Phase I (online screening)",
+             "totalMinutes": 100,
+             "sectionSwitching": "locked | free",
+             "sections": [ { "id": "paper-1", "name": "Paper 1: ...",
+                             "questions": null, "marks": 100, "minutes": 60,
+                             "negativeFraction": 0.25 } ],
+             "notes": "", "sources": ["s3"] }
+```
+- `effectiveFrom`: ISO date or year from which this pattern applies, or `null`. When the pattern changes, update the block and this value.
+- `sectionSwitching`: `locked` means sections run in order, each on its own timer, with no return; `free` means one timer and free movement.
+- `negativeFraction`: share of the question's marks deducted for a wrong answer (0.25 = one fourth), `0` for none, `null` when unknown.
+- For an exam with streams, put the block inside the variant it belongs to.
+- The engine never invents values: without minutes the mock is untimed, without marks each question counts 1, without `negativeFraction` nothing is deducted. It says so on the start screen.
+
+## Mock question sets
+`src/data/mocks/<examId>/<name>.json`. A "Mock test" entry shows only for exams that have a `pattern` block and a folder here.
+```
+{ "examId": "sebi-grade-a", "variant": "it", "title": "...", "isSample": false,
+  "questions": [ { "id": "2024-p2-q1", "section": "paper-2-it",
+                   "text": "...", "options": ["...", "..."], "answer": 0,
+                   "explanation": "short reason",
+                   "source": "https://... (official paper or answer key)", "year": 2024,
+                   "verified": true } ] }
+```
+- `variant`: variant id, or `null` for exams without streams. `section`: a section id of the pattern. `answer`: index into `options`.
+- `verified: true` needs `source` and `year`. Sample sets (`isSample: true`) hold placeholders only and can never be verified.
+- Once any set with `isSample: false` exists for an exam, the sample set is no longer used.
 
 ## Status
 ```
