@@ -1,7 +1,7 @@
 /**
- * Exam profile tabs with numbers: Cutoffs and selection (official cutoffs, vacancy and
- * selection statistics with transparent rate formulas) and Salary and career (pay facts,
- * indicative in-hand estimate, progression, benefits). Rendered by pages/ExamPage.jsx.
+ * Exam profile blocks with numbers: Cutoffs and selection (official cutoffs, vacancy and
+ * selection statistics with transparent rate formulas), Pay (pay facts, indicative in-hand
+ * estimate) and Career (progression, benefits). Composed into tabs by ProfileTabs.jsx.
  */
 import { useState } from 'react'
 import { Link } from 'react-router'
@@ -210,10 +210,9 @@ function SalaryEstimate({ salary }) {
   )
 }
 
-/** Salary and career tab. */
-export function SalaryTab({ exam }) {
+/** Pay block: official pay facts, the in-hand estimate and post-specific allowances. */
+export function PaySection({ exam }) {
   const salary = exam.salary ?? {}
-  const career = exam.career ?? {}
   return (
     <div className="tab-body">
       <BlockTitle sourceIds={salary.sources} sources={exam.sources}>
@@ -249,7 +248,18 @@ export function SalaryTab({ exam }) {
           </dl>
         </>
       )}
+      <p className="faint small spaced">
+        See all pay rules in the <Link to="/salary" className="text-link">salary explorer</Link>.
+      </p>
+    </div>
+  )
+}
 
+/** Career block: promotion ladder, what promotions depend on, benefits and perks. */
+export function CareerSection({ exam }) {
+  const career = exam.career ?? {}
+  return (
+    <div className="tab-body">
       <BlockTitle sourceIds={career.sources} sources={exam.sources}>
         Career progression
       </BlockTitle>
@@ -303,9 +313,6 @@ export function SalaryTab({ exam }) {
           </div>
         </>
       )}
-      <p className="faint small spaced">
-        See all pay rules in the <Link to="/salary" className="text-link">salary explorer</Link>.
-      </p>
     </div>
   )
 }

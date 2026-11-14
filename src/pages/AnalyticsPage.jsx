@@ -22,7 +22,7 @@ function ExamAnalytics({ examId }) {
   return (
     <div>
       <h3 className="block-title">
-        <Link to={`/exams/${exam.id}?tab=cutoffs`} className="text-link">
+        <Link to={`/exams/${exam.id}?tab=exam&section=cutoffs`} className="text-link">
           {exam.abbreviation || exam.name}
         </Link>{' '}
         <span className="faint small">{exam.name}</span>

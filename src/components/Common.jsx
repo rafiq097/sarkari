@@ -1,12 +1,12 @@
 /**
  * General building blocks: breadcrumbs, section headings, empty states, scroll reveal,
- * tabs, chip filters, single-choice pill filters and the "Show all"
- * toggle. Used by most pages.
+ * tabs, chip filters, single-choice pill filters, the "Show all"
+ * toggle and collapsed sections (Fold). Used by most pages.
  */
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import { useDocumentTitle } from '../lib/useDocumentTitle.js'
-import { ChevronRight, SearchX } from 'lucide-react'
+import { ChevronDown, ChevronRight, SearchX } from 'lucide-react'
 
 /** Breadcrumb trail; the last item is the current page. */
 export function Breadcrumbs({ items }) {
@@ -168,5 +168,29 @@ export function ShowAllToggle({ isExpanded, total, noun, onToggle }) {
     <button type="button" className="show-all" onClick={onToggle} aria-expanded={isExpanded}>
       {isExpanded ? 'Show fewer' : `Show all ${total} ${noun}`}
     </button>
+  )
+}
+
+/**
+ * Collapsed section: a heading row that opens its content on demand, so a tab starts
+ * short. The content is only rendered while open. `folds` comes from lib/useFolds.js.
+ */
+export function Fold({ id, title, hint, folds, children }) {
+  const isOpen = folds.isOpen(id)
+  return (
+    <section className={`fold ${isOpen ? 'is-open' : ''}`} id={`section-${id}`}>
+      <h3 className="fold-heading">
+        <button type="button" aria-expanded={isOpen} aria-controls={`fold-body-${id}`} onClick={() => folds.toggle(id)}>
+          <span className="fold-title">{title}</span>
+          {hint && <span className="fold-hint">{hint}</span>}
+          <ChevronDown size={18} aria-hidden="true" className="fold-chevron" />
+        </button>
+      </h3>
+      {isOpen && (
+        <div className="fold-body" id={`fold-body-${id}`}>
+          {children}
+        </div>
+      )}
+    </section>
   )
 }

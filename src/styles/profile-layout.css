@@ -1,6 +1,6 @@
 /*
  * Scannable profile layout and newer page pieces: sticky tabs, glance tiles, post cards,
- * stage stepper, My profile markers, Your plan, Quick look and calendar countdowns.
+ * stage stepper, My profile markers, Your plan, the exam Overview, collapsed sections and calendar countdowns.
  * Loaded last by main.jsx so it can refine the earlier page styles.
  */
 
@@ -277,37 +277,6 @@ strong.figure {
   padding: 1px 7px 1px 5px;
 }
 
-.for-you {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 12px;
-  padding: 14px 18px;
-  border-radius: var(--radius-large);
-  border: 1px solid var(--line-strong);
-  background: var(--bg-raised);
-}
-
-.for-you.tone-sage { border-color: #7fd4a366; }
-.for-you.tone-sage > svg { color: var(--sage); }
-.for-you.tone-accent { border-color: #ffd21f55; }
-.for-you.tone-accent > svg { color: var(--accent); }
-.for-you.tone-brick { border-color: #ff7d5c66; }
-.for-you.tone-brick > svg { color: var(--brick); }
-
-.for-you-empty {
-  align-items: center;
-  color: var(--text-muted);
-}
-
-.for-you-empty > svg {
-  color: var(--accent);
-}
-
-.for-you-title {
-  font-weight: 600;
-  color: var(--text);
-}
-
 .personal-strip {
   display: flex;
   align-items: center;
@@ -471,7 +440,7 @@ strong.figure {
   }
 }
 
-/* Quick look tab: four big answers, selection steps, top posts. */
+/* Overview tab: five big answers, then collapsed sections. */
 .quick-look {
   display: flex;
   flex-direction: column;
@@ -522,7 +491,7 @@ strong.figure {
   font-size: 0.95rem;
 }
 
-/* Long status notes are cut to three lines; the full text is on the Overview tab. */
+/* Long notes are cut to three lines; the full text is in the collapsed sections. */
 .quick-detail {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -576,57 +545,6 @@ strong.figure {
   color: var(--accent);
 }
 
-.quick-steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 4px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Each stage pill opens the Roadmap tab at that stage. */
-.quick-step-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 10px 7px 7px;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  background: var(--surface-2);
-  color: var(--text);
-  font-size: 0.86rem;
-  text-align: left;
-  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
-}
-
-.quick-step-button:hover {
-  border-color: var(--accent);
-  background: var(--surface-3);
-}
-
-.quick-step-go {
-  color: var(--text-faint);
-  transition: color 0.2s var(--ease), transform 0.2s var(--ease);
-}
-
-.quick-step-button:hover .quick-step-go {
-  color: var(--accent);
-  transform: translateX(2px);
-}
-
-.quick-step-number {
-  display: grid;
-  place-items: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-size: 0.74rem;
-  font-weight: 700;
-}
-
 .quick-posts {
   display: flex;
   flex-wrap: wrap;
@@ -642,11 +560,6 @@ strong.figure {
   border-radius: 999px;
   font-size: 0.85rem;
   color: var(--text-soft);
-}
-
-.quick-posts .quick-posts-more {
-  border-style: dashed;
-  color: var(--text-muted);
 }
 
 /* Space between a region callout and the empty-state box below it. */
@@ -675,4 +588,92 @@ strong.figure {
   background: var(--accent-soft);
   color: var(--accent);
   font-weight: 600;
+}
+
+/* The fifth answer card spans both columns so the grid has no empty cell. */
+.quick-card.is-wide {
+  grid-column: 1 / -1;
+}
+
+/* Stack of an open block and its collapsed sections inside a tab. */
+.tab-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 980px;
+}
+
+/* Collapsed section (Fold): a heading row that opens its content on demand. */
+.fold {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  /* Clears the sticky site header and tab bar when scrolled to. */
+  scroll-margin-top: 124px;
+  transition: border-color 0.2s var(--ease);
+}
+
+.fold.is-open {
+  border-color: var(--line-strong);
+}
+
+.fold-heading {
+  margin: 0;
+  font: inherit;
+}
+
+.fold-heading button {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  width: 100%;
+  padding: 16px 20px;
+  background: none;
+  border: 0;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fold-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+
+.fold-hint {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.fold-chevron {
+  align-self: center;
+  margin-left: auto;
+  color: var(--text-faint);
+  transition: transform 0.25s var(--ease), color 0.2s var(--ease);
+}
+
+.fold-heading button:hover .fold-chevron,
+.fold-heading button:focus-visible .fold-chevron {
+  color: var(--accent);
+}
+
+.fold.is-open .fold-chevron {
+  transform: rotate(180deg);
+}
+
+.fold-body {
+  padding: 4px 20px 20px;
+  animation: page-in 0.25s var(--ease);
+}
+
+@media (max-width: 640px) {
+  .fold-heading button {
+    padding: 14px 16px;
+  }
+
+  .fold-body {
+    padding: 2px 16px 16px;
+  }
 }

@@ -64,7 +64,7 @@ export default function SyllabusPage() {
                 <span className="faint small">% similar</span>
               </div>
               <div>
-                <Link to={`/exams/${exam.id}?tab=syllabus`} className="result-name">
+                <Link to={`/exams/${exam.id}?tab=exam&section=syllabus`} className="result-name">
                   {exam.abbreviation && <strong>{exam.abbreviation} </strong>}
                   {exam.name}
                 </Link>

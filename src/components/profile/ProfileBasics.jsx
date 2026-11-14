@@ -1,7 +1,7 @@
 /**
- * Exam profile tabs for identity and eligibility: Overview (organization, posts,
- * official timeline) and Eligibility (age, education, attempts, reservation).
- * Rendered by pages/ExamPage.jsx.
+ * Exam profile blocks for identity and eligibility: About this route (organization,
+ * status), the official timeline, the post cards and the Eligibility tab (age, education,
+ * attempts, reservation). Used by ProfileOverview.jsx, ProfileTabs.jsx and pages/ExamPage.jsx.
  */
 import { useState } from 'react'
 import { Link } from 'react-router'
@@ -25,7 +25,7 @@ export function BlockTitle({ children, sourceIds, sources }) {
 }
 
 /** Official dated events grouped by cycle. */
-function Timeline({ cycles, sources }) {
+export function Timeline({ cycles, sources }) {
   if (!cycles?.length) return <Unknown>No dated official events recorded for this route.</Unknown>
   return (
     <div className="timeline">
@@ -78,7 +78,7 @@ function AtAGlance({ exam }) {
 }
 
 /** Posts grouped by service group, shown as cards; long lists start collapsed. */
-function PostCards({ posts }) {
+export function PostCards({ posts }) {
   const [isExpanded, setIsExpanded] = useState(false)
   const visiblePosts = isExpanded ? posts : posts.slice(0, collapsedPostCount)
   const groups = new Map()
@@ -111,8 +111,8 @@ function PostCards({ posts }) {
   )
 }
 
-/** Overview tab. */
-export function OverviewTab({ exam }) {
+/** About this route: summary, headline tiles, recruiter facts, official links and status. */
+export function AboutRoute({ exam }) {
   return (
     <div className="tab-body">
       <p className="profile-summary">
@@ -164,15 +164,6 @@ export function OverviewTab({ exam }) {
           <Rich text={exam.status.note} />
         </span>
       </p>
-      <BlockTitle>Official timeline</BlockTitle>
-      <Timeline cycles={exam.status.cycles} sources={exam.sources} />
-
-      <BlockTitle>Posts filled through this route</BlockTitle>
-      {exam.posts?.length ? (
-        <PostCards posts={exam.posts} />
-      ) : (
-        <Unknown>Post list not recorded.</Unknown>
-      )}
     </div>
   )
 }
@@ -302,8 +293,8 @@ export function EligibilityTab({ exam }) {
           <ul className="plain-list">
             {eligibility.other.map((item) => (
               <li key={item}>
-                  <Rich text={item} />
-                </li>
+                <Rich text={item} />
+              </li>
             ))}
           </ul>
         </>

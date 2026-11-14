@@ -1,7 +1,7 @@
 /**
- * Exam profile tabs for how selection works: Guide (long-form explainer for big
+ * Exam profile blocks for how selection works: Guide (long-form explainer for big
  * exams), Roadmap (interactive stages, papers, merit and joining) and Syllabus (official topics plus
- * clearly labelled preparation notes). Rendered by pages/ExamPage.jsx.
+ * clearly labelled preparation notes). Composed into a tab by ProfileTabs.jsx.
  */
 import { ExternalLink, Lightbulb, BookOpen, CheckCircle2 } from 'lucide-react'
 import { Rich } from '../Rich.jsx'
@@ -109,7 +109,7 @@ export function GuideTab({ exam }) {
   )
 }
 
-/** Roadmap tab: the interactive stage-by-stage roadmap, then exam-wide rules. */
+/** Roadmap block: the interactive stage-by-stage roadmap, then exam-wide rules. */
 export function SelectionTab({ exam }) {
   const selection = exam.selection ?? {}
   return (

@@ -182,7 +182,7 @@ export default function SalaryPage() {
               return (
                 <tr key={exam.id}>
                   <td>
-                    <Link to={`/exams/${exam.id}?tab=salary`} className="text-link">
+                    <Link to={`/exams/${exam.id}?tab=pay`} className="text-link">
                       {exam.abbreviation || exam.name}
                     </Link>
                   </td>

@@ -1,6 +1,6 @@
 /**
  * Syllabus overlap between exams, from their syllabus subject tags. Used by the syllabus
- * overlap page, the plan (prepare-together groups) and the exam page Quick look.
+ * overlap page, the plan (prepare-together groups) and the exam page (Exam and syllabus tab).
  */
 import { examIndex } from './data.js'
 

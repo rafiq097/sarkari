@@ -57,7 +57,7 @@ export default function SourcesPage() {
                   {source.usedBy.map((user, position) => (
                     <span key={user.id}>
                       {position > 0 && ', '}
-                      <Link to={`/exams/${user.id}?tab=sources`} className="text-link">
+                      <Link to={`/exams/${user.id}?tab=overview&section=sources`} className="text-link">
                         {user.name}
                       </Link>
                     </span>

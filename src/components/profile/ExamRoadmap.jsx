@@ -3,7 +3,7 @@
  * track, Previous / Next controls (also arrow keys and swipe), and a detail panel for the
  * chosen step with its papers, marks, merit share or joining notes. Steps come from
  * lib/roadmap.js. The chosen step is kept in the URL (?step=) so it can be linked or opened
- * from Quick look. Rendered at the top of the Roadmap tab (ProfileExam.jsx).
+ * from another page. Rendered at the top of the "Exam and syllabus" tab (ProfileExam.jsx).
  */
 import { useEffect, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router'

@@ -67,7 +67,7 @@ export function firstSentence(text) {
 
 /**
  * Headline pay for a profile: starting basic when known, else the recruiter's stated monthly
- * gross (for example a fixed package), else a plain note. Used by cards and Quick look.
+ * gross (for example a fixed package), else a plain note. Used by cards and the exam page Overview.
  */
 export function payHeadline(exam) {
   if (exam.employmentType === 'eligibility-only') return { label: 'Pay', value: null, note: 'No salary' }
