@@ -96,15 +96,28 @@ export function Reveal({ children, as: Tag = 'div', className = '', delay = 0 })
   )
 }
 
-/** Accessible tab list; the parent owns the selected tab. */
+/**
+ * Accessible tab list; the parent owns the selected tab. On phones the row scrolls
+ * sideways, so the selected tab is scrolled into view inside the row (never the page).
+ */
 export function Tabs({ tabs, selected, onSelect, label }) {
+  const listRef = useRef(null)
+  useEffect(() => {
+    const list = listRef.current
+    const button = list?.querySelector('[aria-selected="true"]')
+    if (!list || !button) return
+    // 24px keeps a little of the neighbouring tab visible as a hint.
+    const isHiddenLeft = button.offsetLeft < list.scrollLeft
+    const isHiddenRight = button.offsetLeft + button.offsetWidth > list.scrollLeft + list.clientWidth - 32
+    if (isHiddenLeft || isHiddenRight) list.scrollTo({ left: Math.max(0, button.offsetLeft - 24), behavior: 'smooth' })
+  }, [selected])
   const handleKeyDown = (event) => {
     const position = tabs.findIndex((tab) => tab.id === selected)
     if (event.key === 'ArrowRight') onSelect(tabs[(position + 1) % tabs.length].id)
     if (event.key === 'ArrowLeft') onSelect(tabs[(position - 1 + tabs.length) % tabs.length].id)
   }
   return (
-    <div className="tabs" role="tablist" aria-label={label} onKeyDown={handleKeyDown}>
+    <div className="tabs" role="tablist" aria-label={label} onKeyDown={handleKeyDown} ref={listRef}>
       {tabs.map((tab) => {
         const Icon = tab.icon
         const isSelected = tab.id === selected

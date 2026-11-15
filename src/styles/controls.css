@@ -11,6 +11,19 @@
   border-bottom: 1px solid var(--line);
   margin-bottom: 28px;
   scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+/* Phones: the tab row scrolls sideways; a fade on the right shows there is more. */
+@media (max-width: 760px) {
+  .tabs {
+    padding-right: 28px;
+    mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent);
+  }
+
+  .tabs button {
+    padding: 12px 11px;
+  }
 }
 
 .tabs button {
@@ -151,7 +164,10 @@
 }
 
 /* Tables */
+/* position: relative keeps hidden screen-reader labels inside the scroll box; without it
+   they escape the clipping and widen the whole page on phones. */
 .table-wrap {
+  position: relative;
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -540,15 +556,4 @@
 
 .directory-sort {
   flex: 0 0 230px;
-}
-
-@media (max-width: 560px) {
-  .select-menu {
-    width: 100%;
-    max-width: calc(100vw - 32px);
-  }
-
-  .select-option {
-    padding: 11px 10px;
-  }
 }

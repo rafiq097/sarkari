@@ -62,13 +62,16 @@ export function ShareButton({ title }) {
   )
 }
 
-/** Short line describing the key official date. */
+/**
+ * Short line describing the key official date. "Earlier" marks a past date; it avoids
+ * "Last: Last date to apply" when the event name itself starts with "Last".
+ */
 export function KeyEventLine({ keyEvent }) {
   if (!keyEvent) return <span className="muted">No dated official event recorded</span>
   return (
     <span>
-      {keyEvent.upcoming ? 'Next: ' : 'Last: '}
-      {keyEvent.event} {formatDate(keyEvent.date)}
+      {keyEvent.upcoming ? 'Next: ' : 'Earlier: '}
+      {keyEvent.event}, {formatDate(keyEvent.date)}
       {keyEvent.dateType === 'official-tentative' && ' (tentative)'}
     </span>
   )
@@ -127,7 +130,10 @@ export function ExamCard({ exam }) {
       <p className="exam-card-meta">
         {exam.abbreviation && <span className="exam-card-fullname">{exam.name}</span>}
         <span className="exam-card-where">
-          <MapPin size={13} aria-hidden="true" /> {labelFor('jurisdictions', exam.jurisdiction)} / {labelFor('sectors', exam.sector)}
+          <MapPin size={13} aria-hidden="true" />
+          <span className="exam-card-where-text">
+            {labelFor('jurisdictions', exam.jurisdiction)} / {labelFor('sectors', exam.sector)}
+          </span>
         </span>
       </p>
       <p className="exam-card-summary">{firstSentence(exam.summary)}</p>

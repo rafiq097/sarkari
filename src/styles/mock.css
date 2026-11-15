@@ -47,6 +47,7 @@
 
 .mock-sections {
   display: flex;
+  flex: 1 1 0;
   flex-wrap: wrap;
   gap: 6px;
   min-width: 0;
@@ -56,7 +57,7 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  max-width: 260px;
+  max-width: 100%;
   padding: 5px 12px;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
@@ -399,8 +400,17 @@
     position: static;
   }
 
-  .mock-submit {
-    margin-left: 0;
+  /* Timer and submit share the first row; section names scroll sideways on the second. */
+  .mock-sections {
+    order: 3;
+    flex: 1 1 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .mock-sections button {
+    max-width: none;
   }
 }
 

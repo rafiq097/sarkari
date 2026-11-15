@@ -5,6 +5,7 @@
  * Used by the eligibility checker page and the directory "eligible for me" filter.
  */
 import { vocabulary } from './data.js'
+import { formatDate } from './format.js'
 
 const levelOrder = vocabulary.educationLevelOrder
 
@@ -50,7 +51,7 @@ function checkAge(rules, candidate, todayIsoDate) {
   const referenceDate = pickReferenceDate(rules, todayIsoDate)
   const age = ageOn(candidate.birthDate, referenceDate)
   const upperAge = relaxedUpperAge(rules, candidate)
-  const onDateText = referenceDate === todayIsoDate ? 'today' : `on ${referenceDate}`
+  const onDateText = referenceDate === todayIsoDate ? 'today' : `on ${formatDate(referenceDate)}`
   if (rules.ageMin != null && age < rules.ageMin) return { level: 'fail', text: `Age ${age} ${onDateText} is below the minimum of ${rules.ageMin}.` }
   if (upperAge != null && age > upperAge) return { level: 'fail', text: `Age ${age} ${onDateText} is above the limit of ${upperAge} (after relaxation shown).` }
   const note = referenceDate === todayIsoDate ? ' The official cut-off date may differ.' : ''

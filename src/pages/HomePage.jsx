@@ -74,7 +74,7 @@ export default function HomePage() {
         </h1>
         <p className="lead">Eligibility, exam stages, syllabus, cutoffs, pay and career growth for Central, Andhra Pradesh, Telangana and Karnataka recruitment. Every fact links back to an official notification or document.</p>
         <div className="hero-search">
-          <SearchBox size="large" placeholder="Try IAS, SSC CGL, Group 2, constable, bank PO" />
+          <SearchBox size="large" placeholder="Try SSC CGL or Group 2" />
         </div>
         <div className="quick-searches" aria-label="Popular searches">
           {quickSearches.map((term) => (

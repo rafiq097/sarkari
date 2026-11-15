@@ -33,10 +33,17 @@
   color: var(--text-muted);
 }
 
+/* Save, Compare, Share, calendar and mock test: one row on wide screens, wrapping on phones. */
 .profile-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 4px;
+}
+
+.profile-actions .icon-button {
+  height: 38px;
+  padding: 0 13px;
 }
 
 .tab-panel {

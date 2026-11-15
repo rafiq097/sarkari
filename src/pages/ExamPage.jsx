@@ -121,7 +121,7 @@ export default function ExamPage() {
           {!isHistorical && <CalendarButton exam={exam} />}
           {/* Only exams (or streams) with a recorded paper pattern and a question set get a mock test. */}
           {exam.pattern && hasMockSets(exam.id) && (
-            <Link to={`/exams/${exam.id}/mock${exam.activeVariant ? `?variant=${exam.activeVariant.id}` : ''}`} className="icon-button" title="Practice in the shape of the real paper">
+            <Link to={`/exams/${exam.id}/mock${exam.activeVariant ? `?variant=${exam.activeVariant.id}` : ''}`} className="icon-button icon-button-accent" title="Practice in the shape of the real paper">
               <PencilLine size={16} aria-hidden="true" />
               <span>Mock test</span>
             </Link>

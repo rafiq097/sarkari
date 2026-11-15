@@ -124,6 +124,11 @@ button {
   color: var(--text);
 }
 
+/* Icons keep their set size in tight flex rows instead of shrinking to a dot. */
+.lucide {
+  flex-shrink: 0;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
