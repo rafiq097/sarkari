@@ -16,12 +16,34 @@
   white-space: nowrap;
 }
 
-.badge-sage { color: var(--sage); background: var(--sage-soft); }
-.badge-accent { color: var(--accent); background: var(--accent-soft); }
-.badge-stone { color: var(--stone); background: var(--stone-soft); }
-.badge-brick { color: var(--brick); background: var(--brick-soft); }
-.badge-plum { color: var(--plum); background: var(--plum-soft); }
-.badge-quiet { border-color: transparent; }
+.badge-sage {
+  color: var(--sage);
+  background: var(--sage-soft);
+}
+
+.badge-accent {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.badge-stone {
+  color: var(--stone);
+  background: var(--stone-soft);
+}
+
+.badge-brick {
+  color: var(--brick);
+  background: var(--brick-soft);
+}
+
+.badge-plum {
+  color: var(--plum);
+  background: var(--plum-soft);
+}
+
+.badge-quiet {
+  border-color: transparent;
+}
 
 .level-meter {
   display: inline-flex;
@@ -43,10 +65,21 @@
   background: var(--surface-3);
 }
 
-.level-low .level-bars .is-filled { background: var(--sage); }
-.level-medium .level-bars .is-filled { background: var(--accent); }
-.level-high .level-bars .is-filled { background: var(--brick); }
-.level-none .level-text { color: var(--text-faint); }
+.level-low .level-bars .is-filled {
+  background: var(--sage);
+}
+
+.level-medium .level-bars .is-filled {
+  background: var(--accent);
+}
+
+.level-high .level-bars .is-filled {
+  background: var(--brick);
+}
+
+.level-none .level-text {
+  color: var(--text-faint);
+}
 
 .unknown-value {
   display: inline-flex;
@@ -558,7 +591,7 @@
   grid-template-rows: auto auto;
 }
 
-.exam-card-facts > div {
+.exam-card-facts>div {
   display: grid;
   grid-row: span 2;
   grid-template-rows: subgrid;
@@ -567,7 +600,7 @@
   min-width: 0;
 }
 
-.exam-card-facts > div + div {
+.exam-card-facts>div+div {
   border-left: 1px solid var(--line);
 }
 
@@ -599,8 +632,22 @@
     padding: 18px 16px;
   }
 
-  .exam-card-facts > div {
+  .exam-card-facts>div {
     padding: 10px 9px;
+  }
+}
+
+/* Smallest phones: pay and posts share a row; "Who can apply" gets the full width below. */
+@media (max-width: 359px) {
+  .exam-card-facts {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .exam-card-facts>div:nth-child(3) {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid var(--line);
   }
 }
 
