@@ -342,12 +342,9 @@
 }
 
 /* Region page */
-.region-meta {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 16px;
-  color: var(--text-muted);
+/* Search, sort and filters sit under the pay-rules note. */
+.region-browser {
+  margin-top: 32px;
 }
 
 /* Directory */
@@ -395,6 +392,12 @@
   gap: 8px;
   padding-left: 14px;
   border-left: 1px solid var(--line-strong);
+}
+
+/* Without government pills the toggles start the row, so no dividing rule. */
+.quick-toggles-alone {
+  padding-left: 0;
+  border-left: none;
 }
 
 /* Filter groups sit in two columns in the laptop modal and stack in the phone sheet. */

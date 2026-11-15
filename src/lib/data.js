@@ -93,11 +93,11 @@ export const jurisdictionRoutes = {
 }
 
 /** Pill options for a government filter: "All" plus every government that has profiles, with counts. */
-export function governmentFilterOptions(allLabel = 'All') {
+export function governmentFilterOptions(allLabel = 'All', records = examIndex) {
   return [
-    { key: '', label: allLabel, count: examIndex.length },
+    { key: '', label: allLabel, count: records.length },
     ...Object.entries(vocabulary.jurisdictions)
-      .map(([key, label]) => ({ key, label, count: examIndex.filter((exam) => exam.jurisdiction === key).length }))
+      .map(([key, label]) => ({ key, label, count: records.filter((exam) => exam.jurisdiction === key).length }))
       .filter((option) => option.count > 0),
   ]
 }

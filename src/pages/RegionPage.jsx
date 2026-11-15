@@ -1,11 +1,13 @@
 /**
- * Region page for Central, Andhra Pradesh, Telangana or Karnataka. Groups that
- * government's profiles by sector and links to the pay rules in force there.
+ * Region page for Central, Andhra Pradesh, Telangana or Karnataka. Its own search, sort
+ * and filters (components/ExamBrowser.jsx) narrow that government's profiles, which stay
+ * grouped by sector; it also links to the pay rules in force there.
  */
 import { Link } from 'react-router'
 import { Info } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SectionHeading } from '../components/Common.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
+import { ExamBrowser } from '../components/ExamBrowser.jsx'
 import { RegionCards } from '../components/RegionCards.jsx'
 import { examsInJurisdiction, labelFor, payRules } from '../lib/data.js'
 import { formatDate } from '../lib/format.js'
@@ -30,21 +32,18 @@ export default function RegionPage({ jurisdiction }) {
   const regionName = labelFor('jurisdictions', jurisdiction)
   const ruleSet = payRules.ruleSets[payRuleByRegion[jurisdiction]]
 
-  const bySector = new Map()
-  for (const exam of exams) bySector.set(exam.sector, [...(bySector.get(exam.sector) ?? []), exam])
-  const sectors = [...bySector.entries()].sort((a, b) => b[1].length - a[1].length)
+  // Sector order is fixed by the full list (largest first), so filtering never reshuffles sections.
+  const sectorCounts = new Map()
+  for (const exam of exams) sectorCounts.set(exam.sector, (sectorCounts.get(exam.sector) ?? 0) + 1)
+  const sectorOrder = [...sectorCounts.keys()].sort((a, b) => sectorCounts.get(b) - sectorCounts.get(a))
+
+  /** Filtered results grouped by sector, in the fixed order; results keep the chosen sort. */
+  const groupBySector = (results) => sectorOrder.map((sector) => [sector, results.filter((exam) => exam.sector === sector)]).filter(([, sectorExams]) => sectorExams.length > 0)
 
   return (
     <>
       <Breadcrumbs items={[{ label: regionName }]} />
       <PageHeader eyebrow={jurisdiction === 'central' ? 'Union Government' : 'State Government'} title={regionName} lead={regionIntros[jurisdiction]}>
-        <div className="region-meta">
-          <span className="numeric">{exams.length}</span> profiles
-          <span className="dot" aria-hidden="true" />
-          <Link to={`/exams?region=${jurisdiction}`} className="text-link">
-            Filter and sort these
-          </Link>
-        </div>
       </PageHeader>
 
       {ruleSet && (
@@ -60,20 +59,39 @@ export default function RegionPage({ jurisdiction }) {
         </div>
       )}
 
-      {sectors.length === 0 && <EmptyState title="Pay rules only" action={<Link to="/salary" className="button">Open the salary explorer</Link>}>This guide covers {regionName} pay scales, DA and allowances. Compare them with Central, Andhra Pradesh and Telangana pay in the salary explorer.</EmptyState>}
+      {exams.length === 0 && <EmptyState title="Pay rules only" action={<Link to="/salary" className="button">Open the salary explorer</Link>}>This guide covers {regionName} pay scales, DA and allowances. Compare them with Central, Andhra Pradesh and Telangana pay in the salary explorer.</EmptyState>}
 
-      {sectors.map(([sector, sectorExams], position) => (
-        <section key={sector}>
-          <SectionHeading number={String(position + 1).padStart(2, '0')} title={labelFor('sectors', sector)} description={`${sectorExams.length} profile${sectorExams.length === 1 ? '' : 's'}`} />
-          <div className="card-grid">
-            {sectorExams
-              .sort((a, b) => (a.status === 'historical') - (b.status === 'historical') || a.name.localeCompare(b.name))
-              .map((exam) => (
-                <ExamCard key={exam.id} exam={exam} />
-              ))}
-          </div>
-        </section>
-      ))}
+      {exams.length > 0 && (
+        <div className="region-browser">
+          <ExamBrowser exams={exams} hideRegion placeholder={`Search ${regionName} exams`}>
+            {(results, resetAll) =>
+              results.length === 0 ? (
+                <EmptyState
+                  title="Nothing matches"
+                  action={
+                    <button type="button" className="button" onClick={resetAll}>
+                      Reset search and filters
+                    </button>
+                  }
+                >
+                  Try fewer filters or a shorter keyword.
+                </EmptyState>
+              ) : (
+                groupBySector(results).map(([sector, sectorExams], position) => (
+                  <section key={sector}>
+                    <SectionHeading number={String(position + 1).padStart(2, '0')} title={labelFor('sectors', sector)} description={`${sectorExams.length} profile${sectorExams.length === 1 ? '' : 's'}`} />
+                    <div className="card-grid">
+                      {sectorExams.map((exam) => (
+                        <ExamCard key={exam.id} exam={exam} />
+                      ))}
+                    </div>
+                  </section>
+                ))
+              )
+            }
+          </ExamBrowser>
+        </div>
+      )}
 
       <section>
         <SectionHeading title="Other governments" description="Switch to another government's exams." />

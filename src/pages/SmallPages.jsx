@@ -6,6 +6,7 @@ import { Link } from 'react-router'
 import { ArrowRight, BookMarked, Compass } from 'lucide-react'
 import { Breadcrumbs, EmptyState, PageHeader, SectionHeading } from '../components/Common.jsx'
 import { ExamCard } from '../components/ExamCard.jsx'
+import { ExamBrowser } from '../components/ExamBrowser.jsx'
 import { toolLinks } from '../lib/navigation.js'
 import { useSaved } from '../lib/saved.jsx'
 import { getIndexRecord } from '../lib/data.js'
@@ -20,11 +21,28 @@ export function SavedPage() {
       <Breadcrumbs items={[{ label: 'Saved exams' }]} />
       <PageHeader eyebrow="Your list" title="Saved exams" lead="Bookmarks are stored only in this browser. Clearing site data removes them." />
       {exams.length ? (
-        <div className="card-grid">
-          {exams.map((exam) => (
-            <ExamCard key={exam.id} exam={exam} />
-          ))}
-        </div>
+        <ExamBrowser exams={exams} placeholder="Search saved exams">
+          {(results, resetAll) =>
+            results.length ? (
+              <div className="card-grid">
+                {results.map((exam) => (
+                  <ExamCard key={exam.id} exam={exam} />
+                ))}
+              </div>
+            ) : (
+              <EmptyState
+                title="Nothing matches"
+                action={
+                  <button type="button" className="button" onClick={resetAll}>
+                    Reset search and filters
+                  </button>
+                }
+              >
+                None of your saved exams match these filters.
+              </EmptyState>
+            )
+          }
+        </ExamBrowser>
       ) : (
         <EmptyState
           icon={BookMarked}
