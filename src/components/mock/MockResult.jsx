@@ -5,6 +5,7 @@
  */
 import { ExternalLink, RotateCcw, CheckCircle2, XCircle, MinusCircle } from 'lucide-react'
 import { formatClock } from '../../lib/mock.js'
+import { QuestionText } from './QuestionText.jsx'
 import { formatPercent } from '../../lib/format.js'
 
 const optionLetters = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -47,7 +48,7 @@ function ReviewItem({ question, number, chosenIndex, seconds }) {
         <span className="faint small numeric">{formatClock(seconds)}</span>
       </summary>
       <div className="mock-review-body">
-        <p>{question.text}</p>
+        <QuestionText text={question.text} className="mock-review-text" />
         <p className="small">
           Your answer: <strong>{chosenIndex == null ? 'none' : `${optionLetters[chosenIndex]}. ${question.options[chosenIndex]}`}</strong>
           <br />

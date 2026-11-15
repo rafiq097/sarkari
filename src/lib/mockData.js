@@ -23,7 +23,7 @@ export function hasMockSets(examId) {
 /**
  * Loads the questions for an exam (and stream, when the exam has variants). Verified
  * sets replace the sample set as soon as one exists; until then the sample set is used.
- * Returns { questions, isSample }.
+ * Returns { questions, isSample, setTitles } (setTitles names the papers in use).
  */
 export async function loadMockQuestions(examId, variantId) {
   const paths = Object.keys(setLoaders).filter((path) => path.split('/').at(-2) === examId)
@@ -31,7 +31,7 @@ export async function loadMockQuestions(examId, variantId) {
   const matchingSets = loadedSets.filter((mockSet) => !mockSet.variant || mockSet.variant === variantId)
   const realSets = matchingSets.filter((mockSet) => !mockSet.isSample)
   const usedSets = realSets.length ? realSets : matchingSets
-  return { questions: usedSets.flatMap((mockSet) => mockSet.questions), isSample: realSets.length === 0 }
+  return { questions: usedSets.flatMap((mockSet) => mockSet.questions), isSample: realSets.length === 0, setTitles: usedSets.map((mockSet) => mockSet.title) }
 }
 
 /** All saved attempts, newest first; empty when storage is blocked or damaged. */

@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 import { Clock, Flag, ChevronLeft, ChevronRight, Lock, Send } from 'lucide-react'
 import { useMockRunner } from '../../lib/useMockRunner.js'
 import { formatClock } from '../../lib/mock.js'
+import { QuestionText } from './QuestionText.jsx'
 
 // The timer turns red in the last minute of a section or test.
 const lowTimeSeconds = 60
@@ -179,7 +180,7 @@ export function MockRunner({ plan, onFinish }) {
               </span>
             )}
           </p>
-          <p className="mock-question-text">{question.text}</p>
+          <QuestionText text={question.text} className="mock-question-text" />
           <div className="mock-options" role="radiogroup" aria-label="Answer options">
             {question.options.map((option, optionIndex) => (
               <label key={option} className={`mock-option ${state.answers[question.id] === optionIndex ? 'is-chosen' : ''}`}>

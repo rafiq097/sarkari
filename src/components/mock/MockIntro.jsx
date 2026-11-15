@@ -3,7 +3,7 @@
  * block), how this mock differs (sample questions, scaled time, values not recorded),
  * the rules, and earlier attempts saved in this browser. Rendered by pages/MockTestPage.jsx.
  */
-import { AlertTriangle, Play, Info } from 'lucide-react'
+import { AlertTriangle, Play, Info, ShieldCheck } from 'lucide-react'
 import { Unknown, SourceChips } from '../Badges.jsx'
 import { formatClock } from '../../lib/mock.js'
 import { formatCount, formatDate } from '../../lib/format.js'
@@ -72,7 +72,7 @@ function runNotes(plan) {
 }
 
 /** Start screen. */
-export function MockIntro({ exam, pattern, plan, isSample, attempts, onStart }) {
+export function MockIntro({ exam, pattern, plan, isSample, setTitles, attempts, onStart }) {
   return (
     <div className="mock-intro">
       {isSample && (
@@ -81,6 +81,15 @@ export function MockIntro({ exam, pattern, plan, isSample, attempts, onStart }) 
           <div>
             <strong>Sample, not real. </strong>
             These {plan.questionCount} questions are placeholders that only show how the mock test works. They are not from any official paper. Verified questions will replace them.
+          </div>
+        </div>
+      )}
+      {!isSample && (
+        <div className="callout callout-sage">
+          <ShieldCheck size={18} aria-hidden="true" />
+          <div>
+            <strong>Real questions. </strong>
+            {setTitles.join('; ')}. Answers are taken from the official answer key; open any question in your result to see its source.
           </div>
         </div>
       )}
