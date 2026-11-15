@@ -1,14 +1,15 @@
 /**
- * Site frame: skip link, sticky header with primary navigation and search,
- * mobile menu, page outlet with route transition, footer and the offline/update notices.
+ * Site frame: skip link, sticky header with primary navigation and search (a search
+ * sheet on phones), mobile menu, page outlet with route transition, footer and the offline/update notices.
  * Wraps every route in App.jsx.
  */
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
-import { Menu, X, BookMarked, GitCompareArrows, Library, ClipboardList, Compass, UserRound } from 'lucide-react'
+import { Menu, X, BookMarked, GitCompareArrows, Library, ClipboardList, Compass, UserRound, Search } from 'lucide-react'
 import { regionLinks, toolLinks } from '../lib/navigation.js'
 import { SearchBox } from './SearchBox.jsx'
 import { PwaPrompts } from './PwaPrompts.jsx'
+import { Sheet } from './Sheet.jsx'
 import { useSaved } from '../lib/saved.jsx'
 
 /** Header, navigation and footer around the current page. */
@@ -18,6 +19,8 @@ export function Layout() {
   const [menuOpenOnPath, setMenuOpenOnPath] = useState(null)
   const isMenuOpen = menuOpenOnPath === location.pathname
   const setIsMenuOpen = (shouldOpen) => setMenuOpenOnPath(shouldOpen ? location.pathname : null)
+  // Phones hide the header search box; this sheet replaces it.
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
   const { bookmarks, compare, candidate } = useSaved()
 
   // Return to the top whenever the route changes. 'instant' overrides the smooth CSS
@@ -54,6 +57,18 @@ export function Layout() {
             <SearchBox placeholder="Search" />
           </div>
           <div className="header-actions">
+            <button
+              type="button"
+              className="header-icon search-toggle"
+              aria-haspopup="dialog"
+              onClick={() => {
+                setIsMenuOpen(false)
+                setIsSearchOpen(true)
+              }}
+            >
+              <Search size={18} aria-hidden="true" />
+              <span className="visually-hidden">Search exams</span>
+            </button>
             <NavLink to="/compare" className="header-icon header-icon-wide" title="Comparison">
               <GitCompareArrows size={18} aria-hidden="true" />
               {compare.length > 0 && <span className="pip">{compare.length}</span>}
@@ -76,7 +91,6 @@ export function Layout() {
           </div>
         </div>
         <div id="mobile-menu" className={`mobile-menu ${isMenuOpen ? 'is-open' : ''}`} hidden={!isMenuOpen}>
-          <SearchBox onDone={() => setIsMenuOpen(false)} />
           <p className="menu-label">Browse</p>
           <NavLink to="/exams">All exams</NavLink>
           {regionLinks.map((link) => (
@@ -146,6 +160,10 @@ export function Layout() {
           </div>
         </div>
       </footer>
+      <Sheet isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} title="Search" placement="top" className="search-sheet">
+        <SearchBox isInline onDone={() => setIsSearchOpen(false)} />
+        <p className="search-sheet-hint">Type an exam, post or organization, for example "SSC CGL", "constable" or "APPSC".</p>
+      </Sheet>
       <PwaPrompts />
     </>
   )

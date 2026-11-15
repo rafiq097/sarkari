@@ -1,6 +1,7 @@
 /**
  * Search input with live suggestions (ARIA combobox). Enter opens the directory with
- * the query; choosing a suggestion opens that profile. Used in the header and home hero.
+ * the query; choosing a suggestion opens that profile. Used in the header, the home hero,
+ * the mobile menu and the mobile search sheet (Layout.jsx).
  */
 import { useId, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router'
@@ -10,8 +11,11 @@ import { labelFor } from '../lib/data.js'
 
 const suggestionLimit = 7
 
-/** Search box; `size` is "large" for the hero. */
-export function SearchBox({ size = 'normal', placeholder = 'Search exams, posts, organizations', onDone }) {
+/**
+ * Search box; `size` is "large" for the hero. `isInline` keeps the suggestions in the
+ * page flow and always visible (for the search sheet), and focuses the input on open.
+ */
+export function SearchBox({ size = 'normal', placeholder = 'Search exams, posts, organizations', onDone, isInline = false }) {
   const navigate = useNavigate()
   const listId = useId()
   const [query, setQuery] = useState('')
@@ -45,10 +49,10 @@ export function SearchBox({ size = 'normal', placeholder = 'Search exams, posts,
     }
   }
 
-  const showList = isOpen && query.trim().length >= 2
+  const showList = (isOpen || isInline) && query.trim().length >= 2
 
   return (
-    <div className={`search-box search-${size}`}>
+    <div className={`search-box search-${size} ${isInline ? 'search-inline' : ''}`}>
       <Search size={size === 'large' ? 20 : 16} className="search-icon" aria-hidden="true" />
       <input
         type="search"
@@ -58,6 +62,8 @@ export function SearchBox({ size = 'normal', placeholder = 'Search exams, posts,
         aria-autocomplete="list"
         aria-activedescendant={activePosition >= 0 ? `${listId}-${activePosition}` : undefined}
         aria-label="Search exams"
+        data-autofocus={isInline || undefined}
+        enterKeyHint="search"
         placeholder={placeholder}
         value={query}
         onChange={(event) => {
