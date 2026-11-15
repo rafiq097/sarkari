@@ -22,15 +22,17 @@ function outcomeOf(question, chosenIndex) {
   return chosenIndex === question.answer ? 'correct' : 'wrong'
 }
 
-/** Where a question came from: a verified official source, or a clear "sample" label. */
+/** Where a question came from: an official paper, a memory-based paper, or a clear "sample" label. */
 function QuestionOrigin({ question }) {
   if (!question.source) return <span className="tag-estimate">Sample, not real</span>
+  const isMemoryBased = question.sourceType === 'memory-based'
   return (
     <span className="mock-origin">
       <a href={question.source} target="_blank" rel="noreferrer" className="text-link">
-        Official paper{question.year ? `, ${question.year}` : ''} <ExternalLink size={11} aria-hidden="true" />
+        {isMemoryBased ? 'Memory-based paper' : 'Official paper'}
+        {question.year ? `, ${question.year}` : ''} <ExternalLink size={11} aria-hidden="true" />
       </a>
-      <span className={`badge badge-quiet ${question.verified ? 'badge-sage' : 'badge-stone'}`}>{question.verified ? 'Verified' : 'Not verified'}</span>
+      {isMemoryBased ? <span className="badge badge-quiet badge-plum">Not official</span> : <span className={`badge badge-quiet ${question.verified ? 'badge-sage' : 'badge-stone'}`}>{question.verified ? 'Verified' : 'Not verified'}</span>}
     </span>
   )
 }

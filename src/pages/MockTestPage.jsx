@@ -83,7 +83,7 @@ export default function MockTestPage() {
     <>
       <Breadcrumbs items={[{ label: examLabel, to: examLink }, { label: 'Mock test' }]} />
       {screen !== 'running' && <PageHeader eyebrow="Mock test" title={`${examLabel} mock test`} lead={`Practice in the shape of the real paper: ${pattern.stage}.`} />}
-      {screen === 'intro' && <MockIntro exam={exam} pattern={pattern} plan={plan} isSample={mockQuestions.isSample} setTitles={mockQuestions.setTitles} attempts={attemptsFor(examId, variantId)} onStart={() => setScreen('running')} />}
+      {screen === 'intro' && <MockIntro exam={exam} pattern={pattern} plan={plan} isSample={mockQuestions.isSample} setTitles={mockQuestions.setTitles} isMemoryBased={mockQuestions.isMemoryBased} attempts={attemptsFor(examId, variantId)} onStart={() => setScreen('running')} />}
       {screen === 'running' && <MockRunner plan={plan} onFinish={handleFinish} />}
       {screen === 'result' && <MockResult plan={plan} result={finished.result} answers={finished.answers} secondsByQuestion={finished.secondsByQuestion} isSample={mockQuestions.isSample} onRetry={() => setScreen('intro')} />}
     </>

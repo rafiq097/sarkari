@@ -1,0 +1,1369 @@
+{
+  "examId": "sebi-grade-a",
+  "variant": "it",
+  "title": "SEBI Grade A 2025 Phase I Paper 1, memory-based (recollected questions compiled by EduTap)",
+  "isSample": false,
+  "sourceType": "memory-based",
+  "questions": [
+    {
+      "id": "2025-p1-q1",
+      "section": "paper-1",
+      "text": "Directions: What approximate value will come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n39.83% of 800.11 - 19.98% of 299.73 = ?% of 1299.88",
+      "options": [
+        "20",
+        "32",
+        "70",
+        "44",
+        "12"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q2",
+      "section": "paper-1",
+      "text": "Directions: What approximate value will come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n15.81 x 15.19 + 299.91 / 1.93 = ?% of 2599.72",
+      "options": [
+        "25",
+        "15",
+        "6",
+        "45",
+        "36"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q3",
+      "section": "paper-1",
+      "text": "Directions: What approximate value will come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n19.93% of 249.98 + (149.82 x 3) / 6.11 = ?^3",
+      "options": [
+        "7",
+        "8",
+        "5",
+        "6",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q4",
+      "section": "paper-1",
+      "text": "Directions: What approximate value will come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n(21.02 x 5.83 x 12.03 / 6.99 of 4.03) + 31.93% of 50.03 = ?",
+      "options": [
+        "105",
+        "30",
+        "50",
+        "70",
+        "10"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q5",
+      "section": "paper-1",
+      "text": "Directions: What approximate value will come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n14.96% of 120.03 - 107.99 + 88.93% of 199.87 = ?",
+      "options": [
+        "128",
+        "66",
+        "88",
+        "102",
+        "48"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q6",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the given questions: The given line graph shows the percentage of sold items for company A, B & C for year 2018 & 2019 (values read from the graph):\nCompany | Sold 2018 (%) | Sold 2019 (%)\nA | 25 | 45\nB | 40 | 70\nC | 45 | 60\nNote: Items manufactured in 2018 for A, B, and C are 40, 80, 100, respectively. Manufacturing increased from 2018 to 2019 for A, B, C is + 40, + 60, + 30, respectively.\n\nWhat is the percentage increase in sold items of Company A from 2018 to 2019?",
+      "options": [
+        "280%",
+        "250%",
+        "260%",
+        "275%",
+        "290%"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q7",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the given questions: The given line graph shows the percentage of sold items for company A, B & C for year 2018 & 2019 (values read from the graph):\nCompany | Sold 2018 (%) | Sold 2019 (%)\nA | 25 | 45\nB | 40 | 70\nC | 45 | 60\nNote: Items manufactured in 2018 for A, B, and C are 40, 80, 100, respectively. Manufacturing increased from 2018 to 2019 for A, B, C is + 40, + 60, + 30, respectively.\n\nIn 2019, the sold items of Company B are what percent more than the sold items of Company C?",
+      "options": [
+        "12%",
+        "14%",
+        "25.64%",
+        "18%",
+        "20%"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q8",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the given questions: The given line graph shows the percentage of sold items for company A, B & C for year 2018 & 2019 (values read from the graph):\nCompany | Sold 2018 (%) | Sold 2019 (%)\nA | 25 | 45\nB | 40 | 70\nC | 45 | 60\nNote: Items manufactured in 2018 for A, B, and C are 40, 80, 100, respectively. Manufacturing increased from 2018 to 2019 for A, B, C is + 40, + 60, + 30, respectively.\n\nIf the profit per sold item in 2019 is Rs 3 for A, Rs 2 for B and Rs 4 for C, then what is the difference between the total profit of (A + C) and B?",
+      "options": [
+        "Rs 420",
+        "Rs 440",
+        "Rs 360",
+        "Rs 224",
+        "Rs 500"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q9",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the given questions: The given line graph shows the percentage of sold items for company A, B & C for year 2018 & 2019 (values read from the graph):\nCompany | Sold 2018 (%) | Sold 2019 (%)\nA | 25 | 45\nB | 40 | 70\nC | 45 | 60\nNote: Items manufactured in 2018 for A, B, and C are 40, 80, 100, respectively. Manufacturing increased from 2018 to 2019 for A, B, C is + 40, + 60, + 30, respectively.\n\nFind the difference between the total number of items sold by Companies A and B together in 2019 and the total number of items sold by Companies B and C together in 2018?",
+      "options": [
+        "50",
+        "47",
+        "65",
+        "70",
+        "55"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q10",
+      "section": "paper-1",
+      "text": "A sum of Rs. 10,000 is invested at 15% compound interest per annum. Find the compound interest earned at the end of 2 years if the interest is compounded annually.",
+      "options": [
+        "Rs. 3,250",
+        "Rs. 3,350",
+        "Rs. 3,225",
+        "Rs. 3,450",
+        "Rs. 3,850"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q11",
+      "section": "paper-1",
+      "text": "The length and breadth of a cuboid are 14 cm and 21 cm, respectively. If the total surface area of the cuboid is 1,744 cm^2, then find the height of the cuboid.",
+      "options": [
+        "12.48 cm",
+        "16.51 cm",
+        "15.66 cm",
+        "18.75 cm",
+        "14.56 cm"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q12",
+      "section": "paper-1",
+      "text": "The number of male employees in a company is 120 which is 25% more than that of female employees. If 30% and 50% of male and female employees, respectively, plays cricket, then find total number of employees (male and female), who play cricket.",
+      "options": [
+        "72",
+        "48",
+        "60",
+        "84",
+        "None of these"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q13",
+      "section": "paper-1",
+      "text": "A mixture of milk and water contains 35% water. On adding 12 litres of water, quantity of milk becomes 30% more than that of water. Find the initial quantity of water in the mixture.",
+      "options": [
+        "24 litres",
+        "28 litres",
+        "42 litres",
+        "35 litres",
+        "21 litres"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q14",
+      "section": "paper-1",
+      "text": "Rahul invests Rs.1800 at simple interest for four years. After 4 years, he received the total amount of Rs.2880. If the rate of interest is increased by 10%, then how much amount received by Rahul after 5 years?",
+      "options": [
+        "Rs.2800",
+        "Rs.3200",
+        "Rs.3600",
+        "Rs.4050",
+        "None of these"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q15",
+      "section": "paper-1",
+      "text": "Directions: Find the wrong number in the following series.\n\n200,220,249,289,342,415,495",
+      "options": [
+        "220",
+        "415",
+        "289",
+        "342",
+        "495"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q16",
+      "section": "paper-1",
+      "text": "Directions: Find the wrong number in the following series.\n\n8,16,52,209,1046,6277,43940",
+      "options": [
+        "8",
+        "16",
+        "209",
+        "1046",
+        "52"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q17",
+      "section": "paper-1",
+      "text": "Directions: Find the wrong number in the following series.\n\n600,604,577,593,468,502,161",
+      "options": [
+        "600",
+        "604",
+        "577",
+        "502",
+        "593"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q18",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the following information: Three persons A, B and C handled a total of 105 customer calls in a day. Out of these calls, some queries were resolved and the remaining were unresolved. The number of calls handled by A: B: C is 5: 6: 10 and 60% of A's calls were resolved. The number of resolved calls of B is 20% more than resolved calls of A. The number of unresolved calls of C is 50% of the unresolved calls of B.\n\nIf 25% of C's resolved calls are later found incorrect and become unresolved, then what will be the new total unresolved calls?",
+      "options": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "39"
+      ],
+      "answer": 4,
+      "explanation": "Answer (e) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q19",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the following information: Three persons A, B and C handled a total of 105 customer calls in a day. Out of these calls, some queries were resolved and the remaining were unresolved. The number of calls handled by A: B: C is 5: 6: 10 and 60% of A's calls were resolved. The number of resolved calls of B is 20% more than resolved calls of A. The number of unresolved calls of C is 50% of the unresolved calls of B.\n\nBy how many calls does C's resolved calls exceed the combined resolved calls of A and B?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q20",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the following information: Three persons A, B and C handled a total of 105 customer calls in a day. Out of these calls, some queries were resolved and the remaining were unresolved. The number of calls handled by A: B: C is 5: 6: 10 and 60% of A's calls were resolved. The number of resolved calls of B is 20% more than resolved calls of A. The number of unresolved calls of C is 50% of the unresolved calls of B.\n\nIf 25% of B's unresolved calls are later resolved, then what will be the new ratio of total resolved calls to total unresolved calls (A+B+C)?",
+      "options": [
+        "26: 9",
+        "25: 10",
+        "16: 5",
+        "28: 7",
+        "29: 6"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q21",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Eight persons P, Q, R, S, T, U, V, and W, sit in two linear parallel rows - Row 1 and Row 2. Row 1 is to the north of Row 2. The people in Row 1 face towards the south direction, and the people in Row 2 face towards the north direction. The people in both rows face each other. The person who sits in row 1 likes different Water bodies among Lakes, Rivers, Creeks and oceans. The person who sits in row 2 likes different Water bodies among Pond, Wetlands, Glaciers and Bays. S, who likes Creeks, faces the one who likes Pond. U sits second to the right of the one, who likes Pond. The one who faces U sits third to the left of V. The one who likes Bays sits immediately left of P. W sits second to the right of R. W doesn't like Wetlands. The one who likes Glaciers doesn't face the one who likes Lakes. Only one person sits between Q and the one who likes Rivers.\n\nFour of the following five are alike in a certain way and hence form a group. Find the one that doesn't belong to that group.",
+      "options": [
+        "The one who likes Rivers",
+        "The one who likes lakes",
+        "The one who likes Bays",
+        "The one who likes Glaciers",
+        "The one who likes Wetlands"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q22",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Eight persons P, Q, R, S, T, U, V, and W, sit in two linear parallel rows - Row 1 and Row 2. Row 1 is to the north of Row 2. The people in Row 1 face towards the south direction, and the people in Row 2 face towards the north direction. The people in both rows face each other. The person who sits in row 1 likes different Water bodies among Lakes, Rivers, Creeks and oceans. The person who sits in row 2 likes different Water bodies among Pond, Wetlands, Glaciers and Bays. S, who likes Creeks, faces the one who likes Pond. U sits second to the right of the one, who likes Pond. The one who faces U sits third to the left of V. The one who likes Bays sits immediately left of P. W sits second to the right of R. W doesn't like Wetlands. The one who likes Glaciers doesn't face the one who likes Lakes. Only one person sits between Q and the one who likes Rivers.\n\nWho among the following faces the one who likes Glaciers?",
+      "options": [
+        "S",
+        "P",
+        "The one who is immediate right of T",
+        "The one who likes Rivers",
+        "None of these"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q23",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Eight persons P, Q, R, S, T, U, V, and W, sit in two linear parallel rows - Row 1 and Row 2. Row 1 is to the north of Row 2. The people in Row 1 face towards the south direction, and the people in Row 2 face towards the north direction. The people in both rows face each other. The person who sits in row 1 likes different Water bodies among Lakes, Rivers, Creeks and oceans. The person who sits in row 2 likes different Water bodies among Pond, Wetlands, Glaciers and Bays. S, who likes Creeks, faces the one who likes Pond. U sits second to the right of the one, who likes Pond. The one who faces U sits third to the left of V. The one who likes Bays sits immediately left of P. W sits second to the right of R. W doesn't like Wetlands. The one who likes Glaciers doesn't face the one who likes Lakes. Only one person sits between Q and the one who likes Rivers.\n\nAs many persons sit to the left of ____ as to the right of _____.",
+      "options": [
+        "V, W",
+        "P, T",
+        "R, V",
+        "P, U",
+        "None of these"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q24",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Eight persons P, Q, R, S, T, U, V, and W, sit in two linear parallel rows - Row 1 and Row 2. Row 1 is to the north of Row 2. The people in Row 1 face towards the south direction, and the people in Row 2 face towards the north direction. The people in both rows face each other. The person who sits in row 1 likes different Water bodies among Lakes, Rivers, Creeks and oceans. The person who sits in row 2 likes different Water bodies among Pond, Wetlands, Glaciers and Bays. S, who likes Creeks, faces the one who likes Pond. U sits second to the right of the one, who likes Pond. The one who faces U sits third to the left of V. The one who likes Bays sits immediately left of P. W sits second to the right of R. W doesn't like Wetlands. The one who likes Glaciers doesn't face the one who likes Lakes. Only one person sits between Q and the one who likes Rivers.\n\nWhich among the following statements is correct?",
+      "options": [
+        "The one who likes Bays sits 3rd left of W.",
+        "The one who likes the ocean faces R",
+        "V sits third left of T",
+        "Both A and B",
+        "Both B and C"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q25",
+      "section": "paper-1",
+      "text": "If only one four-letter meaningful English word is formed by using the 1st, 3rd, 6th and 9th letters (from the left end) of the word \"MULTILATERAL\", then which of the following will be the third letter of the word formed from the right end? If more than one such meaningful word is formed, mark 'Y' as your answer. If no meaningful word is formed, mark 'Z' as your answer.",
+      "options": [
+        "L",
+        "M",
+        "T",
+        "Y",
+        "Z"
+      ],
+      "answer": 4,
+      "explanation": "Answer (e) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q26",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the questions below. Six persons- A, B, C, D, E, and F are attending the meeting on two different dates either 9 or 23 of three different months- January, April, and June of the same year. They attend in different cities - Delhi, Chennai, Jaipur, Kolkata, Shimla, and Mumbai. All the information is not necessarily in the same order. A attends two persons before the one who attended in Jaipur. At least three people attend after A. Only two people attend between A and D. The number of persons attending before D is the same as the number of persons attending the meeting after the one who attends in Delhi. F attends immediately after the one who attends in Mumbai. F neither attends in Jaipur nor in Kolkata. C doesn't attend meeting on the prime number date, but after A. E neither attends in Delhi nor Jaipur. B attends immediately before the one who attends in Shimla.\n\nWho among the following person attend the meeting on January 23?",
+      "options": [
+        "B",
+        "A",
+        "F",
+        "E",
+        "None of these"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q27",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the questions below. Six persons- A, B, C, D, E, and F are attending the meeting on two different dates either 9 or 23 of three different months- January, April, and June of the same year. They attend in different cities - Delhi, Chennai, Jaipur, Kolkata, Shimla, and Mumbai. All the information is not necessarily in the same order. A attends two persons before the one who attended in Jaipur. At least three people attend after A. Only two people attend between A and D. The number of persons attending before D is the same as the number of persons attending the meeting after the one who attends in Delhi. F attends immediately after the one who attends in Mumbai. F neither attends in Jaipur nor in Kolkata. C doesn't attend meeting on the prime number date, but after A. E neither attends in Delhi nor Jaipur. B attends immediately before the one who attends in Shimla.\n\nIn which of the following cities does D attend the meeting?",
+      "options": [
+        "Jaipur",
+        "Kolkata",
+        "Shimla",
+        "Delhi",
+        "Chennai"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q28",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the questions below. Six persons- A, B, C, D, E, and F are attending the meeting on two different dates either 9 or 23 of three different months- January, April, and June of the same year. They attend in different cities - Delhi, Chennai, Jaipur, Kolkata, Shimla, and Mumbai. All the information is not necessarily in the same order. A attends two persons before the one who attended in Jaipur. At least three people attend after A. Only two people attend between A and D. The number of persons attending before D is the same as the number of persons attending the meeting after the one who attends in Delhi. F attends immediately after the one who attends in Mumbai. F neither attends in Jaipur nor in Kolkata. C doesn't attend meeting on the prime number date, but after A. E neither attends in Delhi nor Jaipur. B attends immediately before the one who attends in Shimla.\n\nHow many people attend before the one who attends the meeting in Shimla?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "None",
+        "More than three"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q29",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the questions below. Six persons- A, B, C, D, E, and F are attending the meeting on two different dates either 9 or 23 of three different months- January, April, and June of the same year. They attend in different cities - Delhi, Chennai, Jaipur, Kolkata, Shimla, and Mumbai. All the information is not necessarily in the same order. A attends two persons before the one who attended in Jaipur. At least three people attend after A. Only two people attend between A and D. The number of persons attending before D is the same as the number of persons attending the meeting after the one who attends in Delhi. F attends immediately after the one who attends in Mumbai. F neither attends in Jaipur nor in Kolkata. C doesn't attend meeting on the prime number date, but after A. E neither attends in Delhi nor Jaipur. B attends immediately before the one who attends in Shimla.\n\nWhich of the following statements is/are correct?",
+      "options": [
+        "E attends two persons before F",
+        "Only two persons attend between C and F",
+        "No one attends after D",
+        "Both (a) and (b)",
+        "Both (a) and (c)"
+      ],
+      "answer": 4,
+      "explanation": "Answer (e) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q30",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the questions given below. Seven persons, T, U, V, W, X, Y, and Z, are of different weights. X is heavier than V, who is heavier than both Y and U. T is heavier than both Y and W. The number of persons heavier than Y is the same as lighter than Y. V is lighter than T, who is not the heaviest person. Only two persons weighed between V and Z, who is heavier than W.\n\nHow many people are lighter than U?",
+      "options": [
+        "One",
+        "Three",
+        "Two",
+        "None",
+        "Four"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q31",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the questions given below. Seven persons, T, U, V, W, X, Y, and Z, are of different weights. X is heavier than V, who is heavier than both Y and U. T is heavier than both Y and W. The number of persons heavier than Y is the same as lighter than Y. V is lighter than T, who is not the heaviest person. Only two persons weighed between V and Z, who is heavier than W.\n\nHow many persons weighed between T and Z?",
+      "options": [
+        "Three",
+        "Two",
+        "One",
+        "None",
+        "More than Three"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q32",
+      "section": "paper-1",
+      "text": "Directions: Study the following information carefully and answer the questions given below. Seven persons, T, U, V, W, X, Y, and Z, are of different weights. X is heavier than V, who is heavier than both Y and U. T is heavier than both Y and W. The number of persons heavier than Y is the same as lighter than Y. V is lighter than T, who is not the heaviest person. Only two persons weighed between V and Z, who is heavier than W.\n\nIf the weights of V and U is 72 kg and 60 kg, respectively, then what is the possible weight of Y?",
+      "options": [
+        "75",
+        "59",
+        "74",
+        "65",
+        "55"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q33",
+      "section": "paper-1",
+      "text": "Find the odd one out:",
+      "options": [
+        "DBF",
+        "VTX",
+        "MKO",
+        "NPR",
+        "KIM"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q34",
+      "section": "paper-1",
+      "text": "How many such pairs of digits are in the number \"164975324\" which has as many digits between them as per the natural number system (both forward and backward direction)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q35",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Six boxes A, B, C, D, E, and F are kept one above another in a single stack. Each of these boxes contains different Colours viz. Blue, Red, Pink, Yellow, White and Purple. All the information is not necessarily in the same order. More than two boxes are kept below the box that contains the purple colour. Only one box is kept between box C and the box that contains the Purple colour. Box F is kept immediately above box C. The number of boxes kept above box F is one more than the number of boxes kept below the box that contains the pink colour. Box B is kept three boxes above the box that contains the pink colour. Either box F or box B contains the white colour. The box that contains the yellow colour is kept two boxes above box A. Neither box A nor box D contains the blue colour.\n\nWhich among the following boxes is immediately above the box that contains the purple color?",
+      "options": [
+        "Box C",
+        "Box A",
+        "Box E",
+        "Box D",
+        "None of these"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q36",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Six boxes A, B, C, D, E, and F are kept one above another in a single stack. Each of these boxes contains different Colours viz. Blue, Red, Pink, Yellow, White and Purple. All the information is not necessarily in the same order. More than two boxes are kept below the box that contains the purple colour. Only one box is kept between box C and the box that contains the Purple colour. Box F is kept immediately above box C. The number of boxes kept above box F is one more than the number of boxes kept below the box that contains the pink colour. Box B is kept three boxes above the box that contains the pink colour. Either box F or box B contains the white colour. The box that contains the yellow colour is kept two boxes above box A. Neither box A nor box D contains the blue colour.\n\nBox A contains which of the following colours?",
+      "options": [
+        "Pink",
+        "Red",
+        "Purple",
+        "Blue",
+        "Yellow"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q37",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Six boxes A, B, C, D, E, and F are kept one above another in a single stack. Each of these boxes contains different Colours viz. Blue, Red, Pink, Yellow, White and Purple. All the information is not necessarily in the same order. More than two boxes are kept below the box that contains the purple colour. Only one box is kept between box C and the box that contains the Purple colour. Box F is kept immediately above box C. The number of boxes kept above box F is one more than the number of boxes kept below the box that contains the pink colour. Box B is kept three boxes above the box that contains the pink colour. Either box F or box B contains the white colour. The box that contains the yellow colour is kept two boxes above box A. Neither box A nor box D contains the blue colour.\n\nHow many boxes are kept between Box E and the box that contains the pink colour?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "More than four"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q38",
+      "section": "paper-1",
+      "text": "Directions: Answer the questions based on the information given below. Six boxes A, B, C, D, E, and F are kept one above another in a single stack. Each of these boxes contains different Colours viz. Blue, Red, Pink, Yellow, White and Purple. All the information is not necessarily in the same order. More than two boxes are kept below the box that contains the purple colour. Only one box is kept between box C and the box that contains the Purple colour. Box F is kept immediately above box C. The number of boxes kept above box F is one more than the number of boxes kept below the box that contains the pink colour. Box B is kept three boxes above the box that contains the pink colour. Either box F or box B contains the white colour. The box that contains the yellow colour is kept two boxes above box A. Neither box A nor box D contains the blue colour.\n\nWhich among the following statements is correct?",
+      "options": [
+        "Only two boxes are between B and C",
+        "Only one box is above box F",
+        "Box C is kept immediately above A",
+        "Box D contains the Yellow colour",
+        "All are incorrect"
+      ],
+      "answer": 4,
+      "explanation": "Answer (e) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q39",
+      "section": "paper-1",
+      "text": "Directions: The question below has a statement followed by two conclusions numbered I and II. On the basis of the information given in the statement, you have to find an option that gives the best conclusion for the given statement.\n\nStatement: Any effective system to control urban air pollution must rely on continuous real-time monitoring of emissions. Measures to improve air quality, to be effective, must show results immediately after implementation, and conducting a complete trial of such measures before actual enforcement is not possible. Conclusions:\nI. Measures taken to control urban air pollution cannot be guaranteed to show immediate success when first implemented.\nII. Measures to control urban air pollution will fail to improve air quality when they are implemented for the first time.",
+      "options": [
+        "Only I follows",
+        "Either I or II follows",
+        "Both I and II follow",
+        "Only II follows",
+        "None follows"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q40",
+      "section": "paper-1",
+      "text": "Directions: The question below has a statement followed by two conclusions numbered I and II. On the basis of the information given in the statement, you have to find an option that gives the best conclusion for the given statement\n\nStatement: Extremely fast delivery services offered by 10-minute delivery apps rely heavily on a dense network of delivery partners and advanced route-optimisation algorithms. Such rapid delivery models have been shown to increase road accident risks in cities where they operate extensively. QuickCart is a 10-minute delivery app that operates only in small towns with very low traffic density and strictly enforces speed limits. However, delivery partners associated with QuickCart have reported a high number of road accidents over the past two years. Which of the following can be validly inferred from the above statement? Inferences:\nI. Road accidents among delivery partners are always caused by high traffic density.\nII. Road accidents can have causes other than traffic density in the case of 10-minute delivery apps.\nIII. Factors other than dense traffic may contribute to accidents involving 10-minute delivery services.",
+      "options": [
+        "II only",
+        "III only",
+        "Both II and III follow",
+        "Both I and II follow",
+        "None of the above"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q41",
+      "section": "paper-1",
+      "text": "Directions: Read the passage carefully then answer the questions given below. For decades, scientists have tried to determine whether Mars once had conditions suitable for life. While the planet today is cold, dry, and exposed to intense radiation, geological evidence suggests that early Mars may have been warmer and wetter. One key factor influencing planetary habitability is the presence of a thick atmosphere, which can retain heat and protect the surface from harmful solar winds. Understanding when Mars lost its atmosphere remains a central question in planetary science. A recent study conducted by researchers at Stanford University revisits this issue using new atmospheric loss models. Published in Nature Astronomy, the study argues that Mars may have retained a significant portion of its atmosphere until about 3.6 billion years ago- later than earlier theories that placed atmospheric collapse at around 4.2 billion years ago. This extended atmospheric lifespan could have allowed liquid water to persist on the surface for a longer duration. The research was led by Dr. Michael Anders, who used computer simulations to model how solar wind interacted with Mars's atmosphere over time. Because Mars lacks a strong global magnetic field today, solar particles are able to strip atmospheric gases directly from the planet. However, the team's simulations suggest that Mars once possessed localized magnetic regions strong enough to slow this atmospheric erosion. To support their model, the researchers analyzed data from NASA's MAVEN mission, which measures how charged particles escape from Mars's upper atmosphere. The data showed variability in atmospheric loss rates that could be explained by intermittent magnetic shielding in Mars's early history. This finding challenges the assumption that atmospheric loss occurred rapidly and uniformly across the planet. If Mars retained its atmosphere longer than previously believed, it strengthens the case for sustained surface water and potentially microbial life. Anders emphasizes that planetary environments evolve gradually, and small protective mechanisms-such as partial magnetic shielding-can have large long-term effects. The study highlights the importance of revising long-standing assumptions as new data and modeling techniques become available.\n\nAccording to the passage, until approximately when might Mars have retained a significant portion of its atmosphere?",
+      "options": [
+        "4.5 billion years ago",
+        "4.2 billion years ago",
+        "3.9 billion years ago",
+        "3.6 billion years ago",
+        "3.0 billion years ago"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q42",
+      "section": "paper-1",
+      "text": "Directions: Read the passage carefully then answer the questions given below. For decades, scientists have tried to determine whether Mars once had conditions suitable for life. While the planet today is cold, dry, and exposed to intense radiation, geological evidence suggests that early Mars may have been warmer and wetter. One key factor influencing planetary habitability is the presence of a thick atmosphere, which can retain heat and protect the surface from harmful solar winds. Understanding when Mars lost its atmosphere remains a central question in planetary science. A recent study conducted by researchers at Stanford University revisits this issue using new atmospheric loss models. Published in Nature Astronomy, the study argues that Mars may have retained a significant portion of its atmosphere until about 3.6 billion years ago- later than earlier theories that placed atmospheric collapse at around 4.2 billion years ago. This extended atmospheric lifespan could have allowed liquid water to persist on the surface for a longer duration. The research was led by Dr. Michael Anders, who used computer simulations to model how solar wind interacted with Mars's atmosphere over time. Because Mars lacks a strong global magnetic field today, solar particles are able to strip atmospheric gases directly from the planet. However, the team's simulations suggest that Mars once possessed localized magnetic regions strong enough to slow this atmospheric erosion. To support their model, the researchers analyzed data from NASA's MAVEN mission, which measures how charged particles escape from Mars's upper atmosphere. The data showed variability in atmospheric loss rates that could be explained by intermittent magnetic shielding in Mars's early history. This finding challenges the assumption that atmospheric loss occurred rapidly and uniformly across the planet. If Mars retained its atmosphere longer than previously believed, it strengthens the case for sustained surface water and potentially microbial life. Anders emphasizes that planetary environments evolve gradually, and small protective mechanisms-such as partial magnetic shielding-can have large long-term effects. The study highlights the importance of revising long-standing assumptions as new data and modeling techniques become available.\n\nWhat primary method did the Stanford research team use in their study?",
+      "options": [
+        "Laboratory experiments on Martian soil samples",
+        "Observations from surface rovers",
+        "Computer simulations of atmospheric loss",
+        "Chemical analysis of Martian meteorites",
+        "Geological mapping using radar"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q43",
+      "section": "paper-1",
+      "text": "Directions: Read the passage carefully then answer the questions given below. For decades, scientists have tried to determine whether Mars once had conditions suitable for life. While the planet today is cold, dry, and exposed to intense radiation, geological evidence suggests that early Mars may have been warmer and wetter. One key factor influencing planetary habitability is the presence of a thick atmosphere, which can retain heat and protect the surface from harmful solar winds. Understanding when Mars lost its atmosphere remains a central question in planetary science. A recent study conducted by researchers at Stanford University revisits this issue using new atmospheric loss models. Published in Nature Astronomy, the study argues that Mars may have retained a significant portion of its atmosphere until about 3.6 billion years ago- later than earlier theories that placed atmospheric collapse at around 4.2 billion years ago. This extended atmospheric lifespan could have allowed liquid water to persist on the surface for a longer duration. The research was led by Dr. Michael Anders, who used computer simulations to model how solar wind interacted with Mars's atmosphere over time. Because Mars lacks a strong global magnetic field today, solar particles are able to strip atmospheric gases directly from the planet. However, the team's simulations suggest that Mars once possessed localized magnetic regions strong enough to slow this atmospheric erosion. To support their model, the researchers analyzed data from NASA's MAVEN mission, which measures how charged particles escape from Mars's upper atmosphere. The data showed variability in atmospheric loss rates that could be explained by intermittent magnetic shielding in Mars's early history. This finding challenges the assumption that atmospheric loss occurred rapidly and uniformly across the planet. If Mars retained its atmosphere longer than previously believed, it strengthens the case for sustained surface water and potentially microbial life. Anders emphasizes that planetary environments evolve gradually, and small protective mechanisms-such as partial magnetic shielding-can have large long-term effects. The study highlights the importance of revising long-standing assumptions as new data and modeling techniques become available.\n\nWhat role did localized magnetic regions on Mars play, according to the study?",
+      "options": [
+        "They completely prevented atmospheric escape",
+        "They increased volcanic activity",
+        "They slowed the rate of atmospheric erosion",
+        "They altered Mars's orbit",
+        "They intensified solar radiation"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q44",
+      "section": "paper-1",
+      "text": "Directions: Read the passage carefully then answer the questions given below. For decades, scientists have tried to determine whether Mars once had conditions suitable for life. While the planet today is cold, dry, and exposed to intense radiation, geological evidence suggests that early Mars may have been warmer and wetter. One key factor influencing planetary habitability is the presence of a thick atmosphere, which can retain heat and protect the surface from harmful solar winds. Understanding when Mars lost its atmosphere remains a central question in planetary science. A recent study conducted by researchers at Stanford University revisits this issue using new atmospheric loss models. Published in Nature Astronomy, the study argues that Mars may have retained a significant portion of its atmosphere until about 3.6 billion years ago- later than earlier theories that placed atmospheric collapse at around 4.2 billion years ago. This extended atmospheric lifespan could have allowed liquid water to persist on the surface for a longer duration. The research was led by Dr. Michael Anders, who used computer simulations to model how solar wind interacted with Mars's atmosphere over time. Because Mars lacks a strong global magnetic field today, solar particles are able to strip atmospheric gases directly from the planet. However, the team's simulations suggest that Mars once possessed localized magnetic regions strong enough to slow this atmospheric erosion. To support their model, the researchers analyzed data from NASA's MAVEN mission, which measures how charged particles escape from Mars's upper atmosphere. The data showed variability in atmospheric loss rates that could be explained by intermittent magnetic shielding in Mars's early history. This finding challenges the assumption that atmospheric loss occurred rapidly and uniformly across the planet. If Mars retained its atmosphere longer than previously believed, it strengthens the case for sustained surface water and potentially microbial life. Anders emphasizes that planetary environments evolve gradually, and small protective mechanisms-such as partial magnetic shielding-can have large long-term effects. The study highlights the importance of revising long-standing assumptions as new data and modeling techniques become available.\n\nWhich of the following assumptions is directly challenged by the findings of the study?",
+      "options": [
+        "Mars never had surface water",
+        "Atmospheric loss on Mars was rapid and uniform",
+        "Mars's surface geology is poorly understood",
+        "Solar wind has little effect on planetary atmospheres",
+        "Mars's climate was identical to Earth's"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q45",
+      "section": "paper-1",
+      "text": "Directions: Read the passage carefully then answer the questions given below. For decades, scientists have tried to determine whether Mars once had conditions suitable for life. While the planet today is cold, dry, and exposed to intense radiation, geological evidence suggests that early Mars may have been warmer and wetter. One key factor influencing planetary habitability is the presence of a thick atmosphere, which can retain heat and protect the surface from harmful solar winds. Understanding when Mars lost its atmosphere remains a central question in planetary science. A recent study conducted by researchers at Stanford University revisits this issue using new atmospheric loss models. Published in Nature Astronomy, the study argues that Mars may have retained a significant portion of its atmosphere until about 3.6 billion years ago- later than earlier theories that placed atmospheric collapse at around 4.2 billion years ago. This extended atmospheric lifespan could have allowed liquid water to persist on the surface for a longer duration. The research was led by Dr. Michael Anders, who used computer simulations to model how solar wind interacted with Mars's atmosphere over time. Because Mars lacks a strong global magnetic field today, solar particles are able to strip atmospheric gases directly from the planet. However, the team's simulations suggest that Mars once possessed localized magnetic regions strong enough to slow this atmospheric erosion. To support their model, the researchers analyzed data from NASA's MAVEN mission, which measures how charged particles escape from Mars's upper atmosphere. The data showed variability in atmospheric loss rates that could be explained by intermittent magnetic shielding in Mars's early history. This finding challenges the assumption that atmospheric loss occurred rapidly and uniformly across the planet. If Mars retained its atmosphere longer than previously believed, it strengthens the case for sustained surface water and potentially microbial life. Anders emphasizes that planetary environments evolve gradually, and small protective mechanisms-such as partial magnetic shielding-can have large long-term effects. The study highlights the importance of revising long-standing assumptions as new data and modeling techniques become available.\n\nIn the passage, the word \"intermittent\" most nearly means:",
+      "options": [
+        "Continuous",
+        "Regular",
+        "Occasional",
+        "Permanent",
+        "Predictable"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q46",
+      "section": "paper-1",
+      "text": "Directions: Each question below has two blanks, which is indicating that something has been omitted. Find out which option can be used to fill up the blanks in the sentence in the same sequence to make it meaningfully complete.\n\nThe author's argument, though ______ in tone, was ultimately ______ by its reliance on unverified anecdotes.",
+      "options": [
+        "persuasive / strengthened",
+        "measured / undermined",
+        "aggressive / validated",
+        "emotional / supported",
+        "confident / clarified"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q47",
+      "section": "paper-1",
+      "text": "Directions: Each question below has two blanks, which is indicating that something has been omitted. Find out which option can be used to fill up the blanks in the sentence in the same sequence to make it meaningfully complete.\n\nThe judge's remarks were intended to ______ public confidence in the judiciary rather than ______ doubts about its impartiality.",
+      "options": [
+        "restore / fuel",
+        "weaken / resolve",
+        "challenge / dismiss",
+        "question / clarify",
+        "diminish / confirm"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q48",
+      "section": "paper-1",
+      "text": "Directions: Each question below has two blanks, which is indicating that something has been omitted. Find out which option can be used to fill up the blanks in the sentence in the same sequence to make it meaningfully complete.\n\nWhile the technology promises to ______ efficiency in the long run, its immediate impact may ______ existing operational challenges.",
+      "options": [
+        "compromise / resolve",
+        "enhance / exacerbate",
+        "stabilise / eliminate",
+        "measure / prevent",
+        "limit / disguise"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q49",
+      "section": "paper-1",
+      "text": "Directions: Each question contains a sentence divided into five parts labeled A, B, C, D, and E, separated by slashes (/). These parts are not in the correct order. Select the option that arranges the parts in the correct sequence to form a clear and grammatically correct sentence.\n\nWhich fundamentally altered (A )/ the way individuals consume information today (B) / the rapid rise of social media platforms (C) / has transformed communication patterns (D) / over the past decade (E)",
+      "options": [
+        "C-D-A-B-E",
+        "E-C-D-A-B",
+        "C-E-D-B-A",
+        "E-C-A-D-B",
+        "C-D-E-A-B"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q50",
+      "section": "paper-1",
+      "text": "Directions: Each question contains a sentence divided into five parts labeled A, B, C, D, and E, separated by slashes (/). These parts are not in the correct order. Select the option that arranges the parts in the correct sequence to form a clear and grammatically correct sentence.\n\nBy placing short-term profits above long-term stability (A) / many corporations undermine their own sustainability (B) / even though the consequences are often foreseeable (C) / and eventually erode stakeholder trust (D) / in competitive markets (E)",
+      "options": [
+        "B-A-E-D-C",
+        "E-B-A-D-C",
+        "B-E-A-C-D",
+        "E-A-B-D-C",
+        "B-A-D-E-C"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q51",
+      "section": "paper-1",
+      "text": "Directions: In each of the questions given below four words are underlined (shown here in [brackets]). These four words may or may not be in their correct position. The sentence is then followed by options with the correct combination of words that should replace each other in order to make the sentence grammatically and contextually correct. Find the correct combination of the words that replace each other. If the sentence is correct as it then select option E. as your choice.\n\nThe scientist (A) [dismissed] the theory as (B) [plausible], while later (C) [endorsing] an explanation that was (D) [untenable] under scrutiny.",
+      "options": [
+        "A-B",
+        "A-C",
+        "B-D and A-C",
+        "B-D",
+        "The sentence is correct"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q52",
+      "section": "paper-1",
+      "text": "Directions: In each of the questions given below four words are underlined (shown here in [brackets]). These four words may or may not be in their correct position. The sentence is then followed by options with the correct combination of words that should replace each other in order to make the sentence grammatically and contextually correct. Find the correct combination of the words that replace each other. If the sentence is correct as it then select option E. as your choice.\n\nThe manager (A) [praised] the team for their (B) [negligent] efforts and (C) [reprimanded] the employees who showed (D) [exemplary] conduct during the audit.",
+      "options": [
+        "Only A-B",
+        "Only B-D",
+        "Both A-B and C-D",
+        "Both A-C and B-D.",
+        "The sentence is correct."
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q53",
+      "section": "paper-1",
+      "text": "Directions: In each of the questions given below four words are underlined (shown here in [brackets]). These four words may or may not be in their correct position. The sentence is then followed by options with the correct combination of words that should replace each other in order to make the sentence grammatically and contextually correct. Find the correct combination of the words that replace each other. If the sentence is correct as it then select option E. as your choice.\n\nThe proposal was widely [criticised] (A) for its [latent] (B) flaws, which were actually [obvious] (C) and long [overlooked] (D).",
+      "options": [
+        "A-B and C-D",
+        "Only B-C",
+        "A-C and B-D",
+        "A-D",
+        "The sentence is correct."
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q54",
+      "section": "paper-1",
+      "text": "Directions: In the following questions, a sentence contains two blanks. Fill the first blank with a suitable sentence starter and the second blank with an appropriate logical connector so that the sentence is grammatically correct and logically coherent. Choose the most appropriate option.\n\n___________ the economy has shown signs of stabilisation, consumer confidence remains weak; ________, private investment has not picked up.",
+      "options": [
+        "Although / therefore",
+        "Because / however",
+        "Although / consequently",
+        "Since / moreover",
+        "While / hence"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q55",
+      "section": "paper-1",
+      "text": "Directions: In each of the following questions, a part of the sentence is underlined (shown here in [brackets]). Four alternatives are given below the sentence. Choose the option that best replaces the underlined part and makes the sentence grammatically correct, precise, and contextually appropriate. If no replacement is required, choose (e) No change.\n\nThe committee decided to [put a lid on] unnecessary expenditure during the financial crisis.",
+      "options": [
+        "curb down unnecessary expenditure",
+        "put a stop to unnecessary expenditure",
+        "restrict unnecessary expenditure",
+        "bring under control unnecessary expenditure",
+        "No change"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q56",
+      "section": "paper-1",
+      "text": "Directions: In each of the following questions, a part of the sentence is underlined (shown here in [brackets]). Four alternatives are given below the sentence. Choose the option that best replaces the underlined part and makes the sentence grammatically correct, precise, and contextually appropriate. If no replacement is required, choose (e) No change.\n\nThe sudden resignation of the CEO [threw cold water on] the company's expansion plans.",
+      "options": [
+        "discouraged completely",
+        "poured water over",
+        "dampened",
+        "obstructed heavily",
+        "No change"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q57",
+      "section": "paper-1",
+      "text": "Directions: In each of the following questions, a part of the sentence is underlined (shown here in [brackets]). Four alternatives are given below the sentence. Choose the option that best replaces the underlined part and makes the sentence grammatically correct, precise, and contextually appropriate. If no replacement is required, choose (e) No change.\n\nThe proposal was rejected as it failed to stand [the test of time].",
+      "options": [
+        "survive through the years",
+        "remain valid in the long run",
+        "withstand scrutiny",
+        "prove to be durable",
+        "No change"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q58",
+      "section": "paper-1",
+      "text": "Directions: Read each sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer. If there is 'No error', the answer is (E) (Ignore errors of punctuation, if any.)\n\nIdentify the incorrect sentence.",
+      "options": [
+        "Mitali's hair is long and black.",
+        "Either of the alternatives seem to present major difficulties.",
+        "One of the cars in the garage is fifty year old.",
+        "Sharon has six brothers.",
+        "No error"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q59",
+      "section": "paper-1",
+      "text": "Directions: Read each sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer. If there is 'No error', the answer is (E) (Ignore errors of punctuation, if any.)\n\nIdentify the incorrect sentence.",
+      "options": [
+        "These pieces of jewelleries are designed by a highly acclaimed expert.",
+        "Elephants can swim very well.",
+        "The Nilgiris are the most productive mountains of the south.",
+        "There are not many followers of Gandhiji these days.",
+        "No error"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q60",
+      "section": "paper-1",
+      "text": "Directions: Read each sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. The number of that part is the answer. If there is 'No error', the answer is (E) (Ignore errors of punctuation, if any.)\n\nIdentify the incorrect sentence.",
+      "options": [
+        "Twenty percent of the population are dependent on agriculture.",
+        "Two hours is enough time to complete the examination.",
+        "Her guidance was extremely unique during the crisis.",
+        "The jury was unanimous in its verdict.",
+        "No error"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q61",
+      "section": "paper-1",
+      "text": "According to the Women, Peace and Security (WPS) Index 2025-26, released by the Georgetown Institute for Women, Peace and Security in collaboration with the Peace Research Institute Oslo, which country topped the global rankings based on women's inclusion, justice, and security?",
+      "options": [
+        "Norway",
+        "Sweden",
+        "Finland",
+        "Denmark",
+        "Netherlands"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q62",
+      "section": "paper-1",
+      "text": "Which one of the following personalities is associated with badminton?",
+      "options": [
+        "M.S. Dhoni",
+        "Sania Mirza",
+        "Viswanathan Anand",
+        "P.V. Sindhu",
+        "Dronacharya"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q63",
+      "section": "paper-1",
+      "text": "How many gold medals did India win at the 2025 Asian Archery Championships held in Dhaka, Bangladesh?",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q64",
+      "section": "paper-1",
+      "text": "Who is presently serving as the Chairman of the Bombay Stock Exchange (BSE)?",
+      "options": [
+        "Prof. Subhasis Chaudhuri",
+        "Ashish Kumar Chauhan",
+        "Nirmala Sitharaman",
+        "Urjit Patel",
+        "Shaktikanta Das"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q65",
+      "section": "paper-1",
+      "text": "The Sixteenth Finance Commission submitted its report to the President of India for the award period beginning in 2026-27 and ending in which of the following years?",
+      "options": [
+        "2028-29",
+        "2029-30",
+        "2030-31",
+        "2031-32",
+        "2032-33"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q66",
+      "section": "paper-1",
+      "text": "Which of the following entities are stakeholders in the collaborative venture Raajmarg Infra Investment Managers Private Limited (RIIMPL) incorporated by NHAI?",
+      "options": [
+        "State Bank of India",
+        "Axis Bank and HDFC Bank",
+        "Bajaj Finserv Ventures Ltd.",
+        "ICICI Bank, IDBI Bank, IndusInd Bank, and Yes Bank",
+        "All of the above"
+      ],
+      "answer": 4,
+      "explanation": "Answer (e) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q67",
+      "section": "paper-1",
+      "text": "Which of the following is the nodal agency responsible for implementing the preservation strategy for public art installations under the Public Art of India (PARI) project?",
+      "options": [
+        "Archaeological Survey of India",
+        "Lalit Kala Akademi",
+        "Indian Council for Cultural Relations",
+        "Sangeet Natak Akademi",
+        "National School of Drama"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q68",
+      "section": "paper-1",
+      "text": "Who has been approved by the Appointments Committee of the Cabinet as the new Chairman of the Central Board of Indirect Taxes & Customs (CBIC)?",
+      "options": [
+        "Sanjay Kumar Agarwal",
+        "Vivek Chaturvedi",
+        "Anil Kumar Jain",
+        "Ramesh Chandra",
+        "Rajiv Mehta"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q69",
+      "section": "paper-1",
+      "text": "Which project was hailed as India's first sovereign multilingual and multimodal AI- driven Large Language Model during the visit of Dr. Jitendra Singh to IIT Bombay?",
+      "options": [
+        "IndiaAI",
+        "BharatGen",
+        "BhashaAI",
+        "DigiGen",
+        "SanskritAI"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q70",
+      "section": "paper-1",
+      "text": "Who chaired the high-level committee that submitted its report on \"conflict of interest\" and disclosures concerning SEBI officials to the market regulator?",
+      "options": [
+        "T. V. Somanathan",
+        "Sanjay Malhotra",
+        "Pratyush Sinha",
+        "Ajay Tyagi",
+        "Ashok Lavasa"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q71",
+      "section": "paper-1",
+      "text": "Pandit Ronu Majumdar is associated with which musical platform?",
+      "options": [
+        "Sitar",
+        "Tabla",
+        "Flute",
+        "Sarod",
+        "Veena"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q72",
+      "section": "paper-1",
+      "text": "What is the name of the first indigenous CRISPR-based gene therapy developed for the treatment of Sickle Cell Disease, which primarily affects the tribal population of the country?",
+      "options": [
+        "Genome Cure",
+        "BIRSA 101",
+        "Tribal Heal",
+        "GeneRakshak",
+        "CRISPR India"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q73",
+      "section": "paper-1",
+      "text": "In which year was the National Stock Exchange (NSE) incorporated?",
+      "options": [
+        "1990",
+        "1991",
+        "1992",
+        "1993",
+        "1994"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q74",
+      "section": "paper-1",
+      "text": "Who has been selected for the Sahitya Akademi's Bal Sahitya Puraskar 2025 in Hindi for the work Ek Batey Bara (Short Stories)?",
+      "options": [
+        "Madhav Kaushik",
+        "Uday Prakash",
+        "Vinod Kumar Shukla",
+        "Sushil Shukla",
+        "Ashok Vajpeyi"
+      ],
+      "answer": 3,
+      "explanation": "Answer (d) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q75",
+      "section": "paper-1",
+      "text": "In the abbreviation NIC under the Ministry of Electronics and Information Technology (MeitY), what does the letter \"I\" stand for?",
+      "options": [
+        "Information",
+        "Informatics",
+        "Innovation",
+        "Infrastructure",
+        "Intelligence"
+      ],
+      "answer": 1,
+      "explanation": "Answer (b) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q76",
+      "section": "paper-1",
+      "text": "Under which mission has the Ministry of Electronics and Information Technology (MeitY) launched the 'YUVA AI for ALL' free course to introduce Artificial Intelligence to all Indians, especially the youth?",
+      "options": [
+        "Digital India Mission",
+        "National Skill Development Mission",
+        "IndiaAI Mission",
+        "Startup India Mission",
+        "Make in India Mission"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q77",
+      "section": "paper-1",
+      "text": "The world's largest grassroots DAP plant, benefiting from proximity to a major deep- water port, is located at IFFCO's Paradeep unit in which state?",
+      "options": [
+        "Gujarat",
+        "Andhra Pradesh",
+        "Odisha",
+        "Maharashtra",
+        "West Bengal"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q78",
+      "section": "paper-1",
+      "text": "On which of the following countries has the Government of India imposed a five-year anti-dumping duty on liquid epoxy resins to curb low-priced imports?",
+      "options": [
+        "China",
+        "Saudi Arabia",
+        "Taiwan and South Korea",
+        "China and Taiwan",
+        "All of the above"
+      ],
+      "answer": 4,
+      "explanation": "Answer (e) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q79",
+      "section": "paper-1",
+      "text": "In the abbreviation DRHP used for IPO-related documents filed with SEBI, what does the letter \"R\" stand for?",
+      "options": [
+        "Red",
+        "Report",
+        "Revenue",
+        "Registered",
+        "Record"
+      ],
+      "answer": 0,
+      "explanation": "Answer (a) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    },
+    {
+      "id": "2025-p1-q80",
+      "section": "paper-1",
+      "text": "How many times has the Economic Census been conducted in India by the Central Statistical Organisation (CSO)?",
+      "options": [
+        "Five times",
+        "Six times",
+        "Seven times",
+        "Eight times",
+        "Nine times"
+      ],
+      "answer": 2,
+      "explanation": "Answer (c) as given in the publisher's memory-based answer key. SEBI does not publish an official key.",
+      "source": "https://edutap.in/wp-content/uploads/2026/06/SEBI-Grade-A-Phase-1-Previous-Year-Papers-Book.pdf",
+      "year": 2025,
+      "verified": false
+    }
+  ]
+}

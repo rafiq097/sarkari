@@ -167,6 +167,8 @@ function validateMockSets(examsById) {
       continue
     }
     if (typeof mockSet.isSample !== 'boolean') fail(exam.id, `${label}: isSample must be true or false`)
+    // A real set says whether it is the official paper or a memory-based reconstruction.
+    if (!mockSet.isSample && !['official', 'memory-based'].includes(mockSet.sourceType)) fail(exam.id, `${label}: sourceType must be "official" or "memory-based"`)
     const sectionIds = new Set(pattern.sections.map((section) => section.id))
     const seenQuestionIds = new Set()
     for (const question of mockSet.questions ?? []) {
@@ -175,6 +177,8 @@ function validateMockSets(examsById) {
       for (const problem of mockQuestionProblems(question, sectionIds)) fail(exam.id, `${label} question ${question.id}: ${problem}`)
       // Sample sets must never pass as real: none of their questions may be marked verified.
       if (mockSet.isSample && question.verified) fail(exam.id, `${label} question ${question.id}: a sample set cannot hold verified questions`)
+      // Only an official answer key can verify an answer.
+      if (mockSet.sourceType === 'memory-based' && question.verified) fail(exam.id, `${label} question ${question.id}: a memory-based question cannot be verified`)
     }
   }
 }

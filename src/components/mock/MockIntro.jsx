@@ -72,7 +72,9 @@ function runNotes(plan) {
 }
 
 /** Start screen. */
-export function MockIntro({ exam, pattern, plan, isSample, setTitles, attempts, onStart }) {
+export function MockIntro({ exam, pattern, plan, isSample, setTitles, isMemoryBased, attempts, onStart }) {
+  // Pattern sections with no questions in the set are left out of the test; say so.
+  const missingSections = pattern.sections.filter((section) => !plan.sections.some((planned) => planned.id === section.id))
   return (
     <div className="mock-intro">
       {isSample && (
@@ -84,7 +86,7 @@ export function MockIntro({ exam, pattern, plan, isSample, setTitles, attempts, 
           </div>
         </div>
       )}
-      {!isSample && (
+      {!isSample && !isMemoryBased && (
         <div className="callout callout-sage">
           <ShieldCheck size={18} aria-hidden="true" />
           <div>
@@ -92,6 +94,18 @@ export function MockIntro({ exam, pattern, plan, isSample, setTitles, attempts, 
             {setTitles.join('; ')}. Answers are taken from the official answer key; open any question in your result to see its source.
           </div>
         </div>
+      )}
+      {isMemoryBased && (
+        <div className="callout callout-plum">
+          <AlertTriangle size={18} aria-hidden="true" />
+          <div>
+            <strong>Memory-based, not official. </strong>
+            {setTitles.join('; ')}. The recruiter does not publish its papers, so these questions were recalled by candidates after the exam and compiled by a coaching publisher. Wording may differ from the real paper, and the answers are the publisher's, not the recruiter's.
+          </div>
+        </div>
+      )}
+      {!isSample && missingSections.length > 0 && (
+        <p className="faint small">Not in this mock yet: {missingSections.map((section) => section.name).join(', ')}. No usable question set was found for {missingSections.length === 1 ? 'it' : 'them'}.</p>
       )}
 
       <h2 className="block-title">

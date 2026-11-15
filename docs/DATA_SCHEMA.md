@@ -90,7 +90,7 @@ The shape of one objective paper or stage. Copy values only from the notice; any
 ## Mock question sets
 `src/data/mocks/<examId>/<name>.json`. A "Mock test" entry shows only for exams that have a `pattern` block and a folder here.
 ```
-{ "examId": "sebi-grade-a", "variant": "it", "title": "...", "isSample": false,
+{ "examId": "sebi-grade-a", "variant": "it", "title": "...", "isSample": false, "sourceType": "official",
   "questions": [ { "id": "2024-p2-q1", "section": "paper-2-it",
                    "text": "...", "options": ["...", "..."], "answer": 0,
                    "explanation": "short reason",
@@ -98,6 +98,7 @@ The shape of one objective paper or stage. Copy values only from the notice; any
                    "verified": true } ] }
 ```
 - `variant`: variant id, or `null` for exams without streams. `section`: a section id of the pattern. `answer`: index into `options`.
+- `sourceType` (required when `isSample` is false): `official` (the recruiter's own paper) or `memory-based` (recalled by candidates and compiled by a publisher, for recruiters that do not publish papers). Memory-based questions are always `verified: false`; the app labels them "Memory-based, not official".
 - `verified: true` needs `source` and `year`. Sample sets (`isSample: true`) hold placeholders only and can never be verified.
 - Once any set with `isSample: false` exists for an exam, the sample set is no longer used.
 
