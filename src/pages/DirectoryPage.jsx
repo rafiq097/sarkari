@@ -14,6 +14,7 @@ import { evaluateExam } from '../lib/eligibility.js'
 import { useSaved } from '../lib/saved.jsx'
 import { levelWeight, todayIso } from '../lib/format.js'
 import { Select } from '../components/Select.jsx'
+import { Sheet } from '../components/Sheet.jsx'
 
 /** Position of an education level in the vocabulary order (unknown levels sort last). */
 function educationRank(level) {
@@ -82,6 +83,9 @@ export default function DirectoryPage() {
     setSearchParams(next, { replace: true })
   }
 
+  // Clearing filters keeps the search words.
+  const clearAll = () => setSearchParams(query ? { q: query } : {}, { replace: true })
+
   const activeFilters = filterDefinitions.map((definition) => ({ definition, values: readList(searchParams, definition.key) })).filter((entry) => entry.values.length)
   const activeCount = activeFilters.length + (minimumBasic ? 1 : 0) + (onlyEligible ? 1 : 0) + (onlyEngineers ? 1 : 0)
   const selectedRegions = readList(searchParams, 'region')
@@ -112,72 +116,78 @@ export default function DirectoryPage() {
           <label className="visually-hidden" htmlFor="directory-query">
             Search
           </label>
-          <input id="directory-query" type="search" placeholder="Search exams, posts, organizations" value={query} onChange={(event) => setParam('q', event.target.value)} />
+          <input id="directory-query" type="search" enterKeyHint="search" placeholder="Search exams or posts" value={query} onChange={(event) => setParam('q', event.target.value)} />
         </div>
         <Select label="Sort by" hideLabel className="directory-sort" value={sortKey} onChange={(key) => setParam('sort', key)} options={Object.entries(sortOptions).map(([key, option]) => ({ value: key, label: option.label }))} />
-        <button type="button" className={`button ${areFiltersOpen ? 'is-on' : ''}`} aria-expanded={areFiltersOpen} aria-controls="filter-panel" onClick={() => setAreFiltersOpen((open) => !open)}>
+        <button type="button" className={`button directory-filter-button ${activeCount > 0 ? 'is-on' : ''}`} aria-haspopup="dialog" onClick={() => setAreFiltersOpen(true)}>
           <SlidersHorizontal size={16} aria-hidden="true" /> Filters {activeCount > 0 && <span className="pip-inline">{activeCount}</span>}
         </button>
       </div>
 
       <div className="quick-filters">
         <SegmentedFilter label="Government" options={regionOptions} value={quickRegion} onChange={(key) => setParam('region', key ? [key] : [])} />
-        <span className="quick-filters-divider" aria-hidden="true" />
-        <label className={`chip ${isActiveOnly ? 'is-on' : ''}`}>
-          <input type="checkbox" checked={isActiveOnly} onChange={(event) => setParam('status', event.target.checked ? ['active'] : [])} />
-          Active now
-        </label>
-        <label className={`chip ${onlyEngineers ? 'is-on' : ''}`}>
-          <input type="checkbox" checked={onlyEngineers} onChange={(event) => setParam('btech', event.target.checked ? '1' : '')} />
-          For BTech grads
-        </label>
-        {candidate && (
-          <label className={`chip ${onlyEligible ? 'is-on' : ''}`}>
-            <input type="checkbox" checked={onlyEligible} onChange={(event) => setParam('eligible', event.target.checked ? '1' : '')} />
-            <UserCheck size={14} aria-hidden="true" /> Eligible for me
+        <div className="quick-toggles">
+          <label className={`chip ${isActiveOnly ? 'is-on' : ''}`}>
+            <input type="checkbox" checked={isActiveOnly} onChange={(event) => setParam('status', event.target.checked ? ['active'] : [])} />
+            Active now
           </label>
-        )}
+          <label className={`chip ${onlyEngineers ? 'is-on' : ''}`}>
+            <input type="checkbox" checked={onlyEngineers} onChange={(event) => setParam('btech', event.target.checked ? '1' : '')} />
+            For BTech grads
+          </label>
+          {candidate && (
+            <label className={`chip ${onlyEligible ? 'is-on' : ''}`}>
+              <input type="checkbox" checked={onlyEligible} onChange={(event) => setParam('eligible', event.target.checked ? '1' : '')} />
+              <UserCheck size={14} aria-hidden="true" /> Eligible for me
+            </label>
+          )}
+        </div>
       </div>
 
-      {areFiltersOpen && (
-        <div id="filter-panel" className="filter-panel">
-          <div className="filter-groups">
-            {filterDefinitions.map((definition) => (
-              <ChipFilter key={definition.key} legend={definition.legend} options={optionsWithCounts(definition)} selected={readList(searchParams, definition.key)} onChange={(values) => setParam(definition.key, values)} />
-            ))}
-          </div>
-          <div className="filter-row">
-            <label className="field">
-              <span>Minimum starting basic pay (Rs per month)</span>
-              <input type="number" min="0" step="1000" value={minimumBasic || ''} placeholder="Any" onChange={(event) => setParam('minPay', event.target.value)} />
-            </label>
-            <div className="field">
-              <span className="field-label">Eligibility</span>
-              {candidate ? (
-                <label className="check-row">
-                  <input type="checkbox" checked={onlyEligible} onChange={(event) => setParam('eligible', event.target.checked ? '1' : '')} />
-                  <UserCheck size={15} aria-hidden="true" /> Hide exams my saved profile clearly fails
-                </label>
-              ) : (
-                <p className="muted">
-                  <Link to="/eligibility" className="text-link">
-                    Save your profile
-                  </Link>{' '}
-                  to filter by age, category and qualification.
-                </p>
-              )}
-            </div>
-          </div>
-          <div className="filter-panel-foot">
-            <button type="button" className="button button-ghost" onClick={() => setSearchParams(query ? { q: query } : {}, { replace: true })}>
+      <Sheet
+        isOpen={areFiltersOpen}
+        onClose={() => setAreFiltersOpen(false)}
+        title="Filters"
+        className="filter-sheet"
+        footer={
+          <>
+            <button type="button" className="button button-ghost" onClick={clearAll}>
               Clear all
             </button>
             <button type="button" className="button button-primary" onClick={() => setAreFiltersOpen(false)}>
               Show {results.length} result{results.length === 1 ? '' : 's'}
             </button>
+          </>
+        }
+      >
+        <div className="filter-groups">
+          {filterDefinitions.map((definition) => (
+            <ChipFilter key={definition.key} legend={definition.legend} options={optionsWithCounts(definition)} selected={readList(searchParams, definition.key)} onChange={(values) => setParam(definition.key, values)} />
+          ))}
+        </div>
+        <div className="filter-row">
+          <label className="field">
+            <span>Minimum starting basic pay (Rs per month)</span>
+            <input type="number" inputMode="numeric" min="0" step="1000" value={minimumBasic || ''} placeholder="Any" onChange={(event) => setParam('minPay', event.target.value)} />
+          </label>
+          <div className="field">
+            <span className="field-label">Eligibility</span>
+            {candidate ? (
+              <label className="check-row">
+                <input type="checkbox" checked={onlyEligible} onChange={(event) => setParam('eligible', event.target.checked ? '1' : '')} />
+                <UserCheck size={15} aria-hidden="true" /> Hide exams my saved profile clearly fails
+              </label>
+            ) : (
+              <p className="muted">
+                <Link to="/profile" className="text-link">
+                  Save your profile
+                </Link>{' '}
+                to filter by age, category and qualification.
+              </p>
+            )}
           </div>
         </div>
-      )}
+      </Sheet>
 
       {activeCount > 0 && (
         <div className="active-filters">
@@ -204,7 +214,7 @@ export default function DirectoryPage() {
               Eligible for me <X size={13} aria-hidden="true" />
             </button>
           )}
-          <button type="button" className="button-ghost button" onClick={() => setSearchParams(query ? { q: query } : {}, { replace: true })}>
+          <button type="button" className="button-ghost button" onClick={clearAll}>
             Clear all
           </button>
         </div>

@@ -2,7 +2,8 @@
  * Custom dropdown used everywhere instead of the browser's native select: a button that
  * opens a styled list with keyboard support (arrows, Home, End, Enter, Escape, typing to
  * jump) and a filter box for long lists. Options are { value, label, hint?, group? }.
- * Used by forms, sort controls, the compare picker, salary tools and charts.
+ * Used by forms, sort controls, the compare picker, salary tools and charts. On phones
+ * the open list is a bottom sheet (styles/overlays.css).
  */
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { Check, ChevronDown, Search } from 'lucide-react'
@@ -162,8 +163,13 @@ export function Select({ label, value, onChange, options, placeholder = 'Choose'
         <span className={selected ? 'select-value' : 'select-placeholder'}>{selected ? selected.label : placeholder}</span>
         <ChevronDown size={16} aria-hidden="true" className="select-chevron" />
       </button>
+      {/* On phones the open menu is a bottom sheet; this dimmed layer behind it closes it. */}
+      {isOpen && <div className="select-backdrop" aria-hidden="true" onClick={close} />}
       {isOpen && (
         <div className="select-menu">
+          <p className="select-sheet-title" aria-hidden="true">
+            {label ?? placeholder}
+          </p>
           {isSearchable && (
             <label className="select-search">
               <Search size={14} aria-hidden="true" />

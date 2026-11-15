@@ -18,6 +18,13 @@
   padding: 0 var(--gutter);
 }
 
+/* Phones: room on the right so the last tab clears the scroll fade (controls.css). */
+@media (max-width: 760px) {
+  .profile .tabs {
+    padding-right: calc(var(--gutter) + 28px);
+  }
+}
+
 .tab-panel {
   scroll-margin-top: 120px;
 }
@@ -256,7 +263,6 @@ strong.figure {
 .calculator,
 .rule-card,
 .post-card,
-.filter-panel,
 .status-tile {
   grid-template-columns: minmax(0, 1fr);
 }

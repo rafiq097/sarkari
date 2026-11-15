@@ -19,6 +19,7 @@ import './styles/tools.css'
 import './styles/profile-layout.css'
 import './styles/roadmap.css'
 import './styles/mock.css'
+import './styles/overlays.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(

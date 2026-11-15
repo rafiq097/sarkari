@@ -86,6 +86,20 @@
   padding-top: 10px;
 }
 
+/* Phones: the three counts share one row instead of leaving one alone on a second line. */
+@media (max-width: 600px) {
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .hero-stats dt {
+    letter-spacing: 0.08em;
+  }
+}
+
 .region-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
@@ -366,50 +380,47 @@
   font: 600 0.72rem/20px var(--font-mono);
 }
 
-.filter-panel {
-  display: grid;
-  gap: 22px;
-  padding: 22px;
-  margin-bottom: 16px;
-  border-radius: var(--radius-large);
-  border: 1px solid var(--line);
-  background: var(--bg-raised);
-  animation: menu-in 0.2s var(--ease);
-}
-
-/* Filter groups sit in two columns on wide screens so the panel stays short. */
-.filter-groups {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
-  gap: 22px 32px;
-  align-items: start;
-}
-
-.filter-panel-foot {
-  position: sticky;
-  bottom: 0;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin: 0 -22px -22px;
-  padding: 14px 22px;
-  background: var(--bg-raised);
-  border-top: 1px solid var(--line);
-  border-radius: 0 0 var(--radius-large) var(--radius-large);
-}
-
 .quick-filters {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
+  gap: 8px 14px;
   margin-bottom: 16px;
 }
 
-.quick-filters-divider {
-  width: 1px;
-  height: 22px;
-  background: var(--line-strong);
+/* Yes/no quick filters, set apart from the government pills by a thin rule. */
+.quick-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 14px;
+  border-left: 1px solid var(--line-strong);
+}
+
+/* Filter groups sit in two columns in the laptop modal and stack in the phone sheet. */
+.filter-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 22px 32px;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+/* Phones: search on its own row, then sort and filters side by side; toggles start a new row. */
+@media (max-width: 640px) {
+  .directory-query {
+    flex-basis: 100%;
+  }
+
+  .directory-sort {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .quick-toggles {
+    padding-left: 0;
+    border-left: none;
+  }
 }
 
 .filter-row {

@@ -1,0 +1,254 @@
+/*
+ * Overlay styles: the Sheet dialog (components/Sheet.jsx) as a centred modal on laptops
+ * and a bottom or top sheet on phones, the mobile search sheet, and the custom dropdown
+ * (components/Select.jsx) turned into a bottom sheet on phones. Loaded last by main.jsx.
+ */
+
+/* Page behind any open dialog stays still. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.sheet {
+  width: min(760px, calc(100vw - 48px));
+  max-width: none;
+  max-height: min(86vh, 900px);
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-large);
+  background: var(--bg-raised);
+  color: var(--text);
+  box-shadow: 0 28px 70px #000000b0;
+  overflow: hidden;
+}
+
+.sheet[open] {
+  display: flex;
+  flex-direction: column;
+  animation: sheet-pop 0.22s var(--ease);
+}
+
+.sheet::backdrop {
+  background: #0a0908c0;
+  backdrop-filter: blur(3px);
+  animation: sheet-fade 0.2s var(--ease);
+}
+
+.sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px 14px 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.sheet-head h2 {
+  font-size: 1.3rem;
+}
+
+.sheet-handle {
+  display: none;
+}
+
+.sheet-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 22px;
+}
+
+.sheet-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 22px;
+  border-top: 1px solid var(--line);
+  background: var(--bg-raised);
+}
+
+/* Search opens near the top like a command palette rather than in the middle. */
+.sheet-top {
+  margin-top: 8vh;
+}
+
+@keyframes sheet-pop {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+}
+
+@keyframes sheet-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes sheet-down {
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+/* Phones: full-width sheets docked to the bottom (or top for search) with a drag handle. */
+@media (max-width: 640px) {
+  .sheet {
+    width: 100%;
+    max-height: 92dvh;
+    margin: auto 0 0;
+    border-width: 1px 0 0;
+    border-radius: 18px 18px 0 0;
+    transition: transform 0.25s var(--ease);
+  }
+
+  .sheet[open] {
+    animation: sheet-up 0.3s var(--ease);
+  }
+
+  .sheet-head {
+    position: relative;
+    padding: 20px 10px 12px 18px;
+    touch-action: none;
+  }
+
+  .sheet-bottom .sheet-handle {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 40px;
+    height: 4px;
+    margin-left: -20px;
+    border-radius: 2px;
+    background: var(--line-strong);
+  }
+
+  .sheet-body {
+    padding: 18px;
+  }
+
+  .sheet-foot {
+    padding: 12px 18px calc(12px + env(safe-area-inset-bottom));
+  }
+
+  .sheet-foot .button {
+    flex: 1;
+  }
+
+  .sheet-top {
+    margin: 0 0 auto;
+    border-width: 0 0 1px;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .sheet-top[open] {
+    animation: sheet-down 0.25s var(--ease);
+  }
+
+  .sheet-top .sheet-head {
+    padding-top: 12px;
+  }
+}
+
+/* Mobile search: suggestions flow under the input instead of floating over the page. */
+.search-sheet .sheet-body {
+  padding-top: 14px;
+}
+
+/* Taller input for thumbs; the icon centres on the input, not on the whole box with its list. */
+.search-inline input {
+  height: 46px;
+  font-size: 1rem;
+}
+
+.search-inline .search-icon {
+  top: 23px;
+}
+
+.search-inline .search-suggestions {
+  position: static;
+  min-width: 0;
+  margin-top: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  animation: none;
+}
+
+.search-inline .search-suggestions li {
+  padding: 12px 10px;
+}
+
+.search-sheet-hint {
+  margin-top: 14px;
+  color: var(--text-faint);
+  font-size: 0.86rem;
+}
+
+/* Dropdown backdrop and title exist only for the phone sheet below. */
+.select-backdrop,
+.select-sheet-title {
+  display: none;
+}
+
+/* Phones: an open dropdown becomes a bottom sheet over a dimmed page. */
+@media (max-width: 640px) {
+  html:has(.select-menu) {
+    overflow: hidden;
+  }
+
+  .select-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    background: #0a0908c0;
+    animation: sheet-fade 0.2s var(--ease);
+  }
+
+  .select-menu {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 71;
+    width: 100%;
+    max-width: none;
+    max-height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px calc(10px + env(safe-area-inset-bottom));
+    border-width: 1px 0 0;
+    border-radius: 18px 18px 0 0;
+    animation: sheet-up 0.28s var(--ease);
+  }
+
+  .select-sheet-title {
+    display: block;
+    padding: 8px 10px 10px;
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--text);
+  }
+
+  .select-list {
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+    overscroll-behavior: contain;
+  }
+
+  .select-option {
+    padding: 13px 10px;
+  }
+}
