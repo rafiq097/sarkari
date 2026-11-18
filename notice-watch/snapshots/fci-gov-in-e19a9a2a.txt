@@ -22,7 +22,6 @@ Pause Stop
 बिक्री
 StatisticalData
 WhatsNews
-सतर्कता जागरूकता सप्ताह 2026: (26 अक्टूबर 2026 - 1 नवंबर 2026), थीम: समृद्धि के लिए ईमानदारी। निवारक सतर्कता अभियान (17 अगस्त - 16 नवंबर 2026) में शामिल हों।
 एंडपॉइंट डिटेक्शन एवं रिस्पॉन्स (EDR) एंटीवायरस समाधान के कार्यान्वयन एवं अनुरक्षण हेतु एजेंसी के चयन के लिए निविदा दस्तावेज (RFP)
 वित्तीय वर्ष 2024-25 के लिए सीपीएफ पर ब्याज दर
 एफ़सीआई द्वारा अपने हितधारकों के लिए शिकायत निवारण के लिए वीसी लिंक (वीसी लिंक के लिए यहां क्लिक करें) एवं चावल मिलर्स के लिए टोल फ्री हेल्पलाइन न. 18003090134 जारी किया गया है ।
@@ -43,14 +42,22 @@ Jan 10, 2024
 ViewMore
 Tenders
 Circulars
+PublishDate: Nov 18, 2026
+ID: GEM/2026/B/8288318
 PublishDate: Nov 17, 2026
 ID: RTC JULANA TO OKHLA NOVEM
+PublishDate: Nov 17, 2026
+ID: GEM/2026/B/8283469
 PublishDate: Nov 17, 2026
 ID: GEM/2026/B/8282471
 PublishDate: Nov 17, 2026
 ID: S&C/13(69)/FSD Gondia/2026
 PublishDate: Nov 17, 2026
 ID: GEM/2026/B/8282958
+PublishDate: Nov 17, 2026
+ID: GEM/2026/B/8283019
+PublishDate: Nov 17, 2026
+ID: GEM/2026/B/8283211
 PublishDate: Nov 16, 2026
 ID: EE/07/2026-27
 PublishDate: Nov 16, 2026
@@ -69,20 +76,12 @@ PublishDate: Nov 16, 2026
 ID: 546
 PublishDate: Nov 16, 2026
 ID: RO AS22.0011.0(14.0)/1/2026- C
+PublishDate: Nov 16, 2026
+ID: Cont.13(26)/2026/HTC/Rupsa-Bar
 PublishDate: Nov 14, 2026
 ID: 6.3/2026-27
 PublishDate: Nov 14, 2026
 ID: 6.2/2026-27
-PublishDate: Nov 14, 2026
-ID: 6.4/2026-27
-PublishDate: Nov 14, 2026
-ID: 6.1/2026-27
-PublishDate: Nov 13, 2026
-ID: No. 06 (PUB)/FAQ/URS/PB/Wheat/
-PublishDate: Nov 13, 2026
-ID: No. RO TL-39.0033/4/2026-SELS-
-PublishDate: Nov 13, 2026
-ID: No. RO TL-39.0033/5/2026-SELS-
 ViewMore
 SocialMedia
 Photo Gallery
